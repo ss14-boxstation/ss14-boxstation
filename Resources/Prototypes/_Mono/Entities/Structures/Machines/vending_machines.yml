@@ -1,0 +1,115 @@
+# SPDX-FileCopyrightText: 2025 Blu
+# SPDX-FileCopyrightText: 2025 BlueHNT
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 gus
+# SPDX-FileCopyrightText: 2025 monolith8319
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: [VendingMachineAmmo, BaseStructureDisableAnchoring]
+  id: VendingMachineAmmoPOIMercenary
+  suffix: POI, PMC
+  components:
+  - type: VendingMachine
+    pack: WeaponryWorksVendPOIMercInventory
+  - type: AccessReader
+    access: [["Mercenary"], ["Security"]]
+
+- type: entity
+  parent: [VendingMachineAstroVend, BaseStructureDisableAnchoring]
+  id: VendingMachineBluespaceDrive
+  name: DriveVend
+  description: Sells flatpacked bluespaces drives.
+  suffix: POI
+  components:
+  - type: VendingMachine
+    pack: BlueSpaceVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: MarketModifier
+    mod: 15 # for the love of god don't ever set this to 1 again
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/VendingMachines/drivevend.rsi
+    layers:
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      shader: unshaded
+    - state: panel
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+
+- type: entity
+  parent: [VendingMachineAstroVend, BaseStructureDisableAnchoring]
+  id: VendingMachineUSSP
+  name: USSP Automated Requisition Vendor
+  description: Sells various USSP equipment.
+  suffix: POI
+  components:
+  - type: VendingMachine
+    pack: USSPVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: MarketModifier
+    mod: 8
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/VendingMachines/usspvend.rsi
+    layers:
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.Base" ]
+    - state: "off"
+      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      shader: unshaded
+    - state: panel
+      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+  - type: AccessReader
+    access: [["USSP"], ["USSPHigh"]]
+
+- type: entity
+  parent: [BaseStructureDisableToolUse, VendingMachineSyndieContraband]
+  id: VendingMachineSyndieContrabandPOI
+  name: ContraVend
+  suffix: POI
+  description: Wanted across multiple sectors!
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineBarista
+  name: Barista Vendor
+  description: Sells a variety of coffees, teas, and pastries.
+  components:
+  - type: VendingMachine
+    pack: BaristaVendInventory
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    # ejectState: eject-unshaded
+    # denyState: deny-unshaded
+    ejectDelay: 1.9
+    initialStockQuality: 0.33
+  - type: MarketModifier
+    mod: 8
+  - type: Advertise
+    pack: BaristaAds
+  - type: SpeakOnUIClosed
+    pack: BaristaGoodbyes
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/VendingMachines/barista.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#D82929"
