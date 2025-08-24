@@ -1,0 +1,51 @@
+- type: entity
+  parent: CrateMedical
+  id: CrateIPCRepairBasic
+  name: basic IPC repair crate
+  suffix: Harmony
+  description: the barebone basics of IPC repair
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+      amount: 2
+    - id: CablePack
+    - id: WelderMini
+
+- type: entity
+  parent: CrateMedical
+  id: CrateIPCRepairAdvanced
+  name: advanced IPC repair crate
+  suffix: Harmony
+  description: most of what you need to repair any IPC
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+    - id: ComponentPack
+    - id: RobotStructPack
+    - id: ReplacementLenses
+
+- type: entity
+  parent: CrateMedical
+  id: CrateIPCRepairBloodloss
+  name: emergency IPC bloodloss kit
+  suffix: Harmony
+  description: crate filled with emergency supplies for bleeding IPCs
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+    - id: IPCOilPack
+
+- type: entity
+  parent: CrateMedical
+  id: CrateIPCBlood
+  name: IPC oil packs
+  suffix: Harmony
+  description: crate filled with oil packs for IPCs
+  components:
+  - type: StorageFill
+    contents:
+    - id: IPCOilPack
+      amount: 3

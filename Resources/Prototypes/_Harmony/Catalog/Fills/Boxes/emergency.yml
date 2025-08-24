@@ -1,0 +1,13 @@
+# IPCs
+- type: entity
+  parent: BoxSurvival
+  id: BoxSurvivalHumanoidSilicon
+  suffix: IPC, Harmony
+  components:
+  - type: StorageFill
+    contents:
+    - id: IPCOilPack1
+    - id: CablePack
+    - id: ChassisPatch1
+    - id: WelderMini
+    - id: Flare

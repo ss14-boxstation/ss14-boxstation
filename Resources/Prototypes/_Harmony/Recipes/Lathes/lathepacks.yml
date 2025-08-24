@@ -79,3 +79,19 @@
   id: HarmonyFloorTilesStatic
   recipes:
   - FloorTileItemTechmaintDark # Xeno playtest
+
+## IPC Repair
+- type: latheRecipePack
+  id: HarmonyIPCRepairStatic
+  recipes:
+  - CablePack
+  - ComponentPack
+  - RobotStructPack
+  - ReplacementLenses
+  - ChassisPatch
+
+- type: latheRecipePack
+  id: HarmonyIPCMedicalStatic # Allows these two to also be made in the MediFab
+  recipes:
+  - ReplacementLenses
+  - ChassisPatch

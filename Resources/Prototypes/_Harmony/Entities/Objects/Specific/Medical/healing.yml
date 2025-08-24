@@ -1,0 +1,205 @@
+- type: entity
+  parent: BaseHealingItem
+  id: IPCOilPack
+  name: ipc oil pack
+  suffix: Full, Harmony
+  description: Utilising a proprietary double-nozzle connector, IPCs can now recover all their missing fluids in one easy package.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Medical/Oilpack.rsi
+    state: icon
+  - type: Item
+    sprite: _DV/Objects/Medical/Oilpack.rsi
+    heldPrefix: icon
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Heat: -0.5 # if this isn't here it doesn't work... might as well make it meaningful
+    modifyBloodLevel: 10 # restores a lot of blood for IPCs.
+  - type: Stack
+    stackType: IPCOilPack
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: IPCOilPack
+  id: IPCOilPack1
+  suffix: Single, Harmony
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: CablePack
+  name: robot rewiring kit
+  suffix: Full, Harmony
+  description: a bundle of cables capable of replacing any burnt out wiring inside an ipc.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/cable_pack.rsi
+    state: cable_pack
+  - type: Item
+    sprite: _Harmony/Objects/Medical/cable_pack.rsi
+    heldPrefix: cable_pack
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Heat: -5
+        Shock: -5
+  - type: Stack
+    stackType: CablePack
+    count: 10
+
+- type: entity
+  parent: CablePack
+  id: CablePack1
+  suffix: Single, Harmony
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: ComponentPack
+  name: component replacement kit
+  suffix: Full, Harmony
+  description: a set of spare components to repair damage caused by radiaton and electrocution on ipcs.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/componentpack.rsi
+    state: icon
+  - type: Item
+    sprite: _Harmony/Objects/Medical/componentpack.rsi
+    heldPrefix: icon
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Shock: -1
+        Radiation: -5
+  - type: Stack
+    stackType: ComponentPack
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: ComponentPack
+  id: ComponentPack1
+  suffix: Single, Harmony
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: RobotStructPack
+  name: robot structural repair kit
+  suffix: Full, Harmony
+  description: everything you need to repair and replace damaged or brittle components inside a robot.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/robostruct_pack.rsi
+    state: icon
+  - type: Item
+    sprite: _Harmony/Objects/Medical/robostruct_pack.rsi
+    heldPrefix: icon
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      groups:
+        Brute: -3 # Minor Brute repair, inverse of welding tool
+      types:
+        Cold: -5
+        Caustic: -5
+  - type: Stack
+    stackType: RobotStructPack
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: RobotStructPack
+  id: RobotStructPack1
+  suffix: Single, Harmony
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: BaseHealingItem
+  id: ReplacementLenses
+  name: replacement lenses
+  suffix: Harmony
+  description: a pair of replacement lenses for repairing robot vision.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/replacement_lenses.rsi
+    state: icon
+  - type: Item
+    sprite: _Harmony/Objects/Medical/replacement_lenses.rsi
+    heldPrefix: icon
+  - type: BlindHealing
+    damageContainers:
+      - HumanoidSilicon
+  - type: Stack
+    stackType: ReplacementLenses
+    count: 1
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  name: chassis patch
+  description: A self-adhering metallic mesh capable of patching gashes in robots. A good way to stop bleeding.
+  parent: BaseHealingItem
+  id: ChassisPatch
+  suffix: Full, Harmony
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Medical/chassis_patch.rsi
+    state: icon
+  - type: Item
+    sprite: _Harmony/Objects/Medical/chassis_patch.rsi
+    heldPrefix: icon
+  - type: Construction
+    graph: ChassisPatch
+    node: icon
+  - type: Healing
+    damageContainers:
+      - HumanoidSilicon
+    damage:
+      types:
+        Slash: -2.5
+        Piercing: -2.5
+    bloodlossModifier: -20
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: ChassisPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  id: ChassisPatch1
+  parent: ChassisPatch
+  suffix: Single, Harmony
+  components:
+  - type: Stack
+    count: 1

@@ -1,0 +1,39 @@
+- type: cargoProduct
+  id: IPCBasicRepairCrate
+  icon:
+    sprite: Objects/Tools/welder_mini.rsi
+    state: icon
+  product: CrateIPCRepairBasic
+  cost: 800
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: IPCAdvancedRepairCrate
+  icon:
+    sprite: _Harmony/Objects/Medical/componentpack.rsi
+    state: icon
+  product: CrateIPCRepairAdvanced
+  cost: 2400
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: IPCBloodlossRepairCrate
+  icon:
+    sprite: _Harmony/Objects/Medical/chassis_patch.rsi
+    state: icon
+  product: CrateIPCRepairBloodloss
+  cost: 900
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: IPCOilPackCrate
+  icon:
+    sprite: _DV/Objects/Medical/Oilpack.rsi
+    state: icon
+  product: CrateIPCBlood
+  cost: 1600
+  category: cargoproduct-category-name-medical
+  group: market

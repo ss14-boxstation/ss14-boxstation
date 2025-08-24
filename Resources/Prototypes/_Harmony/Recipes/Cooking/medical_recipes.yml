@@ -1,0 +1,19 @@
+- type: microwaveMealRecipe
+  id: RecipeIPCOilPack
+  result: IPCOilPack
+  time: 10
+  group: Medicinal
+  reagents:
+    IndustrialLubricant: 20
+    ComputerCoolant: 20
+
+- type: microwaveMealRecipe
+  id: RecipeOmniPatch
+  result: OmniPatch
+  time: 10
+  group: Medicinal
+  solids:
+    IPCOilPack: 1
+  reagents:
+    Silicon: 20
+    Omnizine: 5

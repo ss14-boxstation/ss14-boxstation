@@ -105,6 +105,21 @@
     price: 40
   - type: IgnitionSource
     temperature: 700
+# Harmony Change Start, Makes welding a brutepack for IPCs
+  - type: WeldingHealing
+    damageContainers:
+      - Silicon
+      - HumanoidSilicon # DeltaV
+    fuelCost: 15
+    damage:
+      groups:
+        Brute: -15 # 5 for each, like a bruise pack
+      types:
+        Cold: -1 # Structural Repair
+        Caustic: -1 # Structural Repair
+    # bleedingModifier: -20 # DeltaV - IPCs bleed
+    bleedingModifier: -10 # Parity with Gauze
+# Harmony Change Ends
 
 - type: entity
   name: industrial welding tool

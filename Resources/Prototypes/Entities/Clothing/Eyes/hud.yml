@@ -30,6 +30,7 @@
     damageContainers:
     - Inorganic
     - Silicon
+    - HumanoidSilicon # Harmony Change, IPCs
 
 - type: entity
   parent: [ClothingEyesBase, ShowMedicalIcons]

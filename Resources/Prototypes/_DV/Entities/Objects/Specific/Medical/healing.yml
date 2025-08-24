@@ -1,0 +1,36 @@
+- type: entity
+  parent: BaseHealingItem # Harmony Change, parent DV called for wasn't ported
+  id: OmniPatch
+  suffix: Full, Harmony
+  name: omni patch
+  description: A topical patch of specially grown silica microbots, curated to heal machine entities. Smells of ozone.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Medical/Omnipatch.rsi
+    state: icon # Harmony Change, broken if not here for some reason, probably parent change
+  - type: Item
+    sprite: _DV/Objects/Medical/Omnipatch.rsi
+    heldPrefix: icon # Harmony Change, broken if not here for some reason, probably parent change
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    # - Silicon # Harmony Change, as long as Borgs are immune to Radiation, trying to remove radiation damage from them crashes the game
+    damage:
+      groups:
+        Burn: -60 # 25 per type
+        Brute: -60 # 20 per type, mostly irrelevant cause welder gaming
+      types:
+        Radiation: -20 # Harmony Change, IPC Omnizine
+    modifyBloodLevel: 25 # restores a lot of blood for IPCs.
+    bloodlossModifier: -20 # DeltaV - IPCs bleed
+  - type: Stack
+    stackType: OmniPatch
+    count: 10
+
+- type: entity
+  id: Omnipatch1
+  parent: OmniPatch
+  suffix: Single, Harmony
+  components:
+  - type: Stack
+    count: 1

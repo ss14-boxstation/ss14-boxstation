@@ -131,4 +131,5 @@ public enum SpeciesNaming : byte
     FirstDashFirst,
     TheFirstofLast,
     LastFirst,
+    FirstDashLast, //Goobstation
 }

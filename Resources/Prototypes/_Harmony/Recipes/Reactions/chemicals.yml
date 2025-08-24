@@ -1,0 +1,30 @@
+- type: reaction
+  id: IndustrialLubricant
+  reactants:
+    Oil:
+      amount: 1
+    Fersilicite:
+      amount: 1
+  products:
+    IndustrialLubricant: 2
+
+- type: reaction
+  id: ComputerCoolant
+  reactants:
+    EthyleneGlycol:
+      amount: 1
+    Water:
+      amount: 3
+  products:
+    ComputerCoolant: 2
+
+- type: reaction
+  id: EthyleneGlycol
+  minTemp: 325
+  reactants:
+    Ethanol:
+      amount: 1
+    SodiumHydroxide:
+      amount: 1
+  products:
+    EthyleneGlycol: 1
