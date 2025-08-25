@@ -1,5 +1,6 @@
+using Content.Shared.Abilities; // Box Change - Port Funky/DV Rodentia
 using Content.Shared.Actions;
-﻿using Content.Shared.Actions.Components;
+using Content.Shared.Actions.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -10,11 +11,13 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
+using Robust.Shared.Timing; // Box Change - Port Funky/DV Rodentia
 
 namespace Content.Shared.RatKing;
 
 public abstract class SharedRatKingSystem : EntitySystem
 {
+    [Dependency] private readonly IGameTiming _gameTiming = default!; // Box Change - Port Funky/DV Rodentia - Used for rummage cooldown
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
     [Dependency] protected readonly IRobustRandom Random = default!;
@@ -31,6 +34,7 @@ public abstract class SharedRatKingSystem : EntitySystem
 
         SubscribeLocalEvent<RatKingServantComponent, ComponentShutdown>(OnServantShutdown);
 
+        // SubscribeLocalEvent<RatKingRummageableComponent, ComponentInit>(OnComponentInit); // Box Change - Port Funky/DV Rodentia - Goobstation
         SubscribeLocalEvent<RatKingRummageableComponent, GetVerbsEvent<AlternativeVerb>>(OnGetVerb);
         SubscribeLocalEvent<RatKingRummageableComponent, RatKingRummageDoAfterEvent>(OnDoAfterComplete);
     }
@@ -105,9 +109,23 @@ public abstract class SharedRatKingSystem : EntitySystem
         _action.StartUseDelay(component.ActionOrderLooseEntity);
     }
 
+    // Box Change Start - Port Funky/DV Rodentian
+    // Goobstation
+    public void OnComponentInit(EntityUid uid, RatKingRummageableComponent component, ComponentInit args)
+    {
+        component.LastLooted = _gameTiming.CurTime;
+        Dirty(uid, component);
+    }
+    // Box Change End
+
     private void OnGetVerb(EntityUid uid, RatKingRummageableComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-        if (!HasComp<RatKingComponent>(args.User) || component.Looted)
+        // Box Change Start - Port Funky/DV Rodentia - Use RummagerComponent instead of RatKingComponent, Additionally, adds a cooldown check
+        // if (!HasComp<RatKingComponent>(args.User) || component.Looted)
+        if (!HasComp<RummagerComponent>(args.User)
+            || component.Looted
+            || _gameTiming.CurTime < component.LastLooted + component.RummageCooldown)
+        // Box Change End
             return;
 
         args.Verbs.Add(new AlternativeVerb
@@ -130,10 +148,16 @@ public abstract class SharedRatKingSystem : EntitySystem
 
     private void OnDoAfterComplete(EntityUid uid, RatKingRummageableComponent component, RatKingRummageDoAfterEvent args)
     {
-        if (args.Cancelled || component.Looted)
+        // Box Change Start - Port Funky/DV Rodentia - Rummaging an object updates the looting cooldown rather than a "previously looted" check.
+        var time = _gameTiming.CurTime;
+        if (args.Cancelled
+            || component.Looted
+            || time < component.LastLooted + component.RummageCooldown)
+        // Box Change End
             return;
 
-        component.Looted = true;
+        // component.Looted = true;
+        component.LastLooted = time; // Box Change - Port Funky/DV Rodentia
         Dirty(uid, component);
         _audio.PlayPredicted(component.Sound, uid, args.User);
 

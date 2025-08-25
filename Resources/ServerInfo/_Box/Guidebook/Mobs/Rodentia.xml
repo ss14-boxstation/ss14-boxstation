@@ -1,0 +1,19 @@
+
+<Document>
+  # Rodentia
+
+  <Box>
+    <GuideEntityEmbed Entity="MobRodentiaDummy" Caption=""/>
+  </Box>
+
+  Rodentia are a race of humanoid beings resembling rodents.
+
+  They can eat raw meat and drink blood without ill effects, but are poisoned by Theobromine and Allicin. They can rummage in disposal chutes, which can sometimes dig up food. They [color=yellow]become hungry 33% faster[/color] than other species.
+
+  Their unarmed attacks deal a mixture of Blunt and Slash.
+
+  Rodentia can store small objects inside their cheeks. When they have anything inside this storage their speech becomes muffled.
+
+  They take [color=#ffa500]30% more Blunt, 15% more Slash, and 15% more Pierce.[/color]
+
+</Document>

@@ -1,0 +1,11 @@
+- type: entity
+  id: ActionOpenMouthStorage
+  name: Open cheek storage
+  description: Allows you to store items in your cheeks.
+  components:
+  - type: Action # starcup: rewritten for action refactor
+    itemIconStyle: BigAction
+    priority: -10
+    icon: _DV/Interface/Actions/mouthStorageOpen.png
+  - type: InstantAction # starcup: rewritten for action refactor
+    event: !type:OpenStorageImplantEvent

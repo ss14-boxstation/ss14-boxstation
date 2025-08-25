@@ -1,6 +1,0 @@
-- type: localizedDataset
-  id: names_rodentia_male
-  values:
-    # BoxStation change, converted into localizedDataset.
-    prefix: names-rodentia-male-
-    count: 167

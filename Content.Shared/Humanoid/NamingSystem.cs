@@ -38,9 +38,11 @@ namespace Content.Shared.Humanoid
                 case SpeciesNaming.FirstDashFirst:
                     return Loc.GetString("namepreset-firstdashfirst",
                         ("first1", GetFirstName(speciesProto, gender)), ("first2", GetFirstName(speciesProto, gender)));
-                case SpeciesNaming.LastFirst:
+                // Box Change Start - Port Funky/DV Rodentia
+                case SpeciesNaming.LastFirst: // DeltaV: Rodentia name scheme
                     return Loc.GetString("namepreset-lastfirst",
                         ("last", GetLastName(speciesProto)), ("first", GetFirstName(speciesProto, gender)));
+                // Box Change End
                 case SpeciesNaming.FirstLast:
                 default:
                     return Loc.GetString("namepreset-firstlast",
