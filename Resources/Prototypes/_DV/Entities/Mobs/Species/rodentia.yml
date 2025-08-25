@@ -90,11 +90,11 @@
       - map: [ "shoes" ]
       - map: [ "ears" ]
       - map: [ "outerClothing" ]
-      - map: [ "culteyes" ] # funky cult
-        sprite: "_Funkystation/BloodCult/Effects/culteyes.rsi"
-        state: "human"  # TODO make rodentia version
-        shader: unshaded
-        visible: false
+      # - map: [ "culteyes" ] # funky cult
+      #   sprite: "_Funkystation/BloodCult/Effects/culteyes.rsi"
+      #   state: "human"  # TODO make rodentia version
+      #   shader: unshaded
+      #   visible: false
       - map: [ "eyes" ]
       - map: [ "belt" ]
       - map: [ "neck" ]
@@ -112,11 +112,11 @@
         sprite: "_DV/Effects/creampie.rsi"
         state: "creampie_rodentia"
         visible: false
-      - map: [ "culthalo" ] # funky cult
-        sprite: "_Funkystation/BloodCult/Effects/halo.rsi"
-        state: "halo"
-        shader: unshaded
-        visible: false
+      # - map: [ "culthalo" ] # funky cult
+      #   sprite: "_Funkystation/BloodCult/Effects/halo.rsi"
+      #   state: "halo"
+      #   shader: unshaded
+      #   visible: false
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg
