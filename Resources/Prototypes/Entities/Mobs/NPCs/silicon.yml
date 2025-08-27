@@ -45,7 +45,7 @@
     proto: robot
   - type: Vocal
     sounds:
-      Unsexed: UnisexSilicon
+      Unsexed: UnisexIPC #Box Change - starcup: silicon emotes
   - type: Emoting
   - type: ZombieImmune
   - type: ProtectedFromStepTriggers
