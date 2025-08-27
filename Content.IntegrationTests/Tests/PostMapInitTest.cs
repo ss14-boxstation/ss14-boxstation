@@ -69,6 +69,7 @@ namespace Content.IntegrationTests.Tests
             "Eclipse", //Harmony, Developed by Lachryphage
             "Prime", // Harmony, developed/revived by luckyshotpictures
             "Spire", // Harmony, Developed by Dogbone10, PenguinCodest, Jack_the_Dragon
+            "Omega", // Box - Harmony, updated from Spanky's version by OrnamentalFreak and CrimsonJupiter
             "Dev",
             "TestTeg",
             "Fland",
