@@ -1,0 +1,139 @@
+- type: loadout
+  id: ClothingNeckScarfStripedRed
+  storage:
+    back:
+    - ClothingNeckScarfStripedRed
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedGreen
+  storage:
+    back:
+    - ClothingNeckScarfStripedGreen
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedBlue
+  storage:
+    back:
+    - ClothingNeckScarfStripedBlue
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedBlack
+  storage:
+    back:
+    - ClothingNeckScarfStripedBlack
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedBrown
+  storage:
+    back:
+    - ClothingNeckScarfStripedBrown
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedLightBlue
+  storage:
+    back:
+    - ClothingNeckScarfStripedLightBlue
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedOrange
+  storage:
+    back:
+    - ClothingNeckScarfStripedOrange
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedPurple
+  storage:
+    back:
+    - ClothingNeckScarfStripedPurple
+  groupBy: "scarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedAce
+  storage:
+    back:
+    - ClothingNeckScarfStripedAce
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedAce
+  storage:
+    back:
+    - ClothingNeckScarfStripedAce
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedAro
+  storage:
+    back:
+    - ClothingNeckScarfStripedAro
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedAroace
+  storage:
+    back:
+    - ClothingNeckScarfStripedAroace
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedBiSexual
+  storage:
+    back:
+    - ClothingNeckScarfStripedBiSexual
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedGay
+  storage:
+    back:
+    - ClothingNeckScarfStripedGay
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedInter
+  storage:
+    back:
+    - ClothingNeckScarfStripedInter
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedLesbian
+  storage:
+    back:
+    - ClothingNeckScarfStripedLesbian
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedPan
+  storage:
+    back:
+    - ClothingNeckScarfStripedPan
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedNonBinary
+  storage:
+    back:
+    - ClothingNeckScarfStripedNonBinary
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedRainbow
+  storage:
+    back:
+    - ClothingNeckScarfStripedRainbow
+  groupBy: "PrideScarf"
+
+- type: loadout
+  id: ClothingNeckScarfStripedTrans
+  storage:
+    back:
+    - ClothingNeckScarfStripedTrans
+  groupBy: "PrideScarf"
