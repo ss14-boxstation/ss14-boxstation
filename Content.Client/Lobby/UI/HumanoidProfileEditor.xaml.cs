@@ -644,6 +644,11 @@ namespace Content.Client.Lobby.UI
                 if (!antag.SetPreference)
                     continue;
 
+                // Box Change Start - Admin Controlled Antags
+                if (!antag.VisiblePreference) // CD change
+                    continue;
+                // Box Change End
+
                 var antagContainer = new BoxContainer()
                 {
                     Orientation = LayoutOrientation.Horizontal,

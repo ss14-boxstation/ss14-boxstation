@@ -52,4 +52,15 @@ public sealed partial class AntagPrototype : IPrototype
     /// </summary>
     [DataField]
     public List<ProtoId<GuideEntryPrototype>>? Guides;
+
+    // Box Change Start - Admin Controlled Antag
+
+    /// <summary>
+    ///     CD Field. If the antag will be shown on the preferences list.
+    ///     Does not disable the preference entirely
+    /// </summary>
+    [DataField]
+    public bool VisiblePreference { get; private set; }
+
+    // Box Change End
 }
