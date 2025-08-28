@@ -11,7 +11,7 @@
   - ClothingNeckScarfStripedOrange
   - ClothingNeckScarfStripedPurple
 
-- Type: loadoutGroup
+- type: loadoutGroup
   id: PrideScarf
   name: loadout-group-pride-scarfs
   loadouts:
