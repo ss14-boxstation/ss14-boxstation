@@ -1,4 +1,4 @@
-<!-- If you are new to the Harmony repository, please read the [Contributing Guidelines](https://github.com/ss14-harmony/ss14-harmony/blob/master/CONTRIBUTING.md) -->
+<!-- If you are new to the BoxStation repository, please read the [Contributing Guidelines](https://github.com/ss14-harmony/ss14-harmony/blob/master/CONTRIBUTING.md). We follow Harmony guidelines, so please keep your comments tidy! -->
 ## About the PR
 <!-- What did you change? -->
 
