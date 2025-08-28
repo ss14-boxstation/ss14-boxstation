@@ -62,13 +62,6 @@
   groupBy: "PrideScarf"
 
 - type: loadout
-  id: ClothingNeckScarfStripedAce
-  storage:
-    back:
-    - ClothingNeckScarfStripedAce
-  groupBy: "PrideScarf"
-
-- type: loadout
   id: ClothingNeckScarfStripedAro
   storage:
     back:
