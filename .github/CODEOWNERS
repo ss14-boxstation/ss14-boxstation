@@ -1,32 +1,32 @@
 # Last match in file takes precedence.
 
 # Everything
-*                                                   @KeldWolf @FluffMe @youtissoum
+*                                                   @superjeepboy @CollectionOfBones128
 
 # C# code
-/Content.*/                                         @KeldWolf @FluffMe @youtissoum
+/Content.*/                                         @superjeepboy
 
 # YML files
-/Resources/*.yml                                    @KeldWolf @FluffMe @youtissoum @Zap527 @kleinerstation13
-/Resources/**/*.yml                                 @KeldWolf @FluffMe @youtissoum @Zap527 @kleinerstation13
+/Resources/*.yml                                    @superjeepboy @CollectionOfBones128
+/Resources/**/*.yml                                 @superjeepboy @CollectionOfBones128
 
 # FTL files
-/Resources/Locale                                   @KeldWolf @FluffMe @youtissoum @Zap527 @kleinerstation13
+/Resources/Locale                                   @superjeepboy @CollectionOfBones128
 
 # Server info and rules
-/Resources/ServerInfo                               @KeldWolf @FluffMe @youtissoum @Zap527 @spanky-spanky
+/Resources/ServerInfo                               @superjeepboy
 
 # Sprites
-/Resources/Textures/                                @TheCrimsonJupiter @KeldWolf @FluffMe @youtissoum
+/Resources/Textures/                                @CollectionOfBones128
 
 # Lobby art and music
-/Resources/Audio/Lobby/                             @KeldWolf
-/Resources/Audio/_Harmony/Lobby/                    @KeldWolf
-/Resources/Textures/LobbyScreens/                   @TheCrimsonJupiter
-/Resources/Textures/_Harmony/LobbyScreens/          @TheCrimsonJupiter
+/Resources/Audio/Lobby/                             @superjeepboy @CollectionOfBones128
+/Resources/Audio/_Box/Lobby/                    	@superjeepboy @CollectionOfBones128
+/Resources/Textures/LobbyScreens/                   @superjeepboy @CollectionOfBones128
+/Resources/Textures/_Box/LobbyScreens/          	@superjeepboy @CollectionOfBones128
 
 # Maps
-/Resources/Maps/                                    @spanky-spanky @raccoonio
-/Resources/Prototypes/Maps/                         @spanky-spanky @raccoonio
-/Resources/Prototypes/_Harmony/Maps/                @spanky-spanky @raccoonio
-/Content.IntegrationTests/Tests/PostMapInitTest.cs  @spanky-spanky @raccoonio
+/Resources/Maps/                                    @CollectionOfBones128
+/Resources/Prototypes/Maps/                         @CollectionOfBones128
+/Resources/Prototypes/_Harmony/Maps/                @CollectionOfBones128
+/Content.IntegrationTests/Tests/PostMapInitTest.cs  @CollectionOfBones128

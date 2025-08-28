@@ -5,7 +5,7 @@ on:
 
 jobs:
   labeler:
-    # if: github.actor != 'PJBot' - GUH
+    if: github.actor != 'PJBot'
     permissions:
       contents: read
       issues: write
@@ -15,7 +15,7 @@ jobs:
     # Harmony start
     - name: Automatic Maintenance Label
       uses: actions-ecosystem/action-add-labels@v1
-      if: ${{ startsWith(github.event.pull_request.title, 'Upstream') || startsWith(github.event.pull_request.title, 'Changelog') }}
+      if: ${{ startsWith(github.event.pull_request.title, 'Harmony') || startsWith(github.event.pull_request.title, 'Changelog') }} #Box change, look for Harmony instead of Upstream
       with:
         labels: Maintenance
     - uses: snnaplab/get-labels-action@v1.0.1
@@ -26,6 +26,6 @@ jobs:
       if: ${{ (env.LABELS == '') || (! contains(env.LABELS, 'Maintenance')) }}
       with:
         sync-labels: true
-        # Add repository token because it kept breaking
+        # Add repository token because it kept breaking, Box change
         repo-token: ${{ secrets.GITHUB_TOKEN }}
       # Harmony end
