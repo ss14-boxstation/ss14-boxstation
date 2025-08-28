@@ -1,0 +1,28 @@
+- type: loadoutGroup
+  id: scarf
+  name: loadout-group-scarfs
+  loadouts:
+  - ClothingNeckScarfStripedRed
+  - ClothingNeckScarfStripedGreen
+  - ClothingNeckScarfStripedBlue
+  - ClothingNeckScarfStripedBlack
+  - ClothingNeckScarfStripedBrown
+  - ClothingNeckScarfStripedLightBlue
+  - ClothingNeckScarfStripedOrange
+  - ClothingNeckScarfStripedPurple
+
+- type: loadoutGroup
+  id: PrideScarf
+  name: loadout-group-pride-scarfs
+  loadouts:
+  - ClothingNeckScarfStripedAce
+  - ClothingNeckScarfStripedAro
+  - ClothingNeckScarfStripedAroace
+  - ClothingNeckScarfStripedBiSexual
+  - ClothingNeckScarfStripedGay
+  - ClothingNeckScarfStripedInter
+  - ClothingNeckScarfStripedLesbian
+  - ClothingNeckScarfStripedPan
+  - ClothingNeckScarfStripedNonBinary
+  - ClothingNeckScarfStripedRainbow
+  - ClothingNeckScarfStripedTrans
