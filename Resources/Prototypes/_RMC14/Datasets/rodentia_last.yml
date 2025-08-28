@@ -1,6 +1,0 @@
-- type: localizedDataset
-  id: names_rodentia_last
-  values:
-    # BoxStation change, converted into localizedDataset.
-    prefix: names-rodentia-last-
-    count: 87
