@@ -420,6 +420,7 @@
   - type: InstantAction
     event: !type:GravityJumpEvent {}
 
+
 - type: entity
   parent: BaseAction
   id: ActionVulpkaninGravityJump
