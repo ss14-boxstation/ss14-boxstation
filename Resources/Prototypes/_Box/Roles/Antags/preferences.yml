@@ -3,7 +3,7 @@
 - type: antag
   id: DummyBB
   name: roles-antag-blood-brother-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-blood-brother-objective
@@ -16,7 +16,7 @@
 - type: antag
   id: DummyNukeOps
   name: roles-antag-nuclear-operative-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-nuclear-operative-objective
@@ -29,7 +29,7 @@
 - type: antag
   id: DummyNukeOpsMed
   name: roles-antag-nuclear-operative-agent-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-nuclear-operative-agent-objective
@@ -44,7 +44,7 @@
 - type: antag
   id: DummyNukeOpsCommander
   name: roles-antag-nuclear-operative-commander-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-nuclear-operative-commander-objective
@@ -60,7 +60,7 @@
 - type: antag
   id: DummySyndie
   name: roles-antag-syndicate-agent-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-syndicate-agent-objective
@@ -72,7 +72,7 @@
 - type: antag
   id: DummySyndieSleeper
   name: roles-antag-syndicate-agent-sleeper-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-syndicate-agent-sleeper-objective
@@ -85,7 +85,7 @@
 - type: antag
   id: DummyThief
   name: roles-antag-thief-name
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: roles-antag-thief-objective
@@ -98,7 +98,7 @@
 - type: antag
   id: ConsentDAGD
   name: consent-dagd
-  antagonsist: true
+  antagonist: true
   setPreference: true
   visiblePreference: true
   objective: consent-dagd-desc
@@ -111,7 +111,7 @@
 - type: antag
   id: ConsentBeRRTarget
   name: consent-be-rr-target
-  antagonsist: true
+  antagonist: true
   setPreference: true
   # visiblePreference: true # Turn this on if you want this feature. Disabled while we have limited control over tot objectives
   objective: consent-be-rr-target-desc
