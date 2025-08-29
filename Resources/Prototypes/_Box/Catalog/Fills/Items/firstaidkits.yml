@@ -1,8 +1,7 @@
 - type: entity
-  parent: Medkit # TODO: Use unique IPC Medkit Sprite
+  parent: MedkitIPC
   id: MedkitIPCFilled
-  name: Basic IPC Repair Kit # TODO: Remove when parent updated
-  suffix: Filled
+  suffix: Filled, BoxStation
   components:
   - type: StorageFill
     contents:
@@ -12,10 +11,9 @@
     - id: WelderMini
 
 - type: entity
-  parent: MedkitAdvanced # TODO: Use unique IPC Medkit Sprite
+  parent: MedkitIPCAdvanced
   id: MedkitIPCAdvancedFilled
-  name: Advanced IPC Repair Kit # TODO: Remove when parent updated
-  suffix: Filled
+  suffix: Filled, BoxStation
   components:
   - type: StorageFill
     contents:
