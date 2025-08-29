@@ -14,6 +14,7 @@
   id: BloodBrotherConvertible
   name: roles-antag-blood-brother-convertible-name
   setPreference: true
+  visiblePreference: true # Box Change - Needed to make BB work with new antag system. Its already a consent check but its a mechanical one, fun!
   objective: roles-antag-blood-brother-objective
   guides: [ BloodBrothers ]
   requirements:

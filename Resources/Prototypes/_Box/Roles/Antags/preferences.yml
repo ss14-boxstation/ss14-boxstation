@@ -1,0 +1,117 @@
+# Upstream Antags
+## BB
+- type: antag
+  id: DummyBB
+  name: roles-antag-blood-brother-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-blood-brother-objective
+  guides: [BloodBrothers]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1h
+
+## Nukies/LoneOp
+- type: antag
+  id: DummyNukeOps
+  name: roles-antag-nuclear-operative-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-nuclear-operative-objective
+  guides: [NuclearOperatives]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5h
+
+## Syndie
+- type: antag
+  id: DummyNukeOpsMed
+  name: roles-antag-nuclear-operative-agent-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-nuclear-operative-agent-objective
+  guides: [NuclearOperatives]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5h
+  - !type:RoleTimeRequirement
+    role: JobChemist
+    time: 10800 # 3h
+
+- type: antag
+  id: DummyNukeOpsCommander
+  name: roles-antag-nuclear-operative-commander-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-nuclear-operative-commander-objective
+  guides: [NuclearOperatives]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 18000 # 5h
+
+## Syndie
+- type: antag
+  id: DummySyndie
+  name: roles-antag-syndicate-agent-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-syndicate-agent-objective
+  guides: [Traitors]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1h
+
+- type: antag
+  id: DummySyndieSleeper
+  name: roles-antag-syndicate-agent-sleeper-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-syndicate-agent-sleeper-objective
+  guides: [Traitors]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1h
+
+## Thief
+- type: antag
+  id: DummyThief
+  name: roles-antag-thief-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-thief-objective
+  guides: [Thieves]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1h
+
+## DAGD Consent
+- type: antag
+  id: ConsentDAGD
+  name: consent-dagd
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: consent-dagd-desc
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5h
+
+# Objective Consent
+## RR
+- type: antag
+  id: ConsentBeRRTarget
+  name: consent-be-rr-target
+  antagonist: true
+  setPreference: true
+  visiblePreference: true # Turn this on if you want this feature. Disabled while we have limited control over tot objectives
+  objective: consent-be-rr-target-desc
