@@ -283,6 +283,7 @@
         - DiscreteHealthAnalyzer
         - SurgeryTool
         - Dropper
+        - IPCTopical # Box Change - Allow IPC Topicals into medical belts
       components:
         - Hypospray
         - Injector

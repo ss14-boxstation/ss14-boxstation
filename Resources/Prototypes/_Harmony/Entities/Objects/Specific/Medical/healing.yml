@@ -23,6 +23,9 @@
     count: 10
   - type: StackPrice
     price: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   parent: IPCOilPack
@@ -55,6 +58,9 @@
   - type: Stack
     stackType: CablePack
     count: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   parent: CablePack
@@ -89,6 +95,9 @@
     count: 10
   - type: StackPrice
     price: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   parent: ComponentPack
@@ -125,6 +134,9 @@
     count: 10
   - type: StackPrice
     price: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   parent: RobotStructPack
@@ -155,6 +167,9 @@
     count: 1
   - type: StackPrice
     price: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   name: chassis patch
@@ -195,6 +210,9 @@
     count: 10
   - type: StackPrice
     price: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   id: ChassisPatch1

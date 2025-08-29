@@ -1,0 +1,25 @@
+- type: entity
+  parent: Medkit # TODO: Use unique IPC Medkit Sprite
+  id: MedkitIPCFilled
+  name: Basic IPC Repair Kit # TODO: Remove when parent updated
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+      amount: 2
+    - id: CablePack
+    - id: WelderMini
+
+- type: entity
+  parent: MedkitAdvanced # TODO: Use unique IPC Medkit Sprite
+  id: MedkitIPCAdvancedFilled
+  name: Advanced IPC Repair Kit # TODO: Remove when parent updated
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+    - id: ComponentPack
+    - id: RobotStructPack
+    - id: ReplacementLenses
