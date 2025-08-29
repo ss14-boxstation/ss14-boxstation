@@ -1,0 +1,23 @@
+- type: entity
+  parent: MedkitIPC
+  id: MedkitIPCFilled
+  suffix: Filled, BoxStation
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+      amount: 2
+    - id: CablePack
+    - id: WelderMini
+
+- type: entity
+  parent: MedkitIPCAdvanced
+  id: MedkitIPCAdvancedFilled
+  suffix: Filled, BoxStation
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+    - id: ComponentPack
+    - id: RobotStructPack
+    - id: ReplacementLenses

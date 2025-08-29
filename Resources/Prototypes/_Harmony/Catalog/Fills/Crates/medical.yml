@@ -7,10 +7,13 @@
   components:
   - type: StorageFill
     contents:
-    - id: ChassisPatch
-      amount: 2
-    - id: CablePack
-    - id: WelderMini
+    # Box Change Start - Move list to medkit
+    # - id: ChassisPatch
+    #   amount: 2
+    # - id: CablePack
+    # - id: WelderMini
+    - id: MedkitIPCFilled
+    # Box Change End
 
 - type: entity
   parent: CrateMedical
@@ -21,10 +24,13 @@
   components:
   - type: StorageFill
     contents:
-    - id: ChassisPatch
-    - id: ComponentPack
-    - id: RobotStructPack
-    - id: ReplacementLenses
+    # Box Change Start - Move list to medkit
+    # - id: ChassisPatch
+    # - id: ComponentPack
+    # - id: RobotStructPack
+    # - id: ReplacementLenses
+    - id: MedkitIPCAdvancedFilled
+    # Box Change End
 
 - type: entity
   parent: CrateMedical

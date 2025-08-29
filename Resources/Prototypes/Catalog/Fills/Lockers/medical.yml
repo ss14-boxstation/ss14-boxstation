@@ -14,6 +14,7 @@
       amount: !type:ConstantNumberSelector
         value: 2
     - id: Gauze
+    - id: MedkitIPCFilled # Box Change - Give Medbay starting supply of IPC Topicals
 
 - type: entity
   parent: LockerMedicine

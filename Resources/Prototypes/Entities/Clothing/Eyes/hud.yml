@@ -14,6 +14,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: ShowHealthBars
+    damageContainers: # Box Change - Make IPCs show up on MedHUDs
+    - Biological
+    - HumanoidSilicon
   - type: ShowHealthIcons
 
 - type: entity
