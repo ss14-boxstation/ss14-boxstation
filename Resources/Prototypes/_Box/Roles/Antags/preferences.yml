@@ -113,5 +113,5 @@
   name: consent-be-rr-target
   antagonist: true
   setPreference: true
-  # visiblePreference: true # Turn this on if you want this feature. Disabled while we have limited control over tot objectives
+  visiblePreference: true # Turn this on if you want this feature. Disabled while we have limited control over tot objectives
   objective: consent-be-rr-target-desc
