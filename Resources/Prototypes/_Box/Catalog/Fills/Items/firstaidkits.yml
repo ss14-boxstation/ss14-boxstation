@@ -1,7 +1,6 @@
 - type: entity
   parent: MedkitIPC
   id: MedkitIPCFilled
-  name: General IPC Repair Kit
   suffix: Filled, BoxStation
   components:
   - type: StorageFill
@@ -14,7 +13,6 @@
 - type: entity
   parent: MedkitIPCAdvanced
   id: MedkitIPCAdvancedFilled
-  name: Specialized IPC Repair Kit
   suffix: Filled, BoxStation
   components:
   - type: StorageFill

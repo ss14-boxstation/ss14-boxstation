@@ -160,13 +160,13 @@
       damageBleedModifiers: BloodlossIPC
       # bloodReagent: Oil
       bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
-      bleedReductionAmount: 0.25 # Box Change - 0 > 0.25 - Less than an organic (no clotting), but still there
-      # bloodMaxVolume: 100 # Box Change - Comments out to revert to default value
+      bleedReductionAmount: 0
+      bloodMaxVolume: 100
       chemicalMaxVolume: 0
       bleedPuddleThreshold: 3
       bloodRefreshAmount: 0
-      bloodlossThreshold: 0.7 # Box Change - 0.8 > 0.7 - IPCs bleed for longer and cannot restore blood naturally. Bleeding should punish them less.
-      # maxBleedAmount: 2 # not a lot, but its hard to stop # Box Change - Comments out to default value.
+      bloodlossThreshold: 0.8
+      maxBleedAmount: 2 # not a lot, but its hard to stop
       bloodlossDamage:
         types:
           Blunt: 0.1 # lubricant is running low
@@ -336,11 +336,3 @@
     # - type: Anesthesia # DeltaV - IPCs can be operated on without anesthesia # Harmony Change, Comments out Shitmed
     # Harmony Change End
     - type: Crawler # Box Change - Allows IPCs to crawl because they are a round start speceis
-    - type: PassiveDamage # Box Change - Allow IPCs to heal their own bloodloss
-      allowedStates:
-      - Alive
-      damageCap: 20
-      damage:
-        types:
-          Heat: -0.07
-          Blunt: -0.07
