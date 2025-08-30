@@ -26,6 +26,9 @@
   - type: Stack
     stackType: OmniPatch
     count: 10
+  - type: Tag # Box Change - Allow IPC Topicals in Medical Belts
+    tags:
+    - IPCTopical
 
 - type: entity
   id: Omnipatch1

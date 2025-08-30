@@ -1,0 +1,25 @@
+- type: entity
+  parent: MedkitIPC
+  id: MedkitIPCFilled
+  name: General IPC Repair Kit
+  suffix: Filled, BoxStation
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+      amount: 2
+    - id: CablePack
+    - id: WelderMini
+
+- type: entity
+  parent: MedkitIPCAdvanced
+  id: MedkitIPCAdvancedFilled
+  name: Specialized IPC Repair Kit
+  suffix: Filled, BoxStation
+  components:
+  - type: StorageFill
+    contents:
+    - id: ChassisPatch
+    - id: ComponentPack
+    - id: RobotStructPack
+    - id: ReplacementLenses
