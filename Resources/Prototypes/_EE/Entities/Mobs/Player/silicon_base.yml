@@ -336,4 +336,3 @@
     # - type: Anesthesia # DeltaV - IPCs can be operated on without anesthesia # Harmony Change, Comments out Shitmed
     # Harmony Change End
     - type: Crawler # Box Change - Allows IPCs to crawl because they are a round start speceis
-    
