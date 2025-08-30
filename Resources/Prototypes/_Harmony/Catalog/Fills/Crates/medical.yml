@@ -1,9 +1,9 @@
 - type: entity
   parent: CrateMedical
   id: CrateIPCRepairBasic
-  name: basic IPC repair crate
+  name: general IPC repair crate
   suffix: Harmony
-  description: the barebone basics of IPC repair
+  description: the common tools for IPC repair
   components:
   - type: StorageFill
     contents:
@@ -18,9 +18,9 @@
 - type: entity
   parent: CrateMedical
   id: CrateIPCRepairAdvanced
-  name: advanced IPC repair crate
+  name: specialized IPC repair crate
   suffix: Harmony
-  description: most of what you need to repair any IPC
+  description: for when an IPC has uncommon injuries
   components:
   - type: StorageFill
     contents:

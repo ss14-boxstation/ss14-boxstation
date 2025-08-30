@@ -4,8 +4,8 @@
   time: 10
   group: Medicinal
   reagents:
-    IndustrialLubricant: 20
-    ComputerCoolant: 20
+    IndustrialLubricant: 10
+    ComputerCoolant: 10
 
 - type: microwaveMealRecipe
   id: RecipeOmniPatch
