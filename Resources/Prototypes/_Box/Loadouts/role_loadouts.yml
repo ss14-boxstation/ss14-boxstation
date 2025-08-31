@@ -1,0 +1,10 @@
+- type: roleLoadout
+  id: JobSupplyAssistant
+  groups:
+  - GroupTankHarness
+  - SupplyAssistantJumpsuit
+  - CargoTechnicianBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool

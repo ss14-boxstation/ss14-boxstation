@@ -7,6 +7,7 @@
   - CargoTechnician
   - Quartermaster
   - SalvageSpecialist
+  - SupplyAssistant # Box Change
 
 - type: department
   id: Civilian

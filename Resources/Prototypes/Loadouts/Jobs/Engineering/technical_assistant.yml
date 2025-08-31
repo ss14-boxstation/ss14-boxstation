@@ -1,10 +1,10 @@
 # Jumpsuit
 - type: loadout
-  id: YellowJumpsuit
+  id: OrangeJumpsuit # Box Change - Supply Assistant - Yellow > Orange
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorYellow
+    jumpsuit: ClothingUniformJumpsuitColorOrange # Box Change - Supply Assistant - Yellow > Orange
 
 - type: loadout
-  id: YellowJumpskirt
+  id: OrangeJumpskirt # Box Change - Supply Assistant - Yellow > Orange
   equipment:
-    jumpsuit: ClothingUniformJumpskirtColorYellow
+    jumpsuit: ClothingUniformJumpskirtColorOrange # Box Change - Supply Assistant - Yellow > Orange
