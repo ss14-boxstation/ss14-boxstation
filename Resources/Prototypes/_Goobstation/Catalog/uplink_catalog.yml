@@ -15,3 +15,14 @@
       tags:
       - NukeOpsUplink
 # end Harmony change
+
+- type: listing
+  id: UplinkMobRoachMicrobomb
+  name: uplink-mobroach-microbomb-name
+  description: uplink-mobroach-microbomb-desc
+  icon: { sprite: _Goobstation/Objects/Devices/communication.rsi, state: radio-syndiroach }
+  productEntity: ReinforcementRadioSyndicateSyndiRoach
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkAllies
