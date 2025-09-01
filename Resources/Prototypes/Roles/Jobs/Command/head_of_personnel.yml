@@ -6,19 +6,29 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 0 # 0 hours
+      time: 7200 # Box: 2 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 0 # 0 hours
+      time: 7200 # Box: 2 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 0 # 0 hrs
+      time: 7200 # Box: 2 hrs
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 14400 # 4 hrs
+      time: 28800 # Box: 8 hrs
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 14400 # 4 hours
+      time: 7200 # Box: 2 hours
+    # Box Change Start
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 7200 # 2 hours
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 7200 # 2 hours
+    - !type:OverallPlaytimeRequirement
+      time: 43200 #12 hrs
+    # Box Change End
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"

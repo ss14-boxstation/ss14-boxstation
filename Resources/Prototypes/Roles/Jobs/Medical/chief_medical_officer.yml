@@ -6,9 +6,14 @@
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
+  # Box Change Start
+    - !type:RoleTimeRequirement
+      role: JobParamedic
+      time: 14400 # 4 hrs
+  # Box Change End
     - !type:RoleTimeRequirement
       role: JobChemist
-      time: 0 #0 hrs
+      time: 14400 # Box: 4 hrs
     - !type:RoleTimeRequirement
       role: JobMedicalDoctor
       time: 0 #0 hrs

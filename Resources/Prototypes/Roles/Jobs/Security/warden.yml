@@ -7,8 +7,13 @@
 # Harmony Change
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 14400 # 4 hrs
+      time: 28800 # Box: 8 hrs
 # End Harmony
+# Box Change Start
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 21600 # 6 hrs
+# End Box Change
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

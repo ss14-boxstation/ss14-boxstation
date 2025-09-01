@@ -6,6 +6,11 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 0 # 0 hrs
+    # Box Change Start
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 7200 # 2 hours
+    # Box Change End
   startingGear: LawyerGear
   icon: "JobIconLawyer"
   supervisors: job-supervisors-hop

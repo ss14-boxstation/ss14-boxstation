@@ -6,7 +6,7 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
-      time: 0 #0 hrs
+      time: 14400 # Box: 4 hrs
     - !type:RoleTimeRequirement
       role: JobStationEngineer
       time: 0 #0hrs

@@ -6,16 +6,38 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 7200 # 2 hours
+      time: 0 # Box: 0 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 7200 # 2 hours
+      time: 0 # Box: 0 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200 # 2 hours
+      time: 0 # Box: 0 hours
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 21600 # 6 hours
+      time: 28800 # Box: 8 hours
+    # Box Change Start
+    - !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 7200 # 2 hrs
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 7200 # 2 hrs
+    - !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 7200 # 2 hrs
+    - !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
+      time: 7200 # 2 hrs
+    - !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 7200 # 2 hrs
+    - !type:RoleTimeRequirement
+      role: JobResearchDirector
+      time: 7200 # 2 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 54000 # 15 hrs
+    # Box Change End
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

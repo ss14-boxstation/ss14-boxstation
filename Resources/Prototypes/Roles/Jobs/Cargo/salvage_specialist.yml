@@ -4,6 +4,11 @@
   description: job-description-salvagespec
   playTimeTracker: JobSalvageSpecialist
   requirements:
+# Box Change Start
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 18000 #5 hrs
+# Box Change End
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 0

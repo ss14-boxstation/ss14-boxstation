@@ -7,6 +7,11 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 0 #0 hrs
+  # Box Change Start
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 18000 # 5 hrs
+  # Box Change End
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo

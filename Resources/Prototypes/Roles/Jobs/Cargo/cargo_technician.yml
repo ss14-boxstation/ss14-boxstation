@@ -3,6 +3,12 @@
   name: job-name-cargotech
   description: job-description-cargotech
   playTimeTracker: JobCargoTechnician
+# Box Change Start
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 18000 # 5 hrs
+# Box Change End
   startingGear: CargoTechGear
   icon: "JobIconCargoTechnician"
   supervisors: job-supervisors-qm

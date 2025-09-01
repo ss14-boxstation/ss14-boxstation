@@ -6,7 +6,10 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 10800 # Harmony: 3hrs
+      time: 21600 # Box: 6hrs
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 7200 # Box: 2hrs
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 0 # Harmony: 0 hrs
@@ -14,7 +17,7 @@
       department: Security
       time: 36000 # Harmony: 10 hrs
     - !type:OverallPlaytimeRequirement
-      time: 43200 # Harmony: 12 hrs
+      time: 54000 # Box: 15 hrs
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
