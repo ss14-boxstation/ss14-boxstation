@@ -2,6 +2,7 @@
   parent: PassengerIDCard
   id: SupplyAssistantIDCard
   name: supply assistant ID card
+  suffix: BoxStation
   components:
   - type: PresetIdCard
     job: SupplyAssistant

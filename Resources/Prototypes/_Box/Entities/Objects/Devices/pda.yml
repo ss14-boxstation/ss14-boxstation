@@ -2,6 +2,7 @@
   parent: BasePDA
   id: SupplyAssistantPDA
   name: supply assistant PDA
+  suffix: BoxStation
   description: Why isn't it orange?
   components:
   - type: Sprite

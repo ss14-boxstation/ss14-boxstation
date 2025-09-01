@@ -1,7 +1,8 @@
 - type: entity
-  id: SpawnPointSupplyAssistant
   parent: SpawnPointJobBase
+  id: SpawnPointSupplyAssistant
   name: supply assistant
+  suffix: BoxStation
   components:
   - type: SpawnPoint
     job_id: SupplyAssistant
