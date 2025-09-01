@@ -6,35 +6,23 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 0 # Box: 0 hours
+      time: 7200 # 2 hours
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 0 # Box: 0 hours
+      time: 7200 # 2 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 0 # Box: 0 hours
+      time: 7200 # 2 hours
     - !type:DepartmentTimeRequirement
       department: Command
       time: 28800 # Box: 8 hours
     # Box Change Start
-    - !type:RoleTimeRequirement
-      role: JobHeadOfPersonnel
-      time: 7200 # 2 hrs
-    - !type:RoleTimeRequirement
-      role: JobHeadOfSecurity
-      time: 7200 # 2 hrs
-    - !type:RoleTimeRequirement
-      role: JobChiefEngineer
-      time: 7200 # 2 hrs
-    - !type:RoleTimeRequirement
-      role: JobChiefMedicalOfficer
-      time: 7200 # 2 hrs
-    - !type:RoleTimeRequirement
-      role: JobQuartermaster
-      time: 7200 # 2 hrs
-    - !type:RoleTimeRequirement
-      role: JobResearchDirector
-      time: 7200 # 2 hrs
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 7200 # 2 hours
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 7200 # 2 hours
     - !type:OverallPlaytimeRequirement
       time: 54000 # 15 hrs
     # Box Change End
