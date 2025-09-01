@@ -1,0 +1,7 @@
+- type: mapModification
+  id: MiraSupplyAssistant
+  applyOn:
+  - Mira
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: -7.5, -50.5

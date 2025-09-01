@@ -26,3 +26,11 @@
   - ClothingNeckScarfStripedNonBinary
   - ClothingNeckScarfStripedRainbow
   - ClothingNeckScarfStripedTrans
+
+# Jobs
+- type: loadoutGroup
+  id: SupplyAssistantJumpsuit
+  name: loadout-group-supply-assistant-jumpsuit
+  loadouts:
+  - YellowJumpsuit
+  - YellowJumpskirt

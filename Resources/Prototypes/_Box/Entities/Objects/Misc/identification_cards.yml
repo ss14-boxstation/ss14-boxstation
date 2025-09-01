@@ -1,0 +1,13 @@
+- type: entity
+  parent: PassengerIDCard
+  id: SupplyAssistantIDCard
+  name: supply assistant ID card
+  suffix: BoxStation
+  components:
+  - type: PresetIdCard
+    job: SupplyAssistant
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idintern-cargo
+      sprite: _Box/Objects/Misc/id_cards.rsi

@@ -1,0 +1,7 @@
+- type: mapModification
+  id: AmberSupplyAssistant
+  applyOn:
+  - Amber
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 1.5, 22.5

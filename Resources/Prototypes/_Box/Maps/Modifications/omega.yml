@@ -1,0 +1,7 @@
+- type: mapModification
+  id: OmegaSupplyAssistant
+  applyOn:
+  - Omega
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 19.5, 20.5

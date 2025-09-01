@@ -819,8 +819,10 @@
   id: TechnicalAssistantJumpsuit
   name: loadout-group-technical-assistant-jumpsuit
   loadouts:
-  - YellowJumpsuit
-  - YellowJumpskirt
+  # Box Change Start - Supply Assistant - Yellow > Orange
+  - OrangeJumpsuit
+  - OrangeJumpskirt
+  # Box Change End
 
 - type: loadoutGroup
   id: StationEngineerHead

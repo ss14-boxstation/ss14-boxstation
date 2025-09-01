@@ -1,0 +1,7 @@
+- type: mapModification
+  id: BagelSupplyAssistant
+  applyOn:
+  - Bagel
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 44.5, 6.5

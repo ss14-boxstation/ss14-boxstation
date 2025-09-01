@@ -1,0 +1,7 @@
+- type: mapModification
+  id: FlandSupplyAssistant
+  applyOn:
+  - Fland
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 1.5, -20.5

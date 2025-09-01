@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "SS14 Job Icons originally Taken from https://github.com/vgstation-coders/vgstation13/blob/e71d6c4fba5a51f99b81c295dcaec4fc2f58fb19/icons/mob/screen1.dmi | Supply Assistant Icons taken from https://github.com/space-wizards/space-station-14/pull/38227 by Hitlinemoss (GitHub)",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "SupplyAssistant"
+        }
+    ]
+}

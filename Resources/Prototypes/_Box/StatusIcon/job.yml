@@ -1,0 +1,7 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSupplyAssistant
+  icon:
+    sprite: /Textures/_Box/Interface/Misc/job_icons.rsi
+    state: SupplyAssistant
+  jobName: job-name-supply-assistant

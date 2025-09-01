@@ -1,0 +1,13 @@
+- type: entity
+  parent: SpawnPointJobBase
+  id: SpawnPointSupplyAssistant
+  name: supply assistant
+  suffix: BoxStation
+  components:
+  - type: SpawnPoint
+    job_id: SupplyAssistant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: supplyassistant
+        sprite: _Box/Markers/job.rsi

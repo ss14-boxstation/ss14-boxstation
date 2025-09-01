@@ -1,0 +1,7 @@
+- type: mapModification
+  id: PackedSupplyAssistant
+  applyOn:
+  - Packed
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 10.5, 22.5

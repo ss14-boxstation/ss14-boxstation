@@ -16,7 +16,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationJobs
-          availableJobs: # 48 jobs total w/o latejoins & interns, 57 jobs total w/ latejoins & interns
+          availableJobs: # 48 jobs total w/o latejoins & interns, 59 jobs total w/ latejoins & interns # Box Change - 57 > 59
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -54,6 +54,7 @@
             #supply (4)
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 2, 2 ]
+            SupplyAssistant: [ 2, 2 ] # Box Change - Adds Supply Assistant - intern, not counted
             #civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]

@@ -18,7 +18,7 @@
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_elkridge.yml
         - type: StationJobs
-          availableJobs: # 46 jobs total w/o latejoins & interns, 61 jobs total w/ latejoins & interns
+          availableJobs: # 46 jobs total w/o latejoins & interns, 63 jobs total w/ latejoins & interns # Box Change - 61 > 63
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -58,6 +58,7 @@
             #supply (4 - 5)
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 2, 3 ]
+            SupplyAssistant: [ 2, 2 ] # Box Change - Adds Supply Assistant - intern, not counted
             #civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]
