@@ -18,7 +18,7 @@
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_plasma.yml
         - type: StationJobs
-          availableJobs: # 66 jobs total w/o latejoins & interns, 91 jobs total w/ latejoins & interns
+          availableJobs: # 66 jobs total w/o latejoins & interns, 91 jobs total w/ latejoins & interns # Box Change - 91 > 95
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -58,6 +58,7 @@
             #supply (8 - 10)
             SalvageSpecialist: [ 4, 4 ] #the salvagers yearn for the mines
             CargoTechnician: [ 4, 6 ]
+            SupplyAssistant: [ 4, 4 ] # Box Change - Adds Supply Assistant - intern, not counted
             #civilian (3 - 4+)
             Passenger: [ -1, -1 ]  #infinite, the tiders yearn for the mines
             Clown: [ 1, 2 ] # this might be fun!

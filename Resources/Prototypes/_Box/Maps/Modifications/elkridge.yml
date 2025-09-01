@@ -1,0 +1,7 @@
+- type: mapModification
+  id: ElkridgeSupplyAssistant
+  applyOn:
+  - Elkridge
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 5.5, 35.5

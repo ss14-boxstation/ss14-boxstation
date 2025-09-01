@@ -17,7 +17,7 @@
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_fland.yml
         - type: StationJobs
-          availableJobs: # 81 jobs total w/o latejoins & interns, 101 jobs total w/ latejoins & interns
+          availableJobs: # 81 jobs total w/o latejoins & interns, 105 jobs total w/ latejoins & interns # Box Change - 101 > 105
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -56,6 +56,7 @@
             #supply (9)
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 6, 6 ]
+            SupplyAssistant: [ 4, 4 ] # Box Change - Adds Supply Assistant - intern, not counted
             #civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]

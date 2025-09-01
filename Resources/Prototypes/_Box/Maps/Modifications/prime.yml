@@ -1,0 +1,7 @@
+- type: mapModification
+  id: PrimeSupplyAssistant
+  applyOn:
+  - Prime
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: 9.5, -25.5

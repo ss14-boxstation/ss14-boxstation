@@ -1,0 +1,7 @@
+- type: mapModification
+  id: BarratrySupplyAssistant
+  applyOn:
+  - Barratry
+  additions:
+  - prototype: SpawnPointSupplyAssistant
+    position: -38.5 -5.5

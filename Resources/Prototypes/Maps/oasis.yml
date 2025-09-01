@@ -15,7 +15,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_accordia.yml
         - type: StationJobs
-          availableJobs: # 72 jobs total w/o latejoins & interns, 91 jobs total w/ latejoins & interns
+          availableJobs: # 72 jobs total w/o latejoins & interns, 95 jobs total w/ latejoins & interns # Box Change - 91 > 95
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -56,6 +56,7 @@
             #supply (7)
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 4, 4 ]
+            SupplyAssistant: [ 4, 4 ] # Box Change - Adds Supply Assistant - intern, not counted
             #civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]
