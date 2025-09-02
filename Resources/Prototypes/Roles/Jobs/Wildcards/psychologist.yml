@@ -3,6 +3,12 @@
   name: job-name-psychologist
   description: job-description-psychologist
   playTimeTracker: JobPsychologist
+  # Box Change Start
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 7200 # 2 hrs
+  # Box Change End
   startingGear: PsychologistGear
   icon: "JobIconPsychologist"
   supervisors: job-supervisors-cmo

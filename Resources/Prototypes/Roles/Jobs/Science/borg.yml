@@ -8,7 +8,12 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobBorg
-    time: 14400 # Harmony change: 5hrs -> 4 hrs
+    time: 18000 # Box: 5hrs
+  # Box Change Start
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 18000 # 5 hours
+  # Box Change End
   canBeAntag: false
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
@@ -23,7 +28,7 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 14400 # 4 hrs
+      time: 18000 # Box: 5 hrs
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd

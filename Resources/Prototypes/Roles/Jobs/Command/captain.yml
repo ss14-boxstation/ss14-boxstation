@@ -15,7 +15,17 @@
       time: 7200 # 2 hours
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 21600 # 6 hours
+      time: 28800 # Box: 8 hours
+    # Box Change Start
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 7200 # 2 hours
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 7200 # 2 hours
+    - !type:OverallPlaytimeRequirement
+      time: 54000 # 15 hrs
+    # Box Change End
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

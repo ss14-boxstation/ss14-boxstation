@@ -6,7 +6,12 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 7200 # 2 hours
+      time: 21600 # Box: 6 hours
+  # Box Change Start
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 14400 # 4 hrs
+  # Box Change End
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
