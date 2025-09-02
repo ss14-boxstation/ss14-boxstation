@@ -20,7 +20,7 @@
   id: UplinkMobRoachMicrobomb
   name: uplink-mobroach-microbomb-name
   description: uplink-mobroach-microbomb-desc
-  icon: { sprite: _Goobstation/Objects/Devices/communication.rsi, state: radio-syndiroach }
+  icon: { sprite: _Harmony/Objects/Devices/communication.rsi, state: old-radio-syndiroach }
   productEntity: ReinforcementRadioSyndicateSyndiRoach
   cost:
     Telecrystal: 6 # Box - Modified since Goob has different TC ratios.
