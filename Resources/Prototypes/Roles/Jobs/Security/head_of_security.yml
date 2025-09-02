@@ -7,9 +7,11 @@
     - !type:RoleTimeRequirement
       role: JobWarden
       time: 21600 # Box: 6hrs
+    # Box Change Start
     - !type:RoleTimeRequirement
       role: JobDetective
-      time: 7200 # Box: 2hrs
+      time: 7200 # 2hrs
+    # Box Change End
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 0 # Harmony: 0 hrs
