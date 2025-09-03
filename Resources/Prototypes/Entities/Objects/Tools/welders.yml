@@ -116,9 +116,9 @@
         Brute: -15 # 5 for each, like a bruise pack
       types:
         Cold: -1 # Structural Repair
-        Caustic: -1 # Structural Repair
+        # Caustic: -1 # Structural Repair # Box Change
     # bleedingModifier: -20 # DeltaV - IPCs bleed
-    bleedingModifier: -10 # Parity with Gauze
+    # bleedingModifier: -10 # Parity with Gauze # Box Change
 # Harmony Change Ends
 
 - type: entity

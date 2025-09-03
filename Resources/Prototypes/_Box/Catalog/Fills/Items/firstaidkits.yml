@@ -7,9 +7,9 @@
   - type: StorageFill
     contents:
     - id: ChassisPatch
-      amount: 2
     - id: CablePack
-    - id: WelderMini
+    - id: RobotStructPack
+    - id: IPCOilPack
 
 - type: entity
   parent: MedkitIPCAdvanced
@@ -19,7 +19,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: ChassisPatch
+    - id: IPCOilPack
     - id: ComponentPack
-    - id: RobotStructPack
+      amount: 2
     - id: ReplacementLenses
