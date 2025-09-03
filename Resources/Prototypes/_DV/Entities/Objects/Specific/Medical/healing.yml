@@ -17,11 +17,11 @@
     # - Silicon # Harmony Change, as long as Borgs are immune to Radiation, trying to remove radiation damage from them crashes the game
     damage:
       groups:
-        Burn: -60 # 25 per type
-        Brute: -60 # 20 per type, mostly irrelevant cause welder gaming
+        Burn: -120 # Box Change - -60 > -120 - 30 per
+        Brute: -90 # Box Change - -60 > -90 - 30 per
       types:
-        Radiation: -20 # Harmony Change, IPC Omnizine
-    modifyBloodLevel: 25 # restores a lot of blood for IPCs.
+        Radiation: -30 # Harmony Change, IPC Omnizine # Box Change - -20 > -30
+    modifyBloodLevel: 45 # restores a lot of blood for IPCs. # Box Change - 25 > 45
     bloodlossModifier: -20 # DeltaV - IPCs bleed
   - type: Stack
     stackType: OmniPatch
