@@ -170,8 +170,8 @@
       # maxBleedAmount: 2 # not a lot, but its hard to stop # Box Change - Comments out to default value.
       bloodlossDamage:
         types:
-          Blunt: 0.1 # lubricant is running low
-          Heat: 0.1 # Harmony Change, Overheating from no coolant
+          Blunt: 0.25 # lubricant is running low # Box Change - 0.1 > 0.25
+          Heat: 0.25 # Harmony Change, Overheating from no coolant # Box Change - 0.1 > 0.25
       bloodlossHealDamage:
         types:
           Burn: 0 # end DeltaV
@@ -343,5 +343,5 @@
       damageCap: 20
       damage:
         types:
-          Heat: -0.07
-          Blunt: -0.07
+          Heat: -0.02
+          Blunt: -0.02
