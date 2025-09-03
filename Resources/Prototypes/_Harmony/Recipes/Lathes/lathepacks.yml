@@ -88,10 +88,14 @@
   - ComponentPack
   - RobotStructPack
   - ReplacementLenses
-  - ChassisPatch
+  # - ChassisPatch # Box Change
 
 - type: latheRecipePack
   id: HarmonyIPCMedicalStatic # Allows these two to also be made in the MediFab
   recipes:
   - ReplacementLenses
   - ChassisPatch
+  # Box Change Start
+  - CablePack
+  - RobotStructPack
+  # Box Change End
