@@ -11,3 +11,24 @@
   icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: robot-trauma }
   spawn: RobotTraumaPatch
   maxCount: 10
+
+- type: stack
+  id: AcidNeutralizationPatch
+  name: stack-acid-neutralization-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: acid-neutralization }
+  spawn: AcidNeutralizationPatch
+  maxCount: 10
+
+- type: stack
+  id: CoolingPatch
+  name: stack-cooling-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: cooling }
+  spawn: CoolingPatch
+  maxCount: 10
+
+- type: stack
+  id: DentRepairPatch
+  name: stack-dent-repair
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: dent-repair }
+  spawn: DentRepairPatch
+  maxCount: 10

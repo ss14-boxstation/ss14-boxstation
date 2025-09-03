@@ -20,8 +20,9 @@
 - type: entity
   parent: BaseAdvancedRobotTopical
   id: RobotBurnPatch
-  name: Robot Burn Patch
+  name: robot burn patch
   suffix: Full, BoxStation
+  description: A carefully calibrated pneumatic device capable of treating terrible burns on mechanical entities.
   components:
   - type: Sprite
     state: robot-burn
@@ -55,8 +56,9 @@
 - type: entity
   parent: BaseAdvancedRobotTopical
   id: RobotTraumaPatch
-  name: Robot Trauma Patch
+  name: robot rrauma patch
   suffix: Full, BoxStation
+  description: An electric welder capable of vaporizing metallically-charged medicinal compounds in the name of robot repair.
   components:
   - type: Sprite
     state: robot-trauma
@@ -89,3 +91,102 @@
 # Single Heal
 
 ## Caustic
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: AcidNeutralizationPatch
+  name: acid neutralization patch
+  suffix: Full, BoxStation
+  description: A transmetallodermal patch infused with an alkaline agent capable of neutralizing acids and reconstructing the damaged elements.
+  components:
+  - type: Sprite
+    state: acid-neutralization
+  - type: Item
+    heldPrefix: acid-neutralization
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Caustic: -30
+  - type: Stack
+    stackType: AcidNeutralizationPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: AcidNeutralizationPatch
+  id: AcidNeutralizationPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: AcidNeutralizationPatch
+    count: 1
+
+## Heat
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: CoolingPatch
+  name: cooling patch
+  suffix: Full, BoxStation
+  description: A medicinally-infused device capable of boosting a machine's cooling systems and repairing the damage of overheating
+  components:
+  - type: Sprite
+    state: cooling
+  - type: Item
+    heldPrefix: cooling
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Heat: -30
+  - type: Stack
+    stackType: CoolingPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: CoolingPatch
+  id: CoolingPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: CoolingPatch
+    count: 1
+
+## Blunt
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: DentRepairPatch
+  name: dent repair patch
+  suffix: Full, BoxStation
+  description: A suction cup infused with a medicinal agent capable of removing dents from metal exteriors.
+  components:
+  - type: Sprite
+    state: dent-repair
+  - type: Item
+    heldPrefix: dent-repair
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Blunt: -30
+  - type: Stack
+    stackType: DentRepairPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: DentRepairPatch
+  id: DentRepairPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: DentRepairPatch
+    count: 1
+
+## Shock
