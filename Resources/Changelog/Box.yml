@@ -1,8 +1,122 @@
-Entries:
-  - id: 2
-    author: "superjeepboy"
-    time: "2025-08-16T11:05:34.0000000+00:00"
-    url: "https://github.com/superjeepboy/ss14-boxstation/pull/2"
-    changes:
-    - type: "Add"
-      message: "Added Vuplkanins."
+﻿Entries:
+- author: superjeepboy
+  changes:
+  - message: Added Vuplkanins.
+    type: Add
+  id: 2
+  time: '2025-08-16T11:05:34.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/2
+<<<<<<< Updated upstream
+=======
+- author: BlueMoon059
+  changes:
+  - message: Randomly generated Rodentia now have names instead of generating an error
+      name.
+    type: Fix
+  id: 3
+  time: '2025-08-27T15:25:12.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/12
+- author: BlueMoon059
+  changes:
+  - message: Borgs now have emotes with custom SFX. They can laugh, cry, whistle,
+      sigh, and more.
+    type: Add
+  - message: IPCs have emotes again, and can now laugh, cry, whistle, etc.
+    type: Fix
+  id: 4
+  time: '2025-08-27T15:54:30.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/11
+- author: superjeepboy
+  changes:
+  - message: Initialized server changelog
+    type: Fix
+  id: 5
+  time: '2025-09-03T06:45:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/30
+- author: superjeepboy
+  changes:
+  - message: Added Rodentia
+    type: Add
+  id: 6
+  time: '2025-08-18T00:54:36.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/4
+- author: CollectionOfBones128
+  changes:
+  - message: IPCs can crawl and go prone again
+    type: Fix
+  id: 7
+  time: '2025-08-30T18:53:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/19
+- author: CollectionOfBones128
+  changes:
+  - message: IPC battery drain rate has been reduced to be more on par with organic
+      hunger speeds.
+    type: Tweak
+  id: 8
+  time: '2025-08-27T21:13:17.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/14
+- author: CollectionOfBones128
+  changes:
+  - message: IPC Bleeding rates have been tweaked
+    type: Tweak
+  - message: IPCs now stop bleeding over time
+    type: Tweak
+  - message: IPCs now have a bigger bloodstream
+    type: Tweak
+  - message: IPCs will now have to lose more Oil to suffer consequences
+    type: Tweak
+  - message: IPCs now naturally repair the blunt and heat they take from bleeding
+    type: Tweak
+  - message: Medbay now starts with a supply of IPC Oil Packs
+    type: Tweak
+  - message: The IPC Oil Pack recipe has had its cost halved
+    type: Tweak
+  - message: The IPC Repair Kits have been renamed for better clarity
+    type: Tweak
+  id: 9
+  time: '2025-08-30T19:30:31.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/21
+- author: BlueMoon059
+  changes:
+  - message: Adds Omega Station.
+    type: Add
+  id: 10
+  time: '2025-08-27T17:05:01.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/13
+- author: CollectionOfBones128
+  changes:
+  - message: Medbays now start with a small supply of IPC topicals
+    type: Tweak
+  id: 11
+  time: '2025-08-29T22:38:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/18
+- author: superjeepboy
+  changes:
+  - message: Engine maintenance
+    type: Tweak
+  id: 12
+  time: '2025-08-17T19:45:59.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/3
+- author: superjeepboy
+  changes:
+  - message: Fixed Changelog! Some things may be missing from here.
+    type: Fix
+  id: 13
+  time: '2025-09-03T06:24:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/29
+- author: BlueMoon059
+  changes:
+  - message: Adds scarfs to the trinkets menu.
+    type: Add
+  - message: Adds pride scarfs to the trinkets menu.
+    type: Add
+  id: 14
+  time: '2025-08-28T18:20:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/17
+- author: superjeepboy
+  changes:
+  - message: Added Vuplkanins.
+    type: Add
+  id: 15
+  time: '2025-08-16T11:05:34.0000000+00:00'
+  url: https://github.com/superjeepboy/ss14-boxstation/pull/2
