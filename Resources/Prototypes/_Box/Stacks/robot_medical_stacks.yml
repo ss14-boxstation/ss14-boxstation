@@ -1,0 +1,13 @@
+- type: stack
+  id: RobotBurnPatch
+  name: stack-robot-burn-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: robot-burn }
+  spawn: RobotBurnPatch
+  maxCount: 10
+
+- type: stack
+  id: RobotTraumaPatch
+  name: stack-robot-trauma-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: robot-trauma }
+  spawn: RobotTraumaPatch
+  maxCount: 10

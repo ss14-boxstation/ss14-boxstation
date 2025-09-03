@@ -1,0 +1,91 @@
+# Advanced IPC Topicals
+- type: entity
+  abstract: true
+  parent: BaseHealingItem
+  id: BaseAdvancedRobotTopical # Store the sprite path here for easy use
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Medical/AdvancedRobotTopicals.rsi
+  - type: Item
+    size: Small
+    sprite: _Box/Objects/Medical/AdvancedRobotTopicals.rsi
+    heldPrefix: acid-neutralization
+  - type: Tag
+    tags:
+    - IPCTopical
+
+# Multiheal
+
+## Burns
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: RobotBurnPatch
+  name: Robot Burn Patch
+  suffix: Full, BoxStation
+  components:
+  - type: Sprite
+    state: robot-burn
+  - type: Item
+    heldPrefix: robot-burn
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Heat: -20
+        Cold: -20
+        Shock: -20
+        Caustic: -20
+  - type: Stack
+    stackType: RobotBurnPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: RobotBurnPatch
+  id: RobotBurnPatch1
+  suffix: Single, BoxStation
+  components:
+  - type: Stack
+    stackType: RobotBurnPatch
+    count: 1
+
+## Brute
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: RobotTraumaPatch
+  name: Robot Trauma Patch
+  suffix: Full, BoxStation
+  components:
+  - type: Sprite
+    state: robot-trauma
+  - type: Item
+    heldPrefix: robot-trauma
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Blunt: -20
+        Piercing: -20
+        Slash: -20
+    bloodlossModifier: -5
+  - type: Stack
+    stackType: RobotTraumaPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: RobotTraumaPatch
+  id: RobotTraumaPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: RobotTraumaPatch
+    count: 1
+
+# Single Heal
+
+## Caustic
