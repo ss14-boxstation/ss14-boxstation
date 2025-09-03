@@ -111,3 +111,10 @@
   id: 15
   time: '2025-08-16T11:05:34.0000000+00:00'
   url: https://github.com/superjeepboy/ss14-boxstation/pull/2
+- author: superjeepboy
+  changes:
+  - message: Initialized server changelog
+    type: Fix
+  id: 16
+  time: '2025-09-03T06:45:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/30
