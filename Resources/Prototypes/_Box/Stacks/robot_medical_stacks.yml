@@ -28,7 +28,14 @@
 
 - type: stack
   id: DentRepairPatch
-  name: stack-dent-repair
+  name: stack-dent-repair-patch
   icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: dent-repair }
   spawn: DentRepairPatch
+  maxCount: 10
+
+- type: stack
+  id: ElectronicRepairPatch
+  name: stack-electronic-repair-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: electronic-repair }
+  spawn: ElectronicRepairPatch
   maxCount: 10

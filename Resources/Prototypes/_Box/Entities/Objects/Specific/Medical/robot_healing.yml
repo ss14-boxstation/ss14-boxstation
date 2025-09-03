@@ -190,3 +190,34 @@
     count: 1
 
 ## Shock
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: ElectronicRepairPatch
+  name: electronic repair patch
+  suffix: Full, BoxStation
+  # description:
+  components:
+  - type: Sprite
+    state: electronic-repair
+  - type: Item
+    heldPrefix: electronic-repair
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Shock: -30
+  - type: Stack
+    stackType: ElectronicRepairPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: ElectronicRepairPatch
+  id: ElectronicRepairPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: ElectronicRepairPatch
+    count: 1
