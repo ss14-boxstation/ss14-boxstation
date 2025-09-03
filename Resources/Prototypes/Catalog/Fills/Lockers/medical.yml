@@ -14,8 +14,12 @@
       amount: !type:ConstantNumberSelector
         value: 2
     - id: Gauze
-    - id: MedkitIPCFilled # Box Change - Give Medbay starting supply of IPC Topicals
-    - id: IPCOilPack # Box Change - Give Medbay a stating supply of IPC Oil
+    # Box Change Start - IPC Topicals
+    - id: ChassisPatch
+    - id: CablePack
+    - id: RobotStructPack
+    - id: IPCOilPack
+    # Box Change End
 
 - type: entity
   parent: LockerMedicine
