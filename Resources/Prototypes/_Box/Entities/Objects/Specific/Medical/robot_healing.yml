@@ -56,7 +56,7 @@
 - type: entity
   parent: BaseAdvancedRobotTopical
   id: RobotTraumaPatch
-  name: robot rrauma patch
+  name: robot trauma patch
   suffix: Full, BoxStation
   description: An electric welder capable of vaporizing metallically-charged medicinal compounds in the name of robot repair.
   components:
@@ -220,4 +220,136 @@
   components:
   - type: Stack
     stackType: ElectronicRepairPatch
+    count: 1
+
+## Pierce
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: PunctureRepairPatch
+  name: puncture repair patch
+  suffix: Full, BoxStation
+  # description:
+  components:
+  - type: Sprite
+    state: puncture-repair
+  - type: Item
+    heldPrefix: puncture-repair
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Piercing: -30
+  - type: Stack
+    stackType: PunctureRepairPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: PunctureRepairPatch
+  id: PunctureRepairPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: PunctureRepairPatch
+    count: 1
+
+## Rads
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: ShieldingPatch
+  name: shielding patch
+  suffix: Full, BoxStation
+  # description:
+  components:
+  - type: Sprite
+    state: shielding
+  - type: Item
+    heldPrefix: shielding
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Radiation: -30
+  - type: Stack
+    stackType: ShieldingPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: ShieldingPatch
+  id: ShieldingPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: ShieldingPatch
+    count: 1
+
+## Slash
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: GashRepairPatch
+  name: gash repair patch
+  suffix: Full, BoxStation
+  # description:
+  components:
+  - type: Sprite
+    state: gash-repair
+  - type: Item
+    heldPrefix: gash-repar
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Slash: -30
+  - type: Stack
+    stackType: GashRepairPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: GashRepairPatch
+  id: GashRepairPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: GashRepairPatch
+    count: 1
+
+## Cold
+- type: entity
+  parent: BaseAdvancedRobotTopical
+  id: ThawingPatch
+  name: thawing patch
+  suffix: Full, BoxStation
+  # description:
+  components:
+  - type: Sprite
+    state: thawing
+  - type: Item
+    heldPrefix: thawing
+  - type: Healing
+    damageContainers:
+    - HumanoidSilicon
+    damage:
+      types:
+        Cold: -30
+  - type: Stack
+    stackType: ThawingPatch
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: ThawingPatch
+  id: ThawingPatch1
+  suffix: Singe, BoxStation
+  components:
+  - type: Stack
+    stackType: ThawingPatch
     count: 1

@@ -39,3 +39,31 @@
   icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: electronic-repair }
   spawn: ElectronicRepairPatch
   maxCount: 10
+
+- type: stack
+  id: PunctureRepairPatch
+  name: stack-puncture-repair-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: puncture-repair }
+  spawn: PunctureRepairPatch
+  maxCount: 10
+
+- type: stack
+  id: ShieldingPatch
+  name: stack-shielding-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: shielding }
+  spawn: ShieldingPatch
+  maxCount: 10
+
+- type: stack
+  id: GashRepairPatch
+  name: stack-gash-repair-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: gash-repair }
+  spawn: GashRepairPatch
+  maxCount: 10
+
+- type: stack
+  id: ThawingPatch
+  name: stack-thawing-patch
+  icon: { sprite: "/Textures/_Box/Objects/Medical/AdvancedRobotTopicals.rsi", state: thawing }
+  spawn: ThawingPatch
+  maxCount: 10
