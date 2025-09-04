@@ -195,7 +195,7 @@
   id: ElectronicRepairPatch
   name: electronic repair patch
   suffix: Full, BoxStation
-  # description:
+  description: A medicinally infused tool capable of repairing damage caused to components by unexpected short circuiting.
   components:
   - type: Sprite
     state: electronic-repair
@@ -228,7 +228,7 @@
   id: PunctureRepairPatch
   name: puncture repair patch
   suffix: Full, BoxStation
-  # description:
+  description: A transmetallodermal patch capable of repairing both the surface wounds and internal damaged associated with puncture wounds, such as those caused by bullets.
   components:
   - type: Sprite
     state: puncture-repair
@@ -261,7 +261,7 @@
   id: ShieldingPatch
   name: shielding patch
   suffix: Full, BoxStation
-  # description:
+  description: A medicated shielded pcb capable of replacing and repairing components damaged by strong sources of radiation.
   components:
   - type: Sprite
     state: shielding
@@ -294,7 +294,7 @@
   id: GashRepairPatch
   name: gash repair patch
   suffix: Full, BoxStation
-  # description:
+  description: A medicinal metallic foam applicator capable of securely sealing lacerations in mechanical entities.
   components:
   - type: Sprite
     state: gash-repair
@@ -327,7 +327,7 @@
   id: ThawingPatch
   name: thawing patch
   suffix: Full, BoxStation
-  # description:
+  description: An ointment capable of reversing the damage on structural plastics caused by freezing temperatures.
   components:
   - type: Sprite
     state: thawing
