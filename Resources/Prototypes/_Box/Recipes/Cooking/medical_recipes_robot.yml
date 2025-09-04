@@ -8,7 +8,7 @@
   reagents:
     Silicon: 5
     Copper: 5
-    Dermaline: 10
+    Dermaline: 20
 
 - type: microwaveMealRecipe
   id: RecipeRobotTraumaPatch
@@ -20,7 +20,7 @@
   reagents:
     Silicon: 5
     Bicaridine: 10
-    Tricordrazine: 10
+    Tricordrazine: 20
 
 - type: microwaveMealRecipe
   id: RecipeAcidNeutralizationPatch
@@ -31,7 +31,7 @@
     IPCOilPack: 1
   reagents:
     Silicon: 10
-    Sigynate: 10
+    Sigynate: 20
 
 - type: microwaveMealRecipe
   id: RecipeCoolingPatch
@@ -43,7 +43,7 @@
   reagents:
     Silicon: 5
     Water: 25
-    Pyrazine: 10
+    Pyrazine: 20
 
 - type: microwaveMealRecipe
   id: RecipeDentRepairPatch
@@ -55,7 +55,7 @@
   reagents:
     Silicon: 5
     Iron: 5
-    Bruizine: 10
+    Bruizine: 20
 
 - type: microwaveMealRecipe
   id: RecipeElectronicRepairPatch
@@ -67,7 +67,7 @@
   reagents:
     Silicon: 10
     Copper: 10
-    Insuzine: 10
+    Insuzine: 20
 
 - type: microwaveMealRecipe
   id: RecipePunctureRepairPatch
@@ -79,7 +79,7 @@
   reagents:
     Silicon: 5
     Aluminium: 15
-    Puncturase: 10
+    Puncturase: 20
 
 - type: microwaveMealRecipe
   id: RecipeShieldingPatch
@@ -92,7 +92,7 @@
     Silicon: 10
     Leporazine: 10
     Insuzine: 10
-    Arithrazine: 10
+    Arithrazine: 20
 
 - type: microwaveMealRecipe
   id: RecipeGashRepairPatch
@@ -104,7 +104,7 @@
   reagents:
     Silicon: 5
     FoamingAgent: 15
-    Lacerinol: 10
+    Lacerinol: 20
 
 - type: microwaveMealRecipe
   id: RecipeThawingPatch
@@ -115,5 +115,5 @@
     IPCOilPack: 1
   reagents:
     Silicon: 5
-    Leporazine: 10
+    Leporazine: 20
     Phosphorus: 5
