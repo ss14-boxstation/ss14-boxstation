@@ -25,11 +25,19 @@
   description: "Contains either an Advanced Positronic Brain, or an Advanced MMI, you're not quite sure."
   components:
     - type: Sprite
-      sprite: Objects/Specific/Robotics/mmi.rsi
-      state: posibrain-occupied
+      sprite: _Box/Mobs/Species/IPC/organs.rsi # Box Change
+      state: ipc-brain-off
     - type: Item
       size: Small
       heldPrefix: brain
+    # Box Change Start
+    - type: Metabolizer
+      maxReagents: 2
+      metabolizerTypes: [Human]
+      groups:
+      - id: Code
+      - id: Malware
+    # Box Change End
 # End Harmony Change
 
 - type: entity
@@ -50,7 +58,7 @@
   id: OrganIPCTongue
   parent: BaseIPCOrgan
   name: vocal modulator
-  description: "A vocal modulator, used to produce speech."
+  description: "A vocal modulator, used to produce speech. Also functions as a taste emulator." # Box Change - added flavour text for why IPCs can taste things
   components:
   - type: Sprite
     state: tongue
@@ -76,6 +84,20 @@
     state: heart-on
   - type: Organ
     # slotId: pump # Harmony Change, comments this out because I'm pretty sure its Shitmed
+  # Box Change Start
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [IPC]
+    groups:
+    - id: Industrial
+    - id: Medicine
+      filter: true
+    - id: Poison
+      filter: true
+    - id: Narcotic
+      filter: true
+    removeEmpty: true
+  # Box Change End
   # - type: Heart # Harmony Change, comments this out because I'm pretty sure its Shitmed
   # The following was already commented out on DeltaV
   # The heart 'metabolizes' medicines and poisons that aren't filtered out by other organs.
@@ -90,3 +112,28 @@
   #   - id: Medicine
   #   - id: Poison
   #   - id: Narcotic
+
+# Box Change Start - Adds Stomach
+- type: entity
+  parent: BaseIPCOrgan
+  id: OrganIPCStomach
+  name: catalytic processor
+  description: A miniature chemical manipulator and biofuel generator.
+  components:
+  - type: Sprite
+    sprite: _Box/Mobs/Species/IPC/organs.rsi # Box Change
+    state: ipc-stomach
+  - type: Organ
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50
+  - type: Stomach
+  - type: Metabolizer
+    maxReagents: 3
+    metabolizerTypes: [IPC]
+    groups:
+    - id: Food
+    - id: Drink
+    - id: Alcohol
+# Box Change End

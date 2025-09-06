@@ -1,0 +1,12 @@
+# Silicon Metabolisms
+- type: metabolismGroup
+  id: Code
+  name: metabolism-group-code
+
+- type: metabolismGroup
+  id: Malware
+  name: metabolism-group-malware
+
+- type: metabolismGroup
+  id: Industrial
+  name: metabolism-group-industrial
