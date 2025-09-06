@@ -5,7 +5,11 @@
     - Burn
     - Toxin
     - Airloss
-    - Genetic
+  # Box Change Start
+    # - Genetic # Commented out for Data damage
+  supportedTypes:
+    - Cellular
+  # Box Change End
 
 - type: damageContainer
   id: Inorganic
@@ -70,5 +74,9 @@
   - Burn
   - Toxin
   - Airloss
-  - Genetic
+  # - Genetic # Box Change - Commented out for Data damage
   - Metaphysical
+  # Box Change Start
+  supportedTypes:
+    - Cellular
+  # Box Change End

@@ -51,6 +51,7 @@
         types:
           Cellular: 50
           Heat: 10
+          Data: 50 # Box Change
     - type: Sprite
       sprite: Objects/Specific/Medical/implanter.rsi
       state: implanter0

@@ -16,6 +16,7 @@
     Bloodloss: 0.0
     Cellular: 0.0
     Caustic: 0.0
+    Data: 0.0 # Box Change
 
 - type: damageModifierSet
   id: Rodentia
