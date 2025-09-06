@@ -191,7 +191,7 @@ namespace Content.Server.Body.Systems
                     // do all effects, if conditions apply
                     foreach (var effect in entry.Effects)
                     {
-                        if (!effect.ShouldApply(args, _random))
+                        if (!effect.ShouldApply(args, _random) || group.MetabolismFilter) // Box Change - if we want to filter the metabolizer group period, do it
                             continue;
 
                         if (effect.ShouldLog)
