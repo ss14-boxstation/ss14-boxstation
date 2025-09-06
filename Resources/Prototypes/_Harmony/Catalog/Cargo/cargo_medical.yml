@@ -1,8 +1,12 @@
 - type: cargoProduct
   id: IPCBasicRepairCrate
   icon:
-    sprite: Objects/Tools/welder_mini.rsi
-    state: icon
+    # Box Change Start - New Sprite
+    # sprite: Objects/Tools/welder_mini.rsi
+    # state: icon
+    sprite: _starcup/Objects/Specific/Medical/firstaidkits.rsi
+    state: siliconkit
+    # Box Change End
   product: CrateIPCRepairBasic
   cost: 800
   category: cargoproduct-category-name-medical
@@ -11,8 +15,12 @@
 - type: cargoProduct
   id: IPCAdvancedRepairCrate
   icon:
-    sprite: _Harmony/Objects/Medical/componentpack.rsi
-    state: icon
+    # Box Change Start - New Sprite
+    # sprite: _Harmony/Objects/Medical/componentpack.rsi
+    # state: icon
+    sprite: _Box/Objects/Specific/Medical/advipcmedkit.rsi
+    state: siliconkit
+    # Box Change End
   product: CrateIPCRepairAdvanced
   cost: 2400
   category: cargoproduct-category-name-medical

@@ -87,7 +87,7 @@
   - CablePack
   - ComponentPack
   - RobotStructPack
-  - ReplacementLenses
+  # - ReplacementLenses # Box Change - Blindness should be treated by Medbay.
   # - ChassisPatch # Box Change
 
 - type: latheRecipePack
