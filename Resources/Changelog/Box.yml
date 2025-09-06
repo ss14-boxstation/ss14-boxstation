@@ -142,3 +142,14 @@
   id: 19
   time: '2025-09-03T20:18:07.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/23
+- author: CollectionOfBones128
+  changes:
+  - message: Ten new topicals have been added for IPC repair. These can be crafted
+      in a Microwave with Chemicals, like Advanced Topicals.
+    type: Add
+  - message: The IPC Repair Kits have been renamed to Basic and Advanced, and their
+      content has been tweaked to match.
+    type: Tweak
+  id: 20
+  time: '2025-09-06T19:44:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/32
