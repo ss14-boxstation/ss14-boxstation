@@ -20,6 +20,7 @@
       organs:
         # brain: IPCProcessorHousing # Harmony Change
         heart: OrganIPCPump # Harmony Change
+        stomach: OrganIPCStomach
     right_arm:
       part: RightArmIPC
       connections:

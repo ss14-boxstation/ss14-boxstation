@@ -245,3 +245,8 @@
     maxReagents: 5
     metabolizerTypes: [Human]
     removeEmpty: true
+    groups: # Box Change
+    - id: Code
+      filter: true
+    - id: Malware
+      filter: true

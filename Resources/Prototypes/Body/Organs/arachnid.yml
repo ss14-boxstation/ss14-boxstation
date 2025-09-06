@@ -146,6 +146,11 @@
     maxReagents: 5
     metabolizerTypes: [Animal]
     removeEmpty: true
+    groups: # Box Change
+    - id: Code
+      filter: true
+    - id: Malware
+      filter: true
 
 - type: entity
   id: OrganArachnidEyes

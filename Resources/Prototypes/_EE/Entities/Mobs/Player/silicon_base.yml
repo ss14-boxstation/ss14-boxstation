@@ -163,7 +163,7 @@
       bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
       bleedReductionAmount: 0.25 # Box Change - 0 > 0.25 - Less than an organic (no clotting), but still there
       # bloodMaxVolume: 100 # Box Change - Comments out to revert to default value
-      chemicalMaxVolume: 0
+      # chemicalMaxVolume: 0 # Box Change - Comments out to revert to default value
       bleedPuddleThreshold: 3
       bloodRefreshAmount: 0
       bloodlossThreshold: 0.7 # Box Change - 0.8 > 0.7 - IPCs bleed for longer and cannot restore blood naturally. Bleeding should punish them less.
@@ -345,3 +345,5 @@
         types:
           Heat: -0.02
           Blunt: -0.02
+    - type: InjectableSolution # Box Change - IPC Chem
+      solution: chemicals
