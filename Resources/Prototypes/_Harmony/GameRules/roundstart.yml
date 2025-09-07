@@ -94,7 +94,7 @@
     shoes: ClothingShoesBootsJack
     pocket1: MagazinePistol
     pocket2: MagazinePistol
-  inhand:
+  inhand: 
     - WeaponPistolMk58
 #  storage: # can't put starting gear in backpack. works for nukies, not for DM.
 #    back:
