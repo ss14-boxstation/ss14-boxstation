@@ -40,27 +40,8 @@
   - type: StaticPrice
     price: 50
 
-# Box Change Start
 - type: entity
-  abstract: true
-  id: ShardCrystalGrindable
-  components:
-  - type: Extractable
-    grindableSolutionName: crystal
-  - type: SolutionContainerManager
-    solutions:
-      crystal:
-        reagents:
-        - ReagentId: Silicon # Generic Crystals tend to be Quartz
-          Quantity: 5
-        - ReagentId: Plasma # For the Intense Glow
-          Quantity: 0.1
-        - ReagentId: Iron # Most of the crystals if they were quartz are coloured by Iron. Easier to declare it once.
-          Quantity: 1
-# Box Change End
-
-- type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   id: ShardCrystalCyan
   name: cyan crystal shard
   description: A small piece of crystal.
@@ -75,23 +56,9 @@
     tags:
       - Trash
       - CrystalCyan
-  # Box Change Start
-  - type: SolutionContainerManager
-    solutions:
-      crystal:
-        reagents:
-        - ReagentId: Silicon # Generic Crystals tend to be Quartz
-          Quantity: 5
-        - ReagentId: Plasma # For the Intense Glow
-          Quantity: 0.1
-        - ReagentId: Potassium
-          Quantity: 1
-        - ReagentId: Aluminium
-          Quantity: 1
-  # Box Change End
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   name: blue crystal shard
   id: ShardCrystalBlue
   components:
@@ -105,23 +72,9 @@
     tags:
       - Trash
       - CrystalBlue
-  # Box Change Start
-  - type: SolutionContainerManager
-    solutions:
-      crystal:
-        reagents:
-        - ReagentId: Silicon # Generic Crystals tend to be Quartz
-          Quantity: 5
-        - ReagentId: Plasma # For the Intense Glow
-          Quantity: 0.1
-        - ReagentId: Iron
-          Quantity: 1
-        - ReagentId: Sodium
-          Quantity: 1
-  # Box Change End
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   name: yellow crystal shard
   id: ShardCrystalYellow
   components:
@@ -135,21 +88,9 @@
     tags:
       - Trash
       - CrystalYellow
-  # Box Change Start
-  - type: SolutionContainerManager
-    solutions:
-      crystal:
-        reagents:
-        - ReagentId: Silicon # Generic Crystals tend to be Quartz
-          Quantity: 5
-        - ReagentId: Plasma # For the Intense Glow
-          Quantity: 0.1
-        - ReagentId: Aluminium
-          Quantity: 1
-  # Box Change End
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   id: ShardCrystalOrange
   name: orange crystal shard
   components:
@@ -165,7 +106,7 @@
       - CrystalOrange
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   name: black crystal shard
   id: ShardCrystalBlack
   components:
@@ -179,21 +120,9 @@
     tags:
       - Trash
       - CrystalBlack
-  # Box Change Start
-  - type: SolutionContainerManager
-    solutions:
-      crystal:
-        reagents:
-        - ReagentId: Silicon # Generic Crystals tend to be Quartz
-          Quantity: 5
-        - ReagentId: Plasma # For the Intense Glow
-          Quantity: 0.1
-        - ReagentId: Aluminium
-          Quantity: 1
-  # Box Change End
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   id: ShardCrystalPink
   name: pink crystal shard
   components:
@@ -207,25 +136,9 @@
     tags:
       - Trash
       - CrystalPink
-  # Box Change Start
-  - type: SolutionContainerManager
-    solutions:
-      crystal:
-        reagents:
-        - ReagentId: Silicon # Generic Crystals tend to be Quartz
-          Quantity: 5
-        - ReagentId: Plasma # For the Intense Glow
-          Quantity: 0.1
-        - ReagentId: Iron
-          Quantity: 1
-        - ReagentId: Phosphorus
-          Quantity: 1
-        - ReagentId: Aluminium
-          Quantity: 1
-  # Box Change End
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   id: ShardCrystalGreen
   name: green crystal shard
   components:
@@ -241,7 +154,7 @@
       - CrystalGreen
 
 - type: entity
-  parent: [ShardCrystalBase, ShardCrystalGrindable] # Box Change - Add grindable
+  parent: ShardCrystalBase
   id: ShardCrystalRed
   name: red crystal shard
   components:
