@@ -83,7 +83,7 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - ExtendedHarmonyAnnouncement # harmony
+ #- ExtendedHarmonyAnnouncement # harmony - Box Change, comments out extended announcement.
 
 - type: gamePreset
   id: Greenshift
