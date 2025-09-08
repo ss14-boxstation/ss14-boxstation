@@ -118,7 +118,6 @@
     maxReagents: 2
     metabolizerTypes: [IPC]
     groups:
-    - id: Industrial
     - id: Medicine
       filter: true
     - id: Poison
@@ -162,7 +161,8 @@
     maxReagents: 3
     metabolizerTypes: [IPC]
     groups:
-    - id: Food
-    - id: Drink
-    - id: Alcohol
+    # - id: Food # Food and drink are shelved for future PR. Its scope creep
+    # - id: Drink
+    # - id: Alcohol
+    - id: Industrial
 # Box Change End
