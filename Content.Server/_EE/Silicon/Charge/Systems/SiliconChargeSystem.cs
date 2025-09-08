@@ -204,8 +204,8 @@ public sealed class SiliconChargeSystem : EntitySystem
             return 0.5f + temperComp.CurrentTemperature / thermalComp.NormalBodyTemperature * 0.5f;
 
         return 0;
-// TheDen Start - IPC Dynamic Power draw
 }
+    // TheDen Start - IPC Dynamic Power draw
     private float SiliconMovementEffects(EntityUid silicon, SiliconComponent siliconComp)
     {
         // Calculate dynamic power draw.
@@ -225,5 +225,5 @@ public sealed class SiliconChargeSystem : EntitySystem
             siliconComp.DrainPerSecond * siliconComp.IdleDrainReduction * (-1), // Should be a maximum of the idle drain reduction (negative)
             0f); // Minimum reduction is no change to power draw
     }
+    // TheDen End - IPC Dynamic Power draw
 }
-// TheDen End - IPC Dynamic Power draw
