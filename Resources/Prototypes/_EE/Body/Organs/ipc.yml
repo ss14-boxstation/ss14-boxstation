@@ -118,11 +118,18 @@
     maxReagents: 2
     metabolizerTypes: [IPC]
     groups:
+    - id: Industrial
     - id: Medicine
       filter: true
     - id: Poison
       filter: true
     - id: Narcotic
+      filter: true
+    - id: Food # Temporary
+      filter: true
+    - id: Drink # Temporary
+      filter: true
+    - id: Alcohol # Temporary
       filter: true
     removeEmpty: true
   # Box Change End
@@ -157,12 +164,15 @@
       stomach:
         maxVol: 50
   - type: Stomach
+    specialDigestible:
+      tags:
+      - IPCFood
   - type: Metabolizer
     maxReagents: 3
     metabolizerTypes: [IPC]
     groups:
-    # - id: Food # Food and drink are shelved for future PR. Its scope creep
-    # - id: Drink
-    # - id: Alcohol
-    - id: Industrial
+    - id: Food
+    - id: Drink
+    - id: Alcohol
+  removeEmpty: true
 # Box Change End

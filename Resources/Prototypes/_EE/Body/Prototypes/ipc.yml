@@ -20,7 +20,7 @@
       organs:
         # brain: IPCProcessorHousing # Harmony Change
         heart: OrganIPCPump # Harmony Change
-        stomach: OrganIPCStomach
+        # stomach: OrganIPCStomach # Box Change # Scope Creep, shelved for now.
     right_arm:
       part: RightArmIPC
       connections:

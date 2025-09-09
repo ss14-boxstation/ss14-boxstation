@@ -1,3 +1,6 @@
 # IPC Topical Tag for Medical Belt
 - type: Tag
   id: IPCTopical
+
+- type: Tag
+  id: IPCFood
