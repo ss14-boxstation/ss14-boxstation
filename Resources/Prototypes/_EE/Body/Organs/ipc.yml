@@ -62,9 +62,9 @@
     #     Taco: Brain
     - type: Metabolizer
       maxReagents: 2
-      metabolizerTypes: [Human]
+      metabolizerTypes: [IPC]
       groups:
-      - id: Code
+      - id: Software
       - id: Malware
     # Box Change End
 # End Harmony Change

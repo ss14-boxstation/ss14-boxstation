@@ -74,7 +74,7 @@
   - type: Item
     size: Small
     heldPrefix: brain
-  
+
 - type: entity
   id: OrganHumanEyes
   parent: BaseHumanOrgan
@@ -246,7 +246,7 @@
     metabolizerTypes: [Human]
     removeEmpty: true
     groups: # Box Change
-    - id: Code
+    - id: Software
       filter: true
     - id: Malware
       filter: true

@@ -147,7 +147,7 @@
     metabolizerTypes: [Animal]
     removeEmpty: true
     groups: # Box Change
-    - id: Code
+    - id: Software
       filter: true
     - id: Malware
       filter: true

@@ -1,7 +1,7 @@
 # Silicon Metabolisms
 - type: metabolismGroup
-  id: Code
-  name: metabolism-group-code
+  id: Software
+  name: metabolism-group-software
 
 - type: metabolismGroup
   id: Malware
