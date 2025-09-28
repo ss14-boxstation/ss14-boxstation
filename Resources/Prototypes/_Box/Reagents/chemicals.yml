@@ -1,0 +1,45 @@
+# Voltaic Acid - Synthetics/Silicon Component
+- type: reagent
+  id: VoltaicAcid
+  name: reagent-name-voltaic-acid
+  group: Chemicals
+  desc: reagent-desc-voltaic-acid
+  physicalDesc: reagent-physical-desc-electric
+  flavor: shocking
+  color: "#FDD023"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:Electrocute
+        probability: 0.10
+      - !type:HealthChange
+        damage:
+          types:
+            Shock: 0.1
+
+# Hydrogen Chloride
+- type: reagent
+  id: HydrogenChloride
+  name: reagent-name-hydrogen-chloride
+  desc: reagent-desc-hydrogen-chloride
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: sour
+  color: "#cccccc"
+
+# Chloromethane
+- type: reagent
+  id: Chloromethane
+  name: reagent-name-chloromethane
+  desc: reagent-desc-chloromethane
+  physicalDesc: reagent-physical-desc-gaseous
+  flavor: sweet
+  color: "#cccccc"
+
+# Dimethyldichlorosilane
+- type: reagent
+  id: Dimethyldichlorosilane
+  name: reagent-name-dimethyldichlorosilane
+  desc: reagent-desc-dimethyldichlorosilane
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: sour
+  color: "#cccccc"

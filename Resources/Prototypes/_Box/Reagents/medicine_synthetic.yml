@@ -1,0 +1,29 @@
+# Emergency Defragmentor
+- type: reagent
+  id: EmergencyDefragmentor
+  name: reagent-name-emergency-defragmentor
+  group: Medicine
+  desc: reagent-desc-emergency-defragmentor
+  physicalDesc: reagent-physical-desc-electric
+  flavor: shocking
+  color: "#bd00ff"
+
+# Cryostabilized Defragmentor
+- type: reagent
+  id: CryostabilizedDefragmentor
+  name: reagent-name-cryostabilized-defragmentor
+  group: Medicine
+  desc: reagent-desc-cryostabilized-defragmentor
+  physicalDesc: reagent-physical-desc-electric
+  flavor: shocking
+  color: "#5F49FF"
+
+# Polydimethylsiloxane
+- type: reagent
+  id: Polydimethylsiloxane
+  name: reagent-name-polydimethylsiloxane
+  group: Medicine
+  desc: reagent-desc-polydimethylsiloxane
+  physicalDesc: reagent-physical-desc-syrupy
+  flavor: sweet
+  color: "#C4A484"

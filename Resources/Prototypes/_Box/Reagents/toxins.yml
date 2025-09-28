@@ -1,0 +1,19 @@
+# Hydrochloric Acid
+- type: reagent
+  id: HydrochloricAcid
+  name: reagent-name-hydrochloric-acid
+  group: Toxin
+  desc: reagent-desc-hydrochloric-acid
+  physicalDesc: reagent-physical-desc-pungent
+  flavor: sour
+  color: "#cccccc"
+
+# Methanol
+- type: reagent
+  id: Methanol
+  name: reagent-name-methanol
+  group: Toxin
+  desc: reagent-desc-methanol
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: alcohol
+  color: "#b05b3c"

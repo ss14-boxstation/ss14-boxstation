@@ -1,0 +1,19 @@
+# Weed.exe
+- type: reagent
+  id: WeedDotExe
+  name: reagent-name-weed-dot-exe
+  group: Narcotics
+  desc: reagent-desc-weed-dot-exe
+  physicalDesc: reagent-physical-desc-electric
+  flavor: bitter
+  color: "#30FB3E"
+
+# Bitflipper
+- type: reagent
+  id: Bitflipper
+  name: reagent-name-bitflipper
+  group: Narcotics
+  desc: reagent-desc-bitflipper
+  physicalDesc: reagent-physical-desc-electric
+  flavor: shocking
+  color: "#115D33"
