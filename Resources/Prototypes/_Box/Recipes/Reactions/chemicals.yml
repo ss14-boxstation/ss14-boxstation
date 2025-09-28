@@ -1,0 +1,44 @@
+- type: reaction
+  id: VoltaicAcid
+  reactants:
+    Lithium:
+      amount: 1
+    Sulfur:
+      amount: 1
+  products:
+    VoltaicAcid: 1
+
+- type: reaction
+  id: HydrogenChlroide
+  reactants:
+    Hydrogen:
+      amount: 1
+    Chlorine:
+      amount: 1
+  products:
+    HydrogenChloride: 2
+
+- type: reaction
+  id: Chloromethane
+  reactants:
+    HydrogenChloride:
+      amount: 1
+    Methanol:
+      amount: 1
+  products:
+    Chloromethane: 1
+    Water: 1
+
+- type: reaction
+  id: Dimethyldichlorosilane
+  minTemp: 570
+  reactants:
+    Chloromethane:
+      amount: 2
+    Silicon:
+      amount: 1
+    Copper:
+      amount: 1
+      catalyst: true
+  products:
+    Dimethyldichlorosilane: 1

@@ -10,7 +10,7 @@
 
 # CIH
 - type: reagent
-  id: Spacefiller
+  id: CIH
   name: reagent-name-cih
   group: Toxins
   desc: reagent-desc-cih

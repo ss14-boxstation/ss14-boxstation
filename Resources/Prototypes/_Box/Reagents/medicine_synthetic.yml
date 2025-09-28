@@ -27,3 +27,13 @@
   physicalDesc: reagent-physical-desc-syrupy
   flavor: sweet
   color: "#C4A484"
+
+# Overclocker
+- type: reagent
+  id: Overclocker
+  name: reagent-name-overclocker
+  group: Medicine
+  desc: reagent-desc-overclocker
+  physicalDesc: reagent-physical-desc-electric
+  flavor: shocking
+  color: "#E40605"

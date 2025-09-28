@@ -1,0 +1,14 @@
+- type: reaction
+  id: ActivatedSilicon
+  reactants:
+    VoltaicAcid:
+      amount: 4
+    Copper:
+      amount: 4
+    Silicon:
+      amount: 1
+    Plasma:
+      amount: 1
+      catalyst: true
+  products:
+    ActivatedSilicon: 9

@@ -1,0 +1,44 @@
+- type: reaction
+  id: EmergencyDefragmentor
+  reactants:
+    Bitflipper:
+      amount: 1
+    Sodium:
+      amount: 1
+    Arithrazine:
+      amount: 1
+  products:
+    EmergencyDefragmentor: 1
+
+- type: reaction
+  id: CryostabilizedDefragmentor
+  reactants:
+    Cryoxadone:
+      amount: 1
+    Bitflipper:
+      amount: 1
+  products:
+    CryostabilizedDefragmentor: 2
+
+- type: reaction
+  id: Polydimethylsiloxane
+  reactants:
+    Dimethyldichlorosilane:
+      amount: 1
+    Water:
+      amount: 2
+  products:
+    Polydimethylsiloxane: 1
+    HydrochloricAcid: 2
+
+- type: reaction
+  id: Overclocker
+  reactants:
+    Epinephrine:
+      amount: 1
+    ActivatedSilicon:
+      amount: 1
+    Iron:
+      amount: 1
+  products:
+    Overclocker: 2

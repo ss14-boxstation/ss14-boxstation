@@ -2,7 +2,6 @@
 - type: reagent
   id: VoltaicAcid
   name: reagent-name-voltaic-acid
-  group: Chemicals
   desc: reagent-desc-voltaic-acid
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
