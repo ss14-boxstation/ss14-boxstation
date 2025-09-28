@@ -37,3 +37,33 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#E40605"
+
+# Recal - From Paradise SS13
+- type: reagent
+  id: Recal
+  name: reagent-name-recal
+  group: Medicine
+  desc: reagent-desc-recal
+  physicalDesc: reagent-physical-desc-pungent
+  flavor: recal
+  color: "#85845d"
+
+# Smart Metal - From Paradise SS13 - IPC Omni
+- type: reagent
+  id: SmartMetal
+  name: reagent-name-smart-metal
+  group: Medicine
+  desc: reagent-desc-smart-metal
+  physicalDesc: reagent-physical-desc-metallic
+  flavor: medicine
+  color: "#d6047f"
+
+# Liquid Solder - From Paradise SS13 - IPC Psicodine
+- type: reagent
+  id: LiquidSolder
+  name: reagent-name-liquid-solder
+  group: Medicine
+  desc: reagent-desc-liquid-solder
+  physicalDesc: reagent-physical-desc-metallic
+  flavor: metallic
+  color: "#D7B395"

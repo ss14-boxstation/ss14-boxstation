@@ -6,3 +6,9 @@ reagent-desc-cryostabilized-defragmentor = tbd
 
 reagent-name-polydimethylsiloxane = polydimethylsiloxane
 reagent-desc-polydimethylsiloxane = tbd
+
+reagent-name-recal = recal
+reagent-desc-recal = An oily insulating liquid that passively regulates electrical activity on sensitive electronic components, allowing them to recover from decalibrating events faster. Overdosing will cause under-voltage errors and hamper component heat dissipation, potentially causing heat damage.
+
+reagent-name-smart-metal = smart metal
+reagent-desc-smart-metal = An exotic liquid metal alloy that flows into cracks, fractures, and other surface imperfections before solidifying to patch up damaged components.
