@@ -18,3 +18,6 @@ reagent-desc-smart-metal = An exotic liquid metal alloy that flows into cracks, 
 
 reagent-name-liquid-solder = liquid solder
 reagent-desc-liquid-solder = A solution formulated to clean and repair damaged connections in posibrains while in use.
+
+reagent-name-degreaser = degreaser
+reagent-desc-degreaser = An industrial degreaser which can be used to clean residual build-up from machinery and surfaces.

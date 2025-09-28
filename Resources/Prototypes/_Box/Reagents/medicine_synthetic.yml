@@ -196,3 +196,19 @@
         - "psicodine-effect-anxieties-wash-away"
         - "psicodine-effect-at-peace"
         probability: 0.2
+
+# Degreaser - From Paradise SS13
+- type: reagent
+  id: Degreaser
+  name: reagent-name-degreaser
+  group: Medicine
+  desc: reagent-desc-degreaser
+  physicalDesc: reagent-physical-desc-oily
+  flavor: clean
+  color: "#CC7A00"
+  metabolisms:
+    Industrial:
+      effects:
+      - !type:AdjustReagent
+        reagent: SpaceLube
+        amount: -3.0
