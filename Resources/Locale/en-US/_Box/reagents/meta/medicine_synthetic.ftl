@@ -7,6 +7,9 @@ reagent-desc-cryostabilized-defragmentor = tbd
 reagent-name-polydimethylsiloxane = polydimethylsiloxane
 reagent-desc-polydimethylsiloxane = tbd
 
+reagent-name-overclocker = overclocker
+reagent-desc-overclocker = tbd
+
 reagent-name-recal = recal
 reagent-desc-recal = An oily insulating liquid that passively regulates electrical activity on sensitive electronic components, allowing them to recover from decalibrating events faster. Overdosing will cause under-voltage errors and hamper component heat dissipation, potentially causing heat damage.
 

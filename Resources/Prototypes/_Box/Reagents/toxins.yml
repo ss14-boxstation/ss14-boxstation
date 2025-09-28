@@ -2,7 +2,7 @@
 - type: reagent
   id: HydrochloricAcid
   name: reagent-name-hydrochloric-acid
-  group: Toxin
+  group: Toxins
   desc: reagent-desc-hydrochloric-acid
   physicalDesc: reagent-physical-desc-pungent
   flavor: sour
@@ -12,7 +12,7 @@
 - type: reagent
   id: Methanol
   name: reagent-name-methanol
-  group: Toxin
+  group: Toxins
   desc: reagent-desc-methanol
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: alcohol

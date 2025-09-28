@@ -26,13 +26,13 @@
 - type: reaction
   id: Surge
   reactants:
-    Therimte:
+    Thermite:
       amount: 3
     Uranium:
       amount: 1
     Fluorosurfactant:
       amount: 1
-    SulphuricAcid:
+    SulfuricAcid:
       amount: 1
     Overclocker:
       amount: 1
