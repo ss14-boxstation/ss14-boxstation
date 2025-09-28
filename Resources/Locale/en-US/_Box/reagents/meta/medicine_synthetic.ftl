@@ -12,3 +12,6 @@ reagent-desc-recal = An oily insulating liquid that passively regulates electric
 
 reagent-name-smart-metal = smart metal
 reagent-desc-smart-metal = An exotic liquid metal alloy that flows into cracks, fractures, and other surface imperfections before solidifying to patch up damaged components.
+
+reagent-name-liquid-solder = liquid solder
+reagent-desc-liquid-solder = A solution formulated to clean and repair damaged connections in posibrains while in use.
