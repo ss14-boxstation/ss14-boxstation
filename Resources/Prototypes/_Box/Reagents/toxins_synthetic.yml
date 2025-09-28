@@ -21,9 +21,9 @@
       - !type:Emote
         emote: Scream
         showInChat: true
-        probability: 0.2
+        probability: 0.15
       - !type:Drunk
-        boozePower: 500
+        boozePower: 5
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature

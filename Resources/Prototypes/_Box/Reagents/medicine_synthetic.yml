@@ -7,6 +7,24 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#bd00ff"
+  metabolisms:
+    Software:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Data: -0.3
+            Shock: 0.15
+            Caustic: 0.15
+            Slash: 0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 11
+        damage:
+          types:
+            Shock: 1
 
 # Cryostabilized Defragmentor
 - type: reagent
@@ -17,6 +35,16 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#5F49FF"
+  metabolisms:
+    Software:
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:Temperature
+            max: 213.0
+          damage:
+            types:
+             Data: -2
 
 # Polydimethylsiloxane
 - type: reagent
@@ -27,6 +55,18 @@
   physicalDesc: reagent-physical-desc-syrupy
   flavor: sweet
   color: "#C4A484"
+  metabolisms:
+    Industrial:
+      effects:
+      - !type:ModifyBleedAmount
+        amount: -1.5
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          max: 423.15
+        - !type:ReagentThreshold
+          min: 15
+        amount: 50000
 
 # Overclocker
 - type: reagent
@@ -37,6 +77,31 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#E40605"
+  metabolisms:
+    Software:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        - !type:TotalDamage
+          min: 60
+        damage:
+          types:
+            Heat: -3
+            Shock: 0.1
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 0.75
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 0.75
+        type: Remove
+      - !type:GenericStatusEffect
+        key: Adrenaline # Guess what epinephrine is...
+        component: IgnoreSlowOnDamage
+        time: 5 # lingers less than hivemind reagent to give it a niche
 
 # Recal - From Paradise SS13
 - type: reagent
@@ -47,6 +112,37 @@
   physicalDesc: reagent-physical-desc-pungent
   flavor: recal
   color: "#85845d"
+  metabolisms:
+    Software:
+      effects:
+      - !type:GenericStatusEffect
+        key: Jitter
+        time: 4.0
+        type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 10.0
+        type: Remove
+      - !type:AdjustReagent
+        reagent: Bootloop
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: WeedDotExe
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: Bitflipper
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: Surge
+        amount: -3.0
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 14
+        damage:
+          types:
+            Heat: 1
+            Shock: 1
 
 # Smart Metal - From Paradise SS13 - IPC Omni
 - type: reagent
@@ -57,6 +153,13 @@
   physicalDesc: reagent-physical-desc-metallic
   flavor: medicine
   color: "#d6047f"
+  metabolisms:
+    Software:
+      effects:
+      - !type:EvenHealthChange
+        damage:
+          Burn: -2
+          Brute: -2
 
 # Liquid Solder - From Paradise SS13 - IPC Psicodine
 - type: reagent
@@ -67,3 +170,29 @@
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
   color: "#D7B395"
+  metabolisms:
+    Software:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Shock: 0.1
+      - !type:GenericStatusEffect
+        key: Jitter
+        time: 2.0
+        type: Remove
+      # - !type:ModifyStatusEffect # Broken until upstream merge is merged
+      #   effectProto: StatusEffectDrunk
+      #   time: 6.0
+      #   type: Remove
+      - !type:PopupMessage # we dont have sanity/mood so this will have to do
+        type: Local
+        visualType: Medium
+        messages:
+        - "psicodine-effect-fearless"
+        - "psicodine-effect-anxieties-wash-away"
+        - "psicodine-effect-at-peace"
+        probability: 0.2
