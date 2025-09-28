@@ -17,3 +17,13 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#115D33"
+
+# Surge - From SS13 Paradise
+- type: reagent
+  id: Surge
+  name: reagent-name-surge
+  group: Narcotics
+  desc: reagent-desc-surge
+  physicalDesc: reagent-physical-desc-metallic
+  flavor: shocking
+  color: "#6DD16D"

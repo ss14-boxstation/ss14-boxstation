@@ -22,3 +22,21 @@
       amount: 1
   products:
     Bitflipper: 1
+
+- type: reaction
+  id: Surge
+  reactants:
+    Therimte:
+      amount: 3
+    Uranium:
+      amount: 1
+    Fluorosurfactant:
+      amount: 1
+    SulphuricAcid:
+      amount: 1
+    Overclocker:
+      amount: 1
+    ActivatedSilicon:
+      amount: 1
+  products:
+    Surge: 4
