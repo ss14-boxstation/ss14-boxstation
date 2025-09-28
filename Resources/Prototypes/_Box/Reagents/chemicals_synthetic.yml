@@ -1,6 +1,6 @@
 # Activated Silicon
 - type: reagent
-  id: ActivatedSilicon
+  id: ActivatedSilicon # Actively Inert, only an ingredient. Harmless in this form
   name: reagent-name-activated-silicon
   desc: reagent-desc-activated-silicon
   physicalDesc: reagent-physical-desc-electric

@@ -7,6 +7,28 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#920A1E"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 0.1
+            Shock: 0.1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.3
+        sprintSpeedModifier: 0.3
+      - !type:Emote
+        emote: Scream
+        showInChat: true
+        probability: 0.2
+      - !type:Drunk
+        boozePower: 500
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          max: 423.15
+        amount: 100000
 
 # CIH
 - type: reagent
@@ -17,6 +39,14 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#0827F5"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 3
+            Blunt: 3
 
 # Bootloop
 - type: reagent
@@ -27,3 +57,30 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#4AF626"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Bootloop
+          max: 8
+        walkSpeedModifier: 0.65
+        sprintSpeedModifier: 0.65
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Bootloop
+          max: 8
+        effectProto: StatusEffectDrowsiness
+        time: 4
+        type: Add
+        refresh: false
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Bootloop
+          min: 8
+        effectProto: StatusEffectForcedSleeping
+        time: 3
+        type: Add

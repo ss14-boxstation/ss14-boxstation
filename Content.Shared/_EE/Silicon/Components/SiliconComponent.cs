@@ -110,5 +110,5 @@ public sealed partial class SiliconComponent : Component
     ///     Maybe you want an android that can sleep as well as drink APCs? I'm not going to judge.
     /// </summary>
     [DataField]
-    public bool DoSiliconsDreamOfElectricSheep;
+    public bool DoSiliconsDreamOfElectricSheep = true; // Box Change, Default this to true
 }

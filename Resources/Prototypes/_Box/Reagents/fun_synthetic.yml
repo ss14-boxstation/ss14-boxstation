@@ -6,7 +6,16 @@
   desc: reagent-desc-weed-dot-exe
   physicalDesc: reagent-physical-desc-electric
   flavor: bitter
+  flavorMinimum: 0.05
   color: "#30FB3E"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        time: 16
+        type: Add
+        refresh: false
 
 # Bitflipper
 - type: reagent
@@ -17,6 +26,55 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#115D33"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Shock: 0.75
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        damage:
+          types:
+            Shock: 2
+            Radiation: 2
+      - !type:Emote
+        emote: Scream
+        showInChat: true
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          max: 30
+      - !type:Emote
+        emote: Laugh
+        showInChat: true
+        probability: 0.1
+      - !type:Emote
+        emote: Crying
+        showInChat: true
+        probability: 0.1
+      - !type:Emote
+        emote: Scream
+        showInChat: true
+        probability: 0.2
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+      - !type:Emote
+        emote: Sigh
+        showInChat: true
+        probability: 0.2
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        type: Add
+        time: 5
+        refresh: false
 
 # Surge - From SS13 Paradise
 - type: reagent
@@ -27,3 +85,27 @@
   physicalDesc: reagent-physical-desc-metallic
   flavor: shocking
   color: "#6DD16D"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Shock: 2
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
+      - !type:Jitter
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 3
+        type: Add
