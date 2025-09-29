@@ -66,6 +66,9 @@
     solutions:
       smokable:
         maxVol: 30
+  - type: Tag # Box Change - Let IPCs smoke
+    tags:
+    - IPCMaskWearable
 
 - type: entity
   parent: BaseItem

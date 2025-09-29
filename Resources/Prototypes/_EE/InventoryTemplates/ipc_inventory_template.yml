@@ -67,6 +67,10 @@
         - IdentityBlocker
         tags:
         - IPCMaskWearable
+        # Box Change Start - Allow IPCs to smoke
+        - Cigar
+        - Cigarette
+        # Box Change End
     - name: eyes
       slotTexture: glasses
       slotFlags: EYES
