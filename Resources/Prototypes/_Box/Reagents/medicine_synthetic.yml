@@ -215,6 +215,14 @@
   flavor: clean
   color: "#CC7A00"
   metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.1
     Industrial:
       effects:
       - !type:AdjustReagent

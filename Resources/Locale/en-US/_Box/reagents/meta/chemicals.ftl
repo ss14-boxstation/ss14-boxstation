@@ -1,11 +1,11 @@
 reagent-name-voltaic-acid = voltaic acid
-reagent-desc-voltaic-acid = tbd
+reagent-desc-voltaic-acid = A synthetic battery acid with industrial applications. Capable of activating silicon nanites in the right circumstance..
 
 reagent-name-hydrogen-chloride = hydrogen chloride
-reagent-desc-hydrogen-chloride = tbd
+reagent-desc-hydrogen-chloride = a colorless gas. It forms hydrochloric acid in contact with water.
 
 reagent-name-chloromethane = chloromethane
-reagent-desc-chloromethane = tbd
+reagent-desc-chloromethane = a colorless, sweet-smelling, flammable gas. It is one of the haloalkanes.
 
 reagent-name-dimethyldichlorosilane = dimethyldichlorosilane
-reagent-desc-dimethyldichlorosilane = tbd
+reagent-desc-dimethyldichlorosilane = a colorless liquid. It is a tetrahedral organosilicon compound important in the synthesis of silicones.
