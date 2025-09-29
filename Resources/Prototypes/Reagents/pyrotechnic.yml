@@ -34,6 +34,14 @@
           types:
             Heat: 2
             Poison: 1
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 2
+    # Box Change End
 
 - type: reagent
   id: Napalm
@@ -63,6 +71,16 @@
             Caustic: 0.5 # based off napalm being an irritant
       - !type:FlammableReaction
         multiplier: 0.4
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 2
+      - !type:FlammableReaction
+        multiplier: 0.4
+    # Box Change End
 
 - type: reagent
   id: Phlogiston
@@ -85,6 +103,19 @@
       - !type:AdjustTemperature
         amount: 6000
       - !type:Ignite
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 3
+      - !type:FlammableReaction
+        multiplier: 0.1
+      - !type:AdjustTemperature
+        amount: 6000
+      - !type:Ignite
+    # Box Change End
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
@@ -116,6 +147,19 @@
         multiplier: 0.2
       - !type:AdjustTemperature
         amount: 6000
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 2
+            Caustic: 0.5
+      - !type:FlammableReaction
+        multiplier: 0.2
+      - !type:AdjustTemperature
+        amount: 6000
+    # Box Change End
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
@@ -180,6 +224,12 @@
             Poison: 1
       - !type:FlammableReaction
         multiplier: 0.4
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:FlammableReaction
+        multiplier: 0.4
+    # Box Change End
 
 - type: reagent
   id: Fluorosurfactant

@@ -42,3 +42,50 @@
       amount: 1
   products:
     Overclocker: 2
+
+- type: reaction
+  id: Recal
+  reactants:
+    ActivatedSilicon:
+      amount: 1
+    Haloperidol:
+      amount: 1
+    Epinephrine:
+      amount: 1
+  products:
+    Recal: 1
+
+- type: reaction
+  id: LiquidSolder
+  reactants:
+    Mannitol:
+      amount: 1
+    ActivatedSilicon:
+      amount: 1
+    Aluminium:
+      amount: 1
+  products:
+    LiquidSolder: 1
+
+- type: reaction
+  id: Degreaser
+  reactants:
+    Oil:
+      amount: 1
+    Ethylredoxrazine:
+      amount: 1
+  products:
+    Degreaser: 1
+
+# Recipe for Omni > IPC Omni - deactivate if OP *or* unused
+- type: reaction
+  id: SmartMetal
+  reactants:
+    Omnizine:
+      amount: 4
+    ActivatedSilicon:
+      amount: 4
+    Plasma:
+      amount: 2
+  products:
+    SmartMetal: 6

@@ -161,6 +161,15 @@
       - !type:Emote
         emote: Scream
         probability: 0.3
+    # Box Change Start - IPC Chem
+    Industrial:
+      metabolismRate : 3.00
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 11.0
+    # Box Change End
 
 - type: reagent
   id: FerrochromicAcid
@@ -182,6 +191,17 @@
           types:
             Heat: 2.5
             Caustic: 1
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Heat: 2.5
+            Caustic: 1
+    # Box Change End
 
 - type: reagent
   id: FluorosulfuricAcid
@@ -222,6 +242,15 @@
       - !type:Emote
         emote: Scream
         probability: 0.25
+    # Box Change Start - IPC Chem
+    Industrial:
+      metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 8
+    # Box Change End
 
 - type: reagent
   id: SulfuricAcid
@@ -270,6 +299,15 @@
       - !type:Emote
         emote: Scream
         probability: 0.2
+    # Box Change Start - IPC Chem
+    Industrial:
+      metabolismRate: 3.00 # Okay damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 5
+    # Box Change End
 
 - type: reagent
   id: UnstableMutagen
@@ -553,6 +591,15 @@
         component: Pacified
         type: Add
         time: 4
+    # Box Change Start - IPC Chem
+    Industrial: # This should probably be its own Pax-derived Software chem, but fuck it.
+      effects:
+      - !type:GenericStatusEffect
+        key: Pacified
+        component: Pacified
+        type: Add
+        time: 4
+    # Box Change End
 
 - type: reagent
   id: Honk
@@ -651,6 +698,15 @@
       effects:
       - !type:Electrocute
         probability: 0.8
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:Electrocute
+        probability: 0.8
+      - !type:HealthChange
+        damage:
+          types:
+            Shock: 1
 
 - type: reagent
   id: Lipolicide

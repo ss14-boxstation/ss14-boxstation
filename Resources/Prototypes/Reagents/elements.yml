@@ -118,6 +118,14 @@
           types:
             Caustic: 0.5
             Poison: 0.5
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 0.5
+    # Box Change End
 - type: reagent
   id: Gold
   name: reagent-name-gold
@@ -332,6 +340,14 @@
         damage:
           types:
             Caustic: 0.1
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 0.1
+    # Box Change End
 
 - type: reagent
   id: Sodium
@@ -371,6 +387,14 @@
         damage:
           types:
             Radiation: 2
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: 2
+    # Box Change End
 
 - type: reagent
   id: Zinc

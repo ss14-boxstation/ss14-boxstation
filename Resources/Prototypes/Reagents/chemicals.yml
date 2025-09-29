@@ -25,6 +25,14 @@
           types:
             Caustic: 1
             Poison: 2 # Phenol is definitely not safe
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 1
+    # Box Change End
 
 - type: reagent
   id: Charcoal
@@ -72,6 +80,14 @@
         damage:
           types:
             Caustic: 2
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 2
+    # Box Change End
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -202,3 +218,15 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 120
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -4
+      - !type:GenericStatusEffect
+        key: Adrenaline
+        component: IgnoreSlowOnDamage
+        time: 120
+    # Box Change End

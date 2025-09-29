@@ -135,6 +135,61 @@
         - !type:HasTag
           invert: true
           tag: Bee
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: MediumCaution
+        messages:
+        - "buzzochloricbees-effect-oh-god-bees"
+        - "buzzochloricbees-effect-its-the-bees"
+        - "buzzochloricbees-effect-why-am-i-covered-in-bees"
+        - "buzzochloricbees-effect-one-with-the-bees"
+        - "buzzochloricbees-effect-squeaky-clean"
+        probability: 0.1
+        conditions:
+        - !type:HasTag
+          invert: true
+          tag: Bee
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages:
+          - "buzzochloricbees-effect-licoxide-electrifying"
+          - "buzzochloricbees-effect-licoxide-shocked-by-bee-facts"
+          - "buzzochloricbees-effect-licoxide-buzzed"
+          - "buzzochloricbees-effect-licoxide-buzzes"
+        probability: 0.05
+        conditions:
+        - !type:HasTag
+          invert: true
+          tag: Bee
+        - !type:ReagentThreshold
+          min: 0.01
+          reagent: Licoxide
+      - !type:PopupMessage
+        type: Local
+        messages:
+          - "buzzochloricbees-effect-fiber-hairy"
+          - "buzzochloricbees-effect-fiber-soft"
+        probability: 0.05
+        conditions:
+        - !type:HasTag
+          invert: true
+          tag: Bee
+        - !type:ReagentThreshold
+          min: 0.01
+          reagent: Fiber
+      - !type:HealthChange
+        damage:
+          types:
+            Piercing: 2
+        conditions:
+        - !type:HasTag
+          invert: true
+          tag: Bee
+    # Box Change End
 
 - type: reagent
   id: GroundBee
@@ -165,6 +220,16 @@
       effects:
       - !type:Electrocute
         probability: 0.35
+    # Box Change Start - IPC Chem
+    Industrial:
+      effects:
+      - !type:Electrocute
+        probability: 0.35
+      - !type:HealthChange
+        damage:
+          types:
+            Shock: 0.1
+    # Box Change End
 
 - type: reagent
   id: Razorium
@@ -205,6 +270,15 @@
       - !type:Emote
         emote: Scream
         probability: 0.3
+    # Box Change Start - IPC Chem
+    Industrial:
+      metabolismRate : 3.00
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+             Slash : 9
+    # Box Change End
 
 - type: reagent
   id: Fresium
@@ -298,6 +372,62 @@
         visualType: LargeCaution
         messages: [ "fresium-effect-frozen"]
         probability: 0.4
+    # Box Change Start - IPC Chem
+    Industrial:
+      metabolismRate : 0.45
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+             Cold: 0.01 # slightly nips directly, other cold damage comes from the temp change
+             Heat: -3 # ghetto burn chem. i don't think anyone would use this intentionally but it's funny
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fresium
+          max: 35
+        type: Local
+        visualType: LargeCaution
+        messages: [ "fresium-effect-freeze-insides"]
+        probability: 0.05
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fresium
+          max: 35
+        type: Local
+        visualType: LargeCaution
+        messages: [ "fresium-effect-slow"]
+        probability: 0.2
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          min: 160.15 # not quite enough for cryo, but can speed it up if you wanna take the risk
+        amount: -10000
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fresium
+          max: 40 # slows when less than 40
+        walkSpeedModifier: 0.6
+        sprintSpeedModifier: 0.6
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fresium
+          min: 40 # your legs stop working when above 40
+        walkSpeedModifier: 0.00
+        sprintSpeedModifier: 0.00
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fresium
+          min: 40
+        type: Local
+        visualType: LargeCaution
+        messages: [ "fresium-effect-frozen"]
+        probability: 0.4
+    # Box Change End
 
 - type: reagent
   id: Laughter

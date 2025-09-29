@@ -67,6 +67,14 @@
         - !type:ReagentThreshold
           min: 15
         amount: 50000
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+      - !type:ChemVomit
+        probability: 0.02
 
 # Overclocker
 - type: reagent
