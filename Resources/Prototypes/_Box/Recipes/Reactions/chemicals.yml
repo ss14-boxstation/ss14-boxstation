@@ -42,3 +42,14 @@
       catalyst: true
   products:
     Dimethyldichlorosilane: 1
+
+- type: reaction
+  id: CarbonMonoxide
+  minTemp: 570
+  reactants:
+    Carbon:
+      amount: 2
+    Oxygen:
+      amount: 1
+  products:
+    CarbonMonoxide: 2
