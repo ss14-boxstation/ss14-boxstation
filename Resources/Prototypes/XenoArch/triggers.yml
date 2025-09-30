@@ -243,6 +243,7 @@
     - AmmoniaBlood
     - ZombieBlood
     - Sap
+    - IPCOil #Box Change - IPC blood can be used for artifacts
 
 - type: xenoArchTrigger
   id: TriggerThrow
