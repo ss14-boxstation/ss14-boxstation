@@ -89,3 +89,16 @@
       amount: 2
   products:
     SmartMetal: 6
+
+# IPC Oil > IPC Salines
+- type: reaction
+  id: IPCOilBreakdown
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    IPCOil:
+      amount: 2
+  products:
+    ComputerCoolant: 1
+    IndustrialLubricant: 1

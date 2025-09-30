@@ -1,6 +1,7 @@
 - type: reagent
   id: IndustrialLubricant
   name: reagent-name-industrial-lubricant
+  group: Medicine # Box Change - IPC Chem - Its shitty saline now
   desc: reagent-desc-industrial-lubricant
   physicalDesc: reagent-physical-desc-oily
   slipData:
@@ -12,10 +13,22 @@
   boilingPoint: 300 # Oil, Close Enough
   meltingPoint: -16 # Oil, Close Enough
   friction: 0.4
+  # Box Change Start - IPC Chem
+  metabolisms:
+    Poison:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+    Industrial:
+      effects:
+      - !type:ModifyBloodLevel
+        amount: 3
+  # Box Change End
 
 - type: reagent
   id: ComputerCoolant
   name: reagent-name-computer-coolant
+  group: Medicine # Box Change - IPC Chem - Its shitty saline now
   desc: reagent-desc-computer-coolant
   physicalDesc: reagent-physical-desc-translucent
   slipData:
@@ -26,6 +39,19 @@
   boilingPoint: 100 # Water, Close enough
   meltingPoint: -30 # Freezing point of some Glycol-Water Compter Coolants
   friction: 0.4
+  # Box Change Start - IPC Chem
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+    Industrial:
+      effects:
+      - !type:ModifyBloodLevel
+        amount: 3
+  # Box Change End
 
 - type: reagent
   id: EthyleneGlycol

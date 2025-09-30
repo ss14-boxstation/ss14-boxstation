@@ -215,7 +215,7 @@
   flavor: clean
   color: "#CC7A00"
   metabolisms:
-    Drink:
+    Poison:
       effects:
       - !type:SatiateThirst
         factor: -0.2
