@@ -29,7 +29,6 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
             Caustic: 2
     # Box Change End
 
