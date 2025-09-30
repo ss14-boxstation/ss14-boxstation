@@ -150,6 +150,7 @@
     - id: RubberStampHop
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
+    - id: BookSOP # Harmony Change
 
 - type: entity
   id: LockerHeadOfPersonnelFilled

@@ -14,7 +14,7 @@
     - Rodentia # Box Change
     - SlimePerson
     - Vox
-    - Vulpkanin # Box Change - Earlymerge Vulps
+    - Vulpkanin
 
 - type: guideEntry
   id: Arachnid
@@ -56,9 +56,7 @@
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
 
-# Box Change Start - Early Merge Vulps
 - type: guideEntry
   id: Vulpkanin
   name: species-name-vulpkanin
   text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"
-# Box Change End

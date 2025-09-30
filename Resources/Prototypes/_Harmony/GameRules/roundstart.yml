@@ -101,14 +101,16 @@
 #      - MagazinePistol
 #      - MagazinePistol
 
-- type: entity
-  parent: BaseStationEventShortDelay
-  id: ExtendedHarmonyAnnouncement
-  components:
-  - type: StationEvent
-    endAnnouncement: station-event-harmony-extended-announcement
-    maxOccurrences: 1
-    endAudio:
-      path: /Audio/Announcements/attention.ogg
-    duration: 1500 # 25 mins
-  - type: EmptyRule
+#Start Box Change - Comments out extended announcement rule
+#- type: entity
+#  parent: BaseStationEventShortDelay
+#  id: ExtendedHarmonyAnnouncement
+#  components:
+#  - type: StationEvent
+#    endAnnouncement: station-event-harmony-extended-announcement
+#    maxOccurrences: 1
+#    endAudio:
+#      path: /Audio/Announcements/attention.ogg
+#    duration: 1500 # 25 mins
+#  - type: EmptyRule
+#End Box Change - comments out extended announcement rule

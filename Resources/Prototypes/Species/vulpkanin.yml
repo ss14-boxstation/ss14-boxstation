@@ -4,10 +4,10 @@
   roundStart: true
   prototype: MobVulpkanin
   sprites: MobVulpkaninSprites
-  defaultSkinTone: "#985629"
+  defaultSkinTone: "#5a3f2d"
   markingLimits: MobVulpkaninMarkingLimits
   dollPrototype: MobVulpkaninDummy
-  skinColoration: Hues
+  skinColoration: VulpkaninColors
   maleFirstNames: names_vulpkanin_male
   femaleFirstNames: names_vulpkanin_female
   lastNames: names_vulpkanin_last
@@ -19,11 +19,14 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    SnoutCover: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobVulpkaninTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    Eyes: MobHumanoidEyes
+    Eyes: MobVulpkaninEyes
     LArm: MobVulpkaninLArm
     RArm: MobVulpkaninRArm
     LHand: MobVulpkaninLHand
@@ -33,7 +36,7 @@
     LFoot: MobVulpkaninLFoot
     RFoot: MobVulpkaninRFoot
 
-- type: markingPoints
+- type: markingPoints # 6 points on arms and legs due to the "expected" marking usage. Two for hands, two for arms and 2 for claws. Can be lower once we have a distinction between LeftArm and RightArm instead of just Arms.
   id: MobVulpkaninMarkingLimits
   points:
     Hair:
@@ -41,27 +44,44 @@
       required: false
     FacialHair:
       points: 1
+      onlyWhitelisted: true # Beards lack displacement maps and are impossible to displace onto a snout.
+      required: false
+    Snout:
+      points: 1
+      required: true
+      defaultMarkings: [ VulpSnout ]
+    SnoutCover:
+      points: 3
       required: false
     Tail:
       points: 1
       required: true
-      defaultMarkings: [ VulpTailAlt ]
+      defaultMarkings: [ VulpTailVulp ]
     Head:
       points: 3
-      required: false
-    Legs:
-      points: 1
-      required: false
-    Arms:
-      points: 1
-      required: false
-    Snout:
-      points: 1
       required: false
     HeadTop:
       points: 1
       required: true
       defaultMarkings: [ VulpEar ]
+    UndergarmentTop:
+      points: 1
+      required: false
+    UndergarmentBottom:
+      points: 1
+      required: false
+    Arms:
+      points: 6
+      required: false
+    Legs:
+      points: 6
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobVulpkaninEyes
+  baseSprite:
+    sprite: Mobs/Species/Vulpkanin/parts.rsi
+    state: eyes
 
 - type: humanoidBaseSprite
   id: MobVulpkaninHead

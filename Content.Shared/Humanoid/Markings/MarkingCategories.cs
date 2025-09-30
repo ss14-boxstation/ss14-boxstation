@@ -13,6 +13,7 @@ namespace Content.Shared.Humanoid.Markings
         HeadSide,
         Eyes, // Harmony Change, DeltaV - Add Eyes Category for IPCs
         Snout,
+        SnoutCover,
         Chest,
         UndergarmentTop,
         UndergarmentBottom,

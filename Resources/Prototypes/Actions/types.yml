@@ -7,6 +7,14 @@
   components:
   - type: Action
 
+# base proto for an action that requires a DoAfter
+- type: entity
+  abstract: true
+  parent: BaseAction
+  id: BaseDoAfterAction
+  components:
+  - type: DoAfterArgs
+
 # an action that is done all in le head and cant be prevented by any means
 - type: entity
   abstract: true
@@ -376,6 +384,7 @@
     iconOn: { sprite: Interface/Actions/actions_fakemindshield.rsi, state: icon-on }
     itemIconStyle: NoItem
     useDelay: 1
+    raiseOnUser: true
   - type: InstantAction
     event: !type:FakeMindShieldToggleEvent
   - type: Tag
@@ -395,16 +404,16 @@
     useDelay: 1
     itemIconStyle: BigAction
 
-- type: entity
-  parent: ActionToggleWagging
-  id: ActionToggleVulpakinWagging
-  components:
-  - type: Action
-    icon: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
-    iconOn: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
-    itemIconStyle: NoItem
-    useDelay: 1 # Prevents Emote Spam
-    checkCanInteract: false
+#  TODO: Add back once we have animated tails again. Were removed due to the sprite rework, causing all of them to not fit anymore.
+# - type: entity
+#   parent: ActionToggleWagging
+#   id: ActionToggleWaggingVulpkanin
+#   components:
+#   - type: Action
+#     icon: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
+#     iconOn: { sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
+#     itemIconStyle: NoItem
+#     useDelay: 1 # Prevents Emote Spam
 
 - type: entity
   parent: BaseAction
@@ -420,7 +429,6 @@
   - type: InstantAction
     event: !type:GravityJumpEvent {}
 
-
 - type: entity
   parent: BaseAction
   id: ActionVulpkaninGravityJump
@@ -428,7 +436,7 @@
   description: Use your agile legs to leap a short distance. Be careful not to bump into anything!
   components:
   - type: Action
-    useDelay: 15
+    useDelay: 12
     icon:
       sprite: Interface/Actions/jump.rsi
       state: icon

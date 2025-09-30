@@ -1,0 +1,10 @@
+stack-robot-burn-patch = robot burn patch
+stack-robot-trauma-patch = robot trauma patch
+stack-acid-neutralization-patch = acit neutralization patch
+stack-cooling-patch = cooling patch
+stack-dent-repair-patch = dent repair patch
+stack-electronic-repair-patch = electronic repair patch
+stack-puncture-repair-patch = puncture repair patch
+stack-shielding-patch = shielding patch
+stack-gash-repair-patch = gash repair patch
+stack-thawing-patch = thawing patch

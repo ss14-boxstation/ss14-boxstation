@@ -1,19 +1,14 @@
 - type: entity
   abstract: true
   save: false
-  parent: BaseMobSpeciesOrganic
+  parent: [BaseMobSpeciesOrganic]
   id: BaseMobVulpkanin
-  name: Urist McVulp
+  name: Urist McBark
   components:
-  - type: HumanoidAppearance
-    species: Vulpkanin
-    hideLayersOnEquip:
-    - Snout
   - type: Hunger
-  - type: Inventory # Allows vulps to wear properly shaped helmets and other clothing. When displacement maps happen this might need to change.
-    speciesId: vulpkanin
   - type: Thirst
   - type: MessyDrinker
+    spillChance: 0.33
   - type: Icon
     sprite: Mobs/Species/Vulpkanin/parts.rsi
     state: full
@@ -34,25 +29,25 @@
     soundHit:
       path: /Audio/Weapons/pierce.ogg
     animation: WeaponArcClaw
-    damage: # Slightly increased damage to 6 total instead of 5.
+    damage:
       types:
         Piercing: 2
         Slash: 3
-  - type: Temperature # Similiar to moth values, but do make sense for Vulpkanin.
-    heatDamageThreshold: 320
-    coldDamageThreshold: 230
+  - type: Temperature # Same as moth temperatures until below is solved.
+    heatDamageThreshold: 320 # TODO: 315 when there is a way to make the temperature alert not blink to the side of the screen and disappear when you "sweat" at 39C.
+    coldDamageThreshold: 230 # TODO: 220 when the above is solved.
     specificHeat: 44
     coldDamage:
       types:
         Cold: 0.05 # Per second, scales with temperature & other constants
     heatDamage:
       types:
-        Heat: 2 # Per second, scales with temperature & other constants
-  - type: Wagging
-    action: ActionToggleVulpakinWagging
+        Heat: 2.5 # Per second, scales with temperature & other constants
+  # - type: Wagging TODO: Add back once we have animated tails again. Were removed due to the sprite rework, causing all of them to not fit anymore.
+  #   action: ActionToggleWaggingVulpkanin
   - type: TemperatureProtection
     heatingCoefficient: 1.2
-    coolingCoefficient: 0.50
+    coolingCoefficient: 0.3
   - type: JumpAbility
     action: ActionVulpkaninGravityJump
     canCollide: true
@@ -63,6 +58,11 @@
         pitch: 1.33
         volume: -5
         variation: 0.05
+  - type: InteractionPopup # Crucial detail.
+    successChance: 1
+    interactSuccessString: petting-success-soft-floofy-vulp
+    messagePerceivedByOthers: petting-success-soft-floofy-vulp-others
+    interactFailureString: petting-failure-generic
   - type: Sprite # Drawlayers. Top to bottom in order I believe.
     netsync: false
     layers:
@@ -74,14 +74,8 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - shader: StencilClear
-      sprite: Mobs/Species/Human/parts.rsi
-      state: l_leg
-    - shader: StencilMask
-      map: [ "enum.HumanoidVisualLayers.StencilMask" ]
-      sprite: Mobs/Customization/Vulpkanin/masking_helpers.rsi
-      state: female_full
-      visible: false
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
     - map: [ "jumpsuit" ]
     - map: [ "enum.HumanoidVisualLayers.LHand" ]
     - map: [ "enum.HumanoidVisualLayers.RHand" ]
@@ -101,6 +95,7 @@
     - map: [ "belt" ]
     - map: [ "neck" ]
     - map: [ "back" ]
+    - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.Hair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
@@ -114,13 +109,133 @@
       sprite: "Effects/creampie.rsi"
       state: "creampie_vulpkanin"
       visible: false
+  - type: HumanoidAppearance
+    species: Vulpkanin
+    hideLayersOnEquip:
+    - Snout
+    - SnoutCover
+    - HeadTop
+    - HeadSide
+    - FacialHair
+    markingsDisplacement:
+      Hair:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: hair
+  - type: Inventory
+    speciesId: vulpkanin
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: jumpsuit
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: back
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: outerwear
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: hand
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: shoes
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: head
+      neck:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: neck
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: eyes
+      belt:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: belt
 
 - type: entity
-  parent: BaseSpeciesDummy
+  parent: [BaseSpeciesDummy]
   id: MobVulpkaninDummy
   name: Vulpkanin Dummy
   categories: [ HideSpawnMenu ]
-  description: A dummy vulpkanin meant to be used in character setup.
+  description: A dummy Vulpkanin meant to be used in character setup.
   components:
   - type: HumanoidAppearance
     species: Vulpkanin
+    hideLayersOnEquip:
+    - Snout
+    - HeadTop
+    - HeadSide
+    markingsDisplacement:
+      Hair:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: hair
+  - type: Inventory
+    speciesId: vulpkanin
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: jumpsuit
+      back:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: back
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: outerwear
+      gloves:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: hand
+      shoes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: shoes
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: head
+      neck:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: neck
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: eyes
+      belt:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+            state: belt
