@@ -174,5 +174,5 @@
     - id: Food
     - id: Drink
     - id: Alcohol
-  removeEmpty: true
+    removeEmpty: true
 # Box Change End
