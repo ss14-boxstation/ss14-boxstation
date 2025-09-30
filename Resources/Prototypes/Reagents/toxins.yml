@@ -707,6 +707,7 @@
         damage:
           types:
             Shock: 1
+    # Box Change End
 
 - type: reagent
   id: Lipolicide

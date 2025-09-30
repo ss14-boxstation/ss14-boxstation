@@ -87,7 +87,7 @@
   id: OrganIPCTongue
   parent: BaseIPCOrgan
   name: vocal modulator
-  description: "A vocal modulator, used to produce speech. Also functions as a taste emulator." # Box Change - added flavour text for why IPCs can taste things
+  description: "A vocal modulator, used to produce speech."
   components:
   - type: Sprite
     state: tongue

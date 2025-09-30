@@ -95,11 +95,15 @@ namespace Content.Server.Body.Components
         [DataField("rateModifier")]
         public FixedPoint2 MetabolismRateModifier = 1.0;
 
+        // Box Change Start - IPC Chem
+
         /// <summary>
         ///   Forces metabolizer to immediately metabolize reagent and do nothing.
         ///   Shitcode tactic, but it works.
         /// </summary>
         [DataField("filter")]
         public bool MetabolismFilter = false;
+
+        // Box Change End
     }
 }
