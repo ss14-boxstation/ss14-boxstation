@@ -192,10 +192,10 @@
         key: Jitter
         time: 2.0
         type: Remove
-      # - !type:ModifyStatusEffect # Broken until upstream merge is merged
-      #   effectProto: StatusEffectDrunk
-      #   time: 6.0
-      #   type: Remove
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrunk
+        time: 6.0
+        type: Remove
       - !type:PopupMessage # we dont have sanity/mood so this will have to do
         type: Local
         visualType: Medium
