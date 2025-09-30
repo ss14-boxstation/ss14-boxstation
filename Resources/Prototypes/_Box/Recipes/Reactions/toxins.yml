@@ -14,6 +14,7 @@
 - type: reaction
   id: Methanol
   minTemp: 524
+  priority: 20
   reactants:
     Carbon:
       amount: 2
