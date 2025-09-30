@@ -22,7 +22,7 @@
     Industrial:
       effects:
       - !type:ModifyBloodLevel
-        amount: 3
+        amount: 1.5
   # Box Change End
 
 - type: reagent
@@ -50,7 +50,7 @@
     Industrial:
       effects:
       - !type:ModifyBloodLevel
-        amount: 3
+        amount: 1.5
   # Box Change End
 
 - type: reagent
