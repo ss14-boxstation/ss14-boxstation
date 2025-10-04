@@ -302,15 +302,17 @@
         - Shock
     - type: StatusEffects
       allowed:
-        - Stun
-        - KnockedDown
-        - SlowedDown
-        - Stutter
-        - SeeingRainbows
+      # Box Change Start - Remove Outdated Status Effects
+        # - Stun
+        # - KnockedDown
+        # - SlowedDown
+        # - Stutter
+        # - SeeingRainbows
+      # Box Change End
         - Electrocution
         # - Drunk
-        - SlurredSpeech
-        # - PressureImmunity # Harmony Change
+        # - SlurredSpeech # Box Change - Remove outdates status effects
+        - PressureImmunity
         - Muted
         # - ForcedSleep
         - TemporaryBlindness
@@ -318,6 +320,12 @@
         # - PsionicsDisabled
         # - PsionicallyInsulated
         - Flashed # Goobstation
+      # Box Change Start - Status Effect Refactor
+        - StaminaModifier
+        - RadiationProtection
+        - Adrenaline
+        - RatvarianLanguage
+      # Box Change End
     - type: Blindable
     - type: Fingerprint # Harmony Change, Gives IPCs fingerprints
     - type: FireVisuals
