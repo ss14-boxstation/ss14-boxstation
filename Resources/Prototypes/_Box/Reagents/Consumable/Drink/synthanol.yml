@@ -1,0 +1,51 @@
+# Base
+
+- type: reagent
+  id: BaseSynthanol
+  group: Drinks
+  abstract: true
+  slipData:
+    requiredSlipSpeed: 3.5
+  friction: 0.4
+  metabolisms:
+    Drink:
+      effects:
+      - !type:AdjustReagent
+        reagent: Synthanol
+        amount: 0.06
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction
+  tileReactions:
+  - !type:FlammableTileReaction
+    temperatureMultiplier: 1.35
+
+- type: reagent
+  id: Synthanol
+  name: reagent-name-synthanol
+  Parent: BaseSynthanol
+  desc: reagent-desc-synthanol
+  physicalDesc: reagent-physical-desc-strong-smelling # Needs a custom one
+  flavor: alcohol # Needs a custom one
+  color: "#1BB1FF"
+  metabolisms:
+    Alcohol:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        - !type:OrganType
+          type: IPC
+        damage:
+          types:
+            Shock: 1
+      - !type:Drunk
+        conditions:
+        - !type:OrganType
+          type: IPC
+        boozePower: 2
+
+# Drinks
