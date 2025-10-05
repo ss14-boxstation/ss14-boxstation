@@ -10,6 +10,8 @@
   metabolisms:
     Drink:
       effects:
+      - !type:SatiateThirst
+        factor: 2
       - !type:AdjustReagent
         reagent: Synthanol
         amount: 0.06
@@ -83,3 +85,91 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   fizziness: 0.6
+
+- type: reagent
+  id: Trinary
+  name: reagent-name-trinary
+  parent: BaseSynthanol
+  desc: reagent-desc-trinary
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: trinary
+  color: "#adb21f"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/trinary.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: Servo
+  name: reagent-name-servo
+  parent: BaseSynthanol
+  desc: reagent-desc-servo
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: servo
+  color: "#5b3210"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/servo.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 2 # 1 fill level doesn't work
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: SynthNSoda
+  name: reagent-name-synth-n-soda
+  parent: BaseSynthanol
+  desc: reagent-desc-synth-n-soda
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: synthnsoda
+  color: "#7204e7"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/synthnsoda.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 1
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: Synthignon
+  name: reagent-name-synthignon
+  parent: BaseSynthanol
+  desc: reagent-desc-synthignon
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: synthignon
+  color: "#d004e7"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/synthignon.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: Uplink
+  name: reagent-name-uplink
+  parent: BaseSynthanol
+  desc: reagent-desc-uplink
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: uplink
+  color: "#e7ae04"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/uplink.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Synthanol
+        amount: 0.2

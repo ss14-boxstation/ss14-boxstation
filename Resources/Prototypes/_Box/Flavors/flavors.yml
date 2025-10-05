@@ -7,3 +7,28 @@
   id: robottears
   flavorType: Complex
   description: flavor-complex-robottears
+
+- type: flavor
+  id: trinary
+  flavorType: Complex
+  description: flavor-complex-trinary
+
+- type: flavor
+  id: servo
+  flavorType: Complex
+  description: flavor-complex-servo
+
+- type: flavor
+  id: synthnsoda
+  flavorType: Complex
+  description: flavor-complex-servo
+
+- type: flavor
+  id: synthignon
+  flavorType: Complex
+  description: flavor-complex-synthignon
+
+- type: flavor
+  id: uplink
+  flavorType: Complex
+  description: flavor-complex-uplink
