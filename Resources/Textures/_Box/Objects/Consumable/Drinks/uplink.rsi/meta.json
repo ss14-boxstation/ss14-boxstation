@@ -1,14 +1,14 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "robottearsglass taken from Paradise at https://github.com/ParadiseSS13/Paradise/commit/f97ee28c0d57c3fc169d87acb43451cffd5729e2. icon_empty and fill levels modified from robottearsglass by CollectionOfBones128 (GitHub)",
+    "copyright": "uplinkglass taken from Paradise at https://github.com/ParadiseSS13/Paradise/commit/74838a86f801c1ae3c9c1fc8c31d68ee779677d2. icon_empty and fill levels modified from uplinkglass by CollectionOfBones128 (GitHub)",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "robottearsglass"
+            "name": "uplinkglass"
         },
         {
             "name": "icon_empty"
@@ -24,12 +24,6 @@
         },
         {
             "name": "fill-4"
-        },
-        {
-            "name": "fill-5"
-        },
-        {
-            "name": "fill-6"
         }
     ]
 }
