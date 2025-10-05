@@ -125,12 +125,6 @@
       filter: true
     - id: Narcotic
       filter: true
-    - id: Food # Temporary
-      filter: true
-    - id: Drink # Temporary
-      filter: true
-    - id: Alcohol # Temporary
-      filter: true
     removeEmpty: true
   # Box Change End
   # - type: Heart # Harmony Change, comments this out because I'm pretty sure its Shitmed
@@ -167,6 +161,7 @@
     specialDigestible:
       tags:
       - IPCFood
+    isSpecialDigestibleExclusive: false
   - type: Metabolizer
     maxReagents: 3
     metabolizerTypes: [IPC]
@@ -174,5 +169,6 @@
     - id: Food
     - id: Drink
     - id: Alcohol
+      rateModifier: 0.1
     removeEmpty: true
 # Box Change End
