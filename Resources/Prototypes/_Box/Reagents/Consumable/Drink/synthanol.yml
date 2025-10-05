@@ -29,7 +29,7 @@
   desc: reagent-desc-synthanol
   physicalDesc: reagent-physical-desc-strong-smelling # Needs a custom one
   flavor: alcohol # Needs a custom one
-  color: "#1BB1FF"
+  color: "#59768c"
   metabolisms:
     Alcohol:
       effects:
@@ -49,3 +49,37 @@
         boozePower: 2
 
 # Drinks
+
+- type: reagent
+  id: IPCA
+  name: reagent-name-ipca
+  parent: BaseSynthanol
+  desc: reagent-desc-ipca
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: beer
+  color: "#1BB1FF"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/ipca.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  fizziness: 0.6
+
+- type: reagent
+  id: RobotTears
+  name: reagent-name-robot-tears
+  parent: BaseSynthanol
+  desc: reaget-desc-robot-tears
+  physicalDesc: reagent-physical-desc-oily
+  flavor: robottears
+  color: "#363636"
+  recognizable: true
+  metamorphicSprite:
+    sprite: _Box/Objects/Consumable/Drinks/robottears.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  fizziness: 0.6
