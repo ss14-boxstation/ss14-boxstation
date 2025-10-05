@@ -46,7 +46,7 @@
         conditions:
         - !type:OrganType
           type: IPC
-        boozePower: 2
+        boozePower: 2 # TODO: Unique IPC slurred speech. Figure that out. Probably reuse Borg Damage accent?
 
 # Drinks
 
