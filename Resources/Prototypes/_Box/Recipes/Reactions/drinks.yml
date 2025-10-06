@@ -36,6 +36,8 @@
 
 - type: reaction
   id: Trinary
+  requiredMixerCategories:
+  - Stir
   reactants:
     IPCA:
       amount: 1

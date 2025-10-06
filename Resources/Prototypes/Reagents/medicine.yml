@@ -693,6 +693,11 @@
             type: Avali
             shouldHave: false
           # end harmony change
+          # Box Change Start - IPCs
+          - !type:OrganType
+            type: IPC
+            shouldHave: false
+          # Box Change End
           amount: 6
           # start harmony change
     Poison:

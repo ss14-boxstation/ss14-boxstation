@@ -169,6 +169,11 @@
         - !type:OrganType
           type: Dwarf
           shouldHave: false
+        # Box Change Start - IPCs
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         damage:
           types:
             Poison: 1
@@ -201,7 +206,18 @@
         - !type:OrganType
           type: Dwarf
           shouldHave: false
+        # Box Change Start - IPCs
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
       - !type:Drunk
+        # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         boozePower: 2
 
 - type: reagent
@@ -959,6 +975,12 @@
         reagent: Ethanol
         amount: 0.05
       - !type:HealthChange
+        # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         damage:
           groups:
             Burn: -1
@@ -2320,8 +2342,19 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
+        # Box Change Start - IPCs
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         probability: 0.5
       - !type:HealthChange
+        # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         damage:
           types:
             Poison: .5
@@ -2517,6 +2550,12 @@
     Alcohol:
       effects:
       - !type:Drunk
+        # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         boozePower: 10
       - !type:HealthChange
         conditions:
@@ -2525,6 +2564,11 @@
         - !type:OrganType
           type: Dwarf
           shouldHave: false
+        # Box Change Start - IPCs
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         damage:
           types:
             Poison: 2 # TODO: Figure out poison amount. Ethanol does 1, this does 2 but also metabolises almost 3 to 4 times as fast as ethanol. This would be more Liver damage when that time arrives.
@@ -2546,3 +2590,8 @@
         - !type:OrganType
           type: Dwarf
           shouldHave: false
+        # Box Change Start - IPCs
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End

@@ -191,17 +191,6 @@
           types:
             Heat: 2.5
             Caustic: 1
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        scaleByQuantity: true
-        ignoreResistances: true
-        damage:
-          types:
-            Heat: 2.5
-            Caustic: 1
-    # Box Change End
 
 - type: reagent
   id: FluorosulfuricAcid
@@ -517,6 +506,11 @@
           - !type:OrganType
             type: Vox
             shouldHave: false
+          # Box Change Start - IPCs
+          - !type:OrganType
+            type: IPC
+            shouldHave: false
+          # Box Change End
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-sick" ]
@@ -530,6 +524,11 @@
           - !type:OrganType
             type: Vox
             shouldHave: false
+          # Box Change Start - IPCs
+          - !type:OrganType
+            type: IPC
+            shouldHave: false
+          # Box Change End
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -538,6 +537,11 @@
         - !type:OrganType
           type: Vox
           shouldHave: false
+        # Box Change Start - IPCs
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         damage:
           types:
             Poison: 1

@@ -145,6 +145,11 @@
       - !type:ChemVomit
         probability: 0.1
         conditions:
+        # Box Change Start - IPCs
+          - !type:OrganType
+            type: IPC
+            shouldHave: false
+        # Box Change End
           - !type:ReagentThreshold
             min: 6
 

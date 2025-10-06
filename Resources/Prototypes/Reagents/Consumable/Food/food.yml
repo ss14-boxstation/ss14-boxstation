@@ -30,6 +30,12 @@
     Food: #This makes it not compete with medicines, a large bonus for something that can heal
       effects:
       - !type:HealthChange
+      # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+      # Box Change End
         probability: 0.5
         damage:
           groups:
@@ -37,6 +43,12 @@
             Burn: -0.5
       # Helps you stop bleeding to an extent.
       - !type:ModifyBleedAmount
+      # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+      # Box Change End
         amount: -0.25
       - !type:SatiateHunger #Numbers are balanced with this in mind + it helps limit how much healing you can get from food
   # Lets plants benefit too
@@ -59,11 +71,23 @@
     Food:
       effects:
       - !type:HealthChange
+      # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+      # Box Change End
         probability: 0.5
         damage:
           groups:
             Brute: -0.4
       - !type:ModifyBloodLevel
+      # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+      # Box Change End
         amount: 1 # weaker than iron but pretty good all things considered
       - !type:SatiateHunger
   pricePerUnit: 3

@@ -169,6 +169,12 @@
       - !type:ModifyBloodLevel
         amount: 3
       - !type:HealthChange
+        # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         damage:
           groups:
             Burn: -5
@@ -177,6 +183,12 @@
           types:
             Bloodloss: -5
       - !type:ModifyBleedAmount
+        # Box Change Start - IPCs
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
+        # Box Change End
         amount: -1.5
   # Just in case you REALLY want to water your plants
   plantMetabolism:
