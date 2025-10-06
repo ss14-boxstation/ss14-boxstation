@@ -1,0 +1,16 @@
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  id: DrinkIPCAJug
+  name: IPCA jug
+  suffix: Full, BoxStation
+  description: The most common synthanolic drink.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 150
+        reagents:
+        - ReagentId: IPCA
+          Quantity: 150
+  - type: Label
+    currentLabel: reagent-name-ipca

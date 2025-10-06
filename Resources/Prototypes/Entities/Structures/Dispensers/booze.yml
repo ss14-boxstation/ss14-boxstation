@@ -45,3 +45,4 @@
     - id: DrinkVodkaBottleFull
     - id: DrinkWhiskeyBottleFull
     - id: DrinkWineBottleFull
+    - id: DrinkIPCAJug # Box Change - Synthanol Drinks for IPCs
