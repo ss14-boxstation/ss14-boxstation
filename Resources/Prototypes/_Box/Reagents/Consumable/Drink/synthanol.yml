@@ -27,7 +27,7 @@
 - type: reagent
   id: Synthanol
   name: reagent-name-synthanol
-  Parent: BaseSynthanol
+  parent: BaseSynthanol
   desc: reagent-desc-synthanol
   physicalDesc: reagent-physical-desc-strong-smelling # Needs a custom one
   flavor: alcohol # Needs a custom one
