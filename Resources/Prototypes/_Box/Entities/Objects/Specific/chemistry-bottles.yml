@@ -1,0 +1,14 @@
+- type: entity
+  id: ChemistryBottleSynthanol
+  suffix: synthanol, BoxStation
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-synthanol
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Synthanol
+          Quantity: 30

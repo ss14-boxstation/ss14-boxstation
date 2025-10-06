@@ -12,3 +12,14 @@
       catalyst: true
   products:
     ActivatedSilicon: 9
+
+- type: reaction
+  id: Synthanol
+  reactants:
+    Plasma:
+      amount: 1
+    Ethanol:
+      amount: 1
+  products:
+    Synthanol:
+      amount: 1

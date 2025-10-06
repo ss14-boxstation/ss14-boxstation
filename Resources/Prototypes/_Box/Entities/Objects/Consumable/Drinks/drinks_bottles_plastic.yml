@@ -14,3 +14,20 @@
           Quantity: 150
   - type: Label
     currentLabel: reagent-name-ipca
+
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  id: DrinkSynthignonJug
+  name: Synthignon jug
+  suffix: Full, BoxStation
+  description: A synthanolic drink that appeals to refined silicons.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 150
+        reagents:
+        - ReagentId: Synthignon
+          Quantity: 150
+  - type: Label
+    currentLabel: reagent-name-synthignon
