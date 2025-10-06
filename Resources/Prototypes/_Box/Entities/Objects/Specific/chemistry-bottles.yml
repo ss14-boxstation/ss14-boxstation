@@ -1,7 +1,7 @@
 - type: entity
+  parent: BaseChemistryBottleFilled
   id: ChemistryBottleSynthanol
   suffix: synthanol, BoxStation
-  parent: BaseChemistryBottleFilled
   components:
   - type: Label
     currentLabel: reagent-name-synthanol
