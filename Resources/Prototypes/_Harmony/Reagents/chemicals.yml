@@ -15,14 +15,16 @@
   friction: 0.4
   # Box Change Start - IPC Chem
   metabolisms:
-    Poison:
+    Drink:
       effects:
       - !type:SatiateThirst
         factor: -0.2
-    Industrial:
-      effects:
       - !type:ModifyBloodLevel
-        amount: 1.5
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: true
+        amount: 3
   # Box Change End
 
 - type: reagent
@@ -41,16 +43,22 @@
   friction: 0.4
   # Box Change Start - IPC Chem
   metabolisms:
-    Poison:
+    Drink:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false
         damage:
           types:
             Poison: 0.5
-    Industrial:
-      effects:
       - !type:ModifyBloodLevel
-        amount: 1.5
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: true
+        amount: 3
   # Box Change End
 
 - type: reagent
