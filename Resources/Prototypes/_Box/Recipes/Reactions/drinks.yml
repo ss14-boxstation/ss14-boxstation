@@ -69,12 +69,10 @@
       amount: 1
     Vodka:
       amount: 1
-    Tequila:
-      amount: 1
     Whiskey:
       amount: 1
   products:
-    Uplink: 5
+    Uplink: 4
 
 - type: reaction
   id: SynthNSoda
