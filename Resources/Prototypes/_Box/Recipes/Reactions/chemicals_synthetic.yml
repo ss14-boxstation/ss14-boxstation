@@ -21,5 +21,4 @@
     Ethanol:
       amount: 1
   products:
-    Synthanol:
-      amount: 1
+    Synthanol: 1

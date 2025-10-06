@@ -20,5 +20,7 @@
           Quantity: 1
   - type: Sprite
     sprite: _Box/Objects/Consumable/Drinks/ipca_can.rsi
+    state: synthanolcan
   - type: Item
     sprite: _Box/Objects/Consumable/Drinks/ipca_can.rsi
+    state: synthanolcan

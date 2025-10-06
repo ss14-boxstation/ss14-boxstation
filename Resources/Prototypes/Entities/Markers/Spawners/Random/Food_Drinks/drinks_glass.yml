@@ -120,6 +120,15 @@
       - DrinkShakeWhite
       - DrinkTheMartinez
       - DrinkMoonshineGlass
+# Box Change Start - Synthanol Drinks
+      - DrinkIPCAGlass
+      - DrinkRobotTearsGlass
+      - DrinkTrinaryGlass
+      - DrinkServoGlass
+      - DrinkSynthNSodaGlass
+      - DrinkSynthignonGlass
+      - DrinkUplinkGlass
+# Box Change End
     chance: 0.8
     offset: 0.0
     #rare

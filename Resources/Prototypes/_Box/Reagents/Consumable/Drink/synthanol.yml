@@ -130,7 +130,7 @@
   metamorphicSprite:
     sprite: _Box/Objects/Consumable/Drinks/synthnsoda.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 1
+  metamorphicMaxFillLevels: 2
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
