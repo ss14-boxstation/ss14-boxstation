@@ -49,6 +49,22 @@
         - !type:OrganType
           type: IPC
         boozePower: 2 # TODO: Unique IPC slurred speech. Figure that out. Probably reuse Borg Damage accent?
+      - !type:PopupMessage # no sanity/mood
+        conditions:
+        - !type:OrganType
+          type: IPC
+          shouldHave: false # For organics only
+        - !type:ReagentThreshold
+          min: 0.5 # takes a bit to get going
+          max: 15 # Having too much of a good thing and all that...
+        type: Local
+        visualType: Medium
+        messages:
+        - "synthanol-effect-buzz"
+        - "synthanol-effect-courageous"
+        - "synthanol-effect-no-anxiety"
+        - "synthanol-effect-social"
+        probability: 0.05
 
 # Drinks
 
