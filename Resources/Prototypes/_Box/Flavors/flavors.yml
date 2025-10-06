@@ -4,6 +4,11 @@
   description: flavor-complex-recal
 
 - type: flavor
+  id: ipca
+  flavorType: Complex
+  description: flavor-complex-ipca
+
+- type: flavor
   id: robottears
   flavorType: Complex
   description: flavor-complex-robottears

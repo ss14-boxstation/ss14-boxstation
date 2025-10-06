@@ -58,7 +58,7 @@
   parent: BaseSynthanol
   desc: reagent-desc-ipca
   physicalDesc: reagent-physical-desc-bubbly
-  flavor: beer
+  flavor: ipca
   color: "#1BB1FF"
   recognizable: true
   metamorphicSprite:
