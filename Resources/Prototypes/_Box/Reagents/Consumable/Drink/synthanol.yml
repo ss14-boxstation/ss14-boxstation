@@ -89,7 +89,7 @@
   id: RobotTears
   name: reagent-name-robot-tears
   parent: BaseSynthanol
-  desc: reaget-desc-robot-tears
+  desc: reagent-desc-robot-tears
   physicalDesc: reagent-physical-desc-oily
   flavor: robottears
   color: "#363636"
