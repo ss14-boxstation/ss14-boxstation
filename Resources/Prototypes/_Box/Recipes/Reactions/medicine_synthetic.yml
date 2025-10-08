@@ -114,3 +114,21 @@
       amount: 1
   products:
     RoutineMaintenance: 4
+
+- type: reaction
+  id: Nanoweldite
+  reactants:
+    Phosphorus:
+      amount: 3
+    Sulfur:
+      amount: 2
+    Oxygen:
+      amount: 2
+    Plasma:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+    ActivatedSilicon:
+      amount: 1
+  products:
+    Nanoweldite: 5

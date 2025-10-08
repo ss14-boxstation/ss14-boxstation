@@ -24,3 +24,6 @@ reagent-desc-degreaser = An industrial degreaser which can be used to clean resi
 
 reagent-name-routine-maintenance = routine maintenance
 reagent-desc-routine-maintenance = A general purpose repairing nantie suspension capable of handling most low-impact damages to synthetic lifeforms.
+
+reagent-name-nanoweldite = nanoweldite
+reagent-desc-nanoweldite = A nanite suspension equiped with hyper-efficient nanowelders. It's not good at telling when it is and isn't inside a synthetic lifeform.
