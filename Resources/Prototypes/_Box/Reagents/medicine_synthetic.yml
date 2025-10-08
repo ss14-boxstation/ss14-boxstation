@@ -228,3 +228,27 @@
       - !type:AdjustReagent
         reagent: SpaceLube
         amount: -3.0
+
+# Routine Maintenance - RoboTrico
+- type: reagent
+  id: RoutineMaintenance
+  name: reagent-name-routine-maintenance
+  group: Medicine
+  desc: reagent-desc-routine-maintenance
+  physicalDesc: reagent-physical-desc-metallic
+  flavor: metallic
+  color: "#c9d4db"
+  metabolisms:
+    Software:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TotalDamage
+          max: 60
+        damage:
+          groups:
+            Brute: -0.45
+          types:
+            Heat: -0.15
+            Shock: -0.15
+            Cold: -0.15

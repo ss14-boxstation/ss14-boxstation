@@ -102,3 +102,15 @@
   products:
     ComputerCoolant: 1
     IndustrialLubricant: 1
+
+- type: reaction
+  id: RoutineMaintenance
+  reactants:
+    ActivatedSilicon:
+      amount: 1
+    Iron:
+      amount: 3
+    Aluminium:
+      amount: 1
+  products:
+    RoutineMaintenance: 4

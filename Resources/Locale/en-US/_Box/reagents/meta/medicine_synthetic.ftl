@@ -21,3 +21,6 @@ reagent-desc-liquid-solder = A solution formulated to clean and repair damaged c
 
 reagent-name-degreaser = degreaser
 reagent-desc-degreaser = An industrial degreaser which can be used to clean residual build-up from machinery and surfaces.
+
+reagent-name-routine-maintenance = routine maintenance
+reagent-desc-routine-maintenance = A general purpose repairing nantie suspension capable of handling most low-impact damages to synthetic lifeforms.
