@@ -45,7 +45,7 @@
     - id: DragonSpawn
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
-    #    - id: SleeperAgents - Box Change, Comments out Sleeper Agent
+    # - id: SleeperAgents # - Box Change, Comments out Sleeper Agent
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
     # - id: WizardSpawn - Harmony Change, disables wizard midround
