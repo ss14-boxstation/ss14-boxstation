@@ -117,15 +117,16 @@
 
 - type: reaction
   id: Nanoweldite
+  minTemp: 420
+  maxTemp: 520 # Hot Enough it can coagulate and form, but not too hot that it ignites instead
+  priority: 20
   reactants:
     Phosphorus:
       amount: 3
     Sulfur:
       amount: 2
-    Oxygen:
-      amount: 2
     Plasma:
-      amount: 1
+      amount: 3
     WeldingFuel:
       amount: 1
     ActivatedSilicon:
