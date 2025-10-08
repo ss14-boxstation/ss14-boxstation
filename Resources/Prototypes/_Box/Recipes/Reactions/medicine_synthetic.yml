@@ -132,3 +132,38 @@
       amount: 1
   products:
     Nanoweldite: 5
+
+- type: reaction
+  id: SOISapphire
+  minTemp: 300
+  reactants:
+    ActivatedSilicon:
+      amount: 1
+    Aluminium:
+      amount: 2
+    Oxygen:
+      amount: 3
+  products:
+    SOISapphire: 5
+
+- type: reaction
+  id: ECCMemory
+  reactants:
+    SOISapphire:
+      amount: 1
+    Radium:
+      amount: 1
+    Iodine:
+      amount: 2
+  products:
+    ECCMemory: 4
+
+- type: reaction
+  id: ThermalPaste
+  reactants:
+    Leporazine:
+      amount: 1
+    SOISapphire:
+      amount: 3
+  products:
+    ThermalPaste: 4

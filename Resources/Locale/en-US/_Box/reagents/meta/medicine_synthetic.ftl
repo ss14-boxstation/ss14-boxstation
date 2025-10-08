@@ -27,3 +27,12 @@ reagent-desc-routine-maintenance = A general purpose repairing nantie suspension
 
 reagent-name-nanoweldite = nanoweldite
 reagent-desc-nanoweldite = A nanite suspension equiped with hyper-efficient nanowelders. It's not good at telling when it is and isn't inside a synthetic lifeform.
+
+reagent-name-soi-sapphire = SOI sapphire
+reagent-desc-soi-sapphire = Deposits a protective layer of Sapphire on vital components in synthetic lifeforms, reducing the effects of radiation by 90%. Not recommended for use by organics.
+
+reagent-name-ecc-memory = ECC memory
+reagent-desc-ecc-memory = A nanite program capable of detecting and correcting n-bit errors caused by radiation.
+
+reagent-name-thermal-paste = thermal paste
+reagent-desc-thermal-paste = A thermal paste specifically engineered for synthetic lifeforms, capable of returning them to operational temperatures.
