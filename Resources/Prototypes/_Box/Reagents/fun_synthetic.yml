@@ -109,3 +109,56 @@
         component: StaminaModifier
         time: 3
         type: Add
+
+# Mechazine - Surge+
+- type: reagent
+  id: Mechazine
+  name: reagent-name-mechazine
+  group: Narcotics
+  desc: reagent-desc-mechazine
+  physicalDesc: reagent-physical-desc-energizing
+  flavor: shocking
+  color: "#C7BC1C"
+  metabolisms:
+    Malware:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 50
+        damage:
+          types:
+            Shock: 2
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:Jitter
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 3
+        type: Add
+    Software:
+      metabolismRate: 1.0
+      effects:
+      - !type:ResetNarcolepsy
+      - !type:HealthChange
+        conditions:
+        - !type:TotalDamage
+          min: 80 # only heals when you're more dead than alive
+        damage:
+          types: # No Shock No Rad
+            Blunt: -0.2
+            Slash: -0.2
+            Piercing: -0.2
+            Heat: -0.2
+            Cold: -0.2
+            Caustic: -0.2

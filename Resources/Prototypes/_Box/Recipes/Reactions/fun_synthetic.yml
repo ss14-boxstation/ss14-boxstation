@@ -40,3 +40,14 @@
       amount: 1
   products:
     Surge: 4
+
+- type: reaction
+  id: Mechazine
+  minTemp: 300
+  reactants:
+    Surge:
+      amount: 1
+    Vestine:
+      amount: 1
+  products:
+    Mechazine: 1
