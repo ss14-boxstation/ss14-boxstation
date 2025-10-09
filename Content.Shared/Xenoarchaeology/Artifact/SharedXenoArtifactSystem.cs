@@ -49,7 +49,7 @@ public abstract partial class SharedXenoArtifactSystem : EntitySystem
         ent.Comp.NodeContainer = _container.EnsureContainer<Container>(ent, XenoArtifactComponent.NodeContainerId);
     }
 
-    private void OnSelfActivate(Entity<XenoArtifactComponent> ent, ref XAEArtifactSelfActivateEvent args)
+    private void OnSelfActivate(Entity<XenoArtifactComponent> ent, ref XAEArtifactSelfActivateEvent args) //#IMP: Renamed to "XAEArtifact..." from "Artifact..."
     {
         args.Handled = TryActivateXenoArtifact(ent, ent, null, Transform(ent).Coordinates, false);
     }
