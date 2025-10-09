@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: RandomXAEArtifactSpawner #IMP XAE in name
   name: random reticulated artifact spawner # Box Change - add "reticulated" to name
-  suffix: Imp
+  suffix: Imp # Box Change - Adds Imp Suffix, Duo XenoArch - Despite being in an Upstream file, the ID has been hijacked and so should not be mapped.
   parent: MarkerBase
   components:
     - type: Sprite

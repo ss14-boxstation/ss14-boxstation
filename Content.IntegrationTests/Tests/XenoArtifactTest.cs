@@ -9,6 +9,7 @@ namespace Content.IntegrationTests.Tests;
 public sealed class XenoArtifactTest
 {
     [TestPrototypes]
+// Box Change - BaseXenoArtifact > BaseXAEXenoArtifact
     private const string Prototypes = @"
 - type: entity
   id: TestArtifact
