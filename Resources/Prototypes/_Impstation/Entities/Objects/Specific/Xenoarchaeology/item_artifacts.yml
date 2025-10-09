@@ -65,13 +65,13 @@
   - type: GuideHelp
     guides:
     - Xenoarchaeology
-  - type: WarpPoint
-    blacklist:
-      tags:
-      - GhostOnlyWarp
-  - type: Tag
-    tags:
-    - GhostOnlyWarp
+  # - type: WarpPoint
+  #   blacklist:
+  #     tags:
+  #     - GhostOnlyWarp
+  # - type: Tag
+  #   tags:
+  #   - GhostOnlyWarp
   - type: NameIdentifier
     group: Artifact
 
