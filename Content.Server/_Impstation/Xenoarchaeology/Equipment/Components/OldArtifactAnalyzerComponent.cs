@@ -16,7 +16,7 @@ public sealed partial class OldArtifactAnalyzerComponent : Component
     /// How long it takes to analyze an artifact
     /// </summary>
     [DataField("analysisDuration", customTypeSerializer: typeof(TimespanSerializer))]
-    public TimeSpan AnalysisDuration = TimeSpan.FromSeconds(30);
+    public TimeSpan AnalysisDuration = TimeSpan.FromSeconds(15); // Box Change - 30 seconds was always too long
 
     /// <summary>
     /// The corresponding console entity.

@@ -1,3 +1,7 @@
+artifact-effect-hint-stationwide-disruption = Stationwide disruption
+
+artifact-trigger-hint-funny = Slapstick comedy
+
 artifact-trigger-hint-drink-classic-martini = Beverage "Classically shaken"
 artifact-trigger-hint-drink-caffine = Beverage "Caffinated"
 artifact-trigger-hint-drink-budget-insuls = Beverage "Tider's preferred drink"
