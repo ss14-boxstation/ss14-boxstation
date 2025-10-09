@@ -1,7 +1,7 @@
 - type: entity
-  id: BaseXenoArtifact
+  id: BaseXAEXenoArtifact # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
   parent: BaseMob # we use this since it can technically get inhabited
-  name: artifact
+  name: reticulated artifact # Box Change - adds "reticulated" to the name
   description: A strange artifact from time unknown. Looks like a good time.
   abstract: true
   noSpawn: true
@@ -62,4 +62,4 @@
       state: ano29
     useDelay: 300
   - type: InstantAction
-    event: !type:ArtifactSelfActivateEvent
+    event: !type:XAEArtifactSelfActivateEvent #IMP: Renamed to "XAEArtifact..." from "Artifact..."

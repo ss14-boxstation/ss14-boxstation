@@ -1,0 +1,7 @@
+- type: construction
+  id: OldArtifact # Box Change - Artifact > OldArtifact
+  graph: OldArtifact # Box Change - Artifact > OldArtifact
+  startNode: start
+  targetNode: done
+  category: construction-category-misc
+  objectType: Item

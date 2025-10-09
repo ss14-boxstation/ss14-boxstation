@@ -1,7 +1,7 @@
 ﻿- type: entity
-  parent: [BaseStructureDynamic, BaseXenoArtifact]
-  id: BaseXenoArtifactStructure
-  name: artifact
+  parent: [BaseStructureDynamic, BaseXAEXenoArtifact] # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
+  id: BaseXAEXenoArtifactStructure # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
+  name: reticulated artifact # Box Change - adds "reticulated" to the name
   abstract: true
   noSpawn: true
   components:
@@ -40,8 +40,8 @@
         - MachineMask
 
 - type: entity
-  parent: BaseXenoArtifactStructure
-  id: ComplexXenoArtifact
+  parent: BaseXAEXenoArtifactStructure # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
+  id: ComplexXAEXenoArtifact # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
   components:
   - type: XenoArtifact
     nodeCount:

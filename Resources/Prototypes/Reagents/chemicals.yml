@@ -111,6 +111,12 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
+# Box Change Start - Imp Duo XenoArch
+      - !type:ActivateArtifact #IMP
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+# Box Change End
 
 - type: reagent
   parent: Artifexium

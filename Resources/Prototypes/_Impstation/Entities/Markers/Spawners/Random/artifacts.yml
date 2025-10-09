@@ -1,0 +1,74 @@
+- type: entity
+  id: RandomOldArtifactSpawner # Box Change - Add "Old"
+  name: random natural artifact spawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+          state: ano01
+    - type: RandomSpawner
+      prototypes: # Box Change - Add "Old"
+        - SimpleOldXenoArtifact
+        - MediumOldXenoArtifact
+        - MediumOldXenoArtifact
+        - MediumOldXenoArtifact
+        - MediumOldXenoArtifact
+        - ComplexOldXenoArtifact
+        - ComplexOldXenoArtifact
+        - ComplexOldXenoArtifact
+        - SimpleOldXenoArtifactItem
+        - MediumOldXenoArtifactItem
+        - ComplexOldXenoArtifactItem
+      chance: 1
+
+- type: entity
+  id: RandomOldArtifactSpawner20 # Box Change - Add "Old"
+  name: random natural artifact spawner [20]
+  parent: RandomArtifactSpawner
+  components:
+    - type: RandomSpawner
+      chance: 0.2
+
+- type: entity
+  id: RandomArtifactSpawner # Box Change - RandomOldNewArtifactSpawner > RandomArtifactSpawner - easier for Mapping
+  name: random reticulated/natural artifact spawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+          state: ano01
+    - type: RandomSpawner
+      prototypes:
+        - SimpleOldXenoArtifact
+        - MediumOldXenoArtifact
+        - MediumOldXenoArtifact
+        - MediumOldXenoArtifact
+        - MediumOldXenoArtifact
+        - ComplexOldXenoArtifact
+        - ComplexOldXenoArtifact
+        - ComplexOldXenoArtifact
+        - SimpleOldXenoArtifactItem
+        - MediumOldXenoArtifactItem
+        - ComplexOldXenoArtifactItem
+        - ComplexXAEXenoArtifact
+        - ComplexXAEXenoArtifact
+        - ComplexXAEXenoArtifact
+        - ComplexXAEXenoArtifact
+        - ComplexXAEXenoArtifact
+        - ComplexXAEXenoArtifact
+        - ComplexXAEXenoArtifactItem
+        - ComplexXAEXenoArtifactItem
+        - ComplexXAEXenoArtifactItem
+      chance: 1
+
+- type: entity
+  id: RandomArtifactSpawner20 # Box Change - RandomOldNewArtifactSpawner20 > RandomArtifactSpawner20 - easier for Mapping
+  name: random reticulated/natural artifact spawner [20]
+  parent: RandomArtifactSpawner # Box Change - OldNewArtifact > Artifact
+  components:
+    - type: RandomSpawner
+      chance: 0.2
