@@ -269,7 +269,7 @@
     groups:
       Acidic: [ Touch ]
     reactions:
-    - reagents: [ Coffee, CafeLatte, Tea, EnergyDrink, VodkaRedBool, PwrGame, FourteenLoko, XenoBasher, IrishBool, BudgetInsulsDrink, WatermelonWakeup, KingSoda, CottonBool, Rubberneck, IcedTea, ArnoldPalmer, Raktaccino, OrangeCoffee, CoffeeLiqueur, IrishCoffee, B52, BlackRussian, BraveBull, IcedCoffee, Rewriter, SoyLatte, EspressoMartini ]
+    - reagents: [ Coffee, CafeLatte, Tea, EnergyDrink, VodkaRedBool, PwrGame, FourteenLoko, XenoBasher, IrishBool, BudgetInsulsDrink, WatermelonWakeup, Rubberneck, IcedTea, ArnoldPalmer, CoffeeLiqueur, IrishCoffee, B52, BlackRussian, BraveBull, IcedCoffee, Rewriter, SoyLatte, EspressoMartini ] # Box Change - Removed Imp specific Drinks
       methods: [ Touch ]
       effects:
       - !type:ActivateArtifact
@@ -364,20 +364,22 @@
       effects:
       - !type:ActivateArtifact
 
-- type: artifactTrigger
-  id: TriggerDrinkThavenBad
-  targetDepth: 4
-  triggerProb: 0.05
-  triggerHint: artifact-trigger-hint-drink-thaven-bad
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ ThavenBad ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
+# Box Change Start - We don't have "ThavenBad"
+# - type: artifactTrigger
+#   id: TriggerDrinkThavenBad
+#   targetDepth: 4
+#   triggerProb: 0.05
+#   triggerHint: artifact-trigger-hint-drink-thaven-bad
+#   components:
+#   - type: Reactive
+#     groups:
+#        Acidic: [ Touch ]
+#     reactions:
+#     - reagents: [ ThavenBad ]
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
+# Box Change End
 
 - type: artifactTrigger
   id: TriggerDrinkStarkist
@@ -394,35 +396,39 @@
       effects:
       - !type:ActivateArtifact
 
-- type: artifactTrigger
-  id: TriggerDrinkZombieSlushie
-  targetDepth: 4
-  triggerProb: 0.05
-  triggerHint: artifact-trigger-hint-drink-zombie-slushie
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ ZombieSlushie ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
+# Box Change Start - We don't have "ZombieSlushie"
+# - type: artifactTrigger
+#   id: TriggerDrinkZombieSlushie
+#   targetDepth: 4
+#   triggerProb: 0.05
+#   triggerHint: artifact-trigger-hint-drink-zombie-slushie
+#   components:
+#   - type: Reactive
+#     groups:
+#       Acidic: [ Touch ]
+#     reactions:
+#     - reagents: [ ZombieSlushie ]
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
+# Box Change Ends
 
-- type: artifactTrigger
-  id: TriggerDrinkVoxRocks
-  targetDepth: 4
-  triggerProb: 0.05
-  triggerHint: artifact-trigger-hint-drink-vox-rocks
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ VoxRocks ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
+# Box Change Start - We don't have "VoxRocks"
+# - type: artifactTrigger
+#   id: TriggerDrinkVoxRocks
+#   targetDepth: 4
+#   triggerProb: 0.05
+#   triggerHint: artifact-trigger-hint-drink-vox-rocks
+#   components:
+#   - type: Reactive
+#     groups:
+#       Acidic: [ Touch ]
+#     reactions:
+#     - reagents: [ VoxRocks ]
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
+# Box Change End
 
 - type: artifactTrigger
   id: TriggerDrinkDoctorsDelight
@@ -529,37 +535,24 @@
       effects:
       - !type:ActivateArtifact
 
-- type: artifactTrigger
-  id: TriggerDrinkDrink
-  targetDepth: 4
-  triggerProb: 0.05
-  triggerHint: artifact-trigger-hint-drink-drink
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ TheDrink ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
+# Box Change Start - We don't have "TheDrink"
+# - type: artifactTrigger
+#   id: TriggerDrinkDrink
+#   targetDepth: 4
+#   triggerProb: 0.05
+#   triggerHint: artifact-trigger-hint-drink-drink
+#   components:
+#   - type: Reactive
+#     groups:
+#       Acidic: [ Touch ]
+#     reactions:
+#     - reagents: [ TheDrink ]
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
+# Box Change End
 
 # tricky drink chunk: 5 drinks add up to same probability as one of the previous drinks triggers
-- type: artifactTrigger
-  id: TriggerDrinkTheeHorsepussy
-  targetDepth: 4
-  triggerProb: 0.01
-  triggerHint: artifact-trigger-hint-drink-thee-horsepussy
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ TheeHorsepussy ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
-
 - type: artifactTrigger
   id: TriggerDrinkThreeMileIsland
   targetDepth: 4
@@ -590,35 +583,39 @@
       effects:
       - !type:ActivateArtifact
 
-- type: artifactTrigger
-  id: TriggerDrinkSalvagersSoothe
-  targetDepth: 4
-  triggerProb: 0.01
-  triggerHint: artifact-trigger-hint-drink-salvagers-soothe
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ SalvagersSoothe ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
+# Box Change Start - We don't have "SalvagersSoothe"
+# - type: artifactTrigger
+#   id: TriggerDrinkSalvagersSoothe
+#   targetDepth: 4
+#   triggerProb: 0.01
+#   triggerHint: artifact-trigger-hint-drink-salvagers-soothe
+#   components:
+#   - type: Reactive
+#     groups:
+#       Acidic: [ Touch ]
+#     reactions:
+#     - reagents: [ SalvagersSoothe ]
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
+# Box Change End
 
-- type: artifactTrigger
-  id: TriggerDrinkUAP
-  targetDepth: 4
-  triggerProb: 0.01
-  triggerHint: artifact-trigger-hint-drink-uap
-  components:
-  - type: Reactive
-    groups:
-      Acidic: [ Touch ]
-    reactions:
-    - reagents: [ UAP ]
-      methods: [ Touch ]
-      effects:
-      - !type:ActivateArtifact
+# Box Change Start - We don't have "UAP"
+# - type: artifactTrigger
+#   id: TriggerDrinkUAP
+#   targetDepth: 4
+#   triggerProb: 0.01
+#   triggerHint: artifact-trigger-hint-drink-uap
+#   components:
+#   - type: Reactive
+#     groups:
+#       Acidic: [ Touch ]
+#     reactions:
+#     - reagents: [ UAP ]
+#       methods: [ Touch ]
+#       effects:
+#       - !type:ActivateArtifact
+# Box Change End
 
 # Below exist to pad out the depth 4 triggers. Can remove some of those when we get more triggers implemented
 - type: artifactTrigger

@@ -588,23 +588,25 @@
     spawns:
     - id: DelayedEffectLocalKnockdown
 
-- type: artifactEffect
-  id: EffectLesserPresentSpawn
-  targetDepth: 3
-  effectHint: artifact-effect-hint-creation
-  components:
-  - type: SpawnArtifact
-    maxSpawns: 5
-    spawns:
-    - id: PresentRandom
-      prob: 0.95
-      orGroup: present
-    - id: PresentRandomUnsafe
-      prob: 0.03
-      orGroup: present
-    - id: PresentRandomInsane
-      prob: 0.02
-      orGroup: present
+# Box Change Start - Presents are. Dangerous.
+# - type: artifactEffect
+#   id: EffectLesserPresentSpawn
+#   targetDepth: 3
+#   effectHint: artifact-effect-hint-creation
+#   components:
+#   - type: SpawnArtifact
+#     maxSpawns: 5
+#     spawns:
+#     - id: PresentRandom
+#       prob: 0.95
+#       orGroup: present
+#     - id: PresentRandomUnsafe
+#       prob: 0.03
+#       orGroup: present
+#     - id: PresentRandomInsane
+#       prob: 0.02
+#       orGroup: present
+# Box Change End
 
 - type: artifactEffect
   id: EffectPolyLuminous
@@ -839,18 +841,20 @@
     - ForeverWeed
     - UAP
 
-- type: artifactEffect
-  id: EffectFoamRomerol
-  targetDepth: 4
-  effectProb: 0.05
-  effectHint: artifact-effect-hint-biochemical
-  components:
-  - type: FoamArtifact
-    minFoamAmount: 30
-    maxFoamAmount: 40
-    reagents:
-    - Romerol
-    - Pilk
+# Box Change Start - We don't really do Zeds here.
+# - type: artifactEffect
+#   id: EffectFoamRomerol
+#   targetDepth: 4
+#   effectProb: 0.05
+#   effectHint: artifact-effect-hint-biochemical
+#   components:
+#   - type: FoamArtifact
+#     minFoamAmount: 30
+#     maxFoamAmount: 40
+#     reagents:
+#     - Romerol
+#     - Pilk
+# Box Change End
 
 - type: artifactEffect
   id: EffectPolyClownSpider
@@ -941,23 +945,25 @@
       types:
         Structural: 50
 
-- type: artifactEffect
-  id: EffectPresentSpawn
-  targetDepth: 4
-  effectHint: artifact-effect-hint-creation
-  components:
-  - type: SpawnArtifact
-    maxSpawns: 7
-    spawns:
-    - id: PresentRandom
-      prob: 0.7
-      orGroup: present
-    - id: PresentRandomUnsafe
-      prob: 0.2
-      orGroup: present
-    - id: PresentRandomInsane
-      prob: 0.1
-      orGroup: present
+# Box Change Start - No Presents.
+# - type: artifactEffect
+#   id: EffectPresentSpawn
+#   targetDepth: 4
+#   effectHint: artifact-effect-hint-creation
+#   components:
+#   - type: SpawnArtifact
+#     maxSpawns: 7
+#     spawns:
+#     - id: PresentRandom
+#       prob: 0.7
+#       orGroup: present
+#     - id: PresentRandomUnsafe
+#       prob: 0.2
+#       orGroup: present
+#     - id: PresentRandomInsane
+#       prob: 0.1
+#       orGroup: present
+# Box Change End
 
 - type: artifactEffect
   id: EffectBookSpawnMundane
@@ -1089,42 +1095,44 @@
       prob: 0.05
       orGroup: book
 
-- type: artifactEffect
-  id: EffectBookSpawnMagic
-  targetDepth: 4
-  effectHint: artifact-effect-hint-creation
-  effectProb: 0.1
-  components:
-  - type: SpawnArtifact
-    maxSpawns: 1
-    spawns:
-    - id: WizardsGrimoire
-      prob: 0.1
-      orGroup: magicbook
-    - id: SpawnSpellbook
-      prob: 1
-      orGroup: magicbook
-    - id: ForceWallSpellbook
-      prob: 1
-      orGroup: magicbook
-    - id: BlinkBook
-      prob: 1
-      orGroup: magicbook
-    - id: SmiteBook
-      prob: 0.3
-      orGroup: magicbook
-    - id: KnockSpellbook
-      prob: 1
-      orGroup: magicbook
-    - id: FireballSpellbook
-      prob: 1
-      orGroup: magicbook
-    - id: SpawnSpaceGreaseSpellbook
-      prob: 1
-      orGroup: magicbook
-    - id: ScrollRunes
-      prob: 1
-      orGroup: magicbook
+# Box Change Start - Don't want these in circulation outside admins.
+# - type: artifactEffect
+#   id: EffectBookSpawnMagic
+#   targetDepth: 4
+#   effectHint: artifact-effect-hint-creation
+#   effectProb: 0.1
+#   components:
+#   - type: SpawnArtifact
+#     maxSpawns: 1
+#     spawns:
+#     - id: WizardsGrimoire
+#       prob: 0.1
+#       orGroup: magicbook
+#     - id: SpawnSpellbook
+#       prob: 1
+#       orGroup: magicbook
+#     - id: ForceWallSpellbook
+#       prob: 1
+#       orGroup: magicbook
+#     - id: BlinkBook
+#       prob: 1
+#       orGroup: magicbook
+#     - id: SmiteBook
+#       prob: 0.3
+#       orGroup: magicbook
+#     - id: KnockSpellbook
+#       prob: 1
+#       orGroup: magicbook
+#     - id: FireballSpellbook
+#       prob: 1
+#       orGroup: magicbook
+#     - id: SpawnSpaceGreaseSpellbook
+#       prob: 1
+#       orGroup: magicbook
+#     - id: ScrollRunes
+#       prob: 1
+#       orGroup: magicbook
+# Box Change End
 
 - type: entity
   id: InstantEffectGridKnockdown

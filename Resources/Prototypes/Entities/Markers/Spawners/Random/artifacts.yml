@@ -1,6 +1,7 @@
 ﻿- type: entity
   id: RandomXAEArtifactSpawner #IMP XAE in name
   name: random reticulated artifact spawner # Box Change - add "reticulated" to name
+  suffix: Imp
   parent: MarkerBase
   components:
     - type: Sprite

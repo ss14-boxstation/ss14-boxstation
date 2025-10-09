@@ -1,6 +1,7 @@
 - type: entity
   id: RandomOldArtifactSpawner # Box Change - Add "Old"
   name: random natural artifact spawner
+  suffix: Imp
   parent: MarkerBase
   components:
     - type: Sprite
