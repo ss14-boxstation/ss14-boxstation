@@ -1,0 +1,5 @@
+- type: nameIdentifierGroup
+  id: Artifact
+  format: name-identifier-format-artifact
+  minValue: 0
+  maxValue: 99

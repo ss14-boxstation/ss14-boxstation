@@ -758,8 +758,10 @@
       prob: 0.25
     - id: SpaceCash10000
       prob: 0.1
-    - id: SpaceCash50000
-      prob: 0.01
+    # Box Change Start - We don't have this
+    # - id: SpaceCash50000
+    #   prob: 0.01
+    # Box Change End
 
 - type: artifactEffect
   id: EffectFaunaSpawnDangerous
@@ -790,9 +792,11 @@
     - id: MobGrenadePenguin
       orGroup: fauna
       maxAmount: 2
-    - id: DuckDuckGooseSpawner
-      orGroup: fauna
-      prob: 1
+    # Box Change Start - We don't have this
+    # - id: DuckDuckGooseSpawner
+    #   orGroup: fauna
+    #   prob: 1
+    # Box Change End
     - id: MobPurpleSnake
       orGroup: fauna
     - id: MobSpiderSpace
@@ -828,8 +832,8 @@
     maxFoamAmount: 40
     reagents:
     - SpaceDrugs
-    - BrosochloricBros
-    - JuiceThatMakesYouUngh
+    # - BrosochloricBros # Box Change - We don't have these
+    # - JuiceThatMakesYouUngh # Box Change - We don't have these
     - Nocturine
     - MuteToxin
     - Phlogiston
@@ -838,8 +842,8 @@
     - BuzzochloricBees
     - JuiceThatMakesYouWeh
     - Lead
-    - ForeverWeed
-    - UAP
+    # - ForeverWeed # Box Change - We don't have these
+    # - UAP # Box Change - We don't have these
 
 # Box Change Start - We don't really do Zeds here.
 # - type: artifactEffect
@@ -885,15 +889,17 @@
     polymorphPrototypeName: ArtifactBee
     range: 5
 
-- type: artifactEffect
-  id: EffectPolyRod
-  targetDepth: 4
-  effectProb: 0.05
-  effectHint: artifact-effect-hint-polymorph
-  components:
-  - type: PolyOthersArtifact
-    polymorphPrototypeName: ArtifactRod
-    range: 4
+# Box Change Start - No Artifact Rod Polymorp
+# - type: artifactEffect
+#   id: EffectPolyRod
+#   targetDepth: 4
+#   effectProb: 0.05
+#   effectHint: artifact-effect-hint-polymorph
+#   components:
+#   - type: PolyOthersArtifact
+#     polymorphPrototypeName: ArtifactRod
+#     range: 4
+# Box Change End
 
 - type: artifactEffect
   id: EffectHealAllPowerful
@@ -977,30 +983,32 @@
     - id: BookRandomStory
       prob: 0.5
       orGroup: book
-    - id: BookKeelBayWorn
-      prob: 0.1
-      orGroup: book
-    - id: BookKeelBay
-      prob: 0.4
-      orGroup: book
-    - id: BookCosmicCult
-      prob: 0.5
-      orGroup: book
-    - id: BookTenebraeConspiracy
-      prob: 0.5
-      orGroup: book
-    - id: BookGatsby
-      prob: 0.05
-      orGroup: book
-    - id: BookTEGtorial
-      prob: 0.05
-      orGroup: book
-    - id: BookClownLaw
-      prob: 0.05
-      orGroup: book
-    - id: BookAgony
-      prob: 0.05
-      orGroup: book
+    # Box Change Start - Comment out Imp Unique Books
+    # - id: BookKeelBayWorn
+    #   prob: 0.1
+    #   orGroup: book
+    # - id: BookKeelBay
+    #   prob: 0.4
+    #   orGroup: book
+    # - id: BookCosmicCult
+    #   prob: 0.5
+    #   orGroup: book
+    # - id: BookTenebraeConspiracy
+    #   prob: 0.5
+    #   orGroup: book
+    # - id: BookGatsby
+    #   prob: 0.05
+    #   orGroup: book
+    # - id: BookTEGtorial
+    #   prob: 0.05
+    #   orGroup: book
+    # - id: BookClownLaw
+    #   prob: 0.05
+    #   orGroup: book
+    # - id: BookAgony
+    #   prob: 0.05
+    #   orGroup: book
+    # Box Change End
     - id: BookJanitorTale
       prob: 0.05
       orGroup: book

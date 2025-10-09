@@ -50,7 +50,7 @@
     sprite: Objects/Specific/Xenoarchaeology/item_artifacts.rsi
     heldPrefix: ano01
   - type: Construction
-    graph: Artifact
+    graph: XAEArtifact
     node: done
   - type: XenoArtifact
     effectsTable: !type:GroupSelector

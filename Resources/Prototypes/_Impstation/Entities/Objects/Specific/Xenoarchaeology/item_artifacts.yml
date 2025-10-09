@@ -60,7 +60,7 @@
     heldPrefix: ano01
   - type: Actions
   - type: Construction
-    graph: Artifact
+    graph: OldArtifact
     node: done
   - type: GuideHelp
     guides:
