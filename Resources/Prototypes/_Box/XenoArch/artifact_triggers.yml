@@ -1,0 +1,33 @@
+# Adds some of the custom Harmony & Box drinks to compensate for the removed drink triggers
+
+# Uplink
+- type: artifactTrigger
+  id: TriggerDrinkUplink
+  targetDepth: 4
+  triggerProb: 0.05
+  triggerHint: artifact-trigger-hint-drink-uplink
+  components:
+  - type: Reactive
+    groups:
+      Acidic: [ Touch ]
+    reactions:
+    - reagents: [ Uplink ]
+      methods: [ Touch ]
+      effects:
+      - !type:ActivateArtifact
+
+# Thirst Trap - Tricky
+- type: artifactTrigger
+  id: TriggerDrinkThirstTrap
+  targetDepth: 4
+  triggerProb: 0.01
+  triggerHint: artifact-trigger-hint-drink-thirst-trap
+  components:
+  - type: Reactive
+    groups:
+      Acidic: [ Touch ]
+    reactions:
+    - reagents: [ ThirstTrap ]
+      methods: [ Touch ]
+      effects:
+      - !type:ActivateArtifact
