@@ -1,5 +1,7 @@
 artifact-effect-hint-stationwide-disruption = Stationwide disruption
 
+artifact-trigger-hint-vape = Gaseous water
+artifact-trigger-hint-resurrection = Resurrection
 artifact-trigger-hint-funny = Slapstick comedy
 
 artifact-trigger-hint-drink-classic-martini = Beverage "Classically shaken"
