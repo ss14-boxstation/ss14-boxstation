@@ -12,7 +12,7 @@
 
 - type: entity
   id: ArtifactWeakInstantEffectGravityWell
-  suffix: Weak Gravity Well
+  suffix: Weak Gravity Well, Imp # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
   - type: EmitSoundOnTrigger
