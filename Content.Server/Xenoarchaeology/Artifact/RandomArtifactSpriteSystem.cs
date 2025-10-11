@@ -23,7 +23,7 @@ public sealed class RandomArtifactSpriteSystem : EntitySystem
         SubscribeLocalEvent<RandomArtifactSpriteComponent, ArtifactUnlockingStartedEvent>(UnlockingStageStarted);
         SubscribeLocalEvent<RandomArtifactSpriteComponent, ArtifactUnlockingFinishedEvent>(UnlockingStageFinished);
         SubscribeLocalEvent<RandomArtifactSpriteComponent, XenoArtifactActivatedEvent>(ArtifactActivated);
-        SubscribeLocalEvent<RandomArtifactSpriteComponent, ArtifactActivatedEvent>(OldArtifactActivated); //#IMP
+        SubscribeLocalEvent<RandomArtifactSpriteComponent, ArtifactActivatedEvent>(OldArtifactActivated); // Box Change - #IMP - Duo XenoArch
     }
 
     public override void Update(float frameTime)

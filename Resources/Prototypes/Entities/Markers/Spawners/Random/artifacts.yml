@@ -24,9 +24,11 @@
       chance: 1
 
 - type: entity
-  id: RandomXAEArtifactSpawner20 # Box Change - IMP XAE in name - Duo XenoArch
-  name: random reticulated artifact spawner [20] # Box Change - add "reticulated" to name - Imp Duo XenoArch
-  parent: RandomArtifactSpawner
+  # Box Change Start - Imp Duo XenoArch
+  id: RandomXAEArtifactSpawner20 #IMP XAE in name
+  name: random reticulated artifact spawner [20] # add "reticulated" to name
+  parent: RandomXAEArtifactSpawner # RandomArtifact > RandomXAEArtifact
+  # Box Change End
   components:
     - type: RandomSpawner
       chance: 0.2

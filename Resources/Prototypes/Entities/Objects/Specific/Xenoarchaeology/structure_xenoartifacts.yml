@@ -3,6 +3,7 @@
   parent: [BaseStructureDynamic, BaseXAEXenoArtifact] # XenoArtifact > XAEXenoartifact
   id: BaseXAEXenoArtifactStructure # XenoArtifact > XAEXenoartifact
   name: reticulated artifact # adds "reticulated" to the name
+  suffix: Imp # Add Imp Suffix
   # Box Change End
   abstract: true
   noSpawn: true

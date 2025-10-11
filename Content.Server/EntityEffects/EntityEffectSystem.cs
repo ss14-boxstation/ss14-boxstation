@@ -127,7 +127,7 @@ public sealed class EntityEffectSystem : EntitySystem
         SubscribeLocalEvent<ExecuteEntityEffectEvent<PlantSpeciesChange>>(OnExecutePlantSpeciesChange);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<PolymorphEffect>>(OnExecutePolymorph);
         SubscribeLocalEvent<ExecuteEntityEffectEvent<ResetNarcolepsy>>(OnExecuteResetNarcolepsy);
-        SubscribeLocalEvent<ExecuteEntityEffectEvent<ActivateArtifact>>(OnExecuteActivateArtifact); // imp
+        SubscribeLocalEvent<ExecuteEntityEffectEvent<ActivateArtifact>>(OnExecuteActivateArtifact); // Box Change - imp - Duo XenoArch
     }
 
     private void OnCheckTemperature(ref CheckEntityEffectConditionEvent<TemperatureCondition> args)

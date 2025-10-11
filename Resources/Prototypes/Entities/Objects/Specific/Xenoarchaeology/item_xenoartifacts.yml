@@ -3,6 +3,7 @@
   parent: [BaseItem, BaseXAEXenoArtifact] # XenoArtifact > XAEXenoartifact
   id: BaseXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
   name: reticulated artifact #IMP reticulated
+  suffix: Imp
   # Box Change End
   description: A strange artifact from time unknown. Looks like a good time. Fits in hand perfectly.
   abstract: true
@@ -65,9 +66,11 @@
         weight: 2
 
 - type: entity
-  parent: BaseXAEXenoArtifactItem # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
-  id: ComplexXAEXenoArtifactItem # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
-  suffix: Hand-Sized
+  # Box Change Start - Imp Duo XenoArch
+  parent: BaseXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
+  id: ComplexXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
+  suffix: Hand-Sized, Imp # Add Imp Suffix
+  # Box Change End
   components:
   - type: XenoArtifact
     nodeCount:

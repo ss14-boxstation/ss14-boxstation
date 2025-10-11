@@ -27,7 +27,7 @@ public sealed class ArtifactCrusherSystem : SharedArtifactCrusherSystem
     [Dependency] private readonly StackSystem _stack = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
-    [Dependency] private readonly ArtifactSystem _artifact = default!; //#IMP
+    [Dependency] private readonly ArtifactSystem _artifact = default!; // Box Change - #IMP - Duo XenoArch
 
     /// <inheritdoc/>
     public override void Initialize()
