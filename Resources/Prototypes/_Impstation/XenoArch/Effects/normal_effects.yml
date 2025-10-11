@@ -185,7 +185,7 @@
 
 - type: entity
   id: InstantEffectVeryLocalKnockdown
-  suffix: "Very local knockdown", Imp # Box Change - Add Imp Suffix
+  suffix: "Very local knockdown, Imp" # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
   - type: StunOnTrigger
@@ -561,7 +561,7 @@
 
 - type: entity
   id: InstantEffectLocalKnockdown
-  suffix: "Local knockdown", Imp # Box Change - Add Imp Suffix
+  suffix: "Local knockdown, Imp" # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
   - type: StunOnTrigger
@@ -1144,7 +1144,7 @@
 
 - type: entity
   id: InstantEffectGridKnockdown
-  suffix: "Gridwide knockdown", Imp # Box Change - Add Imp Suffix
+  suffix: "Gridwide knockdown, Imp" # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
   - type: StunOnTrigger
