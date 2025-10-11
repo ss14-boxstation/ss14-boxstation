@@ -1,7 +1,9 @@
 ﻿- type: entity
-  parent: [BaseStructureDynamic, BaseXAEXenoArtifact] # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
-  id: BaseXAEXenoArtifactStructure # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
-  name: reticulated artifact # Box Change - adds "reticulated" to the name
+  # Box Change Start - Imp Duo XenoArch
+  parent: [BaseStructureDynamic, BaseXAEXenoArtifact] # XenoArtifact > XAEXenoartifact
+  id: BaseXAEXenoArtifactStructure # XenoArtifact > XAEXenoartifact
+  name: reticulated artifact # adds "reticulated" to the name
+  # Box Change End
   abstract: true
   noSpawn: true
   components:

@@ -2,7 +2,7 @@ using Content.Server.Body.Systems;
 using Content.Server.Popups;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Stack;
-using Content.Server.Xenoarchaeology.XenoArtifacts; //#IMP
+using Content.Server.Xenoarchaeology.XenoArtifacts; // Box Change - #IMP - Duo XenoArch
 using Content.Shared.Body.Components;
 using Content.Shared.Damage;
 using Content.Shared.Power;

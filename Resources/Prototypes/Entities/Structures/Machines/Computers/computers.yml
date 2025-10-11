@@ -532,7 +532,7 @@
       state: generic_panel_open
   - type: ResearchClient
   - type: AnalysisConsole
-  - type: OldAnalysisConsole #IMP
+  - type: OldAnalysisConsole # Box Change - IMP - Duo XenoArch
     reportEntityId: PaperArtifactAnalyzer
   - type: DeviceList
   - type: DeviceNetwork
@@ -545,7 +545,7 @@
     key: enum.ArtifactAnalyzerUiKey.Key
   - type: UserInterface
     interfaces:
-      enum.OldArtifactAnalyzerUiKey.Key: #IMP
+      enum.OldArtifactAnalyzerUiKey.Key: # Box Change - IMP - Duo XenoArch
         type: OldAnalysisConsoleBoundUserInterface
       enum.ArtifactAnalyzerUiKey.Key:
         type: AnalysisConsoleBoundUserInterface

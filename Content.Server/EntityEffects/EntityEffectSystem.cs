@@ -40,7 +40,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Content.Server.Xenoarchaeology.XenoArtifacts; // imp
+using Content.Server.Xenoarchaeology.XenoArtifacts; // Box Change - imp - Duo XenoArch
 
 using TemperatureCondition = Content.Shared.EntityEffects.EffectConditions.Temperature; // disambiguate the namespace
 using PolymorphEffect = Content.Shared.EntityEffects.Effects.Polymorph;

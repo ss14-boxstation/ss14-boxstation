@@ -24,7 +24,7 @@
       - TegGenerator
       - TegCirculator
       - XenoArtifact
-      - Artifact #IMP
+      - Artifact # Box Change - IMP - Duo XenoArch
     event: !type:ChangeComponentsSpellEvent
       toAdd:
       - type: Animate

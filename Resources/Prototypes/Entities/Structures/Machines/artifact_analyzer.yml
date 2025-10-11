@@ -51,13 +51,13 @@
     powerLoad: 12000
     needsPower: false #only turns on when scanning
   - type: ArtifactAnalyzer
-  - type: OldArtifactAnalyzer #IMP
-  - type: TraversalDistorter #IMP
+  - type: OldArtifactAnalyzer # Box Change - IMP - Duo XenoArch
+  - type: TraversalDistorter # Box Change - IMP - Duo XenoArch
   - type: ItemPlacer
     whitelist:
       components:
       - XenoArtifact
-      - Artifact #IMP
+      - Artifact # Box Change - IMP - Duo XenoArch
   - type: DeviceNetwork
     deviceNetId: Wired
     receiveFrequencyId: BasicDevice
@@ -93,7 +93,7 @@
     crushingWhitelist:
       components:
       - XenoArtifact
-      - Artifact #IMP
+      - Artifact # Box Change - IMP - Duo XenoArch
     crushingDamage:
       types:
         Blunt: 10
@@ -131,7 +131,7 @@
     whitelist:
       components:
       - XenoArtifact
-      - Artifact #IMP
+      - Artifact # Box Change - IMP - Duo XenoArch
       tags:
       - CanPilot # People
       - VimPilot # Pets

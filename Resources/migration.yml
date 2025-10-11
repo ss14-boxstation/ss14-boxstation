@@ -604,7 +604,7 @@ MailEvilLizardSpam: MailSpamLetter
 MailParentsNeedMoneySpam: MailSpamLetter
 
 # 2025-04-15
-# Box Change Start - XenoArtifact > XAE Xenoartifact
+# Box Change Start - XenoArtifact > XAE Xenoartifact - Duo XenoArch
 SimpleXenoArtifact: ComplexXAEXenoArtifact
 MediumXenoArtifact: ComplexXAEXenoArtifact
 SimpleXenoArtifactItem: ComplexXAEXenoArtifactItem

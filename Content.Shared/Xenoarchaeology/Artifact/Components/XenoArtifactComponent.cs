@@ -64,13 +64,13 @@ public sealed partial class XenoArtifactComponent : Component
     /// How long does the unlocking state last by default.
     /// </summary>
     [DataField]
-    public TimeSpan UnlockStateDuration = TimeSpan.FromSeconds(8);//#IMP increased to 8 from 6
+    public TimeSpan UnlockStateDuration = TimeSpan.FromSeconds(8);// Box Change - #IMP increased to 8 from 6 - Duo XenoArch
 
     /// <summary>
     /// By how much unlocking state should be prolonged for each node that was unlocked.
     /// </summary>
     [DataField]
-    public TimeSpan UnlockStateIncrementPerNode = TimeSpan.FromSeconds(12);//#IMP increased to 12 from 10
+    public TimeSpan UnlockStateIncrementPerNode = TimeSpan.FromSeconds(12);// Box Change - #IMP increased to 12 from 10 - Duo XenoArch
 
     /// <summary>
     /// Minimum waiting time between unlock states.
@@ -171,4 +171,4 @@ public sealed partial class XenoArtifactComponent : Component
 /// <summary>
 /// Event raised by sentient artifact to activate itself at no durability cost.
 /// </summary>
-public sealed partial class XAEArtifactSelfActivateEvent : InstantActionEvent; //#IMP: Renamed to "XAEArtifact..." from "Artifact..."
+public sealed partial class XAEArtifactSelfActivateEvent : InstantActionEvent; // Box Change - #IMP: Renamed to "XAEArtifact..." from "Artifact..." - Duo XenoArch

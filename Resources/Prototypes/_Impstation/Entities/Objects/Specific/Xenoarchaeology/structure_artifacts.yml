@@ -2,6 +2,7 @@
   parent: BaseStructureDynamic
   id: BaseOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
   name: natural alien artifact
+  suffix: Imp # Box Change
   description: A strange alien device.
   abstract: true
   components:
@@ -78,7 +79,7 @@
 - type: entity
   parent: BaseOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
   id: SimpleOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Simple
+  suffix: Simple, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 3
@@ -87,7 +88,7 @@
 - type: entity
   parent: BaseOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
   id: MediumOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Medium
+  suffix: Medium, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 7
@@ -96,7 +97,7 @@
 - type: entity
   parent: BaseOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
   id: ComplexOldXenoArtifact # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Complex
+  suffix: Complex, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 12

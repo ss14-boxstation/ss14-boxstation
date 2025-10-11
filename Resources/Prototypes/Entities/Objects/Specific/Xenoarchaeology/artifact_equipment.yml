@@ -47,10 +47,10 @@
       whitelist:
         components:
         - XenoArtifact
-        - Artifact #IMP
+        - Artifact # Box Change - IMP - Duo XenoArch
     - type: Weldable
     - type: SuppressArtifactContainer
-    - type: OldSuppressArtifactContainer #IMP
+    - type: OldSuppressArtifactContainer # Box Change - IMP - Duo XenoArch
     - type: RadiationBlockingContainer
       resistance: 5
     - type: PlaceableSurface
@@ -127,7 +127,7 @@
     whitelist:
       components:
       - XenoArtifact
-      - Artifact #IMP
+      - Artifact # Box Change - IMP - Duo XenoArch
   - type: Item
     sprite: Objects/Storage/artifact_container.rsi
     size: Huge
@@ -143,7 +143,7 @@
   - type: Lock
   - type: LockedStorage
   - type: SuppressArtifactContainer
-  - type: OldSuppressArtifactContainer #IMP
+  - type: OldSuppressArtifactContainer # Box Change - IMP - Duo XenoArch
   - type: RadiationBlockingContainer
     resistance: 5
   - type: EmitSoundOnLand

@@ -19,7 +19,7 @@
   group: market
 
 - type: cargoProduct
-  id: RandomXAEArtifact #IMP XAE in name
+  id: RandomXAEArtifact # Box Change - IMP XAE in name - Duo XenoArch
   icon:
     sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
     state: ano13

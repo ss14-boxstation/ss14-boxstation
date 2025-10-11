@@ -22,7 +22,7 @@ public sealed class XATDamageThresholdReachedSystem : BaseXATSystem<XATDamageThr
 
     private void OnDamageChanged(Entity<XenoArtifactComponent> artifact, Entity<XATDamageThresholdReachedComponent, XenoArtifactNodeComponent> node, ref DamageChangedEvent args)
     {
-        if (!args.DamageIncreased || args.DamageDelta == null) //#IMP moved args.Origin == artifact.Owner to own check to allow radiation to pass through
+        if (!args.DamageIncreased || args.DamageDelta == null) // Box Change - #IMP moved args.Origin == artifact.Owner to own check to allow radiation to pass through - Dup XenoArch
             return;
 
         // Box Change Start

@@ -1,7 +1,9 @@
 ﻿- type: entity
-  parent: [BaseItem, BaseXAEXenoArtifact] # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
-  id: BaseXAEXenoArtifactItem # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch
+  # Box Change Start - Imp Duo XenoArch
+  parent: [BaseItem, BaseXAEXenoArtifact] # XenoArtifact > XAEXenoartifact
+  id: BaseXAEXenoArtifactItem # XenoArtifact > XAEXenoartifact
   name: reticulated artifact #IMP reticulated
+  # Box Change End
   description: A strange artifact from time unknown. Looks like a good time. Fits in hand perfectly.
   abstract: true
   noSpawn: true

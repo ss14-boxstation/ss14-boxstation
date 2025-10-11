@@ -2,6 +2,7 @@
   parent: BaseItem
   id: BaseOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
   name: natural alien artifact
+  suffix: Imp # Box Change
   description: A strange handheld alien device.
   abstract: true
   components:
@@ -79,7 +80,7 @@
 - type: entity
   parent: BaseOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
   id: SimpleOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Simple
+  suffix: Simple, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 3
@@ -88,7 +89,7 @@
 - type: entity
   parent: BaseOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
   id: MediumOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Medium
+  suffix: Medium, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 7
@@ -97,7 +98,7 @@
 - type: entity
   parent: BaseOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
   id: ComplexOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Complex
+  suffix: Complex, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 12
@@ -107,7 +108,7 @@
 - type: entity
   parent: BaseOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
   id: VariedOldXenoArtifactItem # Box Change - XenoArtifact > OldXenoArtifact
-  suffix: Varied
+  suffix: Varied, Imp # Box Change - Add Imp Suffix
   components:
   - type: Artifact
     nodesMin: 3

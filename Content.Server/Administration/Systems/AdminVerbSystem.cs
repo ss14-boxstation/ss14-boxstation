@@ -8,8 +8,8 @@ using Content.Server.Mind;
 using Content.Server.Prayer;
 using Content.Server.Silicons.Laws;
 using Content.Server.Station.Systems;
-using Content.Server.Xenoarchaeology.XenoArtifacts; //#IMP
-using Content.Server.Xenoarchaeology.XenoArtifacts.Triggers.Components; //#IMP
+using Content.Server.Xenoarchaeology.XenoArtifacts; // Box Change - #IMP - Duo XenoArch
+using Content.Server.Xenoarchaeology.XenoArtifacts.Triggers.Components; // Box Change - #IMP - Duo XenoArch
 using Content.Shared.Administration;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;

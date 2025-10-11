@@ -10,7 +10,7 @@
     - type: Item
       sprite: Objects/Specific/Xenoarchaeology/node_scanner.rsi
     - type: NodeScanner
-    - type: OldNodeScanner #IMP
+    - type: OldNodeScanner # Box Change - IMP - Duo XenoArch
     - type: UseDelay
       delay: 1
     - type: GuideHelp

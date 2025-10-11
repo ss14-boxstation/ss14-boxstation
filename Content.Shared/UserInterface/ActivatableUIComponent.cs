@@ -8,7 +8,7 @@ namespace Content.Shared.UserInterface
     public sealed partial class ActivatableUIComponent : Component
     {
         [DataField(required: true, customTypeSerializer: typeof(EnumSerializer))]
-        [AutoNetworkedField] //#IMP
+        [AutoNetworkedField] // Box Change - #IMP - Duo XenoArch
         public Enum? Key;
 
         /// <summary>
