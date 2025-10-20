@@ -4,6 +4,7 @@
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
     - Arachnid
+    - Allulalo # Box Change - Imp - Adds Allulalo
     - Avali # harmony
     - Diona
     - Dwarf
@@ -16,7 +17,6 @@
     - Thaven # Box Change - Imp - Adds Thaven
     - Vox
     - Vulpkanin
-
 - type: guideEntry
   id: Arachnid
   name: species-name-arachnid

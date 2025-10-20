@@ -1,18 +1,40 @@
+
 - type: emoteSounds
-  id: ArachnidBodyEmotes
+  id: Allulalo
+  params:
+    variation: 0.125
   sounds:
-    Clap:
-      collection: Claps
-    ClapSingle:
-      collection: ClapSingle
-    Snap:
-      collection: Snaps
+    Scream:
+      path: /Audio/_Impstation/Allulalo/allulalo_scream.ogg
+    Laugh:
+      path: /Audio/_Impstation/Allulalo/allulalo_laugh.ogg
+    Hiss:
+      collection: VoxHiss
       params:
-        volume: -6
-    Salute:
-      collection: Salutes
-    Blink:
-      collection: SpiderBlinks
-      params:
-        volume: -3
-        variation: 0.1
+        volume: -5
+    Chitter:
+      path: /Audio/_Impstation/Allulalo/allulalo_chitter.ogg
+    Sneeze:
+      collection: UnisexSneezes #placeholder
+    Cough:
+      collection: UnisexCoughs #placeholder
+    Yawn:
+      path: /Audio/_Impstation/Allulalo/allulalo_say.ogg
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      path: /Audio/_Impstation/Allulalo/allulalo_say.ogg #placeholder
+    Whistle:
+      collection: Whistles
+    Crying:
+      path: /Audio/_Impstation/Allulalo/allulalo_cry.ogg
+    Weh:
+      collection: Weh
+    Wuhey:
+      collection: Wuhey
+    Ungh:
+      collection: Ungh
+    Gasp:
+      path: /Audio/_Impstation/Allulalo/allulalo_say.ogg
+    DefaultDeathgasp:
+      /Audio/_Impstation/Allulalo/allulalo_deathgasp.ogg
