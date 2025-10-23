@@ -2,7 +2,7 @@
 - type: reagent
   id: ZipBomb
   name: reagent-name-zip-bomb
-  group: Toxins
+  group: Synthetic
   desc: reagent-desc-zip-bomb
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
@@ -34,7 +34,7 @@
 - type: reagent
   id: CIH
   name: reagent-name-cih
-  group: Toxins
+  group: Synthetic
   desc: reagent-desc-cih
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
@@ -52,7 +52,7 @@
 - type: reagent
   id: Bootloop
   name: reagent-name-bootloop
-  group: Toxins
+  group: Synthetic
   desc: reagent-desc-bootloop
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking

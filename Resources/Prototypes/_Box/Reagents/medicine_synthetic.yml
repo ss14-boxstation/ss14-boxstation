@@ -2,7 +2,7 @@
 - type: reagent
   id: EmergencyDefragmentor
   name: reagent-name-emergency-defragmentor
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-emergency-defragmentor
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
@@ -50,7 +50,7 @@
 - type: reagent
   id: Polydimethylsiloxane
   name: reagent-name-polydimethylsiloxane
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-polydimethylsiloxane
   physicalDesc: reagent-physical-desc-syrupy
   flavor: sweet
@@ -80,7 +80,7 @@
 - type: reagent
   id: Overclocker
   name: reagent-name-overclocker
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-overclocker
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
@@ -115,7 +115,7 @@
 - type: reagent
   id: Recal
   name: reagent-name-recal
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-recal
   physicalDesc: reagent-physical-desc-pungent
   flavor: recal
@@ -156,7 +156,7 @@
 - type: reagent
   id: SmartMetal
   name: reagent-name-smart-metal
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-smart-metal
   physicalDesc: reagent-physical-desc-metallic
   flavor: medicine
@@ -173,7 +173,7 @@
 - type: reagent
   id: LiquidSolder
   name: reagent-name-liquid-solder
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-liquid-solder
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
@@ -209,7 +209,7 @@
 - type: reagent
   id: Degreaser
   name: reagent-name-degreaser
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-degreaser
   physicalDesc: reagent-physical-desc-oily
   flavor: clean
@@ -233,7 +233,7 @@
 - type: reagent
   id: RoutineMaintenance
   name: reagent-name-routine-maintenance
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-routine-maintenance
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
@@ -258,7 +258,7 @@
   id: Nanoweldite
   name: reagent-name-nanoweldite
   parent: BasePyrotechnic
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-nanoweldite
   physicalDesc: reagent-physical-desc-metallic
   flavor: metallic
@@ -306,7 +306,7 @@
 - type: reagent
   id: SOISapphire
   name: reagent-name-soi-sapphire
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-soi-sapphire
   physicalDesc: reagent-physical-desc-shiny
   flavor: metallic
@@ -339,7 +339,7 @@
 - type: reagent
   id: ECCMemory
   name: reagent-name-ecc-memory
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-ecc-memory
   physicalDesc: reagent-physical-desc-reasonably-metallic
   flavor: tingly
@@ -357,7 +357,7 @@
 - type: reagent
   id: ThermalPaste
   name: reagent-name-thermal-paste
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-thermal-paste
   physicalDesc: reagent-physical-desc-thick-and-grainy
   flavor: bitter

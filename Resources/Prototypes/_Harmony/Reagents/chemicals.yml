@@ -1,7 +1,7 @@
 - type: reagent
   id: IndustrialLubricant
   name: reagent-name-industrial-lubricant
-  group: Medicine # Box Change - IPC Chem - Its shitty saline now
+  group: Synthetic # Box Change - IPC Chem - Its shitty saline now
   desc: reagent-desc-industrial-lubricant
   physicalDesc: reagent-physical-desc-oily
   slipData:
@@ -30,7 +30,7 @@
 - type: reagent
   id: ComputerCoolant
   name: reagent-name-computer-coolant
-  group: Medicine # Box Change - IPC Chem - Its shitty saline now
+  group: Synthetic # Box Change - IPC Chem - Its shitty saline now
   desc: reagent-desc-computer-coolant
   physicalDesc: reagent-physical-desc-translucent
   slipData:
