@@ -40,19 +40,19 @@
         - !type:ReagentThreshold
           min: 15
         - !type:OrganType
-          type: IPC
+          type: Synthetic
         damage:
           types:
             Shock: 1
       - !type:Drunk
         conditions:
         - !type:OrganType
-          type: IPC
+          type: Synthetic
         boozePower: 2 # TODO: Unique IPC slurred speech. Figure that out. Probably reuse Borg Damage accent?
       - !type:PopupMessage # no sanity/mood
         conditions:
         - !type:OrganType
-          type: IPC
+          type: Synthetic
           shouldHave: false # For organics only
         - !type:ReagentThreshold
           min: 0.5 # takes a bit to get going
