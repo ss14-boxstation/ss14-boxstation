@@ -5,6 +5,7 @@ Certain species are Synthetic Lifeforms, as opposed to Organic. Synthetics are d
 
 <Box>
 <GuideEntityEmbed Entity="MobIPCDummy" Caption="I.P.C."/>
+<GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
 </Box>
 
 Synthetics may require extra attention when being treated. They may not respond to organic medicine, or may respond better to synthetic medicines.

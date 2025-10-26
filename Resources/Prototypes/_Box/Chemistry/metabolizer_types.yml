@@ -1,3 +1,7 @@
 - type: metabolizerType
   id: IPC
   name: metabolizer-type-ipc
+
+- type: metabolizerType
+  id: Synthetic
+  name: metabolizer-type-synthetic

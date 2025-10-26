@@ -21,7 +21,7 @@
   description: "A stomach that smells of ammonia."
   components:
   - type: Metabolizer #Skreeeee!
-    metabolizerTypes: [Vox]
+    metabolizerTypes: [Vox, Synthetic] # Box Change - Add Synthetic metabolizer type - Vox SynthChem
   - type: Stomach
 #Bird vs tags
     specialDigestible:
@@ -36,7 +36,7 @@
   description: "Smells flammable."
   components:
   - type: Metabolizer
-    metabolizerTypes: [Vox]
+    metabolizerTypes: [Vox, Synthetic] # Box Change - Add Synthetic metabolizer type - Vox SynthChem
 
 - type: entity
   parent: OrganHumanHeart

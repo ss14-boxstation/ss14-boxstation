@@ -70,11 +70,24 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+          shouldHave: false
         damage:
           types:
             Poison: 0.5
       - !type:ChemVomit
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+          shouldHave: false
         probability: 0.02
+      - !type:SatiateThirst
+        factor: 1
+        conditions:
+        - !type:OrganType
+          type: Synthetic
 
 # Overclocker
 - type: reagent
@@ -218,11 +231,30 @@
     Poison:
       effects:
       - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
         factor: -0.2
+      - !type:SatiateThirst
+        factor: 1
+        conditions:
+        - !type:OrganType
+          type: Vox
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+          shouldHave: false
         damage:
           types:
             Poison: 0.1
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+        reagent: SpaceLube
+        amount: -3.0
     Industrial:
       effects:
       - !type:AdjustReagent
@@ -290,15 +322,29 @@
       - !type:HealthChange
         conditions:
         - !type:OrganType
-          type: Vox
+          type: Synthetic
           shouldHave: false
         damage:
           types:
             Poison: 0.5
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+          shouldHave: false
         damage:
           types:
             Heat: 0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 11.5
+        - !type:OrganType
+          type: Synthetic
+        damage:
+          types:
+            Heat: 1.5
+            Poison: 0.5
       - !type:FlammableReaction
         multiplier: 0.4
 
@@ -334,6 +380,17 @@
             types:
               Poison: 0.1
               Slash: 0.1 # Getting sapphire deposited inside you will probably cut you up
+        - !type:HealthChange
+          conditions:
+          - !type:ReagentThreshold
+            min: 9.5
+          - !type:OrganType
+            type: Synthetic
+          damage:
+            types:
+              Poison: 0.1
+              Slash: 0.1
+              Shock: 1
 
 # ECC Memory - Anti-Rads med for IPCs, trades rads for minor shock, 3:1 ratio. - "Error correction code memory"
 - type: reagent

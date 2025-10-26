@@ -18,7 +18,16 @@
     Drink:
       effects:
       - !type:SatiateThirst
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
         factor: -0.2
+      - !type:SatiateThirst
+        factor: 1
+        conditions:
+        - !type:OrganType
+          type: Vox
       - !type:ModifyBloodLevel
         conditions:
         - !type:OrganType
@@ -48,7 +57,7 @@
       - !type:HealthChange
         conditions:
         - !type:OrganType
-          type: IPC
+          type: Synthetic
           shouldHave: false
         damage:
           types:
@@ -59,6 +68,11 @@
           type: IPC
           shouldHave: true
         amount: 3
+      - !type:SatiateThirst
+        factor: 1
+        conditions:
+        - !type:OrganType
+          type: Vox
   # Box Change End
 
 - type: reagent

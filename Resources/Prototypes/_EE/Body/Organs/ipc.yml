@@ -62,7 +62,7 @@
     #     Taco: Brain
     - type: Metabolizer
       maxReagents: 2
-      metabolizerTypes: [IPC]
+      metabolizerTypes: [IPC, Synthetic]
       groups:
       - id: Software
       - id: Malware
@@ -116,7 +116,7 @@
   # Box Change Start
   - type: Metabolizer
     maxReagents: 2
-    metabolizerTypes: [IPC]
+    metabolizerTypes: [IPC, Synthetic]
     groups:
     - id: Industrial
     - id: Medicine
@@ -164,7 +164,7 @@
     isSpecialDigestibleExclusive: false
   - type: Metabolizer
     maxReagents: 3
-    metabolizerTypes: [IPC]
+    metabolizerTypes: [IPC, Synthetic]
     groups:
     - id: Food
     - id: Drink
