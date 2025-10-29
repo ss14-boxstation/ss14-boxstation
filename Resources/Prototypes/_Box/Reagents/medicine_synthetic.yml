@@ -30,7 +30,7 @@
 - type: reagent
   id: CryostabilizedDefragmenter
   name: reagent-name-cryostabilized-defragmenter
-  group: Medicine
+  group: Synthetic
   desc: reagent-desc-cryostabilized-defragmenter
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
@@ -41,7 +41,7 @@
         - !type:HealthChange
           conditions:
           - !type:Temperature
-            max: 213.0
+            max: 180.0
           damage:
             types:
              Data: -2

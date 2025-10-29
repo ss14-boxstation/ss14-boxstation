@@ -13,7 +13,7 @@
 - type: reaction
   id: CryostabilizedDefragmenter
   reactants:
-    Cryoxadone:
+    Cryosilicate:
       amount: 1
     EmergencyDefragmenter:
       amount: 1
@@ -187,6 +187,7 @@
 
 - type: reaction
   id: CryoWeldite
+  minTemp: 370
   reactants:
     Nanoweldite:
       amount: 1
