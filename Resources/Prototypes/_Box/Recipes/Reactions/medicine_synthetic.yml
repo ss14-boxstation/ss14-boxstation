@@ -1,5 +1,5 @@
 - type: reaction
-  id: EmergencyDefragmentor
+  id: EmergencyDefragmenter
   reactants:
     Bitflipper:
       amount: 1
@@ -8,17 +8,17 @@
     Arithrazine:
       amount: 1
   products:
-    EmergencyDefragmentor: 1
+    EmergencyDefragmenter: 1
 
 - type: reaction
-  id: CryostabilizedDefragmentor
+  id: CryostabilizedDefragmenter
   reactants:
     Cryoxadone:
       amount: 1
-    Bitflipper:
+    EmergencyDefragmenter:
       amount: 1
   products:
-    CryostabilizedDefragmentor: 2
+    CryostabilizedDefragmenter: 2
 
 - type: reaction
   id: Polydimethylsiloxane
@@ -168,3 +168,43 @@
       amount: 3
   products:
     ThermalPaste: 4
+
+- type: reaction
+  id: Cryosilicate
+  reactants: # Loosely based on Superconductive materials. Emphasis on Loosely (the game just doesn't have the elements for it)
+    Sugar:
+      amount: 1
+    Copper:
+      amount: 1
+    Aluminium:
+      amount: 1
+    Cryoxadone:
+      amount: 1
+    ActivatedSilicon:
+      amount: 1
+  products:
+    Cryosilicate: 5
+
+- type: reaction
+  id: CryoWeldite
+  reactants:
+    Nanoweldite:
+      amount: 1
+    Cryosilicate:
+      amount: 1
+    SmartMetal:
+      amount: 1
+  products:
+    CryoWeldite: 3
+
+- type: reaction
+  id: Cryoconductite
+  reactants:
+    Cryosilicate:
+      amount: 1
+    Silver:
+      amount: 1
+    ThermalPaste:
+      amount: 1
+  products:
+    Cryoconductite: 3

@@ -1,9 +1,9 @@
-# Emergency Defragmentor
+# Emergency defragmenter
 - type: reagent
-  id: EmergencyDefragmentor
-  name: reagent-name-emergency-defragmentor
+  id: EmergencyDefragmenter
+  name: reagent-name-emergency-defragmenter
   group: Synthetic
-  desc: reagent-desc-emergency-defragmentor
+  desc: reagent-desc-emergency-defragmenter
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#bd00ff"
@@ -26,12 +26,12 @@
           types:
             Shock: 1
 
-# Cryostabilized Defragmentor
+# Cryostabilized Defragmenter
 - type: reagent
-  id: CryostabilizedDefragmentor
-  name: reagent-name-cryostabilized-defragmentor
+  id: CryostabilizedDefragmenter
+  name: reagent-name-cryostabilized-defragmenter
   group: Medicine
-  desc: reagent-desc-cryostabilized-defragmentor
+  desc: reagent-desc-cryostabilized-defragmenter
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#5F49FF"
@@ -463,3 +463,73 @@
         conditions:
         - !type:OrganType
           type: Vox
+
+# Cryo SynthChems
+- type: reagent
+  id: Cryosilicate
+  name: reagent-name-cryosilicate
+  group: Synthetic
+  desc: reagent-desc-cryosilicate
+  physicalDesc: reagent-physical-desc-electric
+  flavor: fizzy
+  color: "#4B8BBA"
+  metabolisms:
+    Software:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:Temperature
+          max: 180.0
+        damage:
+          groups:
+            Brute: -2
+            Burn: -3
+          types:
+            Radiation: -0.3
+
+- type: reagent
+  id: CryoWeldite
+  name: reagent-name-cryo-weldite
+  group: Synthetic
+  desc: reagent-desc-cryo-weldite
+  physicalDesc: reagent-physical-desc-abrasive
+  flavor: sharp
+  color: "#7E5AA5"
+  worksOnTheDead: true
+  metabolisms:
+    Software:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:Temperature
+          max: 180.0
+        damage:
+          groups:
+            Brute: -3
+          types:
+            Heat: -1
+            Shock: -1.5
+            Cold: -1
+            Caustic: -1
+            Radiation: -1
+
+- type: reagent
+  id: Cryoconductite
+  name: reagent-name-cryoconductite
+  group: Synthetic
+  desc: reagent-desc-cryoconductite
+  physicalDesc: reagent-physical-desc-metallic
+  flavor: minty
+  color: "#a799e6"
+  worksOnTheDead: true
+  metabolisms:
+    Software:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:Temperature
+          max: 180.0
+        damage:
+          types:
+            Heat: -4
+            Cold: -4

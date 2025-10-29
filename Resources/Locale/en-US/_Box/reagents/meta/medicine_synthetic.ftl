@@ -1,8 +1,8 @@
-reagent-name-emergency-defragmentor = emergency defragmentor
-reagent-desc-emergency-defragmentor = An advanced nanite program that undoes data corruption in synthetic lifeforms in a pinch. It exerts great stress on the body and components of the synthetic.
+reagent-name-emergency-defragmenter = emergency defragmenter
+reagent-desc-emergency-defragmenter = An advanced nanite program that undoes data corruption in synthetic lifeforms in a pinch. It exerts great stress on the body and components of the synthetic.
 
-reagent-name-cryostabilized-defragmentor = cryostabilized defragmentor
-reagent-desc-cryostabilized-defragmentor = A more reliable nanite program utilizing supercondutors to undo data corruption in synthetic lifeforms. Only works in cyrogenic conditons.
+reagent-name-cryostabilized-defragmenter = cryostabilized defragmenter
+reagent-desc-cryostabilized-defragmenter = A more reliable nanite program utilizing supercondutors to undo data corruption in synthetic lifeforms. Only works in cyrogenic conditons.
 
 reagent-name-polydimethylsiloxane = polydimethylsiloxane
 reagent-desc-polydimethylsiloxane = A silicone polymer with a wide variety of uses. Capable of sealing damage to coolant and lubricant lines in synthetic lifeforms.
@@ -36,3 +36,12 @@ reagent-desc-ecc-memory = A nanite program capable of detecting and correcting n
 
 reagent-name-thermal-paste = thermal paste
 reagent-desc-thermal-paste = A thermal paste specifically engineered for synthetic lifeforms, capable of returning them to operational temperatures.
+
+reagent-name-cryosilicate = cryosilicate
+reagent-desc-cryosilicate = A supercondutor-based nanite swarm that is able to repair a wide array of damage in cryogenic conditions.
+
+reagent-name-cryo-weldite = cryo-weldite
+reagent-desc-cryo-weldite = An advanced cryogenic nanite solution capable of effectively repairing a wide array of damage, even for dead synthetics.
+
+reagent-name-cryoconductite = cryoconductite
+reagent-desc-cryoconductite = Using a mix of highly conductive metals, cryogenic conditions, and advanced supercondutors, this nantie solution is capable of reversing temperature-based damage in synthetics even if they're dead.

@@ -15,12 +15,13 @@ All Synthetics respond to synthetic medicines.
 Synthetic Medicines and Reagents usually fall under the Software, Malware, or Industrial metabolism types.
 
 ## Common Synthetic Medicines
-<GuideReagentEmbed Reagent="EmergencyDefragmentor"/>
+<GuideReagentEmbed Reagent="EmergencyDefragmenter"/>
 <GuideReagentEmbed Reagent="RoutineMaintenance"/>
 <GuideReagentEmbed Reagent="ECCMemory"/>
 <GuideReagentEmbed Reagent="ThermalPaste"/>
 <GuideReagentEmbed Reagent="Recal"/>
-<GuideReagentEmbed Reagent="CryostabilizedDefragmentor"/>
+<GuideReagentEmbed Reagent="Cryosilicate"/>
+<GuideReagentEmbed Reagent="CryostabilizedDefragmenter"/>
 
 [textlink="Click here to see a complete list of synthetic reagents." link="Synthetic"]
 
