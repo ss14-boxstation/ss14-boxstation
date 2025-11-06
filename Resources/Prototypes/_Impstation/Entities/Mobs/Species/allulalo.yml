@@ -32,6 +32,12 @@
   - type: UnableToWield
   - type: CarrierOneHand # good luck.
   - type: TooShortForUI
+    blacklist:
+      components:
+      - TooShortForUIBlacklist
+    whitelist:
+      components:
+      - TooShortForUIWhitelist
   - type: AllulaloAccent
   - type: HeavyweightDrunk #Their blood is alcoholic. also a bird drinking you under the table is funny
   - type: CanEscapeInventory
