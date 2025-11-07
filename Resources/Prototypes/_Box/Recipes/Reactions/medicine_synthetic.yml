@@ -8,7 +8,7 @@
     Arithrazine:
       amount: 1
   products:
-    EmergencyDefragmenter: 1
+    EmergencyDefragmenter: 2
 
 - type: reaction
   id: CryostabilizedDefragmenter
@@ -53,7 +53,7 @@
     Epinephrine:
       amount: 1
   products:
-    Recal: 1
+    Recal: 3
 
 - type: reaction
   id: LiquidSolder
@@ -65,7 +65,7 @@
     Aluminium:
       amount: 1
   products:
-    LiquidSolder: 1
+    LiquidSolder: 3
 
 - type: reaction
   id: Degreaser
@@ -75,7 +75,7 @@
     Ethylredoxrazine:
       amount: 1
   products:
-    Degreaser: 1
+    Degreaser: 2
 
 # Recipe for Omni > IPC Omni - deactivate if OP *or* unused
 - type: reaction
@@ -84,7 +84,7 @@
     Omnizine:
       amount: 4
     ActivatedSilicon:
-      amount: 4
+      amount: 2
     Plasma:
       amount: 2
   products:
@@ -145,7 +145,7 @@
     Oxygen:
       amount: 3
   products:
-    SOISapphire: 5
+    SOISapphire: 6
 
 - type: reaction
   id: ECCMemory

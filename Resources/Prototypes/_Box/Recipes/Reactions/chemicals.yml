@@ -45,6 +45,8 @@
 
 - type: reaction
   id: CarbonMonoxide
+  requiredMixerCategories:
+  - Stir
   minTemp: 570
   reactants:
     Carbon:

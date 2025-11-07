@@ -16,7 +16,7 @@
     Water:
       amount: 3
   products:
-    ComputerCoolant: 2
+    ComputerCoolant: 3
 
 - type: reaction
   id: EthyleneGlycol
