@@ -119,6 +119,7 @@ namespace Content.IntegrationTests.Tests
             "Spire", // Harmony, Developed by Dogbone10, PenguinCodest, Jack_the_Dragon
             "Athena", // Harmony, Developed by whythelettuce
             "Omega", // Harmony, updated from Spanky's version by OrnamentalFreak and CrimsonJupiter
+            "Jellyfish", //Box - Harmony, Early Merge, Developed By Whythelettuce
             "Dev",
             "TestTeg",
             "Fland",
