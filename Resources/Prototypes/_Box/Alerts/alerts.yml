@@ -1,0 +1,7 @@
+﻿- type: alert
+  id: Sleepy
+  icons:
+  - sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
+    state: icon
+  name: alerts-low-sleepy-name
+  description: alerts-low-sleepy-desc

@@ -1,0 +1,7 @@
+- type: entity
+  parent: StatusEffectForcedSleeping
+  id: StatusEffectSleepy
+  name: sleepy
+  components:
+  - type: StatusEffectAlert
+    alert: Sleepy

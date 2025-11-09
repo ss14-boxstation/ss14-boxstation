@@ -1,0 +1,12 @@
+﻿- type: listing
+  id: SpellbookSleepy
+  name: spellbook-sleepy-snore-name
+  description: spellbook-sleepy-snore-desc
+  productAction: SleepySnore
+  cost:
+    WizCoin: 1
+  categories:
+  - SpellbookDefensive
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

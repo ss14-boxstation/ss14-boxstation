@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: BaseEntitySpellAction
+  id: SleepySnore
+  components:
+  - type: Action
+    useDelay: 5
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Voice/Misc/silly_snore.ogg
+    icon:
+      sprite: Clothing/Head/Hats/pyjamasyndicateblack.rsi
+      state: icon
+  - type: EntityTargetAction
+    event: !type:ModifyStatusEffectSpell
+      key: StatusEffectForcedSleeping
+      duration: 10
+    canTargetSelf: true

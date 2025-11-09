@@ -17,6 +17,8 @@ using Content.Shared.Maps;
 using Content.Shared.Mind;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
+using Content.Shared.StatusEffect; // Box change
+using Content.Shared._Box.Magic; // Bxx Change
 using Content.Shared.Speech.Muting;
 using Content.Shared.Storage;
 using Content.Shared.Stunnable;
@@ -66,6 +68,7 @@ public abstract class SharedMagicSystem : EntitySystem
     [Dependency] private readonly SharedStunSystem _stun = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly SharedChargesSystem _charges = default!;
+    [Dependency] private readonly StatusEffectNew.StatusEffectsSystem _statusEffectsSystem = default!; // Box Change
 
     private static readonly ProtoId<TagPrototype> InvalidForGlobalSpawnSpellTag = "InvalidForGlobalSpawnSpell";
 
@@ -85,6 +88,7 @@ public abstract class SharedMagicSystem : EntitySystem
         SubscribeLocalEvent<RandomGlobalSpawnSpellEvent>(OnRandomGlobalSpawnSpell);
         SubscribeLocalEvent<MindSwapSpellEvent>(OnMindSwapSpell);
         SubscribeLocalEvent<VoidApplauseSpellEvent>(OnVoidApplause);
+        SubscribeLocalEvent<ModifyStatusEffectSpell>(OnStatusEffectModify); // Box Change
     }
 
     private void OnBeforeCastSpell(Entity<MagicComponent> ent, ref BeforeCastSpellEvent args)
@@ -394,6 +398,24 @@ public abstract class SharedMagicSystem : EntitySystem
 
         _body.GibBody(ev.Target, true, body);
     }
+
+    // Box start
+    #region Status Effects Spells
+    private void OnStatusEffectModify(ModifyStatusEffectSpell ev) // This is pretty simple but I couldnt find aynthing else like this, I've looked.
+    {
+        if (ev.Handled)
+            return;
+
+        if (!TryComp<StatusEffectsComponent>(ev.Target, out var statusEffectComp))
+            return;
+
+        if (ev.Key != null)
+            _statusEffectsSystem.TryAddStatusEffectDuration(ev.Target, ev.Key, duration: ev.Duration);
+
+        ev.Handled = true;
+    }
+    # endregion
+    // Box end
 
     // End Touch Spells
     #endregion
