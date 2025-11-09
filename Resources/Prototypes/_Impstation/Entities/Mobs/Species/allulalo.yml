@@ -96,6 +96,7 @@
     - DoorBumpOpener
     - AnomalyHost
     - CanPilot
+    - FootstepSound
   - type: TypingIndicator
     proto: allulalo
   - type: Vocal
