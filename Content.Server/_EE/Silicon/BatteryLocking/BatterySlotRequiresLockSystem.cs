@@ -32,7 +32,7 @@ public sealed class BatterySlotRequiresLockSystem : EntitySystem
 
     private void LockToggleAttempted(EntityUid uid, BatterySlotRequiresLockComponent component, LockToggleAttemptEvent args)
     {
-        if (args.User == uid || !HasComp<SiliconComponent>(uid))
+        if (args.User == uid || !HasComp<SiliconComponent>(uid) || args.Silent) // Box Change - starcup: don't pop up on silent checks - Prevents bug with IPC panels emoting when admins interact with IPC player
             return;
 
         _popupSystem.PopupEntity(Loc.GetString("batteryslotrequireslock-component-alert-owner", ("user", Identity.Entity(args.User, EntityManager))), uid, uid, PopupType.Large);
