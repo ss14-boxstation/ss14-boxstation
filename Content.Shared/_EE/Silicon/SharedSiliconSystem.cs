@@ -21,8 +21,10 @@ public sealed class SharedSiliconChargeSystem : EntitySystem
         SubscribeLocalEvent<SiliconComponent, ComponentInit>(OnSiliconInit);
         SubscribeLocalEvent<SiliconComponent, SiliconChargeStateUpdateEvent>(OnSiliconChargeStateUpdate);
         SubscribeLocalEvent<SiliconComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
-        SubscribeLocalEvent<SiliconComponent, ItemSlotInsertAttemptEvent>(OnItemSlotInsertAttempt);
-        SubscribeLocalEvent<SiliconComponent, ItemSlotEjectAttemptEvent>(OnItemSlotEjectAttempt);
+// Box change, Unscubscribes from events that don't exist in this context anymore
+        // SubscribeLocalEvent<SiliconComponent, ItemSlotInsertAttemptEvent>(OnItemSlotInsertAttempt);
+        // SubscribeLocalEvent<SiliconComponent, ItemSlotEjectAttemptEvent>(OnItemSlotEjectAttempt);
+// Box change ends
         SubscribeLocalEvent<SiliconComponent, TryingToSleepEvent>(OnTryingToSleep);
     }
 
