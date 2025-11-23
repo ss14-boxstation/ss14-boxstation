@@ -7,10 +7,22 @@
   - type: Sprite
     sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
     state: icon
+# Box Change Start - Resizes to be small L shape after changes to PKA on harmony.
+#  - type: Item
+#    size: Large
+#    shape:
+#    - 0,0,2,1
   - type: Item
-    size: Large
+    size: Small
     shape:
-    - 0,0,2,1
+    - 0,0,1,0
+    - 0,1,0,1
+#Box Change End - New Size for LKR
+#Box Change Start - Makes it a sidearm for consitency with other L shaped pistols
+  - type: Tag
+    tags:
+    - Sidearm
+#Box Change End - Makes it a sidearm for consitency with other L shaped pistols
   - type: Clothing
     sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
     quickEquip: false
