@@ -112,7 +112,7 @@
       - BorgChassis
       - RoboticsConsole
   - type: WiresPanel
-    openingTool: Screwing
+    openingTool: Screwing # BoxStation - reverts panel from Prying to Screwing
   - type: ActivatableUIRequiresPanel
   - type: NameIdentifier
     group: Silicon
