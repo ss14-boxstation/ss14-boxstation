@@ -15,6 +15,7 @@ using Robust.Shared.Audio.Systems;
 using System.Linq;
 using Content.Server._RMC14.Decals;
 using Content.Server.Spawners.Components;
+using Content.Shared.Decals;
 using Content.Shared.Body.Events;
 using Content.Shared.Effects;
 using Content.Shared.Chat; // Box Change
@@ -47,7 +48,7 @@ public sealed class AcidBloodSplashSystem : EntitySystem
     public override void Initialize()
     {
         SubscribeLocalEvent<AcidBloodSplashComponent, DamageChangedEvent>(OnDamageChanged);
-        SubscribeLocalEvent<AcidBloodSplashComponent, MobStateChangedEvent>(OnDeath);
+        SubscribeLocalEvent<AcidBloodSplashComponent, BeingGibbedEvent>(OnGib);
 
         _bruteTypes.Clear();
 
@@ -112,25 +113,12 @@ public sealed class AcidBloodSplashSystem : EntitySystem
         }
     }
 
-    // TODO: remove when xeno can be gibbed and rewrite depending on new event
-    private void OnDeath(EntityUid uid, AcidBloodSplashComponent comp, ref MobStateChangedEvent args)
+    private void OnGib(Entity<AcidBloodSplashComponent> ent, ref BeingGibbedEvent args)
     {
-        if (args.Component.CurrentState != MobState.Dead || !comp.IsActivateSplashOnGib)
+        if (!ent.Comp.IsActivateSplashOnGib)
             return;
 
-        var gibProbability = comp.BaseGibSplashProbability;
-
-        if (TryComp<MobThresholdsComponent>(uid, out var thresholds) && TryComp<DamageableComponent>(uid, out var damageable))
-        {
-            var damage = damageable.Damage.GetTotal();
-            var dead = _thresholds.GetThresholdForState(uid, MobState.Dead, thresholds);
-            gibProbability += (float)(damage - dead) * comp.DamageSplashGibMultiplier;
-        }
-
-        if (_random.NextFloat() > gibProbability)
-            return;
-
-        ActivateSplash(uid, comp, comp.GibSplashRadius);
+        ActivateSplash(ent.Owner, ent.Comp, ent.Comp.GibSplashRadius);
     }
 
     private void OnDamageChanged(EntityUid uid, AcidBloodSplashComponent comp, ref DamageChangedEvent args)
