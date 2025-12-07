@@ -41,6 +41,10 @@ using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Server.Xenoarchaeology.XenoArtifacts; // Box Change - imp - Duo XenoArch
+// Box Change starts - IPC Zed interaction
+using Content.Shared._EE.Silicon.Components; 
+using Content.Shared._Box.Silicons; 
+// Box Change ends
 
 using TemperatureCondition = Content.Shared.EntityEffects.EffectConditions.Temperature; // disambiguate the namespace
 using PolymorphEffect = Content.Shared.EntityEffects.Effects.Polymorph;
@@ -550,8 +554,17 @@ public sealed class EntityEffectSystem : EntitySystem
 
     private void OnExecuteCauseZombieInfection(ref ExecuteEntityEffectEvent<CauseZombieInfection> args)
     {
-        EnsureComp<ZombifyOnDeathComponent>(args.Args.TargetEntity);
-        EnsureComp<PendingZombieComponent>(args.Args.TargetEntity);
+        // Box Change starts - IPC Zed interaction
+        if (HasComp<SiliconComponent>(args.Args.TargetEntity))
+        {
+            EnsureComp<InfectedIPCComponent>(args.Args.TargetEntity);
+        }
+        else
+        {
+            EnsureComp<ZombifyOnDeathComponent>(args.Args.TargetEntity);
+            EnsureComp<PendingZombieComponent>(args.Args.TargetEntity);
+        }
+        // Box Change ends
     }
 
     private void OnExecuteChemCleanBloodstream(ref ExecuteEntityEffectEvent<ChemCleanBloodstream> args)
@@ -631,6 +644,16 @@ public sealed class EntityEffectSystem : EntitySystem
         {
             EnsureComp<ZombieImmuneComponent>(args.Args.TargetEntity);
         }
+        // Box Change starts - IPC Zed interaction
+        if (HasComp<SiliconComponent>(args.Args.TargetEntity))
+        {
+            RemComp<InfectedIPCComponent>(args.Args.TargetEntity);
+            if (args.Effect.Innoculate)
+            {
+                EnsureComp<ZombieImmuneComponent>(args.Args.TargetEntity);
+            }
+        }
+        // Box Change ends
     }
 
     private void OnExecuteEmote(ref ExecuteEntityEffectEvent<Emote> args)

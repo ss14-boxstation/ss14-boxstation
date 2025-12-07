@@ -23,6 +23,10 @@ using Content.Shared.Roles;
 using Content.Shared.Roles.Components;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Zombies;
+// Box change starts - IPC zed interaction
+using Content.Shared._EE.Silicon.Components; 
+using Content.Shared._Box.Silicons;
+// Box change ends - IPC zed interaction
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
@@ -259,12 +263,21 @@ namespace Content.Server.Zombies
                 {
                     if (!HasComp<ZombieImmuneComponent>(entity) && !HasComp<NonSpreaderZombieComponent>(args.User) && _random.Prob(GetZombieInfectionChance(entity, component)))
                     {
-                        EnsureComp<PendingZombieComponent>(entity);
-                        EnsureComp<ZombifyOnDeathComponent>(entity);
+                        // Box change starts - IPC zed interaction
+                        if (HasComp<SiliconComponent>(entity)) 
+                        {
+                            EnsureComp<InfectedIPCComponent>(entity);
+                        }
+                        else
+                        {
+                            EnsureComp<PendingZombieComponent>(entity);
+                            EnsureComp<ZombifyOnDeathComponent>(entity);
+                        }
+                        // Box change ends - IPC zed interaction
                     }
                 }
 
-                if (_mobState.IsIncapacitated(entity, mobState) && !HasComp<ZombieComponent>(entity) && !HasComp<ZombieImmuneComponent>(entity))
+                if (_mobState.IsIncapacitated(entity, mobState) && !HasComp<ZombieComponent>(entity) && !HasComp<ZombieImmuneComponent>(entity) && !HasComp<SiliconComponent>(entity))
                 {
                     ZombifyEntity(entity);
                     args.BonusDamage = -args.BaseDamage;
