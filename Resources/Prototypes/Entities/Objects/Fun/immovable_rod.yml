@@ -89,6 +89,8 @@
 #       Blunt: 190
         Piercing: 90
 # End harmony change
+  - type: Physics
+    bodyType: KinematicController
   - type: InputMover
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 5
