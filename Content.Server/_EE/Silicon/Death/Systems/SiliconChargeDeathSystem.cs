@@ -6,7 +6,16 @@ using Content.Server._EE.Power.Components;
 using Content.Server.Humanoid;
 using Content.Shared.Humanoid;
 using Content.Shared.StatusEffectNew; // starcup
-using Content.Shared.Stunnable; // Box Change - IPC No Battery Refactor
+ // Box Change Start - IPC No Battery Refactor
+using Content.Shared.Stunnable;
+using Content.Shared.Weapons.Ranged.Events;
+using Content.Shared.Interaction.Events;
+using Content.Shared.Puppet;
+using Content.Shared.Speech;
+using Content.Shared.Speech.Muting;
+using Content.Shared._Harmony.Speech.Hypophonia;
+using Content.Server.Popups;
+// Box Change End
 
 namespace Content.Server._EE.Silicon.Death;
 
@@ -16,7 +25,10 @@ public sealed class SiliconDeathSystem : EntitySystem
     [Dependency] private readonly SiliconChargeSystem _silicon = default!;
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!; // starcup
-    [Dependency] private readonly SharedStunSystem _stun = default!; // Box Change - IPC No Battery Refactor
+    // Box Change Start - IPC No Battery Refactor
+    [Dependency] private readonly SharedStunSystem _stun = default!;
+    [Dependency] private readonly PopupSystem _popupSystem = default!;
+    // Box Change End
 
     public override void Initialize()
     {
@@ -24,7 +36,12 @@ public sealed class SiliconDeathSystem : EntitySystem
 
         SubscribeLocalEvent<SiliconDownOnDeadComponent, SiliconChargeStateUpdateEvent>(OnSiliconChargeStateUpdate);
 
-        SubscribeLocalEvent<SiliconDownOnDeadComponent, StandUpAttemptEvent>(OnStandUpAttempt); // Box Change - IPC No Battery Refactor
+    // Box Change Start - IPC No Battery Refactor
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, StandUpAttemptEvent>(OnStandUpAttempt);
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, AttackAttemptEvent>(OnAttackAttempt);
+        // SubscribeLocalEvent<SiliconDownOnDeadComponent, ShotAttemptedEvent>(OnShootAttempt);
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, SpeakAttemptEvent>(OnSpeakAttempt);
+    // Box Change End
     }
 
     private void OnSiliconChargeStateUpdate(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, SiliconChargeStateUpdateEvent args)
@@ -84,13 +101,62 @@ public sealed class SiliconDeathSystem : EntitySystem
         RaiseLocalEvent(uid, new SiliconChargeAliveEvent(uid, batteryComp, batteryUid));
     }
 
-    // Box Change Start - Alt Low Battery System
+// Box Change Start - Alt Low Battery System
+    // Disallow Standing
     private void OnStandUpAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, ref StandUpAttemptEvent args)
     {
         if (siliconDeadComp.Dead)
             args.Cancelled = true;
     }
-    // Box Change End
+
+    // Disallow Attacking
+    // For some reaon, OnAttackAttempt eats OnShootAttempt. Uhhh It still works I guess.
+    /*
+    private void OnShootAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, ref ShotAttemptedEvent args)
+    {
+        if (siliconDeadComp.Dead)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("ipc-cant-shoot"), uid, uid);
+            args.Cancel();
+        }
+    }
+    */
+
+    private void OnAttackAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, AttackAttemptEvent args)
+    {
+	    if (args.Disarm)
+            return;
+        if (siliconDeadComp.Dead)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("ipc-cant-attack"), uid, uid);
+            args.Cancel();
+        }
+    }
+
+    // Disallow Speaking - Only whispers go through. Replace with low batter accent instead? Being able to shout is intentional.
+    private void OnSpeakAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, SpeakAttemptEvent args)
+    {
+        //Ignore this if theres still battery
+        if (!siliconDeadComp.Dead)
+            return;
+        // Let MutingSystem handle the event for puppets and muted characters (mimes included)
+        if (HasComp<VentriloquistPuppetComponent>(uid) || HasComp<MutedComponent>(uid))
+            return;
+
+        // If the entity has Hypophonia, let that handle it
+        if (HasComp<HypophoniaComponent>(uid))
+            return;
+
+        // If the entity is whispering, let them speak
+        if (args.Whisper)
+            return;
+
+        // Cancel the event and show the popup
+        _popupSystem.PopupEntity(Loc.GetString("speech-hypophonia"), uid, uid);
+        args.Cancel();
+    }
+
+// Box Change End
 }
 
 /// <summary>
