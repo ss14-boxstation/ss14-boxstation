@@ -6,6 +6,7 @@ using Content.Server._EE.Power.Components;
 using Content.Server.Humanoid;
 using Content.Shared.Humanoid;
 using Content.Shared.StatusEffectNew; // starcup
+using Content.Shared.Stunnable; // Box Change - IPC No Battery Refactor
 
 namespace Content.Server._EE.Silicon.Death;
 
@@ -15,12 +16,15 @@ public sealed class SiliconDeathSystem : EntitySystem
     [Dependency] private readonly SiliconChargeSystem _silicon = default!;
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!; // starcup
+    [Dependency] private readonly SharedStunSystem _stun = default!; // Box Change - IPC No Battery Refactor
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<SiliconDownOnDeadComponent, SiliconChargeStateUpdateEvent>(OnSiliconChargeStateUpdate);
+
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, StandUpAttemptEvent>(OnStandUpAttempt); // Box Change - IPC No Battery Refactor
     }
 
     private void OnSiliconChargeStateUpdate(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, SiliconChargeStateUpdateEvent args)
@@ -48,8 +52,10 @@ public sealed class SiliconDeathSystem : EntitySystem
         if (deadEvent.Cancelled)
             return;
 
-        EntityManager.EnsureComponent<SleepingComponent>(uid);
-        _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
+        // Box Change Start - IPC No Battery Refactor
+        // EntityManager.EnsureComponent<SleepingComponent>(uid);
+        // _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
+        // Box Change End
 
         if (TryComp(uid, out HumanoidAppearanceComponent? humanoidAppearanceComponent))
         {
@@ -59,18 +65,32 @@ public sealed class SiliconDeathSystem : EntitySystem
 
         siliconDeadComp.Dead = true;
 
+        EnsureComp<KnockedDownComponent>(uid); // Box Change - IPC No Battery Refactor
+
         RaiseLocalEvent(uid, new SiliconChargeDeathEvent(uid, batteryComp, batteryUid));
     }
 
     private void SiliconUnDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, BatteryComponent? batteryComp, EntityUid batteryUid)
     {
-        _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
-        _sleep.TryWaking(uid, true, null);
+        // Box Change Start - IPC No Battery Refactor
+        // _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
+        // _sleep.TryWaking(uid, true, null);
+        // Box Change End
 
         siliconDeadComp.Dead = false;
 
+        _stun.TryStanding(uid); // Box Change - IPC No Battery Refactor
+
         RaiseLocalEvent(uid, new SiliconChargeAliveEvent(uid, batteryComp, batteryUid));
     }
+
+    // Box Change Start - Alt Low Battery System
+    private void OnStandUpAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, ref StandUpAttemptEvent args)
+    {
+        if (siliconDeadComp.Dead)
+            args.Cancelled = true;
+    }
+    // Box Change End
 }
 
 /// <summary>
