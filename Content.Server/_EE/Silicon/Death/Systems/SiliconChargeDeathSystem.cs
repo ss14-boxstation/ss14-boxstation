@@ -8,8 +8,6 @@ using Content.Shared.Humanoid;
 using Content.Shared.StatusEffectNew; // starcup
  // Box Change Start - IPC No Battery Refactor
 using Content.Shared.Stunnable;
-using Content.Shared.Weapons.Ranged.Events;
-using Content.Shared.Interaction.Events;
 using Content.Shared.Puppet;
 using Content.Shared.Speech;
 using Content.Shared.Speech.Muting;
@@ -38,8 +36,6 @@ public sealed class SiliconDeathSystem : EntitySystem
 
     // Box Change Start - IPC No Battery Refactor
         SubscribeLocalEvent<SiliconDownOnDeadComponent, StandUpAttemptEvent>(OnStandUpAttempt);
-        SubscribeLocalEvent<SiliconDownOnDeadComponent, AttackAttemptEvent>(OnAttackAttempt);
-        // SubscribeLocalEvent<SiliconDownOnDeadComponent, ShotAttemptedEvent>(OnShootAttempt);
         SubscribeLocalEvent<SiliconDownOnDeadComponent, SpeakAttemptEvent>(OnSpeakAttempt);
     // Box Change End
     }
@@ -107,30 +103,6 @@ public sealed class SiliconDeathSystem : EntitySystem
     {
         if (siliconDeadComp.Dead)
             args.Cancelled = true;
-    }
-
-    // Disallow Attacking
-    // For some reaon, OnAttackAttempt eats OnShootAttempt. Uhhh It still works I guess.
-    /*
-    private void OnShootAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, ref ShotAttemptedEvent args)
-    {
-        if (siliconDeadComp.Dead)
-        {
-            _popupSystem.PopupEntity(Loc.GetString("ipc-cant-shoot"), uid, uid);
-            args.Cancel();
-        }
-    }
-    */
-
-    private void OnAttackAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, AttackAttemptEvent args)
-    {
-	    if (args.Disarm)
-            return;
-        if (siliconDeadComp.Dead)
-        {
-            _popupSystem.PopupEntity(Loc.GetString("ipc-cant-attack"), uid, uid);
-            args.Cancel();
-        }
     }
 
     // Disallow Speaking - Only whispers go through. Replace with low batter accent instead? Being able to shout is intentional.
