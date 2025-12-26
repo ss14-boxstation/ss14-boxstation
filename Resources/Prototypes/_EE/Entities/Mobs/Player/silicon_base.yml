@@ -300,6 +300,12 @@
         - Piercing
         - Heat
         - Shock
+#Start Box Change - adds in more damage types to the examinable in line with what damages ipcs can take
+        - Cold
+        - Caustic
+        - Radiation
+#End Box Change - adds in more damage types to the examinable in line with what damages ipcs can take
+      locPrefix: ipc #Box Change - unique flavor text for ipc injuries
     - type: StatusEffects
       allowed:
       # Box Change Start - Remove Outdated Status Effects
