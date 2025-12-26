@@ -4,6 +4,7 @@ using Content.Shared.Mobs;
 using Content.Shared.Speech.Muting;
 using Robust.Shared.Prototypes;
 using Content.Shared._EE.Silicon.Components; // Box Change - For IPC Deathgasps
+
 namespace Content.Server.Mobs;
 
 /// <see cref="DeathgaspComponent"/>
