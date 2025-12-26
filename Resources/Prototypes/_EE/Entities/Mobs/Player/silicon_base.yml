@@ -79,9 +79,9 @@
           Shock: 1 # Harmony Change, Represents Components overheating with electrical issues resulting
       atmosTemperatureTransferEfficiency: 0.05
     # - type: KillOnOverheat # GoobStation # Harmony Change, comments this out
-    - type: Deathgasp
-      prototype: SiliconDeathgasp
-      needsCritical: false
+    #- type: Deathgasp
+    #  prototype: SiliconDeathgasp
+    #  needsCritical: false
     - type: MobState
       allowedStates:
         - Alive
