@@ -1,3 +1,7 @@
 - type: lobbyBackground
   id: Cyrillus
   background: /Textures/_Box/LobbyScreens/Cyrillus.webp
+
+- type: lobbyBackground
+  id: Dreamteam
+  background: /Textures/_Box/LobbyScreens/dream_team.webp
