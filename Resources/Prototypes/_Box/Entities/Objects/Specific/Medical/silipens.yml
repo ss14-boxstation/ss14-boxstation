@@ -1,0 +1,25 @@
+# Medical
+- type: entity
+  name: Silipen
+  parent: ChemicalMedipen
+  id: Silipen
+  description: A mixture of chemicals designed to treat IPC injuries, comes with two mini lasers to boot!
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty # temporary until i finish up the meta.json
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: RoutineMaintenance
+          Quantity: 10
+        - ReagentId: Nanoweldite
+          Quantity: 5
