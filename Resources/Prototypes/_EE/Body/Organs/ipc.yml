@@ -25,7 +25,7 @@
   description: "Contains either an Advanced Positronic Brain, or an Advanced MMI, you're not quite sure."
   components:
     - type: Sprite
-      sprite: _Box/Mobs/Species/IPC/organs.rs
+      sprite: _Box/Mobs/Species/IPC/organs.rsi
       state: ipc-brain-on
     - type: Item
       size: Small
