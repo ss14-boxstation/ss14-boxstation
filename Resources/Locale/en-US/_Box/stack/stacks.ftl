@@ -1,3 +1,9 @@
+stack-ipc-oil-pack = ipc oil pack
+stack-cable-pack = robot rewiring kit
+stack-component-pack = component replacement kit
+stack-robotstruct-pack = robot structural repair kit
+stack-chassis-patch = chassis patch
+stack-replacement-lenses = replacement lenses
 stack-robot-burn-patch = robot burn patch
 stack-robot-trauma-patch = robot trauma patch
 stack-acid-neutralization-patch = acit neutralization patch
