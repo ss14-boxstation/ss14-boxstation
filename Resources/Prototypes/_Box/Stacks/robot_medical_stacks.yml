@@ -8,35 +8,35 @@
 - type: stack
   id: CablePack
   name: stack-cable-pack
-  icon: { sprite: "/Textures/_Harmony/Objects/Medical/cable_pack.rsi", state: cable_pack }
+  icon: { sprite: "/Textures/_Box/Objects/Medical/cable_pack.rsi", state: cable_pack }
   spawn: CablePack
   maxCount: 10
 
 - type: stack
   id: ComponentPack
   name: stack-component-pack
-  icon: { sprite: "/Textures/_Harmony/Objects/Medical/componentpack.rsi", state: icon }
+  icon: { sprite: "/Textures/_Box/Objects/Medical/componentpack.rsi", state: icon }
   spawn: ComponentPack
   maxCount: 10
 
 - type: stack
   id: RobotStructPack
   name: stack-robotstruct-pack
-  icon: { sprite: "/Textures/_Harmony/Objects/Medical/componentpack.rsi", state: icon }
+  icon: { sprite: "/Textures/_Box/Objects/Medical/componentpack.rsi", state: icon }
   spawn: RobotStructPack
   maxCount: 10
 
 - type: stack
   id: ChassisPatch
   name: stack-chassis-patch
-  icon: { sprite: "/Textures/_Harmony/Objects/Medical/chassis_patch.rsi", state: icon }
+  icon: { sprite: "/Textures/_Box/Objects/Medical/chassis_patch.rsi", state: icon }
   spawn: ChassisPatch
   maxCount: 10
 
 - type: stack
   id: ReplacementLenses
   name: stack-replacement-lenses
-  icon: { sprite: "/Textures/_Harmony/Objects/Medical/replacement_lenses.rsi", state: icon }
+  icon: { sprite: "/Textures/_Box/Objects/Medical/replacement_lenses.rsi", state: icon }
   spawn: ReplacementLenses
   maxCount: 1
 
