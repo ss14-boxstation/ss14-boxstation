@@ -2,6 +2,7 @@
   id: MobIPC
   parent: PlayerSiliconHumanoidBase
   name: Urist McPositronic
+  suffix: UR1ST, Box # Box Change
   description: A positronic brain in a metal body.
   components:
   - type: PowerCellSlot
@@ -15,7 +16,7 @@
         startingItem: PowerCellMedium
   - type: BatterySlotRequiresLock
     itemSlot: cell_slot
-  # - type: EncryptionHolderRequiresLock # Harmony Change, no internal radio
+  # - type: EncryptionHolderRequiresLock # Box Change, no internal radio
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg" # SOMEONE PLEASE FIND A BETTER SOUND FOR THIS.
     minInterval: 99
@@ -88,16 +89,18 @@
       3: 1
       2: 0.80
       1: 0.45
-      0: 0.2 # Box Chang - Allow batteryless IPCs to crawl
+      0: 0.2 # Box Change - Allow batteryless IPCs to crawl
   - type: BatteryDrinker
-  # - type: EncryptionKeyHolder # Harmony Change, Comments out intrinsic radio
-    # keySlots: 4 # Harmony Change, Comments out intrinsic radio
-    # examineWhileLocked: false # Harmony Change, Comments out intrinsic radio
-    # keysExtractionMethod: Cutting # Harmony Change, Comments out intrinsic radio
-    # keysUnlocked: false # Harmony Change, Comments out intrinsic radio
-  # - type: ActiveRadio # Harmony Change, Comments out intrinsic radio
-  # - type: IntrinsicRadioReceiver # Harmony Change, Comments out intrinsic radio
-  # - type: IntrinsicRadioTransmitter # Harmony Change, Comments out intrinsic radio
+  # Box Change Start - Comments out intrinsic radio
+  # - type: EncryptionKeyHolder
+    # keySlots: 4
+    # examineWhileLocked: false
+    # keysExtractionMethod: Cutting
+    # keysUnlocked: false
+  # - type: ActiveRadio
+  # - type: IntrinsicRadioReceiver
+  # - type: IntrinsicRadioTransmitter
+  # Box Change End
   - type: DeadStartupButton
     sound:
       path: /Audio/_EE/Effects/Silicon/startup.ogg
@@ -113,7 +116,7 @@
 - type: entity
   save: false
   name: Urist McPositronic
-  suffix: UR1ST # Harmony Change
+
   parent: MobHumanDummy
   id: MobIPCDummy
   categories: [ HideSpawnMenu ] # Goobstation

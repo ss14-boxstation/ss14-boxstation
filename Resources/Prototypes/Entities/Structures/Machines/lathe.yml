@@ -316,7 +316,7 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
-    - HarmonyIPCRepairStatic # Harmony Change, Adds IPC repair items to the Exosuit Fab
+    - BoxIPCMedicalStatic # Box Change, Adds IPC repair items to the Exosuit Fab, Re-evaluate?
     dynamicPacks:
     - Robotics
     - BorgModules
@@ -494,7 +494,7 @@
     - EmptyMedkitsStatic
     - SurgeryStatic
     - HarmonyMedicalStatic # Harmony
-    - HarmonyIPCMedicalStatic # Harmony Change, allows ipc gauze and ipc oculine to be made here
+    - BoxIPCMedicalStatic # Box Change, allows ipc gauze and ipc oculine to be made here
     dynamicPacks:
     - Chemistry
   - type: Machine

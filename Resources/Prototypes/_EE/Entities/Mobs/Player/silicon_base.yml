@@ -65,9 +65,9 @@
         0: 0.00
     - type: Temperature
       # heatDamageThreshold: 1800 # GoobStation: Roughly the melting point of mild steels
-      heatDamageThreshold: 373.15 # Harmony Change, damage point of electronics
+      heatDamageThreshold: 373.15 # Box Change, damage point of electronics
       # coldDamageThreshold: 100 # DeltaV - has to be very cold
-      coldDamageThreshold: 200 # Harmony Change, takes into account freezing point of structural elements, like plastics, and the freezing point of internal chemicals
+      coldDamageThreshold: 200 # Box Change, takes into account freezing point of structural elements, like plastics, and the freezing point of internal chemicals
       currentTemperature: 310.15
       specificHeat: 42
       coldDamage:
@@ -76,9 +76,9 @@
       heatDamage:
         types:
           Heat: 2 # DeltaV - was 3
-          Shock: 1 # Harmony Change, Represents Components overheating with electrical issues resulting
+          Shock: 1 # Box Change, Represents Components overheating with electrical issues resulting
       atmosTemperatureTransferEfficiency: 0.05
-    # - type: KillOnOverheat # GoobStation # Harmony Change, comments this out
+    # - type: KillOnOverheat # GoobStation # Box Change, comments this out
     #- type: Deathgasp
     #  prototype: SiliconDeathgasp
     #  needsCritical: false
@@ -160,7 +160,7 @@
     - type: Bloodstream # begin DeltaV - uncommented
       damageBleedModifiers: BloodlossIPC
       # bloodReagent: Oil
-      bloodReagent: IPCOil # Harmony Change, gives IPCs a unique Blood
+      bloodReagent: IPCOil # Box Change, gives IPCs a unique Blood
       bleedReductionAmount: 0.25 # Box Change - 0 > 0.25 - Less than an organic (no clotting), but still there
       # bloodMaxVolume: 100 # Box Change - Comments out to revert to default value
       # chemicalMaxVolume: 0 # Box Change - Comments out to revert to default value
@@ -171,7 +171,7 @@
       bloodlossDamage:
         types:
           Blunt: 0.25 # lubricant is running low # Box Change - 0.1 > 0.25
-          Heat: 0.25 # Harmony Change, Overheating from no coolant # Box Change - 0.1 > 0.25
+          Heat: 0.25 # Box Change, Overheating from no coolant # Box Change - 0.1 > 0.25
       bloodlossHealDamage:
         types:
           Burn: 0 # end DeltaV
@@ -181,15 +181,15 @@
       damage:
         types:
           # Heat: 0 # GoobStation: Replaced fire damage with overheating shutdown
-          Heat: 0.75 # Harmony Change, reverts KillOnOverheat
-    # Harmony Change Start, uncomments barotrauma
+          Heat: 0.75 # Box Change, reverts KillOnOverheat
+    # Box Change Start, uncomments barotrauma
     - type: Barotrauma # Not particularly modifiable. In the future, some response to pressure changes would be nice.
       damage:
         types:
           # Blunt: 0.28 #per second, scales with pressure and other constants.
-          Blunt: 0.5 # Harmony Change
-          Heat: 0.1 # Harmony Change, represents internal fluids, like coolant and lubricant, boiling away
-    # Harmony Change Ends
+          Blunt: 0.5 # Box Change
+          Heat: 0.1 # Box Change, represents internal fluids, like coolant and lubricant, boiling away
+    # Box Change Ends
     - type: Identity
     #  soundHit:
     #    path: /Audio/Effects/metalbreak.ogg
@@ -231,8 +231,8 @@
           type: HumanoidMarkingModifierBoundUserInterface
         enum.StrippingUiKey.Key:
           type: StrippableBoundUserInterface
-        # enum.SurgeryUIKey.Key: # Shitmed # Harmony Change, Comments out Shitmed
-          # type: SurgeryBui # Harmony Change, Comments out Shitmed
+        # enum.SurgeryUIKey.Key: # Shitmed # Box Change, Comments out Shitmed
+          # type: SurgeryBui # Box Change, Comments out Shitmed
     - type: Emoting
     - type: Grammar
       attributes:
@@ -245,7 +245,7 @@
     - type: CanEscapeInventory
     - type: HumanoidAppearance
       species: IPC
-      hideLayersOnEquip: # Harmony Change, Better headgear meshing with markings
+      hideLayersOnEquip: # Box Change, Better headgear meshing with markings
       - Snout
       - HeadTop
     - type: Body
@@ -333,23 +333,23 @@
         - RatvarianLanguage
       # Box Change End
     - type: Blindable
-    - type: Fingerprint # Harmony Change, Gives IPCs fingerprints
+    - type: Fingerprint # Box Change, Gives IPCs fingerprints
     - type: FireVisuals
       alternateState: Standing
     - type: LightningTarget
       priority: 1
       lightningExplode: false
     - type: ComplexInteraction
-    # Harmony Change Start, pretty sure this is all DeltaV systems we don't have
-    # - type: FootPrints # Harmony Change, we don't have footprins
+    # Box Change Start, pretty sure this is all DeltaV systems we don't have
+    # - type: FootPrints # Box Change, we don't have footprins
     # - type: Carriable
     # - type: Targeting
-    # - type: SurgeryTarget # Harmony Change, Comments out Shitmed
+    # - type: SurgeryTarget # Box Change, Comments out Shitmed
     # - type: LayingDown
-    # - type: Fiber # DeltaV - IPCs leave fibers instead of prints # Harmony Change, IPCs will use basic forensics
-      # fiberMaterial: fibers-steel # Harmony Change, IPCs will use basic forensics
-    # - type: Anesthesia # DeltaV - IPCs can be operated on without anesthesia # Harmony Change, Comments out Shitmed
-    # Harmony Change End
+    # - type: Fiber # DeltaV - IPCs leave fibers instead of prints # Box Change, IPCs will use basic forensics
+      # fiberMaterial: fibers-steel # Box Change, IPCs will use basic forensics
+    # - type: Anesthesia # DeltaV - IPCs can be operated on without anesthesia # Box Change, Comments out Shitmed
+    # Box Change End
     - type: Crawler # Box Change - Allows IPCs to crawl because they are a round start speceis
     - type: PassiveDamage # Box Change - Allow IPCs to heal their own bloodloss
       allowedStates:

@@ -33,7 +33,7 @@
     damageContainers:
     - Inorganic
     - Silicon
-    - HumanoidSilicon # Harmony Change, IPCs
+    - HumanoidSilicon # Box Change, IPCs show up on Robotics HUD
   - type: ShowAccessReaderSettings
 
 - type: entity

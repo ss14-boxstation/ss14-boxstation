@@ -7,7 +7,7 @@
     Piercing: 0.9
     # Box Change End
     Poison: 0
-    # Cold: 0.5 # Harmony Change, Comments out Cold Resistance
+    # Cold: 0.5 # Box Change, Comments out Cold Resistance
     Heat: 1.3 # Box Change - 1.5 > 1.3
     Shock: 2.0
     Radiation: 0.5 # DeltaV - was not real
