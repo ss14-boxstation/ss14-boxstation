@@ -24,7 +24,7 @@
   parent: CrateMedical
   id: CrateIPCRepairBloodloss
   name: emergency IPC bloodloss kit
-  suffix: Harmony
+  suffix: Box
   description: A crate filled with emergency supplies for bleeding IPCs
   components:
   - type: StorageFill
@@ -36,7 +36,7 @@
   parent: CrateMedical
   id: CrateIPCBlood
   name: IPC oil packs
-  suffix: Harmony
+  suffix: Box
   description: A crate filled with oil packs for IPCs
   components:
   - type: StorageFill
