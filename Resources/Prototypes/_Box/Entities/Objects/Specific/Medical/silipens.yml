@@ -3,9 +3,10 @@
 
 # Medical
 - type: entity
-  name: Silipen
   parent: ChemicalMedipen
   id: Silipen
+  name: Silipen
+  suffix: BoxStation
   description: A mixture of chemicals designed to treat IPC injuries, comes with two mini lasers to boot!
   components:
   - type: Sprite
@@ -16,7 +17,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: silipen_empty # temporary until i finish up the meta.json
+    emptySpriteName: silipen_empty 
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -28,9 +29,10 @@
           Quantity: 5
 
 - type: entity
-  name: Emergency Silipen
   parent: ChemicalMedipen
   id: EmergencySilipen
+  name: Emergency Silipen
+  suffix: BoxStation
   description: A mixture of chemicals designed to rapidly stabilize severely injured IPCs.
   components:
   - type: Sprite
@@ -41,7 +43,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: emergency_silipenempty # temporary until i finish up the meta.json
+    emptySpriteName: emergencysilipen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -54,9 +56,10 @@
 
 # Syndicate stuff
 - type: entity
-  name: Mechazine Silipen
   parent: ChemicalMedipen
   id: MechazineSilipen
+  name: Mechazine Silipen
+  suffix: BoxStation
   description: A collaboratory Silipen that provides synthetic agents with effects similar to hyperzine.
   components:
   - type: Sprite
@@ -67,7 +70,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: mechapen_empty # temporary until i finish up the meta.json
+    emptySpriteName: mechapen_empty
   - type: SolutionContainerManager
     solutions:
       pen:
