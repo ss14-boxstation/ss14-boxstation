@@ -1,3 +1,6 @@
+# These all are meant to make a welding noise on use but doing that requires messing with injector groups and stuff,
+# so thats a for a future PR or for whoever is reading this to do (if they want to)
+
 # Medical
 - type: entity
   name: Silipen
@@ -72,3 +75,8 @@
         reagents:
         - ReagentId: Mechazine
           Quantity: 30
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 30
+    onlyAffectsMobs: false
+    injectOnly: true
