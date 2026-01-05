@@ -117,7 +117,7 @@
       types:
         Cold: -1 # Structural Repair
     # bleedingModifier: -20 # DeltaV - IPCs bleed
-    bleedingModifier: -2 # Weak but does something
+    bleedingModifier: -2 # Weak but does something, should take 5 doafters to stop full bleedstacks
 # Box Change Ends
 
 - type: entity
