@@ -50,6 +50,17 @@
       Flammable: [Touch]
       Extinguish: [Touch]
       Acidic: [Touch]
+#Start Box Change - Imp Port - Teleport list Xenoarch
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: NameIdentifier
+    group: Artifact
+#End Box Change - Imp Port - Teleport list Xenoarch
 
 - type: entity
   parent: BaseAction

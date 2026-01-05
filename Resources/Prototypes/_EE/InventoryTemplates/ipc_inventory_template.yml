@@ -78,7 +78,7 @@
       uiWindowPos: 0,3
       strippingWindowPos: 0,0
       displayName: Eyes
-# Harmony Change Start, Re-enables ear slot so IPCs wear headsets to compensate for removal of intrinsic radio
+# Box Change Start, Re-enables ear slot so IPCs wear headsets to compensate for removal of intrinsic radio
     - name: ears
       slotTexture: ears
       slotFlags: EARS
@@ -86,7 +86,7 @@
       uiWindowPos: 2,2
       strippingWindowPos: 2,0
       displayName: Ears
-# Harmony Change End
+# Box Change End
     - name: head
       slotTexture: head
       slotFlags: HEAD

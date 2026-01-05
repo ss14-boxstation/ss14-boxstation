@@ -25,7 +25,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
-using Content.Shared._EE.Silicon.Components; // Goobstation
+using Content.Shared._EE.Silicon.Components; // Box Change - Goobstation - IPCs
 
 namespace Content.IntegrationTests.Tests.GameRules;
 
@@ -230,18 +230,18 @@ public sealed class NukeOpsTest
         var totalSeconds = 30;
         var totalTicks = (int) Math.Ceiling(totalSeconds / server.Timing.TickPeriod.TotalSeconds);
         var increment = 5;
-        // var resp = entMan.GetComponent<RespiratorComponent>(player); // Harmony Change, part of the port for IPCs from DeltaV
+        // var resp = entMan.GetComponent<RespiratorComponent>(player); // Box Change, part of the port for IPCs from DeltaV
         var damage = entMan.GetComponent<DamageableComponent>(player);
         for (var tick = 0; tick < totalTicks; tick += increment)
         {
             await pair.RunTicksSync(increment);
-            // Harmony Change Start, Allows IPCs to be Nukies I think, or at least makes the game not cry when it thinks about them being Nukies
+            // Box Change Start, Allows IPCs to be Nukies I think, or at least makes the game not cry when it thinks about them being Nukies
             if (!entMan.HasComponent<SiliconComponent>(player)) // Goobstation - IPC
             {
                 var resp = entMan.GetComponent<RespiratorComponent>(player);
                 Assert.That(resp.SuffocationCycles, Is.LessThanOrEqualTo(resp.SuffocationCycleThreshold));
             }
-            // Harmony Change End
+            // Box Change End
             Assert.That(damage.TotalDamage, Is.EqualTo(FixedPoint2.Zero));
         }
 

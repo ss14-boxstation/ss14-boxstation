@@ -18,7 +18,7 @@ using Robust.Shared.Prototypes;
 // Harmony refs
 using Robust.Shared.Configuration; // Harmony
 using Content.Shared._Harmony.CCVars; // Harmony
-using Content.Shared._EE.Silicon.Components; // EE
+using Content.Shared._EE.Silicon.Components; // Box Change - EE - IPCs
 
 namespace Content.Server.Chat;
 
@@ -181,13 +181,13 @@ public sealed class SuicideSystem : EntitySystem
             return;
         }
 
-        // Harmony Change Start, made it slash to prevent testfail and to make self-execution more thematic
+        // Box Change Start - Prevent IPC test fail and make IPC suicide damage more appropriate
         // args.DamageType ??= "Bloodloss";
         if (HasComp<SiliconComponent>(victim)) // Goobstation
             args.DamageType ??= "Slash";
         else
             args.DamageType ??= "Bloodloss";
-        // Harmony Change End
+        // Box Change End
         _suicide.ApplyLethalDamage(victim, args.DamageType);
         args.Handled = true;
     }

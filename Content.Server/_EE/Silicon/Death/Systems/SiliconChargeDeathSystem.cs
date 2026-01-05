@@ -6,6 +6,14 @@ using Content.Server._EE.Power.Components;
 using Content.Server.Humanoid;
 using Content.Shared.Humanoid;
 using Content.Shared.StatusEffectNew; // starcup
+ // Box Change Start - IPC No Battery Refactor
+using Content.Shared.Stunnable;
+using Content.Shared.Puppet;
+using Content.Shared.Speech;
+using Content.Shared.Speech.Muting;
+using Content.Shared._Harmony.Speech.Hypophonia;
+using Content.Server.Popups;
+// Box Change End
 
 namespace Content.Server._EE.Silicon.Death;
 
@@ -15,12 +23,21 @@ public sealed class SiliconDeathSystem : EntitySystem
     [Dependency] private readonly SiliconChargeSystem _silicon = default!;
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!; // starcup
+    // Box Change Start - IPC No Battery Refactor
+    [Dependency] private readonly SharedStunSystem _stun = default!;
+    [Dependency] private readonly PopupSystem _popupSystem = default!;
+    // Box Change End
 
     public override void Initialize()
     {
         base.Initialize();
 
         SubscribeLocalEvent<SiliconDownOnDeadComponent, SiliconChargeStateUpdateEvent>(OnSiliconChargeStateUpdate);
+
+    // Box Change Start - IPC No Battery Refactor
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, StandUpAttemptEvent>(OnStandUpAttempt);
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, SpeakAttemptEvent>(OnSpeakAttempt);
+    // Box Change End
     }
 
     private void OnSiliconChargeStateUpdate(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, SiliconChargeStateUpdateEvent args)
@@ -48,8 +65,10 @@ public sealed class SiliconDeathSystem : EntitySystem
         if (deadEvent.Cancelled)
             return;
 
-        EntityManager.EnsureComponent<SleepingComponent>(uid);
-        _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
+        // Box Change Start - IPC No Battery Refactor
+        // EntityManager.EnsureComponent<SleepingComponent>(uid);
+        // _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
+        // Box Change End
 
         if (TryComp(uid, out HumanoidAppearanceComponent? humanoidAppearanceComponent))
         {
@@ -59,18 +78,57 @@ public sealed class SiliconDeathSystem : EntitySystem
 
         siliconDeadComp.Dead = true;
 
+        EnsureComp<KnockedDownComponent>(uid); // Box Change - IPC No Battery Refactor
+
         RaiseLocalEvent(uid, new SiliconChargeDeathEvent(uid, batteryComp, batteryUid));
     }
 
     private void SiliconUnDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, BatteryComponent? batteryComp, EntityUid batteryUid)
     {
-        _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
-        _sleep.TryWaking(uid, true, null);
+        // Box Change Start - IPC No Battery Refactor
+        // _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
+        // _sleep.TryWaking(uid, true, null);
+        // Box Change End
 
         siliconDeadComp.Dead = false;
 
+        _stun.TryStanding(uid); // Box Change - IPC No Battery Refactor
+
         RaiseLocalEvent(uid, new SiliconChargeAliveEvent(uid, batteryComp, batteryUid));
     }
+
+// Box Change Start - Alt Low Battery System
+    // Disallow Standing
+    private void OnStandUpAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, ref StandUpAttemptEvent args)
+    {
+        if (siliconDeadComp.Dead)
+            args.Cancelled = true;
+    }
+
+    // Disallow Speaking - Only whispers go through. Replace with low batter accent instead? Being able to shout is intentional.
+    private void OnSpeakAttempt(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, SpeakAttemptEvent args)
+    {
+        //Ignore this if theres still battery
+        if (!siliconDeadComp.Dead)
+            return;
+        // Let MutingSystem handle the event for puppets and muted characters (mimes included)
+        if (HasComp<VentriloquistPuppetComponent>(uid) || HasComp<MutedComponent>(uid))
+            return;
+
+        // If the entity has Hypophonia, let that handle it
+        if (HasComp<HypophoniaComponent>(uid))
+            return;
+
+        // If the entity is whispering, let them speak
+        if (args.Whisper)
+            return;
+
+        // Cancel the event and show the popup
+        _popupSystem.PopupEntity(Loc.GetString("speech-hypophonia"), uid, uid);
+        args.Cancel();
+    }
+
+// Box Change End
 }
 
 /// <summary>

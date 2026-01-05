@@ -379,3 +379,67 @@
   id: 40
   time: '2025-12-04T14:41:02.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/61
+- author: CollectionOfBones128
+  changes:
+  - message: IPCs now have more agency when they have no power.
+    type: Tweak
+  id: 41
+  time: '2025-12-25T21:07:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/62
+- author: BlueMoon059
+  changes:
+  - message: IPCs now have unique flavor text for their injuries, no longer using
+      the organic injury system.
+    type: Add
+  - message: IPCs now correctly track their cold, radiation, and caustic injuries
+      and show them when you visually inspect them.
+    type: Fix
+  id: 42
+  time: '2025-12-26T15:25:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/63
+- author: BlueMoon059
+  changes:
+  - message: IPCs now deathgasp like any other species on death.
+    type: Fix
+  id: 43
+  time: '2025-12-26T16:26:07.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/64
+- author: BlueMoon059
+  changes:
+  - message: Adds new lobby art of Nyx, Pyrrha, Hears, Altair, Cy, Katya, and Anya
+      by Faeturtle.
+    type: Add
+  id: 44
+  time: '2025-12-29T18:25:31.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/66
+- author: BlueMoon059
+  changes:
+  - message: Changes the wording on the IPC deathgasp.
+    type: Tweak
+  id: 45
+  time: '2025-12-29T18:25:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/65
+- author: BlueMoon059
+  changes:
+  - message: Artifacts and Anomalies are now teleport points for ghosts.
+    type: Add
+  id: 46
+  time: '2026-01-01T18:03:13.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/67
+- author: CollectionOfBones128
+  changes:
+  - message: Welders now slightly stop IPC bleeding
+    type: Tweak
+  id: 47
+  time: '2026-01-05T04:42:24.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/69
+- author: CollectionOfBones128
+  changes:
+  - message: Overclocker, Thermal Paste, and Routine Maintenance have all had their
+      effects tweaked to be more useable
+    type: Tweak
+  - message: Degreaser now also removes Mechazine and Synthanol
+    type: Tweak
+  id: 48
+  time: '2026-01-05T05:01:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/70

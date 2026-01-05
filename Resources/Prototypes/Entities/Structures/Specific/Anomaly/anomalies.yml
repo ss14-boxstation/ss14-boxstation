@@ -58,6 +58,17 @@
     damage:
       types:
         Radiation: 10
+  # Box Change Start - Imp Port - Anomalies are TP points
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+  - type: Tag # imp edit
+    tags:
+    - GhostOnlyWarp
+  - type: NameIdentifier
+    group: Anomaly
+  # Box Change End - Imp Port - Anomalies are TP points
 
 - type: entity
   id: AnomalyPyroclastic

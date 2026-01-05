@@ -17,20 +17,19 @@
         - ReagentId: IPCOil
           Quantity: 10
 
-# Harmony Change, Give IPCs a regular brain
+# Box Change, Give IPCs a regular brain
 - type: entity
   id: IPCProcessorHousing
-  parent: [BaseItem] # Box Change - Remove Human Brain parent
+  parent: [BaseItem]
   name: ipc processor housing
   description: "Contains either an Advanced Positronic Brain, or an Advanced MMI, you're not quite sure."
   components:
     - type: Sprite
-      sprite: _Box/Mobs/Species/IPC/organs.rsi # Box Change
-      state: ipc-brain-on # Box Change
+      sprite: _Box/Mobs/Species/IPC/organs.rsi
+      state: ipc-brain-on
     - type: Item
       size: Small
       heldPrefix: brain
-    # Box Change Start
     - type: Organ
     - type: Input
       context: "ghost"
@@ -66,8 +65,7 @@
       groups:
       - id: Software
       - id: Malware
-    # Box Change End
-# End Harmony Change
+# End Box Change
 
 - type: entity
   id: OrganIPCEyes
@@ -80,8 +78,8 @@
       - state: eyeball-l
       - state: eyeball-r
   - type: Organ
-    # slotId: eyes # Harmony Change, comments this out because I'm pretty sure its Shitmed
-  # - type: Eyes # Harmony Change, comments this out because I'm pretty sure its Shitmed
+    # slotId: eyes # Box Change, comments this out because I'm pretty sure its Shitmed
+  # - type: Eyes # Box Change, comments this out because I'm pretty sure its Shitmed
 
 - type: entity
   id: OrganIPCTongue
@@ -112,7 +110,7 @@
   - type: Sprite
     state: heart-on
   - type: Organ
-    # slotId: pump # Harmony Change, comments this out because I'm pretty sure its Shitmed
+    # slotId: pump # Box Change, comments this out because I'm pretty sure its Shitmed
   # Box Change Start
   - type: Metabolizer
     maxReagents: 2
@@ -127,7 +125,7 @@
       filter: true
     removeEmpty: true
   # Box Change End
-  # - type: Heart # Harmony Change, comments this out because I'm pretty sure its Shitmed
+  # - type: Heart # Box Change, comments this out because I'm pretty sure its Shitmed
   # The following was already commented out on DeltaV
   # The heart 'metabolizes' medicines and poisons that aren't filtered out by other organs.
   # This is done because these chemicals need to have some effect even if they aren't being filtered out of your body.

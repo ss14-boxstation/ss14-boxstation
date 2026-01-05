@@ -131,5 +131,5 @@ public enum SpeciesNaming : byte
     FirstDashFirst,
     TheFirstofLast,
     LastFirst, // DeltaV
-    FirstDashLast, //Goobstation
+    FirstDashLast, // Box Change - Goobstation - IPCs
 }

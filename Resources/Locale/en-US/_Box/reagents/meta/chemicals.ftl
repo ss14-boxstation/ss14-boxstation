@@ -9,3 +9,12 @@ reagent-desc-chloromethane = A colorless, sweet-smelling, flammable gas. It is o
 
 reagent-name-dimethyldichlorosilane = dimethyldichlorosilane
 reagent-desc-dimethyldichlorosilane = A colorless liquid. It is a tetrahedral organosilicon compound important in the synthesis of silicones.
+
+reagent-name-industrial-lubricant = industrial lubricant
+reagent-desc-industrial-lubricant = An oil-based lubricant used in industrial processes, especially robotics.
+
+reagent-name-computer-coolant = computer coolant
+reagent-desc-computer-coolant = A glycol-water based coolant used to regulate the temperature of computers.
+
+reagent-name-ethylene-glycol = ethylene glycol
+reagent-desc-ethylene-glycol = An odorless, colorless, flammable, viscous liquid.
