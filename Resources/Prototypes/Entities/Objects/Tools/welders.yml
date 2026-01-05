@@ -117,7 +117,7 @@
       types:
         Cold: -1 # Structural Repair
     # bleedingModifier: -20 # DeltaV - IPCs bleed
-    # bleedingModifier: -10 # Parity with Gauze
+    bleedingModifier: -2 # Weak but does something
 # Box Change Ends
 
 - type: entity
