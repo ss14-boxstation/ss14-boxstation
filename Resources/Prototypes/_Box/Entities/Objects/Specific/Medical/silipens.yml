@@ -6,14 +6,14 @@
   description: A mixture of chemicals designed to treat IPC injuries, comes with two mini lasers to boot!
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/medipen.rsi
+    sprite: _Box/Objects/Specific/Medical/silipens.rsi
     layers:
-    - state: medipen
+    - state: silipen
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: medipen_empty # temporary until i finish up the meta.json
+    emptySpriteName: silipen_empty # temporary until i finish up the meta.json
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -23,3 +23,52 @@
           Quantity: 10
         - ReagentId: Nanoweldite
           Quantity: 5
+
+- type: entity
+  name: Emergency Silipen
+  parent: ChemicalMedipen
+  id: EmergencySilipen
+  description: A mixture of chemicals designed to rapidly stabilize severely injured IPCs.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Specific/Medical/silipens.rsi
+    layers:
+    - state: emergency_silipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: emergency_silipenempty # temporary until i finish up the meta.json
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Overclocker
+          Quantity: 12
+        - ReagentId: Polydimethylsiloxane
+          Quantity: 3
+
+# Syndicate stuff
+- type: entity
+  name: Mechazine Silipen
+  parent: ChemicalMedipen
+  id: MechazineSilipen
+  description: A collaboratory Silipen that provides synthetic agents with effects similar to hyperzine.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Specific/Medical/silipens.rsi
+    layers:
+    - state: mechapen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: mechapen_empty # temporary until i finish up the meta.json
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Mechazine
+          Quantity: 30
