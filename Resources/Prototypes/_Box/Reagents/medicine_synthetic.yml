@@ -104,13 +104,21 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 6
+          min: 0
+          max: 15
         - !type:TotalDamage
-          min: 60
+          min: 80
         damage:
           types:
             Heat: -3
-            Shock: 0.1
+            Blunt: -1
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        damage:
+          types:
+            Shock: 3
       - !type:GenericStatusEffect
         key: Stun
         time: 0.75
@@ -255,11 +263,29 @@
           type: Synthetic
         reagent: SpaceLube
         amount: -3.0
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+        reagent: Mechazine
+        amount: -3.0
+      - !type:AdjustReagent
+        conditions:
+        - !type:OrganType
+          type: Synthetic
+        reagent: Synthanol
+        amount: -0.5
     Industrial:
       effects:
       - !type:AdjustReagent
         reagent: SpaceLube
         amount: -3.0
+      - !type:AdjustReagent
+        reagent: Mechazine
+        amount: -3.0
+      - !type:AdjustReagent
+        reagent: Synthanol
+        amount: -0.5
 
 # Routine Maintenance - RoboTrico
 - type: reagent
@@ -279,11 +305,11 @@
           max: 60
         damage:
           groups:
-            Brute: -0.45
+            Brute: -0.6
           types:
-            Heat: -0.15
-            Shock: -0.15
-            Cold: -0.15
+            Heat: -0.2
+            Shock: -0.2
+            Cold: -0.2
 
 # Nanoweldite - Discount Omni for brutes, hard but possible to make
 - type: reagent
@@ -425,8 +451,8 @@
       - !type:HealthChange
         damage:
           types:
-            Cold: -0.05
-            Heat: -0.05
+            Cold: -0.5
+            Heat: -0.5
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
