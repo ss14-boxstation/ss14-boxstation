@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseItem
+  id: IPCSlag
+  name: ipc slag
+  description: The melted remains of a IPC.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: Objects/Materials/materials.rsi
+    state: ash # TODO: Resprite this to fit IPCs
+  - type: Tag
+    tags:
+    - Burnt
+    - Trash
