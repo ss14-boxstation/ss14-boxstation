@@ -5,11 +5,15 @@
   description: The melted remains of a IPC.
   components:
   - type: Item
-    size: Small
+    size: Normal
   - type: Sprite
     sprite: Objects/Materials/materials.rsi
     state: ash # TODO: Resprite this to fit IPCs
   - type: Tag
     tags:
     - Burnt
+    - Recyclable
     - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 1500 # 15 sheets
