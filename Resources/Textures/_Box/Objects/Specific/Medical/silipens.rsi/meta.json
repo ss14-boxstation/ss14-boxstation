@@ -7,23 +7,23 @@
     "y":32
   },
   "states": [
-    {
-      "name":"silipen"
-    },
-    {
-      "name":"silipen_empty"
-    },
-    {
-      "name":"emergency_silipen"
-    },
-    {
-      "name": "emergencysilipen_empty"
-    },
-    {
-      "name": "mechapen"    
-    },
-    {
-      "name":"mechapen_empty"
-    }
-  ]
+        {
+            "name":"silipen"
+        },
+        {
+            "name":"silipen_empty"
+        },
+        {
+            "name":"emergency_silipen"
+        },
+        {
+            "name": "emergencysilipen_empty"
+        },
+        {
+            "name": "mechapen"    
+        },
+        {
+            "name":"mechapen_empty"
+        }
+    ]
 }
