@@ -59,6 +59,11 @@
       - WeedDotExe
       - SOISapphire
       - ECCMemory
+      - Polydimethylsiloxane
+      - Degreaser
+      - ThermalPaste
+      - ComputerCoolant
+      - Bitflipper
  #Box Change End - adds Synthchems to world reagent spawners
     - quantity: 5
       weight: 2.5
