@@ -1029,6 +1029,13 @@
     - ChloralHydrate
     - Mold
     - Amatoxin
+#Box Change Start - Adds Synthchems to Artifact Systems
+    - Bootloop
+    - WeedDotExe
+    - CIH
+    - Surge
+    - Mechazine
+#Box Change End - Adds Synthchems to Artifact Systems
 
 - type: entity
   id: XenoArtifactPuddleRare
@@ -1059,6 +1066,12 @@
     - Desoxyephedrine
     - Pax
     - Siderlac
+#Box Change Start - Adds Synthchems to Artifact Systems
+    - SmartMetal
+    - RoutineMaintenance
+    - Cryosilicate
+    - Nanoweldite
+#Box Change End - Adds Synthchems to Artifact Systems
 
 - type: entity
   id: XenoArtifactAnomalySpawn
