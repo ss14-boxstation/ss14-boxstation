@@ -1034,7 +1034,6 @@
     - WeedDotExe
     - CIH
     - Surge
-    - Mechazine
 #Box Change End - Adds Synthchems to Artifact Systems
 
 - type: entity
@@ -1071,6 +1070,8 @@
     - RoutineMaintenance
     - Cryosilicate
     - Nanoweldite
+    - Surge
+    - Overclocker
 #Box Change End - Adds Synthchems to Artifact Systems
 
 - type: entity

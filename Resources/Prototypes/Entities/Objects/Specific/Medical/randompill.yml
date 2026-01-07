@@ -7,7 +7,7 @@
       weight: 5
       reagents:
       - Stimulants
-      - Overclocker # Box Change - Box Change - adds Synthchems to world reagent spawners
+      - Mechazine # Box Change - Box Change - adds Synthchems to world reagent spawners
     - quantity: 10
       weight: 5
       reagents:
@@ -85,10 +85,7 @@
       - Razorium
       - Potassium
       - Phlogiston
- #Box Change Start - adds Synthchems to world reagent spawners
-      - Bootloop
-      - Mechazine
-#Box Change End - adds Synthchems to world reagent spawners
+      - Bootloop  #Box Change - adds Synthchems to world reagent spawners
     - quantity: 5
       weight: 4
       reagents:
