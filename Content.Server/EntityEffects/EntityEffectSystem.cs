@@ -555,7 +555,7 @@ public sealed class EntityEffectSystem : EntitySystem
     private void OnExecuteCauseZombieInfection(ref ExecuteEntityEffectEvent<CauseZombieInfection> args)
     {
         // Box Change starts - IPC Zed interaction
-        if (HasComp<SiliconComponent>(args.Args.TargetEntity))
+        if (!HasComp<ZombieImmuneComponent>(args.Args.TargetEntity) && HasComp<SiliconComponent>(args.Args.TargetEntity)) // Zombie immune component check so it doesnt add the infected component every time
         {
             EnsureComp<InfectedIPCComponent>(args.Args.TargetEntity);
         }

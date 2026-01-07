@@ -643,6 +643,14 @@
           conditions:
             - !type:ReagentThreshold
               min: 10
+    # Box change start: IPC metabolism group so they can be effected by ambuzol
+    Industrial:
+      effects:
+        - !type:CureZombieInfection
+          conditions:
+            - !type:ReagentThreshold
+              min: 10
+    # Box change end
 
 - type: reagent
   id: AmbuzolPlus
@@ -660,6 +668,15 @@
           conditions:
             - !type:ReagentThreshold
               min: 5
+    # Box change start: IPC metabolism group so they can be effected by ambuzol plus
+    Industrial:
+      effects:
+        - !type:CureZombieInfection
+          innoculate: true
+          conditions:
+            - !type:ReagentThreshold
+              min: 5
+    # Box change end
 
 - type: reagent
   id: PulpedBananaPeel

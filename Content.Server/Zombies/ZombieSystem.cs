@@ -264,7 +264,7 @@ namespace Content.Server.Zombies
                     if (!HasComp<ZombieImmuneComponent>(entity) && !HasComp<NonSpreaderZombieComponent>(args.User) && _random.Prob(GetZombieInfectionChance(entity, component)))
                     {
                         // Box change starts - IPC zed interaction
-                        if (HasComp<SiliconComponent>(entity)) 
+                        if (!HasComp<ZombieImmuneComponent>(entity) && HasComp<SiliconComponent>(entity)) // Zombie immune component check so it doesnt add the infected component no matter what
                         {
                             EnsureComp<InfectedIPCComponent>(entity);
                         }

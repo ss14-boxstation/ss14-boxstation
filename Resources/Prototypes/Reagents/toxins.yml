@@ -502,6 +502,14 @@
           conditions:
             - !type:ReagentThreshold
               min: 5
+    # Box Change Start: IPCs can now be affected by romerol injection
+    Industrial:
+      effects:
+        - !type:CauseZombieInfection
+          conditions:
+            - !type:ReagentThreshold
+              min: 5
+    # Box change end
 
 - type: reagent
   id: UncookedAnimalProteins
