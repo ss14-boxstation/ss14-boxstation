@@ -105,7 +105,7 @@
     price: 40
   - type: IgnitionSource
     temperature: 700
-# Harmony Change Start, Makes welding a brutepack for IPCs
+# Box Change Start, Makes welding a brutepack for IPCs
   - type: WeldingHealing
     damageContainers:
       - Silicon
@@ -116,10 +116,8 @@
         Brute: -15 # 5 for each, like a bruise pack
       types:
         Cold: -1 # Structural Repair
-        # Caustic: -1 # Structural Repair # Box Change
-    # bleedingModifier: -20 # DeltaV - IPCs bleed
-    # bleedingModifier: -10 # Parity with Gauze # Box Change
-# Harmony Change Ends
+    bleedingModifier: -2 # Weak but does something, should take 5 doafters to stop full bleedstacks
+# Box Change Ends
 
 - type: entity
   name: industrial welding tool

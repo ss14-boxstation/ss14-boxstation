@@ -41,6 +41,12 @@
         - Opaque
         mask:
         - MachineMask
+  #Box Change Start -  Imp - Adds ghostonly tag to prevent wizard TP
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+    - Structure
+  #Box Change End -  Imp - Adds ghostonly tag to prevent wizard TP
 
 - type: entity
   parent: BaseXAEXenoArtifactStructure # Box Change - XenoArtifact > XAEXenoartifact - Imp Duo XenoArch

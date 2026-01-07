@@ -6,6 +6,10 @@
     Brutepack: 3
     Ointment: 3
     Bloodpack: 3
+    # Box Change Start - IPC Topicals 
+    CablePack: 1
+    RobotStructPack: 1
+    # Box Change End
     ChemistryBottleEpinephrine: 3
     Syringe: 3
     PillCanisterTricordrazine: 2
@@ -38,6 +42,14 @@
     Ointment: 5
     Bloodpack: 5
     Tourniquet: 2
+    # Box change start - IPC Topicals
+    ChassisPatch: 2
+    CablePack: 2
+    RobotStructPack: 2
+    IPCOilPack: 1
+    # ideally there should be another topical here akin to tourniquets
+    # But Tourniquets are niche so its fine
+    # Box change end
     ChemistryBottleEpinephrine: 3
     ChemistryBottleBicaridine: 1
     Syringe: 5

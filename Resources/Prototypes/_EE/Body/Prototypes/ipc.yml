@@ -9,7 +9,6 @@
       - torso
       organs:
         eyes: OrganIPCEyes
-        # brain: IPCProcessorHousing
     torso:
       part: TorsoIPC
       connections:
@@ -18,9 +17,9 @@
       - right_leg
       - left_leg
       organs:
-        brain: IPCProcessorHousing # Harmony Change
-        heart: OrganIPCPump # Harmony Change
-        stomach: OrganIPCStomach # Box Change # Scope Creep, shelved for now.
+        brain: IPCProcessorHousing # Box Change
+        heart: OrganIPCPump # Box Change
+        stomach: OrganIPCStomach # Box Change
     right_arm:
       part: RightArmIPC
       connections:

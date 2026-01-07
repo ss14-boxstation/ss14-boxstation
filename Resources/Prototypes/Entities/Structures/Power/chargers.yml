@@ -257,7 +257,7 @@
     whitelist:
       components:
       - BorgChassis
-      - Silicon # EE IPCs
+      - Silicon # Box Change - EE IPCs
   - type: Construction
     containers:
     - machine_parts
@@ -301,7 +301,7 @@
     whitelist:
       components:
       - BorgChassis
-      - Silicon # Harmony Change, fixes bug of IPC can't enter recharger
+      - Silicon # Box Change, fixes bug of IPC can't enter recharger
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container

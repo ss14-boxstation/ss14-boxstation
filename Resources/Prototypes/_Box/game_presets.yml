@@ -1,0 +1,10 @@
+- type: gamePreset
+  id: ChillShift
+  name: chillshift-title
+  showInVote: false
+  description: chillshift-description
+  rules:
+  - SpaceTrafficControlFriendlyEventScheduler
+  - BasicRoundstartVariation
+  - MeteorSwarmScheduler
+  - ChillStationEventsScheduler

@@ -20,6 +20,7 @@
   - type: StorageFill
     contents:
     - id: IPCOilPack
-      amount: 2
+    - id: Silipen
+      amount: 2 
     - id: RobotBurnPatch
     - id: RobotTraumaPatch

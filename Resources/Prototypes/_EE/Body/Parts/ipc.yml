@@ -12,11 +12,11 @@
     containers:
       bodypart: !type:Container
         ents: []
-#  - type: SurgeryTool # Harmony Change, Commented out Shitmed
+#  - type: SurgeryTool # Box Change, Commented out Shitmed
 #    startSound:
-#      path: /Audio/_Harmony/Medical/Surgery/organ1.ogg
+#      path: /Audio/_EE/Medical/Surgery/organ1.ogg
 #    endSound:
-#      path: /Audio/_Harmony/Medical/Surgery/organ2.ogg
+#      path: /Audio/_EE/Medical/Surgery/organ2.ogg
   # - type: Destructible
     # thresholds:
     # - trigger:
@@ -48,7 +48,7 @@
     state: "torso_m"
   - type: BodyPart
     partType: Torso
-    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # Box Change Start, comments this out because I'm pretty sure its Shitmed
     # children: # I hate this so much I want to kill it AAAAAAAAAAAAAAAAAAAAAAAA
       # head:
         # id: "head"
@@ -88,7 +88,7 @@
         # damage: 400
       # behaviors:
       # - !type:GibPartBehavior { }
-# End Harmony Change
+# End Box Change
 
 - type: entity
   id: HeadIPC
@@ -104,12 +104,12 @@
     state: "head_m"
   - type: BodyPart
     partType: Head
-    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # Box Change Start, comments this out because I'm pretty sure its Shitmed
     # organs:
       # eyes:
         # id: "eyes"
     # vital: true
-    # End Harmony Change
+    # End Box Change
   - type: Input
     context: "ghost"
   - type: MovementSpeedModifier
@@ -136,12 +136,12 @@
   - type: BodyPart
     partType: Arm
     symmetry: Left
-    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # Box Change Start, comments this out because I'm pretty sure its Shitmed
     # children:
       # left hand:
         # id: "left hand"
         # type: Hand
-    # End Harmony Change
+    # End Box Change
 
 - type: entity
   id: RightArmIPC
@@ -158,12 +158,12 @@
   - type: BodyPart
     partType: Arm
     symmetry: Right
-    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # Box Change Start, comments this out because I'm pretty sure its Shitmed
     # children:
       # right hand:
         # id: "right hand"
         # type: Hand
-    # End Harmony Change
+    # End Box Change
 
 - type: entity
   id: LeftHandIPC
@@ -212,12 +212,12 @@
   - type: BodyPart
     partType: Leg
     symmetry: Left
-    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # Box Change Start, comments this out because I'm pretty sure its Shitmed
     # children:
       # left foot:
         # id: "left foot"
         # type: Foot
-    # End Harmony Change
+    # End Box Change
   - type: MovementBodyPart
 
 - type: entity
@@ -235,12 +235,12 @@
   - type: BodyPart
     partType: Leg
     symmetry: Right
-    # Harmony Change Start, comments this out because I'm pretty sure its Shitmed
+    # Box Change Start, comments this out because I'm pretty sure its Shitmed
     # children:
       # right foot:
         # id: "right foot"
         # type: Foot
-    # Harmony Change End
+    # Box Change End
   - type: MovementBodyPart
 
 - type: entity

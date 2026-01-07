@@ -1,0 +1,39 @@
+- type: cargoProduct
+  id: IPCBasicRepairCrate
+  icon:
+    sprite: _starcup/Objects/Specific/Medical/firstaidkits.rsi
+    state: siliconkit
+  product: CrateIPCRepairBasic
+  cost: 800
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: IPCAdvancedRepairCrate
+  icon:
+    sprite: _Box/Objects/Specific/Medical/advipcmedkit.rsi
+    state: siliconkit
+  product: CrateIPCRepairAdvanced
+  cost: 2400
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: IPCBloodlossRepairCrate
+  icon:
+    sprite: _Box/Objects/Medical/chassis_patch.rsi
+    state: icon
+  product: CrateIPCRepairBloodloss
+  cost: 900
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: IPCOilPackCrate
+  icon:
+    sprite: _DV/Objects/Medical/Oilpack.rsi
+    state: icon
+  product: CrateIPCBlood
+  cost: 1600
+  category: cargoproduct-category-name-medical
+  group: market

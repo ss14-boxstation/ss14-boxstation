@@ -152,6 +152,6 @@
     damage:
       types:
         Shock: 9
-    ignoreResistances: true
+    # ignoreResistances: true # (Box change, comments out to make it so IPC take the expected damage from the jailbroken energy carbine)
   - type: StaminaDamageOnCollide
     damage: 5

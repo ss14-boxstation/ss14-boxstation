@@ -1,0 +1,18 @@
+- type: entityTable
+  id: ChillGameRulesTable
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector
+      tableId: BasicChillEventsTable
+    - !type:NestedSelector
+      tableId: CalmPestEventsTable
+    - !type:NestedSelector
+      tableId: CargoGiftsTable
+
+- type: entity
+  id: ChillStationEventsScheduler
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: ChillGameRulesTable

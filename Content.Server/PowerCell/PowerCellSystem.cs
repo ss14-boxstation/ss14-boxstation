@@ -222,8 +222,8 @@ public sealed partial class PowerCellSystem : SharedPowerCellSystem
 
     private void OnCellSlotExamined(EntityUid uid, PowerCellSlotComponent component, ExaminedEvent args)
     {
-        TryGetBatteryFromSlot(uid, out var batteryEnt, out var battery); // Goobstation
-        OnBatteryExamined(batteryEnt.GetValueOrDefault(uid), battery, args); // Goobstation
+        TryGetBatteryFromSlot(uid, out var batteryEnt, out var battery); // Box Change - Goobstation - IPCs
+        OnBatteryExamined(batteryEnt.GetValueOrDefault(uid), battery, args); // Box Change - Goobstation - IPCs
     }
 
     private void OnBatteryExamined(EntityUid uid, BatteryComponent? component, ExaminedEvent args)
