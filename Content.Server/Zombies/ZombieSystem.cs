@@ -277,6 +277,7 @@ namespace Content.Server.Zombies
                     }
                 }
 
+                // adds a check for silicon component due to the fact that IPCs lack a crit state
                 if (_mobState.IsIncapacitated(entity, mobState) && !HasComp<ZombieComponent>(entity) && !HasComp<ZombieImmuneComponent>(entity) && !HasComp<SiliconComponent>(entity))
                 {
                     ZombifyEntity(entity);
