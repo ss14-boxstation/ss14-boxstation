@@ -37,7 +37,6 @@
       - RoutineMaintenance
       - Nanoweldite
 # Box Change End - adds Synthchems to world reagent spawners
-
   # Neutral - weight: 20
     - quantity: 20
       weight: 17.5
