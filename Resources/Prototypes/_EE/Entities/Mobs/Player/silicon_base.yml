@@ -29,7 +29,7 @@
     - type: MovementSpeedModifier
       baseWalkSpeed: 4
       baseSprintSpeed: 3
-    # - type: ZombieImmune
+    # - type: ZombieImmune # Box Change - IPCs now interact with Zombie infections
     - type: DoAfter
     - type: RotationVisuals
       defaultRotation: 90 # Box Change
