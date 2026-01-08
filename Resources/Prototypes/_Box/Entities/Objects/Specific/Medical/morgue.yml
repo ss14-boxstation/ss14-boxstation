@@ -7,8 +7,8 @@
   - type: Item
     size: Normal
   - type: Sprite
-    sprite: Objects/Materials/materials.rsi
-    state: ash # TODO: Resprite this to fit IPCs
+    sprite: _Box/Objects/Materials/materials.rsi
+    state: molten_ipc_scrap
   - type: Tag
     tags:
     - Burnt
@@ -17,4 +17,3 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 1500 # 15 sheets
-      Glass: 500 # 5 sheets
