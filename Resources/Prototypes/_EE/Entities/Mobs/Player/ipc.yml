@@ -77,7 +77,7 @@
         - !type:BurnBodyBehavior { } # TODO: Wait for the upstream PR that makes it so a custom popup can be made
         - !type:PlaySoundBehavior
           sound:
-            collection: MeatLaserImpact # TODO: Have this be something more thematic for IPCs in the future
+            collection: MeatLaserImpact # Either this sound doesn't appear, or it already works good enough
       # End Box change
   - type: SlowOnDamage
     speedModifierThresholds:
