@@ -28,4 +28,21 @@ public sealed partial class InfectedIPCComponent : Component
     /// </summary>
     [DataField("gracePeriod"), ViewVariables(VVAccess.ReadWrite)]
     public TimeSpan GracePeriod = TimeSpan.FromSeconds(20f);
+
+    /// <summary>
+    /// Popup infection warning so the IPC knows something is wrong.
+    /// </summary>
+    [DataField("infectionWarning")]
+    public List<string> InfectionWarnings = new()
+    {
+        "ipc-zombie-infection-warning",
+        "ipc-zombie-infection-underway",
+        "ipc-zombie-infection-continues"
+    };
+
+    /// <summary>
+    /// The chance each second that a warning will be shown to the afflicted IPC.
+    /// </summary>
+    [DataField("infectionWarningChance")]
+    public float InfectionWarningChance = 0.0166f; // same as normal zombie warnings
 }

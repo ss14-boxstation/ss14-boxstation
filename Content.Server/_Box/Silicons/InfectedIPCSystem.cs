@@ -1,12 +1,16 @@
 using Content.Shared.Damage;
-using Robust.Shared.Timing;
 using Content.Shared._Box.Silicons;
+using Content.Shared.Popups;
+using Robust.Shared.Random;
+using Robust.Shared.Timing;
 namespace Content.Server._Box.Silicons
 {    
     public sealed partial class InfectedIPCSystem : EntitySystem
     {
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly DamageableSystem _damageable = default!;
+        [Dependency] private readonly IRobustRandom _random = default!;
+        [Dependency] private readonly SharedPopupSystem _popup = default!;
 
         public override void Update(float frameTime)
         {
@@ -27,6 +31,10 @@ namespace Content.Server._Box.Silicons
                     continue;
                 
                 _damageable.TryChangeDamage(uid, comp.Damage, true, false, damage);
+
+                // show signs of infection
+                if (_random.Prob(comp.InfectionWarningChance))
+                    _popup.PopupEntity(Loc.GetString(_random.Pick(comp.InfectionWarnings)), uid, uid);
             }
         }
     }
