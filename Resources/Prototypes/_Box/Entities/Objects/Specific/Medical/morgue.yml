@@ -17,3 +17,4 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 1500 # 15 sheets
+      Glass: 500 # 5 sheets
