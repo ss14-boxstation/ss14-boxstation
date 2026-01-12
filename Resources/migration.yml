@@ -786,6 +786,9 @@ SpacemenFigureSpawner: SpacemenFigurineSpawner90
 HandheldHealthAnalyzerUnpowered: HandheldHealthAnalyzer
 HandheldHealthAnalyzerEmpty: HandheldHealthAnalyzer
 
+#2026-01-09
+BorgModuleAdvancedChemical: BorgModuleAdvancedTopical
+
 # 2026-01-14
 HeadHuman: OrganHumanHead
 HeadSkeleton: OrganSkeletonPersonHead
