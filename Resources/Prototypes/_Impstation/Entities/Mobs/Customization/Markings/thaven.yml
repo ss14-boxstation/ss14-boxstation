@@ -129,7 +129,7 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: reyeglow
-    shader: unshaded
+  shader: unshaded
 
 - type: marking
   id: ThavenLEyeGlow
@@ -144,7 +144,7 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: leyeglow
-    shader: unshaded
+  shader: unshaded
 
 - type: marking
   id: ThavenEyesSharkminnow
@@ -201,7 +201,7 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: taileel3
-    shader: unshaded
+  shader: unshaded
 
 - type: marking
   id: ThavenTailNurse
