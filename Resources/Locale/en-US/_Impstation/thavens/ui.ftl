@@ -1,7 +1,7 @@
 moods-ui-menu-title = Your Moods
 moods-ui-shared-mood = Shared
 thaven-moods-ui-hint-reminder =
-    These Moods should be followed to the best of your ability!  You should strive to treat these like borg laws when possible, but are [color=ffa500]strictly heavy roleplay guidelines[/color].  If you accidentally or purposely violate them, your character should experience distress or discomfort.  The specifics of that are up to you, but you should seek to correct your mistake immediately if possible.
+    These Moods should be followed to the best of your ability!  You should strive to treat these like borg laws when possible, but are [color=#c10043]strictly heavy roleplay guidelines[/color].  If you accidentally or purposely violate them, your character should experience distress or discomfort.  The specifics of that are up to you, but you should seek to correct your mistake immediately if possible.
 thaven-moods-update-notify = You feel a shift in your moods!
 thaven-moods-ui-verb = Edit Moods
 thaven-moods-admin-ui-title = Edit Moods

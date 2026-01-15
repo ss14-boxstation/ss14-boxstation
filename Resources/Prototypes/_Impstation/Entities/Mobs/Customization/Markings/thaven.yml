@@ -116,35 +116,35 @@
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: rarmtat1
 
-#- type: marking
-#  id: ThavenREyeGlow
-#  bodyPart: Eyes
-#  markingCategory: Head
-#  speciesRestriction: [Thaven]
-#  coloring:
-#    default:
-#      type:
-#        !type:EyeColoring
-#          negative: false
-#  sprites:
-#  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
-#    state: reyeglow
-#  shader: unshaded
+- type: marking
+  id: ThavenREyeGlow
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Thaven]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: false
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
+    state: reyeglow
+    shader: unshaded
 
-#- type: marking
-#  id: ThavenLEyeGlow
-#  bodyPart: Eyes
-#  markingCategory: Head
-#  speciesRestriction: [Thaven]
-#  coloring:
-#    default:
-#      type:
-#        !type:EyeColoring
-#          negative: false
-#  sprites:
-#  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
-#    state: leyeglow
-#  shader: unshaded
+- type: marking
+  id: ThavenLEyeGlow
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Thaven]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: false
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
+    state: leyeglow
+    shader: unshaded
 
 - type: marking
   id: ThavenEyesSharkminnow
@@ -160,20 +160,20 @@
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: eyessharkminnow
 
-#- type: marking
-#  id: ThavenEyesSharkminnowGlowing
-#  bodyPart: Eyes
-#  markingCategory: Head
-#  speciesRestriction: [Thaven]
-#  coloring:
-#    default:
-#      type:
-#        !type:EyeColoring
-#          negative: false
-#  sprites:
-#  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
-#    state: eyessharkminnow
-#  shader: unshaded
+- type: marking
+  id: ThavenEyesSharkminnowGlowing
+  bodyPart: Eyes
+  markingCategory: Head
+  speciesRestriction: [Thaven]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: false
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
+    state: eyessharkminnow
+  shader: unshaded
 
 - type: marking
   id: ThavenTailEel
@@ -188,20 +188,20 @@
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: taileel2
 
-#- type: marking
-#  id: ThavenTailEelOverlay
-#  bodyPart: Tail
-#  markingCategory: Overlay
-#  speciesRestriction: [ Thaven ]
-#  coloring:
-#    default:
-#      type:
-#        !type:EyeColoring
-#          negative: false
-#  sprites:
-#  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
-#    state: taileel3
-#  shader: unshaded
+- type: marking
+  id: ThavenTailEelOverlay
+  bodyPart: Tail
+  markingCategory: Overlay
+  speciesRestriction: [ Thaven ]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: false
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
+    state: taileel3
+    shader: unshaded
 
 - type: marking
   id: ThavenTailNurse
