@@ -115,12 +115,12 @@
 # Current:
 # Law-bound silicons are beneath you:
 # Speaking to law-bound cyborgs and the station AI is demeaning, and should be avoided.
-- type: thavenMood
-  id: DetestSilicons
-  moodName: thaven-mood-detest-silicons-name
-  moodDesc: thaven-mood-detest-silicons-desc
-  conflicts:
-    - WorshipSilicons
+#- type: thavenMood
+#  id: DetestSilicons
+#  moodName: thaven-mood-detest-silicons-name
+#  moodDesc: thaven-mood-detest-silicons-desc
+#  conflicts:
+#    - WorshipSilicons
 
 # Food and drink must only be consumed off of the floor.
 # NORMAL: I could see teep doing this.
