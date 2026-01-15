@@ -152,6 +152,10 @@
     {
       "name": "fishtail",
       "directions": 4
+    },
+    {
+      "name": "eyessharkminnow",
+      "directions": 4
     }
   ]
 }
