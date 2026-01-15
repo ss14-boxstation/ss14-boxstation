@@ -115,3 +115,15 @@
       dependsOn: jumpsuit
       displayName: Pocket 2
       stripHidden: true
+    - name: back
+      slotTexture: back
+      fullTextureName: template_small
+      slotFlags: BACK
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 3,0
+      strippingWindowPos: 0,5
+      displayName: Back
+      blacklist:
+        tags:
+        - PetOnly
