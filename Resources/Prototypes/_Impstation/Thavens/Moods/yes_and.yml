@@ -114,8 +114,6 @@
   id: WorshipSilicons
   moodName: thaven-mood-worship-silicons-name
   moodDesc: thaven-mood-worship-silicons-desc
-  conflicts:
-    - DetestSilicons
 
 # Food must be consumed in the manner of a proper meal - seated at a table, in courses, with dishes and utensils.
 # Could create interesting RP, not many people sit at a table to eat and even less use utensils...
