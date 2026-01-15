@@ -240,6 +240,11 @@
         - !type:OrganType
           type: Rat
           shouldHave: false
+#Start Box Change - Imp - Allows Thaven to breathe any gas
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Allows Thaven to breathe any gas
         - !type:ReagentThreshold
           reagent: Ammonia
           min: 1
@@ -256,6 +261,11 @@
         - !type:OrganType
           type: Vox
           shouldHave: false
+#Start Box Change - Imp - Allows Thaven to breathe any gas
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Allows Thaven to breathe any gas
         - !type:ReagentThreshold
           reagent: Ammonia
           min: 0.8
@@ -268,6 +278,11 @@
         - !type:ReagentThreshold
           reagent: Ammonia
           min: 0.25
+#Start Box Change - Imp - Allows Thaven to breathe any gas
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Allows Thaven to breathe any gas
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -288,6 +303,12 @@
         - !type:OrganType
           type: Vox
         factor: -4
+#Start Box Change - Imp - Allows Thaven to breathe any gas
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Allows Thaven to breathe any gas
 
 
 - type: reagent

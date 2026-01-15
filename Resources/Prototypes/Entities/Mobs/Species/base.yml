@@ -184,6 +184,11 @@
         type: HumanoidMarkingModifierBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
+# Start Box Change - Imp - Thaven Mood UI Support
+      enum.ThavenMoodsUiKey.Key:
+        type: ThavenMoodsBoundUserInterface
+        requireInputValidation: false
+# End Box Change - Imp - Thaven Mood UI Support
   - type: Puller
   - type: Speech
     speechSounds: Alto

@@ -39,10 +39,22 @@
     Poison:
       effects:
       - !type:HealthChange
+#Box Change Start - Imp - Make thaven immune to carpotoxin, its in their bodies
+        conditions:
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#Box Change End - Imp - Make thaven immune to carpotoxin, its in their bodies
         damage:
           types:
             Poison: 4
       - !type:PopupMessage
+#Box Change Start - Imp - Make thaven immune to carpotoxin, its in their bodies
+        conditions:
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#Box Change End - Imp - Make thaven immune to carpotoxin, its in their bodies
         type: Local
         visualType: MediumCaution
         messages: [ "generic-reagent-effect-burning-insides" ]

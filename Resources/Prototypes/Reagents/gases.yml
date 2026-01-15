@@ -72,12 +72,23 @@
         conditions:
         - !type:OrganType
           type: Plant
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Thaven Can breathe all gasses safely
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
         - !type:OrganType
           type: Vox
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         ratios:
           CarbonDioxide: 1.0
           Oxygen: -1.0
@@ -133,12 +144,27 @@
           types:
             Poison:
               1
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        conditions: #imp
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Thaven Can breathe all gasses safely
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins
         conditions:
           - !type:ReagentThreshold
             min: 1.5
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+          - !type:OrganType
+            type: Thaven
+            shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         clear: True
         time: 5
   reactiveEffects:
@@ -181,12 +207,27 @@
           types:
             Radiation:
               1
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        conditions:
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Thaven Can breathe all gasses safely
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins
         conditions:
           - !type:ReagentThreshold
             min: 1.5
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+          - !type:OrganType
+            type: Thaven
+            shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         clear: True
         time: 5
 
@@ -230,8 +271,19 @@
         conditions:
         - !type:OrganType
           type: Plant
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Thaven Can breathe all gasses safely
       - !type:HealthChange
         conditions:
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         - !type:OrganType
           type: Plant
           shouldHave: false
@@ -253,6 +305,11 @@
         - !type:OrganType
           type: Plant
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         factor: -4
       # We need a metabolism effect on reagent removal
       #- !type:AdjustAlert
@@ -284,6 +341,13 @@
         conditions:
         - !type:OrganType
           type: Slime
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+      - !type:Oxygenate
+
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Thaven Can breathe all gasses safely
       # Converts Nitrogen into CO2
       - !type:ModifyLungGas
         conditions:
@@ -318,6 +382,12 @@
             Poison: 2
     Gas:
       effects:
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Thaven
+#End Box Change - Imp - Thaven Can breathe all gasses safely
       - !type:Emote
         conditions:
         - !type:ReagentThreshold
@@ -326,6 +396,11 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         emote: Laugh
         showInChat: true
         probability: 0.1
@@ -337,6 +412,11 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         emote: Scream
         showInChat: true
         probability: 0.01
@@ -348,6 +428,11 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         type: Local
         visualType: Medium
         messages: [ "effect-sleepy" ]
@@ -360,6 +445,11 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
       - !type:ModifyStatusEffect
@@ -370,6 +460,11 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         effectProto: StatusEffectForcedSleeping
         time: 3
         type: Update
@@ -381,6 +476,11 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         ignoreResistances: true
         damage:
           types:
@@ -438,6 +538,11 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 0.5
+#Start Box Change - Imp - Thaven Can breathe all gasses safely
+        - !type:OrganType #imp, thaven can breathe all gases safely
+          type: Thaven
+          shouldHave: false
+#End Box Change - Imp - Thaven Can breathe all gasses safely
         scaleByQuantity: true
         ignoreResistances: true
         damage:
@@ -448,6 +553,11 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
+#Start Box Change - Harmony - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Harmony - Thaven Can breathe all gasses safely
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 500
@@ -457,6 +567,11 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
+#Start Box Change - Harmony - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Harmony - Thaven Can breathe all gasses safely
       - !type:PopupMessage
         type: Local
         messages: [ "frezon-lungs-cold" ]
@@ -465,6 +580,11 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 0.5
+#Start Box Change - Harmony - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Harmony - Thaven Can breathe all gasses safely
       - !type:PopupMessage
         type: Local
         visualType: Medium
@@ -474,3 +594,8 @@
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
+#Start Box Change - Harmony - Thaven Can breathe all gasses safely
+        - !type:OrganType
+          type: Thaven
+          shouldHave: false
+#End Box Change - Harmony - Thaven Can breathe all gasses safely
