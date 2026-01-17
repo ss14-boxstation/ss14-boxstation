@@ -5,8 +5,8 @@
   prototype: MobVox
   sprites: MobVoxSprites
   markingLimits: MobVoxMarkingLimits
-  dollPrototype: MobVoxDummy
-  skinColoration: Hues # imp, harmony: Enables expanded color selection
+  dollPrototype: AppearanceVox
+  skinColoration: Hues # Imp: VoxFeathers -> Hues
   defaultSkinTone: "#6c741d"
   maleFirstNames: NamesVox
   femaleFirstNames: NamesVox

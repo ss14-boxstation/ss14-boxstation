@@ -1,7 +1,5 @@
-using Content.Server.Body.Systems;
 using Content.Server.Stack;
 using Content.Server.Xenoarchaeology.XenoArtifacts; // Box Change - #IMP - Duo XenoArch
-using Content.Shared.Body.Components;
 using Content.Shared.Gibbing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Whitelist;
@@ -48,9 +46,6 @@ public sealed class ArtifactCrusherSystem : SharedArtifactCrusherSystem
             if (HasComp<ArtifactComponent>(contained))
                 _artifact.ForceActivateArtifact(contained);
             // Box Change End
-
-            if (!TryComp<BodyComponent>(contained, out var body))
-                Del(contained);
 
             var gibs = _gibbing.Gib(contained);
             foreach (var gib in gibs)
