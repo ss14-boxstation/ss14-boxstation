@@ -116,7 +116,7 @@
     - Blood
     - CopperBlood
     - Slime
-    - ShimmeringBlood #Imp Change - Thaven Blood appears in world
+    - ShimmeringBlood #Box Change - Imp - Thaven Blood appears in world
   - quantity: 25
     weight: 1
     reagents:
