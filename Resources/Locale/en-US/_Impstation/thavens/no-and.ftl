@@ -17,8 +17,10 @@ thaven-mood-dinner-floor-name = Dinner Etiquette
 thaven-mood-dinner-floor-desc = Food and drink should only be consumed off of the floor, as is proper.
 thaven-mood-hug-bad-name = HUGS? EUGH.
 thaven-mood-hug-bad-desc = Hugging someone is insulting.
+## thaven-mood-always-alone-name = Lone Wolf
+## thaven-mood-always-alone-desc = Other people will only slow you down. You should strive to be alone whenever possible.
 thaven-mood-always-alone-name = Lone Wolf
-thaven-mood-always-alone-desc = Other people will only slow you down. You should strive to be alone whenever possible.
+thaven-mood-always-alone-desc = Being around people is tiring. You should take breaks after social interaction, preferably alone.
 ## thaven-mood-atheist-name = You Do Not Approve Of Religion
 ## thaven-mood-atheist-desc = You do not approve of organized religion, excepting that mandated by your Moods. It should be dismantled or disrupted wherever possible.
 

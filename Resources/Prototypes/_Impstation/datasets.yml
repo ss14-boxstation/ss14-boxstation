@@ -13,7 +13,7 @@
   id: Pets
   values:
     - Pun Pun the Monkey
-    #- VILE SHITPIG the SHITPIG Box Change - not in our codebase. Also, what?
+    #- VILE SHITPIG the SHITPIG # Box Change - not in our codebase. Also, what?
     - Hamlet the Hamster
     - Shiva the Spider
     - Ian the Corgi
@@ -25,7 +25,7 @@
     - Willow the Kangaroo
     - Smile the Slime
     - Tropico the Crab
-    #- Major the Spacebear Box Change - Not in our codebase.
+    #- Major the Spacebear # Box Change - Not in our codebase.
 
 - type: dataset
   id: Rooms
@@ -79,7 +79,7 @@
 - type: dataset
   id: Edibles
   values:
-    - Gray Plush
+    #- Gray Plush - #Box Change - we dont have grays, nor their plushies.
     - Copypasta
     - Moldy Bread Slice
     - Baseball Burger
