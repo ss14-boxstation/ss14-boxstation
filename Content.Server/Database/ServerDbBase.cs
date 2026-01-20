@@ -27,6 +27,7 @@ using Robust.Shared.Utility;
 using Content.Server._CD.Records;
 using Content.Shared._CD.Records;
 // End Box Change
+using Content.Shared._DV.Traits; // DV - Traits
 
 namespace Content.Server.Database
 {
