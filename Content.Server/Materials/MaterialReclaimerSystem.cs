@@ -193,16 +193,12 @@ public sealed class MaterialReclaimerSystem : SharedMaterialReclaimerSystem
         // Harmony start - reclaimer doesn't gib
         if (CanRecycleMob(uid, item, component))
         {
-            if (component.Damage == null)
-                return;
-
-            var logImpact = HasComp<HumanoidAppearanceComponent>(item) ? LogImpact.High : LogImpact.Medium;
-            if(_damageable.TryChangeDamage(item, component.Damage, true))
-            {
-                _adminLogger.Add(LogType.Damaged, logImpact, $"{ToPrettyString(item):victim} was recycled by {ToPrettyString(uid):entity}, dealing {component.Damage.GetTotal()} damage.");
-                _appearance.SetData(uid, RecyclerVisuals.Bloody, true);
-            }
-            // Harmony end
+            var logImpact = HasComp<HumanoidProfileComponent>(item) ? LogImpact.Extreme : LogImpact.Medium;
+            _adminLogger.Add(LogType.Gib, logImpact, $"{ToPrettyString(item):victim} was gibbed by {ToPrettyString(uid):entity} ");
+            if (component.ReclaimSolutions)
+                SpawnChemicalsFromComposition(uid, item, completion, false, component, xform);
+            _gibbing.Gib(item);
+            _appearance.SetData(uid, RecyclerVisuals.Bloody, true);
         }
         else
         {
