@@ -102,6 +102,7 @@
   - SilverRing # Harmony
   - GoldRing # Harmony
   - TapeRecorder # DeltaV / Harmony
+  - AACTablet # DeltaV / Box
 
 - type: loadoutGroup
   id: Glasses

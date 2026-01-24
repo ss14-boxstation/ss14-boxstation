@@ -40,3 +40,9 @@
   materials: # Lathe more efficient than handcrafting
     Steel: 100
     Durathread: 100
+
+# AAC Tablet
+- type: latheRecipePack
+  id: AACTabletStatic
+  recipes:
+  - AACTablet
