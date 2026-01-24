@@ -283,6 +283,7 @@
       - MobFleshClamp
       - MobFleshLover
       - FleshKudzu
+#Box change start - Imp - wall anomaly spread
   - type: WallSpawnAnomaly #Box - Imp wall anomaly spread
     entries:
     - settings:
@@ -299,6 +300,7 @@
         maxAmount: 30
         maxRange: 10
       wall: WallMeat
+#Box change end - Imp - wall anomaly spread
 
 - type: entity
   id: AnomalyBluespace
@@ -404,6 +406,7 @@
     damage:
       types:
         Cold: 10
+#Box change start - Imp - wall anomaly spread
   - type: WallSpawnAnomaly #Box - Imp wall anomaly spread
     entries:
     - settings:
@@ -420,6 +423,7 @@
         maxAmount: 30
         maxRange: 10
       wall: WallIce
+#Box change end - Imp - wall anomaly spread
 
 - type: entity
   id: AnomalyRockBase
@@ -460,6 +464,7 @@
         maxAmount: 50
         maxRange: 12
       floor: FloorAsteroidTile
+#Box change start - Imp - wall anomaly spread
   - type: WallSpawnAnomaly #Box - Imp wall anomaly spread
     entries:
     - settings:
@@ -476,6 +481,7 @@
         maxAmount: 30
         maxRange: 10
       wall: AsteroidRock
+#Box change end - Imp - wall anomaly spread
 
 - type: entity
   id: AnomalyRockUranium
