@@ -61,11 +61,6 @@
   text: species-name-vox
 
 - type: quickPhrase
-  id: SpeciesThavenPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-thaven
-
-- type: quickPhrase
   id: SpeciesIPCPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-ipc

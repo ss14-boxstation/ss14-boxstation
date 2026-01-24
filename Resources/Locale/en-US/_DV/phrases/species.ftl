@@ -42,4 +42,3 @@ phrase-species-insect = insect
 phrase-species-pet = pet
 # Box change - Adds IPC and Thaven
 phrase-species-ipc = IPC
-phrase-species-thaven = Thaven
