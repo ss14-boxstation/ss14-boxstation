@@ -97,6 +97,11 @@
     - SalvageSpawnerTreasure
     - SalvageSpawnerTreasure
     - SalvageSpawnerTreasureValuable
+    # Begin Box Changes - adds equipment Back to lootpool.
+    - SalvageSpawnerEquipment
+    - SalvageSpawnerEquipment
+    - SalvageSpawnerEquipmentValuable
+    # End Box Change - adds equipment back to lootpool.
   - !type:BiomeEntityLayer
     allowedTiles:
     - FloorSteel
