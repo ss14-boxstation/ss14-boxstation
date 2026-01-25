@@ -526,7 +526,7 @@ namespace Content.Client.Lobby.UI
             }
 
             Traits.SetSelectedTraits(selectedTraits);
-            Traits.UpdateConditions(Profile.Species);
+            Traits.UpdateConditions(Profile);
         }
         // End DeltaV - Traits Integration
 
