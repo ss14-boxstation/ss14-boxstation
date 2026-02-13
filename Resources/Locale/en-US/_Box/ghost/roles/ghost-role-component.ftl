@@ -1,2 +1,2 @@
-ghost-role-information-wagoogus-name = wagoogus, the Chaplain's Familiar
+ghost-role-information-wagoogus-name = Wagoogus, the Chaplain's Familiar
 ghost-role-information-wagoogus-description = Follow and obey the chaplain. Eat fruit. Screech loudly into people's ears…
