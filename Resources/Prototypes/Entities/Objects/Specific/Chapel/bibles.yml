@@ -28,7 +28,7 @@
   - type: Prayable
     bibleUserOnly: true
   - type: Summonable
-    specialItem: SpawnPointGhostRemilia
+    specialItem: SpawnPointGhostWagoogus # Box Change - Wagoogus
   - type: ReactionMixer
     mixMessage: "bible-mixing-success"
     reactionTypes:

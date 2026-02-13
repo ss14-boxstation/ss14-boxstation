@@ -1,0 +1,22 @@
+- type: entity
+  id: SpawnPointGhostWagoogus
+  name: ghost role spawn point
+  suffix: Wagoogus
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: ghost-role-information-wagoogus-name
+    description: ghost-role-information-wagoogus-description
+    rules: ghost-role-information-familiar-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: short
+  - type: GhostRoleMobSpawner
+    prototype: MobBatWagoogus
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Mobs/Animals/bat.rsi
+        state: bat
