@@ -25,7 +25,7 @@ public sealed class ChargeBatteryArtifactSystem : EntitySystem
     {
         foreach (var battery in _lookup.GetEntitiesInRange<BatteryComponent>(_transform.GetMapCoordinates(ent), ent.Comp.Radius))
         {
-            _battery.SetCharge(battery, battery.Comp.MaxCharge, battery);
+            _battery.SetCharge(battery.AsNullable(), battery.Comp.MaxCharge);
         }
     }
 }

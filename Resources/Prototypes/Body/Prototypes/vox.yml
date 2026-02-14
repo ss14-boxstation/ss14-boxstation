@@ -9,7 +9,7 @@
       - torso
       organs:
         brain: OrganVoxBrain # Box Change - OrganHumanBrain > OrganVoxBrain - Vox SynthChem
-        eyes: OrganHumanEyes
+        eyes: OrganVoxEyes
     torso:
       part: TorsoVox
       connections:
@@ -22,7 +22,7 @@
         lungs: OrganVoxLungs
         stomach: OrganVoxStomach
         liver: OrganVoxLiver
-        kidneys: OrganVoxKidneys # Box Change - OrganHumanKidneys > OrganVoxKidneys - Vox SynthChem
+        kidneys: OrganVoxKidneys
     right arm:
       part: RightArmVox
       connections:

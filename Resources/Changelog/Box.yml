@@ -454,3 +454,24 @@
   id: 49
   time: '2026-01-06T07:34:09.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/71
+- author: Dinoguy12349
+  changes:
+  - message: IPCs now take damage when infected by a Zombie
+    type: Tweak
+  id: 50
+  time: '2026-01-08T08:38:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/75
+- author: BlueMoon059
+  changes:
+  - message: Synthchems now appear in maints pills, artifact nodes, and botany mutations.
+    type: Add
+  id: 51
+  time: '2026-01-08T23:01:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/73
+- author: SomegnihT
+  changes:
+  - message: IPCs now melt upon taking 2000 heat damage.
+    type: Tweak
+  id: 52
+  time: '2026-01-10T13:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/76

@@ -27,5 +27,5 @@ jobs:
       with:
         sync-labels: true
         # Add repository token because it kept breaking, Box change
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.BOT_TOKEN }}
       # Harmony end

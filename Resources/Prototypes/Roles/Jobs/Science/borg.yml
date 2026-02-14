@@ -14,6 +14,7 @@
     department: Command
     time: 5h
   # Box Change End
+  weight: 10
   canBeAntag: false
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
