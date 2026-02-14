@@ -32,9 +32,9 @@
       - !type:HealthChange
       # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
       # Box Change End
         probability: 0.5
         damage:
@@ -42,15 +42,21 @@
             Brute: -0.5
             Burn: -0.5
       # Helps you stop bleeding to an extent.
-      - !type:ModifyBleedAmount
+      - !type:ModifyBleed
       # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
       # Box Change End
         amount: -0.25
       - !type:SatiateHunger #Numbers are balanced with this in mind + it helps limit how much healing you can get from food
+      # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+      # Box Change End
   # Lets plants benefit too
   plantMetabolism:
   - !type:PlantAdjustNutrition
@@ -73,9 +79,9 @@
       - !type:HealthChange
       # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
       # Box Change End
         probability: 0.5
         damage:
@@ -84,12 +90,18 @@
       - !type:ModifyBloodLevel
       # Box Change Start - IPCs
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
       # Box Change End
         amount: 1 # weaker than iron but pretty good all things considered
       - !type:SatiateHunger
+      # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+      # Box Change End
   pricePerUnit: 3
 
 - type: reagent
@@ -106,7 +118,12 @@
       effects:
       - !type:SatiateHunger
         conditions:
-        - !type:ReagentThreshold #Only satiates when eaten with nutriment
+      # Box Change Start - IPCs
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+      # Box Change End
+        - !type:ReagentCondition #Only satiates when eaten with nutriment
           reagent: Nutriment
           min: 0.1
         factor: 1

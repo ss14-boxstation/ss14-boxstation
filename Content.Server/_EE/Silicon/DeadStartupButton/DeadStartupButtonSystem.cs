@@ -1,7 +1,7 @@
 using Content.Server.Chat.Systems;
 using Content.Server.Lightning;
 using Content.Server.Popups;
-using Content.Server.PowerCell;
+using Content.Shared.PowerCell;
 using Content.Server._EE.Silicon.Charge;
 using Content.Shared._EE.Silicon.DeadStartupButton;
 using Content.Shared.Audio;
@@ -12,6 +12,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Random;
+using Content.Shared.Damage.Components;
 
 namespace Content.Server._EE.Silicon.DeadStartupButton;
 
@@ -62,11 +63,11 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
         if (!TryComp<MobStateComponent>(uid, out var mobStateComponent)
             || !_mobState.IsDead(uid, mobStateComponent)
             || !_siliconChargeSystem.TryGetSiliconBattery(uid, out var bateria)
-            || bateria.CurrentCharge <= 0)
+            || bateria.Value.Comp.LastCharge <= 0)
             return;
 
         _lightning.ShootRandomLightnings(uid, 2, 4);
-        _powerCell.TryUseCharge(uid, bateria.CurrentCharge);
+        _powerCell.TryUseCharge(uid, bateria.Value.Comp.LastCharge);
 
     }
 

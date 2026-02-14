@@ -167,6 +167,5 @@
     - id: Food
     - id: Drink
     - id: Alcohol
-      rateModifier: 0.1
     removeEmpty: true
 # Box Change End

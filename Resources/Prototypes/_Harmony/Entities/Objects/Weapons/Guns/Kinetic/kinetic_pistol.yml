@@ -17,12 +17,9 @@
     shape:
     - 0,0,1,0
     - 0,1,0,1
-#Box Change End - New Size for LKR
-#Box Change Start - Makes it a sidearm for consitency with other L shaped pistols
   - type: Tag
     tags:
-    - Sidearm
-#Box Change End - Makes it a sidearm for consitency with other L shaped pistols
+    - Sidearm # consistency with other L shaped weapons
   - type: Clothing
     sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
     quickEquip: false

@@ -20,7 +20,8 @@
             Slash: 0.5
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: EmergencyDefragmenter
           min: 11
         damage:
           types:
@@ -40,7 +41,7 @@
       effects:
         - !type:HealthChange
           conditions:
-          - !type:Temperature
+          - !type:TemperatureCondition
             max: 180.0
           damage:
             types:
@@ -58,36 +59,37 @@
   metabolisms:
     Industrial:
       effects:
-      - !type:ModifyBleedAmount
+      - !type:ModifyBleed
         amount: -1.5
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 423.15
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Polydimethylsiloxane
           min: 15
         amount: 50000
     Poison:
       effects:
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: true
         damage:
           types:
             Poison: 0.5
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: true
         probability: 0.02
       - !type:SatiateThirst
         factor: 1
         conditions:
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
 
 # Overclocker
 - type: reagent
@@ -103,10 +105,11 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Overclocker
           min: 0
           max: 15
-        - !type:TotalDamage
+        - !type:TotalDamageCondition
           min: 80
         damage:
           types:
@@ -114,17 +117,17 @@
             Blunt: -1
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Overclocker
           min: 15
         damage:
           types:
             Shock: 3
-      - !type:GenericStatusEffect
-        key: Stun
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStunned
         time: 0.75
         type: Remove
-      - !type:GenericStatusEffect
-        key: KnockedDown
+      - !type:ModifyKnockdown
         time: 0.75
         type: Remove
       - !type:GenericStatusEffect
@@ -166,7 +169,8 @@
         amount: -3.0
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Recal
           min: 14
         damage:
           types:
@@ -204,7 +208,8 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: LiquidSolder
           min: 30
         damage:
           types:
@@ -240,39 +245,39 @@
       effects:
       - !type:SatiateThirst
         conditions:
-        - !type:OrganType
-          type: Vox
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
+          inverted: true
         factor: -0.2
       - !type:SatiateThirst
         factor: 1
         conditions:
-        - !type:OrganType
-          type: Vox
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: true
         damage:
           types:
             Poison: 0.1
       - !type:AdjustReagent
         conditions:
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         reagent: SpaceLube
         amount: -3.0
       - !type:AdjustReagent
         conditions:
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         reagent: Mechazine
         amount: -3.0
       - !type:AdjustReagent
         conditions:
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         reagent: Synthanol
         amount: -0.5
     Industrial:
@@ -301,7 +306,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:TotalDamage
+        - !type:TotalDamageCondition
           max: 60
         damage:
           groups:
@@ -333,7 +338,8 @@
             Piercing: -2
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Nanoweldite
           min: 11.5
         damage:
           types:
@@ -343,35 +349,36 @@
       - !type:SatiateThirst
         factor: 0.5
         conditions:
-        - !type:OrganType
-          type: Vox
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: true
         damage:
           types:
             Poison: 0.5
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: true
         damage:
           types:
             Heat: 0.5
       - !type:HealthChange
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: Nanoweldite
           min: 11.5
-        - !type:OrganType
-          type: Synthetic
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         damage:
           types:
             Heat: 1.5
             Poison: 0.5
-      - !type:FlammableReaction
+      - !type:Flammable
         multiplier: 0.4
 
 # SOI Sapphire - Radiation Protection ("Silicon on Insulator Sapphire", used to shield components from radiation)
@@ -391,11 +398,11 @@
         component: RadiationProtection
         time: 2
         type: Add
-        refresh: false
       - !type:HealthChange
         conditions:
-          - !type:ReagentThreshold
-            min: 20
+        - !type:ReagentCondition
+          reagent: SOISapphire
+          min: 20
         damage:
           types:
             Shock: 1
@@ -408,10 +415,12 @@
               Slash: 0.1 # Getting sapphire deposited inside you will probably cut you up
         - !type:HealthChange
           conditions:
-          - !type:ReagentThreshold
+          - !type:ReagentCondition
+            reagent: SOISapphire
             min: 9.5
-          - !type:OrganType
-            type: Synthetic
+          - !type:MetabolizerTypeCondition
+            type: [Synthetic]
+            inverted: true
           damage:
             types:
               Poison: 0.1
@@ -455,12 +464,12 @@
             Heat: -0.5
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 293.15
         amount: 100000 # thermal energy, not temperature!
       - !type:AdjustTemperature
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           min: 293.15
         amount: -10000
       - !type:PopupMessage
@@ -472,23 +481,23 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Vox
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
+          inverted: true
         damage:
           types:
             Poison: 0.5
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
-        - !type:OrganType
-          type: Vox
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
+          inverted: true
         probability: 0.02
       - !type:SatiateHunger
         factor: 1
         conditions:
-        - !type:OrganType
-          type: Vox
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
 
 # Cryo SynthChems
 - type: reagent
@@ -504,7 +513,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 180.0
         damage:
           groups:
@@ -527,7 +536,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 180.0
         damage:
           groups:
@@ -553,7 +562,7 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:Temperature
+        - !type:TemperatureCondition
           max: 180.0
         damage:
           types:
