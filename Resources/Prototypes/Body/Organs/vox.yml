@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: Mobs/Species/Vox/organs.rsi
   - type: Metabolizer
-    metabolizerTypes: [ Vox ]
+    metabolizerTypes: [ Vox, Synthetic ] # Box Change - Add Synthetic metabolizer type - Vox SynthChem
   - type: Lung
     alert: LowNitrogen
   - type: Item
@@ -28,6 +28,8 @@
       tags:
       - Trash
     isSpecialDigestibleExclusive: false
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
 
 - type: entity
   parent: OrganHumanLiver
@@ -37,6 +39,8 @@
   components:
   - type: Metabolizer
     metabolizerTypes: [Vox, Synthetic] # Box Change - Add Synthetic metabolizer type - Vox SynthChem
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
 
 - type: entity
   parent: OrganHumanHeart
@@ -45,4 +49,60 @@
   description: "The strange heart of a vox."
   components:
   - type: Metabolizer
-    metabolizerTypes: [Vox]
+    metabolizerTypes: [Vox, Synthetic] # Box Change - Add Synthetic metabolizer type - Vox SynthChem
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
+
+- type: entity
+  parent: BaseHumanOrgan # Box Change - OrganHumanKidneys > BaseHumanOrgan - SynthChem
+  id: OrganVoxKidneys
+  name: kidney
+  description: "Smells flammable."
+  components:
+  - type: Metabolizer
+    maxReagents: 5 # Box Change - SynthChem
+    metabolizerTypes: [Vox, Synthetic] # Box Change - Add Synthetic metabolizer type - Vox SynthChem
+    removeEmpty: true # Box Change - SynthChem
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
+  # Box Change Start - SynthChem
+    layers:
+      - state: kidney-l
+      - state: kidney-r
+  - type: Item
+    size: Small
+    heldPrefix: kidneys
+  # Box Change End
+
+- type: entity
+  id: OrganVoxEyes
+  parent: OrganHumanEyes
+  name: eyes
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
+  - type: Item
+    size: Small
+    heldPrefix: eyeballs
+
+- type: entity
+  id: OrganVoxTongueA
+  parent: OrganHumanTongue
+  name: tongue
+  description: "A fleshy muscle mostly used for screaming."
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
+  - type: Item
+    size: Small
+
+- type: entity
+  id: OrganVoxTongueB
+  parent: OrganHumanTongue
+  name: tongue
+  description: "A fleshy muscle mostly used for screaming."
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Vox/organs.rsi
+  - type: Item
+    size: Small

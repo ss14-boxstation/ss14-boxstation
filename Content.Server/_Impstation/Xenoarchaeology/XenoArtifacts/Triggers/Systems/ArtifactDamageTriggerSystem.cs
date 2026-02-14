@@ -1,5 +1,5 @@
 using Content.Server.Xenoarchaeology.XenoArtifacts.Triggers.Components;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 
 namespace Content.Server.Xenoarchaeology.XenoArtifacts.Triggers.Systems;
 

@@ -188,7 +188,7 @@
   suffix: "Very local knockdown, Imp" # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
-  - type: StunOnTrigger
+  - type: StunGridOnTrigger
     range: 4
     entireGrid: false
     knockdownTime: 1.5
@@ -564,7 +564,7 @@
   suffix: "Local knockdown, Imp" # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
-  - type: StunOnTrigger
+  - type: StunGridOnTrigger
     range: 8
     entireGrid: false
     knockdownTime: 4
@@ -1147,7 +1147,7 @@
   suffix: "Gridwide knockdown, Imp" # Box Change - Add Imp Suffix
   parent: AdminInstantEffectBase
   components:
-  - type: StunOnTrigger
+  - type: StunGridOnTrigger
     range: 15
     entireGrid: true
     knockdownTime: 3
