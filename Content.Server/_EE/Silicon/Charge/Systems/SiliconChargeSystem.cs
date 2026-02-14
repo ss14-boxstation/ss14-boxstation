@@ -12,7 +12,7 @@ using Content.Shared.Movement.Systems;
 using Content.Server.Body.Components;
 using Content.Shared.Mind.Components;
 using System.Diagnostics.CodeAnalysis;
-using Content.Server.PowerCell;
+using Content.Shared.PowerCell;
 using Robust.Shared.Timing;
 using Robust.Shared.Configuration;
 using Robust.Shared.Utility;
@@ -25,6 +25,7 @@ using Content.Server._EE.Power.Components;
 // Begin TheDen - IPC Dynamic Power draw
 using Content.Shared.Movement.Components;
 using Robust.Shared.Physics.Components;
+using Content.Shared.Temperature.Components;
 // End TheDen
 
 namespace Content.Server._EE.Silicon.Charge;
@@ -48,7 +49,7 @@ public sealed class SiliconChargeSystem : EntitySystem
         SubscribeLocalEvent<SiliconComponent, ComponentStartup>(OnSiliconStartup);
     }
 
-    public bool TryGetSiliconBattery(EntityUid silicon, [NotNullWhen(true)] out BatteryComponent? batteryComp)
+    public bool TryGetSiliconBattery(EntityUid silicon, [NotNullWhen(true)] out Entity<PredictedBatteryComponent>? batteryComp)
     {
         batteryComp = null;
         if (!HasComp<SiliconComponent>(silicon))
@@ -56,10 +57,8 @@ public sealed class SiliconChargeSystem : EntitySystem
 
 
         // try get a battery directly on the inserted entity
-        if (TryComp(silicon, out batteryComp)
-            || _powerCell.TryGetBatteryFromSlot(silicon, out batteryComp))
+        if (_powerCell.TryGetBatteryFromSlot(silicon, out batteryComp))
             return true;
-
 
         //DebugTools.Assert("SiliconComponent does not contain Battery");
         return false;
@@ -129,13 +128,13 @@ public sealed class SiliconChargeSystem : EntitySystem
             }
             // Ensures that the drain rate is at least 10% of normal,
             // and would allow at least 4 minutes of life with a max charge, to prevent cheese.
-            drainRate += Math.Clamp(drainRateFinalAddi, drainRate * -0.9f, batteryComp.MaxCharge / 240);
+            drainRate += Math.Clamp(drainRateFinalAddi, drainRate * -0.9f, batteryComp.Value.Comp.MaxCharge / 240);
 
             // Drain the battery.
             _powerCell.TryUseCharge(silicon, frameTime * drainRate);
 
             // Figure out the current state of the Silicon.
-            var chargePercent = (short) MathF.Round(batteryComp.CurrentCharge / batteryComp.MaxCharge * 10f);
+            var chargePercent = (short) MathF.Round(batteryComp.Value.Comp.LastCharge / batteryComp.Value.Comp.MaxCharge * 10f);
 
             UpdateChargeState(silicon, chargePercent, siliconComp);
         }

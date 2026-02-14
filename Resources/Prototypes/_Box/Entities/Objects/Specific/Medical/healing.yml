@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseHealingItem
   id: IPCOilPack
-  name: ipc oil pack
+  name: IPC oil pack
   suffix: Full, Box
   description: Utilising a proprietary double-nozzle connector, IPCs can now recover all their missing fluids in one easy package.
   components:
@@ -41,7 +41,7 @@
   id: CablePack
   name: robot rewiring kit
   suffix: Full, Box
-  description: a bundle of cables capable of replacing any burnt out wiring inside an ipc.
+  description: A bundle of cables capable of replacing any burnt out wiring inside an ipc.
   components:
   - type: Sprite
     sprite: _Box/Objects/Medical/cable_pack.rsi
@@ -113,7 +113,7 @@
   id: RobotStructPack
   name: robot structural repair kit
   suffix: Full, Box
-  description: everything you need to repair and replace damaged or brittle components inside a robot.
+  description: Everything you need to repair and replace damaged or brittle components inside a robot.
   components:
   - type: Sprite
     sprite: _Box/Objects/Medical/robostruct_pack.rsi

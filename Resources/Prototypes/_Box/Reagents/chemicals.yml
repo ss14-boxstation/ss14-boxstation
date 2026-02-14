@@ -18,20 +18,19 @@
       effects:
       - !type:SatiateThirst
         conditions:
-        - !type:OrganType
-          type: Vox
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
+          inverted: true
         factor: -0.2
       - !type:SatiateThirst
         factor: 1
         conditions:
-        - !type:OrganType
-          type: Vox
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
       - !type:ModifyBloodLevel
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: true
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
         amount: 3
 
 - type: reagent
@@ -53,23 +52,22 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+          inverted: true
         damage:
           types:
             Poison: 0.5
       - !type:ModifyBloodLevel
         conditions:
-        - !type:OrganType
-          type: IPC
-          shouldHave: true
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
         amount: 3
       - !type:SatiateThirst
         factor: 1
         conditions:
-        - !type:OrganType
-          type: Vox
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
 
 - type: reagent
   id: EthyleneGlycol

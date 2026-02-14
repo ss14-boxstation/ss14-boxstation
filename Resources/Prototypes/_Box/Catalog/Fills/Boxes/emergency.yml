@@ -4,11 +4,14 @@
   id: BoxSurvivalHumanoidSilicon
   suffix: IPC, Box
   components:
-  - type: StorageFill
-    contents:
-    - id: IPCOilPack1
-    - id: CablePack
-    - id: ChassisPatch1
-    - id: WelderMini
-    - id: Flare
-    - id: EmergencySilipen
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: IPCOilPack1
+        - id: CablePack
+        - id: ChassisPatch1
+        - id: WelderMini
+        - id: Flare
+        - id: EmergencySilipen
+
