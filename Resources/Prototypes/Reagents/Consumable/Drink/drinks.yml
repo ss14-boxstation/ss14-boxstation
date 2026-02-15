@@ -460,17 +460,17 @@
         damage:
           types:
             Heat: 3
-#Start Box Change - Imp - Allows Thaven to breathe any gas
-      - !type:Oxygenate # thaven can breathe all gases safely
+#Start Box Change - Lets Thaven Metabolize water + satiate thirst
+      - !type:Oxygenate
         conditions:
-        - !type:OrganType
-          type: Thaven
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
       - !type:SatiateThirst # thaven breathing water vapor get thirsty slower
         conditions:
-        - !type:OrganType
-          type: Thaven
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
         factor: 0.1
-#End Box Change - Imp - Allows Thaven to breathe any gas
+#End Box Change - Lets Thaven Metabolize water + satiate thirst
 
 - type: reagent
   id: Ice
