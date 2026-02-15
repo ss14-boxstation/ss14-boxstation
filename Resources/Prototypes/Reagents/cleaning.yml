@@ -34,6 +34,11 @@
           types:
             Caustic: 2
     # Box Change End
+  tileReactions:
+  - !type:CleanTileReaction
+    cleanCost: 0.13
+  - !type:CleanDecalsReaction
+    cleanCost: 0.13
 
 - type: reagent
   id: SpaceCleaner
@@ -65,26 +70,28 @@
   metabolisms:
     Food:
       effects:
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
         # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
         # Box Change End
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: SoapReagent
           min: 6
         probability: 0.20
     Drink:
       effects:
-      - !type:ChemVomit
+      - !type:Vomit
         conditions:
         # Box Change Start - IPCs
-        - !type:OrganType
-          type: IPC
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
         # Box Change End
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
+          reagent: SoapReagent
           min: 6
         probability: 0.20
 
@@ -109,18 +116,16 @@
   metabolisms:
     Drink: # This way organics can filter it
       effects:
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: true
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         walkSpeedModifier: 1.3
         sprintSpeedModifier: 1.3
       - !type:HealthChange
         conditions:
-        - !type:OrganType
-          type: Synthetic
-          shouldHave: true
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         damage:
           types:
             Heat: 0.5
@@ -128,8 +133,8 @@
       - !type:SatiateThirst
         factor: 1
         conditions:
-        - !type:OrganType
-          type: Vox
+        - !type:MetabolizerTypeCondition
+          type: [Vox]
   # Box Change End
 
 - type: reagent
@@ -149,7 +154,7 @@
       methods: [ Touch ]
       effects:
       # pva glue? no, antibiotic glue for sealing wounds
-      - !type:ModifyBleedAmount
+      - !type:ModifyBleed
         amount: -1.5
   metabolisms:
     Narcotic:
@@ -163,8 +168,6 @@
       - !type:GenericStatusEffect
         key: Muted
         component: Muted
-        type: Add
         time: 5
-        refresh: false
   footstepSound:
     collection: FootstepSlime

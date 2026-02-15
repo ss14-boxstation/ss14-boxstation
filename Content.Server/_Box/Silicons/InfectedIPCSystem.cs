@@ -1,10 +1,11 @@
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
+using Content.Shared.Damage.Components;
 using Content.Shared._Box.Silicons;
 using Content.Shared.Popups;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 namespace Content.Server._Box.Silicons
-{    
+{
     public sealed partial class InfectedIPCSystem : EntitySystem
     {
         [Dependency] private readonly IGameTiming _timing = default!;
@@ -25,12 +26,12 @@ namespace Content.Server._Box.Silicons
                 if (comp.NextTick > curTime)
                     continue;
                 comp.NextTick = curTime + TimeSpan.FromSeconds(1f);
-                
+
                 comp.GracePeriod -= TimeSpan.FromSeconds(1f);
                 if (comp.GracePeriod > TimeSpan.Zero)
                     continue;
-                
-                _damageable.TryChangeDamage(uid, comp.Damage, true, false, damage);
+
+                _damageable.ChangeDamage((uid, damage), comp.Damage, true, false);
 
                 // show signs of infection
                 if (_random.Prob(comp.InfectionWarningChance))

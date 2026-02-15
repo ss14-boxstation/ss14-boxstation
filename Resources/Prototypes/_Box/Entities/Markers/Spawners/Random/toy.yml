@@ -1,0 +1,9 @@
+# WizDen only readded a 90% chance version of this, but XenoArch needs a 100% chance version.
+- type: entity
+  parent: ToySpawner90
+  id: ToySpawner
+  suffix: 100, Box
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: AllToysTable

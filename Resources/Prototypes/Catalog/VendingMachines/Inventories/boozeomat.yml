@@ -53,3 +53,7 @@
     ChemistryBottleSynthanol: 3 # Box Change - Ethanol for IPCs
     DrinkBottleOfNothingFull: 1
     DrinkPoisonWinebottleFull: 2
+  # Harmony Change Start - Readd Emag interactions
+  emaggedInventory:
+    ChemistryBottleToxin: 1
+  # Harmony Change End

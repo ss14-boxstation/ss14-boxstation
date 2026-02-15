@@ -15,7 +15,7 @@
         - reagents: [Water, SpaceCleaner]
           methods: [Touch]
           effects:
-            - !type:WashCreamPieReaction
+            - !type:WashCreamPie
     - type: DamageOnHighSpeedImpact
       damage:
         types:
@@ -160,7 +160,12 @@
     - type: Bloodstream # begin DeltaV - uncommented
       damageBleedModifiers: BloodlossIPC
       # bloodReagent: Oil
-      bloodReagent: IPCOil # Box Change, gives IPCs a unique Blood
+      # Box Change Start - IPC Blood Reagent Refactor
+      bloodReferenceSolution:
+        reagents:
+        - ReagentId: IPCOil
+          Quantity: 300
+      # Box Change End
       bleedReductionAmount: 0.25 # Box Change - 0 > 0.25 - Less than an organic (no clotting), but still there
       # bloodMaxVolume: 100 # Box Change - Comments out to revert to default value
       # chemicalMaxVolume: 0 # Box Change - Comments out to revert to default value
@@ -360,4 +365,4 @@
           Heat: -0.02
           Blunt: -0.02
     - type: InjectableSolution # Box Change - IPC Chem
-      solution: chemicals
+      solution: bloodstream
