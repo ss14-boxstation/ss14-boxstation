@@ -252,7 +252,7 @@
         probability: 0.12
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Rat, Vox, Thaven] #Box Change - Thaven Metabolism
+          type: [ Rat, Vox, Thaven ] #Box Change - Thaven Metabolism
           inverted: true
         - !type:ReagentCondition
           reagent: Ammonia
@@ -267,9 +267,9 @@
           reagent: Ammonia
           min: 0.25
 #Start Box Change - Imp - Allows Thaven to breathe any gas
-        - !type:OrganType
-          type: Thaven
-          shouldHave: false
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
+          inverted: true
 #End Box Change - Imp - Allows Thaven to breathe any gas
       - !type:HealthChange
         conditions:
