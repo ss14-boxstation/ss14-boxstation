@@ -1,8 +1,7 @@
 using Content.Server.Chat.Systems;
 using Content.Server.Lightning;
-using Content.Server.Popups;
+// using Content.Server.Popups; // Box Change, using Content.Shared.Popup instead
 using Content.Shared.PowerCell;
-using Content.Shared.Traits.Assorted; // Box Change to make IPCs work with Unrevivable trait
 using Content.Server._EE.Silicon.Charge;
 using Content.Shared._EE.Silicon.DeadStartupButton;
 using Content.Shared.Audio;
@@ -14,6 +13,10 @@ using Content.Shared.Mobs.Systems;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Random;
 using Content.Shared.Damage.Components;
+// Start of Box Change to make IPCs work with Unrevivable trait
+using Content.Shared.Traits.Assorted;
+using Content.Shared.Popups;
+// End of Box Change
 
 namespace Content.Server._EE.Silicon.DeadStartupButton;
 
@@ -22,7 +25,10 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
+    // Start of Box Change, using SharedPopupSystem instead
+    //[Dependency] private readonly PopupSystem _popup = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    // End of Box Change
     [Dependency] private readonly IRobustRandom _robustRandom = default!;
     [Dependency] private readonly LightningSystem _lightning = default!;
     [Dependency] private readonly SiliconChargeSystem _siliconChargeSystem = default!;
@@ -52,7 +58,9 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
         // Start of Box Change to make IPCs work with Unrevivable trait
         if (TryComp<UnrevivableComponent>(uid, out var unrevivableComponent))
         {
-            _popup.PopupEntity(Loc.GetString("dead-startup-system-reboot-unrevivable", ("target", MetaData(uid).EntityName)), uid);
+            _audio.PlayPvs(comp.BuzzSound, uid, AudioHelpers.WithVariation(0.05f, _robustRandom));
+            _popup.PopupEntity(Loc.GetString("dead-startup-system-reboot-unrevivable", ("target", MetaData(uid).EntityName)), uid, PopupType.MediumCaution);
+            Spawn("EffectSparks", Transform(uid).Coordinates);
         }
         else if (damageable.TotalDamage < criticalThreshold)
             // End of Box Change
