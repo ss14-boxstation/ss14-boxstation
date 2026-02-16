@@ -52,10 +52,10 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
         // Start of Box Change to make IPCs work with Unrevivable trait
         if (TryComp<UnrevivableComponent>(uid, out var unrevivableComponent))
         {
-            _popup.PopupEntity(Loc.GetString("defibrillator-unrevivable"), uid);
+            _popup.PopupEntity(Loc.GetString("dead-startup-system-reboot-unrevivable", ("target", MetaData(uid).EntityName)), uid);
         }
-        // End of Box Change
         else if (damageable.TotalDamage < criticalThreshold)
+            // End of Box Change
             _mobState.ChangeMobState(uid, MobState.Alive, mobStateComponent);
         else
         {
