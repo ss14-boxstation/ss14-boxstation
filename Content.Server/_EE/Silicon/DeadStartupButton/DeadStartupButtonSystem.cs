@@ -2,6 +2,7 @@ using Content.Server.Chat.Systems;
 using Content.Server.Lightning;
 using Content.Server.Popups;
 using Content.Shared.PowerCell;
+using Content.Shared.Traits.Assorted; // Box Change to make IPCs work with Unrevivable trait
 using Content.Server._EE.Silicon.Charge;
 using Content.Shared._EE.Silicon.DeadStartupButton;
 using Content.Shared.Audio;
@@ -48,7 +49,13 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
             || !_mobThreshold.TryGetThresholdForState(uid, MobState.Critical, out var criticalThreshold, mobThresholdsComponent))
             return;
 
-        if (damageable.TotalDamage < criticalThreshold)
+        // Start of Box Change to make IPCs work with Unrevivable trait
+        if (TryComp<UnrevivableComponent>(uid, out var unrevivableComponent))
+        {
+            _popup.PopupEntity(Loc.GetString("defibrillator-unrevivable"), uid);
+        }
+        // End of Box Change
+        else if (damageable.TotalDamage < criticalThreshold)
             _mobState.ChangeMobState(uid, MobState.Alive, mobStateComponent);
         else
         {
