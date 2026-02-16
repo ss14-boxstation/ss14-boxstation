@@ -21,6 +21,7 @@
     - Vulpkanin
     - Avali # Latestation
     - Rodentia # Box Change - Adds Rodentia
+    - Thaven #Box Change - Add Thaven
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
