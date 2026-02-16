@@ -1174,6 +1174,7 @@
         maxRange: 6
       spawns:
       # - PresentRandomInsane #Box Change - Harmony - comments out unsafe present.
+        - PresentRandom #Box Change - Harmony - replaces insane present with normal variety.
   - type: ProjectileAnomaly
     projectilePrototype: DrinkLemonLimeCranberryCan
     minProjectiles: 1
