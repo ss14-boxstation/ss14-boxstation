@@ -63,7 +63,7 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
             Spawn("EffectSparks", Transform(uid).Coordinates);
         }
         else if (damageable.TotalDamage < criticalThreshold)
-            // End of Box Change
+        // End of Box Change
             _mobState.ChangeMobState(uid, MobState.Alive, mobStateComponent);
         else
         {
