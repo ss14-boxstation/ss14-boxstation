@@ -127,7 +127,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
             // if (msg.Unrevivable == true)
             else if (msg.Unrevivable == true)
-                // End Box Change
+            // End Box Change
                 AlertsContainer.AddChild(new RichTextLabel
                 {
                     Text = Loc.GetString("health-analyzer-window-entity-unrevivable-text"),
