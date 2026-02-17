@@ -38,6 +38,7 @@
   - type: Speech
     speechVerb: Parrot # RMC did it right.
     speechSounds: MaleAvali
+    allowedEmotes: ['Hiss']
   - type: Fixtures
     fixtures:
       fix1:
