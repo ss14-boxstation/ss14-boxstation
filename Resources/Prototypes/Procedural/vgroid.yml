@@ -165,15 +165,29 @@
     table: !type:NestedSelector
       tableId: SalvageScrapSpawnerValuable
   - !type:EntityTableDunGen
-    minCount: 30
-    maxCount: 45
+    minCount: 15 #Box Change - 30 --> 15 - reverts changes made in upstream pr #37561
+    maxCount: 25 #Box Change - 45 --> 25 - reverts changes made in upstream pr #37561
     table: !type:NestedSelector
       tableId: SalvageTreasureSpawnerCommon
   - !type:EntityTableDunGen
-    minCount: 30
-    maxCount: 45
+  #Start of Box specific changes - adds back salvage equipment
+    minCount: 15 #30 --> 15
+    maxCount: 25 #45 --> 25
+    table: !type:NestedSelector
+      tableId: SalvageEquipmentSpawnerCommon
+  - !type:EntityTableDunGen
+    minCount: 15
+    maxCount: 20
+  #End of Box specific changes - adds back salvage equipment
     table: !type:NestedSelector
       tableId: SalvageTreasureSpawnerValuable
+      #Start of Box specific changes - adds back salvage equipment
+  - !type:EntityTableDunGen
+    minCount: 15
+    maxCount: 20
+    table: !type:NestedSelector
+      tableId: SalvageEquipmentSpawnerValuable
+      #End of Box specific changes - adds back salvage equipment
   - !type:MobsDunGen
     minCount: 8
     maxCount: 15

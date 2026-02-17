@@ -1161,7 +1161,7 @@
         maxAmount: 5
         maxRange: 5
       spawns:
-      - PresentRandomUnsafe
+      #- PresentRandomUnsafe #Box Change - Harmony - comments out unsafe present.
       - PresentRandom
       - PresentRandomCoal
       - PresentRandomCash
@@ -1173,7 +1173,8 @@
         maxAmount: 20
         maxRange: 6
       spawns:
-      - PresentRandomInsane
+      # - PresentRandomInsane #Box Change - Harmony - comments out unsafe present.
+        - PresentRandom #Box Change - Harmony - replaces insane present with normal variety.
   - type: ProjectileAnomaly
     projectilePrototype: DrinkLemonLimeCranberryCan
     minProjectiles: 1

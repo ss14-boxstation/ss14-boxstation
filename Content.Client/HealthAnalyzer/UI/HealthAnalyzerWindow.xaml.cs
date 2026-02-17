@@ -19,6 +19,10 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+// Box Change Start for IPCs to display unquie Unrevivable text
+using Content.Shared._EE.Silicon.Components;
+using Content.Shared._Box.Silicons;
+// Box Change End
 
 namespace Content.Client.HealthAnalyzer.UI
 {
@@ -112,7 +116,18 @@ namespace Content.Client.HealthAnalyzer.UI
             if (showAlerts)
                 AlertsContainer.RemoveAllChildren();
 
-            if (msg.Unrevivable == true)
+            // Start Box Change to give IPCs unique medical scanner text for unrevivable
+            // if (msg.Unrevivable == true)
+            if (msg.Unrevivable == true && _entityManager.HasComponent<SiliconComponent>(target))
+                AlertsContainer.AddChild(new RichTextLabel
+                {
+                    Text = Loc.GetString("health-analyzer-window-entity-unrevivable-text-ipc"),
+                    Margin = new Thickness(0, 4),
+                    MaxWidth = 300
+                });
+
+            else if (msg.Unrevivable == true)
+            // End Box Change
                 AlertsContainer.AddChild(new RichTextLabel
                 {
                     Text = Loc.GetString("health-analyzer-window-entity-unrevivable-text"),

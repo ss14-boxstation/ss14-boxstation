@@ -475,3 +475,54 @@
   id: 52
   time: '2026-01-10T13:16:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/76
+- author: superjeepboy
+  changes:
+  - message: Fixed IPCs instantly draining their battery when standing still
+    type: Fix
+  id: 53
+  time: '2026-02-15T00:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/85
+- author: BlueMoon059
+  changes:
+  - message: Fixed some minor grammar errors in some IPC topical descriptions and
+      names.
+    type: Fix
+  id: 54
+  time: '2026-02-14T09:34:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/80
+- author: BlueMoon059
+  changes:
+  - message: Salvage job gear, such as crushers, mining suits, mass scanners, and
+      pka mods appear on debris again.
+    type: Add
+  id: 55
+  time: '2026-02-15T02:53:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/81
+- author: BlueMoon059
+  changes:
+  - message: Salv borgs and the AI have salvage comms, as they should have.
+    type: Fix
+  id: 56
+  time: '2026-02-16T01:27:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/86
+- author: SomegnihT
+  changes:
+  - message: Screens no longer say KILL on EOR
+    type: Tweak
+  id: 57
+  time: '2026-02-16T05:57:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/87
+- author: BlueMoon059
+  changes:
+  - message: Present anomalies no longer spawn unsafe/insane present variants.
+    type: Tweak
+  id: 58
+  time: '2026-02-16T11:47:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/88
+- author: SomegnihT
+  changes:
+  - message: IPCs with unrevivable will now actually be unrevivable
+    type: Fix
+  id: 59
+  time: '2026-02-17T03:19:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/89
