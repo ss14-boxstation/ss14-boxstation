@@ -296,6 +296,7 @@
         - !type:MetabolizerTypeCondition
           type: [ Vox ]
         factor: -4
+#End Box Change - Imp - Allows Thaven to breathe any gas
 
 
 - type: reagent

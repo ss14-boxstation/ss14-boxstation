@@ -106,9 +106,11 @@
             Poison:
               0.1
         conditions:
+#Box Change Start - Thaven Metab
         - !type:MetabolizerTypeCondition
-          type: [Thaven ] #Box Change - Thaven Metab
+          type: [Thaven ]
           inverted: true
+#Box Change End - Thaven Metab
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins
@@ -155,9 +157,11 @@
             Radiation:
               1
         conditions:
+#Box Change Start - Thaven Metab
         - !type:MetabolizerTypeCondition
-          type: [Thaven ] #Box Change - Thaven Metab
+          type: [Thaven ]
           inverted: true
+#Box Change Start - Thaven Metab
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins
@@ -200,12 +204,12 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant, Thaven ]
+          type: [ Plant, Thaven ] #Box Change - Thaven Metab
       - !type:HealthChange
         minScale: 0.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant, Vox, Thaven ]
+          type: [ Plant, Vox, Thaven ] # Box Change - Thaven Metab
           inverted: true
         # Don't want people to get toxin damage from the gas they just
         # exhaled, right?
@@ -217,7 +221,7 @@
       - !type:Oxygenate # carbon dioxide displaces oxygen from the bloodstream, causing asphyxiation
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant, Thaven ]
+          type: [ Plant, Thaven ] # Box Change - Thaven Metab
           inverted: true
         factor: -4
       # We need a metabolism effect on reagent removal
@@ -245,7 +249,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Vox, Slime, Thaven ]
+          type: [ Vox, Slime, Thaven ] # Box Change - Thaven Metab
       # Converts Nitrogen into Ammonia
       - !type:ModifyLungGas
         conditions:
@@ -283,12 +287,12 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Thaven ]
+          type: [ Thaven ] # Box Change - Thaven Metab
       - !type:Emote
         minScale: 0.2
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Slime, Thaven ]
+          type: [ Slime, Thaven ] # Box Change - Thaven Metab
           inverted: true
         emote: Laugh
         showInChat: true
@@ -297,7 +301,7 @@
         minScale: 0.2
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Slime, Thaven ]
+          type: [ Slime, Thaven ] # Box Change - Thaven Metab
           inverted: true
         emote: Scream
         showInChat: true
@@ -306,7 +310,7 @@
         minScale: 0.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Slime, Thaven ]
+          type: [ Slime, Thaven ] # Box Change - Thaven Metab
           inverted: true
         type: Local
         visualType: Medium
@@ -316,7 +320,7 @@
         minScale: 1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Slime, Thaven ]
+          type: [ Slime, Thaven ] # Box Change - Thaven Metab
           inverted: true
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
@@ -324,7 +328,7 @@
         minScale: 1.8
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Slime, Thaven ]
+          type: [ Slime, Thaven ] # Box Change - Thaven Metab
           inverted: true
         effectProto: StatusEffectForcedSleeping
         time: 3
@@ -333,7 +337,7 @@
         minScale: 3.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Slime, Thaven ]
+          type: [ Slime, Thaven ] # Box Change - Thaven Metab
           inverted: true
         ignoreResistances: true
         damage:
@@ -381,50 +385,62 @@
         minScale: 2
     Gas:
       effects:
+# Box Change Start - Thaven Metab
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Thaven ]
+# Box Change End - Thaven Metab
       - !type:HealthChange
+# Box Change Start - Thaven Metab
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Thaven ]
           inverted: true
+# Box Change End - Thaven Metab
         minScale: 0.5
         ignoreResistances: true
         damage:
           types:
             Cellular: 0.05
       - !type:ModifyStatusEffect
+# Box Change Start - Thaven Metab
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Thaven ]
           inverted: true
+# Box Change End - Thaven Metab
         minScale: 1
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 500
       - !type:Drunk
         boozePower: 500
+# Box Change Start - Thaven Metab
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Thaven ]
           inverted: true
+# Box Change End - Thaven Metab
         minScale: 1
       - !type:PopupMessage
+# Box Change Start - Thaven Metab
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Thaven ]
           inverted: true
+# Box Change End - Thaven Metab
         type: Local
         messages: [ "frezon-lungs-cold" ]
         probability: 0.1
         minScale: 1
       - !type:PopupMessage
+# Box Change Start - Thaven Metab
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Thaven ]
           inverted: true
+# Box Change End - Thaven Metab
         type: Local
         visualType: Medium
         messages: [ "frezon-euphoric" ]
