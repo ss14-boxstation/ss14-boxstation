@@ -117,6 +117,7 @@ namespace Content.Client.HealthAnalyzer.UI
                 AlertsContainer.RemoveAllChildren();
 
             // Start Box Change to give IPCs unique medical scanner text for unrevivable
+            // if (msg.Unrevivable == true)
             if (msg.Unrevivable == true && _entityManager.HasComponent<SiliconComponent>(target))
                 AlertsContainer.AddChild(new RichTextLabel
                 {
@@ -125,7 +126,6 @@ namespace Content.Client.HealthAnalyzer.UI
                     MaxWidth = 300
                 });
 
-            // if (msg.Unrevivable == true)
             else if (msg.Unrevivable == true)
             // End Box Change
                 AlertsContainer.AddChild(new RichTextLabel
