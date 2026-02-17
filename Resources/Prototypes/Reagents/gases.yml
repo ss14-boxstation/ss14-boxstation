@@ -284,10 +284,12 @@
             Poison: 1
     Gas:
       effects:
+# Box Change Start - Thaven Metab
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Thaven ] # Box Change - Thaven Metab
+          type: [ Thaven ]
+# Box Change End
       - !type:Emote
         minScale: 0.2
         conditions:
