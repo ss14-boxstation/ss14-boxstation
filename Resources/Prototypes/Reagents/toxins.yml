@@ -838,6 +838,21 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Vox]
+      # Box Change Start - IPCs
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC, Vox]
+        probability: 0.5
+        damage:
+          groups:
+            Brute: -0.2 # Half of Protein
+      - !type:ModifyBloodLevel
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC, Vox]
+        amount: 0.5 # Half of Protein
+      # Box Change End
 
 - type: reagent
   id: Hemorrhinol
