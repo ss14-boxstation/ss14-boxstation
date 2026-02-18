@@ -851,7 +851,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [IPC, Vox]
-        amount: 0.5 # Half of Protein
+        amount: 0.25 # 1/4 of Protein
       # Box Change End
 
 - type: reagent
