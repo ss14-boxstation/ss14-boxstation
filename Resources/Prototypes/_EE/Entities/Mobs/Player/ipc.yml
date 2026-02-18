@@ -49,9 +49,14 @@
       119.999: Critical # TO make it almost impossible
       120: Dead
     stateAlertDict:
-      Alive: BorgHealth
-      Critical: BorgCrit
-      Dead: BorgDead
+      # Start Box change to change health states from BorgHealth to IpcHealth, Needed for Numb to work and not also have it apply to Borgs (Unless we want that?)
+      #Alive: BorgHealth
+      #Critical: BorgCrit
+      #Dead: BorgDead
+      Alive: IpcHealth
+      Critical: IpcCrit
+      Dead: IpcDead
+      # End Box change
   - type: TypingIndicator
     proto: ipc # Box change - Swaps out the silicon indicator proto for the IPC one
   - type: Destructible

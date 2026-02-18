@@ -44,5 +44,9 @@ public sealed class PainNumbnessSystem : EntitySystem
     {
         if (args.Args.CurrentAlert == "HumanHealth")
             args.Args.CancelUpdate = true;
+        // Box Change Start for IPCs to work with Numb
+        else if (args.Args.CurrentAlert == "IpcHealth")
+            args.Args.CancelUpdate = true;
+        // Box Change End
     }
 }
