@@ -159,6 +159,8 @@
     specialDigestible:
       tags:
       - IPCFood
+      - ClothMade
+      - Trash
     isSpecialDigestibleExclusive: false
   - type: Metabolizer
     maxReagents: 3
