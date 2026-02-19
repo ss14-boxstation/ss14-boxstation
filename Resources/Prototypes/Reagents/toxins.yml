@@ -842,7 +842,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [IPC, Vox]
+          type: [Synthetic]
         probability: 0.5
         damage:
           groups:
@@ -850,7 +850,7 @@
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [IPC, Vox]
+          type: [Vox]
         amount: 0.25 # 1/4 of Protein
       # Box Change End
 
