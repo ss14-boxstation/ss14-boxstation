@@ -65,7 +65,10 @@
   cost: 7500
   recipeUnlocks:
   - ClothingShoesBootsMagSci
-  - ClothingShoesBootsMoon
+  - ClothingShoesBoots
+  # Box Change - Moon Mantle
+  - ClothingNeckMantleMoon
+  # Box Change End
 
 - type: technology
   id: AnomalyCoreHarnessing
