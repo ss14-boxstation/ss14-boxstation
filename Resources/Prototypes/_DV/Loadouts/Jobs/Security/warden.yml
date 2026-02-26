@@ -1,0 +1,5 @@
+# OuterClothing
+- type: loadout
+  id: WardenLongcoat
+  equipment:
+    outerClothing: ClothingLongcoatWarden

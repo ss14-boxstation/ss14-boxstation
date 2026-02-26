@@ -1,0 +1,40 @@
+- type: entity
+  parent: [ClothingOuterWinterCoat, BaseSecurityContraband] # Same as ClothingOuterCoatWarden, without ClothingOuterWinterCoatToggleable from ClothingOuterWinterWarden
+  id: ClothingLongcoatWarden
+  name: warden's armored longcoat
+  suffix: BoxStation #Box - Add Suffix
+  description: A black double-breasted longcoat with silver buttons and red band and cuffs, specifically designed for the warden. Security longcoats sport protective plates underneath, but are fairly heavy.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/warden.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/warden.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: [ ClothingOuterWinterCoat, BaseSecurityContraband ] # Same as ClothingOuterWinterSec, without ClothingOuterWinterCoatToggleable
+  id: ClothingLongcoatSecurity
+  name: security officer's armored longcoat
+  suffix: BoxStation #Box - Add Suffix
+  description: A black double-breasted longcoat with silver buttons and red bands, specifically designed for security personnel. Security longcoats sport protective plates underneath, but are fairly heavy.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/security.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/security.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+
