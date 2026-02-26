@@ -5,9 +5,9 @@
     - id: AnomalySpawn
     - id: BluespaceArtifact
     - id: BluespaceLocker
-    - id: CockroachMigration
+    # - id: CockroachMigration
     - id: MassHallucinations
-    - id: MouseMigration
+    # - id: MouseMigration
     - id: RandomSentience
     - id: SolarFlare
-    - id: ClosetSkeleton
+    # - id: ClosetSkeleton
