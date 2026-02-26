@@ -1474,6 +1474,7 @@
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
   - ChiefMedicalOfficerArashiLongcoat # Box
+  - ChiefMedicalOfficerLongcoat # Box
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
