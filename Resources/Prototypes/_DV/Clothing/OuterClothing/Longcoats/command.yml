@@ -21,9 +21,9 @@
   description: A saturated brown double-breasted longcoat with mossy trim, specifically designed for the Quartermaster. Longcoats are fairly robust, offering some protection from the elements. #Box Change - LO --> QM
   components:
   - type: Sprite
-    sprite: _Floof/Clothing/OuterClothing/Longcoats/logstics-officer.rsi
+    sprite: _Box/Clothing/OuterClothing/Longcoats/quartermaster.rsi
   - type: Clothing
-    sprite: _Floof/Clothing/OuterClothing/Longcoats/logstics-officer.rsi
+    sprite: _Box/Clothing/OuterClothing/Longcoats/quartermaster.rsi
 
 - type: entity
   parent: [ClothingOuterWinterCoat, ClothingUniformFoldableBase, BaseCommandContraband]
