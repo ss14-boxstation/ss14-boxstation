@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingOuterWinterCoat]
+  id: ClothingLongcoatBrigmedic
+  name: paramedic's longcoat
+  suffix: BoxStation #Box - Add Suffix
+  description: A black double-breasted longcoat with silver buttons, blue bands, and sterile fabric cuffs, specifically designed for the paramedic.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/corpsman.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/corpsman.rsi

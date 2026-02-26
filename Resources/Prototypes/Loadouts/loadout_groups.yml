@@ -1643,6 +1643,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  - ParamedicsLongcoat # Box
 
 - type: loadoutGroup
   id: ParamedicShoes
