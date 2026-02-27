@@ -110,7 +110,7 @@
   description: dynamic-description
   rules:
   - DynamicRule
-  # - DummyNonAntag # Box Change - Remove Dummy Antag
+  - DummyNonAntag
   - DynamicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -147,11 +147,11 @@
   description: traitor-description
   showInVote: false
   rules:
-  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
+  - DummyNonAntagChance
   - Traitor
   # Harmony Start - reenableds midround
   #- SubGamemodesRuleNoWizard
-  # - SubGamemodesRule # Box Change - Remove Sub Gamemodes
+  - SubGamemodesRule
   # Harmony end
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
@@ -180,10 +180,10 @@
   showInVote: false
   rules:
   - Nukeops
-  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
+  - DummyNonAntagChance
   # Harmony start - reactivates wizard midround
   #- SubGamemodesRuleNoWizard
-  # - SubGamemodesRule # Box Change - Remove Sub Gamemodes
+  - SubGamemodesRule
   # Harmony End
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
@@ -200,11 +200,11 @@
   description: rev-description
   showInVote: false
   rules:
-  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
+  - DummyNonAntagChance
   - Revolutionary
   # Harmony start - reactivates wizard midround even if revs are bye bye
   #- SubGamemodesRuleNoWizard
-  # - SubGamemodesRule # Box Change - Remove Sub Gamemodes
+  - SubGamemodesRule
   # Harmony end
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
@@ -220,8 +220,8 @@
   showInVote: false
   rules:
   - Wizard
-  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
-  # - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine # Box Change - Remove Sub Gamemodes
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -236,8 +236,8 @@
   showInVote: false
   rules:
   - Xenoborgs
-  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
-  # - SubGamemodesRuleNoWizardNoXenoborg # no two motherships # Box Change - Remove Sub Gamemodes
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizardNoXenoborg # no two motherships
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
