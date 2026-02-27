@@ -209,6 +209,7 @@
   - ClothingLongcoatBlack
   - ClothingLongcoatBrown
 # Box Change End - Long Coats
+
 - type: latheRecipePack
   id: Ties
   recipes:
