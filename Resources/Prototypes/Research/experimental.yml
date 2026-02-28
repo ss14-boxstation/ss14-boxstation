@@ -66,9 +66,7 @@
   recipeUnlocks:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  # Box Change - Moon Mantle
-  - ClothingNeckMantleMoon
-  # Box Change End
+  - ClothingNeckMantleMoon #Box Change - Moon Mantle
 
 - type: technology
   id: AnomalyCoreHarnessing

@@ -1,0 +1,8 @@
+diff a/Resources/Prototypes/Research/experimental.yml b/Resources/Prototypes/Research/experimental.yml	(rejected hunks)
+@@ -162,4 +162,4 @@
+   tier: 3
+   cost: 10000
+   recipeUnlocks:
+-  - DeviceDesynchronizer
+\ No newline at end of file
++  - DeviceDesynchronizer
