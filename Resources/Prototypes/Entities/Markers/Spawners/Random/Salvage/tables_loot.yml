@@ -257,6 +257,10 @@
       children:
       - id: JetpackBlue
       - id: JetpackBlack
+    # Box Change Start - Adds light picks to the loot table
+    - id: PickaxeLight
+      weight: 0.5
+    # Box Change end - Adds light picks to the loot table
 
 - type: entityTable
   id: SalvageEquipmentLegendary

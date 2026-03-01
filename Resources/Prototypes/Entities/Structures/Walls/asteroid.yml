@@ -62,6 +62,11 @@
         layer:
         - WallLayer
         density: 2000
+# Box Change Start - Makes basic asteroids drop ore
+  - type: OreVein
+    oreChance: 0.33
+    oreRarityPrototypeId: RandomOreDistributionStandard
+# Box Change End - Makes basic asteroids drop ore
 
 - type: entity
   abstract: true
@@ -449,18 +454,18 @@
   id: AsteroidRockMining
   parent: AsteroidRock
   name: asteroid rock
-  suffix: higher ore yield .33
+  suffix: High Ore Yield # Box Change, higher ore yield .33 > High Ore Yield
   description: An asteroid.
   components:
   - type: OreVein
-    oreChance: 0.33
+    oreChance: 0.5 # Box Change, increases oreChance to compensate for new base oreChance
     oreRarityPrototypeId: RandomOreDistributionStandard
 
 - type: entity
   id: IronRock
   parent: AsteroidRock
   name: ironrock
-  suffix: Low Ore Yield
+  suffix: VGRoid # Box Change, Low Ore Yield > VGRoid
   description: A rocky asteroid.
   components:
   - type: IconSmooth
@@ -485,6 +490,11 @@
       state: ironrock_north
     - map: [ "enum.EdgeLayer.West" ]
       state: ironrock_west
+# Box Change - Make the basic VGRoid rocks drop cool ore
+  - type: OreVein
+    oreChance: 0.66
+    oreRarityPrototypeId: RandomOreDistributionVGRoid # Better loot, higher quality ore, higher chance at getting caches
+# Box Harmony Change
 
 - type: entity
   id: IronRockMining
@@ -494,7 +504,7 @@
   description: An asteroid.
   components:
   - type: OreVein
-    oreChance: 0.33
+    oreChance: 0.5 # Box Change, 0.33 > 0.5, specific prototype for more mats.
     oreRarityPrototypeId: RandomOreDistributionStandard
 
 # Ore veins
@@ -520,6 +530,11 @@
       state: ironrock_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+# Harmony Change Start - Make basic rocks drop ore
+  - type: OreVein
+    oreChance: 0.2
+    oreRarityPrototypeId: RandomOreDistributionStandard
+# Harmony Change End
 
 - type: entity
   id: IronRockGold

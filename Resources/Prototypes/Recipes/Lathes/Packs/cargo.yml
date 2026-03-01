@@ -24,6 +24,10 @@
   - MineralScannerEmpty
   - AdvancedMineralScannerEmpty
   - OreBagOfHolding
+  # Box Change Start, Adds Upgraded Pickaxes
+  - PickaxeLight
+  - PickaxeUltralight
+   # Box Change End, Adds Upgraded Pickaxes
 
 - type: latheRecipePack
   id: CargoBoards

@@ -14,3 +14,7 @@ stack-puncture-repair-patch = puncture repair patch
 stack-shielding-patch = shielding patch
 stack-gash-repair-patch = gash repair patch
 stack-thawing-patch = thawing patch
+stack-geode-ore = {$amount ->
+    [1] geode
+    *[other] geodes
+}
