@@ -603,3 +603,18 @@
   id: 69
   time: '2026-03-02T16:52:32.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/97
+- author: BlueMoon059
+  changes:
+  - message: All rocks now drop ore. The VGRoids Ironrock drops better ore.
+    type: Tweak
+  - message: Adds a new item, the Geode. It can spawn while mining and sells for a
+      good bit
+    type: Add
+  - message: Adds a new item, the Buried Cache. It can spawn rarely while mining and
+      can be opened for treasure.
+    type: Add
+  - message: Adds two new Pickaxes that Science can research and print.
+    type: Add
+  id: 70
+  time: '2026-03-02T21:10:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/104
