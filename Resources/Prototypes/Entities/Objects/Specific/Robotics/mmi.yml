@@ -39,6 +39,15 @@
     proto: robot
   - type: Speech
     speechSounds: Pai
+    # Box
+  - type: Tag
+    tags:
+    - SiliconEmotes
+  - type: Emoting
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+    # End Box
   - type: ItemSlots
   - type: ContainerContainer
     containers:
@@ -110,6 +119,12 @@
       group: PositronicBrain
     - type: DoAfter
     - type: Actions
+    # Box start
+    - type: Emoting
+    - type: Vocal
+      sounds:
+        Unsexed: UnisexSilicon
+    # End Box
     - type: TypingIndicator
       proto: robot
     - type: Speech
@@ -123,6 +138,7 @@
     - type: Tag
       tags:
       - CannotSuicide
+      - SiliconEmotes # Box
     - type: GenericVisualizer
       visuals:
         enum.ToggleableGhostRoleVisuals.Status:

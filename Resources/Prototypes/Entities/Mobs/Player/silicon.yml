@@ -445,6 +445,7 @@
     - HideContextMenu
     - StationAi
     - NoConsoleSound
+    - SiliconEmotes # Box
   - type: StartingMindRole
     mindRole: "MindRoleSiliconBrain"
     silent: true
