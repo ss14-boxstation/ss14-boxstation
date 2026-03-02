@@ -27,7 +27,7 @@
   # Box Change Start, Adds Upgraded Pickaxes
   - PickaxeLight
   - PickaxeUltralight
-   # Box Change End, Adds Upgraded Pickaxes
+  # Box Change End, Adds Upgraded Pickaxes
 
 - type: latheRecipePack
   id: CargoBoards

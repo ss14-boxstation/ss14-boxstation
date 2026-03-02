@@ -494,7 +494,7 @@
   - type: OreVein
     oreChance: 0.66
     oreRarityPrototypeId: RandomOreDistributionVGRoid # Better loot, higher quality ore, higher chance at getting caches
-# Box Harmony Change
+# Box Change end
 
 - type: entity
   id: IronRockMining

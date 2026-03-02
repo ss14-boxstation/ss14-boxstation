@@ -2,7 +2,7 @@
 - type: entity
   id: IronRockStation
   parent: IronRock
-  suffix: Station, Harmony
+  suffix: Station, Box
   description: A rocky asteroid.
   components:
   - type: OreVein

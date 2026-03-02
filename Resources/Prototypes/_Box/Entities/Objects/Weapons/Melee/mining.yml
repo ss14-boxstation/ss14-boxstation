@@ -10,7 +10,7 @@
     tags:
     - Pickaxe
   - type: Sprite
-    sprite: _Harmony/Objects/Weapons/Melee/pickaxe_light.rsi
+    sprite: _Box/Objects/Weapons/Melee/pickaxe_light.rsi
     state: pickaxe
   - type: MeleeWeapon
     attackRate: 1
@@ -47,7 +47,7 @@
   description: Light, sleek, reinforced with plasma! It's still made out of glass though...
   components:
   - type: Sprite
-    sprite: _Harmony/Objects/Weapons/Melee/pickaxe_ultralight.rsi
+    sprite: _Box/Objects/Weapons/Melee/pickaxe_ultralight.rsi
   - type: MeleeWeapon
     attackRate: 1.5
     damage:

@@ -9,7 +9,7 @@
   - type: Stack
     stackType: Geode
   - type: Sprite
-    sprite: _Harmony/Objects/Materials/geode.rsi
+    sprite: _Box/Objects/Materials/geode.rsi
     state: geode
   - type: Item
     sprite: _Box/Objects/Materials/geode.rsi

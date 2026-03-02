@@ -1,6 +1,6 @@
 - type: stack
   id: Geode
   name: stack-geode-ore
-  icon: { sprite: /Textures/_Harmony/Objects/Materials/geode.rsi, state: geode }
+  icon: { sprite: /Textures/_Box/Objects/Materials/geode.rsi, state: geode }
   spawn: Geode1
   maxCount: 30
