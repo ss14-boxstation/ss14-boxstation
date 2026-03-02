@@ -2,6 +2,7 @@
   parent: ClothingNeckBase
   id: ClothingNeckMantleMoon
   name: moonmantle
+  suffix: BoxStation
   description: An anti-gravity cloak speckled with a speciality blend of lunar rock gel. Shipped from the Netherlands.
   components:
   - type: Sprite
