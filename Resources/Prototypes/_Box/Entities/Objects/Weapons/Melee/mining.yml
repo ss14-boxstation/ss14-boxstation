@@ -4,6 +4,7 @@
   parent: BaseItem # Not parented from Pickaxe, as thats scrappable and this is tech unlocked
   id: PickaxeLight
   name: lightweight pickaxe
+  suffix: Box
   description: Light, sleek, concerningly made out of glass...
   components:
   - type: Tag
