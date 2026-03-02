@@ -30,9 +30,6 @@
   recipes:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  #Box change - Moonmantle recipe
-  - ClothingNeckMantleMoon
-  # Box change - Moonmantle recipe
   - ClothingShoesBootsSpeed
   - ClothingShoesBootsJump
   - ClothingBackpackHolding
