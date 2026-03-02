@@ -530,11 +530,6 @@
       state: ironrock_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
-# Harmony Change Start - Make basic rocks drop ore
-  - type: OreVein
-    oreChance: 0.2
-    oreRarityPrototypeId: RandomOreDistributionStandard
-# Harmony Change End
 
 - type: entity
   id: IronRockGold
@@ -833,6 +828,11 @@
       state: rock_north
     - map: [ "enum.EdgeLayer.West" ]
       state: rock_west
+# Box Change Start - Make basic rocks drop ore
+  - type: OreVein
+    oreChance: 0.2
+    oreRarityPrototypeId: RandomOreDistributionStandard
+# Box Change End
 
 # Ore veins
 - type: entity
