@@ -1,0 +1,10 @@
+# Iron Rock prototype for non-VGRoid applications (if you really really want to use it...)
+- type: entity
+  id: IronRockStation
+  parent: IronRock
+  suffix: Station, Box
+  description: A rocky asteroid.
+  components:
+  - type: OreVein
+    oreChance: 0.33 # Less ore than IronRockMining, comparable to the base asteroid
+    oreRarityPrototypeId: RandomOreDistributionStandard # Not the improved richness VGRoid set. Suitable for stations.
