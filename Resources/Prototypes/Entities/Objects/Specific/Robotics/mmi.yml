@@ -39,7 +39,7 @@
     proto: robot
   - type: Speech
     speechSounds: Pai
-    # Box
+    # Box Change Start - Allows use of borg emotes
   - type: Tag
     tags:
     - SiliconEmotes
@@ -47,7 +47,7 @@
   - type: Vocal
     sounds:
       Unsexed: UnisexSilicon
-    # End Box
+    # Box Change End
   - type: ItemSlots
   - type: ContainerContainer
     containers:
@@ -119,12 +119,12 @@
       group: PositronicBrain
     - type: DoAfter
     - type: Actions
-    # Box start
+    # Box Change Start - Allows use of borg emotes
     - type: Emoting
     - type: Vocal
       sounds:
         Unsexed: UnisexSilicon
-    # End Box
+    # Box Change End
     - type: TypingIndicator
       proto: robot
     - type: Speech
@@ -138,7 +138,7 @@
     - type: Tag
       tags:
       - CannotSuicide
-      - SiliconEmotes # Box
+      - SiliconEmotes # Box - Allows use of borg emotes
     - type: GenericVisualizer
       visuals:
         enum.ToggleableGhostRoleVisuals.Status:
