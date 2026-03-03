@@ -59,7 +59,8 @@ public sealed class ApcSystem : EntitySystem
             {
                 UpdateApcState(uid, apc, battery);
             }
-
+        // Box Change Start - Reverts APC Breaker Tripping
+            /*
             // Overload
             if (apc.MainBreakerEnabled && battery.CurrentSupply > apc.MaxLoad)
             {
@@ -81,6 +82,8 @@ public sealed class ApcSystem : EntitySystem
             {
                 apc.TripStartTime = null;
             }
+            */
+        // Box Change End
         }
     }
 
@@ -137,8 +140,13 @@ public sealed class ApcSystem : EntitySystem
         apc.MainBreakerEnabled = !apc.MainBreakerEnabled;
         battery.CanDischarge = apc.MainBreakerEnabled;
 
+
+    // Box Change Start - Reverts APC Breaker Tripping
+        /*
         if (apc.MainBreakerEnabled)
             apc.TripFlag = false;
+        */
+    // Box Change End
 
         UpdateUIState(uid, apc);
         _audio.PlayPvs(apc.OnReceiveMessageSound, uid, AudioParams.Default.WithVolume(-2f));
@@ -209,10 +217,13 @@ public sealed class ApcSystem : EntitySystem
         var charge = ContentHelpers.RoundToNearestLevels(battery.CurrentStorage / battery.Capacity, 1.0, 100 / ChargeAccuracy) / 100f * ChargeAccuracy;
 
         var state = new ApcBoundInterfaceState(apc.MainBreakerEnabled,
-            (int) MathF.Ceiling(battery.CurrentSupply), apc.LastExternalState,
-            charge,
+            (int)MathF.Ceiling(battery.CurrentSupply), apc.LastExternalState,
+            // Box Change Start - Reverts APC Breaker Tripping
+            /* charge,
             apc.MaxLoad,
-            apc.TripFlag);
+            apc.TripFlag); */
+            charge);
+        // Box Change End
 
         _ui.SetUiState((uid, ui), ApcUiKey.Key, state);
     }
