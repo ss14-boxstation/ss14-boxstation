@@ -80,7 +80,7 @@
     sprite: _Floof/Clothing/OuterClothing/Longcoats/head-of-personnel.rsi
 
 - type: entity
-  parent: [ClothingOuterWinterCoat, BaseSecurityCommandContraband]
+  parent: [ClothingOuterWinterCoat,AllowSuitStorageClothing, BaseSecurityCommandContraband]
   id: ClothingLongcoatHoS
   name: head of security's armored longcoat
   suffix: BoxStation #Box - Add Suffix
