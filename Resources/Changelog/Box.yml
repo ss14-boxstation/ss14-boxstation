@@ -625,3 +625,19 @@
   id: 71
   time: '2026-03-03T15:40:42.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/109
+- author: BlueMoon059
+  changes:
+  - message: Sec longcoats (HoS, Warden, Secoff) now have back storage slots to be
+      consistent with other armors.
+    type: Fix
+  id: 72
+  time: '2026-03-07T13:55:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/110
+- author: Dizzy-Eevee
+  changes:
+  - message: MMIs, Positronic Brains, Intellicards, and the AI core can now perform
+      emotes.
+    type: Tweak
+  id: 73
+  time: '2026-03-07T13:56:22.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/107
