@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingOuterWinterCoat, BaseSecurityContraband] # Same as ClothingOuterCoatWarden, without ClothingOuterWinterCoatToggleable from ClothingOuterWinterWarden
+  parent: [ClothingOuterWinterCoat, AllowSuitStorageClothing, BaseSecurityContraband] # Same as ClothingOuterCoatWarden, without ClothingOuterWinterCoatToggleable from ClothingOuterWinterWarden
   id: ClothingLongcoatWarden
   name: warden's armored longcoat
   suffix: BoxStation #Box - Add Suffix
@@ -21,7 +21,7 @@
     damageCoefficient: 0.9
 
 - type: entity
-  parent: [ ClothingOuterWinterCoat, BaseSecurityContraband ] # Same as ClothingOuterWinterSec, without ClothingOuterWinterCoatToggleable
+  parent: [ ClothingOuterWinterCoat, AllowSuitStorageClothing, BaseSecurityContraband ] # Same as ClothingOuterWinterSec, without ClothingOuterWinterCoatToggleable
   id: ClothingLongcoatSecurity
   name: security officer's armored longcoat
   suffix: BoxStation #Box - Add Suffix
