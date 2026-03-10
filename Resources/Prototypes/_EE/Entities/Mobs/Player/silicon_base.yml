@@ -211,6 +211,7 @@
         - FootstepSound
         - DoorBumpOpener
         - SiliconEmotes # DeltaV
+        - AnomalyHost # Box Change - IPCs can be targets for anomaly infection now
     - type: Hands
     - type: Inventory
       templateId: IPC
