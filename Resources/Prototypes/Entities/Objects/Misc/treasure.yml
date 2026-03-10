@@ -155,7 +155,7 @@
     materialComposition:
       Steel: 300
     #End Harmony Change - Make Scrappable
-  - type: StackPrice #Box Change - Make Stackable
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 75
   # Start Box Change - Makes Coins Stackable
   - type: Stack
@@ -175,7 +175,7 @@
       Steel: 100
       Silver: 200
 #End Harmony Change - Make Scrappable
-  - type: StackPrice #Box Change - Make Stackable
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 135 #Harmony Change - 125 -> 135. Makes Price Match Material Price Output
 # Start Box Change - Make Coins Stackable
   - type: Stack
@@ -195,7 +195,7 @@
       Steel: 100
       Gold: 200
 #End Harmony Change - Make Scrappable
-  - type: StackPrice #Box Change - Makes Stackable
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Makes Stackable
     price: 175
 #Start Box Change - Make Coins Stackable
   - type: Stack
@@ -215,7 +215,7 @@
       Steel: 400
       Diamond: 5
 #End Harmony Changes - Make Scrappable
-  - type: StackPrice #Box Change - Make Stackable
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 250
   # Start Box Change - Make Coins Stackable
   - type: Stack
@@ -235,7 +235,7 @@
       Steel: 300
       Diamond: 15
 #End Harmony Changes - Make Scrappable
-  - type: StackPrice #Box Change - Make Stackable
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 500
 # Start Box Change - Makes Coins Stackable
   - type: Stack
