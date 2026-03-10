@@ -581,3 +581,63 @@
   id: 66
   time: '2026-02-20T07:11:00.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/82
+- author: CollectionOfBones128
+  changes:
+  - message: Loot spawns on the VGRoid again.
+    type: Fix
+  id: 67
+  time: '2026-02-27T18:24:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/98
+- author: BlueMoon059
+  changes:
+  - message: Added longcoats-  a new winter coat variant for all of command, CC, warden,
+      secoffs, paramedics, and anyone who can access a winterdrobe.
+    type: Add
+  id: 68
+  time: '2026-02-27T19:55:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/101
+- author: DrWhoFan13
+  changes:
+  - message: Moon mantles, moon boots for your neck!
+    type: Add
+  id: 69
+  time: '2026-03-02T16:52:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/97
+- author: BlueMoon059
+  changes:
+  - message: All rocks now drop ore. The VGRoids Ironrock drops better ore.
+    type: Tweak
+  - message: Adds a new item, the Geode. It can spawn while mining and sells for a
+      good bit
+    type: Add
+  - message: Adds a new item, the Buried Cache. It can spawn rarely while mining and
+      can be opened for treasure.
+    type: Add
+  - message: Adds two new Pickaxes that Science can research and print.
+    type: Add
+  id: 70
+  time: '2026-03-02T21:10:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/104
+- author: CollectionOfBones128
+  changes:
+  - message: Accentless now correctly applies to Thaven
+    type: Fix
+  id: 71
+  time: '2026-03-03T15:40:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/109
+- author: BlueMoon059
+  changes:
+  - message: Sec longcoats (HoS, Warden, Secoff) now have back storage slots to be
+      consistent with other armors.
+    type: Fix
+  id: 72
+  time: '2026-03-07T13:55:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/110
+- author: Dizzy-Eevee
+  changes:
+  - message: MMIs, Positronic Brains, Intellicards, and the AI core can now perform
+      emotes.
+    type: Tweak
+  id: 73
+  time: '2026-03-07T13:56:22.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/107

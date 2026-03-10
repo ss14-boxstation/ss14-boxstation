@@ -157,22 +157,38 @@
   - !type:EntityTableDunGen
     minCount: 25
     maxCount: 40
+    # Box Change Start - Earlymerge VGRoid Loot Fix
+    perDungeon: true
+    ignoreReserved: true
+    # Box Change End
     table: !type:NestedSelector
       tableId: SalvageScrapSpawnerCommon
   - !type:EntityTableDunGen
     minCount: 30
     maxCount: 40
+    # Box Change Start - Earlymerge VGRoid Loot Fix
+    perDungeon: true
+    ignoreReserved: true
+    # Box Change End
     table: !type:NestedSelector
       tableId: SalvageScrapSpawnerValuable
   - !type:EntityTableDunGen
     minCount: 15 #Box Change - 30 --> 15 - reverts changes made in upstream pr #37561
     maxCount: 25 #Box Change - 45 --> 25 - reverts changes made in upstream pr #37561
+    # Box Change Start - Earlymerge VGRoid Loot Fix
+    perDungeon: true
+    ignoreReserved: true
+    # Box Change End
     table: !type:NestedSelector
       tableId: SalvageTreasureSpawnerCommon
   - !type:EntityTableDunGen
   #Start of Box specific changes - adds back salvage equipment
     minCount: 15 #30 --> 15
     maxCount: 25 #45 --> 25
+    # Earlymerge VGRoid Loot Fix Start
+    perDungeon: true
+    ignoreReserved: true
+    # Earlymerge VGRoid Loot Fix Start End
     table: !type:NestedSelector
       tableId: SalvageEquipmentSpawnerCommon
   - !type:EntityTableDunGen
@@ -185,6 +201,10 @@
   - !type:EntityTableDunGen
     minCount: 15
     maxCount: 20
+    # Earlymerge VGRoid Loot Fix Start
+    perDungeon: true
+    ignoreReserved: true
+    # Earlymerge VGRoid Loot Fix Start End
     table: !type:NestedSelector
       tableId: SalvageEquipmentSpawnerValuable
       #End of Box specific changes - adds back salvage equipment

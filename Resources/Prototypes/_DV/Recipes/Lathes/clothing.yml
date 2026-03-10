@@ -1,0 +1,46 @@
+# Longcoats
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatQM
+  result: ClothingLongcoatQM
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatRD
+  result: ClothingLongcoatRD
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatCMO
+  result: ClothingLongcoatCMO
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatArashiLabs
+  result: ClothingLongcoatArashiLabs
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatCE
+  result: ClothingLongcoatCE
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatHoP
+  result: ClothingLongcoatHoP
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatBrown
+  result: ClothingLongcoatBrown
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatBlack
+  result: ClothingLongcoatBlack
+
+- type: latheRecipe
+  parent: BaseCoatRecipe
+  id: ClothingLongcoatNanoTrasen
+  result: ClothingLongcoatNanoTrasen
+

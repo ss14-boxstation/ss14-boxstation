@@ -97,7 +97,8 @@ public sealed class StationPowerTests
         await pair.CleanReturnAsync();
     }
 
-    [Test, TestCaseSource(nameof(GameMaps))]
+// Box Change Start - Reverts APC Breaker Tripping
+    /* [Test, TestCaseSource(nameof(GameMaps))]
     public async Task TestApcLoad(string mapProtoId)
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings
@@ -144,5 +145,6 @@ public sealed class StationPowerTests
         });
 
         await pair.CleanReturnAsync();
-    }
+    } */
+// Box Change End
 }

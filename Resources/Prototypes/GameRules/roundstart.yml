@@ -559,7 +559,7 @@
     - id: BasicTrashVariationPass
     - id: SolidWallRustingVariationPass
     - id: ReinforcedWallRustingVariationPass
-    - id: CutWireVariationPass
+    # - id: CutWireVariationPass # Box Change - Removes doors and other machines randomly having wires cut at roundstart
     - id: BasicPuddleMessVariationPass
       prob: 0.99
       orGroup: puddleMess

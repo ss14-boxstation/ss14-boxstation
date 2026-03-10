@@ -24,4 +24,14 @@ public sealed partial class EntityTableDunGen : IDunGenLayer
     /// </summary>
     [DataField]
     public bool PerDungeon;
+
+// Box Change Start - Earlymerge VGRoid Loot Fix
+
+    /// <summary>
+    /// Should the spawner ignore reserved tiles.
+    /// </summary>
+    [DataField]
+    public bool IgnoreReserved;
+
+// Box Change End
 }

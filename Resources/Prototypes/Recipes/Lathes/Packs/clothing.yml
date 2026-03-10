@@ -20,6 +20,7 @@
   - ClothingUniformJumpsuitQMTurtleneck
   - ClothingUniformJumpskirtQMTurtleneck
   - ClothingUniformJumpsuitQMFormal
+  - ClothingLongcoatQM # Box
   - ClothingUniformJumpsuitCargoPantsHarmony # Harmony
   - ClothingUniformJumpsuitCargoverallsHarmony # Harmony
   - ClothingUniformJumpsuitCargoOfficeSlacksHarmony # Harmony
@@ -51,6 +52,7 @@
   - ClothingUniformJumpskirtHoPMessKitHarmony #Harmony
   - ClothingUniformJumpsuitTurtleneckHoPHarmony # Harmony
   - ClothingUniformJumpskirtTurtleneckHoPHarmony #Harmony
+  - ClothingLongcoatHoP # Box
   # Generic
   - ClothingHeadHatBeretCommand
   - ClothingHeadHatCommandSoft
@@ -70,6 +72,7 @@
   - ClothingUniformJumpsuitSeniorEngineer
   - ClothingUniformJumpskirtSeniorEngineer
   - ClothingHeadHatBeretChiefEngineerHarmony # Harmony
+  - ClothingLongcoatCE # Box
 
 - type: latheRecipePack
   id: ClothingMedical
@@ -89,6 +92,7 @@
   - ClothingUniformJumpsuitParamedic
   - ClothingUniformJumpskirtParamedic
   - ClothingHeadHatParamedicsoft
+  - ClothingLongcoatCMO # Box
 
 - type: latheRecipePack
   id: ClothingScience
@@ -101,6 +105,7 @@
   - ClothingUniformJumpsuitSeniorResearcher
   - ClothingUniformJumpskirtSeniorResearcher
   - ClothingHeadHatBeretResearchDirectorHarmony # Harmony
+  - ClothingLongcoatRD # Box
 
 - type: latheRecipePack
   id: ClothingSecurity
@@ -199,6 +204,11 @@
   - ClothingOuterWinterSci
   - ClothingOuterWinterRobo
   - ClothingOuterWinterSec
+# Box Change Start - Long Coats
+  - ClothingLongcoatNanoTrasen
+  - ClothingLongcoatBlack
+  - ClothingLongcoatBrown
+# Box Change End - Long Coats
 
 - type: latheRecipePack
   id: Ties

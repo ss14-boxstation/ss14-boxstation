@@ -203,6 +203,7 @@
   - CaptainOuterClothing
   - CaptainWintercoat
   - CaptainArmoredWinterCoatHarmony #Harmony
+  - CaptainLongcoat #Box
 
 - type: loadoutGroup
   id: CaptainJobTrinkets
@@ -253,6 +254,7 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+  - HoPLongcoat # Box
 
 - type: loadoutGroup
   id: HoPJobTrinkets
@@ -307,6 +309,11 @@
   minLimit: 0
   loadouts:
   - PassengerWintercoat
+  # Box Start - Passenger long coats
+  - LongcoatBlack
+  - LongcoatBrown
+  - LongcoatNanoTrasen
+  # Box End - Passenger long coats
 
 - type: loadoutGroup
   id: PassengerShoes
@@ -797,6 +804,7 @@
   minLimit: 0
   loadouts:
   - QuartermasterWintercoat
+  - QuartermasterLongcoat # Box
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -936,6 +944,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - ChiefEngineerLongcoat # Box
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -1103,6 +1112,7 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
+  - ResearchDirectorLongcoat # Box
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
@@ -1252,6 +1262,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - HeadofSecurityLongcoat # Box
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
@@ -1283,6 +1294,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - WardenLongcoat # Box
 
 - type: loadoutGroup
   id: WardenJobTrinkets
@@ -1341,6 +1353,7 @@
   - ArmorVest
   - ArmorVestSlim
   - SecurityOfficerWintercoat
+  - LongcoatSecurity # Box
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1460,6 +1473,8 @@
   loadouts:
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
+  - ChiefMedicalOfficerArashiLongcoat # Box
+  - ChiefMedicalOfficerLongcoat # Box
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
@@ -1629,6 +1644,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  - ParamedicsLongcoat # Box
 
 - type: loadoutGroup
   id: ParamedicShoes

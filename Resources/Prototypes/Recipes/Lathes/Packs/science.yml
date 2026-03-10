@@ -35,6 +35,7 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
+  - ClothingNeckMantleMoon # Box change - Moonmantle recipe
 
 - type: latheRecipePack
   id: PowerCells

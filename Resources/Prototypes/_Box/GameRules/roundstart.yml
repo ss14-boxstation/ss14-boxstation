@@ -4,8 +4,8 @@
     children:
     - !type:NestedSelector
       tableId: BasicChillEventsTable
-    - !type:NestedSelector
-      tableId: CalmPestEventsTable
+    # - !type:NestedSelector
+    #   tableId: CalmPestEventsTable
     - !type:NestedSelector
       tableId: CargoGiftsTable
 

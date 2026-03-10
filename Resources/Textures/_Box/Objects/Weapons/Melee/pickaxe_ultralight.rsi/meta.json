@@ -1,0 +1,30 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Icon made at commit https://github.com/tgstation/tgstation/commit/274024284354876c7b10c8488935dbe6023ccae7. Inhand sprites made by EmoGarbage404 (github) at https://github.com/space-wizards/space-station-14/commit/2dcf7d21d82116f2d2fd80c341ceb77510f15848. Recoloured by CollectionOfBones128 (GitHub).",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "pickaxe"
+        },
+        {
+            "name": "wielded-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "wielded-inhand-right",
+            "directions": 4
+        }
+    ]
+}

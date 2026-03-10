@@ -5,7 +5,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server.Power.Components;
 
-[RegisterComponent, AutoGenerateComponentPause]
+[RegisterComponent/*, AutoGenerateComponentPause*/] // Box Change - Reverts APC Breaker Tripping
 public sealed partial class ApcComponent : BaseApcNetComponent
 {
     [DataField("onReceiveMessageSound")]
@@ -34,6 +34,8 @@ public sealed partial class ApcComponent : BaseApcNetComponent
     public const float HighPowerThreshold = 0.9f;
     public static TimeSpan VisualsChangeDelay = TimeSpan.FromSeconds(1);
 
+// Box Change Start - Reverts APC Breaker Tripping
+/*
     /// <summary>
     /// Maximum continuous load in Watts that this APC can supply to loads. Exceeding this starts a
     /// timer, which after enough overloading causes the APC to "trip" off.
@@ -59,6 +61,8 @@ public sealed partial class ApcComponent : BaseApcNetComponent
     /// </summary>
     [DataField]
     public bool TripFlag;
+*/
+// Box Change End
 
     // TODO ECS power a little better!
     // End the suffering

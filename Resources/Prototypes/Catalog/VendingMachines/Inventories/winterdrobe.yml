@@ -19,6 +19,11 @@
     ClothingHeadHatCanadaBeanie: 4
     ClothingHeadHatSantahat: 2
     ClothingHeadHatXmasCrown: 2
+    #Box Change Start - longcoats
+    ClothingLongcoatBlack: 2
+    ClothingLongcoatBrown: 2
+    ClothingLongcoatNanoTrasen: 2
+    #Box Change End - Longcoats
     #Harmony change start
     ClothingUniformTurtleneckColorWhite: 2
     ClothingUniformTurtleneckColorGrey: 2

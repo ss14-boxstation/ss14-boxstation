@@ -1,0 +1,8 @@
+# Moonmantle
+- type: latheRecipe
+  id: ClothingNeckMantleMoon
+  result: ClothingNeckMantleMoon
+  completetime: 2
+  materials:
+    Cloth: 800
+    Steel: 600
