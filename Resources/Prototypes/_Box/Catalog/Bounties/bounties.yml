@@ -1,5 +1,5 @@
 - type: cargoBounty
-  id: BountyTeethSpaceCarp
+  id: BountyTeethSpaceCarpCargo
   reward: 7500
   description: bounty-description-tooth-space-carp
   entries:
@@ -10,7 +10,7 @@
       - ToothSpaceCarp
 
 - type: cargoBounty
-  id: BountyTeethSharkminnow
+  id: BountyTeethSharkminnowCargo
   reward: 15000
   description: bounty-description-tooth-sharkminnow
   entries:
