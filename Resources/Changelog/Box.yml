@@ -665,3 +665,11 @@
   id: 76
   time: '2026-03-11T01:18:46.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/115
+- author: Dizzy-Eevee
+  changes:
+  - message: Moved cat ears to the Head (Top) category. Headgear will now render over
+      your ears.
+    type: Tweak
+  id: 77
+  time: '2026-03-11T01:50:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/108
