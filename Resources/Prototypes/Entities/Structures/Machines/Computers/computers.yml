@@ -1224,17 +1224,19 @@
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-  - type: SalvageJobBoardConsole
-  - type: ActivatableUI
-    key: enum.SalvageJobBoardUiKey.Key
-  - type: UserInterface
-    interfaces:
-      enum.SalvageJobBoardUiKey.Key:
-        type: SalvageJobBoardBoundUserInterface
-      enum.WiresUiKey.Key:
-        type: WiresBoundUserInterface
-  - type: ActiveRadio
-    channels: [ Supply ]
+# Box Change Start - Remove functionality of the Salvage Job Board
+  # - type: SalvageJobBoardConsole
+  # - type: ActivatableUI
+  #   key: enum.SalvageJobBoardUiKey.Key
+  # - type: UserInterface
+  #   interfaces:
+  #     enum.SalvageJobBoardUiKey.Key:
+  #       type: SalvageJobBoardBoundUserInterface
+  #     enum.WiresUiKey.Key:
+  #       type: WiresBoundUserInterface
+  # - type: ActiveRadio
+  #   channels: [ Supply ]
+# Box Change End
   - type: Computer
     board: SalvageJobBoardComputerCircuitboard
   - type: PointLight
