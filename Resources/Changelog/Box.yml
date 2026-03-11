@@ -655,3 +655,13 @@
   id: 75
   time: '2026-03-10T17:39:42.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/114
+- author: BlueMoon059
+  changes:
+  - message: Cargo Techs now start with a utility belt containing some basic tools.
+    type: Add
+  - message: A Cargo Techs appraisal tool now starts in their utility belt instead
+      of their pocket.
+    type: Tweak
+  id: 76
+  time: '2026-03-11T01:18:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/115
