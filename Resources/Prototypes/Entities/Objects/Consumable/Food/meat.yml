@@ -147,6 +147,7 @@
     tags:
     - Raw
     - Meat
+    - CarpFillet # Box Change - Temp Salv Job Board Changes
   - type: Sprite
     state: fish
   - type: SolutionContainerManager
@@ -419,6 +420,13 @@
       - state: plain-inhand-left
       right:
       - state: plain-inhand-right
+# Box Change Start - Tags for temp job board changes
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+    - GoliathMeat
+# Box Change End
 
 - type: entity
   parent: FoodMeatBase
