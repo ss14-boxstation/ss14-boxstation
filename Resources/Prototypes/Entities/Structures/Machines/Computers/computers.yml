@@ -1210,10 +1210,7 @@
   parent: BaseComputerAiAccess
   id: ComputerSalvageJobBoard
   name: salvage job board
-# Box Change Start - Removed functionality of job board
-  # description: Console for accessing salvage jobs, if you're tough enough.
-  description: Console once used for accessing salvage jobs, but the program has been temporarily suspended.
-# Box Change End
+  description: Console for accessing salvage jobs, if you're tough enough.
   components:
   - type: Sprite
     layers:
@@ -1227,19 +1224,17 @@
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
-# Box Change Start - Remove functionality of the Salvage Job Board
-  # - type: SalvageJobBoardConsole
-  # - type: ActivatableUI
-  #   key: enum.SalvageJobBoardUiKey.Key
-  # - type: UserInterface
-  #   interfaces:
-  #     enum.SalvageJobBoardUiKey.Key:
-  #       type: SalvageJobBoardBoundUserInterface
-  #     enum.WiresUiKey.Key:
-  #       type: WiresBoundUserInterface
-  # - type: ActiveRadio
-  #   channels: [ Supply ]
-# Box Change End
+  - type: SalvageJobBoardConsole
+  - type: ActivatableUI
+    key: enum.SalvageJobBoardUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SalvageJobBoardUiKey.Key:
+        type: SalvageJobBoardBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: ActiveRadio
+    channels: [ Supply ]
   - type: Computer
     board: SalvageJobBoardComputerCircuitboard
   - type: PointLight
