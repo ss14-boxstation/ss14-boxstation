@@ -10,7 +10,7 @@
   group: SalvageJobTier1
   sprite:
     sprite: Objects/Misc/module.rsi
-    state: datadisk_base
+    state: datadisk_encrypted
   entries:
   - name: bounty-item-treasure-datadisk-encrypted
     amount: 5
@@ -24,8 +24,8 @@
   description: bounty-description-meat-carp-fillet
   group: SalvageJobTier1
   sprite:
-    sprite: Mobs/Aliens/Carps/space.rsi
-    state: icon
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: fish
   entries:
   - name: bounty-item-meat-carp-fillet
     amount: 10
@@ -68,13 +68,13 @@
 - type: cargoBounty
   id: BountySalvageOreGeode
   reward: 12500
-  description: bounty-description-tooth-sharkminnow
+  description: bounty-description-ore-geode
   group: SalvageJobTier2
   sprite:
     sprite: _Box/Objects/Materials/geode.rsi
     state: geode
   entries:
-  - name: bounty-item-tooth-sharkminnow
+  - name: bounty-item-ore-geode
     amount: 30
     whitelist:
       tags:

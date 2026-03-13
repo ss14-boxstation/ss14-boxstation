@@ -16,7 +16,6 @@
     size: Normal
   - type: StackPrice # TODO - make this instead drop random ore when cracked open
     price: 75
-    heldPrefix: gold
   - type: Tag
     tags:
     - Ore

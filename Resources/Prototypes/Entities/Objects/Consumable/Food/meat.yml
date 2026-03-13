@@ -420,12 +420,14 @@
       - state: plain-inhand-left
       right:
       - state: plain-inhand-right
-# Box Change Start - Tags for temp job board changes
+# Box Change Start - Tags & rotting for temp job board changes
   - type: Tag
     tags:
     - Raw
     - Meat
     - GoliathMeat
+  - type: RotInto
+    entity: FoodMeatRottenGoliath
 # Box Change End
 
 - type: entity
