@@ -1,0 +1,83 @@
+# NOTE: if you add any bounties to this, you need to go to Resources/Prototypes/Entities/Stations/base.yml and adjust the thresholds on BaseStationSalvageJobs.
+# If you don't do this, you won't raise the limit for completing a given rank and may throw off some balance.
+
+# Tier 1
+
+- type: cargoBounty
+  id: BountyTreasureDatadiskEncrypted
+  reward: 7500
+  description: bounty-description-treasure-datadisk-encrypted
+  group: SalvageJobTier1
+  sprite:
+    sprite: Objects/Misc/module.rsi
+    state: datadisk_encrypted
+  entries:
+  - name: bounty-item-treasure-datadisk-encrypted
+    amount: 5
+    whitelist:
+      tags:
+      - TreasureDatadiskEncrypted
+
+- type: cargoBounty
+  id: BountyMeatCarpFillet
+  reward: 7500
+  description: bounty-description-meat-carp-fillet
+  group: SalvageJobTier1
+  sprite:
+    sprite: Objects/Consumable/Food/meat.rsi
+    state: fish
+  entries:
+  - name: bounty-item-meat-carp-fillet
+    amount: 10
+    whitelist:
+      tags:
+      - CarpFillet
+
+- type: cargoBounty
+  id: BountyTreasureSampleTube
+  reward: 7500
+  description: bounty-description-treasure-sample-tube
+  group: SalvageJobTier1
+  sprite:
+    sprite: Objects/Misc/sample_tubes.rsi
+    state: blank
+  entries:
+  - name: bounty-item-treasure-sample-tube
+    amount: 5
+    whitelist:
+      tags:
+      - TreasureSampleTube
+
+# Tier 2
+
+- type: cargoBounty
+  id: BountyTreasureCPUSupercharged
+  reward: 12500
+  description: bounty-description-treasure-cpu-supercharged
+  group: SalvageJobTier2
+  sprite:
+    sprite: Objects/Misc/module.rsi
+    state: cpu_super
+  entries:
+  - name: bounty-item-treasure-cpu-supercharged
+    amount: 3
+    whitelist:
+      tags:
+      - TreasureCPUSupercharged
+
+- type: cargoBounty
+  id: BountySalvageOreGeode
+  reward: 12500
+  description: bounty-description-ore-geode
+  group: SalvageJobTier2
+  sprite:
+    sprite: _Box/Objects/Materials/geode.rsi
+    state: geode
+  entries:
+  - name: bounty-item-ore-geode
+    amount: 30
+    whitelist:
+      tags:
+      - OreGeode
+
+# Tier 3

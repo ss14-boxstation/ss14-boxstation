@@ -4,3 +4,22 @@
 
 - type: Tag
   id: IPCFood
+
+# Temporary Salv Job Board Tags
+- type: Tag
+  id: TreasureDatadiskEncrypted
+
+- type: Tag
+  id: TreasureSampleTube
+
+- type: Tag
+  id: TreasureCPUSupercharged
+
+- type: Tag
+  id: CarpFillet
+
+- type: Tag
+  id: OreGeode
+
+- type: Tag
+  id: GoliathMeat
