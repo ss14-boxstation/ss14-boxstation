@@ -1,0 +1,96 @@
+- type: loadout
+  id: BoxFolderBlackThreePapers
+  storage:
+    back:
+    - BoxFolderBlackThreePapers
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: BoxFolderRedThreePapers
+  storage:
+    back:
+    - BoxFolderRedThreePapers
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: BoxFolderGreenThreePapers
+  storage:
+    back:
+    - BoxFolderGreenThreePapers
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: BoxFolderBlueThreePapers
+  storage:
+    back:
+    - BoxFolderBlueThreePapers
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: BoxFolderWhiteThreePapers
+  storage:
+    back:
+    - BoxFolderWhiteThreePapers
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookPocketBlue
+  storage:
+    back:
+    - NotebookPocketBlue
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookPocketBrown
+  storage:
+    back:
+    - NotebookPocketBrown
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookPocketGreen
+  storage:
+    back:
+    - NotebookPocketGreen
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookSpiralNanotrasen
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Command
+      time: 43200 #12 hrs
+  storage:
+    back:
+    - NotebookSpiralNanotrasen
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookSpiralBeige
+  storage:
+    back:
+    - NotebookSpiralBeige
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookSpiralPurple
+  storage:
+    back:
+    - NotebookSpiralPurple
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookSpiralTeal
+  storage:
+    back:
+    - NotebookSpiralTeal
+  groupBy: "folders" # Box Change - Consistency with upstream
+
+- type: loadout
+  id: NotebookCompositionBlack
+  storage:
+    back:
+    - NotebookCompositionBlack
+  groupBy: "folders" # Box Change - Consistency with upstream

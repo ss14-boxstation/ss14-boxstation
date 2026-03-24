@@ -13,3 +13,27 @@
     Telecrystal: 4 # same price as Hyperzine for parity
   categories: 
   - UplinkChemicals
+
+# Pointless
+
+- type: listing
+  id: UplinkCybersunNotebook
+  name: uplink-cybersun-notebook-name
+  description: uplink-cybersun-notebook-desc
+  productEntity: NotebookSpiralCybersun
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+    
+- type: listing
+  id: UplinkInterdyneNotebook
+  name: uplink-interdyne-notebook-name
+  description: uplink-interdyne-notebook-desc
+  productEntity: NotebookSpiralInterdyne
+  categories:
+    - UplinkPointless
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

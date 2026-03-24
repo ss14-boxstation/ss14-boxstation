@@ -21,9 +21,23 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
+  # Start Box Change - Starcup notebooks + more folders
   - BoxFolderBaseThreePapers
+  - BoxFolderBlackThreePapers
+  - BoxFolderRedThreePapers
+  - BoxFolderGreenThreePapers
+  - BoxFolderBlueThreePapers
   - BoxFolderPlasticClipboardThreePapers
   - BoxFolderClipboardThreePapers
+  - NotebookPocketBlue
+  - NotebookPocketBrown
+  - NotebookPocketGreen
+  - NotebookSpiralNanotrasen
+  - NotebookSpiralBeige
+  - NotebookSpiralPurple
+  - NotebookSpiralTeal
+  - NotebookCompositionBlack
+  # End Box Change
   # Start Box Change - Scarf & Pride Scarf
   - ClothingNeckScarfStripedRed
   - ClothingNeckScarfStripedGreen
