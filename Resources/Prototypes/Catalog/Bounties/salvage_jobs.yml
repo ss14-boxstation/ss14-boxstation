@@ -18,50 +18,56 @@
       tags:
       - ToothSpaceCarp
 
-- type: cargoBounty
-  id: BountySalvageScrap
-  reward: 7500
-  description: bounty-description-salvage-scrap
-  group: SalvageJobTier1
-  sprite:
-    sprite: Objects/Materials/Scrap/generic.rsi
-    state: metal-1
-  entries:
-  - name: bounty-item-scrap
-    amount: 10
-    whitelist:
-      tags:
-      - SalvageScrap
+# Box Change Start - Comments out, Minor job board tweaks for material purchasing overhaul
+# - type: cargoBounty
+#   id: BountySalvageScrap
+#   reward: 7500
+#   description: bounty-description-salvage-scrap
+#   group: SalvageJobTier1
+#   sprite:
+#     sprite: Objects/Materials/Scrap/generic.rsi
+#     state: metal-1
+#   entries:
+#   - name: bounty-item-scrap
+#     amount: 10
+#     whitelist:
+#       tags:
+#       - SalvageScrap
+# Box Change End
 
-- type: cargoBounty
-  id: BountySalvageOreGold
-  reward: 7500
-  description: bounty-description-salvage-ore-gold
-  group: SalvageJobTier1
-  sprite:
-    sprite: Objects/Materials/ore.rsi
-    state: gold
-  entries:
-  - name: bounty-item-ore-gold
-    amount: 30 #Harmony Change: Changes the amount needed to 30
-    whitelist:
-      tags:
-      - OreGold
+# Box Change Start - Comments out, Minor job board tweaks for material purchasing overhaul
+# - type: cargoBounty
+#   id: BountySalvageOreGold
+#   reward: 7500
+#   description: bounty-description-salvage-ore-gold
+#   group: SalvageJobTier1
+#   sprite:
+#     sprite: Objects/Materials/ore.rsi
+#     state: gold
+#   entries:
+#   - name: bounty-item-ore-gold
+#     amount: 30 #Harmony Change: Changes the amount needed to 30
+#     whitelist:
+#       tags:
+#       - OreGold
+# Box Change End
 
-- type: cargoBounty
-  id: BountySalvageOreSilver
-  reward: 7500
-  description: bounty-description-salvage-ore-silver
-  group: SalvageJobTier1
-  sprite:
-    sprite: Objects/Materials/ore.rsi
-    state: silver
-  entries:
-  - name: bounty-item-ore-silver
-    amount: 30 #Harmony Change: Changes the amount needed to 30
-    whitelist:
-      tags:
-      - OreSilver
+# Box Change Start - Comments out, Minor job board tweaks for material purchasing overhaul
+# - type: cargoBounty
+#   id: BountySalvageOreSilver
+#   reward: 7500
+#   description: bounty-description-salvage-ore-silver
+#   group: SalvageJobTier1
+#   sprite:
+#     sprite: Objects/Materials/ore.rsi
+#     state: silver
+#   entries:
+#   - name: bounty-item-ore-silver
+#     amount: 30 #Harmony Change: Changes the amount needed to 30
+#     whitelist:
+#       tags:
+#       - OreSilver
+# Box Change End
 
 # Tier 2
 
@@ -80,35 +86,39 @@
       tags:
       - ToothSharkminnow
 
-- type: cargoBounty
-  id: BountySalvageOrePlasma
-  reward: 12500
-  description: bounty-description-salvage-ore-plasma
-  group: SalvageJobTier2
-  sprite:
-    sprite: Objects/Materials/ore.rsi
-    state: plasma
-  entries:
-  - name: bounty-item-ore-plasma
-    amount: 25 #Harmony Change: Changes the amount needed to 25
-    whitelist:
-      tags:
-      - OrePlasma
+# Box Change Start - Comments out, Minor job board tweaks for material purchasing overhaul
+# - type: cargoBounty
+#   id: BountySalvageOrePlasma
+#   reward: 12500
+#   description: bounty-description-salvage-ore-plasma
+#   group: SalvageJobTier2
+#   sprite:
+#     sprite: Objects/Materials/ore.rsi
+#     state: plasma
+#   entries:
+#   - name: bounty-item-ore-plasma
+#     amount: 25 #Harmony Change: Changes the amount needed to 25
+#     whitelist:
+#       tags:
+#       - OrePlasma
+# Box Change End
 
-- type: cargoBounty
-  id: BountySalvageOreUranium
-  reward: 12500
-  description: bounty-description-salvage-ore-uranium
-  group: SalvageJobTier2
-  sprite:
-    sprite: Objects/Materials/ore.rsi
-    state: uranium
-  entries:
-  - name: bounty-item-ore-uranium
-    amount: 25 #Harmony Change: Changes the amount needed to 25
-    whitelist:
-      tags:
-      - OreUranium
+# Box Change Start - Comments out, Minor job board tweaks for material purchasing overhaul
+# - type: cargoBounty
+#   id: BountySalvageOreUranium
+#   reward: 12500
+#   description: bounty-description-salvage-ore-uranium
+#   group: SalvageJobTier2
+#   sprite:
+#     sprite: Objects/Materials/ore.rsi
+#     state: uranium
+#   entries:
+#   - name: bounty-item-ore-uranium
+#     amount: 25 #Harmony Change: Changes the amount needed to 25
+#     whitelist:
+#       tags:
+#       - OreUranium
+# Box Change End
 
 - type: cargoBounty
   id: BountySalvageOreBananium
@@ -130,17 +140,17 @@
 - type: cargoBounty
   id: BountyGoliathPlates
   reward: 20000
-  description: bounty-description-plates
+  description: bounty-description-goliathmeat # Box Change - plates > goliathmeat - Minor job board tweaks for material purchasing overhaul
   group: SalvageJobTier3
   sprite:
     sprite: Mobs/Aliens/Asteroid/goliath.rsi
     state: goliath
   entries:
-  - name: bounty-item-plates
+  - name: bounty-item-goliathmeat # Box Change - plates > goliathmeat - Minor job board tweaks for material purchasing overhaul
     amount: 3 #Harmony Change: Changes the amount needed to 3
     whitelist:
       tags:
-      - GoliathPlate
+      - GoliathMeat # Box Change - GoliathPlate > GoliathMeat - Minor job board tweaks for material purchasing overhaul
 
 - type: cargoBounty
   id: BountyHivelordRemains

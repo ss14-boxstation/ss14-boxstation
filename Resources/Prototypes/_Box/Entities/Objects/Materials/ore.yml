@@ -16,6 +16,10 @@
     size: Normal
   - type: StackPrice # TODO - make this instead drop random ore when cracked open
     price: 75
+  - type: Tag
+    tags:
+    - Ore
+    - OreGeode
 
 - type: entity
   parent: Geode

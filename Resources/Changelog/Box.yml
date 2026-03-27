@@ -641,3 +641,49 @@
   id: 73
   time: '2026-03-07T13:56:22.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/107
+- author: SomegnihT
+  changes:
+  - message: IPCs can now be infected by anomalies
+    type: Fix
+  id: 74
+  time: '2026-03-10T15:20:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/112
+- author: BlueMoon059
+  changes:
+  - message: Treasure coins can now stack up to 30 times.
+    type: Tweak
+  id: 75
+  time: '2026-03-10T17:39:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/114
+- author: BlueMoon059
+  changes:
+  - message: Cargo Techs now start with a utility belt containing some basic tools.
+    type: Add
+  - message: A Cargo Techs appraisal tool now starts in their utility belt instead
+      of their pocket.
+    type: Tweak
+  id: 76
+  time: '2026-03-11T01:18:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/115
+- author: Dizzy-Eevee
+  changes:
+  - message: Moved cat ears to the Head (Top) category. Headgear will now render over
+      your ears.
+    type: Tweak
+  id: 77
+  time: '2026-03-11T01:50:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/108
+- author: CollectionOfBones128
+  changes:
+  - message: Steel and Glass can no longer be individually purchased from Cargo
+    type: Remove
+  - message: Gold and Silver can no longer be purchased from Cargo
+    type: Remove
+  - message: The Gold ore, Silver ore, Scrap, Plasma ore, Uranium ore, and Goliath
+      Plate Salvage Jobs have been replaced.
+    type: Tweak
+  - message: The price of the Plasma crate and Basic Material crate have been increased.
+    type: Tweak
+  id: 78
+  time: '2026-03-21T02:01:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/116
