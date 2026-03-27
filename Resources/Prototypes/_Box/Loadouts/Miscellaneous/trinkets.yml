@@ -202,6 +202,13 @@
   groupBy: "Plushie"
   
 - type: loadout
+  id: PlushieHuman
+  storage:
+    back:
+    - PlushieHuman
+  groupBy: "Plushie"
+  
+- type: loadout
   id: PlushieHampter
   storage:
     back:
