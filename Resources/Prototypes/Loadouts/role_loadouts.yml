@@ -9,6 +9,7 @@
   - CaptainOuterClothing
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - CaptainJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -25,6 +26,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - HoPJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -54,6 +56,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - PassengerJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -68,6 +71,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - BartenderJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -80,6 +84,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ServiceWorkerJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -95,6 +100,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ChefJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -109,6 +115,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - LibrarianJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -122,6 +129,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - LawyerJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -139,6 +147,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ChaplainJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -154,6 +163,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - JanitorJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -168,6 +178,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - BotanistJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -184,6 +195,7 @@
   - Glasses
   - SurvivalClown
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ClownJobTrinkets
 
 - type: roleLoadout
@@ -200,6 +212,7 @@
   - Glasses
   - SurvivalMime
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - MimeJobTrinkets
 
 - type: roleLoadout
@@ -213,6 +226,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - MusicianJobTrinkets
   - Instruments
   - GroupSpeciesBreathTool
@@ -231,6 +245,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - QuartermasterJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -247,6 +262,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - CargoTechnicianJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -262,6 +278,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - SalvageSpecialistJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -278,6 +295,7 @@
   - ChiefEngineerShoes
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ChiefEngineerJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -289,6 +307,7 @@
   - StationEngineerBackpack
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - TechnicalAssistantJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -304,6 +323,7 @@
   - StationEngineerID
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - StationEngineerJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -317,6 +337,7 @@
   - AtmosphericTechnicianShoes
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - AtmosphericTechnicianJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -335,6 +356,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ResearchDirectorJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -353,6 +375,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ScientistJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -365,6 +388,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ResearchAssistantJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -381,6 +405,7 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - HeadofSecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
@@ -395,6 +420,7 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - WardenJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
@@ -410,6 +436,7 @@
   - SecurityBelt
   - SurvivalSecurity
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - SecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
@@ -424,6 +451,7 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - DetectiveJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
@@ -434,6 +462,7 @@
   - SecurityBackpack
   - SurvivalSecurity
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - SecurityCadetJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
@@ -453,6 +482,7 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ChiefMedicalOfficerJobTrinkets
   - GroupSpeciesBreathToolMedical
 
@@ -472,6 +502,7 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - MedicalDoctorJobTrinkets
   - GroupSpeciesBreathToolMedical
 
@@ -484,6 +515,7 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - MedicalInternJobTrinkets
   - GroupSpeciesBreathToolMedical
 
@@ -499,6 +531,7 @@
   - MedicalShoes
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ChemistJobTrinkets
   - GroupSpeciesBreathToolMedical
 
@@ -516,6 +549,7 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ParamedicJobTrinkets
   - GroupSpeciesBreathToolMedical
 
@@ -529,6 +563,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ReporterJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -541,6 +576,7 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - PsychologistJobTrinkets
   - GroupSpeciesBreathTool
 
