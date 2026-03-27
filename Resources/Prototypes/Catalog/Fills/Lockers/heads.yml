@@ -143,6 +143,7 @@
     - id: WeaponDisabler
     - id: ClothingEyesHudCommand
     - id: BookSOP # Harmony Change
+    - id: BoxTapeRecorder # Box Change - HoP can use these for recording interviews etc to cut down on paperwork
 
 - type: entity
   id: LockerHeadOfPersonnelFilled

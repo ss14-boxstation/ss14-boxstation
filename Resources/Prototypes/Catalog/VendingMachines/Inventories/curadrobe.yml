@@ -3,6 +3,13 @@
   startingInventory:
     BooksBag: 2
     BriefcaseBrown: 2
+    # Start Box Change - Give Librarian some paperwork stuff
+    BoxFolderClipboardEmpty: 2
+    BoxFolderGreyEmpty: 2
+    BoxFolderYellowEmpty: 2
+    Paper: 10
+    Envelope: 10
+    # End Box Change
     HandLabeler: 2
     Cane: 3
     ClothingEyesGlasses: 2
@@ -14,6 +21,7 @@
     ClothingUniformJumpskirtLibrarian: 3
     ClothingShoesBootsLaceup: 2
     ClothingHeadsetService: 2
+    ClothingNeckLanyard: 5 # Box Change - Paperwork related enough
   contrabandInventory:
     ToyFigurineLibrarian: 1
 
