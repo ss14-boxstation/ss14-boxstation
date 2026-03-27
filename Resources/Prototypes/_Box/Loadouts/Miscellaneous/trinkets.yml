@@ -221,3 +221,10 @@
     back:
     - PlushiePenguin
   groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieSnake
+  storage:
+    back:
+    - PlushieSnake
+  groupBy: "Plushie"
