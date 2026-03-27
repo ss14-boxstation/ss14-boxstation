@@ -130,3 +130,94 @@
     back:
     - ClothingNeckScarfStripedTrans
   groupBy: "PrideScarf"
+
+- type: loadout
+  id: PlushieSharkBlue
+  storage:
+    back:
+    - PlushieSharkBlue
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieSharkPink
+  storage:
+    back:
+    - PlushieSharkPink
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieSharkGrey
+  storage:
+    back:
+    - PlushieSharkGrey
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieBee
+  storage:
+    back:
+    - PlushieBee
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieCarp
+  storage:
+    back:
+    - PlushieCarp
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieArachind # Yes it's actually misspelt like that
+  storage:
+    back:
+    - PlushieArachind
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieDiona
+  storage:
+    back:
+    - PlushieDiona
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieMoth
+  storage:
+    back:
+    - PlushieMoth
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieSlime
+  storage:
+    back:
+    - PlushieSlime
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieVulp
+  storage:
+    back:
+    - PlushieVulp
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieHampter
+  storage:
+    back:
+    - PlushieHampter
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushieExperiment
+  storage:
+    back:
+    - PlushieExperiment
+  groupBy: "Plushie"
+  
+- type: loadout
+  id: PlushiePenguin
+  storage:
+    back:
+    - PlushiePenguin
+  groupBy: "Plushie"

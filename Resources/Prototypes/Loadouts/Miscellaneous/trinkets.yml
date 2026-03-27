@@ -34,12 +34,14 @@
   storage:
     back:
     - PlushieLizard
+  groupBy: "Plushie" # Box Change - Collapse plushie trinkets
 
 - type: loadout
   id: PlushieSpaceLizard
   storage:
     back:
     - PlushieSpaceLizard
+  groupBy: "Plushie" # Box Change - Collapse plushie trinkets
 
 - type: loadout
   id: ThreeCandles
