@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Icon sprite by Malkshake (unknown, presumably Discord), originally contributed at https://github.com/ss14Starlight/space-station-14/pull/3265. Inhand and equipped sprites by Dizzy-Eevee (Github), modified from qm_digiboard.rsi by Endecc (Github), originally contributed at https://github.com/space-wizards/space-station-14/pull/21023",
+    "copyright": "Icon sprite by Malkshake (unknown, presumably Discord), originally contributed at https://github.com/ss14Starlight/space-station-14/commit/5e2dd191d064069c58f04b95b26a2c5cbb8a7d8f. Inhand and equipped sprites by Dizzy-Eevee (Github), modified from qm_digiboard.rsi by Endecc (Github), originally contributed at https://github.com/space-wizards/space-station-14/commit/cf25fee2a73ce953035678a11dde81c917fdd063",
     "size": {
         "x": 32,
         "y": 32

@@ -317,7 +317,7 @@
   - type: StealCondition
     stealGroup: Bible
   - type: Objective
-    difficulty: 0.4 
+    difficulty: 0.4
 
 - type: entity                                      #Other subgroup
   parent: BaseThiefStealObjective
