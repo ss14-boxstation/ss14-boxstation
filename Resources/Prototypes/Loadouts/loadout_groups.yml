@@ -21,14 +21,16 @@
   - CigPackBlack
   - CigarCase
   - CigarGold
-  # Start Box Change - Starcup notebooks + more folders
   - BoxFolderBaseThreePapers
+  # Start Box Change - More folders
   - BoxFolderBlackThreePapers
   - BoxFolderRedThreePapers
   - BoxFolderGreenThreePapers
   - BoxFolderBlueThreePapers
+  # End Box Change
   - BoxFolderPlasticClipboardThreePapers
   - BoxFolderClipboardThreePapers
+  # Start Box Change - Starcup notebooks
   - NotebookPocketBlue
   - NotebookPocketBrown
   - NotebookPocketGreen

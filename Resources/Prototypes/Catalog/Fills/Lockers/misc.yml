@@ -146,6 +146,7 @@
     - id: ToolboxSyndicateFilled
     # Begin Box Change - Add Syndicate notebooks to maints loot
     # Rolls alongside the balloon so as not to reduce the chances of finding more functional items
+    #- id: BalloonSyn
     - !type:GroupSelector
       children:
         - id: NotebookSpiralCybersun
