@@ -1,0 +1,66 @@
+
+
+- type: entity
+  parent: BaseItem
+  id: DigiboardMassMedia
+  name: news manager digi-board
+  description: Write your message to the world! Now portable!
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Specific/Service/reporter_digiboard.rsi
+      layers:
+        - state: digiboard-off
+        - state: digiboard-on
+          map: [ "enum.ToggleableVisuals.Layer" ]
+          visible: false
+          shader: unshaded
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
+            True: { visible: true }
+            False: { visible: false }
+    - type: ItemToggle
+      onActivate: false
+      onUse: false
+      predictable: false
+      soundActivate:
+        collection: Keyboard
+      soundDeactivate:
+        path: /Audio/Machines/button.ogg
+    # Start Box Change - Remove battery requirement
+    #- type: ContainerContainer
+    #  containers: 
+    #    cell_slot: !type:ContainerSlot
+    #- type: PowerCellSlot
+    #  cellSlotId: cell_slot
+    # End Box Change
+    - type: Clothing
+      slots: [belt]
+      quickEquip: false
+      sprite: _Starlight/Objects/Specific/Service/reporter_digiboard.rsi
+    # Start Box Change - Remove battery requirement
+    #- type: ItemSlots
+    #  slots:
+    #    cell_slot:
+    #      name: power-cell-slot-component-slot-name-default
+    #      startingItem: PowerCellMedium
+    #      whitelist:
+    #        tags:
+    #          - PowerCell
+    #          - PowerCellSmall
+    #- type: PowerCellDraw
+    #- type: ActivatableUIRequiresPowerCell
+    # End Box Change
+    - type: NewsWriter
+    - type: ActivatableUI
+      key: enum.NewsWriterUiKey.Key
+    - type: UserInterface
+      interfaces:
+          enum.NewsWriterUiKey.Key:
+            type: NewsWriterBoundUserInterface
+    # Start Box Change - Steal target
+    - type: StealTarget
+      stealGroup: DigiboardMassMedia
+    # End Box Change

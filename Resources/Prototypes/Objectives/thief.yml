@@ -319,6 +319,20 @@
   - type: Objective
     difficulty: 0.4
 
+# Start Box Change - Add news digi-board steal objective
+- type: entity
+  parent: BaseThiefStealObjective
+  id: DigiboardMassMediaStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ Reporter ]
+  - type: StealCondition
+    verifyMapExistence: true
+    stealGroup: DigiboardMassMedia
+  - type: Objective
+    difficulty: 0.8
+# End Box Change    
+
 - type: entity                                      #Other subgroup
   parent: BaseThiefStealObjective
   id: ClothingNeckGoldmedalStealObjective
