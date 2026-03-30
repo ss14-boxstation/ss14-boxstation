@@ -22,6 +22,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Shared.Traits.Assorted; // Box Change - For blood deficiency
 
 namespace Content.Shared.Body.Systems;
 
@@ -54,6 +55,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         SubscribeLocalEvent<BloodstreamComponent, ApplyMetabolicMultiplierEvent>(OnApplyMetabolicMultiplier);
         SubscribeLocalEvent<BloodstreamComponent, RejuvenateEvent>(OnRejuvenate);
         SubscribeLocalEvent<BloodstreamComponent, MetabolismExclusionEvent>(OnMetabolismExclusion);
+        SubscribeLocalEvent<BloodDeficiencyComponent, NaturalBloodRegenerationEvent>(OnNaturalBloodRegeneration); // Box Change: Event subscription for blood deficiency
     }
 
     public override void Update(float frameTime)
@@ -76,7 +78,11 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             // Blood level regulation. Must be alive.
             if (!_mobStateSystem.IsDead(uid))
             {
-                TryRegulateBloodLevel(uid, bloodstream.BloodRefreshAmount);
+                //Start Box Change - Event for blood deficiency traits
+                var ev = new NaturalBloodRegenerationEvent(bloodstream.BloodRefreshAmount, 1.0f); //Raise event before natural blood regen tick, for anything that might want to modify it
+                RaiseLocalEvent(uid, ref ev);
+                TryRegulateBloodLevel(uid, ev.BloodRefreshAmount, ev.BloodReferenceLevel);
+                //End Box Change
 
                 TickBleed((uid, bloodstream));
 
@@ -290,6 +296,19 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         foreach (var (reagent, _) in ent.Comp.BloodReferenceSolution)
         {
             args.Reagents.Add(reagent);
+        }
+    }
+
+    /// Box Change: Modify blood regen amount for blood deficiency traits
+    private void OnNaturalBloodRegeneration(Entity<BloodDeficiencyComponent> ent, ref NaturalBloodRegenerationEvent args)
+    {
+        if (ent.Comp.BloodRegenAmount != 1.0f) // Don't mess with the input values unless the comp has been changed from default settings
+        {
+            args.BloodRefreshAmount = ent.Comp.BloodRegenAmount;
+        }
+        if (ent.Comp.BloodLevelTarget != 1.0f)
+        {
+            args.BloodReferenceLevel = ent.Comp.BloodLevelTarget;
         }
     }
 
