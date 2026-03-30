@@ -61,6 +61,8 @@
       enum.GeneralStationRecordConsoleKey.Key:
       # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -73,8 +75,12 @@
         toggleAction: ActionAGhostShowCargo
       enum.CrewMonitoringUIKey.Key:
         toggleAction: ActionAGhostShowCrewMonitoring
-      enum.GeneralStationRecordConsoleKey.Key:
-        toggleAction: ActionAGhostShowStationRecords
+      #Start Box/CD Change - Disable wizden records, add CD records
+      #enum.GeneralStationRecordConsoleKey.Key:
+      #  toggleAction: ActionAGhostShowStationRecords
+      enum.CharacterRecordConsoleKey.Key:
+        toggleAction: ActionAGhostShowCharacterRecords
+      # End Box/CD Change
   - type: SolarControlConsole # look ma i AM the computer!
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
@@ -107,6 +113,10 @@
     templateId: aghost
   - type: Loadout
     prototypes: [ MobAghostGear ]
+  - type: CharacterRecordConsole
+    consoleType: Admin
+    # Needed for security records console functionality
+  - type: CriminalRecordsConsole
   - type: BypassInteractionChecks
   - type: ExplosionResistance
     damageCoefficient: 0
@@ -195,3 +205,19 @@
     priority: -7
   - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.GeneralStationRecordConsoleKey.Key }
+
+# Begin Box/CD Change - CD Records button
+- type: entity
+  id: ActionAGhostShowCharacterRecords
+  name: Character Records Interface
+  description: View all of the character records
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
+    iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
+    keywords: [ "AI", "console", "interface" ]
+    priority: -10
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
+# End Box/CD Change

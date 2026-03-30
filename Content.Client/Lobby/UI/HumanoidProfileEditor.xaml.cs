@@ -1,6 +1,8 @@
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Client._CD.Humanoid;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -34,6 +36,10 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+
+// CD: Records editor imports
+using Content.Client._CD.Records.UI;
+using Content.Shared._CD.Records;
 
 namespace Content.Client.Lobby.UI
 {
@@ -102,6 +108,8 @@ namespace Content.Client.Lobby.UI
         private ColorSelectorSliders _rgbSkinColorSelector;
 
         private bool _isDirty;
+        // CD: Record editor
+        private readonly RecordEditorGui _recordsTab;
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
@@ -425,6 +433,13 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
+            #region CosmaticRecords
+
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords);
+            TabContainer.AddChild(_recordsTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+
+            #endregion CosmaticRecords
             RefreshFlavorText();
 
             #region Dummy
@@ -776,6 +791,9 @@ namespace Content.Client.Lobby.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
+            // CD: our controls
+            _recordsTab.Update(profile);
+
 
             RefreshAntags();
             RefreshJobs();
@@ -1073,6 +1091,14 @@ namespace Content.Client.Lobby.UI
             UpdateJobPriorities();
         }
 
+        // CD: Records editor
+        private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
+        {
+            if (Profile is null)
+                return;
+            Profile = Profile.WithCDCharacterRecords(records);
+            IsDirty = true;
+        }
         private void OnFlavorTextChange(string content)
         {
             if (Profile is null)
@@ -1516,6 +1542,9 @@ namespace Content.Client.Lobby.UI
             var name = HumanoidCharacterProfile.GetName(Profile.Species, Profile.Gender);
             SetName(name);
             UpdateNameEdit();
+
+            // CD: Update record editor
+            _recordsTab.Update(Profile);
         }
 
         private async void ExportImage()
