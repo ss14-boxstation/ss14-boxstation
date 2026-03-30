@@ -1,8 +1,8 @@
-using System.Globalization;
+using System.Globalization; // Box Change - For CD records
 using System.IO;
 using System.Linq;
 using System.Numerics;
-using Content.Client._CD.Humanoid;
+using Content.Client._CD.Humanoid; // Box Change - For CD records
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -37,9 +37,10 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
 
-// CD: Records editor imports
+// Start Box Change - CD: Records editor imports
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
+//End Box Change
 
 namespace Content.Client.Lobby.UI
 {
@@ -108,8 +109,8 @@ namespace Content.Client.Lobby.UI
         private ColorSelectorSliders _rgbSkinColorSelector;
 
         private bool _isDirty;
-        // CD: Record editor
-        private readonly RecordEditorGui _recordsTab;
+
+        private readonly RecordEditorGui _recordsTab; // Box Change - For CD records
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
@@ -433,6 +434,7 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
+            // Start Box Change: CD records
             #region CosmaticRecords
 
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
@@ -440,6 +442,8 @@ namespace Content.Client.Lobby.UI
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
             #endregion CosmaticRecords
+            //End Box Change
+
             RefreshFlavorText();
 
             #region Dummy
@@ -791,8 +795,8 @@ namespace Content.Client.Lobby.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
-            // CD: our controls
-            _recordsTab.Update(profile);
+
+            _recordsTab.Update(profile); //Box Change: CD records
 
 
             RefreshAntags();
@@ -1091,7 +1095,7 @@ namespace Content.Client.Lobby.UI
             UpdateJobPriorities();
         }
 
-        // CD: Records editor
+        // Start Box Change - CD: Records editor
         private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
         {
             if (Profile is null)
@@ -1099,6 +1103,8 @@ namespace Content.Client.Lobby.UI
             Profile = Profile.WithCDCharacterRecords(records);
             IsDirty = true;
         }
+        //End Box Change
+
         private void OnFlavorTextChange(string content)
         {
             if (Profile is null)
@@ -1543,8 +1549,7 @@ namespace Content.Client.Lobby.UI
             SetName(name);
             UpdateNameEdit();
 
-            // CD: Update record editor
-            _recordsTab.Update(Profile);
+            _recordsTab.Update(Profile); // Box Change - Update CD record editor
         }
 
         private async void ExportImage()

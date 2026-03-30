@@ -126,9 +126,10 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
+        // Start Box Change - CD records
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
-
+        // End Box Change
 
 
         public HumanoidCharacterProfile(
@@ -450,10 +451,12 @@ namespace Content.Shared.Preferences
             };
         }
 
+        //Start Box Change - CD records
         public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
         {
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
         }
+        //End Box Change
 
         public HumanoidCharacterProfile WithoutTraitPreference(ProtoId<TraitPrototype> traitId, IPrototypeManager protoManager)
         {
@@ -489,7 +492,8 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
-            if (CDCharacterRecords != null && other.CDCharacterRecords != null &&
+            
+            if (CDCharacterRecords != null && other.CDCharacterRecords != null && //Box Change - CD Records
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }

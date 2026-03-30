@@ -60,6 +60,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
                 RaiseLocalEvent(ent, new CharacterRecordsModifiedEvent());
             });
         });
+        // End CD
     }
 
     private void UpdateUserInterface<T>(Entity<CriminalRecordsConsoleComponent> ent, ref T args)

@@ -23,15 +23,18 @@ public static class CDModel
         public int ProfileId { get; set; }
         public Profile Profile { get; set; } = null!;
 
-        //public float Height { get; set; } = 1f;
+        // Box Change - Remove height functionality
+        //public float Height { get; set; } = 1f; 
 
         [Column("character_records", TypeName = "jsonb")]
         public JsonDocument? CharacterRecords { get; set; }
 
         public List<CharacterRecordEntry> CharacterRecordEntries { get; set; } = new();
 
+        // Box Change - Remove custom species name functionality
         //public string? CustomSpeciesName { get; set; } = null;
 
+        // Box Change - Remove allergy functionality
         //public List<CharacterAllergy> CharacterAllergies { get; set; } = new();
     }
 
@@ -40,6 +43,7 @@ public static class CDModel
          Medical = 0, Security = 1, Employment = 2, Admin = 3,
     }
 
+    // Box Change - Remove allergy functionality
     /*[Table("cd_character_allergies")]
     [Index(nameof(CDProfileId), nameof(Allergen))]
     [PrimaryKey(nameof(CDProfileId), nameof(Allergen))]
@@ -54,7 +58,7 @@ public static class CDModel
 
         public CDProfile CDProfile { get; set; } = null!;
     }*/
-   
+
     [Table("cd_character_record_entries"), Index(nameof(Id))]
     public sealed class CharacterRecordEntry
     {
