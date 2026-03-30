@@ -2,5 +2,5 @@
   id: DigiboardMassMedia
   name: steal-target-groups-reporter-digiboard
   sprite:
-    sprite: _Starlight/Objects/Specific/Service/reporter_digiboard.rsi
+    sprite: _Box/Objects/Specific/Service/reporter_digiboard.rsi
     state: digiboard-off
