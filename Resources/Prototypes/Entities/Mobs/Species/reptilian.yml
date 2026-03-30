@@ -99,6 +99,7 @@
           32:
             sprite: Mobs/Species/Reptilian/displacement.rsi
             state: mask
+  - type: Carriable # Box Change - Carrying system from nyanotrasen.
 
 - type: entity
   parent: BaseSpeciesDummy

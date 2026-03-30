@@ -134,6 +134,7 @@
   - type: WeldingHealable
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
+  - type: Carriable # Box Change - Carrying system from Nyanotrasen
 
 - type: entity
   save: false

@@ -114,6 +114,7 @@
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
   - type: Rootable
+  - type: Carriable # Box Change - Carrying system from nyanotrasen.
 
 - type: entity
   parent: BaseSpeciesDummy
