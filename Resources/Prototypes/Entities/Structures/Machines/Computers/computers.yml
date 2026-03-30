@@ -430,8 +430,10 @@
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerStationRecords
+  # Box Change - Name/description change for CD records system
   name: employment records computer
   description: This can be used to check employment records.
+  # End Box Change
   components:
   # BEGIN CD
   # Wizden UI
