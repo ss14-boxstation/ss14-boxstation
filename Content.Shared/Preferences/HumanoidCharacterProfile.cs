@@ -493,8 +493,8 @@ namespace Content.Shared.Preferences
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
             
-            if (CDCharacterRecords != null && other.CDCharacterRecords != null && //Box Change - CD Records
-                !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
+            if (CDCharacterRecords != null && other.CDCharacterRecords != null && 
+                !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; //Box Change - CD Records
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
