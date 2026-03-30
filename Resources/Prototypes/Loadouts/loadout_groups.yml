@@ -11,14 +11,16 @@
   - CardBoxBlack # Harmony Change: Playing Card Port
   - PlushieLizard
   - PlushieSpaceLizard
-  # Start Box Change - More Plushies
+  # Start Box Change - More Plushies pt 1
   - PlushieArachind
   - PlushieDiona
   - PlushieMoth
   - PlushieSlime
+  # End Box Change
   - PlushieVox # Harmony
-  - PlushieVulp
+  - PlushieVulp # Box Change - More Plushies
   - PlushieAvali # Harmony Change: Umbra ported plushie
+  # Start Box Change - More Plushies pt 2
   - PlushieHuman
   - PlushieSharkBlue
   - PlushieSharkPink
