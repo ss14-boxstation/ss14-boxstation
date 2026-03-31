@@ -704,3 +704,12 @@
   id: 80
   time: '2026-03-31T02:40:32.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/119
+- author: Dizzy-Eevee
+  changes:
+  - message: Added more options for plushies as trinkets.
+    type: Add
+  - message: Plushie trinkets are now contained within a collapsible group.
+    type: Tweak
+  id: 81
+  time: '2026-03-31T03:08:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/120
