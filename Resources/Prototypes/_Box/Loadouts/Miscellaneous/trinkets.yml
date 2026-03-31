@@ -112,7 +112,7 @@
 
 - type: loadout
   id: ClothingNeckScarfStripedNonBinary
-  storage:  
+  storage:
     back:
     - ClothingNeckScarfStripedNonBinary
   groupBy: "PrideScarf"
