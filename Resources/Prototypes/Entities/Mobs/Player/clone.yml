@@ -64,10 +64,7 @@
   - IlleismAccent
   - Speech # For raisedBy traits
   # Hamrony addons end
-  # Start Box Change - Add blood deficiency traits
-  - BloodDeficiency
-  - BloodDeficiencyMinor
-  # End Box Change
+  - BloodDeficiency # Box Change - For blood deficiency traits
 
 # for job-specific traits etc.
 - type: cloningSettings
