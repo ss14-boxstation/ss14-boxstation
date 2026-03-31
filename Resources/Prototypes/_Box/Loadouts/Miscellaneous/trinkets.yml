@@ -130,3 +130,15 @@
     back:
     - ClothingNeckScarfStripedTrans
   groupBy: "PrideScarf"
+  
+- type: loadout
+  id: HandheldStationMap
+  storage:
+    back:
+    - HandheldStationMap
+
+- type: loadout
+  id: WhiteCane
+  storage:
+    back:
+    - WhiteCane

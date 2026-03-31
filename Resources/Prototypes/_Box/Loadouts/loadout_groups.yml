@@ -26,6 +26,22 @@
   - ClothingNeckScarfStripedNonBinary
   - ClothingNeckScarfStripedRainbow
   - ClothingNeckScarfStripedTrans
+  
+- type: loadoutGroup
+  id: Accessibility
+  name: loadout-group-accessibility
+  minLimit: 0
+  maxLimit: 4
+  loadouts:
+  - AACTablet
+  - HandheldStationMap
+  - OffsetCane
+  - OffsetCaneWood
+  - OffsetCaneClown
+  - OffsetCaneMime
+  - OffsetCaneNT
+  - Cane
+  - WhiteCane
 
 # Jobs
 - type: loadoutGroup
