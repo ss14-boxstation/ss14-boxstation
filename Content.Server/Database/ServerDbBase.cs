@@ -23,9 +23,10 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-// CD: imports
+// Start Box Change - CD: imports
 using Content.Server._CD.Records;
 using Content.Shared._CD.Records;
+// End Box Change
 
 namespace Content.Server.Database
 {
@@ -52,11 +53,11 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
-                // CD: Store CD info
+                // Start Box Change - CD: Store CD info
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.CDProfile)
                     .ThenInclude(cd => cd != null ? cd.CharacterRecordEntries : null)
-                // END CD
+                // End Box Change
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -245,11 +246,11 @@ namespace Content.Server.Database
                 }
             }
 
-            // CD: get character records or create default records
+            // Start Box Change - CD: get character records or create default records
             var cdRecords = profile.CDProfile?.CharacterRecords != null
                 ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
                 : PlayerProvidedCharacterRecords.DefaultRecords();
-            // END CD
+            // End Box Change
 
             var loadouts = new Dictionary<string, RoleLoadout>();
 
@@ -299,7 +300,7 @@ namespace Content.Server.Database
                 traits.ToHashSet(),
                 loadouts,
                 cdRecords
-            );
+            ); // Box Change - Added cdRecords
         }
 
         private static Profile ConvertProfiles(HumanoidCharacterProfile humanoid, int slot, Profile? profile = null)
@@ -348,7 +349,7 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait {TraitName = t})
             );
-            // CD: CD Character Data
+            // Start Box Change - CD: CD Character Data
             profile.CDProfile ??= new CDModel.CDProfile();
             // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
             profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
@@ -357,7 +358,7 @@ namespace Content.Server.Database
                 profile.CDProfile.CharacterRecordEntries.Clear();
                 profile.CDProfile.CharacterRecordEntries.AddRange(RecordsSerialization.GetEntries(humanoid.CDCharacterRecords));
             }
-            // END CD
+            // End Box Change
 
             profile.Loadouts.Clear();
 

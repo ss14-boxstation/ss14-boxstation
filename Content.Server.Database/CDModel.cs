@@ -43,7 +43,7 @@ public static class CDModel
          Medical = 0, Security = 1, Employment = 2, Admin = 3,
     }
 
-    // Box Change - Remove allergy functionality
+    // Start Box Change - Remove allergy functionality
     /*[Table("cd_character_allergies")]
     [Index(nameof(CDProfileId), nameof(Allergen))]
     [PrimaryKey(nameof(CDProfileId), nameof(Allergen))]
@@ -58,6 +58,7 @@ public static class CDModel
 
         public CDProfile CDProfile { get; set; } = null!;
     }*/
+    // End Box Change
 
     [Table("cd_character_record_entries"), Index(nameof(Id))]
     public sealed class CharacterRecordEntry

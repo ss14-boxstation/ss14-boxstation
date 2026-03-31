@@ -34,7 +34,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
-// CD: imports
+// Box Change - CD: imports
 using Content.Server._CD.Records;
 
 namespace Content.Server.Administration.Systems;
@@ -59,7 +59,7 @@ public sealed class AdminSystem : EntitySystem
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
 
-    // CD: for erasing records on erase ban
+    // Box Change - CD: for erasing records on erase ban
     [Dependency] private readonly CharacterRecordsSystem _cdRecords = default!;
 
     private readonly Dictionary<NetUserId, PlayerInfo> _playerList = new();
@@ -456,7 +456,7 @@ public sealed class AdminSystem : EntitySystem
             if (_playerManager.TryGetSessionById(uid, out var session))
                 _gameTicker.SpawnObserver(session);
             
-            // CD: Erase Character Records on ban
+            // Box Change - CD: Erase Character Records on ban
             _cdRecords.DeleteAllRecords(entity);
 
             RaiseLocalEvent(ref eraseEvent);

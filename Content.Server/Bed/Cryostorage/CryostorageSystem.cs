@@ -28,9 +28,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 
-//Box Change - CD Imports
-using Content.Server._CD.Records;
-using Content.Shared.Mind;
+using Content.Server._CD.Records;// Box Change - CD Imports
 
 namespace Content.Server.Bed.Cryostorage;
 

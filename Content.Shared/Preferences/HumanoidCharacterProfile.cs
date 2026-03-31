@@ -16,8 +16,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
-// CD: Imports
-using Content.Shared._CD.Records;
+using Content.Shared._CD.Records; // Box Change - CD imports
 
 namespace Content.Shared.Preferences
 {
@@ -160,7 +159,7 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
-            CDCharacterRecords = cdCharacterRecords; //CD
+            CDCharacterRecords = cdCharacterRecords; // Box Change - Added CD records
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -273,7 +272,7 @@ namespace Content.Shared.Preferences
                 Gender = gender,
                 Species = species,
                 Appearance = HumanoidCharacterAppearance.Random(species, sex),
-                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords(), // CD: Fix records on the RNG development characters
+                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords(), // Box Change - CD: Fix records on the RNG development characters
             };
         }
 

@@ -797,7 +797,6 @@ namespace Content.Client.Lobby.UI
 
             _recordsTab.Update(profile); //Box Change: CD records
 
-
             RefreshAntags();
             RefreshJobs();
             RefreshLoadouts();
