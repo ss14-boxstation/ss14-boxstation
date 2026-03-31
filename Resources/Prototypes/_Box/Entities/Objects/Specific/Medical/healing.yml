@@ -223,3 +223,62 @@
   components:
   - type: Stack
     count: 1
+
+# Copy of the normal iron pill canister, with a different name so that it's differentiable in loadouts.
+- type: entity
+  name: iron supplements
+  parent: PillCanister
+  id: LoadoutPillCanisterIron
+  suffix: Iron 10u, 5
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillIron
+        amount: 5
+
+# Copy of the normal copper pill canister, with a different name so that it's differentiable in loadouts.
+- type: entity
+  name: copper suppplements
+  parent: PillCanister
+  id: LoadoutPillCanisterCopper
+  suffix: Copper 10u, 5
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillCopper
+        amount: 5
+
+- type: entity
+  name: pill
+  suffix: Industrial Lubricant 5u
+  parent: Pill
+  id: PillIndustrialLubricant
+  components:
+  - type: Pill
+    pillType: 16
+  - type: Sprite
+    state: pill11
+  - type: Label
+    currentLabel: industrial lubricant 5u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: IndustrialLubricant
+          Quantity: 5
+
+- type: entity
+  name: industrial lubricant capsules
+  description: A canister of lubricant capsules, intended to be administered orally for convenience.
+  parent: PillCanister
+  id: LoadoutPillCanisterIndustrialLubricant
+  suffix: Industrial Lubricant 5u, 5
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: PillIndustrialLubricant
+        amount: 4 # One less than the iron/copper pills, since IPCs get a free oil pack in their survival box that restores 30u of oil.

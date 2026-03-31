@@ -3,9 +3,9 @@ using Content.Shared.FixedPoint;
 namespace Content.Shared.Body.Events;
 
 /// <summary>
-/// Raised on an entity before they bleed to modify the amount.
+/// Raised on an entity before they naturally regenerate blood to modify the amount.
 /// </summary>
-/// <param name="BleedAmount">The amount of blood the entity will lose.</param>
-/// <param name="BleedReductionAmount">The amount of bleed reduction that will happen.</param>
+/// <param name="BloodRefreshAmount">The amount of blood the entity will gain or lose.</param>
+/// <param name="BloodReferenceLevel">The target quantity of blood in the entities bloodstream, as a multiplier of their max blood capacity..</param>
 [ByRefEvent]
 public record struct NaturalBloodRegenerationEvent(FixedPoint2 BloodRefreshAmount, float BloodReferenceLevel);

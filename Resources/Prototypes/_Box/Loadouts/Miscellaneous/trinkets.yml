@@ -247,3 +247,24 @@
   storage:
     back:
     - WhiteCane
+
+- type: loadout
+  id: LoadoutPillCanisterIron
+  storage:
+    back:
+    - LoadoutPillCanisterIron
+  groupBy: "BloodLossPills"
+
+- type: loadout
+  id: LoadoutPillCanisterCopper
+  storage:
+    back:
+    - LoadoutPillCanisterCopper
+  groupBy: "BloodLossPills"
+
+- type: loadout
+  id: LoadoutPillCanisterIndustrialLubricant
+  storage:
+    back:
+    - LoadoutPillCanisterIndustrialLubricant
+  groupBy: "BloodLossPills"

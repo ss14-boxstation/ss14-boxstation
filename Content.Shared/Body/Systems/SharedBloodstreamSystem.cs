@@ -79,6 +79,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             if (!_mobStateSystem.IsDead(uid))
             {
                 //Start Box Change - Event for blood deficiency traits
+                //TryRegulateBloodLevel(uid, bloodstream.BloodRefreshAmount);
                 var ev = new NaturalBloodRegenerationEvent(bloodstream.BloodRefreshAmount, 1.0f); //Raise event before natural blood regen tick, for anything that might want to modify it
                 RaiseLocalEvent(uid, ref ev);
                 TryRegulateBloodLevel(uid, ev.BloodRefreshAmount, ev.BloodReferenceLevel);
@@ -299,7 +300,12 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         }
     }
 
-    /// Box Change: Modify blood regen amount for blood deficiency traits
+    // Start Box Change: Blood deficiency value modifications
+    /// <summary>
+    /// Modify blood regen amount for blood deficiency traits
+    /// </summary>
+    /// <param name="ent">Component to reference.</param>
+    /// <param name="args">Event to modify.</param>
     private void OnNaturalBloodRegeneration(Entity<BloodDeficiencyComponent> ent, ref NaturalBloodRegenerationEvent args)
     {
         if (ent.Comp.BloodRegenAmount != 1.0f) // Don't mess with the input values unless the comp has been changed from default settings
@@ -311,6 +317,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             args.BloodReferenceLevel = ent.Comp.BloodLevelTarget;
         }
     }
+    //End Box Changes
 
     /// <summary>
     /// This returns the minimum amount of *usable* blood.
