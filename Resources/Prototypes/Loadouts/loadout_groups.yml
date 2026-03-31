@@ -95,12 +95,14 @@
   - ClothingNeckLanyard
   - HarmonicaInstrument
   # End harmony change - Server pins & neck slot items.
-  - OffsetCane
-  - OffsetCaneWood
-  - OffsetCaneClown
-  - OffsetCaneMime
-  - OffsetCaneNT
-  - Cane
+  # Start Box Change - Canes moved to accessibility tab
+  #- OffsetCane
+  #- OffsetCaneWood
+  #- OffsetCaneClown
+  #- OffsetCaneMime
+  #- OffsetCaneNT
+  #- Cane
+  # End Box Change
   - TowelColorWhite
   - TowelColorGray
   - TowelColorBlack
@@ -121,7 +123,6 @@
   - SilverRing # Harmony
   - GoldRing # Harmony
   - TapeRecorder # DeltaV / Harmony
-  - AACTablet # DeltaV / Box
 
 - type: loadoutGroup
   id: Glasses

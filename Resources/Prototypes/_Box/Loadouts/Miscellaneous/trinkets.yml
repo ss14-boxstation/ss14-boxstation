@@ -112,7 +112,7 @@
 
 - type: loadout
   id: ClothingNeckScarfStripedNonBinary
-  storage:
+  storage:  
     back:
     - ClothingNeckScarfStripedNonBinary
   groupBy: "PrideScarf"
@@ -235,3 +235,15 @@
     back:
     - PlushieSnake
   groupBy: "Plushie"
+  
+- type: loadout
+  id: HandheldStationMap
+  storage:
+    back:
+    - HandheldStationMap
+
+- type: loadout
+  id: WhiteCane
+  storage:
+    back:
+    - WhiteCane
