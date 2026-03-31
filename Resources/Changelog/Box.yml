@@ -694,3 +694,13 @@
   id: 79
   time: '2026-03-31T02:38:13.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/125
+- author: Dizzy-Eevee
+  changes:
+  - message: Added an Accessibility tab to loadouts, containing some items useful
+      for both IC and OOC accessibility
+    type: Add
+  - message: Canes and the AAC tablet have been moved from Trinkets to Accessibility
+    type: Tweak
+  id: 80
+  time: '2026-03-31T02:40:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/119
