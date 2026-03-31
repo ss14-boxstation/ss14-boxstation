@@ -1,0 +1,1 @@
+steal-target-groups-reporter-digiboard = news manager digiboard
