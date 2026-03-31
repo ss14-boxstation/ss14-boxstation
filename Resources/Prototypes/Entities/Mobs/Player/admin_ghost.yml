@@ -61,8 +61,10 @@
       enum.GeneralStationRecordConsoleKey.Key:
       # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
+      # Start Box Change - Add CD records key
       enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
+      # End Box Change
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -113,10 +115,12 @@
     templateId: aghost
   - type: Loadout
     prototypes: [ MobAghostGear ]
+    # Start Box Change - CD records console components
   - type: CharacterRecordConsole
     consoleType: Admin
     # Needed for security records console functionality
   - type: CriminalRecordsConsole
+    # End Box Change
   - type: BypassInteractionChecks
   - type: ExplosionResistance
     damageCoefficient: 0

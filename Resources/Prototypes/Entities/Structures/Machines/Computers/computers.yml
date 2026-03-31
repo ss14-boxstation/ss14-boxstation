@@ -360,7 +360,7 @@
     color: "#1f8c28"
   - type: Computer
     board: MedicalRecordsComputerCircuitboard
-    # BEGIN CD
+    # Begin Box Change: CD medical records console component and interface
   - type: CharacterRecordConsole
     consoleType: Medical
   - type: UserInterface
@@ -369,7 +369,7 @@
         type: CharacterRecordConsoleBoundUserInterface
   - type: ActivatableUI
     key: enum.CharacterRecordConsoleKey.Key
-  # END CD
+    # End Box Change
 
 
 
@@ -380,17 +380,17 @@
   description: This can be used to check criminal records. Only security can modify them.
   components:
   - type: CriminalRecordsConsole
-    # BEGIN CD
-    # We need to have both a CriminalRecordsConsole and CharacterRecordConsole
-    # component to be able to set wanted status.
   - type: UserInterface
     interfaces:
+      # Begin Box Change - Swap for CD character records
       enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
+      # End Box Change
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.CharacterRecordConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key # Box Change - Swap for CD character records
+  # Begin Box Change - Add CD record console component, comment out unused Wizden UI
   - type: CharacterRecordConsole
     consoleType: Security
   # Wizden UI
@@ -402,7 +402,7 @@
   #      type: WiresBoundUserInterface
   #- type: ActivatableUI
   #  key: enum.CriminalRecordsConsoleKey.Key
-  # END CD
+  # End Box Change
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -430,12 +430,12 @@
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerStationRecords
-  # Box Change - Name/description change for CD records system
+  # Begin Box Change - Name/description change for CD records system
   name: employment records computer
   description: This can be used to check employment records.
   # End Box Change
   components:
-  # BEGIN CD
+  # Begin Box Change - Comment out Wizden UI in favour of CD records
   # Wizden UI
   #- type: GeneralStationRecordConsole
   #- type: UserInterface
@@ -446,17 +446,21 @@
   #        type: WiresBoundUserInterface
   #- type: ActivatableUI
   #  key: enum.GeneralStationRecordConsoleKey.Key
+  # End Box Change
   - type: UserInterface
     interfaces:
+      # Begin Box Change - Swap for CD records
       enum.CharacterRecordConsoleKey.Key:
         type: CharacterRecordConsoleBoundUserInterface
+      # End Box Change
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.CharacterRecordConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key # Box Change - Swap for CD records
+  # Begin Box Change - Add CD records console component
   - type: CharacterRecordConsole
     consoleType: Employment
-  # END CD
+  # End Box Change
   - type: PointLight
     radius: 1.5
     energy: 4.0

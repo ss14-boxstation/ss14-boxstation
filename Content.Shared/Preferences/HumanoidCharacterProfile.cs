@@ -31,7 +31,6 @@ namespace Content.Shared.Preferences
         private static readonly Regex RestrictedNameRegex = new(@"[^A-Za-z0-9 '\-]");
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
-
         /// <summary>
         /// Job preferences for initial spawn.
         /// </summary>
@@ -146,7 +145,7 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            PlayerProvidedCharacterRecords? cdCharacterRecords)
+            PlayerProvidedCharacterRecords? cdCharacterRecords) //Box Change - Added CD records
         {
             Name = name;
             FlavorText = flavortext;
@@ -645,6 +644,7 @@ namespace Content.Shared.Preferences
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
 
+            //Start Box Change - Ensure CD records are valid
             if (CDCharacterRecords == null)
             {
                 CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords();
@@ -653,6 +653,7 @@ namespace Content.Shared.Preferences
             {
                 CDCharacterRecords!.EnsureValid();
             }
+            //End Box Change
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();

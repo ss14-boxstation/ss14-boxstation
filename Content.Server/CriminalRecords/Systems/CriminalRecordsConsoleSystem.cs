@@ -38,6 +38,9 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
 
     public override void Initialize()
     {
+        SubscribeLocalEvent<CriminalRecordsConsoleComponent, RecordModifiedEvent>(UpdateUserInterface);
+        SubscribeLocalEvent<CriminalRecordsConsoleComponent, AfterGeneralRecordCreatedEvent>(UpdateUserInterface);
+
         /* CD: We disable the wizden Criminal Records computer and reuse some of the Bui events
         Subs.BuiEvents<CriminalRecordsConsoleComponent>(CriminalRecordsConsoleKey.Key, subs =>
         {
