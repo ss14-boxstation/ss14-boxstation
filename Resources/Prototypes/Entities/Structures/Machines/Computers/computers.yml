@@ -360,6 +360,18 @@
     color: "#1f8c28"
   - type: Computer
     board: MedicalRecordsComputerCircuitboard
+    # Begin Box Change: CD medical records console component and interface
+  - type: CharacterRecordConsole
+    consoleType: Medical
+  - type: UserInterface
+    interfaces:
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
+    # End Box Change
+
+
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -370,12 +382,27 @@
   - type: CriminalRecordsConsole
   - type: UserInterface
     interfaces:
-      enum.CriminalRecordsConsoleKey.Key:
-        type: CriminalRecordsConsoleBoundUserInterface
+      # Begin Box Change - Swap for CD character records
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+      # End Box Change
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.CriminalRecordsConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key # Box Change - Swap for CD character records
+  # Begin Box Change - Add CD record console component, comment out unused Wizden UI
+  - type: CharacterRecordConsole
+    consoleType: Security
+  # Wizden UI
+  #- type: UserInterface
+  #  interfaces:
+  #    enum.CriminalRecordsConsoleKey.Key:
+  #      type: CriminalRecordsConsoleBoundUserInterface
+  #    enum.WiresUiKey.Key:
+  #      type: WiresBoundUserInterface
+  #- type: ActivatableUI
+  #  key: enum.CriminalRecordsConsoleKey.Key
+  # End Box Change
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -403,18 +430,37 @@
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerStationRecords
-  name: station records computer
-  description: This can be used to check station records.
+  # Begin Box Change - Name/description change for CD records system
+  name: employment records computer
+  description: This can be used to check employment records.
+  # End Box Change
   components:
-  - type: GeneralStationRecordConsole
+  # Begin Box Change - Comment out Wizden UI in favour of CD records
+  # Wizden UI
+  #- type: GeneralStationRecordConsole
+  #- type: UserInterface
+  #  interfaces:
+  #      enum.GeneralStationRecordConsoleKey.Key:
+  #        type: GeneralStationRecordConsoleBoundUserInterface
+  #      enum.WiresUiKey.Key:
+  #        type: WiresBoundUserInterface
+  #- type: ActivatableUI
+  #  key: enum.GeneralStationRecordConsoleKey.Key
+  # End Box Change
   - type: UserInterface
     interfaces:
-        enum.GeneralStationRecordConsoleKey.Key:
-          type: GeneralStationRecordConsoleBoundUserInterface
-        enum.WiresUiKey.Key:
-          type: WiresBoundUserInterface
+      # Begin Box Change - Swap for CD records
+      enum.CharacterRecordConsoleKey.Key:
+        type: CharacterRecordConsoleBoundUserInterface
+      # End Box Change
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
   - type: ActivatableUI
-    key: enum.GeneralStationRecordConsoleKey.Key
+    key: enum.CharacterRecordConsoleKey.Key # Box Change - Swap for CD records
+  # Begin Box Change - Add CD records console component
+  - type: CharacterRecordConsole
+    consoleType: Employment
+  # End Box Change
   - type: PointLight
     radius: 1.5
     energy: 4.0

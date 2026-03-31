@@ -28,6 +28,8 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 
+using Content.Server._CD.Records;// Box Change - CD Imports
+
 namespace Content.Server.Bed.Cryostorage;
 
 /// <inheritdoc/>
@@ -49,6 +51,7 @@ public sealed class CryostorageSystem : SharedCryostorageSystem
     [Dependency] private readonly StationRecordsSystem _stationRecords = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!; //Box Change - CD Records
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -203,7 +206,16 @@ public sealed class CryostorageSystem : SharedCryostorageSystem
             Log.Error("CryoSleep map was unexpectedly null");
             return;
         }
-
+        //Box Change - Delete CD Records
+        if (comp.Owner != null)
+        {
+            var body = comp.Owner;
+            if (TryComp<CharacterRecordKeyStorageComponent>(body, out var recordKey))
+            {
+                _characterRecords.DeleteAllRecords(body, recordKey);
+            }
+        }
+        //End Box Change
         if (!CryoSleepRejoiningEnabled || !comp.AllowReEnteringBody)
         {
             if (userId != null && Mind.TryGetMind(userId.Value, out var mind) &&
