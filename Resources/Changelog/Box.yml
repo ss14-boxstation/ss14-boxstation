@@ -728,3 +728,12 @@
   id: 83
   time: '2026-03-31T03:11:09.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/122
+- author: Dizzy-Eevee
+  changes:
+  - message: Ported the Cosmatic Drift records system. Medical records consoles are
+      now functional, and station/criminal records computers have been given expanded
+      functionality.
+    type: Add
+  id: 84
+  time: '2026-03-31T04:51:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/123
