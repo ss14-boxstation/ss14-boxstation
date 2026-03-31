@@ -1,3 +1,5 @@
+trait-category-blood-deficiency = Blood Deficiency
+
 trait-blood-deficiency-name = Blood Deficiency
 trait-blood-deficiency-desc = Your body loses more blood than it can produce. After about 18 minutes you will start taking damage from bloodloss, and will eventually die without medical intervention.
 
