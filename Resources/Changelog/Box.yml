@@ -704,3 +704,27 @@
   id: 80
   time: '2026-03-31T02:40:32.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/119
+- author: Dizzy-Eevee
+  changes:
+  - message: Added more options for plushies as trinkets.
+    type: Add
+  - message: Plushie trinkets are now contained within a collapsible group.
+    type: Tweak
+  id: 81
+  time: '2026-03-31T03:08:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/120
+- author: DrWhoFan13
+  changes:
+  - message: Genpop IDs now announce their expiration/ending of sentences
+    type: Add
+  id: 82
+  time: '2026-03-31T03:10:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/127
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the news manager digi-board, which all Reporters now spawn with.
+      It can potentially be a target for thieves, so be careful!
+    type: Add
+  id: 83
+  time: '2026-03-31T03:11:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/122

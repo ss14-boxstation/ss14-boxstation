@@ -91,6 +91,7 @@
     CargoShuttleCircuitboardStealObjective: 1
     ClothingEyesHudBeerStealObjective: 0.5              #srv, beer goggles less common cause its so easy
     BibleStealObjective: 1
+    DigiboardMassMediaStealObjective: 1 # Box Change - News manager digiboard steal objective
     ClothingNeckGoldmedalStealObjective: 1              #other
     ClothingNeckClownmedalStealObjective: 0.5
     ThiefAccessConfiguratorStealObjective: 1 # Harmony Objective

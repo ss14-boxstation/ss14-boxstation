@@ -1,0 +1,11 @@
+- type: entity
+  parent: BaseThiefStealObjective
+  id: DigiboardMassMediaStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ Reporter ]
+  - type: StealCondition
+    verifyMapExistence: true
+    stealGroup: DigiboardMassMedia
+  - type: Objective
+    difficulty: 0.8

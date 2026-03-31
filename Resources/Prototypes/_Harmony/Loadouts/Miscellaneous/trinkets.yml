@@ -79,6 +79,7 @@
   storage:
     back:
     - PlushieVox
+  groupBy: "Plushie" # Box Change - Collapse plushie trinkets
 
 - type: loadout
   id: SilverRing
