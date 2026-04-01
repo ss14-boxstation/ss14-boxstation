@@ -71,6 +71,10 @@
       Male: UnisexArachnid
       Female: UnisexArachnid
       Unsexed: UnisexArachnid
+  # Start Box/Imp Change
+  - type: BodyEmotes
+    soundsId: ArachnidBodyEmotes
+  # End Box/Imp Change
   - type: TypingIndicator
     proto: spider
   - type: Sprite # I'd prefer if these maps were better. Insert map pun here.

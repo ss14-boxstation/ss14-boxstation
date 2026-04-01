@@ -567,6 +567,12 @@
         volume: -6
     Salute:
       collection: Salutes
+    # Start Imp/Box Change
+    Blink: 
+      collection: Blinks 
+      params:
+        variation: 0.1
+    # End Imp/Box Change
 
 - type: emoteSounds
   id: DionaBodyEmotes
