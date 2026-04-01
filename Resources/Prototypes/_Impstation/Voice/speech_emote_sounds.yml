@@ -11,8 +11,6 @@
         volume: -6
     Salute:
       collection: Salutes
-    Crack:
-      collection: Cracks
     Blink:
       collection: SpiderBlinks
       params:
