@@ -30,7 +30,8 @@
   recipes:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  - ClothingShoesBootsSpeed
+  # Box Change - Kill speed boots with hammers
+  # - ClothingShoesBootsSpeed
   - ClothingShoesBootsJump
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
