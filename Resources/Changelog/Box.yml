@@ -737,3 +737,16 @@
   id: 84
   time: '2026-03-31T04:51:57.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/123
+- author: Dizzy-Eevee
+  changes:
+  - message: HoP's locker now contains a tape recorder box.
+    type: Tweak
+  - message: The PTech now offers additional paperwork supplies.
+    type: Tweak
+  - message: The CuraDrobe now offers some folders, paper, and envelopes.
+    type: Tweak
+  - message: The LawDrobe now offers some folders and a tape recorder box.
+    type: Tweak
+  id: 85
+  time: '2026-04-03T21:45:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/118
