@@ -15,9 +15,14 @@
     ClothingHeadsetService: 2
     ClothingNeckLawyerbadge: 2
     BriefcaseBrown: 2
+    # Start Box Change - Give Lawyer some folders for organizational purposes.
+    BoxFolderBlueEmpty: 2
+    BoxFolderRedEmpty: 2 # Blue and Red to continue the AA joke.
+    # End Box Change
     BookSpaceLaw: 3
     LuxuryPen: 2
     HandLabeler: 2
+    BoxTapeRecorder: 1 #Box Change - Lawyer doesn't have a closet prototype, so this is unfortunately the most elegant way to give them 
   contrabandInventory:
     ClothingOuterRobesJudge: 1
     ClothingHeadHatPwig: 1
