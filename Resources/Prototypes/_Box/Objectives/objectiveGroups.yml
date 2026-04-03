@@ -1,0 +1,6 @@
+- type: weightedRandom
+  id: TroublemakerObjectiveGroup
+  weights:
+    TroublemakerPlaceholder1: 1
+    TroublemakerPlaceholder2: 1
+    TroublemakerPlaceholder3: 1

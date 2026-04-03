@@ -1,4 +1,5 @@
 using Content.Server._Harmony.GameTicking.Rules.Components; // Harmony
+using Content.Server._Box.GameTicking.Rules.Components; // Box
 using Content.Server.Antag;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules.Components;
@@ -244,5 +245,21 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(conspirator);
         // Harmony end
+        // Box start - adds Troublemaker
+        var troublemaker = Loc.GetString("admin-verb-make-troublemaker");
+        Verb troublemakers = new()
+        {
+            Text = troublemaker,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Box/Interface/Misc/job_icons.rsi"), "Troublemaker"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<TroublemakerRuleComponent>(targetPlayer, "TroublemakerRule");
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", troublemaker, Loc.GetString("admin-verb-text-make-Troublemaker")),
+        };
+        args.Verbs.Add(troublemakers);
+        // Box End - adds Troublemaker
     }
 }

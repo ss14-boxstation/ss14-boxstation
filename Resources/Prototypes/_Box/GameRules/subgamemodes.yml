@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseGameRule
+  id: TroublemakerGameRule
+  components:
+  - type: GameRule
+    minPlayers: 10
+    cancelPresetOnTooFewPlayers: false
+  - type: TroublemakerRule
+  - type: AntagObjectives
+    objectives:
+    - MakeAngerKnownTroublemakerObjective
+  - type: AntagRandomObjectives
+    sets:
+    - groups: TroublemakerObjectiveGroup
+  - type: AntagSelection
+    agentName: troublemaker-round-end-agent-name
+    selectionTime: IntraPlayerSpawn
+    definitions:
+    - prefRoles: [ Troublemaker ]
+      max: 1
+      playerRatio: 1
+      briefing:
+        text: troublemaker-role-greeting
+        color: yellow
+        sound: /Audio/_Box/Ambience/Antag/Troublemaker_Briefing.ogg
+      components:
+      - type: TroublemakerRole
+      mindRoles:
+      - MindRoleTroublemaker

@@ -1,0 +1,56 @@
+- type: entity
+  parent: BaseObjective
+  abstract: true
+  id: BaseTroublemakerObjective
+  components:
+  - type: Objective
+    issuer: objective-issuer-troublemaker
+    difficulty: 0 #Roleplay guidelines, not tracked, so will keep it random
+  - type: RoleRequirement
+    roles:
+    - TroubleMakerRole
+  - type: NoCompletionObjective
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: MakeAngerKnownTroublemakerObjective
+  name: Make Your Anger Known
+  description: This station, these people, they just piss you off. Make your anger known. Do not be compliant.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Weapons/Melee/stunprod.rsi
+      state: stunprod_off
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerPlaceholder1
+  name: This is a placeholder
+  description: This is a placeholder
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Weapons/Melee/stunprod.rsi
+      state: stunprod_off
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerPlaceholder2
+  name: This is also placeholder
+  description: This is a placeholder
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Weapons/Melee/stunprod.rsi
+      state: stunprod_off
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerPlaceholder3
+  name: This is a real placeholder
+  description: This is a placeholder, would you believe it?
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Weapons/Melee/stunprod.rsi
+      state: stunprod_off

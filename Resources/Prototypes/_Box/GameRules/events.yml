@@ -11,3 +11,31 @@
     - id: RandomSentience
     - id: SolarFlare
     # - id: ClosetSkeleton
+
+# Hitman (for the admeme spawn)
+- type: entity
+  parent: BaseGameRule
+  id: TroublemakerRule
+  components:
+  - type: GameRule
+  - type: AntagObjectives
+    objectives:
+    - MakeAngerKnownTroublemakerObjective
+  - type: AntagRandomObjectives
+    sets:
+    - groups: TroublemakerObjectiveGroup
+      maxPicks: 3
+    maxDifficulty: 300
+  - type: AntagSelection
+    agentName: troublemaker-round-end-agent-name
+    definitions:
+    - min: 1
+      max: 2
+      pickPlayer: true
+      startingGear: TroublemakerGear
+      briefing:
+        text: troublemaker-role-greeting-human
+        color: orange
+        sound: /Audio/_Box/Ambience/Antag/Troublemaker_Briefing.ogg
+      mindRoles:
+      - MindRoleTroublemaker

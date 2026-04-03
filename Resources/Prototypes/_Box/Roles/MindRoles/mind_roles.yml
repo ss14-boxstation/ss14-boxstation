@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleTroublemaker
+  name: Troublemaker Role
+  components:
+  - type: MindRole
+    antagPrototype: Troublemaker
+    exclusiveAntag: false
+    roleType: SoloAntagonist
+    subtype: role-subtype-troublemaker
