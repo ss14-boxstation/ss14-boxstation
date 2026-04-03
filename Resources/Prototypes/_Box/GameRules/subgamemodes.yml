@@ -16,9 +16,6 @@
     agentName: troublemaker-round-end-agent-name
     selectionTime: IntraPlayerSpawn
     definitions:
-    - prefRoles: [ Troublemaker ]
-      max: 1
-      playerRatio: 1
       briefing:
         text: troublemaker-role-greeting
         color: yellow

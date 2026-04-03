@@ -5,6 +5,6 @@
   components:
   - type: MindRole
     antagPrototype: Troublemaker
-    exclusiveAntag: false
+    exclusiveAntag: true
     roleType: SoloAntagonist
     subtype: role-subtype-troublemaker

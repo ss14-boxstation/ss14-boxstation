@@ -12,7 +12,7 @@
     - id: SolarFlare
     # - id: ClosetSkeleton
 
-# Hitman (for the admeme spawn)
+# Troublemaker
 - type: entity
   parent: BaseGameRule
   id: TroublemakerRule
@@ -25,7 +25,6 @@
     sets:
     - groups: TroublemakerObjectiveGroup
       maxPicks: 3
-    maxDifficulty: 300
   - type: AntagSelection
     agentName: troublemaker-round-end-agent-name
     definitions:
