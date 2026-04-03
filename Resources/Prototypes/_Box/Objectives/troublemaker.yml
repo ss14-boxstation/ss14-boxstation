@@ -8,7 +8,7 @@
     difficulty: 0 #Roleplay guidelines, not tracked, so will keep it random
   - type: RoleRequirement
     roles:
-    - TroubleMakerRole
+    - TroublemakerRole
   - type: NoCompletionObjective
 
 - type: entity

@@ -35,6 +35,7 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultWizardRule = "Wizard";
     private static readonly EntProtoId DefaultBloodBrotherRule = "BloodBrothers"; // Harmony
     private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
+    private static readonly EntProtoId DefaultTroublemakerRule = "Troublemaker"; // Box
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
     // All antag verbs have names so invokeverb works.
@@ -254,7 +255,7 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Box/Interface/Misc/job_icons.rsi"), "Troublemaker"),
             Act = () =>
             {
-                _antag.ForceMakeAntag<TroublemakerRuleComponent>(targetPlayer, "TroublemakerRule");
+                _antag.ForceMakeAntag<TroublemakerRuleComponent>(targetPlayer, DefaultTroublemakerRule);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", troublemaker, Loc.GetString("admin-verb-text-make-Troublemaker")),

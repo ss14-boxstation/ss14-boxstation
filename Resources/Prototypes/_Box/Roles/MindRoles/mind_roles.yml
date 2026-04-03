@@ -8,3 +8,4 @@
     exclusiveAntag: true
     roleType: SoloAntagonist
     subtype: role-subtype-troublemaker
+  - type: TroublemakerRole
