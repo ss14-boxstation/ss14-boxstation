@@ -1,0 +1,15 @@
+- type: entity
+  id: TroublemakerSmugglingCase
+  name: undetermined smuggled satchel
+  description: Tools, trinkets, and gadgets you've brought with you to make your anger known.
+  parent: SatchelThief
+  components:
+  - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 2
+    toolName: troublemaker-window-title
+    toolDesc: troublemaker-window-description
+    possibleSets:
+    - TroublemakerSpaceAssholeKit
+    - TroublemakerPhantomThiefKit
+    - TroublemakerNetrunnerKit
+    spawnedStoragePrototype: ClothingBackpackSatchelSmugglerUnanchored

@@ -1,0 +1,49 @@
+- type: thiefBackpackSet
+  id: TroublemakerSpaceAssholeKit
+  name: troublemaker-spaceasshole-kit-name
+  description: troublemaker-spaceasshole-kit-description
+  sprite:
+    sprite: Objects/Weapons/Melee/sledgehammer.rsi
+    state: icon
+  content:
+  - ClothingOuterCoatSpaceAsshole
+  - ClothingEyesGlassesSunglasses
+  - Sledgehammer
+  - SeismicCharge
+  - SeismicCharge
+  - BlueprintSeismicCharge
+
+- type: thiefBackpackSet
+  id: TroublemakerPhantomThiefKit
+  name: troublemaker-phantomthief-kit-name
+  description: troublemaker-phantomthief-kit-description
+  sprite:
+    sprite: Objects/Weapons/Melee/throwing_knife.rsi
+    state: icon
+  content:
+  - WeaponPistolCobra
+  - ThrowingKnife
+  - ThrowingKnife
+  - ThrowingKnife
+  - SmokeGrenade
+  - ClusterBangFull
+  - ClothingOuterCoatGentle
+  - ClothingMaskNinja
+
+- type: thiefBackpackSet
+  id: TroublemakerNetrunnerKit
+  name: troublemaker-netrunner-kit-name
+  description: troublemaker-netrunner-kit-description
+  sprite:
+    sprite: Objects/Weapons/Melee/throwing_knife.rsi
+    state: icon
+  content:
+  - CameraBug
+  - AccessBreaker
+  - NetProbeCartridge
+  - ClothingOuterCoatJensen
+  - ClothingEyesGlassesJensen
+  - EmpGrenade
+  - EmpGrenade
+  - ClothingHandsGlovesColorYellow
+  - Multitool
