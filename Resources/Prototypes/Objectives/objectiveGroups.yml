@@ -82,6 +82,11 @@
     FlippoEngravedLighterStealObjective: 0.5
     ClothingHeadHatWardenStealObjective: 1
     WantedListCartridgeStealObjective: 1
+    # Start Box Change - Add briefcase objectives
+    BriefcaseHoPStealObjective: 1
+    BriefcaseDetectiveStealObjective: 1
+    BriefcaseLawyerStealObjective: 1
+    # End Box Change
     ClothingOuterHardsuitVoidParamedStealObjective: 1   #med
     MedicalTechFabCircuitboardStealObjective: 1
     CMOGogglesStealObjective: 1 # harmony change

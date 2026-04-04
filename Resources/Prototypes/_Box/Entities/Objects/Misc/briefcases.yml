@@ -1,0 +1,172 @@
+- type: entity
+  parent: BriefcaseBase
+  id: BriefcaseSecure
+  name: secure briefcase
+  description: A robust metal briefcase for storing important documents. Lock can be edited with an Access Configurator.
+  suffix: Box
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_secure.rsi
+    layers:
+      - state: icon
+        map: [ base ]
+      - state: empty  # When the briefcase is open, the lock layer doesn't show. This empty layer is here to be replaced with the unlocked light while the briefcase is open. 
+        map: [ lock ] # We could replace the whole sprite with a version that has the unlocked light, but then the light wouldn't be unshaded anymore, and it would look weird.
+      - state: locked
+        map: ["enum.LockVisualLayers.Lock"]
+        shader: unshaded
+    state: icon
+  - type: Item
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_secure.rsi
+  - type: Lock
+  - type: LockedStorage
+  - type: LockVisuals
+  - type: Appearance
+  - type: AccessReader
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12 # Same damage as a toolbox or a handheld artifact container
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg # It's metal.
+  - type: Storage
+    whitelist:
+      tags:
+      - Folder
+      - Document
+      - Paper
+      - Write
+      - Pen
+      - Book
+      components:
+      - TapeCassette
+      - TapeRecorder
+      - HandLabeler
+      - Stamp
+      - IdCard # I'm iffy on including these, since I'm slightly worried they might encourage hiding the spare Captain ID, but it's already against the rules and probably not much worse than Cap hiding it in their locker?
+      - Pda
+      - Body # Allows mobs with ItemComponent to be put inside. Lock Hamlet in your briefcase.
+  - type: ExplosionResistance
+    damageCoefficient: 0 # Completely explosion proof, so paper doesn't get turned to ash when you get grazed by an explosion.  Pretty much anything less than 100% resistance fails to accomplish this.
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        lock:
+          True: { state: unlocked, shader: unshaded } # While the briefcase is open, this replaces the unlocked light that normally doesn't render while it's open.
+          False: { state: empty }
+  - type: LockOnTrigger
+    keysIn: [ forcelock ]
+  - type: TriggerOnSimpleToolUsageSuccess # Allow the lock to be forced with a crowbar
+    keyOut: forcelock
+  - type: SimpleToolUsage
+    quality: Prying
+    doAfter: 25
+    usageVerb: verb-force-lock
+  - type: EmitSoundOnTrigger # Play a breaking sound if the lock is forced with a crowbar
+    sound:
+      collection: MetalBreak
+    keysIn: [ forcelock ]
+  - type: AddComponentsOnTrigger # Add examine text if the lock has been forced with a crowbar
+    keysIn: [ forcelock ]
+    components:
+      - type: SimpleExamineText
+        examineText: examine-text-lock-tampered
+
+# HoP variant, spawns in their locker, thief steal objective
+- type: entity
+  parent: BriefcaseSecure
+  id: BriefcaseHoP
+  name: head of personnel's briefcase
+  description: A robust metal briefcase for storing your most valued paperwork. Seems like it's been chewed on a bit.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_hop.rsi
+  - type: Item
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_hop.rsi
+  - type: AccessReader
+    access: [["HeadOfPersonnel"]]
+  - type: StealTarget
+    stealGroup: BriefcaseHoP
+      
+# Detective variant, spawns in their locker, thief steal objective
+- type: entity
+  parent: BriefcaseSecure
+  id: BriefcaseDetective
+  name: detective's briefcase
+  description: A robust metal briefcase with a leather exterior, for storing evidence. Seems to have blocked its fair share of bullets.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_detective.rsi
+  - type: Item
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_detective.rsi
+  - type: AccessReader
+    access: [["Detective"]]
+  - type: StealTarget
+    stealGroup: BriefcaseDetective
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+      params:
+        volume: -6 # Collision sounds are muffled by the leather
+  - type: MeleeWeapon
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
+      params:
+        volume: -6 # Collision sounds are muffled by the leather
+
+# Lawyer variant, spawns in hand, thief steal objective
+- type: entity
+  parent: BriefcaseSecure
+  id: BriefcaseLawyer
+  name: lawyer's briefcase
+  description: A robust metal briefcase for storing witness testimony. Smells like a stuffy courtroom.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_lawyer.rsi
+  - type: Item
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_lawyer.rsi
+  - type: AccessReader
+    access: [["Lawyer"]]
+  - type: StealTarget
+    stealGroup: BriefcaseLawyer
+
+# Special variant with larger storage and an expanded whitelist used for the sniper bundle. Upstreams have most Syndicate weapons coming in lockable weapon cases now, so this made sense thematically
+- type: entity
+  parent: BriefcaseSecure
+  suffix: Box, Hristov
+  id: BriefcaseSecureHristov
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+    whitelist:
+      tags:
+      - Folder
+      - Document
+      - Paper
+      - Write
+      - Pen
+      - Book
+      - HristovBundle # Tag applied to all items included in the sniper bundle, so they can be allowed by this storage's expanded whitelist
+      components:
+      - TapeCassette
+      - TapeRecorder
+      - HandLabeler
+      - Stamp
+      - IdCard
+      - Pda
+      - Body
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponSniperHristov
+        - id: MagazineBoxAntiMateriel
+        - id: ClothingNeckTieRed
+        - id: ClothingHandsGlovesLatex
+        - id: ClothingUniformJumpsuitSyndicateBusinessSuitHarmony # Harmony
+        - id: BarberScissors

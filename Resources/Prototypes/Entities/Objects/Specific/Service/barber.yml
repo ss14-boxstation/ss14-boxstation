@@ -31,3 +31,8 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 200
+  # Start Box Change - Tag for items included in the Hristov bundle, to be used for the briefcase's whitelist.
+  - type: Tag
+    tags:
+      - HristovBundle
+  # End Box Change

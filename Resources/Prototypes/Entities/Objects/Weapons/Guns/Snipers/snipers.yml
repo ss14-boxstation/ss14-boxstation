@@ -126,6 +126,11 @@
     pvsIncrease: 0.3
   - type: StaticPrice
     price: 3500
+  # Start Box Change - Tag for items included in the Hristov bundle, to be used for the briefcase's whitelist.
+  - type: Tag
+    tags:
+      - HristovBundle
+  # End Box Change
 
 - type: entity
   name: musket

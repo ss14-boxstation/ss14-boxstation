@@ -9,6 +9,7 @@
         id: Paper
         amount: 3
 
+# Box Change/Note - No longer used in the uplink, replaced by BriefcaseSecureHristov found at _Box\Entities\Objects\Misc\briefcases.yml
 - type: entity
   id: BriefcaseSyndieSniperBundleFilled
   parent: BriefcaseSyndie

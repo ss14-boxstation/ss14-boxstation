@@ -135,6 +135,7 @@
     - ElectronicsStatic
     - HarmonyCargoStatic # Harmony
     - HarmonyServiceStatic # Harmony
+    - BriefcaseSecureStatic # Box Change - Add secure briefcase recipe
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic

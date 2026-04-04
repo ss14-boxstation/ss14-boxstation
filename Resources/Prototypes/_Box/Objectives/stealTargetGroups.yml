@@ -4,3 +4,24 @@
   sprite:
     sprite: _Box/Objects/Specific/Service/reporter_digiboard.rsi
     state: digiboard-off
+    
+- type: stealTargetGroup
+  id: BriefcaseHoP
+  name: steal-target-groups-hop-briefcase
+  sprite:
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_hop.rsi
+    state: icon
+
+- type: stealTargetGroup
+  id: BriefcaseDetective
+  name: steal-target-groups-detective-briefcase
+  sprite:
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_detective.rsi
+    state: icon
+    
+- type: stealTargetGroup
+  id: BriefcaseLawyer
+  name: steal-target-groups-lawyer-briefcase
+  sprite:
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_lawyer.rsi
+    state: icon
