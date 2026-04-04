@@ -75,7 +75,7 @@
         examineText: examine-text-lock-tampered
   - type: TriggerOnLockToggle
     keyOut: lock
-  - type: ToggleComponentsOnTrigger
+  - type: ToggleComponentsOnTrigger # Toggle the SimpleToolUsage component off while the briefcase is unlocked, so you can't attempt to force the lock while it's already open
     keysIn: [ lock ]
     componentsAdded: true
     components:
