@@ -8,11 +8,11 @@
   - type: TroublemakerRule
   - type: AntagObjectives
     objectives:
-    - MakeAngerKnownTroublemakerObjective
+    - TroublemakerMakeAngerKnownObjective
   - type: AntagRandomObjectives
     sets:
     - groups: TroublemakerObjectiveGroup
-      maxPicks: 1
+      maxPicks: 6
     maxDifficulty: 100
   - type: AntagSelection
     agentName: troublemaker-round-end-agent-name

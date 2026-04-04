@@ -13,44 +13,82 @@
 
 - type: entity
   parent: BaseTroublemakerObjective
-  id: MakeAngerKnownTroublemakerObjective
+  id: TroublemakerMakeAngerKnownObjective
   name: Make Your Anger Known
-  description: This station, these people, they just piss you off. Make your anger known. Do not be compliant.
+  description: This workplace has wronged you. Settle the score wherever you can. Remember, you still need a job at the end of this.
   components:
   - type: Objective
     icon:
-      sprite: Objects/Weapons/Melee/stunprod.rsi
-      state: stunprod_off
+      sprite: Objects/Weapons/Melee/baseball_bat.rsi
+      state: icon
+
+# Departmental Grudges
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerMedicalGrudgeObjective
+  name: Medical Malpractise
+  description: On your last shift, medical botched your treatment. Show them that was a mistake.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Specific/Chemistry/syringe.rsi
+      state: syringe_base0
 
 - type: entity
   parent: BaseTroublemakerObjective
-  id: TroublemakerPlaceholder1
-  name: This is a placeholder
-  description: This is a placeholder
+  id: TroublemakerSupplyGrudgeObjective
+  name: Supply Issues
+  description: Cargo have misplaced your plushie order for the last time. Remind them of their logistical obligations. Painfully if needed.
   components:
   - type: Objective
     icon:
-      sprite: Objects/Weapons/Melee/stunprod.rsi
-      state: stunprod_off
+      sprite: Objects/Economy/cash.rsi
+      state: cash_1000
 
 - type: entity
   parent: BaseTroublemakerObjective
-  id: TroublemakerPlaceholder2
-  name: This is also placeholder
-  description: This is a placeholder
+  id: TroublemakerScienceGrudgeObjective
+  name: Anti-intellectualism
+  description: Holes in the station here, anomalies there, you've had enough of the flagrant lack of safety from Science. Make sure their "accidents" effect them too.
   components:
   - type: Objective
     icon:
-      sprite: Objects/Weapons/Melee/stunprod.rsi
-      state: stunprod_off
+      sprite: Objects/Specific/Research/researchdisk.rsi
+      state: icon
 
 - type: entity
   parent: BaseTroublemakerObjective
-  id: TroublemakerPlaceholder3
-  name: This is a real placeholder
-  description: This is a placeholder, would you believe it?
+  id: TroublemakerEngineeringGrudgeObjective
+  name: Blackout Rage
+  description: Constant blackouts, patchy repair jobs, and the only people around are too busy tinkering with the pipes to fix the hull. Make some new holes so they're forced to do their job for once.
   components:
   - type: Objective
     icon:
-      sprite: Objects/Weapons/Melee/stunprod.rsi
-      state: stunprod_off
+      sprite: Objects/Tools/wrench.rsi
+      state: icon
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerServiceGrudgeObjective
+  name: 1/5 Stars
+  description: Filthy corridors, the bartender's more interested in their gun than their drinks, the kitchen gave you food-poisoning, and why did we even HIRE that clown? Remind service they're here to serve.
+  components:
+  - type: Objective
+    icon:
+      sprite: Clothing/OuterClothing/Misc/apron.rsi
+      state: icon
+
+#Individual Grudges
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerIndividualGrudgeObjective
+  description: They've wronged you for the last time. Settle your grudge however you see fit, whatever that grudge may be.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/book.rsi
+      state: cover_old
+  - type: TargetObjective
+    title: troublemaker-objective-grudge-individual-title
+  - type: PickRandomPerson
+
