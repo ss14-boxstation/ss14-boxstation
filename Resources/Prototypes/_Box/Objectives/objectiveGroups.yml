@@ -1,6 +1,13 @@
 - type: weightedRandom
-  id: TroublemakerObjectiveGroup
+  id: TroublemakerDepartmentGrudgeObjectiveGroup
   weights:
-    TroublemakerPlaceholder1: 1
-    TroublemakerPlaceholder2: 1
-    TroublemakerPlaceholder3: 1
+    TroublemakerMedicalGrudgeObjective: 1
+    TroublemakerSupplyGrudgeObjective: 1
+    TroublemakerScienceGrudgeObjective: 1
+    TroublemakerEngineeringGrudgeObjective: 1
+    TroublemakerServiceGrudgeObjective: 1
+
+- type: weightedRandom
+  id: TroublemakerIndividualGrudgeObjectiveGroup
+  weights:
+    TroublemakerIndividualGrudgeObjective: 1

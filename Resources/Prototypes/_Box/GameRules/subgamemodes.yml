@@ -11,9 +11,11 @@
     - TroublemakerMakeAngerKnownObjective
   - type: AntagRandomObjectives
     sets:
-    - groups: TroublemakerObjectiveGroup
-      maxPicks: 6
-    maxDifficulty: 100
+    - groups: TroublemakerDepartmentGrudgeObjectiveGroup
+      maxPicks: 1
+    - groups: TroublemakerIndividualGrudgeObjectiveGroup
+      maxPicks: 1
+    maxDifficulty: 500
   - type: AntagSelection
     agentName: troublemaker-round-end-agent-name
     selectionTime: IntraPlayerSpawn
