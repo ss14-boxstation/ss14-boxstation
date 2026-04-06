@@ -56,12 +56,14 @@
 
 - type: loadout
   id: NotebookSpiralNanotrasen
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Command
-      time: 43200 #12 hrs
+  # Start Box Change - Remove time requirement
+  #effects:
+  #- !type:JobRequirementLoadoutEffect
+  #  requirement:
+  #    !type:DepartmentTimeRequirement
+  #    department: Command
+  #    time: 43200 #12 hrs
+  # End Box Change
   storage:
     back:
     - NotebookSpiralNanotrasen
