@@ -59,6 +59,8 @@
     icon:
       sprite: Objects/Specific/Research/researchdisk.rsi
       state: icon
+  - type: NotJobRequirement
+    jobs: [ Scientist ]
 
 - type: entity
   parent: BaseTroublemakerObjective
