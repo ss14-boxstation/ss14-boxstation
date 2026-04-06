@@ -2,8 +2,8 @@
   parent: BriefcaseBase
   id: BriefcaseSecure
   name: secure briefcase
-  description: A robust metal briefcase for storing important documents. Lock can be edited with an Access Configurator.
   suffix: Box
+  description: A robust metal briefcase for storing important documents. Lock can be edited with an Access Configurator.
   components:
   - type: Sprite
     sprite: _Box/Objects/Storage/Briefcases/briefcase_secure.rsi
@@ -45,8 +45,6 @@
       - TapeRecorder
       - HandLabeler
       - Stamp
-      - IdCard # I'm iffy on including these, since I'm slightly worried they might encourage hiding the spare Captain ID, but it's already against the rules and probably not much worse than Cap hiding it in their locker?
-      - Pda
       - Body # Allows mobs with ItemComponent to be put inside. Lock Hamlet in your briefcase.
   - type: ExplosionResistance
     damageCoefficient: 0 # Completely explosion proof, so paper doesn't get turned to ash when you get grazed by an explosion.  Pretty much anything less than 100% resistance fails to accomplish this.
@@ -81,7 +79,7 @@
     components:
       - type: SimpleToolUsage
         quality: Prying
-        doAfter: 25
+        doAfter: 15
         usageVerb: verb-force-lock
 
 # HoP variant, spawns in their locker, thief steal objective
@@ -145,8 +143,8 @@
 # Special variant with larger storage and an expanded whitelist used for the sniper bundle. Upstreams have most Syndicate weapons coming in lockable weapon cases now, so this made sense thematically
 - type: entity
   parent: BriefcaseSecure
+  id: BriefcaseSyndieSniperBundleFilled
   suffix: Box, Hristov
-  id: BriefcaseSecureHristov
   components:
   - type: Storage
     maxItemSize: Huge
@@ -166,8 +164,6 @@
       - TapeRecorder
       - HandLabeler
       - Stamp
-      - IdCard
-      - Pda
       - Body
   - type: EntityTableContainerFill
     containers:

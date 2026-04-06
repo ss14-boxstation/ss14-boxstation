@@ -9,28 +9,29 @@
         id: Paper
         amount: 3
 
-# Box Change/Note - No longer used in the uplink, replaced by BriefcaseSecureHristov found at _Box\Entities\Objects\Misc\briefcases.yml
-- type: entity
-  id: BriefcaseSyndieSniperBundleFilled
-  parent: BriefcaseSyndie
-  suffix: Syndicate, Sniper Bundle
-  components:
-  - type: Item
-    size: Ginormous
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,6,3
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: WeaponSniperHristov
-        - id: MagazineBoxAntiMateriel
-        - id: ClothingNeckTieRed
-        - id: ClothingHandsGlovesLatex
-        - id: ClothingUniformJumpsuitSyndicateBusinessSuitHarmony # Harmony
-        - id: BarberScissors
+# Start Box Change - Replaced by secure briefcase variant found at _Box\Entities\Objects\Misc\briefcases.yml
+#- type: entity
+#  id: BriefcaseSyndieSniperBundleFilled
+#  parent: BriefcaseSyndie
+#  suffix: Syndicate, Sniper Bundle
+#  components:
+#  - type: Item
+#    size: Ginormous
+#  - type: Storage
+#    maxItemSize: Huge
+#    grid:
+#    - 0,0,6,3
+#  - type: EntityTableContainerFill
+#    containers:
+#      storagebase: !type:AllSelector
+#        children:
+#        - id: WeaponSniperHristov
+#        - id: MagazineBoxAntiMateriel
+#        - id: ClothingNeckTieRed
+#        - id: ClothingHandsGlovesLatex
+#        - id: ClothingUniformJumpsuitSyndicateBusinessSuitHarmony # Harmony
+#        - id: BarberScissors
+# End Box Change
 
 - type: entity
   id: BriefcaseSyndieLobbyingBundleFilled
