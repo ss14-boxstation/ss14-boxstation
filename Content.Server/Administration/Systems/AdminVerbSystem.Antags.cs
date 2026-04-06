@@ -258,7 +258,7 @@ public sealed partial class AdminVerbSystem
                 _antag.ForceMakeAntag<TroublemakerRuleComponent>(targetPlayer, DefaultTroublemakerRule);
             },
             Impact = LogImpact.High,
-            Message = string.Join(": ", troublemaker, Loc.GetString("admin-verb-text-make-Troublemaker")),
+            Message = string.Join(": ", troublemaker, Loc.GetString("admin-verb-text-make-troublemaker")),
         };
         args.Verbs.Add(troublemakers);
         // Box End - adds Troublemaker
