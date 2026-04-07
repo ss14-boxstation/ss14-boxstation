@@ -96,7 +96,7 @@
   components:
   - type: Objective
     icon:
-      sprite: Objects/Misc/book.rsi
+      sprite: Objects/Misc/books.rsi
       state: cover_old
   - type: TargetObjective
     title: troublemaker-objective-grudge-individual-title

@@ -1,4 +1,14 @@
 - type: weightedRandom
+  id: TroublemakerDepartmentGrudgeObjectiveGroups
+  weights:
+    TroublemakerDepartmentGrudgeObjectiveGroup: 1
+
+- type: weightedRandom
+  id: TroublemakerIndividualGrudgeObjectiveGroups
+  weights:
+    TroublemakerIndividualGrudgeObjectiveGroup: 1
+
+- type: weightedRandom
   id: TroublemakerDepartmentGrudgeObjectiveGroup
   weights:
     TroublemakerMedicalGrudgeObjective: 1

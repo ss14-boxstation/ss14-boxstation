@@ -11,9 +11,9 @@
     - TroublemakerMakeAngerKnownObjective
   - type: AntagRandomObjectives
     sets:
-    - groups: TroublemakerDepartmentGrudgeObjectiveGroup
+    - groups: TroublemakerDepartmentGrudgeObjectiveGroups
       maxPicks: 1
-    - groups: TroublemakerIndividualGrudgeObjectiveGroup
+    - groups: TroublemakerIndividualGrudgeObjectiveGroups
       maxPicks: 1
     maxDifficulty: 500
   - type: AntagSelection
