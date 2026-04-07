@@ -71,6 +71,6 @@
       briefing:
         text: hitman-role-greeting-human
         color: yellow
-        sound: /Audio/_DV/Ambience/Antag/Hitman_briefing_Piano_Between.ogg
+        sound: /Audio/_DV/Ambience/Antag/hitman_briefing_piano_between.ogg
       mindRoles:
       - MindRoleHitman
