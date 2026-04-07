@@ -110,6 +110,7 @@
 #      - id: Poison
 #      - id: Drink
 # End harmony change
+  - type: Carriable # Box Change - Carrying system from Nyanotrasen
 
 - type: entity
   parent: BaseSpeciesDummy
