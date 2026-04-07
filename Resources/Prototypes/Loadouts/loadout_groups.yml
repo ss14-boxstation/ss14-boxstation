@@ -41,8 +41,24 @@
   - CigarCase
   - CigarGold
   - BoxFolderBaseThreePapers
+  # Start Box Change - More folders
+  - BoxFolderBlackThreePapers
+  - BoxFolderRedThreePapers
+  - BoxFolderGreenThreePapers
+  - BoxFolderBlueThreePapers
+  # End Box Change
   - BoxFolderPlasticClipboardThreePapers
   - BoxFolderClipboardThreePapers
+  # Start Box Change - Starcup notebooks
+  - NotebookPocketBlue
+  - NotebookPocketBrown
+  - NotebookPocketGreen
+  - NotebookSpiralNanotrasen
+  - NotebookSpiralBeige
+  - NotebookSpiralPurple
+  - NotebookSpiralTeal
+  - NotebookCompositionBlack
+  # End Box Change
   # Start Box Change - Scarf & Pride Scarf
   - ClothingNeckScarfStripedRed
   - ClothingNeckScarfStripedGreen
