@@ -18,7 +18,6 @@
     - WhitelistChameleon
     - ClothMade
     - Recyclable
-    - HristovBundle # Box Change - Tag for items included in the Hristov bundle, to be used for the briefcase's whitelist.
 
 - type: entity
   parent: ClothingNeckBase

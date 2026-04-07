@@ -31,21 +31,6 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/toolbox_drop.ogg # It's metal.
-  - type: Storage
-    whitelist:
-      tags:
-      - Folder
-      - Document
-      - Paper
-      - Write
-      - Pen
-      - Book
-      components:
-      - TapeCassette
-      - TapeRecorder
-      - HandLabeler
-      - Stamp
-      - Body # Allows mobs with ItemComponent to be put inside. Lock Hamlet in your briefcase.
   - type: ExplosionResistance
     damageCoefficient: 0 # Completely explosion proof, so paper doesn't get turned to ash when you get grazed by an explosion.  Pretty much anything less than 100% resistance fails to accomplish this.
   - type: GenericVisualizer
@@ -60,8 +45,18 @@
     keyOut: forcelock
   - type: SimpleToolUsage
     quality: Prying
-    doAfter: 25
+    doAfter: 7
     usageVerb: verb-force-lock
+  - type: ToggleComponentsOnTrigger # Toggle the SimpleToolUsage component off while the briefcase is unlocked, so you can't attempt to force the lock while it's already open
+    keysIn: [ lock ]
+    componentsAdded: true
+    components:
+      - type: SimpleToolUsage
+        quality: Prying
+        doAfter: 7
+        usageVerb: verb-force-lock
+  - type: TriggerOnLockToggle
+    keyOut: lock
   - type: EmitSoundOnTrigger # Play a breaking sound if the lock is forced with a crowbar
     sound:
       collection: MetalBreak
@@ -71,16 +66,6 @@
     components:
       - type: SimpleExamineText
         examineText: examine-text-lock-tampered
-  - type: TriggerOnLockToggle
-    keyOut: lock
-  - type: ToggleComponentsOnTrigger # Toggle the SimpleToolUsage component off while the briefcase is unlocked, so you can't attempt to force the lock while it's already open
-    keysIn: [ lock ]
-    componentsAdded: true
-    components:
-      - type: SimpleToolUsage
-        quality: Prying
-        doAfter: 15
-        usageVerb: verb-force-lock
 
 # HoP variant, spawns in their locker, thief steal objective
 - type: entity
@@ -97,6 +82,18 @@
     access: [["HeadOfPersonnel"]]
   - type: StealTarget
     stealGroup: BriefcaseHoP
+  - type: SimpleToolUsage
+    quality: Prying
+    doAfter: 15
+    usageVerb: verb-force-lock
+  - type: ToggleComponentsOnTrigger # Toggle the SimpleToolUsage component off while the briefcase is unlocked, so you can't attempt to force the lock while it's already open
+    keysIn: [ lock ]
+    componentsAdded: true
+    components:
+      - type: SimpleToolUsage
+        quality: Prying
+        doAfter: 15
+        usageVerb: verb-force-lock
       
 # Detective variant, spawns in their locker, thief steal objective
 - type: entity
@@ -123,6 +120,18 @@
       path: "/Audio/Weapons/smash.ogg"
       params:
         volume: -6 # Collision sounds are muffled by the leather
+  - type: SimpleToolUsage
+    quality: Prying
+    doAfter: 10
+    usageVerb: verb-force-lock
+  - type: ToggleComponentsOnTrigger # Toggle the SimpleToolUsage component off while the briefcase is unlocked, so you can't attempt to force the lock while it's already open
+    keysIn: [ lock ]
+    componentsAdded: true
+    components:
+      - type: SimpleToolUsage
+        quality: Prying
+        doAfter: 10
+        usageVerb: verb-force-lock
 
 # Lawyer variant, spawns in hand, thief steal objective
 - type: entity
@@ -150,21 +159,6 @@
     maxItemSize: Huge
     grid:
     - 0,0,6,3
-    whitelist:
-      tags:
-      - Folder
-      - Document
-      - Paper
-      - Write
-      - Pen
-      - Book
-      - HristovBundle # Tag applied to all items included in the sniper bundle, so they can be allowed by this storage's expanded whitelist
-      components:
-      - TapeCassette
-      - TapeRecorder
-      - HandLabeler
-      - Stamp
-      - Body
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector

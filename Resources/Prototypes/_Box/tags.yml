@@ -23,7 +23,3 @@
 
 - type: Tag
   id: GoliathMeat
-
-# Tag for items included in the Hristov bundle, to be used for the briefcase's whitelist.
-- type: Tag
-  id: HristovBundle

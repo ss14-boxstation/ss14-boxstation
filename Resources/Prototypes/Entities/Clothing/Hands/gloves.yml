@@ -142,11 +142,6 @@
   - type: Fiber
     fiberMaterial: fibers-latex
   - type: FingerprintMask
-  # Start Box Change - Tag for items included in the Hristov bundle, to be used for the briefcase's whitelist.
-  - type: Tag
-    tags:
-      - HristovBundle
-  # End Box Change
 
 - type: entity
   parent: ClothingHandsButcherable
