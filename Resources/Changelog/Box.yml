@@ -769,3 +769,10 @@
   id: 87
   time: '2026-04-07T00:52:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/117
+- author: BlueMoon059
+  changes:
+  - message: Added the ability to carry people via a right click action.
+    type: Add
+  id: 88
+  time: '2026-04-07T00:58:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/126
