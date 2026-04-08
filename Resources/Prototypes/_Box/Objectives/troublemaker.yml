@@ -102,3 +102,37 @@
     title: troublemaker-objective-grudge-individual-title
   - type: PickRandomPerson
 
+#Random Filler Objectives
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerVendingMachineObjective
+  name: Adblocker
+  description: The constant advertisements, never having what you want in stock. These vending machines have to go. Smash them up.
+  components:
+  - type: Objective
+    icon:
+      sprite: Structures/Machines/VendingMachines/happyhonk.rsi
+      state: broken
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerValuablesObjective
+  name: What's Yours Is Mine
+  description: Lighten peoples pockets, via scams, theft, or muggings. Anything to line your own pockets. Not like the paychecks making ends meet.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Materials/ingots.rsi
+      state: gold_3.png
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerAccessesObjective
+  name: Open Borders
+  description: You've always felt accesses were a bit restrictive. Open up departmental access as much as you can.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/id_cards.rsi
+      state: icon-captain
