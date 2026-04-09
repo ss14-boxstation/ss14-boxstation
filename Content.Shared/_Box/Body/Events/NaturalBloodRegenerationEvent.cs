@@ -1,6 +1,6 @@
 using Content.Shared.FixedPoint;
 
-namespace Content.Shared.Body.Events;
+namespace Content.Shared._Box.Body.Events;
 
 /// <summary>
 /// Raised on an entity before they naturally regenerate blood to modify the amount.

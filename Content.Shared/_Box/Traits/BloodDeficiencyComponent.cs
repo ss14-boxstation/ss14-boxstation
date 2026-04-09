@@ -1,7 +1,7 @@
 using Robust.Shared.GameStates;
 using Content.Shared.Body.Systems;
 
-namespace Content.Shared.Traits.Assorted;
+namespace Content.Shared._Box.Traits.Assorted;
 
 /// <summary>
 /// Used for the blood deficiency trait. BloodstreamSystem will check for this component and modify blood regen amount accordingly.

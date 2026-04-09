@@ -22,7 +22,10 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
-using Content.Shared.Traits.Assorted; // Box Change - For blood deficiency
+// Start Box Change - For blood deficiency
+using Content.Shared._Box.Traits.Assorted;
+using Content.Shared._Box.Body.Events;
+// End Box Change
 
 namespace Content.Shared.Body.Systems;
 
