@@ -85,7 +85,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
                 //TryRegulateBloodLevel(uid, bloodstream.BloodRefreshAmount);
                 var ev = new NaturalBloodRegenerationEvent(bloodstream.BloodRefreshAmount, 1.0f); //Raise event before natural blood regen tick, for anything that might want to modify it
                 RaiseLocalEvent(uid, ref ev);
-                TryRegulateBloodLevel(uid, ev.BloodRefreshAmount, ev.BloodReferenceLevel);
+                TryRegulateBloodLevel(uid, ev.BloodRefreshAmount, ev.BloodReferenceFactor);
                 //End Box Change
 
                 TickBleed((uid, bloodstream));
@@ -311,13 +311,13 @@ public abstract class SharedBloodstreamSystem : EntitySystem
     /// <param name="args">Event to modify.</param>
     private void OnNaturalBloodRegeneration(Entity<BloodDeficiencyComponent> ent, ref NaturalBloodRegenerationEvent args)
     {
-        if (ent.Comp.BloodRegenAmount != 1.0f) // Don't mess with the input values unless the comp has been changed from default settings
+        if (ent.Comp.BloodRefreshAmount != 1.0f) // Don't mess with the input values unless the comp has been changed from default settings
         {
-            args.BloodRefreshAmount = ent.Comp.BloodRegenAmount;
+            args.BloodRefreshAmount = ent.Comp.BloodRefreshAmount;
         }
-        if (ent.Comp.BloodLevelTarget != 1.0f)
+        if (ent.Comp.BloodReferenceFactor != 1.0f)
         {
-            args.BloodReferenceLevel = ent.Comp.BloodLevelTarget;
+            args.BloodReferenceFactor = ent.Comp.BloodReferenceFactor;
         }
     }
     //End Box Changes
