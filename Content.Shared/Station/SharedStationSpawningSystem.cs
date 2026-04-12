@@ -121,7 +121,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
                                                                                                                  // public void EquipStartingGear(EntityUid entity, LoadoutPrototype loadout, bool raiseEvent = true)
     {
         EquipStartingGear(entity, loadout.StartingGear, raiseEvent);
-        return EquipStartingGear(entity, (IEquipmentLoadout) loadout, raiseEvent);
+        return EquipStartingGear(entity, (IEquipmentLoadout) loadout, raiseEvent); // Box Change: return
     }
 
     /// <summary>
