@@ -223,6 +223,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         var cont = new LoadoutContainer(proto, !enabled, reason);
 
+        //cont.Text = loadoutSystem.GetName(proto);
         var loadoutPrefs = loadout.SelectedLoadouts.TryGetValue(_groupProto.ID, out var chosenGroup)
             ? chosenGroup.Find(it => it.Prototype == proto.ID)
             : null; // Floofstation - try to find loadout pref

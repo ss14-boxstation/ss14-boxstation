@@ -51,6 +51,7 @@ public sealed partial class Loadout : IEquatable<Loadout>
 
     public override int GetHashCode()
     {
+        //return Prototype.GetHashCode();
         return HashCode.Combine(Prototype.GetHashCode(), NameOverride?.GetHashCode() ?? 0, DescriptionOverride?.GetHashCode() ?? 0); // Floofstation
     }
 }
