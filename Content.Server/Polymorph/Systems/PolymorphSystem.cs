@@ -2,6 +2,11 @@ using Content.Server.Actions;
 using Content.Server.Humanoid;
 using Content.Server.Inventory;
 using Content.Server.Polymorph.Components;
+//Box Change Start - DV - Carrying
+using Content.Shared._DV.Polymorph;
+using Content.Shared.Actions;
+using Content.Shared.Actions.Components;
+//Box Change End - DV - Carrying
 using Content.Shared.Buckle;
 using Content.Shared.Coordinates;
 using Content.Shared.Damage.Components;
@@ -20,6 +25,7 @@ using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Robust.Shared.Toolshed.Commands.Generic; // Box Change - DV - Carrying
 using Robust.Shared.Utility;
 
 namespace Content.Server.Polymorph.Systems;
@@ -326,6 +332,11 @@ public sealed partial class PolymorphSystem : EntitySystem
         {
             _damageable.SetDamage((parent, damageParent), damage);
         }
+
+        //Box Start - DeltaV - Drop MindContainer entities on polymorph
+        var beforePolymorphedEv = new BeforePolymorphedEvent();
+        RaiseLocalEvent(uid, ref beforePolymorphedEv);
+        //Box End - DeltaV - Drop MindContainer entities on polymorph
 
         if (component.Configuration.Inventory == PolymorphInventoryChange.Transfer)
         {

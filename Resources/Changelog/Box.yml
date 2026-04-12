@@ -760,3 +760,33 @@
   id: 86
   time: '2026-04-06T09:17:53.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/131
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Starcup's notebooks
+    type: Add
+  - message: The wooden clipboard and more folder colors are now available as trinkets.
+    type: Tweak
+  id: 87
+  time: '2026-04-07T00:52:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/117
+- author: BlueMoon059
+  changes:
+  - message: Added the ability to carry people via a right click action.
+    type: Add
+  id: 88
+  time: '2026-04-07T00:58:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/126
+- author: Dizzy-Eevee
+  changes:
+  - message: Increased loadout trinket limit from 3 to 6.
+    type: Tweak
+  id: 89
+  time: '2026-04-12T14:27:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/129
+- author: Lucky
+  changes:
+  - message: Added the Mobster Accent in the traits menu!
+    type: Add
+  id: 90
+  time: '2026-04-12T14:31:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/111

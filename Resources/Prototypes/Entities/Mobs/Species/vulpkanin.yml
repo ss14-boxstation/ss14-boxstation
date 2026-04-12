@@ -169,6 +169,7 @@
           32:
             sprite: Mobs/Species/Vulpkanin/displacement.rsi
             state: belt
+  - type: Carriable # Box Change - Carrying system from nyanotrasen.
 
 - type: entity
   parent: [BaseSpeciesDummy]
