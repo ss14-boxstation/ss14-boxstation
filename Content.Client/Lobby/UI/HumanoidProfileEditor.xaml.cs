@@ -1090,8 +1090,13 @@ namespace Content.Client.Lobby.UI
                 if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var group)
                     || group.Find(it => it.Prototype == loadoutProto) is not { } loadout)
                     return;
-
-                _loadoutMetadataEditorDialog = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto);
+                var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
+                string title = "";
+                if (_prototypeManager.Resolve(loadoutProto, out var loadoutResolved))
+                {
+                    title = loadoutSystem.GetName(loadoutResolved);
+                }
+                _loadoutMetadataEditorDialog = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto) { Title = title };
                 _loadoutMetadataEditorDialog.OnSave += (newLoadout) =>
                 {
                     // The role loadouts could have changed, we cant trust the old value

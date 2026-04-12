@@ -7,7 +7,8 @@
         Orientation="Vertical"
         Margin="8">
 
-        <BoxContainer Name="LoadoutPreviewContainer" Orientation="Vertical"/> <!-- Populated in constructor, shows a preview -->
+        <!--<BoxContainer Name="LoadoutPreviewContainer" Orientation="Vertical"/> --><!-- Populated in constructor, shows a preview -->
+        <SpriteView Name="Sprite" Scale="4 4" MouseFilter="Stop"/> <!-- Just show a sprite instead of a full LoadoutContainer-->
 
         <controls:HLine Color="#404040" Thickness="2" Margin="0 5" />
 
