@@ -2,14 +2,20 @@ using System.Globalization; // Box Change - For CD records
 using System.IO;
 using System.Linq;
 using System.Numerics;
+// Start Box Change - CD: Records editor imports
+using Content.Client._CD.Records.UI;
+//End Box Change
+using Content.Client._Floof.Lobby.UI; // Box Change: Floof item metadata
+using Content.Client.Guidebook.Richtext;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
-using Content.Client.Stylesheets;
 using Content.Client.Sprite;
+using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._CD.Records;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -35,12 +41,6 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
-
-// Start Box Change - CD: Records editor imports
-using Content.Client._CD.Records.UI;
-using Content.Shared._CD.Records;
-//End Box Change
-using Content.Client._Floof.Lobby.UI; // Box Change: Floof item metadata
 
 namespace Content.Client.Lobby.UI
 {
@@ -69,7 +69,7 @@ namespace Content.Client.Lobby.UI
 
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
-        private LoadoutMetadataEditorDialog? _loadoutMetadataEditorDialog;
+        private LoadoutMetadataEditorDialog? _loadoutMetadataEditorDialog; // Box Change: For Floof item metadata. One at a time.
 
         private bool _exporting;
         private bool _imaging;
@@ -1040,8 +1040,10 @@ namespace Content.Client.Lobby.UI
         {
             _loadoutWindow?.Dispose();
             _loadoutWindow = null;
+            // Start Box Change: Close Floof item metadata dialog when loadouts are changed
             _loadoutMetadataEditorDialog?.Dispose();
             _loadoutMetadataEditorDialog = null;
+            // End Box Change
             var collection = IoCManager.Instance;
 
             if (collection == null || _playerManager.LocalSession == null || Profile == null)
@@ -1071,7 +1073,7 @@ namespace Content.Client.Lobby.UI
                 roleLoadout.AddLoadout(loadoutGroup, loadoutProto, _prototypeManager);
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
-                _loadoutMetadataEditorDialog?.Dispose();
+                _loadoutMetadataEditorDialog?.Dispose(); // Box Change: Close Floof item metadata dialog when loadouts selected to prevent issues
                 ReloadPreview();
             };
 
@@ -1080,17 +1082,18 @@ namespace Content.Client.Lobby.UI
                 roleLoadout.RemoveLoadout(loadoutGroup, loadoutProto, _prototypeManager);
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
-                _loadoutMetadataEditorDialog?.Dispose();
+                _loadoutMetadataEditorDialog?.Dispose(); // Box Change: Close Floof item metadata dialog when loadouts deselected to prevent issues
                 ReloadPreview();
             };
 
             // Start Box Change: Floof item metadata
             _loadoutWindow.OnRequestLoadoutMetadataEdit += (groupProto, loadoutProto) =>
             {
-                _loadoutMetadataEditorDialog?.Dispose();
+                _loadoutMetadataEditorDialog?.Dispose(); // Box Change: Close it before trying to make a new one
                 if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var group)
                     || group.Find(it => it.Prototype == loadoutProto) is not { } loadout)
                     return;
+                // Start Box Change: Replace "var dlg" with the singular window variable, get item name for use in window title
                 var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
                 string title = "";
                 if (_prototypeManager.Resolve(loadoutProto, out var loadoutResolved))
@@ -1099,6 +1102,7 @@ namespace Content.Client.Lobby.UI
                 }
                 _loadoutMetadataEditorDialog = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto) { Title = title };
                 _loadoutMetadataEditorDialog.OnSave += (newLoadout) =>
+                // End Box Change
                 {
                     // The role loadouts could have changed, we cant trust the old value
                     if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var newGroup))
@@ -1111,7 +1115,7 @@ namespace Content.Client.Lobby.UI
                     SetDirty();
                     ReloadPreview();
                 };
-                _loadoutMetadataEditorDialog.OpenCentered();
+                _loadoutMetadataEditorDialog.OpenCentered(); //Box Change: Replace "var dlg" with the singular window variable
             };
             // End Box Change
 
@@ -1122,7 +1126,7 @@ namespace Content.Client.Lobby.UI
             {
                 JobOverride = null;
                 ReloadPreview();
-                _loadoutMetadataEditorDialog?.Dispose();
+                _loadoutMetadataEditorDialog?.Dispose(); // Box Change: Close the Floof item metadata dialog when the loadout window is closed
             };
 
             if (Profile is null)
@@ -1211,8 +1215,10 @@ namespace Content.Client.Lobby.UI
 
             _loadoutWindow?.Dispose();
             _loadoutWindow = null;
+            // Start Box Change: Close and null the Floof item metadata dialog when the profile editor is closed
             _loadoutMetadataEditorDialog?.Dispose();
             _loadoutMetadataEditorDialog = null;
+            // End Box Change
         }
 
         protected override void EnteredTree()
