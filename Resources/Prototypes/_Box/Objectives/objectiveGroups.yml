@@ -9,6 +9,11 @@
     TroublemakerIndividualGrudgeObjectiveGroup: 1
 
 - type: weightedRandom
+  id: TroublemakerOpenObjectiveGroups
+  weights:
+    TroublemakerOpenObjectiveGroup: 1
+
+- type: weightedRandom
   id: TroublemakerDepartmentGrudgeObjectiveGroup
   weights:
     TroublemakerMedicalGrudgeObjective: 1
@@ -21,3 +26,15 @@
   id: TroublemakerIndividualGrudgeObjectiveGroup
   weights:
     TroublemakerIndividualGrudgeObjective: 1
+
+- type: weightedRandom
+  id: TroublemakerOpenObjectiveGroup
+  weights:
+    TroublemakerVendingMachineObjective: 1
+    TroublemakerValuablesObjective: 1
+    TroublemakerAccessesObjective: 1
+    TroublemakerRumorObjective: 1
+    TroublemakerBlackmarketeerObjective: 1
+    TroublemakerFramerObjective: 1
+    TroublemakerCCTVObjective: 1
+    TroublemakerLightsObjective: 1

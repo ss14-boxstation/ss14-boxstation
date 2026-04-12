@@ -6,15 +6,14 @@
     minPlayers: 10
     cancelPresetOnTooFewPlayers: false
   - type: TroublemakerRule
-  - type: AntagObjectives
-    objectives:
-    - TroublemakerMakeAngerKnownObjective
   - type: AntagRandomObjectives
     sets:
     - groups: TroublemakerDepartmentGrudgeObjectiveGroups
       maxPicks: 1
     - groups: TroublemakerIndividualGrudgeObjectiveGroups
       maxPicks: 1
+    - groups: TroublemakerOpenObjectiveGroups
+      maxPicks: 3
     maxDifficulty: 500
   - type: AntagSelection
     agentName: troublemaker-round-end-agent-name

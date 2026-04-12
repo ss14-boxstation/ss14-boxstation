@@ -11,17 +11,6 @@
     - TroublemakerRole
   - type: NoCompletionObjective
 
-- type: entity
-  parent: BaseTroublemakerObjective
-  id: TroublemakerMakeAngerKnownObjective
-  name: Make Your Anger Known
-  description: This workplace has wronged you. Settle the score wherever you can. Remember, you still need a job at the end of this.
-  components:
-  - type: Objective
-    icon:
-      sprite: Objects/Weapons/Melee/baseball_bat.rsi
-      state: icon
-
 # Departmental Grudges
 - type: entity
   parent: BaseTroublemakerObjective
