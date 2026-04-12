@@ -38,9 +38,9 @@ using Direction = Robust.Shared.Maths.Direction;
 
 // Start Box Change - CD: Records editor imports
 using Content.Client._CD.Records.UI;
-using Content.Client._Floof.Lobby.UI;
 using Content.Shared._CD.Records;
 //End Box Change
+using Content.Client._Floof.Lobby.UI; // Box Change: Floof item metadata
 
 namespace Content.Client.Lobby.UI
 {
@@ -1084,6 +1084,7 @@ namespace Content.Client.Lobby.UI
                 ReloadPreview();
             };
 
+            // Start Box Change: Floof item metadata
             _loadoutWindow.OnRequestLoadoutMetadataEdit += (groupProto, loadoutProto) =>
             {
                 _loadoutMetadataEditorDialog?.Dispose();
@@ -1112,6 +1113,7 @@ namespace Content.Client.Lobby.UI
                 };
                 _loadoutMetadataEditorDialog.OpenCentered();
             };
+            // End Box Change
 
             JobOverride = jobProto;
             ReloadPreview();

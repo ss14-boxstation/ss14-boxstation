@@ -7,8 +7,6 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using System.Linq;
-using Content.Client._Floof.Lobby.UI;
-using YamlDotNet.Serialization.NodeTypeResolvers;
 
 namespace Content.Client.Lobby.UI.Loadouts;
 
