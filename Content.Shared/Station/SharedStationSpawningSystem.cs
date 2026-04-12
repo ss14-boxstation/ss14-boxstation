@@ -56,6 +56,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
                 }
 
                 // Floofstation section - apply custom metadata to loadouts.
+                // EquipStartingGear(entity, loadoutProto, raiseEvent: false);
                 var spawned = EquipStartingGear(entity, loadoutProto, raiseEvent: false);
                 if (spawned.Count == 1 && spawned[0] is { Valid: true } spawnedEntity)
                     ApplyCustomLoadoutMetadata(spawnedEntity, items);
@@ -117,6 +118,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
     }
 
     public List<EntityUid> EquipStartingGear(EntityUid entity, LoadoutPrototype loadout, bool raiseEvent = true) // Floofstation - return spawned entities
+                                                                                                                 // public void EquipStartingGear(EntityUid entity, LoadoutPrototype loadout, bool raiseEvent = true)
     {
         EquipStartingGear(entity, loadout.StartingGear, raiseEvent);
         return EquipStartingGear(entity, (IEquipmentLoadout) loadout, raiseEvent);
@@ -146,6 +148,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
     /// <param name="startingGear">Starting gear to use.</param>
     /// <param name="raiseEvent">Should we raise the event for equipped. Set to false if you will call this manually</param>
     public List<EntityUid> EquipStartingGear(EntityUid entity, IEquipmentLoadout? startingGear, bool raiseEvent = true) // Floofstation - added a return value
+                                                                                                                        // public void EquipStartingGear(EntityUid entity, IEquipmentLoadout? startingGear, bool raiseEvent = true)
     {
         var spawned = new List<EntityUid>();
         if (startingGear == null)

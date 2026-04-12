@@ -2,20 +2,15 @@ using System.Globalization; // Box Change - For CD records
 using System.IO;
 using System.Linq;
 using System.Numerics;
-// Start Box Change - CD: Records editor imports
-using Content.Client._CD.Records.UI;
-//End Box Change
 using Content.Client._Floof.Lobby.UI; // Box Change: Floof item metadata
-using Content.Client.Guidebook.Richtext;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
-using Content.Client.Sprite;
 using Content.Client.Stylesheets;
+using Content.Client.Sprite;
 using Content.Client.UserInterface.Systems.Guidebook;
-using Content.Shared._CD.Records;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -41,6 +36,11 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+
+// Start Box Change - CD: Records editor imports
+using Content.Client._CD.Records.UI;
+using Content.Shared._CD.Records;
+//End Box Change
 
 namespace Content.Client.Lobby.UI
 {
