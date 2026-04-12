@@ -776,3 +776,10 @@
   id: 88
   time: '2026-04-07T00:58:49.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/126
+- author: Dizzy-Eevee
+  changes:
+  - message: Increased loadout trinket limit from 3 to 6.
+    type: Tweak
+  id: 89
+  time: '2026-04-12T14:27:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/129
