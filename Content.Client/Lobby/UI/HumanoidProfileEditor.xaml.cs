@@ -69,6 +69,7 @@ namespace Content.Client.Lobby.UI
 
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
+        private LoadoutMetadataEditorDialog? _loadoutMetadataEditorDialog;
 
         private bool _exporting;
         private bool _imaging;
@@ -1039,6 +1040,8 @@ namespace Content.Client.Lobby.UI
         {
             _loadoutWindow?.Dispose();
             _loadoutWindow = null;
+            _loadoutMetadataEditorDialog?.Dispose();
+            _loadoutMetadataEditorDialog = null;
             var collection = IoCManager.Instance;
 
             if (collection == null || _playerManager.LocalSession == null || Profile == null)
@@ -1068,6 +1071,7 @@ namespace Content.Client.Lobby.UI
                 roleLoadout.AddLoadout(loadoutGroup, loadoutProto, _prototypeManager);
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
+                _loadoutMetadataEditorDialog?.Dispose();
                 ReloadPreview();
             };
 
@@ -1076,17 +1080,19 @@ namespace Content.Client.Lobby.UI
                 roleLoadout.RemoveLoadout(loadoutGroup, loadoutProto, _prototypeManager);
                 _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
                 Profile = Profile?.WithLoadout(roleLoadout);
+                _loadoutMetadataEditorDialog?.Dispose();
                 ReloadPreview();
             };
 
             _loadoutWindow.OnRequestLoadoutMetadataEdit += (groupProto, loadoutProto) =>
             {
+                _loadoutMetadataEditorDialog?.Dispose();
                 if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var group)
                     || group.Find(it => it.Prototype == loadoutProto) is not { } loadout)
                     return;
 
-                var dlg = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto);
-                dlg.OnSave += (newLoadout) =>
+                _loadoutMetadataEditorDialog = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto);
+                _loadoutMetadataEditorDialog.OnSave += (newLoadout) =>
                 {
                     // The role loadouts could have changed, we cant trust the old value
                     if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var newGroup))
@@ -1099,7 +1105,7 @@ namespace Content.Client.Lobby.UI
                     SetDirty();
                     ReloadPreview();
                 };
-                dlg.OpenCentered();
+                _loadoutMetadataEditorDialog.OpenCentered();
             };
 
             JobOverride = jobProto;
@@ -1109,6 +1115,7 @@ namespace Content.Client.Lobby.UI
             {
                 JobOverride = null;
                 ReloadPreview();
+                _loadoutMetadataEditorDialog?.Dispose();
             };
 
             if (Profile is null)
@@ -1197,6 +1204,8 @@ namespace Content.Client.Lobby.UI
 
             _loadoutWindow?.Dispose();
             _loadoutWindow = null;
+            _loadoutMetadataEditorDialog?.Dispose();
+            _loadoutMetadataEditorDialog = null;
         }
 
         protected override void EnteredTree()
