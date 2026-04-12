@@ -269,8 +269,10 @@ namespace Content.Server.Database
                         groupLoadouts.Add(new Loadout()
                         {
                             Prototype = profLoadout.LoadoutName,
+                            // Start Box Change: Floof item metadata
                             NameOverride = profLoadout.NameOverride, // Floofstation
                             DescriptionOverride = profLoadout.DescriptionOverride, // Floofstation
+                            // End Box Change
                         });
                     }
                 }
@@ -384,8 +386,10 @@ namespace Content.Server.Database
                         profileGroup.Loadouts.Add(new ProfileLoadout()
                         {
                             LoadoutName = loadout.Prototype,
+                            // Start Box Change: Floof item metadata
                             NameOverride = loadout.NameOverride, // Floofstation
                             DescriptionOverride = loadout.DescriptionOverride, // Floofstation
+                            // End Box Change
                         });
                     }
 

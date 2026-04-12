@@ -25,7 +25,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
     public event Action<ProtoId<LoadoutPrototype>>? OnLoadoutPressed;
     public event Action<ProtoId<LoadoutPrototype>>? OnLoadoutUnpressed;
-    public event Action<ProtoId<LoadoutPrototype>>? OnRequestLoadoutMetadataEdit; // Floofstation
+    public event Action<ProtoId<LoadoutPrototype>>? OnRequestLoadoutMetadataEdit; // Box Change: Floofstation item metadata
 
     public LoadoutGroupContainer(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutGroupPrototype groupProto, ICommonSession session, IDependencyCollection collection)
     {
@@ -223,11 +223,13 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         var cont = new LoadoutContainer(proto, !enabled, reason);
 
+        //Start Box Change: Floofstation item metadata
         //cont.Text = loadoutSystem.GetName(proto);
         var loadoutPrefs = loadout.SelectedLoadouts.TryGetValue(_groupProto.ID, out var chosenGroup)
             ? chosenGroup.Find(it => it.Prototype == proto.ID)
             : null; // Floofstation - try to find loadout pref
         cont.Text = loadoutPrefs?.NameOverride ?? loadoutSystem.GetName(proto); // Floofstation - can be overridden
+        //End Box Change
 
         cont.Select.Pressed = pressed;
 
@@ -239,7 +241,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
                 OnLoadoutUnpressed?.Invoke(proto.ID);
         };
 
-        // Floofstation section - configure button. It's hidden while the loadout is unpressed.
+        // Start Box Change: Floofstation - configure button. It's hidden while the loadout is unpressed.
         cont.ConfigureButton.Visible = pressed;
         OnLoadoutPressed += _ => cont.ConfigureButton.Visible = true;
         OnLoadoutUnpressed += _ => cont.ConfigureButton.Visible = false;
@@ -248,7 +250,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         {
             OnRequestLoadoutMetadataEdit?.Invoke(proto.ID);
         };
-        // Floofstation section end
+        // End Box Change
 
         return cont;
     }

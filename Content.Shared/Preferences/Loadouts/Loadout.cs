@@ -12,7 +12,7 @@ public sealed partial class Loadout : IEquatable<Loadout>
     [DataField]
     public ProtoId<LoadoutPrototype> Prototype;
 
-    // Floofstation section
+    // Start Box Change: Floofstation item metadata
     /// <summary>
     ///     Metadata overrides for the entity. Color is hex-encoded.
     /// </summary>
@@ -20,9 +20,7 @@ public sealed partial class Loadout : IEquatable<Loadout>
     public string? NameOverride, DescriptionOverride;
 
     public bool HasCustomMetadata => NameOverride != null || DescriptionOverride != null;
-    // Floofstation section end
 
-    // Floofstation section - constructors
     public Loadout() {}
 
     public Loadout(Loadout copy)
@@ -31,16 +29,16 @@ public sealed partial class Loadout : IEquatable<Loadout>
         NameOverride = copy.NameOverride;
         DescriptionOverride = copy.DescriptionOverride;
     }
-    // Floofstation section end
+    //  End Box Change
 
     public bool Equals(Loadout? other)
     {
         if (ReferenceEquals(null, other)) return false;
         if (ReferenceEquals(this, other)) return true;
-        // Floofstation section
+        // Start Box Change: Floofstation item metadata
         if (NameOverride != other.NameOverride) return false;
         if (DescriptionOverride != other.DescriptionOverride) return false;
-        // Floofstation section end
+        // End Box Change
         return Prototype.Equals(other.Prototype);
     }
 
@@ -51,7 +49,9 @@ public sealed partial class Loadout : IEquatable<Loadout>
 
     public override int GetHashCode()
     {
+        // Start Box Change: Floofstation item metadata
         //return Prototype.GetHashCode();
-        return HashCode.Combine(Prototype.GetHashCode(), NameOverride?.GetHashCode() ?? 0, DescriptionOverride?.GetHashCode() ?? 0); // Floofstation
+        return HashCode.Combine(Prototype.GetHashCode(), NameOverride?.GetHashCode() ?? 0, DescriptionOverride?.GetHashCode() ?? 0);
+        //End Box Change
     }
 }

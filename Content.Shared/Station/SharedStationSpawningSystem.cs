@@ -55,21 +55,21 @@ public abstract class SharedStationSpawningSystem : EntitySystem
                     continue;
                 }
 
-                // Floofstation section - apply custom metadata to loadouts.
+                // Start Box Change: Floofstation - apply custom metadata to loadouts.
                 // EquipStartingGear(entity, loadoutProto, raiseEvent: false);
                 var spawned = EquipStartingGear(entity, loadoutProto, raiseEvent: false);
                 if (spawned.Count == 1 && spawned[0] is { Valid: true } spawnedEntity)
                     ApplyCustomLoadoutMetadata(spawnedEntity, items);
                 else if (items.HasCustomMetadata)
                     Log.Warning($"Refusing to apply custom metadata to a loadout containing more than 1 item: {loadoutProto}");
-                // Floofstation section end
+                // End Box Change
             }
         }
 
         EquipRoleName(entity, loadout, roleProto);
     }
 
-    // Floofstation - applies custom metadata from an entity onto a loadout.
+    // Start Box Change: Floofstation - applies custom metadata from an entity onto a loadout.
     private void ApplyCustomLoadoutMetadata(EntityUid spawnedEntity, Loadout loadout)
     {
         if (!Exists(spawnedEntity) || Deleted(spawnedEntity))
@@ -92,7 +92,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
             _metadata.SetEntityDescription(spawnedEntity, customDesc.TakeChars(MaxDescLength), md);
         }
     }
-    // Floofstation section end
+    // End Box Change
 
     /// <summary>
     /// Applies the role's name as applicable to the entity.
@@ -117,7 +117,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
         }
     }
 
-    public List<EntityUid> EquipStartingGear(EntityUid entity, LoadoutPrototype loadout, bool raiseEvent = true) // Floofstation - return spawned entities
+    public List<EntityUid> EquipStartingGear(EntityUid entity, LoadoutPrototype loadout, bool raiseEvent = true) // Box Change: Floofstation - return spawned entities
                                                                                                                  // public void EquipStartingGear(EntityUid entity, LoadoutPrototype loadout, bool raiseEvent = true)
     {
         EquipStartingGear(entity, loadout.StartingGear, raiseEvent);
@@ -147,12 +147,12 @@ public abstract class SharedStationSpawningSystem : EntitySystem
     /// <param name="entity">Entity to load out.</param>
     /// <param name="startingGear">Starting gear to use.</param>
     /// <param name="raiseEvent">Should we raise the event for equipped. Set to false if you will call this manually</param>
-    public List<EntityUid> EquipStartingGear(EntityUid entity, IEquipmentLoadout? startingGear, bool raiseEvent = true) // Floofstation - added a return value
+    public List<EntityUid> EquipStartingGear(EntityUid entity, IEquipmentLoadout? startingGear, bool raiseEvent = true) // Box Change: Floofstation - added a return value
                                                                                                                         // public void EquipStartingGear(EntityUid entity, IEquipmentLoadout? startingGear, bool raiseEvent = true)
     {
         var spawned = new List<EntityUid>();
         if (startingGear == null)
-            return spawned; // Floofstation
+            return spawned; // Box Change: Floofstation - return spawned instead of nothing
 
         var xform = _xformQuery.GetComponent(entity);
 
@@ -164,8 +164,10 @@ public abstract class SharedStationSpawningSystem : EntitySystem
                 if (!string.IsNullOrEmpty(equipmentStr))
                 {
                     var equipmentEntity = Spawn(equipmentStr, xform.Coordinates);
+                    // Start Box Change: Floof item metadata
                     spawned.Add(equipmentEntity); // Floofstation
                     InventorySystem.TryEquip(entity, equipmentEntity, slot.Name, silent: true, force: true, checkDoafter: false); // Floofstation - don't start do-afters on spawn
+                    // End Box Change
                 }
             }
         }
@@ -177,7 +179,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
             foreach (var prototype in inhand)
             {
                 var inhandEntity = Spawn(prototype, coords);
-                spawned.Add(inhandEntity); // Floofstation
+                spawned.Add(inhandEntity); // Box Change: Floofstation - return variable
 
                 if (_handsSystem.TryGetEmptyHand((entity, handsComponent), out var emptyHand))
                 {
@@ -204,7 +206,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
                     foreach (var entProto in entProtos)
                     {
                         var spawnedEntity = Spawn(entProto, coords);
-                        spawned.Add(spawnedEntity); // Floofstation
+                        spawned.Add(spawnedEntity); // Box Change: Floofstation - return variable
 
                         _storage.Insert(slotEnt.Value, spawnedEntity, out _, storageComp: storage, playSound: false);
                     }
@@ -218,7 +220,7 @@ public abstract class SharedStationSpawningSystem : EntitySystem
             RaiseLocalEvent(entity, ref ev);
         }
 
-        return spawned; // Floofstation
+        return spawned; // Box Change: Floofstation - return spawned instead of nothing
     }
 
     /// <summary>
