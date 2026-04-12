@@ -124,7 +124,7 @@
   - type: Objective
     icon:
       sprite: Objects/Materials/ingots.rsi
-      state: gold_3.png
+      state: gold_3
 
 - type: entity
   parent: BaseTroublemakerObjective
@@ -136,3 +136,58 @@
     icon:
       sprite: Objects/Misc/id_cards.rsi
       state: icon-captain
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerRumorObjective
+  name: I Heard a Rumor
+  description: Bring a rumor to life. The more salacious, the better. Ghost stories, drama, conflict, the captain's skeleton in the closet. Anything goes.
+  components:
+  - type: Objective
+    icon:
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: skull_icon
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerBlackmarketeerObjective
+  name: Pirate Bay
+  description: Contraband labels are so last year. Redistribute contra as widely as you can, security edicts be damned. Everyone deserves some fun toys.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Fun/Balloons/syndicate.rsi
+      state: icon
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerFramerObjective
+  name: Frame Someone
+  description: Security is always putting heat on you without any actual evidence - show someone else how that feels. Frame someone for crime.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/handcuffs.rsi
+      state: handcuff
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerCCTVObjective
+  name: Eye for an Eye
+  description: You've never felt good in the spotlight. Removing the cameras should fix that. Dismantle them.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Materials/Scrap/generic.rsi
+      state: junk-camera
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerLightsObjective
+  name: Lights Out
+  description: You've always done your best work under cover of shadows, and it gives you more hiding places from Security. Break the lights and keep them broken.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Power/light_bulb.rsi
+      state: broken
