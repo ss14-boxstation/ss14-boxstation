@@ -3,7 +3,7 @@
   name: troublemaker-spaceasshole-kit-name
   description: troublemaker-spaceasshole-kit-description
   sprite:
-    sprite: Objects/Weapons/Melee/sledgehammer.rsi
+    sprite: Objects/Weapons/Bombs/seismic.rsi
     state: icon
   content:
   - ClothingOuterCoatSpaceAsshole
@@ -18,7 +18,7 @@
   name: troublemaker-phantomthief-kit-name
   description: troublemaker-phantomthief-kit-description
   sprite:
-    sprite: Objects/Weapons/Melee/throwing_knife.rsi
+    sprite: Clothing/Mask/ninja.rsi
     state: icon
   content:
   - WeaponPistolCobra
@@ -35,7 +35,7 @@
   name: troublemaker-netrunner-kit-name
   description: troublemaker-netrunner-kit-description
   sprite:
-    sprite: Objects/Weapons/Melee/throwing_knife.rsi
+    sprite: Objects/Tools/access_breaker.rsi
     state: icon
   content:
   - CameraBug
@@ -47,3 +47,33 @@
   - EmpGrenade
   - ClothingHandsGlovesColorYellow
   - Multitool
+
+- type: thiefBackpackSet
+  id: TroublemakerHorrorKit
+  name: troublemaker-horror-kit-name
+  description: troublemaker-horror-kit-description
+  sprite:
+    sprite: Objects/Weapons/Melee/machete.rsi
+    state: icon
+  content:
+  - ClothingNeckCloakVoid
+  - Machete
+  - ClothingMaskWeldingGas
+  - CrayonBox
+  - LanternFlash
+
+- type: thiefBackpackSet
+  id: TroublemakerPranksterKit
+  name: troublemaker-prankster-kit-name
+  description: troublemaker-prankster-kit-description
+  sprite:
+    sprite: clothing/mask/clown.rsi
+    state: icon
+  content:
+  - BalloonOperative
+  - SnapPopBox
+  - ToySword
+  - GrenadeDummy
+  - SyndieTrickyBomb
+  - RevolverCapGun
+  - ClusterBananaPeel

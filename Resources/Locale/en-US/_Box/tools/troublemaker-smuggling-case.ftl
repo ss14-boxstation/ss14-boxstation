@@ -11,5 +11,18 @@ troublemaker-phantomthief-kit-description = Style, elegance, and stealth are you
  Contains a silenced pistol, some throwing knives, a clusterbang, and smoke grenades.
  It also contains a rougish outfit and mask.
 
-troublemaker-netrunner-kit-name = Netrunner
-troublemaker-netrunner-kit-description = wagoogus
+troublemaker-netrunner-kit-name = Netrunner Kit
+troublemaker-netrunner-kit-description = A kit for when no walls, fire or no fire, can contain you.
+ Comes with a camera bug, Access Breaker, a NetProbe Cartridge, an outfit, 2 emp grenades,
+ insulated gloves, and a multitool.
+
+troublemaker-horror-kit-name = Horror Costume Kit
+troublemaker-horror-kit-description = Become the monster they always treated you as. Contains a void cloak, machete,
+ welding mask, a box of crayons,
+ and a lantern that acts as a Flash.
+
+
+troublemaker-prankster-kit-name = Prankster Kit
+troublemaker-prankster-kit-description = A gaggle of gag items for the ultimate prankster.
+ Contains a decoy syndicate operative, a box of snap pops, a fake esword, fake grenade, fake minibomb, a fake revolver,
+ and a very real cluster banana peel bomb for that explosive punchline.
