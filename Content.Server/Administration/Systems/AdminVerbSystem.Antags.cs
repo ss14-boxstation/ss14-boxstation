@@ -252,7 +252,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = hitmanName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "hitman"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_DV/Interface/Misc/job_icons.rsi"), "Hitman"),
             Act = () =>
             {
                 _antag.ForceMakeAntag<HitmanRuleComponent>(targetPlayer, DefaultHitmanRule);
