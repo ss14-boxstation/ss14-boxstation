@@ -15,6 +15,7 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<bool> DisablingOOCDisablesRelay =
         CVarDef.Create("ooc.disabling_ooc_disables_relay", true, CVar.SERVERONLY);
+
     /// <summary>
     ///     Whether or not OOC chat should be enabled during a round.
     /// </summary>
