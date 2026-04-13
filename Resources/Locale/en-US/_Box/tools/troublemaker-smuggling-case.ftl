@@ -21,8 +21,15 @@ troublemaker-horror-kit-description = Become the monster they always treated you
  welding mask, a box of crayons,
  and a lantern that acts as a Flash.
 
-
 troublemaker-prankster-kit-name = Prankster Kit
 troublemaker-prankster-kit-description = A gaggle of gag items for the ultimate prankster.
  Contains a decoy syndicate operative, a box of snap pops, a fake esword, fake grenade, fake minibomb, a fake revolver,
  and a very real cluster banana peel bomb for that explosive punchline.
+
+troublemaker-carp-kit-name = Carp Kit
+troublemaker-carp-kit-description = You know what that means...3 dehydrated carp,
+ some carp-pockets, and a carp-themed hardsuit to disguise yourself as one of your fishy friends.
+
+troublemaker-whistleblower-kit-name = Whistleblower Kit
+troublemaker-whistleblower-kit-description = Secrets and scandals are your domain. Contains one of each record computer,
+ a voice mask implant, a crew monitor flatpack, and a master encryption key.

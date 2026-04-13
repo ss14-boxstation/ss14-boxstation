@@ -21,7 +21,7 @@
     sprite: Clothing/Mask/ninja.rsi
     state: icon
   content:
-  - WeaponPistolCobra
+  - WeaponPistolCobra #To do - replace with a non-syndicate silenced mk58
   - ThrowingKnife
   - ThrowingKnife
   - ThrowingKnife
@@ -39,7 +39,7 @@
     state: icon
   content:
   - CameraBug
-  - AccessBreaker
+  - AccessBreaker #to-do, replace with a non-syndicate branded AB
   - NetProbeCartridge
   - ClothingOuterCoatJensen
   - ClothingEyesGlassesJensen
@@ -77,3 +77,46 @@
   - SyndieTrickyBomb
   - RevolverCapGun
   - ClusterBananaPeel
+
+- type: thiefBackpackSet
+  id: TroublemakerCarpKit
+  name: troublemaker-carp-kit-name
+  description: troublemaker-carp-kit-description
+  sprite:
+    sprite: objects/fun/plushies/carp.rsi
+    state: carpplush
+  content:
+  - ClothingOuterHardsuitCarp
+  - DehydratedSpaceCarp
+  - DehydratedSpaceCarp
+  - DehydratedSpaceCarp
+  - FoodBoxDonkpocketCarp
+
+- type: thiefBackpackSet
+  id: TroublemakerWhistleblowerKit
+  name: troublemaker-whistleblower-kit-name
+  description: troublemaker-whistleblower-kit-description
+  sprite:
+    sprite: objects/fun/plushies/carp.rsi
+    state: carpplush
+  content:
+  - ClothingOuterHardsuitCarp
+  - DehydratedSpaceCarp
+  - DehydratedSpaceCarp
+  - DehydratedSpaceCarp
+  - FoodBoxDonkpocketCarp
+
+- type: thiefBackpackSet
+  id: TroublemakerWhistleblowerKit
+  name: troublemaker-whistleblower-kit-name
+  description: troublemaker-whistleblower-kit-description
+  sprite:
+    sprite: Objects/Devices/encryption_keys.rsi
+    state: crypt_gold
+  content:
+  - EncryptionKeyStationMaster
+  - VoiceMaskImplanter
+  - CrewMonitoringComputerFlatpack
+  - StationRecordsComputerCircuitboard
+  - MedicalRecordsComputerCircuitboard
+  - CriminalRecordsComputerCircuitboard
