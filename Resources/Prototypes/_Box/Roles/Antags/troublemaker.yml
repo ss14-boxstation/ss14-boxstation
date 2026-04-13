@@ -3,8 +3,8 @@
   name: roles-antag-troublemaker-name
   antagonist: true
   setPreference: true
-  objective: roles-antag--objective
-  guides: [ Thieves ]
+  objective: roles-antag-troublemaker-objective
+  guides: [ Troublemaker ]
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
