@@ -46,11 +46,11 @@
     state: bottle
   content:
   - Syringe
-  - CombatMedipen
   - ChemistryBottlePax
   - ChemistryBottleToxin
   - ChemistryBottleMuteToxin
   - ChemistryBottleNocturine
+  - ChemicalSynthesisKit
 
 - type: thiefBackpackSet
   id: HitmanInfiltrationKit
