@@ -283,7 +283,7 @@
   id: BoxReamWhite
   # Start Box Change: Remove Epistemics references
   name: Papermoon white paper ream
-  description: Create reports that are sure to get noticed with Papermoon white paper. Carefully inspected to ensure maximum desaturation.
+  description: Create reports that are sure to get noticed with Papermoon white paper. Bleached throughout for maximum desaturation.
   # End Box Change
   components:
   - type: Sprite
