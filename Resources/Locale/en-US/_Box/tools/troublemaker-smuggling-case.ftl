@@ -33,3 +33,11 @@ troublemaker-carp-kit-description = You know what that means...3 dehydrated carp
 troublemaker-whistleblower-kit-name = Whistleblower Kit
 troublemaker-whistleblower-kit-description = Secrets and scandals are your domain. Contains one of each record computer,
  a voice mask implant, a crew monitor flatpack, and a master encryption key.
+
+troublemaker-arsonist-kit-name = Arsonist Kit
+troublemaker-arsonist-kit-description = Some people just want to watch the workplace burn. Contains a bandana, a fireaxe,
+ and 3 fire bombs with random fuse times.
+
+troublemaker-cheater-kit-name = Cheater Kit
+troublemaker-cheater-kit-description = Truth is, the game was rigged from the start. Contains rigged boxing gloves (blue), real boxing gloves (red),
+ a fake and real cap gun, a cybersun pen, and a deck of cards.

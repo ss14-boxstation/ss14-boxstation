@@ -16,4 +16,6 @@
     - TroublemakerPranksterKit
     - TroublemakerCarpKit
     - TroublemakerWhistleblowerKit
+    - TroublemakerArsonistKit
+    - TroublemakerCheaterKit
     spawnedStoragePrototype: ClothingBackpackSatchelSmugglerUnanchored

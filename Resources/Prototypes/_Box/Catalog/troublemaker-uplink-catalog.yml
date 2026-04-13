@@ -93,26 +93,26 @@
   - FoodBoxDonkpocketCarp
 
 - type: thiefBackpackSet
-  id: TroublemakerWhistleblowerKit
-  name: troublemaker-whistleblower-kit-name
-  description: troublemaker-whistleblower-kit-description
+  id: TroublemakerArsonistKit
+  name: troublemaker-arsonist-kit-name
+  description: troublemaker-arsonist-kit-description
   sprite:
-    sprite: objects/fun/plushies/carp.rsi
-    state: carpplush
+    sprite: Objects/Weapons/Bombs/ied.rsi
+    state: base
   content:
-  - ClothingOuterHardsuitCarp
-  - DehydratedSpaceCarp
-  - DehydratedSpaceCarp
-  - DehydratedSpaceCarp
-  - FoodBoxDonkpocketCarp
+  - ClothingMaskBandBlack
+  - FireAxe
+  - FireBomb
+  - FireBomb
+  - FireBomb
 
 - type: thiefBackpackSet
   id: TroublemakerWhistleblowerKit
   name: troublemaker-whistleblower-kit-name
   description: troublemaker-whistleblower-kit-description
   sprite:
-    sprite: Objects/Devices/encryption_keys.rsi
-    state: crypt_gold
+    sprite: Objects/Fun/Instruments/microphone.rsi
+    state: icon
   content:
   - EncryptionKeyStationMaster
   - VoiceMaskImplanter
@@ -120,3 +120,19 @@
   - StationRecordsComputerCircuitboard
   - MedicalRecordsComputerCircuitboard
   - CriminalRecordsComputerCircuitboard
+
+- type: thiefBackpackSet
+  id: TroublemakerCheaterKit
+  name: troublemaker-cheater-kit-name
+  description: troublemaker-cheater-kit-description
+  sprite:
+    sprite: _EstacaoPirata/Objects/Misc/cards.rsi
+    state: deck_black_full
+  content:
+  - ClothingHandsGlovesBoxingRigged
+  - ClothingHandsGlovesBoxingRigged
+  - RevolverCapGun
+  - RevolverCapGunFake
+  - CyberPen #To Do - add a generic non syndi version
+  - CardBoxBlack
+
