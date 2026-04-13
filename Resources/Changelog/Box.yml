@@ -797,3 +797,10 @@
   id: 91
   time: '2026-04-13T14:26:11.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/130
+- author: BlueMoon059
+  changes:
+  - message: Fixes avali headwear displacements.
+    type: Fix
+  id: 92
+  time: '2026-04-13T21:19:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/142
