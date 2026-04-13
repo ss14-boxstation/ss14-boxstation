@@ -8,7 +8,7 @@ public sealed partial class CCVars
         OocEnabled = CVarDef.Create("ooc.enabled", true, CVar.NOTIFY | CVar.REPLICATED);
 
     public static readonly CVarDef<bool> AdminOocEnabled =
-        CVarDef.Create("ooc.enabled_admin", true, CVar.NOTIFY);
+        CVarDef.Create("ooc.enabled_admin", true, CVar.NOTIFY); // Box - Changed to true
 
     /// <summary>
     ///     If true, whenever OOC is disabled the Discord OOC relay will also be disabled.
