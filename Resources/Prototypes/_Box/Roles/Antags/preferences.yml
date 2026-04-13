@@ -93,7 +93,7 @@
   setPreference: true
   visiblePreference: true
   objective: roles-antag-troublemaker-objective
-  guides: [Troublemakers]
+  guides: [ Troublemaker ]
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 3600 # 1h

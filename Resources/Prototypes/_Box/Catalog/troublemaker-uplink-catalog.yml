@@ -67,7 +67,7 @@
   name: troublemaker-prankster-kit-name
   description: troublemaker-prankster-kit-description
   sprite:
-    sprite: clothing/mask/clown.rsi
+    sprite: Clothing/Mask/clown.rsi
     state: icon
   content:
   - BalloonOperative
@@ -83,7 +83,7 @@
   name: troublemaker-carp-kit-name
   description: troublemaker-carp-kit-description
   sprite:
-    sprite: objects/fun/plushies/carp.rsi
+    sprite: Objects/Fun/Plushies/carp.rsi
     state: carpplush
   content:
   - ClothingOuterHardsuitCarp
