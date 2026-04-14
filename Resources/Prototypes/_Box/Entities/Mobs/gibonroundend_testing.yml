@@ -3,7 +3,7 @@
   id: MobGibOnRoundEnd50
   name: Urist McGibsOnRoundEnd
   description: He gibs on round end, except when he don't
-  suffix: 50%, DEBUG
+  suffix: 50%, DEBUG, Box
   components:
     - type: GibOnRoundEnd
       safetyChance: 0.5
@@ -13,7 +13,7 @@
   id: MobGibOnRoundEnd10
   name: Urist McGibsOnRoundEnd
   description: He gibs on round end, 90% of the time.
-  suffix: 10%, DEBUG
+  suffix: 10%, DEBUG, Box
   components:
     - type: GibOnRoundEnd
       safetyChance: 0.1
