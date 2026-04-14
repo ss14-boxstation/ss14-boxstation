@@ -15,7 +15,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerMedicalGrudgeObjective
-  name: Medical Malpractise
+  name: Medical Malpractice
   description: On your last shift, medical botched your treatment. Show them that was a mistake.
   components:
   - type: Objective
