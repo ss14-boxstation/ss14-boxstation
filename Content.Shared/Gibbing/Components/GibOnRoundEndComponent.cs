@@ -27,3 +27,4 @@ public sealed partial class GibOnRoundEndComponent : Component
     [DataField]
     public float SafetyChance = 0f;
     // End Box Change}
+}
