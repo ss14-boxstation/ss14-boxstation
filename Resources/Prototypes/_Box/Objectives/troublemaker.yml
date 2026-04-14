@@ -42,7 +42,7 @@
   parent: BaseTroublemakerObjective
   id: TroublemakerScienceGrudgeObjective
   name: Anti-intellectualism
-  description: Holes in the station here, anomalies there, you've had enough of the flagrant lack of safety from Science. Make sure their "accidents" effect them too.
+  description: Holes in the station here, anomalies there, you've had enough of the flagrant lack of safety from Science. Prepare for them some unforseen consequences to their meddling.
   components:
   - type: Objective
     icon:

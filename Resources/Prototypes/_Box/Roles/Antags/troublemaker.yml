@@ -2,7 +2,6 @@
   id: Troublemaker
   name: roles-antag-troublemaker-name
   antagonist: true
-  setPreference: true
   objective: roles-antag-troublemaker-objective
   guides: [ Troublemaker ]
   requirements:
