@@ -804,3 +804,11 @@
   id: 92
   time: '2026-04-13T21:19:18.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/142
+- author: Dizzy-Eevee
+  changes:
+  - message: Rodentia will now eject any items in their cheek storage upon being knocked
+      down, disarmed, or taking sufficient damage. Your cheese is no longer safe.
+    type: Tweak
+  id: 93
+  time: '2026-04-15T10:06:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/145
