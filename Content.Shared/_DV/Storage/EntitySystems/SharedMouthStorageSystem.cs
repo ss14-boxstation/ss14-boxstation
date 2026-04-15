@@ -16,12 +16,12 @@ using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
-// Box additions start
-using System.Numerics;
-using Content.Shared.Interaction;
+// Start Box Change
 using Content.Shared.Stunnable;
-using Content.Shared.Throwing;
-using Robust.Shared.Physics.Components;
+using Robust.Shared.Random;
+using System.Linq;
+using Content.Shared.Popups;
+// End Box Change
 
 namespace Content.Shared._DV.Storage.EntitySystems;
 
@@ -30,6 +30,11 @@ public abstract class SharedMouthStorageSystem : EntitySystem
     // [Dependency] private readonly DumpableSystem _dumpableSystem = default!; // Box - Removed because broken
     [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
+    // Start Box Change: Additions for DropAllContents refactor
+    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
+    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+    // End Box Change
 
     public override void Initialize()
     {
@@ -69,10 +74,23 @@ public abstract class SharedMouthStorageSystem : EntitySystem
 
     private void DropAllContents<T>(EntityUid uid, MouthStorageComponent component, ref T _) // Box Change - Port fix from Starcup
     {
-        if (component.MouthId == null)
-            return;
-
+        // Start Box Change: Complete refactor
+        //if (component.MouthId == null)
+        //    return;
         // _dumpableSystem.DumpContents(component.MouthId.Value, uid, uid);
+        TryComp<StorageComponent>(component.MouthId, out var storage);
+        if (storage != null)
+        {
+            var contained = storage.Container.ContainedEntities.ToArray();
+            var targetPos = _transformSystem.GetWorldPosition(uid);
+            foreach (var ent in contained)
+            {
+                _popupSystem.PopupEntity(Loc.GetString("rodentia-cheek-storage-eject", ("rat", Identity.Entity(component.Owner, EntityManager))), uid, PopupType.MediumCaution);
+                var transform = Transform(ent);
+                _transformSystem.SetWorldPositionRotation(ent, targetPos + _random.NextVector2Box() / 4, _random.NextAngle(), transform);
+            }
+        }
+        //End Box Change
     }
 
     private void OnDamageModified(EntityUid uid, MouthStorageComponent component, DamageChangedEvent args)
