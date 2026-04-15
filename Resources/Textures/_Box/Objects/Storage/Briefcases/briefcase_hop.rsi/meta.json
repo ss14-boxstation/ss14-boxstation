@@ -1,31 +1,31 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Icon by Dizzy-Eevee (github), based in part off the work of ps3moira at commit https://github.com/space-wizards/space-station-14/commit/b2a6d5c1b0553b5f5f2b72b229d629e5351bbd6c. Inhands modified from Tennesee116's work for Baystation at commit https://github.com/Baystation12/Baystation12/commit/a929584d9db319eb7484113221be25cfa1d5dc09",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "inhand-left",
-      "directions": 4
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Icon by Dizzy-Eevee (github), based in part off the work of ps3moira at commit https://github.com/space-wizards/space-station-14/commit/b2a6d5c1b0553b5f5f2b72b229d629e5351bbd6c. Inhands modified from Tennesee116's work for Baystation at commit https://github.com/Baystation12/Baystation12/commit/a929584d9db319eb7484113221be25cfa1d5dc09",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "icon"
-    },
-    {
-      "name": "locked"
-    },
-    {
-      "name": "unlocked"
-    },
-    {
-      "name": "empty"
-    }
-  ]
+    "states": [
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "icon"
+        },
+        {
+            "name": "locked"
+        },
+        {
+            "name": "unlocked"
+        },
+        {
+            "name": "empty"
+        }
+    ]
 }
