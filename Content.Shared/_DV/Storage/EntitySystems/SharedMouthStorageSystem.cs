@@ -21,6 +21,7 @@ using Content.Shared.Stunnable;
 using Robust.Shared.Random;
 using System.Linq;
 using Content.Shared.Popups;
+using Robust.Shared.Player;
 // End Box Change
 
 namespace Content.Shared._DV.Storage.EntitySystems;
@@ -41,7 +42,7 @@ public abstract class SharedMouthStorageSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<MouthStorageComponent, MapInitEvent>(OnMouthStorageInit);
-        SubscribeLocalEvent<MouthStorageComponent, KnockedDownEvent>(DropAllContents);
+        SubscribeLocalEvent<MouthStorageComponent, StunnedEvent>(DropAllContents); // Box Change: Use StunnedEvent instead of KnockedDownEvent so that you don't spit out items when you go prone
         SubscribeLocalEvent<MouthStorageComponent, DisarmedEvent>(DropAllContents);
         SubscribeLocalEvent<MouthStorageComponent, DamageChangedEvent>(OnDamageModified);
         SubscribeLocalEvent<MouthStorageComponent, ExaminedEvent>(OnExamined);
@@ -85,7 +86,8 @@ public abstract class SharedMouthStorageSystem : EntitySystem
             var targetPos = _transformSystem.GetWorldPosition(uid);
             foreach (var ent in contained)
             {
-                _popupSystem.PopupEntity(Loc.GetString("rodentia-cheek-storage-eject", ("rat", Identity.Entity(component.Owner, EntityManager))), uid, PopupType.MediumCaution);
+                _popupSystem.PopupEntity(Loc.GetString("rodentia-cheek-storage-eject-self"), uid, uid, PopupType.MediumCaution); // For whatever reason PopupClientt and PopupPredicted do not work, so we use this instead.
+                _popupSystem.PopupEntity(Loc.GetString("rodentia-cheek-storage-eject-other", ("rat", Identity.Entity(component.Owner, EntityManager))), uid, Filter.PvsExcept(uid), true, PopupType.MediumCaution);
                 var transform = Transform(ent);
                 _transformSystem.SetWorldPositionRotation(ent, targetPos + _random.NextVector2Box() / 4, _random.NextAngle(), transform);
             }
