@@ -812,3 +812,11 @@
   id: 93
   time: '2026-04-15T10:06:00.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/145
+- author: Dizzy-Eevee
+  changes:
+  - message: Added traits for blood deficiency, which cause your character to either
+      not regenerate or actively lose blood.
+    type: Add
+  id: 94
+  time: '2026-04-15T15:30:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/128
