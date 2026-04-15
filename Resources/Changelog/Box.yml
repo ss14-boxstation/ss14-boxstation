@@ -820,3 +820,20 @@
   id: 94
   time: '2026-04-15T15:30:49.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/128
+- author: Dizzy-Eevee
+  changes:
+  - message: Added secure briefcases for all your paperwork-securing needs. Lockable,
+      explosion-proof, and printable at autolathes.
+    type: Add
+  - message: Added unique briefcases for the HoP, Detective, and Lawyer. All three
+      are potential steal targets for thieves.
+    type: Add
+  - message: Lawyer now spawns holding their special briefcase, instead of a generic
+      brown one.
+    type: Tweak
+  - message: The Hristov sniper bundle now comes in a secure briefcase instead of
+      a brown one.
+    type: Tweak
+  id: 95
+  time: '2026-04-15T20:40:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/133
