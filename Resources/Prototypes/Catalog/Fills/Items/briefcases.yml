@@ -10,7 +10,10 @@
         amount: 3
 
 - type: entity
-  id: BriefcaseSyndieSniperBundleFilled
+  # Start Box Change - Replaced by secure briefcase variant found at _Box\Entities\Objects\Misc\briefcases.yml
+  abstract: true
+  id: BriefcaseSyndieSniperBundleFilledUpstream # BriefcaseSyndieSniperBundleFilled > BriefcaseSyndieSniperBundleFilledUpstream
+  # End Box Change
   parent: BriefcaseSyndie
   suffix: Syndicate, Sniper Bundle
   components:
