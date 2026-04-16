@@ -84,3 +84,17 @@
   setPreference: true
   visiblePreference: true
   objective: consent-be-rr-target-desc
+
+# Other Fork Antags
+## Hitman (DV)
+- type: antag
+  id: DummyHitman
+  name: roles-antag-hitman-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-hitman-objective
+  guides: [Hitman]
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1h
