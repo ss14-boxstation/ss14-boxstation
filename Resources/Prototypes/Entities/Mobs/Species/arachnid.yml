@@ -71,6 +71,10 @@
       Male: UnisexArachnid
       Female: UnisexArachnid
       Unsexed: UnisexArachnid
+  # Start Box/Imp Change - Species-specific body emotes for Impstation blink emote
+  - type: BodyEmotes
+    soundsId: ArachnidBodyEmotes
+  # End Box/Imp Change
   - type: TypingIndicator
     proto: spider
   - type: Sprite # I'd prefer if these maps were better. Insert map pun here.
@@ -122,6 +126,7 @@
   - type: Inventory
     templateId: arachnid
     speciesId: arachnid
+  - type: Carriable # Box Change - Carrying system from nyanotrasen.
 
 
 - type: entity

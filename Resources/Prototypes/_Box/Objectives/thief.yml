@@ -9,3 +9,37 @@
     stealGroup: DigiboardMassMedia
   - type: Objective
     difficulty: 0.8
+    
+- type: entity
+  parent: BaseThiefStealObjective
+  id: BriefcaseHoPStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ HeadOfPersonnel ]
+  - type: StealCondition
+    stealGroup: BriefcaseHoP
+  - type: Objective
+    difficulty: 1.2
+
+- type: entity
+  parent: BaseThiefStealObjective
+  id: BriefcaseDetectiveStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ Detective ]
+  - type: StealCondition
+    stealGroup: BriefcaseDetective
+  - type: Objective
+    difficulty: 1.2
+
+- type: entity
+  parent: BaseThiefStealObjective
+  id: BriefcaseLawyerStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ Lawyer ]
+  - type: StealCondition
+    verifyMapExistence: true # Lawyer's briefcase spawns in their hand, so we want to make sure it exists before we roll the objective.
+    stealGroup: BriefcaseLawyer
+  - type: Objective
+    difficulty: 0.8

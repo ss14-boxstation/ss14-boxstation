@@ -81,7 +81,7 @@ public sealed partial class ResearchSystem
             return false;
 
         AddTechnology(serverEnt.Value, prototype);
-        TrySetMainDiscipline(prototype, serverEnt.Value);
+        // TrySetMainDiscipline(prototype, serverEnt.Value); // Box Change - Disable research specialization - We killed speed boots with hammers so we don't need to worry about science making microreactor spoots every shift anymore
         ModifyServerPoints(serverEnt.Value, -prototype.Cost);
         UpdateTechnologyCards(serverEnt.Value);
 

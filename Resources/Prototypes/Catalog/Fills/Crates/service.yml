@@ -201,6 +201,12 @@
         - id: NewtonCradle
         - id: BoxEnvelope
         - id: BrbSign
+        # Begin Box Change - Adds starcup notebooks
+        - id: NotebookCompositionRed
+        - id: NotebookCompositionGreen
+        - id: NotebookCompositionBlue
+        - id: NotebookSpiralBeige
+        # End Box Change
         - id: ClothingNeckLanyard #Harmony addition. Also obtainable through character loadouts and PTech vendor
 
 - type: entity
