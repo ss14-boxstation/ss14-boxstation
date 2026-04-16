@@ -844,3 +844,11 @@
   id: 96
   time: '2026-04-16T10:24:53.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/135
+- author: BlueMoon059
+  changes:
+  - message: Adds a new antagonist - the Troublemaker. A low to mid impact antagonist
+      that uses a series of kits to settle grudges.
+    type: Add
+  id: 97
+  time: '2026-04-16T11:30:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/136
