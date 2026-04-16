@@ -1,8 +1,9 @@
 - type: entity
+  parent: SatchelThief
   id: TroublemakerSmugglingCase
   name: undetermined smuggled satchel
+  suffix: Box
   description: Tools, trinkets, and gadgets you've brought with you to make your anger known.
-  parent: SatchelThief
   components:
   - type: ThiefUndeterminedBackpack
     maxSelectedSets: 2
