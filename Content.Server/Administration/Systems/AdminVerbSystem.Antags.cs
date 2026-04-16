@@ -1,4 +1,5 @@
 using Content.Server._Harmony.GameTicking.Rules.Components; // Harmony
+using Content.Server._DV.GameTicking.Rules.Components; //DV
 using Content.Server.Antag;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules.Components;
@@ -34,6 +35,7 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultWizardRule = "Wizard";
     private static readonly EntProtoId DefaultBloodBrotherRule = "BloodBrothers"; // Harmony
     private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
+    private static readonly EntProtoId DefaultHitmanRule = "Hitman"; //_DV
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
     // All antag verbs have names so invokeverb works.
@@ -244,5 +246,21 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(conspirator);
         // Harmony end
+        // start DeltaV Additions - add hitman
+        var hitmanName = Loc.GetString("admin-verb-make-hitman");
+        Verb hitman = new()
+        {
+            Text = hitmanName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_DV/Interface/Misc/job_icons.rsi"), "Hitman"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<HitmanRuleComponent>(targetPlayer, DefaultHitmanRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", hitmanName, Loc.GetString("admin-verb-text-make-hitman")),
+        };
+        args.Verbs.Add(hitman);
+        // end DeltaV additions - add hitman
     }
 }
