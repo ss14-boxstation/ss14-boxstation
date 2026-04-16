@@ -115,6 +115,10 @@
             state: jumpsuit-female
   - type: Rootable
   - type: Carriable # Box Change - Carrying system from nyanotrasen.
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: dionaFootprint
+  # End Box Change
 
 - type: entity
   parent: BaseSpeciesDummy

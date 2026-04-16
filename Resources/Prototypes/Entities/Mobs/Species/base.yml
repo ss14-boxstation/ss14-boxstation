@@ -216,6 +216,10 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: humanFootprint
+  # End Box change
 
 - type: entity
   save: false
@@ -285,6 +289,7 @@
   - type: FireVisuals
     alternateState: Standing
   - type: StunVisuals
+  - type: FootprintOwner # Box Change: starcup footprints
 
 - type: entity
   save: false
