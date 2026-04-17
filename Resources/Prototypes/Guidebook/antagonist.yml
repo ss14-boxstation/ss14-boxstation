@@ -61,8 +61,3 @@
   id: Xenoborgs
   name: guide-entry-xenoborgs
   text: "/ServerInfo/Guidebook/Antagonist/Xenoborgs.xml"
-
-- type: guideEntry
-  id: Hitman
-  name: guide-entry-Hitman
-  text: "/ServerInfo/Guidebook/_DV/Antagonist/Hitman.xml"
