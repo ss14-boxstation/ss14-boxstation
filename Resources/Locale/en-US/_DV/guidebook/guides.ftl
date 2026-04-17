@@ -1,1 +1,1 @@
-guide-entry-Hitman = Hitman
+guide-entry-hitman = Hitman
