@@ -1,0 +1,10 @@
+- type: construction
+  id: AtmosFanWeak
+  graph: AtmosFanWeak
+  startNode: start
+  targetNode: fan
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter
+  conditions:
+  - !type:NoUnstackableInTile

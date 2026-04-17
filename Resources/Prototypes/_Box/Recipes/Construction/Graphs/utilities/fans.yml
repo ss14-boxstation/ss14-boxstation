@@ -1,0 +1,29 @@
+- type: constructionGraph
+  id: AtmosFanWeak
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: fan
+          steps:
+            - material: Steel
+              amount: 10
+              doAfter: 1
+            - material: Cable
+              amount: 3
+              doAfter: 1
+
+    - node: fan
+      entity: AtmosDeviceFanDirectionalWeak
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 2
+            - tool: Welding
+              doAfter: 2

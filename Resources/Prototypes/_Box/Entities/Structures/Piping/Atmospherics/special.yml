@@ -1,0 +1,55 @@
+- type: entity
+  id: AtmosDeviceFanDirectionalWeak
+  name: weak directional fan
+  suffix: Box
+  description: A thin fan, stopping the movement of gases across it. This one is vacuum-safe, but can't handle more extreme pressure differences.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: Structures/Piping/Atmospherics/directionalfan.rsi
+    state: icon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+            bounds: "-0.48,-0.48,0.48,-0.40"
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+      - South
+  - type: Clickable
+  - type: Tag
+    tags:
+      - SpreaderIgnore
+      - Unstackable
+  - type: DeltaPressure
+    minPressure: 200
+    minPressureDelta: 150
+    scalingType: Threshold
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+  - type: RCDDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  - type: Construction
+    graph: AtmosFanWeak
+    node: fan
