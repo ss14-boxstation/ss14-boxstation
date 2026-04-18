@@ -90,11 +90,11 @@
       food:
         reagents:
         - ReagentId: SpaceDrugs
-          Quantity: 3
+          Quantity: 4 # Box Change: Increased by 1 to compensate for Happiness removal
         - ReagentId: Lipolicide
-          Quantity: 3
+          Quantity: 4
         - ReagentId: MindbreakerToxin
-          Quantity: 2
+          Quantity: 3 # Box Change: Increased by 1 to compensate for Happiness removal
         # Start Box Change: No more happiness
         #- ReagentId: Happiness
         #  Quantity: 2
@@ -119,11 +119,11 @@
         maxVol: 8.5 #fuck you saveload test fail
         reagents:
         - ReagentId: SpaceDrugs
-          Quantity: 2.4
+          Quantity: 3.2 # Box Change: Increased by 0.8 to compensate for Happiness removal
         - ReagentId: Lipolicide
           Quantity: 2.4
         - ReagentId: MindbreakerToxin
-          Quantity: 1.6
+          Quantity: 2.4 # Box Change: Increased by 0.8 to compensate for Happiness removal
         # Start Box Change: No more happiness
         #- ReagentId: Happiness
         #  Quantity: 1.6
@@ -150,11 +150,11 @@
       food:
         reagents:
         - ReagentId: SpaceDrugs
-          Quantity: 4
+          Quantity: 5 # Box Change: Increased by 1 to compensate for Happiness removal
         - ReagentId: Lipolicide
           Quantity: 4
         - ReagentId: MindbreakerToxin
-          Quantity: 2.66
+          Quantity: 4 # Box Change: Increased by 1.34 to compensate for Happiness removal
         # Start Box Change: No more happiness
         #- ReagentId: Happiness
         #  Quantity: 2.66
