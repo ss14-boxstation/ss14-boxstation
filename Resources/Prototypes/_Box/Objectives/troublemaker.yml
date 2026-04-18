@@ -1,0 +1,182 @@
+- type: entity
+  parent: BaseObjective
+  abstract: true
+  id: BaseTroublemakerObjective
+  components:
+  - type: Objective
+    issuer: objective-issuer-troublemaker
+    difficulty: 1 #Roleplay guidelines, not tracked, so will keep it random
+  - type: RoleRequirement
+    roles:
+    - TroublemakerRole
+  - type: NoCompletionObjective
+
+# Departmental Grudges
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerMedicalGrudgeObjective
+  name: Medical Malpractice
+  description: On your last shift, medical botched your treatment. Show them that was a mistake.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Specific/Chemistry/syringe.rsi
+      state: syringe_base0
+  - type: NotJobRequirement
+    jobs: [ MedicalDoctor, Paramedic, Chemist, Psychologist ]
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerSupplyGrudgeObjective
+  name: Supply Issues
+  description: Cargo have misplaced your plushie order for the last time. Remind them of their logistical obligations. Painfully if needed.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Economy/cash.rsi
+      state: cash_1000
+  - type: NotJobRequirement
+    jobs: [ CargoTechnician, SalvageSpecialist ]
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerScienceGrudgeObjective
+  name: Anti-intellectualism
+  description: Holes in the station here, anomalies there, you've had enough of the flagrant lack of safety from Science. Prepare for them some unforseen consequences to their meddling.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Specific/Research/researchdisk.rsi
+      state: icon
+  - type: NotJobRequirement
+    jobs: [ Scientist ]
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerEngineeringGrudgeObjective
+  name: Blackout Rage
+  description: Constant blackouts, patchy repair jobs, and the only people around are too busy tinkering with the pipes to fix the hull. Make some new holes so they're forced to do their job for once.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Tools/wrench.rsi
+      state: icon
+  - type: NotJobRequirement
+    jobs: [ StationEngineer, AtmosphericTechnician ]
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerServiceGrudgeObjective
+  name: 1/5 Stars
+  description: Filthy corridors, the bartender's more interested in their gun than their drinks, the kitchen gave you food-poisoning, and why did we even HIRE that clown? Remind service they're here to serve.
+  components:
+  - type: Objective
+    icon:
+      sprite: Clothing/OuterClothing/Misc/apron.rsi
+      state: icon
+  - type: NotJobRequirement
+    jobs: [ Bartender, ServiceWorker, Clown, Janitor, Chef, Mime, Chaplain, Botanist, Librarian, Reporter, Boxer, Zookeeper ]
+
+#Individual Grudges
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerIndividualGrudgeObjective
+  description: They've wronged you for the last time. Settle your grudge however you see fit, whatever that grudge may be.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/books.rsi
+      state: cover_old
+  - type: TargetObjective
+    title: troublemaker-objective-grudge-individual-title
+  - type: PickRandomPerson
+
+#Random Filler Objectives
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerVendingMachineObjective
+  name: Adblocker
+  description: The constant advertisements, never having what you want in stock. These vending machines have to go. Smash them up.
+  components:
+  - type: Objective
+    icon:
+      sprite: Structures/Machines/VendingMachines/happyhonk.rsi
+      state: broken
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerValuablesObjective
+  name: What's Yours Is Mine
+  description: Lighten peoples pockets, via scams, theft, or muggings. Anything to line your own pockets. Not like the paychecks making ends meet.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Materials/ingots.rsi
+      state: gold_3
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerAccessesObjective
+  name: Open Borders
+  description: You've always felt accesses were a bit restrictive. Open up departmental access as much as you can.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/id_cards.rsi
+      state: icon-captain
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerRumorObjective
+  name: I Heard a Rumor
+  description: Bring a rumor to life. The more salacious, the better. Ghost stories, drama, conflict, the captain's skeleton in the closet. Anything goes.
+  components:
+  - type: Objective
+    icon:
+      sprite: Mobs/Species/Skeleton/parts.rsi
+      state: skull_icon
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerBlackmarketeerObjective
+  name: Pirate Bay
+  description: Contraband labels are so last year. Redistribute contra as widely as you can, security edicts be damned. Everyone deserves some fun toys.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Fun/Balloons/syndicate.rsi
+      state: icon
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerFramerObjective
+  name: Frame Someone
+  description: Security is always putting heat on you without any actual evidence - show someone else how that feels. Frame someone for crime.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/handcuffs.rsi
+      state: handcuff
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerCCTVObjective
+  name: Eye for an Eye
+  description: You've never felt good in the spotlight. Removing the cameras should fix that. Dismantle them.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Materials/Scrap/generic.rsi
+      state: junk-camera
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerLightsObjective
+  name: Lights Out
+  description: You've always done your best work under cover of shadows, and it gives you more hiding places from Security. Break the lights and keep them broken.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Power/light_bulb.rsi
+      state: broken

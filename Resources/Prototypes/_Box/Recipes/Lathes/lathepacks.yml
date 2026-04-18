@@ -13,3 +13,8 @@
   - ChassisPatch
   - CablePack
   - RobotStructPack
+  
+- type: latheRecipePack
+  id: BriefcaseSecureStatic
+  recipes:
+  - BriefcaseSecure

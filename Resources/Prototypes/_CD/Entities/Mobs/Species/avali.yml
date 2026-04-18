@@ -127,7 +127,7 @@
       head:
         sizeMaps:
           32:
-            sprite: _Harmony/Species/Avali/displacement.rsi
+            sprite: _Harmony/Mobs/Species/Avali/displacement.rsi # Box Change - Fixes path
             state: head
       mask:
         sizeMaps:
