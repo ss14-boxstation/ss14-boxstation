@@ -996,7 +996,7 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-     THC: # Box Change: Replace Happiness with THC
+    THC: # Box Change: Replace Happiness with THC
       Min: 1
       Max: 5
 #     PotencyDivisor: 20
