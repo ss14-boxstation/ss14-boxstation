@@ -996,9 +996,11 @@
       Min: 1
       Max: 5
       PotencyDivisor: 20
-    Happiness:
-      Min: 1
-      Max: 5
+    # Start Box Change: No more happiness
+    #Happiness:
+    #  Min: 1
+    #  Max: 5
+    # End Box Change
 #     PotencyDivisor: 20
 #   ColorfulReagent:
 #     Min: 0
