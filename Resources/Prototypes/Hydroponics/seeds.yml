@@ -986,7 +986,7 @@
   chemicals:
     SpaceDrugs:
       Min: 1
-      Max: 18 # Box Change: Increased by 3 to compensate for Happiness removal
+      Max: 15
       PotencyDivisor: 10
     Lipolicide:
       Min: 1
@@ -994,7 +994,7 @@
       PotencyDivisor: 10
     MindbreakerToxin:
       Min: 1
-      Max: 7 # Box Change: Increased by 2 to compensate for Happiness removal
+      Max: 5
       PotencyDivisor: 20
     # Start Box Change: No more happiness
     #Happiness:

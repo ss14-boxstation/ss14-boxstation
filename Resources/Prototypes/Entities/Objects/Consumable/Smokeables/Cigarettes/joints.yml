@@ -47,11 +47,11 @@
         maxVol: 20
         reagents:
         - ReagentId: SpaceDrugs
-          Quantity: 5 # Box Change: Increased by 1 to compensate for Happiness removal
+          Quantity: 4
         - ReagentId: Lipolicide
           Quantity: 4
         - ReagentId: MindbreakerToxin
-          Quantity: 4 # Box Change: Increased by 1.34 to compensate for Happiness removal
+          Quantity: 2.66
         # Start Box Change: No more happiness
         #- ReagentId: Happiness
         #  Quantity: 2.66
@@ -110,11 +110,11 @@
         maxVol: 20
         reagents:
         - ReagentId: SpaceDrugs
-          Quantity: 5 # Box Change: Increased by 1 to compensate for Happiness removal
+          Quantity: 4
         - ReagentId: Lipolicide
           Quantity: 4
         - ReagentId: MindbreakerToxin
-          Quantity: 4 # Box Change: Increased by 1.34 to compensate for Happiness removal
+          Quantity: 2.66
         # Start Box Change: No more happiness
         #- ReagentId: Happiness
         #  Quantity: 2.66
