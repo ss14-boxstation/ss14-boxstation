@@ -95,7 +95,6 @@
           Quantity: 3
         - ReagentId: MindbreakerToxin
           Quantity: 2
-         Start Box Change: No more happiness
         - ReagentId: THC # Box Change: Replace Happiness with THC
           Quantity: 2
 #       - ReagentId: ColorfulReagent
