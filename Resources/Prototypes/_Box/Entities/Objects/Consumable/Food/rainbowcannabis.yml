@@ -99,8 +99,10 @@
   description: Add this to your favorite baked goods for a gay time.
   components:
   - type: Sprite
-    sprite: _Box/Objects/Consumable/Food/Ingredients/rainbowcannabisbutter.rsi
-    state: butter
+    layers:
+    - sprite: _Box/Objects/Consumable/Food/Ingredients/rainbowcannabisbutter.rsi
+      state: butter
+      shader: unshaded
   - type: SolutionContainerManager
     solutions:
       food:
