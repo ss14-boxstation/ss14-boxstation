@@ -1,0 +1,122 @@
+- type: entity
+  parent: FoodBakedBase
+  id: FoodBakedRainbowCannabisBrownieBatch
+  name: rainbow brownies
+  description: A pan of extra-"special" brownies with rainbow chocolate chips.
+  components:
+  - type: Item
+    size: Normal
+    storedOffset: 0,-3
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - magical
+      - chocolate
+  - type: Sprite
+    sprite: _Box/Objects/Consumable/Food/Baked/rainbowbrownies.rsi
+    state: rainbow-brownie-batch
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 288
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+        - ReagentId: Theobromine
+          Quantity: 18
+        - ReagentId: THC 
+        # Cheating here by using THC instead of Space Mirage for a longer high.
+        # Using Mirage results in a high more comparable to a non-rainbow special brownie
+        # which is simply unacceptable for the Forever Weed Brownie
+          Quantity: 100
+        - ReagentId: Lipolicide
+          Quantity: 30
+        - ReagentId: MindbreakerToxin
+          Quantity: 100
+        - ReagentId: Psicodine
+          Quantity: 10
+  - type: SliceableFood
+    count: 6
+    slice: FoodBakedRainbowCannabisBrownie
+
+- type: entity
+  parent: FoodBakedBase
+  id: FoodBakedRainbowCannabisBrownie
+  name: rainbow brownie
+  description: An extra-"special" brownie with rainbow chocolate chips.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - magical
+      - chocolate
+  - type: Sprite
+    sprite: _Box/Objects/Consumable/Food/Baked/rainbowbrownies.rsi
+    layers:
+      - state: rainbow-brownie-1
+        map: [ "skin" ]
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 48
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Theobromine
+          Quantity: 3
+        - ReagentId: THC 
+          Quantity: 15.66
+        # Cheating here by using THC instead of Space Mirage for a longer high.
+        # Using Mirage results in a high more comparable to a non-rainbow special brownie
+        # which is simply unacceptable for the Forever Weed Brownie
+        - ReagentId: Lipolicide
+          Quantity: 5
+        - ReagentId: MindbreakerToxin
+          Quantity: 15.66
+        - ReagentId: Psicodine
+          Quantity: 1.66
+  - type: Tag
+    tags:
+    - Slice
+  - type: RandomSprite
+    available:
+      - skin:
+          rainbow-brownie-1: ""
+          rainbow-brownie-2: ""
+          rainbow-brownie-3: ""
+          rainbow-brownie-4: ""
+          rainbow-brownie-5: ""
+          rainbow-brownie-6: ""
+          rainbow-brownie-7: ""
+          rainbow-brownie-8: ""
+          rainbow-brownie-9: ""
+          rainbow-brownie-10: ""
+
+- type: entity
+  name: stick of rainbow cannabis butter
+  parent: FoodButter
+  id: FoodRainbowCannabisButter
+  description: Add this to your favorite baked goods for a gay time.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Consumable/Food/Ingredients/rainbowcannabisbutter.rsi
+    state: butter
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 100
+        reagents:
+        - ReagentId: Butter
+          Quantity: 10
+        - ReagentId: THC
+          Quantity: 35
+        # Cheating here by using THC instead of Space Mirage for a longer high.
+        # This stuff should be more potent than normal weed.
+        - ReagentId: Lipolicide
+          Quantity: 8
+        - ReagentId: MindbreakerToxin
+          Quantity: 35
+        - ReagentId: Psicodine
+          Quantity: 4
+  - type: Extractable
+    grindableSolutionName: food

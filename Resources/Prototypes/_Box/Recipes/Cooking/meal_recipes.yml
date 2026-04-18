@@ -1,0 +1,22 @@
+- type: microwaveMealRecipe
+  id: RecipeRainbowCannabisButter
+  name: rainbow cannabis butter recipe
+  result: FoodRainbowCannabisButter
+  time: 15
+  solids:
+    FoodButter: 1
+    LeavesCannabisRainbow: 6
+
+- type: microwaveMealRecipe
+  id: RecipeRainbowCannabisBrownies
+  name: rainbow cannabis brownie recipe
+  result: FoodBakedRainbowCannabisBrownieBatch
+  time: 25
+  group: BarsAndCookies
+  reagents:
+    Flour: 15
+    Sugar: 30
+    Egg: 18
+  solids:
+    FoodRainbowCannabisButter: 2
+    FoodSnackChocolateBar: 2

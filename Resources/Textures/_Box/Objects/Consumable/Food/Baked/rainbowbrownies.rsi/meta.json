@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/c6e3401f2e7e1e55c57060cdf956a98ef1fefc24, brownie-batch by Velcroboy. Several pixels added by Dizzy-Eevee.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states":
+    [
+        {
+            "name": "rainbow-brownie-batch"
+        },
+        {
+            "name": "rainbow-brownie-1"
+        },
+        {
+            "name": "rainbow-brownie-2"
+        },
+        {
+            "name": "rainbow-brownie-3"
+        },
+        {
+            "name": "rainbow-brownie-4"
+        },
+        {
+            "name": "rainbow-brownie-5"
+        },
+        {
+            "name": "rainbow-brownie-6"
+        },
+        {
+            "name": "rainbow-brownie-7"
+        },
+        {
+            "name": "rainbow-brownie-8"
+        },
+        {
+            "name": "rainbow-brownie-9"
+        },
+        {
+            "name": "rainbow-brownie-10"
+        }
+    ]
+}
