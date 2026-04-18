@@ -95,10 +95,9 @@
           Quantity: 3
         - ReagentId: MindbreakerToxin
           Quantity: 2
-        # Start Box Change: No more happiness
-        #- ReagentId: Happiness
-        #  Quantity: 2
-        # End Box Change
+         Start Box Change: No more happiness
+        - ReagentId: THC # Box Change: Replace Happiness with THC
+          Quantity: 2
 #       - ReagentId: ColorfulReagent
 #         Quantity: 1
         - ReagentId: Psicodine
@@ -124,10 +123,8 @@
           Quantity: 2.4
         - ReagentId: MindbreakerToxin
           Quantity: 1.6
-        # Start Box Change: No more happiness
-        #- ReagentId: Happiness
-        #  Quantity: 1.6
-        # End Box Change
+        - ReagentId: THC # Box Change: Replace Happiness with THC
+          Quantity: 1.6
 #       - ReagentId: ColorfulReagent
 #         Quantity: 0.8
         - ReagentId: Psicodine
@@ -155,10 +152,8 @@
           Quantity: 4
         - ReagentId: MindbreakerToxin
           Quantity: 2.66
-        # Start Box Change: No more happiness
-        #- ReagentId: Happiness
-        #  Quantity: 2.66
-        # End Box Change
+        - ReagentId: THC # Box Change: Replace Happiness with THC
+          Quantity: 2.66
 #       - ReagentId: ColorfulReagent
 #         Quantity: 1.33
         - ReagentId: Psicodine
