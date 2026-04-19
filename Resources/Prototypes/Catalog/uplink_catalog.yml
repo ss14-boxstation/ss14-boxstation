@@ -1163,7 +1163,6 @@
        - NukeOpsUplink
   # Box - Make Antimov DAGD-only
   - !type:BuyerObjectiveWhitelistCondition
-    makehidden: true
     whitelist:
       components:
         - DieCondition
@@ -1267,7 +1266,6 @@
   #End of Harmony change
   # Box - Make Singulo Beacon DAGD-only
   - !type:BuyerObjectiveWhitelistCondition
-    makehidden: true
     whitelist:
       components:
         - DieCondition
