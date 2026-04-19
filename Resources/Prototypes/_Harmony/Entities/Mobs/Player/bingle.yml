@@ -2,12 +2,12 @@
   parent: MobSpaceBasic
   id: MobBingle
   name: bingle
-  suffix: Basic, Harmony
+  suffix: Basic, Box
   description: Bingle.
   components:
   # Visuals
   - type: Sprite
-    sprite: _Harmony/Mobs/Aliens/Bingles/binglerevamp.rsi # Points towards the revamped sprite
+    sprite: _Box/Mobs/Aliens/Bingles/binglerevamp.rsi # Points towards the revamped sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
@@ -37,10 +37,8 @@
       0: Alive
       80: Dead
   - type: Bloodstream
-    bloodReferenceSolution:
-      reagents:
-      - ReagentId: Nitrogen
-        Quantity: 100
+    bloodMaxVolume: 100
+    bloodReagent: Nitrogen
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 4
@@ -57,7 +55,7 @@
   - type: ReplacementAccent
     accent: bingle
   - type: Stamina
-    baseCritThreshold: 120
+    critThreshold: 120
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -120,11 +118,11 @@
   parent: MobBingle
   id: MobBingleUpgraded
   name: bingler
-  suffix: Upgraded, Harmony
+  suffix: Upgraded, Box
   description: More bingle per bingle.
   components:
   - type: Sprite
-    sprite: _Harmony/Mobs/Aliens/Bingles/binglerevamp_upgraded.rsi # Points towards the revamped sprite
+    sprite: _Box/Mobs/Aliens/Bingles/binglerevamp_upgraded.rsi # Points towards the revamped sprite
   - type: Bingle
     upgraded: true
   - type: MeleeWeapon
