@@ -68,7 +68,7 @@
     - id: DecalSpawnerGraffiti
 
 - type: entity
-  id: BasicDecalBrunsVariationPass
+  id: BasicDecalBurnsVariationPass
   parent: BaseVariationPass
   components:
   - type: EntitySpawnVariationPass
@@ -116,6 +116,7 @@
     - Blood
     - CopperBlood
     - Slime
+    - ShimmeringBlood #Box Change - Imp - Thaven Blood appears in world
   - quantity: 25
     weight: 1
     reagents:

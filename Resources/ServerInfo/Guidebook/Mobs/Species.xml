@@ -16,6 +16,7 @@
   <GuideEntityEmbed Entity="MobReptilian" Caption="Reptilian"/>
   <GuideEntityEmbed Entity="MobRodentia" Caption="Rodentia"/> <!--Box-->
   <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
+  <GuideEntityEmbed Entity="MobThaven" Caption="Thaven"/> <!--Box - Imp, adds Thaven-->
   <GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
   </Box>
   <Box>

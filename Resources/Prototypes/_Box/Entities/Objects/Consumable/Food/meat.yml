@@ -1,0 +1,12 @@
+- type: entity
+  parent: FoodMeatRotten
+  id: FoodMeatRottenGoliath
+  name: rotten goliath meat
+  suffix: Box
+  description: A slab of goliath meat. Halfway to becoming fertilizer for your garden.
+  components:
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+    - GoliathMeat

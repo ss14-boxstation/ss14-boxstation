@@ -26,6 +26,7 @@
   children:
   - YourFirstCharacter
   - Species
+  - Records # Box Change - CD records
 
 - type: guideEntry
   id: YourFirstCharacter

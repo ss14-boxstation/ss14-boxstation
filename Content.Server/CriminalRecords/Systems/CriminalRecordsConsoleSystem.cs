@@ -16,6 +16,12 @@ using Content.Shared.Security.Components;
 using System.Linq;
 using Content.Shared.Roles.Jobs;
 
+// Start Box Change - CD: imports
+using Content.Server._CD.Records;
+using Content.Shared._CD.Records;
+// End Box Change
+
+
 namespace Content.Server.CriminalRecords.Systems;
 
 /// <summary>
@@ -36,6 +42,7 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         SubscribeLocalEvent<CriminalRecordsConsoleComponent, RecordModifiedEvent>(UpdateUserInterface);
         SubscribeLocalEvent<CriminalRecordsConsoleComponent, AfterGeneralRecordCreatedEvent>(UpdateUserInterface);
 
+        /* Box/CD: We disable the wizden Criminal Records computer and reuse some of the Bui events
         Subs.BuiEvents<CriminalRecordsConsoleComponent>(CriminalRecordsConsoleKey.Key, subs =>
         {
             subs.Event<BoundUIOpenedEvent>(UpdateUserInterface);
@@ -45,7 +52,19 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             subs.Event<CriminalRecordAddHistory>(OnAddHistory);
             subs.Event<CriminalRecordDeleteHistory>(OnDeleteHistory);
             subs.Event<CriminalRecordSetStatusFilter>(OnStatusFilterPressed);
+        }); */
+
+        // Start Box Change - CD: also subscribe to status changes from the CD records console
+        Subs.BuiEvents<CriminalRecordsConsoleComponent>(CharacterRecordConsoleKey.Key, subs =>
+        {
+            subs.Event<SelectStationRecord>(OnKeySelected);
+            subs.Event((Entity<CriminalRecordsConsoleComponent> ent, ref CriminalRecordChangeStatus args) =>
+            {
+                OnChangeStatus(ent, ref args);
+                RaiseLocalEvent(ent, new CharacterRecordsModifiedEvent());
+            });
         });
+        // End Box Change
     }
 
     private void UpdateUserInterface<T>(Entity<CriminalRecordsConsoleComponent> ent, ref T args)
@@ -88,9 +107,9 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         // prevent malf client violating wanted/reason nullability
         if (msg.Status == SecurityStatus.Wanted != (msg.Reason != null) &&
             msg.Status == SecurityStatus.Suspected != (msg.Reason != null) &&
-            // Additional Harmony statuses
-            msg.Status == SecurityStatus.Monitor != (msg.Reason != null) &&
-            msg.Status == SecurityStatus.Search != (msg.Reason != null))
+            msg.Status == SecurityStatus.Hostile != (msg.Reason != null) &&
+            msg.Status == SecurityStatus.Monitor != (msg.Reason != null) && // Harmony
+            msg.Status == SecurityStatus.Search != (msg.Reason != null)) // Harmony
             return;
 
         if (!CheckSelected(ent, msg.Actor, out var mob, out var key))
@@ -147,6 +166,8 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         // figure out which radio message to send depending on transition
         var statusString = (oldStatus, msg.Status) switch
         {
+            (_, SecurityStatus.Hostile) => "hostile",
+            (_, SecurityStatus.Eliminated) => "eliminated",
             // person has been detained
             (_, SecurityStatus.Detained) => "detained",
             // person did something sus
@@ -157,6 +178,8 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             (_, SecurityStatus.Discharged) => "released",
             // going from any other state to wanted, AOS or prisonbreak / lazy secoff never set them to released and they reoffended
             (_, SecurityStatus.Wanted) => "wanted",
+            (SecurityStatus.Hostile, SecurityStatus.None) => "not-hostile",
+            (SecurityStatus.Eliminated, SecurityStatus.None) => "not-eliminated",
             // Additional Harmony statuses
             // person is being monitored
             (_, SecurityStatus.Monitor) => "monitor",

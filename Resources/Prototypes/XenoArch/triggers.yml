@@ -251,6 +251,7 @@
     - ZombieBlood
     - Sap
     - IPCOil #Box Change - IPC blood can be used for artifacts
+    - ShimmeringBlood #Box Change - imp - thaven blood compatibility
 
 - type: xenoArchTrigger
   id: TriggerThrow

@@ -42,6 +42,11 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("sprites", required: true)]
         public List<SpriteSpecifier> Sprites { get; private set; } = default!;
 
+        /// Box Change Start - Imp - for glowing eyes for thaven port
+        [DataField]
+        public string? Shader { get; private set; } = null;
+        /// Box Change End - Imp - for glowing eyes for thaven port
+
         public Marking AsMarking()
         {
             return new Marking(ID, Sprites.Count);

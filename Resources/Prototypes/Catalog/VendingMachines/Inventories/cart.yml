@@ -8,10 +8,21 @@
     RubberStampApproved: 1
     RubberStampDenied: 1
     BoxFolderPlasticClipboardEmpty: 2
+    # Begin Box Change
+    BoxFolderClipboardEmpty: 2 # Add wooden clipboard as well, for some variety
+    BoxFolderBlackEmpty: 2 # Add folders, since some maps don't have folders mapped in the HoP office
+    BoxFolderWhiteEmpty: 2
+    BoxFolderRedEmpty: 2
+    BoxFolderBlueEmpty: 2
+    BoxFolderGreenEmpty: 2
+    BriefcaseBrown: 1 # Having a place to store your paperwork is nice, and you shouldn't have to steal a briefcase from the librarian/lawyer
+    Pen: 5 # Mostly a QoL change; if Cargo gets a pen bounty they go to HoP, and HoP has to yank the pens out of a bunch of PDAs.
+    # End Box Change
     Paper: 10
     Envelope: 10
     HandLabeler: 2
     EncryptionKeyCargo: 2
+    EncryptionKeySalvage: 2 # Harmony Change - Adds Salvage Comms
     EncryptionKeyEngineering: 2
     EncryptionKeyMedical: 2
     EncryptionKeyScience: 2

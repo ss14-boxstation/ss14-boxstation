@@ -368,6 +368,14 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                 _sprite.LayerMapSet((entity.Owner, sprite), layerId, layer);
                 _sprite.LayerSetSprite((entity.Owner, sprite), layerId, rsi);
             }
+            // Box Change - Imp - For Glowing Eyes Port for Thaven
+            // check if there's a shader defined in the markingPrototype's shader datafield, and if there is...
+            if (markingPrototype.Shader != null)
+            {
+                // use spriteComponent's layersetshader function to set the layer's shader to that which is specified.
+                sprite.LayerSetShader(layerId, markingPrototype.Shader);
+            }
+            // End Box Change - Imp - For Glowing Eyes port for Thaven
 
             _sprite.LayerSetVisible((entity.Owner, sprite), layerId, visible);
 

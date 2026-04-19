@@ -124,6 +124,7 @@
 
 - type: entity
   parent: [ClothingShoesBase, PowerCellSlotSmallItem, BaseToggleClothing]
+  suffix: Admeme # Box Change - Condemn speed boots to the admeme pit for their sins
   id: ClothingShoesBootsSpeed
   name: speed boots
   description: High-tech boots woven with quantum fibers, able to convert electricity into pure speed!

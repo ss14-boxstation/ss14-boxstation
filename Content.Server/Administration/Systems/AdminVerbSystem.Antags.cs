@@ -1,4 +1,6 @@
 using Content.Server._Harmony.GameTicking.Rules.Components; // Harmony
+using Content.Server._Box.GameTicking.Rules.Components; // Box
+using Content.Server._DV.GameTicking.Rules.Components; //DV
 using Content.Server.Antag;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules.Components;
@@ -13,6 +15,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.Roles.Components;
 
 namespace Content.Server.Administration.Systems;
 
@@ -30,7 +33,11 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultThiefRule = "Thief";
     private static readonly EntProtoId DefaultChangelingRule = "Changeling";
     private static readonly EntProtoId ParadoxCloneRuleId = "ParadoxCloneSpawn";
+    private static readonly EntProtoId DefaultWizardRule = "Wizard";
     private static readonly EntProtoId DefaultBloodBrotherRule = "BloodBrothers"; // Harmony
+    private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
+    private static readonly EntProtoId DefaultTroublemakerRule = "Troublemaker"; // Box
+    private static readonly EntProtoId DefaultHitmanRule = "Hitman"; //_DV
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
     // All antag verbs have names so invokeverb works.
@@ -191,6 +198,22 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", paradoxCloneName, Loc.GetString("admin-verb-make-paradox-clone")),
         };
 
+        var wizardName = Loc.GetString("admin-verb-text-make-wizard");
+        Verb wizard = new()
+        {
+            Text = wizardName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "Wizard"),
+            Act = () =>
+            {
+                // Wizard has no rule components as of writing, but I gotta put something here to satisfy the machine so just make it wizard mind rule :)
+                _antag.ForceMakeAntag<WizardRoleComponent>(targetPlayer, DefaultWizardRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", wizardName, Loc.GetString("admin-verb-make-wizard")),
+        };
+        args.Verbs.Add(wizard);
+
         if (HasComp<HumanoidAppearanceComponent>(args.Target)) // only humanoids can be cloned
             args.Verbs.Add(paradox);
 
@@ -209,6 +232,53 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", bloodBrotherName, Loc.GetString("admin-verb-make-blood-brother")),
         };
         args.Verbs.Add(bloodBrother);
+
+        var conspiratorName = Loc.GetString("admin-verb-text-make-conspirator");
+        Verb conspirator = new()
+        {
+            Text = conspiratorName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Harmony/Interface/Misc/job_icons.rsi"), "Conspirator"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<ConspiratorRuleComponent>(targetPlayer, DefaultConspiratorRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", conspiratorName, Loc.GetString("admin-verb-make-conspirator")),
+        };
+        args.Verbs.Add(conspirator);
         // Harmony end
+        // Box start - adds Troublemaker
+        var troublemaker = Loc.GetString("admin-verb-make-troublemaker");
+        Verb troublemakers = new()
+        {
+            Text = troublemaker,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Box/Interface/Misc/job_icons.rsi"), "Troublemaker"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<TroublemakerRuleComponent>(targetPlayer, DefaultTroublemakerRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", troublemaker, Loc.GetString("admin-verb-text-make-troublemaker")),
+        };
+        args.Verbs.Add(troublemakers);
+        // Box End - adds Troublemaker
+        // start DeltaV Additions - add hitman
+        var hitmanName = Loc.GetString("admin-verb-make-hitman");
+        Verb hitman = new()
+        {
+            Text = hitmanName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_DV/Interface/Misc/job_icons.rsi"), "Hitman"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<HitmanRuleComponent>(targetPlayer, DefaultHitmanRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", hitmanName, Loc.GetString("admin-verb-text-make-hitman")),
+        };
+        args.Verbs.Add(hitman);
+        // end DeltaV additions - add hitman
     }
 }

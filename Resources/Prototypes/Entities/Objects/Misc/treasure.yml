@@ -18,6 +18,11 @@
     color: "#0000ff"
   - type: StaticPrice
     price: 500
+# Box Change Start - Tags for temp job board changes
+  - type: Tag
+    tags:
+    - TreasureDatadiskEncrypted
+# Box Change End
 
 - type: entity
   parent: BaseItem
@@ -85,6 +90,11 @@
     size: Tiny
   - type: StaticPrice
     price: 750
+# Box Change Start - Tags for temp job board changes
+  - type: Tag
+    tags:
+    - TreasureCPUSupercharged
+# Box Change End
 
 - type: entity
   parent: BaseItem
@@ -108,6 +118,11 @@
         stabilizer: ""
   - type: StaticPrice
     price: 120
+# Box Change Start - Tags for temp job board changes
+  - type: Tag
+    tags:
+    - TreasureSampleTube
+# Box Change End
 
 - type: entityTable
   id: TreasureCoinPile
@@ -155,8 +170,13 @@
     materialComposition:
       Steel: 300
     #End Harmony Change - Make Scrappable
-  - type: StaticPrice
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 75
+  # Start Box Change - Makes Coins Stackable
+  - type: Stack
+    stackType: TreasureCoinIron
+    count: 1
+  # End Box Change - Makes Coins Stackable
 
 - type: entity
   parent: TreasureCoinIron
@@ -170,8 +190,13 @@
       Steel: 100
       Silver: 200
 #End Harmony Change - Make Scrappable
-  - type: StaticPrice
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 135 #Harmony Change - 125 -> 135. Makes Price Match Material Price Output
+# Start Box Change - Make Coins Stackable
+  - type: Stack
+    stackType: TreasureCoinSilver
+    count: 1
+# End Box Change - Make Coins Stackable
 
 - type: entity
   parent: TreasureCoinIron
@@ -185,8 +210,13 @@
       Steel: 100
       Gold: 200
 #End Harmony Change - Make Scrappable
-  - type: StaticPrice
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Makes Stackable
     price: 175
+#Start Box Change - Make Coins Stackable
+  - type: Stack
+    stackType: TreasureCoinGold
+    count: 1
+#End Box Change - Make Coins Stackable
 
 - type: entity
   parent: TreasureCoinIron
@@ -200,8 +230,13 @@
       Steel: 400
       Diamond: 5
 #End Harmony Changes - Make Scrappable
-  - type: StaticPrice
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 250
+  # Start Box Change - Make Coins Stackable
+  - type: Stack
+    stackType: TreasureCoinAdamantine
+    count: 1
+# End Box Change - Make Coins Stackable
 
 - type: entity
   parent: TreasureCoinIron
@@ -215,6 +250,10 @@
       Steel: 300
       Diamond: 15
 #End Harmony Changes - Make Scrappable
-  - type: StaticPrice
+  - type: StackPrice #Box Change - StaticPrice > StackPrice - Make Stackable
     price: 500
-
+# Start Box Change - Makes Coins Stackable
+  - type: Stack
+    stackType: TreasureCoinDiamond
+    count: 1
+# End Box Change - Makes Coins Stackable

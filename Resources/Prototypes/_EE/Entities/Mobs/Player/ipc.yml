@@ -49,9 +49,14 @@
       119.999: Critical # TO make it almost impossible
       120: Dead
     stateAlertDict:
-      Alive: BorgHealth
-      Critical: BorgCrit
-      Dead: BorgDead
+      # Start Box change to change health states from BorgHealth to IpcHealth, Needed for Numb to work and not also have it apply to Borgs (Unless we want that?)
+      #Alive: BorgHealth
+      #Critical: BorgCrit
+      #Dead: BorgDead
+      Alive: IpcHealth
+      Critical: IpcCrit
+      Dead: IpcDead
+      # End Box change
   - type: TypingIndicator
     proto: ipc # Box change - Swaps out the silicon indicator proto for the IPC one
   - type: Destructible
@@ -62,6 +67,23 @@
           damage: 400
         behaviors:
           - !type:GibBehavior { }
+      # Start Box change to make IPCs able to have ashing like behavior
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Heat
+          damage: 2000 # Metal is normally harder to melt than a person, so "ashing" threshold is higher
+        behaviors:
+        - !type:SpawnEntitiesBehavior
+          spawnInContainer: true
+          spawn:
+            MoltenIPCScrap:
+              min: 1
+              max: 1
+        - !type:BurnBodyBehavior { } # TODO: Wait for the upstream PR that makes it so a custom popup can be made
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MeatLaserImpact # Either this sound doesn't appear, or it already works good enough
+      # End Box change
   - type: SlowOnDamage
     speedModifierThresholds:
       60: 0.7
@@ -112,6 +134,7 @@
   - type: WeldingHealable
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
+  - type: Carriable # Box Change - Carrying system from Nyanotrasen
 
 - type: entity
   save: false

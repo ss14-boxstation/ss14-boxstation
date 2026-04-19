@@ -147,6 +147,7 @@
     spitDamageThreshold: 3
 #  - type: CrawlUnderObjects
 #    actionProto: ActionToggleSneakMode - funkystation no sneak
+  - type: Carriable # Box Change - Carrying system from nyanotrasen.
 
 - type: entity
   save: false

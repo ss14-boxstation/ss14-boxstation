@@ -40,6 +40,7 @@
     - Revolutionary
     - Zombie
     - Wizard
+    - Xenoborgs
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
@@ -61,6 +62,7 @@
     - Revolutionary
     - Zombie
     - Wizard
+    - Xenoborgs
     - BasicStationEventScheduler
     - KesslerSyndromeScheduler
     - MeteorSwarmMildScheduler
@@ -108,7 +110,7 @@
   description: dynamic-description
   rules:
   - DynamicRule
-  - DummyNonAntag
+  # - DummyNonAntag # Box Change - Remove Dummy Antag
   - DynamicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -145,9 +147,12 @@
   description: traitor-description
   showInVote: false
   rules:
-  - DummyNonAntagChance
+  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
   - Traitor
-  - SubGamemodesRule
+  # Harmony Start - reenableds midround
+  #- SubGamemodesRuleNoWizard
+  # - SubGamemodesRule # Box Change - Remove Sub Gamemodes
+  # Harmony end
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -175,8 +180,11 @@
   showInVote: false
   rules:
   - Nukeops
-  - DummyNonAntagChance
-  - SubGamemodesRule
+  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
+  # Harmony start - reactivates wizard midround
+  #- SubGamemodesRuleNoWizard
+  # - SubGamemodesRule # Box Change - Remove Sub Gamemodes
+  # Harmony End
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -192,9 +200,12 @@
   description: rev-description
   showInVote: false
   rules:
-  - DummyNonAntagChance
+  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
   - Revolutionary
-  - SubGamemodesRule
+  # Harmony start - reactivates wizard midround even if revs are bye bye
+  #- SubGamemodesRuleNoWizard
+  # - SubGamemodesRule # Box Change - Remove Sub Gamemodes
+  # Harmony end
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -209,8 +220,24 @@
   showInVote: false
   rules:
   - Wizard
-  - DummyNonAntagChance
-  - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
+  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
+  # - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine # Box Change - Remove Sub Gamemodes
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Xenoborgs
+  alias:
+    - xenoborgs
+  name: xenoborgs-title
+  description: xenoborgs-description
+  showInVote: false
+  rules:
+  - Xenoborgs
+  # - DummyNonAntagChance # Box Change - Remove Dummy Antag
+  # - SubGamemodesRuleNoWizardNoXenoborg # no two motherships # Box Change - Remove Sub Gamemodes
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler

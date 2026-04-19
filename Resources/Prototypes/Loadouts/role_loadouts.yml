@@ -9,6 +9,8 @@
   - CaptainOuterClothing
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - CaptainJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -24,6 +26,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - HoPJobTrinkets
   - GroupSpeciesBreathTool
 
 # Silicons
@@ -52,6 +56,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - PassengerJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -62,10 +68,11 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
-  - BartenderGoldenShaker
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - BartenderJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -77,6 +84,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ServiceWorkerJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -91,6 +100,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ChefJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -104,6 +115,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - LibrarianJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -116,6 +129,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - LawyerJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -132,6 +147,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ChaplainJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -146,7 +163,8 @@
   - Glasses
   - Survival
   - Trinkets
-  - JanitorPlunger
+  - Accessibility # Box Change - Add accessibility tab
+  - JanitorJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -160,6 +178,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - BotanistJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -175,6 +195,8 @@
   - Glasses
   - SurvivalClown
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ClownJobTrinkets
 
 - type: roleLoadout
   id: JobMime
@@ -190,6 +212,8 @@
   - Glasses
   - SurvivalMime
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - MimeJobTrinkets
 
 - type: roleLoadout
   id: JobMusician
@@ -202,6 +226,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - MusicianJobTrinkets
   - Instruments
   - GroupSpeciesBreathTool
 
@@ -219,6 +245,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - QuartermasterJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -234,6 +262,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - CargoTechnicianJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -248,6 +278,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - SalvageSpecialistJobTrinkets
   - GroupSpeciesBreathTool
 
 # Engineering
@@ -263,6 +295,8 @@
   - ChiefEngineerShoes
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ChiefEngineerJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -273,6 +307,8 @@
   - StationEngineerBackpack
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - TechnicalAssistantJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -287,6 +323,8 @@
   - StationEngineerID
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - StationEngineerJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -299,6 +337,8 @@
   - AtmosphericTechnicianShoes
   - SurvivalExtended
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - AtmosphericTechnicianJobTrinkets
   - GroupSpeciesBreathTool
 
 # Science
@@ -316,6 +356,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ResearchDirectorJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -333,6 +375,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ScientistJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -344,6 +388,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ResearchAssistantJobTrinkets
   - GroupSpeciesBreathTool
 
 # Security
@@ -359,7 +405,8 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - Accessibility # Box Change - Add accessibility tab
+  - HeadofSecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -373,7 +420,8 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - Accessibility # Box Change - Add accessibility tab
+  - WardenJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -388,7 +436,8 @@
   - SecurityBelt
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - Accessibility # Box Change - Add accessibility tab
+  - SecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -402,7 +451,8 @@
   - SecurityShoes
   - SurvivalSecurity
   - Trinkets
-  - SecurityStar
+  - Accessibility # Box Change - Add accessibility tab
+  - DetectiveJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
@@ -412,6 +462,8 @@
   - SecurityBackpack
   - SurvivalSecurity
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - SecurityCadetJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
 # Medical
@@ -430,6 +482,8 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ChiefMedicalOfficerJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -448,6 +502,8 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - MedicalDoctorJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -459,6 +515,8 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - MedicalInternJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -473,6 +531,8 @@
   - MedicalShoes
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ChemistJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -489,19 +549,11 @@
   - MedicalEyewear
   - SurvivalMedical
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ParamedicJobTrinkets
   - GroupSpeciesBreathToolMedical
 
 # Wildcards
-- type: roleLoadout
-  id: JobZookeeper
-  groups:
-  - GroupTankHarness
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
-  - GroupSpeciesBreathTool
-
 - type: roleLoadout
   id: JobReporter
   groups:
@@ -511,6 +563,8 @@
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ReporterJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -522,18 +576,8 @@
   - Glasses
   - Survival
   - Trinkets
-  - GroupSpeciesBreathTool
-
-- type: roleLoadout
-  id: JobBoxer
-  groups:
-  - GroupTankHarness
-  - BoxerJumpsuit
-  - BoxerGloves
-  - CommonBackpack
-  - Glasses
-  - Survival
-  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - PsychologistJobTrinkets
   - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs
@@ -594,6 +638,11 @@
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalMilitaryDouble
+  groups:
+  - SurvivalMilitaryDouble
 
 - type: roleLoadout
   id: RoleSurvivalNukie

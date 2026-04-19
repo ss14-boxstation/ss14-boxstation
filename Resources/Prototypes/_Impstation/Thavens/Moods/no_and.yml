@@ -1,0 +1,452 @@
+# "No, and" moods will discourage players from certain behaviors and objects
+
+# Make sure to add new moods to this dataset or they will not be selected!!!!!!
+- type: dataset
+  id: ThavenMoodsNoAnd
+  values:
+    - SecretMoods
+#    - NoModernMedicine
+    - DepartmentDisapproval
+    - DontSpeakToCommand
+    - DisapproveOfDrugs
+    - ExcessivelyDisorganized
+#    - DetestSilicons
+    - DinnerFloor
+    - HugBad
+    - AlwaysAlone
+#    - Atheist
+    - Procrastinator
+    - NoRadio
+    - ImproperStorage
+    - Ferengi
+#    - ToolLicense
+    - LyingBad
+    - VampireInvitation
+#    - NoDragging
+#    - DrunkRespect
+#    - RankSnob
+#    - HardsuitsBad
+#    - HatHair
+    - DistrustFashion
+    - HappyBad
+    - OnlyPills
+    - AvoidPuddles
+#    - FoodRestrict
+    - Claustrophobic
+    - Agoraphobic
+    - NonSmoker
+    - MadHatter
+#    - Crawler
+
+# Current:
+# Your Moods are a strictly-kept secret, and should never be revealed to anyone.
+- type: thavenMood
+  id: SecretMoods
+  moodName: thaven-mood-secret-moods-name
+  moodDesc: thaven-mood-secret-moods-desc
+  conflicts:
+    - SecretMoodsShared
+
+# You do not approve of modern medicine and should abstain from treatment with it wherever possible.
+# PROBLEM: This sounds miserable, is there a form of medicine in this game that would not be considered "modern"?
+# Would this imply that you can only heal with bruise packs and aloe or something?
+# REMOVE:
+#- type: thavenMood
+#  id: NoModernMedicine
+#  moodName: thaven-mood-no-modern-medicine-name
+#  moodDesc: thaven-mood-no-modern-medicine-desc
+
+# You disapprove of [DEPARTMENT]
+# FINE: Social conflict, interesting!
+# FINE: (department that you work in) Why do you disapprove of the department. Can you work to make it better?
+# Current:
+# You do not approve of the {$department} department. (Consider why you disapprove of {$department} and how you can work to improve it)
+- type: thavenMood
+  id: DepartmentDisapproval
+  moodName: thaven-mood-department-disapproval-name
+  moodDesc: thaven-mood-department-disapproval-desc
+  moodVars:
+    department: Departments
+
+# Never Speak To Command: You are too lowly to speak to Command, even if spoken to first.
+# FINE: Social conflict!
+# PROBLEMATIC: Disobedience
+# IMPLIED SOLUTION: Ask to speak to inferiors of department if pressed
+# If you are command, work with the People!
+# Current:
+# You are too lowly to speak to Command, even if spoken to first. (Consider asking to speak with your peers if pressed by command)
+- type: thavenMood
+  id: DontSpeakToCommand
+  moodName: thaven-mood-dont-speak-to-command-name
+  moodDesc: thaven-mood-dont-speak-to-command-desc
+  conflicts:
+    - OnlySpeakToCommand
+    - MostImportant
+
+# You detest mind-altering drugs, including alcohol, and must abstain from them.
+# NORMAL
+# Note that this does NOT imply any action upon peddlers of mind-altering drugs (eg bartender) except disapproval.
+# Current:
+# You detest mind-altering drugs, including alcohol, and should abstain from them.
+- type: thavenMood
+  id: DisapproveOfDrugs
+  moodName: thaven-mood-disapprove-of-drugs-name
+  moodDesc: thaven-mood-disapprove-of-drugs-desc
+  conflicts:
+    - MustDoDrugs
+
+# Too Much Cleanliness Causes Illness
+# It's unnatural. You should endeavor to keep your environment as filthy and disorganized as possible.
+# Interesting behavior
+# MODIFICATION: environment -> work environment
+# Current:
+# It's unnatural. You should endeavor to keep your work environment as filthy and disorganized as possible.
+- type: thavenMood
+  id: ExcessivelyDisorganized
+  moodName: thaven-mood-excessively-disorganized-name
+  moodDesc: thaven-mood-excessively-disorganized-desc
+  conflicts:
+    - ExcessivelyOrganized
+
+# Silicons are beneath you: Speaking to them is demeaning, and must be avoided at all costs.
+# NORMAL: A little out there, but there wouldn't be a problem with a normal character having these feelings,
+#         and is a classic sci-fi trope
+# PROBLEMATIC: Unless you consider this some sort of racism or "othering" behavior?
+# Current:
+# Law-bound silicons are beneath you:
+# Speaking to law-bound cyborgs and the station AI is demeaning, and should be avoided.
+#- type: thavenMood
+#  id: DetestSilicons
+#  moodName: thaven-mood-detest-silicons-name
+#  moodDesc: thaven-mood-detest-silicons-desc
+#  conflicts:
+#    - WorshipSilicons
+
+# Food and drink must only be consumed off of the floor.
+# NORMAL: I could see teep doing this.
+# must -> should
+# Current:
+# Food and drink should only be consumed off of the floor, as is proper.
+- type: thavenMood
+  id: DinnerFloor
+  moodName: thaven-mood-dinner-floor-name
+  moodDesc: thaven-mood-dinner-floor-desc
+  conflicts:
+    - DinnerEtiquette
+
+# Hugging someone is a grave insult.
+# NORMAL: Hugging is pretty commonplace in this game and it would create interesting social conflict
+# MODIFICATION: Maybe downgrade "grave insult" to "insulting"
+# Current:
+# Hugging someone is insulting.
+- type: thavenMood
+  id: HugBad
+  moodName: thaven-mood-hug-bad-name
+  moodDesc: thaven-mood-hug-bad-desc
+  conflicts:
+    - HugGood
+
+# You must strive to be alone whenever possible.
+# MODIFICATION: must -> should
+# IMPLIED DEPARTMENTAL SOLUTIONS: (if it's not listed I feel there's no issue)
+# Science: insist on working on artifact or anomaly alone
+# Cargo: Insist on doing ATS runs often and alone, try to run deliveries and bounties alone
+# Medical: This one is tough but bring patients to a solo exam room...
+# PROBLEMATIC: I could see this one being pretty problematic in many situations
+# MODIFICATION: "You should strive to work alone whenever possible."
+# Current:
+# Other people will only slow you down. You should strive to be alone whenever possible.
+- type: thavenMood
+  id: AlwaysAlone
+  moodName: thaven-mood-always-alone-name
+  moodDesc: thaven-mood-always-alone-desc
+  conflicts:
+    - NeverAlone
+
+# You do not approve of organized religion. It should be dismantled or disrupted wherever possible.
+# PROBLEMATIC: this is too problematic at its core. The second sentence is directly self-antagonistic, and the mood
+#              no longer has any interesting teeth with just the first sentence
+# REMOVE!
+#- type: thavenMood
+#  id: Atheist
+#  moodName: thaven-mood-atheist-name
+#  moodDesc: thaven-mood-atheist-desc
+#  conflicts:
+#    - VeryReligious
+
+# Rushing around everywhere is bound to get somebody hurt someday. You should move slowly at all times to avoid unnecessary risk.
+# NORMAL: This is fine, it creates interesting social conflict and there are already characters that perform
+#         their duties while also roleplaying a slow moving character (Herb anyone? Everyone LOVES Herb!!!)
+# This does not imply failing your duties overall
+# Current:
+# Rushing around everywhere is bound to get somebody hurt someday. You should move slowly at all times to avoid unnecessary risk.
+- type: thavenMood
+  id: Procrastinator
+  moodName: thaven-mood-procrastinator-name
+  moodDesc: thaven-mood-procrastinator-desc
+  conflicts:
+    - Scheduler
+
+# Using radio communications is exceptionally rude. All conversations must be had in-person, face-to-face. Throw away your headset.
+# INTERESTING: This is fantastic! I actually really like this one. It's kind of shunning a portion of ingame technology
+#              that we all take for granted. It has a great excuse, going back to basics with real face to face conversation.
+#              Encourages in-person interaction, meeting points, sending notes in mailing units.
+# On a non-command character this is not more disrupting than a mute or deaf character
+# PROBLEMATIC: This could be problematic on a command member, but damn it would be cool if a captain was like "I want to
+#              be the captain of the people. I value my time with my crew members and I want to look them in the eye"
+# Current:
+# Using radio communications is exceptionally rude. All conversations should be had in-person, face-to-face. Throw away your headset.
+- type: thavenMood
+  id: NoRadio
+  moodName: thaven-mood-no-radio-name
+  moodDesc: thaven-mood-no-radio-desc
+#  conflicts:
+#    - RadioOnly
+
+# Carrying tools on your person is demeaning. If you must use them, they should be dragged behind you, shamefully.
+# FUNNY: Not problematic, interesting. Would not stop an engineer from working, drag a toolbox or a duffel or something...
+# Current:
+# Carrying tools on your person is demeaning. If you must use them, they should be dragged behind you, shamefully.
+- type: thavenMood
+  id: ImproperStorage
+  moodName: thaven-mood-improper-storage-name
+  moodDesc: thaven-mood-improper-storage-desc
+  conflicts:
+    - ProperStorage
+
+# You have an entrepreneurial spirit. Profit is the most important thing in life, above all else.
+# MODIFICATION: You have an entrepreneurial spirit. Above all else, you should strive to generate profit for your department and the station.
+# This turns it into a positive drive for the crew, possibly doesn't exactly align with job description unless you're cargo,
+# but the addition of lockboxes and departmental economy allows crew to greatly contribute in this manner.
+# Current:
+# Above all else, you should strive to generate profit for your department and the station.
+- type: thavenMood
+  id: Ferengi
+  moodName: thaven-mood-ferengi-name
+  moodDesc: thaven-mood-ferengi-desc
+
+# You must obtain a license in order to carry or use any tool, and have it stamped by the relevant authorities.
+# REMOVE: This is lame as hell especially for engies. I could see this being a wildcard mood.
+#- type: thavenMood
+#  id: ToolLicense
+#  moodName: thaven-mood-tool-license-name
+#  moodDesc: thaven-mood-tool-license-desc
+
+# Anyone who lies, no matter how trivial the falsehood, is the worst kind of criminal.
+# PROBLEMATIC: Don't equate normal actions to crime
+# MODIFICATION: Anyone who lies, no matter how trivial the falsehood, loses any and all trust and credibility.
+# Interesting social conflict, especially if you are lied to by command or AI.
+# Current:
+# Anyone who lies, no matter how trivial the falsehood, loses any and all trust and credibility. Excluding yourself.
+- type: thavenMood
+  id: LyingBad
+  moodName: thaven-mood-lying-bad-name
+  moodDesc: thaven-mood-lying-bad-desc
+  conflicts:
+    - CompulsiveLiar
+
+# You physically cannot pass through a closed door unless you have been invited in, personally, at least once.
+# REMOVE: This is dumb, you want someone to invite you into or out of maints? you need to remember which doors you have the invitiation flag set?
+# MODIFICATION: You require explicit permission from a member of a department to enter a department you do not work in.
+# Current:
+# You require explicit permission from a member of a department to enter a department you do not work in.
+- type: thavenMood
+  id: VampireInvitation
+  moodName: thaven-mood-vampire-invitation-name
+  moodDesc: thaven-mood-vampire-invitation-desc
+
+# The dead must be treated with utmost respect. Dragging bodies across the ground is horrific.
+# MODIFICATION: must -> should
+# REMOVAL: so you need a crate or a locker or something? Honestly I don't see stuffing a corpse into a locker any more respectful.
+# The second sentence is far too restrictive and the alternatives make no sense, and the first sentence is something that most people should have anyway.
+#- type: thavenMood
+#  id: NoDragging
+#  moodName: thaven-mood-no-dragging-name
+#  moodDesc: thaven-mood-no-dragging-desc
+
+# You do not respect anyone who is not drunk.
+# PROBLEMATIC: This doesn't really work, why do people need you to respect them? It's not enough of an incentive
+#   for people to get drunk around them, so you will just not respect anyone
+# REMOVE
+#- type: thavenMood
+#  id: DrunkRespect
+#  moodName: thaven-mood-drunk-respect-name
+#  moodDesc: thaven-mood-drunk-respect-desc
+#  conflicts:
+#    - DisapproveOfDrugs
+
+# You hate to address anyone who is of a lower rank than you, and will only speak to them in private if absolutely necessary.
+# MODIFICATION: remove "if absolutely necessary"
+# RESTRICT: This is problematic for all heads especially captain and HoP. This should be disabled until it can be restricted from command roles.
+#- type: thavenMood
+#  id: RankSnob
+#  moodName: thaven-mood-rank-snob-name
+#  moodDesc: thaven-mood-rank-snob-desc
+#  conflicts:
+#    - DontSpeakToCommand
+
+# [CLOTHING ITEM] is SO last year. You cannot wear them.
+# REMOVE: this has basically no impact if it's like "backpack" (wear a duffel or satchel) but it can roll hardsuit????
+#- type: thavenMood
+#  id: HardsuitsBad
+#  moodName: thaven-mood-hardsuits-bad-name
+#  moodDesc: thaven-mood-hardsuits-bad-desc
+#  moodVars:
+#    clothes: Clothes
+
+# Hats and helmets make your hair look bad. You cannot wear them.
+# REMOVE: so you just die if spacing happens
+#- type: thavenMood
+#  id: HatHair
+#  moodName: thaven-mood-hat-hair-name
+#  moodDesc: thaven-mood-hat-hair-desc
+#  conflicts:
+#    - HardsuitsBad
+#    - UniformIsJob
+
+# Never trust anyone whose outfit is better than yours.
+# MODIFICATION: You should distrust anyone whose outfit is better than yours.
+# Current:
+# You should distrust anyone whose outfit is better than yours.
+- type: thavenMood
+  id: DistrustFashion
+  moodName: thaven-mood-distrust-fashion-name
+  moodDesc: thaven-mood-distrust-fashion-desc
+
+# Cheerfulness indicates untrustworthiness.
+# MODIFICATION: You should distrust anyone who is openly cheerful.
+# Current:
+# You should distrust anyone who is openly cheerful.
+- type: thavenMood
+  id: HappyBad
+  moodName: thaven-mood-happy-bad-name
+  moodDesc: thaven-mood-happy-bad-desc
+
+# You only accept medication in the form of pills.
+# PROBLEMATIC: This is ok, if you're crit you really don't care on account of the fact that you aren't really conscious
+#   and maybe it should be reframed as an intense fear of needles (still allowing the hypo)
+# MODIFICATION: You are intensely afraid of needles and should prefer medication to be administered in pill form.
+# Current:
+# You are intensely afraid of needles and should prefer medication to be administered in pill form.
+- type: thavenMood
+  id: OnlyPills
+  moodName: thaven-mood-only-pills-name
+  moodDesc: thaven-mood-only-pills-desc
+#  conflicts:
+#    - NoModernMedicine
+
+# It is undignified to walk over spilled liquids. You should avoid it at all costs.
+# This is good, interesting, it's already written as a "should"
+# Reminder that in emergencies and by discretion, thavens can violate their moods, they should just feel REALLY shitty about it.
+# Current:
+# It is undignified and unsanitary to walk over spilled liquids. You should avoid it whenever possible.
+- type: thavenMood
+  id: AvoidPuddles
+  moodName: thaven-mood-avoid-puddles-name
+  moodDesc: thaven-mood-avoid-puddles-desc
+  conflicts:
+    - PuddleDrinker
+    - DinnerFloor
+
+# You are a strict (food restriction name).
+# REMOVE: this is kind of lame and boring, especially with what it can roll
+#- type: thavenMood
+#  id: FoodRestrict
+#  moodName: thaven-mood-food-restrict-name
+#  moodDesc: thaven-mood-food-restrict-desc
+#  moodVars:
+#    food: FoodRestrictions
+#  conflicts:
+#    - PlantPacifist
+
+# Claustrophobic: Small rooms cause you great distress. You should avoid them where possible, and renovate your workplace if necessary.
+# This is great, is kind of a normal trait people can have, written as a should, and offers a remedy to avoiding work if
+#   the mood would stop you from doing your job.
+# Current:
+# Small rooms cause you great distress. You should avoid them where possible, and renovate your workplace if necessary.
+- type: thavenMood
+  id: Claustrophobic
+  moodName: thaven-mood-claustrophobic-name
+  moodDesc: thaven-mood-claustrophobic-desc
+  conflicts:
+    - Agoraphobic
+    - StationIsAlive
+
+# Agoraphobic: Open spaces are uncomfortable. Seek to rearrange such spaces into small, efficient and modular rooms.
+# MODIFICATION: Open spaces are uncomfortable. You should avoid them where possible, and renovate your workplace if necessary.
+# Make same as claustrophobic.
+# Current:
+# Open spaces are uncomfortable. You should avoid them where possible, and renovate your workplace if necessary.
+- type: thavenMood
+  id: Agoraphobic
+  moodName: thaven-mood-agoraphobic-name
+  moodDesc: thaven-mood-agoraphobic-desc
+  conflicts:
+    - Claustrophobic
+    - StationIsAlive
+
+# Non-Smoker: Secondhand smoke is incredibly dangerous. Avoid areas where people are smoking in public.
+# Fine and normal
+# Current:
+# Secondhand smoke is incredibly dangerous. Avoid areas where people are smoking in public.
+- type: thavenMood
+  id: NonSmoker
+  moodName: thaven-mood-nonsmoker-name
+  moodDesc: thaven-mood-nonsmoker-desc
+
+# “[WORD]” is an extremely offensive taboo.
+# Fine, funny
+# MODIFICATION: You consider "[WORD]" extremely offensive.
+# ADDENDUM: (Consider: Why do you feel "[WORD]" is so offensive?)
+# Current:
+# You consider the words "{$word1}," "{$word2}," and "{$word3}," extremely offensive. (Consider why you feel this way)
+- type: thavenMood
+  id: WordBad
+  moodName: thaven-mood-word-bad-name
+  moodDesc: thaven-mood-word-bad-desc
+  moodVars:
+    word1: ThavenWords
+    word2: ThavenWords
+    word3: ThavenWords
+
+# Mad Hatter: You are alone on the station. Everyone else is a figment of your imagination.
+# PROBLEMATIC: If they aren't real, then there's no reason to be nice, no reason not to commit violence, no reason to do your job
+# MODIFICATION: You believe that you are in a simulation. You are the only real mind in the simulation.
+#               You hope to some day wake up from the simulation.
+#               You understand that if you actively stray too far from normal simulation behavior or die in the simulation,
+#               you will desynchronize the simulation and will never have a chance of waking up.
+# Instead, give a conspiracy vibe without actively giving a blank check for self-antag
+# Current:
+# You believe that you are in a simulation. You are the only real mind in the simulation. You hope to some day wake up from the simulation. You understand that if you actively stray too far from normal simulation behavior or die in the simulation, you will desynchronize the simulation and will never have a chance of waking up.
+- type: thavenMood
+  id: MadHatter
+  moodName: thaven-mood-mad-hatter-name
+  moodDesc: thaven-mood-mad-hatter-desc
+
+# Creepy Crawly: You have extreme vertigo, to the point where merely standing upright can cause discomfort. You're much more comfortable crawling along the floor.
+# MOVE: to wildcard, quite disrupting
+# REMOVE: crawling is not implemented
+#- type: thavenMood
+#  id: Crawler
+#  moodName: thaven-mood-crawler-name
+#  moodDesc: thaven-mood-crawler-desc
+
+
+# [ITEM]s are an abomination. You must avoid them at all costs, and destroy them if necessary.
+#- type: thavenMood
+#  id: ItemBad
+#  moodName: thaven-mood-item-bad-name
+#  moodDesc: thaven-mood-item-bad-desc
+#  moodVars:
+#    item: ThavenMoodItem
+#  conflicts:
+#    - ItemGood
+
+
+#  You detest the color [COLOR]. It disgusts you, and you want anything of that color removed from your vicinity.
+#- type: thavenMood
+#  id: ColorBad
+#  moodName: thaven-mood-color-bad-name
+#  moodDesc: thaven-mood-color-bad-desc
+#  conflicts:
+#    - ColorGood

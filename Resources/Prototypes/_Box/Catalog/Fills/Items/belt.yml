@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingBeltUtility
+  id: ClothingBeltUtilityCargo
+  suffix: Cargo, Box
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrowbarGreen
+      - id: Wrench
+      - id: Screwdriver
+      - id: AppraisalTool
+      - id: UtilityKnife

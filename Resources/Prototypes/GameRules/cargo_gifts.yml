@@ -82,10 +82,11 @@
     gifts:
       EngineeringCableBulk: 1
       AirlockKit: 1
-      MaterialSteel: 1
+      # MaterialSteel: 1 # Box Change - This was removed as a buy option
       MaterialPlasteel: 1
-      MaterialGlass: 1
+      # MaterialGlass: 1 # Box Change - This was removed as a buy option
       CrateVendingMachineRestockEngineering: 1
+      MaterialBasic: 1 # Box Change - Replacing removed buy options
 
 - type: entity
   id: GiftsVendingRestock

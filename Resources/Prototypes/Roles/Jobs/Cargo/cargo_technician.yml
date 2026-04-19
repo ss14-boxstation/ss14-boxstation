@@ -26,7 +26,10 @@
   id: CargoTechGear
   equipment:
     ears: ClothingHeadsetCargo
-    pocket1: AppraisalTool
+#Box change start - comments out appraisal tool and places it into the belt
+    #pocket1: AppraisalTool
+    belt: ClothingBeltUtilityCargo
+#Box change end - comments out appraisal tool and places it into the belt
   #storage:
     #back:
     #- Stuff

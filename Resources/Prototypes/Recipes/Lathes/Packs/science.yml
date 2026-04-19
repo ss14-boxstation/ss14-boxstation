@@ -30,11 +30,12 @@
   recipes:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  - ClothingShoesBootsSpeed
+  # - ClothingShoesBootsSpeed # Box Change - Kill speed boots with hammers
   - ClothingShoesBootsJump
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
+  - ClothingNeckMantleMoon # Box change - Moonmantle recipe
 
 - type: latheRecipePack
   id: PowerCells

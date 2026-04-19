@@ -91,6 +91,7 @@
   radioChannels:
   - Supply
   - Science
+  - Salvage # Box - Harmony Change - Adds Salvage Radio Channel
 
   # Visual
   inventoryTemplateId: borgTall
@@ -120,7 +121,6 @@
     - BorgModuleJanitor
 
   defaultModules:
-  - BorgModuleTool
   - BorgModuleCleaning
   - BorgModuleCustodial
 
@@ -156,7 +156,6 @@
     - BorgModuleMedical
 
   defaultModules:
-  - BorgModuleTool
   - BorgModuleChemical
   - BorgModuleTopicals
   - BorgModuleRescue
@@ -206,7 +205,6 @@
     - BorgModuleService
 
   defaultModules:
-  - BorgModuleTool
   - BorgModuleMusique
   - BorgModuleService
   - BorgModuleClowning

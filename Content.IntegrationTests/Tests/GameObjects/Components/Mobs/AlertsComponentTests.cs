@@ -87,11 +87,11 @@ namespace Content.IntegrationTests.Tests.GameObjects.Components.Mobs
                 Assert.That(clientAlertsUI.AlertContainer.ChildCount, Is.GreaterThanOrEqualTo(3));
                 var alertControls = clientAlertsUI.AlertContainer.Children.Select(c => (AlertControl) c);
                 var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
-                // Box Change Start - Starcup/Goobstation - IPC have BorgHealth instead of HumanHealth
+                // Box Change Start - Starcup/Goobstation - IPC have IpcHealth instead of HumanHealth
                 // var expectedIDs = new[] { "HumanHealth", "Debug1", "Debug2" };
                 // Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
                 var expectedDebugIDs = new[] { "Debug1", "Debug2" };
-                var expectedHealthIDs = new[] { "BorgHealth", "HumanHealth" };
+                var expectedHealthIDs = new[] { "IpcHealth", "HumanHealth" };
 
                 Assert.That(alertIDs, Is.SupersetOf(expectedDebugIDs));
                 Assert.That(alertIDs, Has.Some.Matches<string>(item => expectedHealthIDs.Contains(item)));
@@ -111,11 +111,11 @@ namespace Content.IntegrationTests.Tests.GameObjects.Components.Mobs
                 Assert.That(clientAlertsUI.AlertContainer.ChildCount, Is.GreaterThanOrEqualTo(2));
                 var alertControls = clientAlertsUI.AlertContainer.Children.Select(c => (AlertControl) c);
                 var alertIDs = alertControls.Select(ac => ac.Alert.ID).ToArray();
-                // Box Change Start - Starcup/Goobstation - IPC have BorgHealth instead of HumanHealth
+                // Box Change Start - Starcup/Goobstation - IPC have IpcHealth instead of HumanHealth
                 // var expectedIDs = new[] { "HumanHealth", "Debug2" };
                 // Assert.That(alertIDs, Is.SupersetOf(expectedIDs));
                 var expectedDebugIDs = new[] { "Debug2" };
-                var expectedHealthIDs = new[] { "BorgHealth", "HumanHealth" };
+                var expectedHealthIDs = new[] { "IpcHealth", "HumanHealth" };
 
                 Assert.That(alertIDs, Is.SupersetOf(expectedDebugIDs));
                 Assert.That(alertIDs, Has.Some.Matches<string>(item => expectedHealthIDs.Contains(item)));

@@ -1,0 +1,4 @@
+- type: loadout
+  id: HeadofSecurityLongcoat
+  equipment:
+    outerClothing: ClothingLongcoatSecurity

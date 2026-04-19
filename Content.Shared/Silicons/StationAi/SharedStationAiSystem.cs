@@ -1,3 +1,4 @@
+using Content.Shared.Access.Systems;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Managers;
@@ -42,6 +43,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
     [Dependency] private readonly ItemToggleSystem _toggles = default!;
+    [Dependency] private readonly AccessReaderSystem _access = default!;
     [Dependency] private readonly ActionBlockerSystem _blocker = default!;
     [Dependency] private readonly MetaDataSystem _metadata = default!;
     [Dependency] private readonly SharedAirlockSystem _airlocks = default!;
@@ -515,6 +517,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 
         ClearEye(ent);
         ent.Comp.Remote = true;
+        EnsureComp<InputMoverComponent>(args.Entity); // Box change, ensures AI has the InputMover component upon insertion so they can ghost using the move keys if their core is damaged.
 
         if (SetupEye(ent))
             AttachEye(ent);
@@ -532,6 +535,7 @@ public abstract partial class SharedStationAiSystem : EntitySystem
 
         // Remove eye relay
         RemCompDeferred<RelayInputMoverComponent>(args.Entity);
+        RemCompDeferred<InputMoverComponent>(args.Entity); // Box change, ensures carded AI does not have the InputMover component, as this throws an assert and crashes the server.
 
         if (TryComp(args.Entity, out EyeComponent? eyeComp))
         {

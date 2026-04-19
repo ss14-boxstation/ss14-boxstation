@@ -16,6 +16,7 @@
     shoes: ClothingShoesColorWhite
     id: ReporterPDA
     ears: ClothingHeadsetService
+    belt: DigiboardMassMedia # Box Change - Add news digiboard
   storage: # DeltaV: Give reporters tape recording equipment
     back:
     - TapeRecorder

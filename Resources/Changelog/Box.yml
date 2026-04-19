@@ -454,3 +454,401 @@
   id: 49
   time: '2026-01-06T07:34:09.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/71
+- author: Dinoguy12349
+  changes:
+  - message: IPCs now take damage when infected by a Zombie
+    type: Tweak
+  id: 50
+  time: '2026-01-08T08:38:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/75
+- author: BlueMoon059
+  changes:
+  - message: Synthchems now appear in maints pills, artifact nodes, and botany mutations.
+    type: Add
+  id: 51
+  time: '2026-01-08T23:01:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/73
+- author: SomegnihT
+  changes:
+  - message: IPCs now melt upon taking 2000 heat damage.
+    type: Tweak
+  id: 52
+  time: '2026-01-10T13:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/76
+- author: superjeepboy
+  changes:
+  - message: Fixed IPCs instantly draining their battery when standing still
+    type: Fix
+  id: 53
+  time: '2026-02-15T00:16:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/85
+- author: BlueMoon059
+  changes:
+  - message: Fixed some minor grammar errors in some IPC topical descriptions and
+      names.
+    type: Fix
+  id: 54
+  time: '2026-02-14T09:34:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/80
+- author: BlueMoon059
+  changes:
+  - message: Salvage job gear, such as crushers, mining suits, mass scanners, and
+      pka mods appear on debris again.
+    type: Add
+  id: 55
+  time: '2026-02-15T02:53:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/81
+- author: BlueMoon059
+  changes:
+  - message: Salv borgs and the AI have salvage comms, as they should have.
+    type: Fix
+  id: 56
+  time: '2026-02-16T01:27:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/86
+- author: SomegnihT
+  changes:
+  - message: Screens no longer say KILL on EOR
+    type: Tweak
+  id: 57
+  time: '2026-02-16T05:57:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/87
+- author: BlueMoon059
+  changes:
+  - message: Present anomalies no longer spawn unsafe/insane present variants.
+    type: Tweak
+  id: 58
+  time: '2026-02-16T11:47:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/88
+- author: SomegnihT
+  changes:
+  - message: IPCs with unrevivable will now actually be unrevivable
+    type: Fix
+  id: 59
+  time: '2026-02-17T03:19:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/89
+- author: BlueMoon059
+  changes:
+  - message: Avalis now have unique sound effects for crying, coughing, gasping, and
+      dying.
+    type: Add
+  - message: Avalis have a species unique emote, allowing them to hiss agressively.
+    type: Add
+  id: 60
+  time: '2026-02-17T09:18:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/90
+- author: Dinoguy12349
+  changes:
+  - message: Added the AAC tablet from Delta V
+    type: Add
+  id: 61
+  time: '2026-02-17T12:26:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/79
+- author: BlueMoon059
+  changes:
+  - message: Thaven are now appearing in the Sector. Elven Humanoids with distant
+      relations to space carp, beholden to strange moods, and able to breathe any
+      gas as if it were oxygen.
+    type: Add
+  id: 62
+  time: '2026-02-17T12:34:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/77
+- author: SomegnihT
+  changes:
+  - message: IPCs with the numb trait will now have their health fixed to good despite
+      any damages that might actually exist.
+    type: Fix
+  id: 63
+  time: '2026-02-18T05:42:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/92
+- author: SomegnihT
+  changes:
+  - message: IPCs can now eat cloth & trash
+    type: Tweak
+  id: 64
+  time: '2026-02-18T06:41:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/93
+- author: SomegnihT
+  changes:
+  - message: IPCs and Vox now get very minor healing from eating trash
+    type: Tweak
+  id: 65
+  time: '2026-02-19T03:54:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/94
+- author: DrWhoFan13
+  changes:
+  - message: Art credits have been added!
+    type: Add
+  id: 66
+  time: '2026-02-20T07:11:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/82
+- author: CollectionOfBones128
+  changes:
+  - message: Loot spawns on the VGRoid again.
+    type: Fix
+  id: 67
+  time: '2026-02-27T18:24:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/98
+- author: BlueMoon059
+  changes:
+  - message: Added longcoats-  a new winter coat variant for all of command, CC, warden,
+      secoffs, paramedics, and anyone who can access a winterdrobe.
+    type: Add
+  id: 68
+  time: '2026-02-27T19:55:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/101
+- author: DrWhoFan13
+  changes:
+  - message: Moon mantles, moon boots for your neck!
+    type: Add
+  id: 69
+  time: '2026-03-02T16:52:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/97
+- author: BlueMoon059
+  changes:
+  - message: All rocks now drop ore. The VGRoids Ironrock drops better ore.
+    type: Tweak
+  - message: Adds a new item, the Geode. It can spawn while mining and sells for a
+      good bit
+    type: Add
+  - message: Adds a new item, the Buried Cache. It can spawn rarely while mining and
+      can be opened for treasure.
+    type: Add
+  - message: Adds two new Pickaxes that Science can research and print.
+    type: Add
+  id: 70
+  time: '2026-03-02T21:10:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/104
+- author: CollectionOfBones128
+  changes:
+  - message: Accentless now correctly applies to Thaven
+    type: Fix
+  id: 71
+  time: '2026-03-03T15:40:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/109
+- author: BlueMoon059
+  changes:
+  - message: Sec longcoats (HoS, Warden, Secoff) now have back storage slots to be
+      consistent with other armors.
+    type: Fix
+  id: 72
+  time: '2026-03-07T13:55:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/110
+- author: Dizzy-Eevee
+  changes:
+  - message: MMIs, Positronic Brains, Intellicards, and the AI core can now perform
+      emotes.
+    type: Tweak
+  id: 73
+  time: '2026-03-07T13:56:22.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/107
+- author: SomegnihT
+  changes:
+  - message: IPCs can now be infected by anomalies
+    type: Fix
+  id: 74
+  time: '2026-03-10T15:20:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/112
+- author: BlueMoon059
+  changes:
+  - message: Treasure coins can now stack up to 30 times.
+    type: Tweak
+  id: 75
+  time: '2026-03-10T17:39:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/114
+- author: BlueMoon059
+  changes:
+  - message: Cargo Techs now start with a utility belt containing some basic tools.
+    type: Add
+  - message: A Cargo Techs appraisal tool now starts in their utility belt instead
+      of their pocket.
+    type: Tweak
+  id: 76
+  time: '2026-03-11T01:18:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/115
+- author: Dizzy-Eevee
+  changes:
+  - message: Moved cat ears to the Head (Top) category. Headgear will now render over
+      your ears.
+    type: Tweak
+  id: 77
+  time: '2026-03-11T01:50:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/108
+- author: CollectionOfBones128
+  changes:
+  - message: Steel and Glass can no longer be individually purchased from Cargo
+    type: Remove
+  - message: Gold and Silver can no longer be purchased from Cargo
+    type: Remove
+  - message: The Gold ore, Silver ore, Scrap, Plasma ore, Uranium ore, and Goliath
+      Plate Salvage Jobs have been replaced.
+    type: Tweak
+  - message: The price of the Plasma crate and Basic Material crate have been increased.
+    type: Tweak
+  id: 78
+  time: '2026-03-21T02:01:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/116
+- author: DrWhoFan13
+  changes:
+  - message: Santa anom is gone until the next holiday season!
+    type: Remove
+  id: 79
+  time: '2026-03-31T02:38:13.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/125
+- author: Dizzy-Eevee
+  changes:
+  - message: Added an Accessibility tab to loadouts, containing some items useful
+      for both IC and OOC accessibility
+    type: Add
+  - message: Canes and the AAC tablet have been moved from Trinkets to Accessibility
+    type: Tweak
+  id: 80
+  time: '2026-03-31T02:40:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/119
+- author: Dizzy-Eevee
+  changes:
+  - message: Added more options for plushies as trinkets.
+    type: Add
+  - message: Plushie trinkets are now contained within a collapsible group.
+    type: Tweak
+  id: 81
+  time: '2026-03-31T03:08:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/120
+- author: DrWhoFan13
+  changes:
+  - message: Genpop IDs now announce their expiration/ending of sentences
+    type: Add
+  id: 82
+  time: '2026-03-31T03:10:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/127
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the news manager digi-board, which all Reporters now spawn with.
+      It can potentially be a target for thieves, so be careful!
+    type: Add
+  id: 83
+  time: '2026-03-31T03:11:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/122
+- author: Dizzy-Eevee
+  changes:
+  - message: Ported the Cosmatic Drift records system. Medical records consoles are
+      now functional, and station/criminal records computers have been given expanded
+      functionality.
+    type: Add
+  id: 84
+  time: '2026-03-31T04:51:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/123
+- author: Dizzy-Eevee
+  changes:
+  - message: HoP's locker now contains a tape recorder box.
+    type: Tweak
+  - message: The PTech now offers additional paperwork supplies.
+    type: Tweak
+  - message: The CuraDrobe now offers some folders, paper, and envelopes.
+    type: Tweak
+  - message: The LawDrobe now offers some folders and a tape recorder box.
+    type: Tweak
+  id: 85
+  time: '2026-04-03T21:45:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/118
+- author: Dizzy-Eevee
+  changes:
+  - message: Removed speed boots from the research tree.
+    type: Remove
+  - message: Unlocking T3 researches will no longer set a main discipline. This means
+      you can now research all T3s on the same R&D server.
+    type: Tweak
+  id: 86
+  time: '2026-04-06T09:17:53.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/131
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Starcup's notebooks
+    type: Add
+  - message: The wooden clipboard and more folder colors are now available as trinkets.
+    type: Tweak
+  id: 87
+  time: '2026-04-07T00:52:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/117
+- author: BlueMoon059
+  changes:
+  - message: Added the ability to carry people via a right click action.
+    type: Add
+  id: 88
+  time: '2026-04-07T00:58:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/126
+- author: Dizzy-Eevee
+  changes:
+  - message: Increased loadout trinket limit from 3 to 6.
+    type: Tweak
+  id: 89
+  time: '2026-04-12T14:27:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/129
+- author: Lucky
+  changes:
+  - message: Added the Mobster Accent in the traits menu!
+    type: Add
+  id: 90
+  time: '2026-04-12T14:31:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/111
+- author: Dizzy-Eevee
+  changes:
+  - message: Added emote sounds for blinking.
+    type: Add
+  id: 91
+  time: '2026-04-13T14:26:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/130
+- author: BlueMoon059
+  changes:
+  - message: Fixes avali headwear displacements.
+    type: Fix
+  id: 92
+  time: '2026-04-13T21:19:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/142
+- author: Dizzy-Eevee
+  changes:
+  - message: Rodentia will now eject any items in their cheek storage upon being knocked
+      down, disarmed, or taking sufficient damage. Your cheese is no longer safe.
+    type: Tweak
+  id: 93
+  time: '2026-04-15T10:06:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/145
+- author: Dizzy-Eevee
+  changes:
+  - message: Added traits for blood deficiency, which cause your character to either
+      not regenerate or actively lose blood.
+    type: Add
+  id: 94
+  time: '2026-04-15T15:30:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/128
+- author: Dizzy-Eevee
+  changes:
+  - message: Added secure briefcases for all your paperwork-securing needs. Lockable,
+      explosion-proof, and printable at autolathes.
+    type: Add
+  - message: Added unique briefcases for the HoP, Detective, and Lawyer. All three
+      are potential steal targets for thieves.
+    type: Add
+  - message: Lawyer now spawns holding their special briefcase, instead of a generic
+      brown one.
+    type: Tweak
+  - message: The Hristov sniper bundle now comes in a secure briefcase instead of
+      a brown one.
+    type: Tweak
+  id: 95
+  time: '2026-04-15T20:40:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/133
+- author: stormyatt
+  changes:
+  - message: Hitman, a single target TAL antag with rp based modifer objectives
+    type: Add
+  id: 96
+  time: '2026-04-16T10:24:53.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/135
+- author: BlueMoon059
+  changes:
+  - message: Adds a new antagonist - the Troublemaker. A low to mid impact antagonist
+      that uses a series of kits to settle grudges.
+    type: Add
+  id: 97
+  time: '2026-04-16T11:30:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/136

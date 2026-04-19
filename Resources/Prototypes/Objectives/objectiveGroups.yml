@@ -36,7 +36,7 @@
   id: TraitorObjectiveGroupState
   weights:
     EscapeShuttleObjective: 0.4 #Harmony change: 1 -> 0.4
-    DieObjective: 0.15 # Harmony. Change: 0.05 -> 0.15
+    DieObjective: 0.15 # Harmony. Change: 0.2 -> 0.15
     TraitorSurviveObjective: 0.6 #Harmony objective
     #HijackShuttleObjective: 0.02
 
@@ -82,6 +82,11 @@
     FlippoEngravedLighterStealObjective: 0.5
     ClothingHeadHatWardenStealObjective: 1
     WantedListCartridgeStealObjective: 1
+    # Start Box Change - Add briefcase objectives
+    BriefcaseHoPStealObjective: 1
+    BriefcaseDetectiveStealObjective: 1
+    BriefcaseLawyerStealObjective: 1
+    # End Box Change
     ClothingOuterHardsuitVoidParamedStealObjective: 1   #med
     MedicalTechFabCircuitboardStealObjective: 1
     CMOGogglesStealObjective: 1 # harmony change
@@ -91,6 +96,7 @@
     CargoShuttleCircuitboardStealObjective: 1
     ClothingEyesHudBeerStealObjective: 0.5              #srv, beer goggles less common cause its so easy
     BibleStealObjective: 1
+    DigiboardMassMediaStealObjective: 1 # Box Change - News manager digiboard steal objective
     ClothingNeckGoldmedalStealObjective: 1              #other
     ClothingNeckClownmedalStealObjective: 0.5
     ThiefAccessConfiguratorStealObjective: 1 # Harmony Objective

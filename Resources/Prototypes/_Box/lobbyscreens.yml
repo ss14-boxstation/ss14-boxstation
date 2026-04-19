@@ -1,7 +1,11 @@
 - type: lobbyBackground
   id: Cyrillus
   background: /Textures/_Box/LobbyScreens/Cyrillus.webp
+  title: lobby-state-background-cyrillus-title
+  artist: lobby-state-background-cyrillus-artist
 
 - type: lobbyBackground
   id: Dreamteam
   background: /Textures/_Box/LobbyScreens/dream_team.webp
+  title: lobby-state-background-dreamteam-title
+  artist: lobby-state-background-dreamteam-artist

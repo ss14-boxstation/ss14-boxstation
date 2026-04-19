@@ -1,0 +1,49 @@
+- type: marking
+  id: MessyPonytailThaven
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Thaven ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: thavenmessyponytail
+
+- type: marking
+  id: ThavenAbs
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [ Thaven ]
+  followSkinColor: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: muscularthaven
+
+- type: marking
+  id: ThavenBasicTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Thaven ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: thavenbasictail
+
+- type: marking
+  id: ThavenTadpoleTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Thaven ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: thaventadpole1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: thaventadpole2
+
+- type: marking
+  id: ThavenBigTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Thaven ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: thavenbigtail1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
+    state: thavenbigtail2

@@ -1,0 +1,49 @@
+# Everyone
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingLongcoatArashiLabs
+  name: chief medical officer's light longcoat #box - renames to be a CMO alternate coat
+  suffix: BoxStation #Box - Add Suffix
+  description: A double-breasted longcoat sporting the colors of the medical department. Longcoats are fairly robust, offering some protection from the elements. # box - edits to be an alterate cmo coat
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/arashi-laboratories.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/arashi-laboratories.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingLongcoatNanoTrasen
+  name: nanotrasen longcoat
+  suffix: BoxStation #Box - Add Suffix
+  description: A double-breasted longcoat sporting the the colors of NanoTrasen, the general-purpose spacefaring corporation that you (hopefully) work for! Longcoats are fairly robust, offering some protection from the elements.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/nanotrasen.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/nanotrasen.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingLongcoatBlack
+  name: black longcoat
+  suffix: BoxStation #Box - Add Suffix
+  description: A matte black double-breasted longcoat with gold-tinted brass buttons. Longcoats are fairly robust, offering some protection from the elements.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/black.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/black.rsi
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingLongcoatBrown
+  name: brown longcoat
+  suffix: BoxStation #Box - Add Suffix
+  description: A matte brown double-breasted longcoat with stylish onyx buttons. Longcoats are fairly robust, offering some protection from the elements.
+  components:
+  - type: Sprite
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/brown.rsi
+  - type: Clothing
+    sprite: _Floof/Clothing/OuterClothing/Longcoats/brown.rsi

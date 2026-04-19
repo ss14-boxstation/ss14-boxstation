@@ -15,3 +15,10 @@
   typingState: rodentia0
   idleState: rodentia0 #TODO add idle state sprite
   offset: 0, 0.2 # 0625
+
+- type: typingIndicator
+  id: thaven
+  spritePath: /Textures/_DV/Effects/speech.rsi
+  typingState: thaven0
+  idleState: thaven3
+  offset: -0.2, 0.1 # 0625

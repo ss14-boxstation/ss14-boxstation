@@ -1,0 +1,10 @@
+# Outer clothing
+- type: loadout
+  id: ChiefMedicalOfficerLongcoat
+  equipment:
+    outerClothing: ClothingLongcoatCMO
+
+- type: loadout
+  id: ChiefMedicalOfficerArashiLongcoat
+  equipment:
+    outerClothing: ClothingLongcoatArashiLabs

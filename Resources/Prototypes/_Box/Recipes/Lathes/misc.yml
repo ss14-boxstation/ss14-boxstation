@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: BriefcaseSecure
+  result: BriefcaseSecure
+  completetime: 6
+  materials:
+    Steel: 1000
+    Plastic: 200

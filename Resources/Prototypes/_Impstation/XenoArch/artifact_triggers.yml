@@ -112,7 +112,7 @@
     groups:
       Acidic: [ Touch ]
     reactions:
-    - reagents: [ Blood, CopperBlood, InsectBlood, Slime, AmmoniaBlood, ZombieBlood, Sap, IPCOil ] #imp # Box Change, removed Imp Bloods, added Box Bloods
+    - reagents: [ Blood, CopperBlood, InsectBlood, Slime, AmmoniaBlood, ZombieBlood, Sap, IPCOil, ShimmeringBlood ] #imp # Box Change, removed Imp Bloods, added Box Bloods
       methods: [ Touch ]
       effects:
       - !type:ActivateArtifact
