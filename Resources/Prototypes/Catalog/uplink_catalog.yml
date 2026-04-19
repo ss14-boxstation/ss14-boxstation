@@ -1155,11 +1155,19 @@
     Telecrystal: 14
   categories:
   - UplinkDisruption
+  - UplinkObjective #Box
   conditions:
   - !type:StoreWhitelistCondition
      blacklist:
        tags:
        - NukeOpsUplink
+  # Box - Make Antimov DAGD-only
+  - !type:BuyerObjectiveWhitelistCondition
+    makehidden: true
+    whitelist:
+      components:
+        - DieCondition
+  # Box End
 
 - type: listing
   id: UplinkNukieAntimovCircuitBoard
@@ -1249,6 +1257,7 @@
     Telecrystal: 12
   categories:
     - UplinkDisruption
+    - UplinkObjective #Box
   #Start of Harmony change
   conditions:
   - !type:BuyerWhitelistCondition
@@ -1256,6 +1265,14 @@
       components:
       - SurplusBundle
   #End of Harmony change
+  # Box - Make Singulo Beacon DAGD-only
+  - !type:BuyerObjectiveWhitelistCondition
+    makehidden: true
+    whitelist:
+      components:
+        - DieCondition
+  # Box End
+
 
 - type: listing
   id: UplinkCameraBug
