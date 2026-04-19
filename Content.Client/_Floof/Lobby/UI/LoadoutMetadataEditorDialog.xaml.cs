@@ -94,4 +94,15 @@ public sealed partial class LoadoutMetadataEditorDialog : FancyWindow
 
         Load(_loadout); // Just to update the fields with sanitized values
     }
+
+    // Box Change: Delete spawned entity
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+        if (!disposing)
+            return;
+
+        _entMan.DeleteEntity(_entity);
+    }
+    // End Box Change
 }
