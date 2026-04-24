@@ -15,7 +15,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerMedicalGrudgeObjective
-  name: Medical Malpractice
+  name: Department Grudge - Medical
   description: On your last shift, medical botched your treatment. Show them that was a mistake.
   components:
   - type: Objective
@@ -28,7 +28,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerSupplyGrudgeObjective
-  name: Supply Issues
+  name: Department Grudge - Supply
   description: Cargo have misplaced your plushie order for the last time. Remind them of their logistical obligations. Painfully if needed.
   components:
   - type: Objective
@@ -41,7 +41,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerScienceGrudgeObjective
-  name: Anti-intellectualism
+  name: Department Grudge - Science
   description: Holes in the station here, anomalies there, you've had enough of the flagrant lack of safety from Science. Prepare for them some unforseen consequences to their meddling.
   components:
   - type: Objective
@@ -54,7 +54,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerEngineeringGrudgeObjective
-  name: Blackout Rage
+  name: Department Grudge - Engineering
   description: Constant blackouts, patchy repair jobs, and the only people around are too busy tinkering with the pipes to fix the hull. Make some new holes so they're forced to do their job for once.
   components:
   - type: Objective
@@ -67,7 +67,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerServiceGrudgeObjective
-  name: 1/5 Stars
+  name: Department Grudge - Service
   description: Filthy corridors, the bartender's more interested in their gun than their drinks, the kitchen gave you food-poisoning, and why did we even HIRE that clown? Remind service they're here to serve.
   components:
   - type: Objective
@@ -96,7 +96,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerVendingMachineObjective
-  name: Adblocker
+  name: Vandalise Vending Machines
   description: The constant advertisements, never having what you want in stock. These vending machines have to go. Smash them up.
   components:
   - type: Objective
@@ -107,7 +107,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerValuablesObjective
-  name: What's Yours Is Mine
+  name: Lie, Cheat, and Steal
   description: Lighten peoples pockets, via scams, theft, or muggings. Anything to line your own pockets. Not like the paychecks making ends meet.
   components:
   - type: Objective
@@ -118,7 +118,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerAccessesObjective
-  name: Open Borders
+  name: Open Up Accessess
   description: You've always felt accesses were a bit restrictive. Open up departmental access as much as you can.
   components:
   - type: Objective
@@ -129,7 +129,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerRumorObjective
-  name: I Heard a Rumor
+  name: Spread a Rumor
   description: Bring a rumor to life. The more salacious, the better. Ghost stories, drama, conflict, the captain's skeleton in the closet. Anything goes.
   components:
   - type: Objective
@@ -140,7 +140,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerBlackmarketeerObjective
-  name: Pirate Bay
+  name: Distribute Contraband
   description: Contraband labels are so last year. Redistribute contra as widely as you can, security edicts be damned. Everyone deserves some fun toys.
   components:
   - type: Objective
@@ -151,7 +151,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerFramerObjective
-  name: Frame Someone
+  name: Frame Someone for a Crime
   description: Security is always putting heat on you without any actual evidence - show someone else how that feels. Frame someone for crime.
   components:
   - type: Objective
@@ -162,7 +162,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerCCTVObjective
-  name: Eye for an Eye
+  name: Dismantle Security Cameras
   description: You've never felt good in the spotlight. Removing the cameras should fix that. Dismantle them.
   components:
   - type: Objective
@@ -173,10 +173,88 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerLightsObjective
-  name: Lights Out
+  name: Vandalise Lights
   description: You've always done your best work under cover of shadows, and it gives you more hiding places from Security. Break the lights and keep them broken.
   components:
   - type: Objective
     icon:
       sprite: Objects/Power/light_bulb.rsi
       state: broken
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerLeakObjective
+  name: Leak Sensitive Information
+  description: Some people have some really juicy secrets tucked away in their records. You should share those around however you can.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Fun/instruments/microphone.rsi
+      state: icon
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerStationAccountsObjective
+  name: Drain Departmental Funding
+  description: You never did like the compartmentalized department economies. Why not skim off the top and line your own pockets? Steal money from other departments however you can.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Economy/cash.rsi
+      state: cash_10000
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerVigilanteObjective
+  name: Become a Vigilante
+  description: Security...Beholden to restrictive laws, SOP, and their own morals. It makes them ineffective. Show them how a real hero of the people should act. Take the law into your own hands.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Fun/figurines.rsi
+      state: owlman
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerSceneObjective
+  name: Cause a Scene
+  description: You did always love being the center of attention. Make a massive scene, the more eyes on you the better.
+  components:
+  - type: Objective
+    icon:
+      sprite: Structures/Machines/computers.rsi
+      state: television
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerLawsuitObjective
+  name: Persue a Lawsuit
+  description: Damn brat, I'll sue! You've always wanted to use the law as your weapon to bludgeon people who annoy you. Drag someone through a lawsuit, the bigger the payout the better.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/pens.rsi
+      state: pen_hop
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerAnnouncementObjective
+  name: Miuse the Annnouncement Console
+  description: Command couldn't send a useful announcement if you scripted them for them. Send your own announcements however you can, about whatever you think is truly important on station.
+  component:
+  - type: Objective
+    icon:
+      sprite: Structures/Wallmounts/posters.rsi
+      state: poster1_legit
+
+
+- type: entity
+  parent: BaseTroublemakerObjective
+  id: TroublemakerBarfightObjective
+  name: Start a Bar Fight
+  description: Why bother taking it outside when you can settle it right there and then? Start a bar brawl, the more people dragged into it, the more fun it is!
+  component:
+  - type: Objective
+    icon:
+      sprite: Objects/Consumeable/Drinks/beer_can.rsi
+      state: icon
