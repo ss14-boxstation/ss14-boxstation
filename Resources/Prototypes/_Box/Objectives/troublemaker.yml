@@ -207,7 +207,7 @@
   parent: BaseTroublemakerObjective
   id: TroublemakerVigilanteObjective
   name: Become a Vigilante
-  description: Security...Beholden to restrictive laws, SOP, and their own morals. It makes them ineffective. Show them how a real hero of the people should act. Take the law into your own hands.
+  description: Security... Beholden to restrictive laws, SOP, and their own morals. It makes them ineffective. Show them how a real hero of the people should act. Take the law into your own hands.
   components:
   - type: Objective
     icon:
@@ -228,7 +228,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerLawsuitObjective
-  name: Persue a Lawsuit
+  name: Pursue a Lawsuit
   description: Damn brat, I'll sue! You've always wanted to use the law as your weapon to bludgeon people who annoy you. Drag someone through a lawsuit, the bigger the payout the better.
   components:
   - type: Objective
@@ -239,7 +239,7 @@
 - type: entity
   parent: BaseTroublemakerObjective
   id: TroublemakerAnnouncementObjective
-  name: Miuse the Annnouncement Console
+  name: Misuse the Annnouncement Console
   description: Command couldn't send a useful announcement if you scripted them for them. Send your own announcements however you can, about whatever you think is truly important on station.
   component:
   - type: Objective
