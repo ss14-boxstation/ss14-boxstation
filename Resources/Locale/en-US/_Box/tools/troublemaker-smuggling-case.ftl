@@ -49,7 +49,7 @@ troublemaker-cheater-kit-description = Truth is, the game was rigged from the st
  a fake and real cap gun, a cybersun pen, and a deck of cards.
 
 troublemaker-syndi-kit-name = Off-Duty Syndicate Kit
-troublemaker-syndi-kit-description = For those who cant let a contract pass them by.
+troublemaker-syndi-kit-description = For those who can't let a contract pass them by.
  Contains a Suspicious Toolbox, a Chameleon Projector,
  an Armor-Piercing Python, E-pen, and a Business Card.
 
