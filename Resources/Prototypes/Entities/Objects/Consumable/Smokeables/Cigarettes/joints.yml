@@ -52,7 +52,7 @@
           Quantity: 4
         - ReagentId: MindbreakerToxin
           Quantity: 2.66
-        - ReagentId: Happiness
+        - ReagentId: THC # Box Change: Replace Happiness with THC
           Quantity: 2.66
 #       - ReagentId: ColorfulReagent
 #         Quantity: 1.33
@@ -113,7 +113,7 @@
           Quantity: 4
         - ReagentId: MindbreakerToxin
           Quantity: 2.66
-        - ReagentId: Happiness
+        - ReagentId: THC # Box Change: Replace Happiness with THC
           Quantity: 2.66
 #       - ReagentId: ColorfulReagent
 #         Quantity: 1.33
