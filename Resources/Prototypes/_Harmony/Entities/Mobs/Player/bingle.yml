@@ -2,17 +2,18 @@
   parent: MobSpaceBasic
   id: MobBingle
   name: bingle
-  suffix: Basic
+  suffix: Basic, Box
   description: Bingle.
   components:
   # Visuals
   - type: Sprite
-    sprite: _Harmony/Mobs/Aliens/Bingles/bingle.rsi
+    sprite: _Box/Mobs/Aliens/Bingles/binglerevamp.rsi # Points towards the revamped sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive
     - map: ["enum.CombatModeVisualLayers.CombatEnabled"]
       state: combat
+      shader: unshaded
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -107,6 +108,8 @@
   suffix: Prime
   description: The most bingle per bingle.
   components:
+  - type: Sprite
+    sprite: _Harmony/Mobs/Aliens/Bingles/bingle.rsi # Prime bingles use the old sprite
   - type: Bingle
     upgradePolymorph: BinglePrimePolymorph
   - type: SpawnOnSpawn
@@ -117,11 +120,11 @@
   parent: MobBingle
   id: MobBingleUpgraded
   name: bingler
-  suffix: Upgraded
+  suffix: Upgraded, Box
   description: More bingle per bingle.
   components:
   - type: Sprite
-    sprite: _Harmony/Mobs/Aliens/Bingles/bingle_upgraded.rsi
+    sprite: _Box/Mobs/Aliens/Bingles/binglerevamp_upgraded.rsi # Points towards the revamped sprite
   - type: Bingle
     upgraded: true
   - type: MeleeWeapon
@@ -145,3 +148,6 @@
   name: binglester
   suffix: Prime, Upgraded
   description: The most bingle per bingle.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Mobs/Aliens/Bingles/bingle_upgraded.rsi # Prime bingles use old sprites
