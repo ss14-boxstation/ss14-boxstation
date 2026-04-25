@@ -852,3 +852,10 @@
   id: 97
   time: '2026-04-16T11:30:15.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/136
+- author: Dinoguy12349
+  changes:
+  - message: Bingles have been resprited!
+    type: Tweak
+  id: 98
+  time: '2026-04-25T14:56:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/95
