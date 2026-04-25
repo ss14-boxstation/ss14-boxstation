@@ -241,7 +241,7 @@
   id: TroublemakerAnnouncementObjective
   name: Misuse the Annnouncement Console
   description: Command couldn't send a useful announcement if you scripted them for them. Send your own announcements however you can, about whatever you think is truly important on station.
-  component:
+  components:
   - type: Objective
     icon:
       sprite: Structures/Wallmounts/posters.rsi
@@ -253,7 +253,7 @@
   id: TroublemakerBarfightObjective
   name: Start a Bar Fight
   description: Why bother taking it outside when you can settle it right there and then? Start a bar brawl, the more people dragged into it, the more fun it is!
-  component:
+  components:
   - type: Objective
     icon:
       sprite: Objects/Consumeable/Drinks/beer_can.rsi
