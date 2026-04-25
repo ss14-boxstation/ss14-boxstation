@@ -189,7 +189,7 @@
   components:
   - type: Objective
     icon:
-      sprite: Objects/Fun/instruments/microphone.rsi
+      sprite: Objects/Fun/Instruments/microphone.rsi
       state: icon
 
 - type: entity
@@ -256,5 +256,5 @@
   components:
   - type: Objective
     icon:
-      sprite: Objects/Consumeable/Drinks/beer_can.rsi
+      sprite: Objects/Consumable/Drinks/beer_can.rsi
       state: icon
