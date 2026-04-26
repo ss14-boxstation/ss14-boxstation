@@ -880,7 +880,7 @@
     - RandomHumanoidVisitorReporter
     - RandomHumanoidVisitorServiceWorker
     - RandomHumanoidVisitorZookeeper
-    # - MobSkeletonCloset # Box Change, Comments out Closet Skeleton
+    # - MobSkeletonCloset # Box Change, Comments out Closet Skeleton from shuttles
 
 - type: entity
   name: NanoTrasen visitor spawner
