@@ -411,13 +411,15 @@
       children:
       - id: MobCarpSalvage
         weight: 2
-      - !type:AllSelector
-        weight: 1
-        children:
-        - id: LandMineExplosive
-        - !type:NestedSelector # what's that thing underneath the scrap?
-          prob: 0.33
-          tableId: SalvageScrapSpawnerCommon
+    #Box Change Start - Removes landmines from spawning pool
+    #  - !type:AllSelector
+    #    weight: 1
+    #    children:
+    #    - id: LandMineExplosive
+    #    - !type:NestedSelector # what's that thing underneath the scrap?
+    #      prob: 0.33
+    #      tableId: SalvageScrapSpawnerCommon
+    #Box Change Start - Removes landmines from spawning pool
     - !type:GroupSelector # scary monsters
       weight: 5
       children:
