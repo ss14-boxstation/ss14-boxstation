@@ -11,6 +11,7 @@
   - Wizard
   - Xenoborg
   - BloodBrother # Harmony
+  - SimpleHostile # Box - starcup - carp did not defend themselves from hostile spawns
 
 - type: npcFaction
   id: NanoTrasen

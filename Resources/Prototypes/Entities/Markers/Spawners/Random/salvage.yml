@@ -72,6 +72,16 @@
     - type: RandomSpawner
       rarePrototypes:
       - MobSharkSalvage
+      # Box Start - Starcup - Adds new sharkminnows to mob spawners
+      - MobSharkSalvageBlue
+      - MobSharkSalvageBrown
+      - MobSharkSalvageGreen
+      - MobSharkSalvageShelled
+      - MobSharkSalvageShelledBlue
+      - MobSharkSalvageShelledBrown
+      - MobSharkSalvageShelledGreen
+      - MobSharkSalvageAbyssal
+      - MobSharkSalvageVampire
       rareChance: 0.2
       prototypes:
         - MobCarpSalvage
@@ -79,6 +89,23 @@
         - MobCarpSalvage
         - MobCarpSalvage
         - MobCarpSalvage
+        # Box Change Start - Starcup - Adds new carp variants to spawners
+        - MobCarpSalvageSplitfin
+        - MobCarpSalvageSplitfin
+        - MobCarpSalvageSplitfin
+        - MobCarpSalvageSplitfin
+        - MobCarpSalvageSplitfin
+        - MobCarpSalvageVampire
+        - MobCarpSalvageVampire
+        - MobCarpSalvageVampire
+        - MobCarpSalvageVampire
+        - MobCarpSalvageVampire
+        - MobCarpSalvageQueen
+        - MobCarpSalvageQueen
+        - MobCarpSalvageQueen
+        - MobCarpSalvageQueen
+        - MobCarpSalvageQueen
+        # Box Change End - Starcup - Adds new carp variants to spawners
         - MobTickSalvage
         - MobTickSalvage
         - MobTickSalvage
@@ -124,6 +151,17 @@
   - type: RandomSpawner
     rarePrototypes:
     - MobSharkSalvage
+    # Box Start - Starcup - Adds sharkminnow variants to spawners
+    - MobSharkSalvageBlue
+    - MobSharkSalvageBrown
+    - MobSharkSalvageGreen
+    - MobSharkSalvageShelled
+    - MobSharkSalvageShelledBlue
+    - MobSharkSalvageShelledBrown
+    - MobSharkSalvageShelledGreen
+    - MobSharkSalvageAbyssal
+    - MobSharkSalvageVampire
+    # Box End - Starcup - Adds sharkminnow variants to spawners
     rareChance: 0.2
     prototypes:
     - MobCarpSalvage
@@ -131,6 +169,23 @@
     - MobCarpSalvage
     - MobCarpSalvage
     - MobCarpSalvage
+    # Box Start - Starcup - Adds carp variants to spawners
+    - MobCarpSalvageSplitfin
+    - MobCarpSalvageSplitfin
+    - MobCarpSalvageSplitfin
+    - MobCarpSalvageSplitfin
+    - MobCarpSalvageSplitfin
+    - MobCarpSalvageVampire
+    - MobCarpSalvageVampire
+    - MobCarpSalvageVampire
+    - MobCarpSalvageVampire
+    - MobCarpSalvageVampire
+    - MobCarpSalvageQueen
+    - MobCarpSalvageQueen
+    - MobCarpSalvageQueen
+    - MobCarpSalvageQueen
+    - MobCarpSalvageQueen
+    # Box End - Starcup - Adds carp variants to spawners
     - MobTickSalvage
     - MobTickSalvage
     - MobTickSalvage
