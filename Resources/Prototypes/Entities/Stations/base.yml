@@ -83,6 +83,9 @@
           - /Maps/Ruins/wrecklaimer.yml
           - /Maps/Ruins/displaced_telescience.yml
           - /Maps/_Harmony/Ruins/whiteship_heavysalvage.yml # Harmony Change - Ports NT Heavy Salvage Vessel Whiteship from SS13
+          - /Maps/_Box/Ruins/ship_railgun.yml # Box Change - Reimagined Flagship
+          - /Maps/_Box/Ruins/shipbayruin.yml # Box Change - Shipyard Ruin
+          - /Maps/_Box/Ruins/strandedsyndicatecargo.yml # Box Change - Syndi ruin
         wrecks: !type:DungeonSpawnGroup
           minimumDistance: 150
           maximumDistance: 300
