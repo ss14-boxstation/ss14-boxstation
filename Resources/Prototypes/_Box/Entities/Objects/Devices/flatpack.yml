@@ -1,6 +1,7 @@
 - type: entity
   parent: BaseFlatpack
   id: BorgChargerFlatpack
+  suffix: Box
   name: cyborg recharging station flatpack
   description: A flatpack used for constructing a cyborg recharging station.
   components:
