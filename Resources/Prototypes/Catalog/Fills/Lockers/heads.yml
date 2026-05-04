@@ -323,7 +323,7 @@
   id: LockerFillHeadOfSecurityNoHardsuit
   table: !type:AllSelector
     children:
-    - id: WeaponEnergyMagnum
+   #- id: WeaponEnergyMagnum # Box Change - moves emagnum to HoS spawner
     - id: BookSpaceLaw
     - id: BoxEncryptionKeySecurity
     - id: CigarGoldCase
@@ -342,6 +342,7 @@
     # - id: WeaponTaser # Harmony
     - id: WantedListCartridge
     - id: DrinkHosFlask
+    - id: BorgChargerFlatpack #Box Change - Adds recharger for IPC prisoners
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
