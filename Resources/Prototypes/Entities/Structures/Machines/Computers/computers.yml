@@ -979,7 +979,11 @@
     account: Engineering
     announcementChannel: Engineering
     removeLimitAccess: [ "ChiefEngineer" ]
+<<<<<<< HEAD
     mode: PrintSlip #Box - SendToPrimary > PrintSlip
+=======
+    mode: PrintSlip #Box - Print Slips
+>>>>>>> 108fc79894bab2552a424a72e90d754ab74fa9e6
   - type: ActiveRadio
     channels:
     - Engineering
@@ -1012,7 +1016,11 @@
     account: Medical
     announcementChannel: Medical
     removeLimitAccess: [ "ChiefMedicalOfficer" ]
+<<<<<<< HEAD
     mode: PrintSlip #Box - SendToPrimary > PrintSlip
+=======
+    mode: PrintSlip #Box - Print Slips
+>>>>>>> 108fc79894bab2552a424a72e90d754ab74fa9e6
   - type: ActiveRadio
     channels:
     - Medical
@@ -1045,7 +1053,11 @@
     account: Science
     announcementChannel: Science
     removeLimitAccess: [ "ResearchDirector" ]
+<<<<<<< HEAD
     mode: PrintSlip #Box - SendToPrimary > PrintSlip
+=======
+    mode: PrintSlip #Box - Print Slips
+>>>>>>> 108fc79894bab2552a424a72e90d754ab74fa9e6
   - type: ActiveRadio
     channels:
     - Science
@@ -1078,7 +1090,11 @@
     account: Security
     announcementChannel: Security
     removeLimitAccess: [ "HeadOfSecurity" ]
+<<<<<<< HEAD
     mode: PrintSlip #Box - SendToPrimary > PrintSlip
+=======
+    mode: PrintSlip #Box - Print Slips
+>>>>>>> 108fc79894bab2552a424a72e90d754ab74fa9e6
   - type: ActiveRadio
     channels:
     - Security
@@ -1111,7 +1127,11 @@
     account: Service
     announcementChannel: Service
     removeLimitAccess: [ "HeadOfPersonnel" ]
+<<<<<<< HEAD
     mode: PrintSlip #Box - SendToPrimary > PrintSlip
+=======
+    mode: PrintSlip #Box - Print Slips
+>>>>>>> 108fc79894bab2552a424a72e90d754ab74fa9e6
   - type: ActiveRadio
     channels:
     - Service
