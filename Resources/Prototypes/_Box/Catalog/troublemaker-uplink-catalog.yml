@@ -7,11 +7,10 @@
     state: icon
   content:
   - ClothingOuterCoatSpaceAsshole
-  - ClothingEyesGlassesSunglasses
   - Sledgehammer
   - SeismicCharge
   - SeismicCharge
-  - BlueprintSeismicCharge
+  - SeismicCharge
 
 - type: thiefBackpackSet
   id: TroublemakerPhantomThiefKit
@@ -101,7 +100,8 @@
     state: base
   content:
   - ClothingMaskBandBlack
-  - FireAxe
+  - MysteryLighterBox
+  - FireBomb
   - FireBomb
   - FireBomb
   - FireBomb
@@ -130,9 +130,95 @@
     state: deck_black_full
   content:
   - ClothingHandsGlovesBoxingRigged
-  - ClothingHandsGlovesBoxingRigged
+  - ClothingHandsGlovesBoxingRed
   - RevolverCapGun
   - RevolverCapGunFake
   - CyberPen #To Do - add a generic non syndi version
   - CardBoxBlack
 
+- type: thiefBackpackSet
+  id: TroublemakerSyndiKit
+  name: troublemaker-syndi-kit-name
+  description: troublemaker-syndi-kit-description
+  sprite:
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: syndicate_card
+  content:
+  - ToolboxSyndicateFilled
+  - ChameleonProjector
+  - WeaponRevolverPythonAP
+  - EnergyDagger
+  - SyndicateBusinessCard
+
+- type: thiefBackpackSet
+  id: TroublemakerEscapeKit
+  name: troublemaker-escape-kit-name
+  description: troublemaker-escape-kit-description
+  sprite:
+    sprite: Objects/Misc/handcuffs.rsi
+    state: handcuff
+  content:
+  - FreedomImplanter
+  - EmpImplanter
+  - ScramImplanter
+  - SyringeEphedrine
+  - SyringeEphedrine
+  - ClothingShoesSkates
+
+- type: thiefBackpackSet
+  id: TroublemakerBombKit
+  name: troublemaker-bomb-kit-name
+  description: troublemaker-bomb-kit-description
+  sprite:
+    sprite: Structures/Machines/bomb.rsi
+    state: training-bomb
+  content:
+  - SyndicateBombFake
+
+- type: thiefBackpackSet
+  id: TroublemakerRiotKit
+  name: troublemaker-riot-kit-name
+  description: troublemaker-riot-kit-description
+  sprite:
+    sprite: Objects/Weapons/Melee/baseball_bat.rsi
+    state: icon
+  content:
+  - BaseBallBat
+  - ClothingMaskGas
+  - RadioJammer
+  - ClothingEyesGlassesSunglasses
+  - TearGasGrenade
+  - TearGasGrenade
+  - SprayPainterAmmo
+  - SprayPainterAmmo
+  - SprayPainter
+
+- type: thiefBackpackSet
+  id: TroublemakerChameleonKit
+  name: troublemaker-chameleon-kit-name
+  description: troublemaker-chameleon-kit-description
+  sprite:
+    sprite:  Objects/Misc/pens.rsi
+    state: luxury_pen
+  content:
+  - ClothingBackpackChameleonFill
+  - AgentIDCard
+  - RubberStampApproved
+  - BriefcaseSecure
+  - DnaScramblerImplanter
+  - LuxuryPen
+
+- type: thiefBackpackSet
+  id: TroublemakerMercKit
+  name: troublemaker-merc-kit-name
+  description: troublemaker-merc-kit-description
+  sprite:
+    sprite:  Clothing/Mask/merc.rsi
+    state: icon
+  content:
+  - ClothingHeadHelmetMerc
+  - ClothingMaskGasMerc
+  - ClothingShoesBootsMercFilled
+  - ClothingHandsMercGlovesCombat
+  - ClothingBeltMercWebbing
+  - WeaponSniperMosin
