@@ -852,3 +852,46 @@
   id: 97
   time: '2026-04-16T11:30:15.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/136
+- author: Dinoguy12349
+  changes:
+  - message: Bingles have been resprited!
+    type: Tweak
+  id: 98
+  time: '2026-04-25T14:56:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/95
+- author: BlueMoon059
+  changes:
+  - message: Adds 7 new Troublemaker Objectives.
+    type: Add
+  - message: Edits the names of basically every Troublemaker objective to be more
+      clear to End of Round lobby summaries.
+    type: Tweak
+  id: 99
+  time: '2026-04-25T14:58:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/154
+- author: Dizzy-Eevee
+  changes:
+  - message: Rainbow cannabis and its products no longer force you to laugh/whistle.
+    type: Tweak
+  id: 100
+  time: '2026-04-25T14:59:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/149
+- author: BlueMoon059
+  changes:
+  - message: Adds 6 new kits to the Troublemaker, bringing the total to 15.
+    type: Add
+  - message: Some Troublemaker kits have had their content adjusted.
+    type: Tweak
+  - message: the Cheater troublemaker kit now properly spawns with one rigged, one
+      normal set of boxing gloves instead of two rigged.
+    type: Fix
+  id: 101
+  time: '2026-04-25T14:59:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/155
+- author: SomegnihT
+  changes:
+  - message: Skeletons can no longer spawn at random.
+    type: Remove
+  id: 102
+  time: '2026-04-26T23:34:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/156
