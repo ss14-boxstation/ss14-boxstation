@@ -14,20 +14,20 @@ hitman-loud-kit-description =
 hitman-assassin-kit-name = Assassin kit
 hitman-assassin-kit-description =
     A kit for the quiet killers.
-    Provides a Cobra with an extra magazine, 8 throwing knives.
+    Provides a Cobra with an extra magazine, 8 throwing knives. 
     and a radio jammer.
 
 hitman-poisoner-kit-name = Poisoner kit
 hitman-poisoner-kit-description =
     A kit for those who enjoy chemistry.
-    Provides a syringe as well as a bottle of
+    Provides a syring as well as a bottle of 
     toxin, mute toxin, Nocturine and pax.
     Plus a Chemical Synthesis Kit to make other poisons.
 
 hitman-infiltration-kit-name = Infiltration kit
 hitman-infiltration-kit-description =
     A kit for those who want to get anywhere.
-    Provides a cryptographic sequencer, access breaker, and stealth box.
+    Provides a cryptographic sequencer, access breaker, and stealth box.    
 
 hitman-disguise-kit-name = Disguise kit
 hitman-disguise-kit-description =
