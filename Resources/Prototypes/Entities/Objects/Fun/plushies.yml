@@ -660,7 +660,7 @@
   description: Big and safe to have by your side if you want to discover the world below the surface of the ocean.
   components:
   - type: Sprite
-  # Start Box Change: Get rotated idiot
+  # Start Box Change: Sprite and component changes to allow toggleable rotation
     sprite: _Box/Objects/Fun/Plushies/shark.rsi
     layers:
     - state: blue
@@ -677,7 +677,7 @@
     onActivate: false
   - type: ComponentToggler
     components:
-    - type: Rotatable
+    - type: Rotatable # Get rotated idiot
   - type: TriggerOnVerb # Use a verb to toggle so it doesn't conflict with the standard use-to-rawr behavior. Alt-interact will automatically use this verb.
     text: trigger-on-verb-toggle-rotation
     keyOut: "rotate" # Without specifying a key it will just trigger the sound every time you alt-activate and allow no-cooldown rawr spam...
@@ -725,7 +725,7 @@
   description: Hehe shonk :)
   components:
   - type: Sprite
-  # Start Box Change: Get rotated idiot
+  # Start Box Change: Sprite and component changes to allow toggleable rotation
     sprite: _Box/Objects/Fun/Plushies/shark.rsi
     layers:
     - state: pink
@@ -760,7 +760,7 @@
   description: A quiet, reserved kind of shonk. Loves to ride the grey tide.
   components:
   - type: Sprite
-  # Start Box Change: Get rotated idiot
+  # Start Box Change: Sprite and component changes to allow toggleable rotation
     sprite: _Box/Objects/Fun/Plushies/shark.rsi
     layers:
     - state: grey
