@@ -5,8 +5,10 @@
   id: BaseMobAllulalo
   abstract: true
   components:
-  - type: GoobAbsorbable
-    biomassRestored: 1.0
+  # Start Box Change: No lings
+  #- type: GoobAbsorbable
+  #  biomassRestored: 1.0
+  # End Box Change
   - type: Hunger
   - type: Thirst
   - type: Fixtures

@@ -53,7 +53,7 @@
     Flammable:
       methods: [ Touch ]
       effects:
-      - !type:FlammableReaction
+      - !type:Flammable # Box Change: Update name
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 1.35

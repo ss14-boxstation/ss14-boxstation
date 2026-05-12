@@ -20,8 +20,10 @@
 - type: speciesBaseSprites
   id: MobAllulaloSprites
   sprites:
-    TailBehind: MobHumanoidAnyMarking # floof
-    TailOversuit: MobHumanoidAnyMarking # floof
+    # Start Box Change: Remove absent markings
+    #TailBehind: MobHumanoidAnyMarking # floof
+    #TailOversuit: MobHumanoidAnyMarking # floof
+    # End Box Change
     Eyes: MobAllulaloEyes
     Head: MobAllulaloHead
     HeadTop: MobHumanoidAnyMarking
