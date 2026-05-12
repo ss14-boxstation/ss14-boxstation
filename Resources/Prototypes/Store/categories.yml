@@ -89,10 +89,12 @@
   name: store-category-pointless
   priority: 10
 
+# Box - Early Merge of Upstream code begin
 - type: storeCategory
   id: UplinkObjective
   name: store-category-objective
   priority: 11
+# Box - Early Merge of Upstream code end
 
 #revenant
 - type: storeCategory
