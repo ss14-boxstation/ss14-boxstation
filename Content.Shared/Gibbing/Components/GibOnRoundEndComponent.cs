@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Prototypes;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Gibbing.Components;
 
@@ -19,4 +19,12 @@ public sealed partial class GibOnRoundEndComponent : Component
     /// </summary>
     [DataField]
     public EntProtoId? SpawnProto;
+
+    // Start Box Change
+    /// <summary>
+    /// Chance that the entity will not be gibbed, even if their objectives haven't been completed.
+    /// </summary>
+    [DataField]
+    public float SafetyChance = 0f;
+    // End Box Change}
 }
