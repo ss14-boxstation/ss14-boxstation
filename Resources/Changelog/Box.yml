@@ -959,3 +959,10 @@
   id: 110
   time: '2026-05-12T15:41:08.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/141
+- author: BlueMoon059
+  changes:
+  - message: Landmines no longer spawn on debris.
+    type: Remove
+  id: 111
+  time: '2026-05-12T15:51:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/158
