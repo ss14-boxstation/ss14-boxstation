@@ -2,6 +2,7 @@
   parent: FoodBakedBase
   id: FoodBakedRainbowCannabisBrownieBatch
   name: rainbow brownies
+  suffix: Box
   description: A pan of extra-"special" brownies with rainbow chocolate chips.
   components:
   - type: Item
@@ -43,6 +44,7 @@
   parent: FoodBakedBase
   id: FoodBakedRainbowCannabisBrownie
   name: rainbow brownie
+  suffix: Box
   description: An extra-"special" brownie with rainbow chocolate chips.
   components:
   - type: FlavorProfile
@@ -94,6 +96,7 @@
 
 - type: entity
   name: stick of rainbow cannabis butter
+  suffix: Box
   parent: FoodButter
   id: FoodRainbowCannabisButter
   description: Add this to your favorite baked goods for a gay time.
