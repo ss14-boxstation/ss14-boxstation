@@ -949,3 +949,13 @@
   id: 109
   time: '2026-05-12T02:21:04.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/163
+- author: Dizzy-Eevee
+  changes:
+  - message: Added reams of both white and colored paper to the bureaucracy crate,
+      along with sticky notes that can be thrown to stick to entities.
+    type: Add
+  - message: The bureaucracy crate no longer contains loose paper.
+    type: Tweak
+  id: 110
+  time: '2026-05-12T15:41:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/141
