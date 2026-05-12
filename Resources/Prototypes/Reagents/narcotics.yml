@@ -33,9 +33,9 @@
       # Main effects
       - !type:MovementSpeedModifier
         conditions: #imp
-        - !type:OrganType #imp
-          type: Allulalo
-          shouldHave: false
+        - !type:MetabolizerTypeCondition #imp
+          type: [Allulalo]
+          inverted: true
         walkSpeedModifier: 1.20
         sprintSpeedModifier: 1.20
       - !type:ModifyStatusEffect
@@ -87,9 +87,9 @@
       # Main effects
       - !type:MovementSpeedModifier
         conditions: #imp
-        - !type:OrganType #imp
-          type: Allulalo
-          shouldHave: false
+        - !type:MetabolizerTypeCondition #imp
+          type: [Allulalo]
+          inverted: true
         walkSpeedModifier: 1.15
         sprintSpeedModifier: 1.15
       - !type:ModifyStatusEffect
@@ -151,9 +151,9 @@
       # Main effects
       - !type:MovementSpeedModifier
         conditions: #imp
-        - !type:OrganType #imp
-          type: Allulalo
-          shouldHave: false
+        - !type:MetabolizerTypeCondition #imp
+          type: [Allulalo]
+          inverted: true
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
       - !type:ModifyStatusEffect
