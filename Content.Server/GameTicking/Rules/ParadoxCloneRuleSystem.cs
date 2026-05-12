@@ -87,6 +87,7 @@ public sealed class ParadoxCloneRuleSystem : GameRuleSystem<ParadoxCloneRuleComp
         var gibComp = EnsureComp<GibOnRoundEndComponent>(clone.Value);
         gibComp.SpawnProto = ent.Comp.GibProto;
         gibComp.PreventGibbingObjectives = new() { "ParadoxCloneKillObjective" }; // don't gib them if they killed the original.
+        gibComp.SafetyChance = 0.3f; // Box Change: Give Paradox Clones a 30% chance to not gib at round end, even if their objective wasn't completed.
 
         // turn their suit sensors off so they don't immediately get noticed
         _sensor.SetAllSensors(clone.Value, SuitSensorMode.SensorOff);
