@@ -39,7 +39,7 @@
       components:
       - TooShortForUIWhitelist
   - type: AllulaloAccent
-  - type: HeavyweightDrunk #Their blood is alcoholic. also a bird drinking you under the table is funny
+  #- type: HeavyweightDrunk #Their blood is alcoholic. also a bird drinking you under the table is funny # Box Change: We have this as a trait.
   - type: CanEscapeInventory
     baseResistTime: 1.0 #they break out of grabs FAST
   - type: Damageable
