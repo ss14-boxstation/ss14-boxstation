@@ -927,3 +927,11 @@
   id: 106
   time: '2026-05-12T02:04:20.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/165
+- author: BlueMoon059
+  changes:
+  - message: The Energy Magnum and Shotgun popups when changing firemodes have been
+      fixed.
+    type: Fix
+  id: 107
+  time: '2026-05-12T02:05:40.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/166
