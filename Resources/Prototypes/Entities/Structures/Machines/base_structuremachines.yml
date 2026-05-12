@@ -53,7 +53,7 @@
   - type: ExtensionCableReceiver
   - type: LightningTarget
     priority: 1
-  - type: TooShortForUIBlacklist #imp
+  - type: TooShortForUIBlacklist # Box Change: Allulalo blacklist
 
 - type: entity
   abstract: true

@@ -104,7 +104,7 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  - type: TooShortForUIWhitelist #imp change
+  - type: TooShortForUIWhitelist # Box Change: Allulalo whitelist
 
 - type: entity
   name: long-range holopad

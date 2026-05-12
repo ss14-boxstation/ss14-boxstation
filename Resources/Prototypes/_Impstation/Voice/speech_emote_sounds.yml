@@ -1,4 +1,23 @@
 - type: emoteSounds
+  id: ArachnidBodyEmotes
+  sounds:
+    Clap:
+      collection: Claps
+    ClapSingle:
+      collection: ClapSingle
+    Snap:
+      collection: Snaps
+      params:
+        volume: -6
+    Salute:
+      collection: Salutes
+    Blink:
+      collection: SpiderBlinks
+      params:
+        volume: -3
+        variation: 0.1
+
+- type: emoteSounds
   id: Allulalo
   params:
     variation: 0.125

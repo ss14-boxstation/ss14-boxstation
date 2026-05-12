@@ -54,12 +54,13 @@ public sealed partial class EECCVars : CVars
     public static readonly CVarDef<float> DefaultMaxThrowDistance =
         CVarDef.Create("contests.default_max_throw_distance", 4.0f, CVar.REPLICATED | CVar.SERVER);
 
-    // imp add
+    // Start Box Change: Imp addition for server-configurable escape speed
     /// <summary>
     ///     Coefficient to modify the speed at which entities escape from being carried
     /// </summary>
     public static readonly CVarDef<float> CarryEscapeCoeff =
         CVarDef.Create("contests.carry_escape_coeff", 0.5f, CVar.REPLICATED | CVar.SERVER);
+    //End Box Change
 
     #endregion
 }
