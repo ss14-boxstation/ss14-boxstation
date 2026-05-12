@@ -82,6 +82,7 @@
       - MobSharkSalvageShelledGreen
       - MobSharkSalvageAbyssal
       - MobSharkSalvageVampire
+      # Box End - Starcup - Adds new sharkminnows to mob spawners
       rareChance: 0.2
       prototypes:
         - MobCarpSalvage
