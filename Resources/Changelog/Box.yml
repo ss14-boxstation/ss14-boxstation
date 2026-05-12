@@ -919,3 +919,11 @@
   id: 105
   time: '2026-05-12T02:01:55.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/143
+- author: BlueMoon059
+  changes:
+  - message: Nanotasks and Bounty slips no longer show the markup formatting and now
+      look normal.
+    type: Fix
+  id: 106
+  time: '2026-05-12T02:04:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/165
