@@ -1,5 +1,6 @@
 - type: entity
   name: raw abyssal carp fillet
+  suffix: Box
   parent: FoodMeatFish
   id: FoodMeatAbyssalFish
   description: Darker, richer... with an oddly enticing color.
@@ -31,6 +32,7 @@
 
 - type: entity
   name: raw bad carp fillet
+  suffix: Box
   parent: FoodMeatFish
   id: FoodMeatBadFish
   description: Pale, dry, and musty.

@@ -8,6 +8,7 @@
 
 - type: entity
   name: pirate carp
+  suffix: Box
   parent: MobCarp
   id: MobCarpPirate
   description: A carp that has had obedience savagely beaten into it.
@@ -27,6 +28,7 @@
 
 - type: entity
   name: vampire carp
+  suffix: Box
   parent: MobCarp
   id: MobCarpVampire
   description: A ravenous space fish with long fangs and a thirst for blood.
@@ -45,6 +47,7 @@
 
 - type: entity
   name: queen carp
+  suffix: Box
   parent: MobCarp
   id: MobCarpQueen
   description: Carps well fed on grim debris are sometimes called 'queens' for their portly appearance.
@@ -61,7 +64,7 @@
       amount: 5
 
 - type: entity
-  suffix: blue
+  suffix: Box, blue
   parent: MobShark
   id: MobSharkBlue
   components:
@@ -69,7 +72,7 @@
       sprite: _starcup/Mobs/Aliens/Carps/Sharkminnows/sharkminnowblue.rsi
 
 - type: entity
-  suffix: brown
+  suffix: Box, brown
   parent: MobShark
   id: MobSharkBrown
   components:
@@ -77,7 +80,7 @@
       sprite: _starcup/Mobs/Aliens/Carps/Sharkminnows/sharkminnowbrown.rsi
 
 - type: entity
-  suffix: green
+  suffix: Box, green
   parent: MobShark
   id: MobSharkGreen
   components:
@@ -86,6 +89,7 @@
 
 - type: entity
   name: shellminnow
+  suffix: Box
   parent: MobShark
   id: MobSharkShelled
   description: A dangerous shark from the blackness of endless space, protected by thick bony plates.
@@ -105,7 +109,7 @@
 
 - type: entity
   name: shellminnow
-  suffix: blue
+  suffix: Box, blue
   parent: MobSharkShelled
   id: MobSharkShelledBlue
   components:
@@ -114,7 +118,7 @@
 
 - type: entity
   name: shellminnow
-  suffix: brown
+  suffix: Box, brown
   parent: MobSharkShelled
   id: MobSharkShelledBrown
   components:
@@ -123,7 +127,7 @@
 
 - type: entity
   name: shellminnow
-  suffix: green
+  suffix: Box, green
   parent: MobSharkShelled
   id: MobSharkShelledGreen
   components:
@@ -132,7 +136,7 @@
 
 - type: entity
   name: engorged sharkminnow
-  suffix: green
+  suffix: Box, green
   parent: MobSharkShelled
   id: MobSharkFat
   description: A dangerous shark from the blackness of endless space, well fed on the remains of unfortunate spacers.
@@ -146,6 +150,7 @@
 
 - type: entity
   name: vampire sharkminnow
+  suffix: Box
   parent: MobShark
   id: MobSharkVampire
   description: A terrifying shark from the blackness of endless space, with wicked long fangs.
@@ -170,6 +175,7 @@
 
 - type: entity
   name: abyssal sharkminnow
+  suffix: Box
   parent: MobShark
   id: MobSharkAbyssal
   description: An extra dangerous shark from the blackness of endless space, more vicious and durable.
@@ -194,6 +200,7 @@
 
 - type: entity
   name: laser sharkminnow
+  suffix: Box
   parent: MobShark
   id: MobSharkLaser
   description: The execution method of choice for the sophisticated space villain.
@@ -224,6 +231,7 @@
 
 - type: entity
   name: dire sharkminnow
+  suffix: Box
   parent: MobShark
   id: MobSharkDire
   description: A terrifying shark from the blackness of endless space, with wicked long fangs.
@@ -248,7 +256,7 @@
 
 - type: entity
   name: tiburadon
-  suffix: "sharkminnow boss"
+  suffix: Box, "sharkminnow boss"
   parent: MobSharkDire
   id: MobSharkTiburadon
   description: An ancient bred of sharkminnow from the deepest confines of space.
@@ -274,83 +282,83 @@
 - type: entity
   parent: MobCarpSplitfin
   id: MobCarpSalvageSplitfin
-  suffix: "splitfin, Salvage Ruleset"
+  suffix: Box "splitfin, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   parent: MobCarpVampire
   id: MobCarpSalvageVampire
-  suffix: "Salvage Ruleset"
+  suffix: Box "Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   parent: MobCarpQueen
   id: MobCarpSalvageQueen
-  suffix: "Salvage Ruleset"
+  suffix: Box "Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageBlue
   parent: MobSharkBlue
-  suffix: "blue, Salvage Ruleset"
+  suffix: Box "blue, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageBrown
   parent: MobSharkBrown
-  suffix: "brown, Salvage Ruleset"
+  suffix: Box "brown, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageGreen
   parent: MobSharkGreen
-  suffix: "green, Salvage Ruleset"
+  suffix: Box "green, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageShelled
   parent: MobSharkShelled
-  suffix: "Salvage Ruleset"
+  suffix: Box "Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageShelledBlue
   parent: MobSharkShelledBlue
-  suffix: "blue, Salvage Ruleset"
+  suffix: Box "blue, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageShelledBrown
   parent: MobSharkShelledBrown
-  suffix: "brown, Salvage Ruleset"
+  suffix: Box "brown, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageShelledGreen
   parent: MobSharkShelledGreen
-  suffix: "green, Salvage Ruleset"
+  suffix: Box "green, Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageAbyssal
   parent: MobSharkAbyssal
-  suffix: "Salvage Ruleset"
+  suffix: Box "Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
 
 - type: entity
   id: MobSharkSalvageVampire
   parent: MobSharkVampire
-  suffix: "Salvage Ruleset"
+  suffix: Box "Salvage Ruleset"
   components:
   - type: SalvageMobRestrictions
