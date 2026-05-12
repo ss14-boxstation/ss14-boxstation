@@ -1,1 +1,0 @@
-guide-entry-hitman = Hitman
