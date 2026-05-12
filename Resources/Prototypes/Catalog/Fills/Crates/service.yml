@@ -187,7 +187,7 @@
       entity_storage: !type:AllSelector
         children:
         # Start Box Change - Remove loose paper in favour of DV paper reams
-        #/- id: Paper
+        #- id: Paper
         #  amount: 12
         #- id: PaperOffice
         #  amount: 6
@@ -208,6 +208,7 @@
         - id: NotebookCompositionGreen
         - id: NotebookCompositionBlue
         - id: NotebookSpiralBeige
+        # End Box Change
         # Start Box Change: Sticky notes and paper reams from DV
         - id: PaperStickyNoteStackFilled
         - id: PaperStickyNoteStackFilledPink

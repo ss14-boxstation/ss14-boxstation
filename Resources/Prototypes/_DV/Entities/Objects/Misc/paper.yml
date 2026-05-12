@@ -1,7 +1,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedPink
-  suffix: pink
+  suffix: pink, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -21,7 +21,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedRed
-  suffix: red
+  suffix: red, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -41,7 +41,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedOrange
-  suffix: orange
+  suffix: orange, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -61,7 +61,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedYellow
-  suffix: yellow
+  suffix: yellow, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -81,7 +81,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedGrass
-  suffix: grass
+  suffix: grass, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -101,7 +101,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedGreen
-  suffix: green
+  suffix: green, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -121,7 +121,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedOcean
-  suffix: ocean
+  suffix: ocean, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -141,7 +141,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedSky
-  suffix: sky
+  suffix: sky, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -161,7 +161,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedPurple
-  suffix: purple
+  suffix: purple, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -181,7 +181,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedTan
-  suffix: tan
+  suffix: tan, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -201,7 +201,7 @@
 - type: entity
   parent: Paper
   id: PaperDyedBrown
-  suffix: brown
+  suffix: brown, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -222,6 +222,7 @@
   parent: BoxBase
   id: BoxReamClassic
   name: Papermoon classic color paper ream
+  suffix: Box # Box Change: Suffix
   description: Brighten up your records and more with Papermoon colored paper, in the six classic colors you've come to know and love. Dyed throughout for maximum colorfastness.
   components:
   - type: Sprite
@@ -257,6 +258,7 @@
   parent: BoxReamClassic
   id: BoxReamBright
   name: Papermoon happy color paper ream
+  suffix: Box # Box Change: Suffix
   description: Make getting a pink slip a joyous occassion with Papermoon colored paper, in six cheerful and vibrant colors. Dyed throughout for maximum colorfastness.
   components:
   - type: Sprite
@@ -283,6 +285,7 @@
   id: BoxReamWhite
   # Start Box Change: Remove Epistemics references
   name: Papermoon white paper ream
+  suffix: Box # Box Change: Suffix
   description: Create reports that are sure to get noticed with Papermoon white paper. Bleached throughout for maximum desaturation.
   # End Box Change
   components:

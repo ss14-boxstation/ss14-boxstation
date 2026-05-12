@@ -18,7 +18,7 @@
   parent: Paper
   id: PaperStickyNote
   name: sticky note
-  suffix: yellow
+  suffix: yellow, Box # Box Change: Suffix
   description: A sticky note, for when you want your reminders to stick
   components:
   - type: Sprite
@@ -49,7 +49,7 @@
 - type: entity
   parent: PaperStickyNote
   id: PaperStickyNotePink
-  suffix: pink
+  suffix: pink, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: _DV/Objects/Misc/stickies.rsi
@@ -75,7 +75,7 @@
 - type: entity
   parent: PaperStickyNote
   id: PaperStickyNoteGreen
-  suffix: green
+  suffix: green, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: _DV/Objects/Misc/stickies.rsi
@@ -101,7 +101,7 @@
 - type: entity
   parent: PaperStickyNote
   id: PaperStickyNoteBlue
-  suffix: blue
+  suffix: blue, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: _DV/Objects/Misc/stickies.rsi
@@ -130,7 +130,7 @@
   parent: BaseItem
   id: PaperStickyNoteStack
   name: sticky note stack
-  suffix: yellow
+  suffix: yellow, Box # Box Change: Suffix
   components:
   - type: Sprite
     sprite: _DV/Objects/Misc/stickies.rsi
@@ -178,7 +178,7 @@
   parent: PaperStickyNoteStack
   id: PaperStickyNoteStackPink
   name: sticky note stack
-  suffix: pink
+  suffix: pink, Box # Box Change: Suffix
   components:
   - type: Sprite
     color: "#ff8cba"
@@ -191,7 +191,7 @@
   parent: PaperStickyNoteStack
   id: PaperStickyNoteStackGreen
   name: sticky note stack
-  suffix: green
+  suffix: green, Box # Box Change: Suffix
   components:
   - type: Sprite
     color: "#9fd4a3"
@@ -204,7 +204,7 @@
   parent: PaperStickyNoteStack
   id: PaperStickyNoteStackBlue
   name: sticky note stack
-  suffix: blue
+  suffix: blue, Box # Box Change: Suffix
   components:
   - type: Sprite
     color: "#00c2e7"
@@ -219,7 +219,7 @@
   parent: PaperStickyNoteStack
   id: PaperStickyNoteStackFilled
   name: sticky note stack
-  suffix: yellow, filled
+  suffix: yellow, filled, Box # Box Change: Suffix
   components:
   - type: Bin
     whitelist:
@@ -251,7 +251,7 @@
   parent: PaperStickyNoteStackPink
   id: PaperStickyNoteStackFilledPink
   name: sticky note stack
-  suffix: pink, filled
+  suffix: pink, filled, Box # Box Change: Suffix
   components:
   - type: Bin
     whitelist:
@@ -283,7 +283,7 @@
   parent: PaperStickyNoteStackGreen
   id: PaperStickyNoteStackFilledGreen
   name: sticky note stack
-  suffix: green, filled
+  suffix: green, filled, Box # Box Change: Suffix
   components:
   - type: Bin
     whitelist:
@@ -315,7 +315,7 @@
   parent: PaperStickyNoteStackBlue
   id: PaperStickyNoteStackFilledBlue
   name: sticky note stack
-  suffix: blue, filled
+  suffix: blue, filled, Box # Box Change: Suffix
   components:
   - type: Bin
     whitelist:
