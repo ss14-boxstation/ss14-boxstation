@@ -52,9 +52,9 @@
       path: /Audio/_Impstation/Allulalo/allulalo_cry.ogg
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
     # Box Change: Remove imp-exclusive sounds
+    #Wuhey:
+    #  collection: Wuhey
     #Ungh:
     #  collection: Ungh
     #Gasp:
