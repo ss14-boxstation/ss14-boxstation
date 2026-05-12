@@ -903,3 +903,19 @@
   id: 103
   time: '2026-05-12T01:40:40.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/164
+- author: Dizzy-Eevee
+  changes:
+  - message: Paradox Clones now have a chance to survive the end of the round, even
+      if they did not kill their original.
+    type: Tweak
+  id: 104
+  time: '2026-05-12T02:02:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/144
+- author: CollectionOfBones128
+  changes:
+  - message: Paradox Clones can now spawn with an objective set focused on keeping
+      their other self alive.
+    type: Add
+  id: 105
+  time: '2026-05-12T02:01:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/143
