@@ -935,3 +935,10 @@
   id: 107
   time: '2026-05-12T02:05:40.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/166
+- author: DrWhoFan13
+  changes:
+  - message: Hitman guidebook entry now shows up!
+    type: Fix
+  id: 108
+  time: '2026-05-12T02:10:53.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/148
