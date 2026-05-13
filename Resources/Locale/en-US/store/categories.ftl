@@ -12,7 +12,7 @@ store-category-allies = Allies
 store-category-job = Job
 store-category-wearables = Wearables
 store-category-pointless = Pointless
-Box - Early Merge of Upstream code start
+# Box - Early Merge of Upstream code start
 store-category-objectives = Objectives
 # Box - Early Merge of Upstream code end
 store-discounted-items = Discounts
