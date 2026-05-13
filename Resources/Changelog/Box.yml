@@ -966,3 +966,12 @@
   id: 111
   time: '2026-05-12T15:51:34.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/158
+- author: BlueMoon059
+  changes:
+  - message: the "hands" emote wheel category has been renamed to "body".
+    type: Tweak
+  - message: Mute characters can now use the sound part of the "blink" emote.
+    type: Fix
+  id: 112
+  time: '2026-05-13T20:13:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/171

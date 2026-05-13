@@ -5,3 +5,6 @@ trait-blood-deficiency-desc = Your body loses more blood than it can produce. Af
 
 trait-blood-deficiency-minor-name = Minor Blood Deficiency
 trait-blood-deficiency-minor-desc = Your body does not naturally restore its own blood level. You will require medical treatment to recover from bloodloss. Has no effect on IPCs.
+
+trait-clumsy-name = Clumsy
+trait-clumsy-desc = You often trip, slip and fall - from climbing tables to operating firearms.

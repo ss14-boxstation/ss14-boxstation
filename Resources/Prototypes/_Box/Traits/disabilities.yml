@@ -10,7 +10,7 @@
     - type: BloodDeficiency
       bloodRefreshAmount: 0.08
       bloodReferenceFactor: 0
-      
+
 - type: trait
   id: BloodDeficiencyMinor
   name: trait-blood-deficiency-minor-name
@@ -21,3 +21,11 @@
     - type: BloodDeficiency
       bloodRefreshAmount: 0
       bloodReferenceFactor: 1
+
+- type: trait
+  id: Clumsy
+  name: trait-clumsy-name
+  description: trait-clumsy-desc
+  category: Disabilities
+  components:
+    - type: Clumsy
