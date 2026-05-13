@@ -1,0 +1,9 @@
+- type: guideEntry
+  id: Troublemaker
+  name: guide-entry-troublemaker
+  text: "/ServerInfo/_Box/Guidebook/Antagonist/Troublemaker.xml"
+
+- type: guideEntry
+  id: Hitman
+  name: guide-entry-hitman
+  text: "/ServerInfo/Guidebook/_DV/Antagonist/Hitman.xml"

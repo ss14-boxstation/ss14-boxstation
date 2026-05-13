@@ -1,0 +1,47 @@
+- type: weightedRandom
+  id: TroublemakerDepartmentGrudgeObjectiveGroups
+  weights:
+    TroublemakerDepartmentGrudgeObjectiveGroup: 1
+
+- type: weightedRandom
+  id: TroublemakerIndividualGrudgeObjectiveGroups
+  weights:
+    TroublemakerIndividualGrudgeObjectiveGroup: 1
+
+- type: weightedRandom
+  id: TroublemakerOpenObjectiveGroups
+  weights:
+    TroublemakerOpenObjectiveGroup: 1
+
+- type: weightedRandom
+  id: TroublemakerDepartmentGrudgeObjectiveGroup
+  weights:
+    TroublemakerMedicalGrudgeObjective: 1
+    TroublemakerSupplyGrudgeObjective: 1
+    TroublemakerScienceGrudgeObjective: 1
+    TroublemakerEngineeringGrudgeObjective: 1
+    TroublemakerServiceGrudgeObjective: 1
+
+- type: weightedRandom
+  id: TroublemakerIndividualGrudgeObjectiveGroup
+  weights:
+    TroublemakerIndividualGrudgeObjective: 1
+
+- type: weightedRandom
+  id: TroublemakerOpenObjectiveGroup
+  weights:
+    TroublemakerVendingMachineObjective: 1
+    TroublemakerValuablesObjective: 1
+    TroublemakerAccessesObjective: 1
+    TroublemakerRumorObjective: 1
+    TroublemakerBlackmarketeerObjective: 1
+    TroublemakerFramerObjective: 1
+    TroublemakerCCTVObjective: 1
+    TroublemakerLightsObjective: 1
+    TroublemakerLeakObjective: 1
+    TroublemakerStationAccountsObjective: 1
+    TroublemakerVigilanteObjective: 1
+    TroublemakerSceneObjective: 1
+    TroublemakerLawsuitObjective: 1
+    TroublemakerAnnouncementObjective: 1
+    TroublemakerBarfightObjective: 1

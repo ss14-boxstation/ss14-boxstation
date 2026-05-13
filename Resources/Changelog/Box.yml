@@ -790,3 +790,179 @@
   id: 90
   time: '2026-04-12T14:31:23.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/111
+- author: Dizzy-Eevee
+  changes:
+  - message: Added emote sounds for blinking.
+    type: Add
+  id: 91
+  time: '2026-04-13T14:26:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/130
+- author: BlueMoon059
+  changes:
+  - message: Fixes avali headwear displacements.
+    type: Fix
+  id: 92
+  time: '2026-04-13T21:19:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/142
+- author: Dizzy-Eevee
+  changes:
+  - message: Rodentia will now eject any items in their cheek storage upon being knocked
+      down, disarmed, or taking sufficient damage. Your cheese is no longer safe.
+    type: Tweak
+  id: 93
+  time: '2026-04-15T10:06:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/145
+- author: Dizzy-Eevee
+  changes:
+  - message: Added traits for blood deficiency, which cause your character to either
+      not regenerate or actively lose blood.
+    type: Add
+  id: 94
+  time: '2026-04-15T15:30:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/128
+- author: Dizzy-Eevee
+  changes:
+  - message: Added secure briefcases for all your paperwork-securing needs. Lockable,
+      explosion-proof, and printable at autolathes.
+    type: Add
+  - message: Added unique briefcases for the HoP, Detective, and Lawyer. All three
+      are potential steal targets for thieves.
+    type: Add
+  - message: Lawyer now spawns holding their special briefcase, instead of a generic
+      brown one.
+    type: Tweak
+  - message: The Hristov sniper bundle now comes in a secure briefcase instead of
+      a brown one.
+    type: Tweak
+  id: 95
+  time: '2026-04-15T20:40:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/133
+- author: stormyatt
+  changes:
+  - message: Hitman, a single target TAL antag with rp based modifer objectives
+    type: Add
+  id: 96
+  time: '2026-04-16T10:24:53.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/135
+- author: BlueMoon059
+  changes:
+  - message: Adds a new antagonist - the Troublemaker. A low to mid impact antagonist
+      that uses a series of kits to settle grudges.
+    type: Add
+  id: 97
+  time: '2026-04-16T11:30:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/136
+- author: Dinoguy12349
+  changes:
+  - message: Bingles have been resprited!
+    type: Tweak
+  id: 98
+  time: '2026-04-25T14:56:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/95
+- author: BlueMoon059
+  changes:
+  - message: Adds 7 new Troublemaker Objectives.
+    type: Add
+  - message: Edits the names of basically every Troublemaker objective to be more
+      clear to End of Round lobby summaries.
+    type: Tweak
+  id: 99
+  time: '2026-04-25T14:58:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/154
+- author: Dizzy-Eevee
+  changes:
+  - message: Rainbow cannabis and its products no longer force you to laugh/whistle.
+    type: Tweak
+  id: 100
+  time: '2026-04-25T14:59:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/149
+- author: BlueMoon059
+  changes:
+  - message: Adds 6 new kits to the Troublemaker, bringing the total to 15.
+    type: Add
+  - message: Some Troublemaker kits have had their content adjusted.
+    type: Tweak
+  - message: the Cheater troublemaker kit now properly spawns with one rigged, one
+      normal set of boxing gloves instead of two rigged.
+    type: Fix
+  id: 101
+  time: '2026-04-25T14:59:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/155
+- author: SomegnihT
+  changes:
+  - message: Skeletons can no longer spawn at random.
+    type: Remove
+  id: 102
+  time: '2026-04-26T23:34:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/156
+- author: DrWhoFan13
+  changes:
+  - message: Departmental order consoles now print slips again. Visit your friendly
+      Cargo Technician or Quartmaster today!
+    type: Tweak
+  id: 103
+  time: '2026-05-12T01:40:40.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/164
+- author: Dizzy-Eevee
+  changes:
+  - message: Paradox Clones now have a chance to survive the end of the round, even
+      if they did not kill their original.
+    type: Tweak
+  id: 104
+  time: '2026-05-12T02:02:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/144
+- author: CollectionOfBones128
+  changes:
+  - message: Paradox Clones can now spawn with an objective set focused on keeping
+      their other self alive.
+    type: Add
+  id: 105
+  time: '2026-05-12T02:01:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/143
+- author: BlueMoon059
+  changes:
+  - message: Nanotasks and Bounty slips no longer show the markup formatting and now
+      look normal.
+    type: Fix
+  id: 106
+  time: '2026-05-12T02:04:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/165
+- author: BlueMoon059
+  changes:
+  - message: The Energy Magnum and Shotgun popups when changing firemodes have been
+      fixed.
+    type: Fix
+  id: 107
+  time: '2026-05-12T02:05:40.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/166
+- author: DrWhoFan13
+  changes:
+  - message: Hitman guidebook entry now shows up!
+    type: Fix
+  id: 108
+  time: '2026-05-12T02:10:53.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/148
+- author: BlueMoon059
+  changes:
+  - message: The Syndicate Dropship ruin has been removed.
+    type: Remove
+  id: 109
+  time: '2026-05-12T02:21:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/163
+- author: Dizzy-Eevee
+  changes:
+  - message: Added reams of both white and colored paper to the bureaucracy crate,
+      along with sticky notes that can be thrown to stick to entities.
+    type: Add
+  - message: The bureaucracy crate no longer contains loose paper.
+    type: Tweak
+  id: 110
+  time: '2026-05-12T15:41:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/141
+- author: BlueMoon059
+  changes:
+  - message: Landmines no longer spawn on debris.
+    type: Remove
+  id: 111
+  time: '2026-05-12T15:51:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/158

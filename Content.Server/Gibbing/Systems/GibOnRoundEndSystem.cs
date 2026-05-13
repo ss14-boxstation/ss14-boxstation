@@ -1,8 +1,9 @@
-﻿using Content.Shared.GameTicking;
+using Content.Shared.GameTicking;
 using Content.Shared.Gibbing.Components;
 using Content.Shared.Mind;
 using Content.Shared.Objectives.Systems;
 using Content.Server.Body.Systems;
+using Robust.Shared.Random; // Box Change: For paraclone RNG
 
 namespace Content.Server.Gibbing.Systems;
 public sealed class GibOnRoundEndSystem : EntitySystem
@@ -10,6 +11,7 @@ public sealed class GibOnRoundEndSystem : EntitySystem
     [Dependency] private readonly BodySystem _body = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedObjectivesSystem _objectives = default!;
+    [Dependency] private readonly IRobustRandom _random = default!; // Box Change: For paraclone RNG 
 
     public override void Initialize()
     {
@@ -42,6 +44,13 @@ public sealed class GibOnRoundEndSystem : EntitySystem
             }
             else
                 gib = true;
+
+            // Start Box Change: Roll for safety, even if their objectives haven't been completed
+            if (_random.Prob(gibComp.SafetyChance))
+            {
+                gib = false;
+            }
+            // End Box Change
 
             if (!gib)
                 continue;

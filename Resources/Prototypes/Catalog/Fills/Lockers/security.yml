@@ -168,6 +168,7 @@
     - id: BoxEvidenceMarkers
     - id: HandLabeler
     - id: BoxTapeRecorder # DeltaV
+    - id: BriefcaseDetective # Box Change - Add detective's briefcase to their locker
 
 - type: entity
   id: ClosetBombFilled
