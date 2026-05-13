@@ -83,6 +83,7 @@
           - /Maps/Ruins/wrecklaimer.yml
           - /Maps/Ruins/displaced_telescience.yml
           - /Maps/_Harmony/Ruins/whiteship_heavysalvage.yml # Harmony Change - Ports NT Heavy Salvage Vessel Whiteship from SS13
+          - /Maps/_Box/Ruins/Salvagefreighter.yml # Box Change - Salvage Freighter Ruin
         wrecks: !type:DungeonSpawnGroup
           minimumDistance: 150
           maximumDistance: 300
