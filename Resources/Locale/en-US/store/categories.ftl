@@ -12,7 +12,9 @@ store-category-allies = Allies
 store-category-job = Job
 store-category-wearables = Wearables
 store-category-pointless = Pointless
-store-category-objectives = Objectives <#-- Box - Early Merge of Upstream code -->
+<#-- Box - Early Merge of Upstream code -->
+store-category-objectives = Objectives
+<#-- Box - Early Merge of Upstream code -->
 store-discounted-items = Discounts
 
 # Revenant
