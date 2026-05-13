@@ -1155,7 +1155,7 @@
     Telecrystal: 14
   categories:
   - UplinkDisruption
-  - UplinkObjective #Box
+  - UplinkObjective #Box Change
   conditions:
   - !type:StoreWhitelistCondition
      blacklist:
@@ -1270,7 +1270,6 @@
       components:
         - DieCondition
   # Box End
-
 
 - type: listing
   id: UplinkCameraBug
