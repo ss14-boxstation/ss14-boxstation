@@ -218,7 +218,9 @@ ghost-role-information-space-ninja-name = Space Ninja
 ghost-role-information-space-ninja-description = Use stealth and deception to sabotage the station.
 
 ghost-role-information-paradox-clone-name = Paradox Clone
-ghost-role-information-paradox-clone-description = A freak space-time anomaly has teleported you into another reality! Now you have to find your counterpart and kill and replace them.
+# Box Change Start - imp - objective rephrase to account for saviors
+ghost-role-information-paradox-clone-description = A freak space-time anomaly has teleported you into another reality! Confront your counterpart, and protect your own existence.
+# Box Change End
 
 ghost-role-information-syndicate-reinforcement-name = Syndicate Agent
 ghost-role-information-syndicate-reinforcement-description = Someone needs reinforcements. You, the first person the syndicate could find, will help them.

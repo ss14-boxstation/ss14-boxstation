@@ -38,3 +38,10 @@
     TroublemakerFramerObjective: 1
     TroublemakerCCTVObjective: 1
     TroublemakerLightsObjective: 1
+    TroublemakerLeakObjective: 1
+    TroublemakerStationAccountsObjective: 1
+    TroublemakerVigilanteObjective: 1
+    TroublemakerSceneObjective: 1
+    TroublemakerLawsuitObjective: 1
+    TroublemakerAnnouncementObjective: 1
+    TroublemakerBarfightObjective: 1
