@@ -92,7 +92,7 @@
 # Box - Early Merge of Upstream code begin
 - type: storeCategory
   id: UplinkObjective
-  name: store-category-objective
+  name: store-category-objectives
   priority: 11
 # Box - Early Merge of Upstream code end
 
