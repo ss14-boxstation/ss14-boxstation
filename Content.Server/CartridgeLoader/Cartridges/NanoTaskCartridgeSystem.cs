@@ -77,11 +77,14 @@ public sealed class NanoTaskCartridgeSystem : SharedNanoTaskCartridgeSystem
 
         printed.Task = item;
         var msg = new FormattedMessage();
-        msg.AddText(Loc.GetString("nano-task-printed-description", ("description", item.Description)));
+    /// msg.AddText(Loc.GetString("nano-task-printed-description", ("description", item.Description))); /// Box Change - Fixes Nanochat formatting
+        msg.AddMarkupOrThrow(Loc.GetString("nano-task-printed-description", ("description", FormattedMessage.EscapeText(item.Description)))); /// Box Change - Fixes nanochat formatting
         msg.PushNewline();
-        msg.AddText(Loc.GetString("nano-task-printed-requester", ("requester", item.TaskIsFor)));
+    /// msg.AddText(Loc.GetString("nano-task-printed-requester", ("requester", item.TaskIsFor)));
+        msg.AddMarkupOrThrow(Loc.GetString("nano-task-printed-requester", ("requester", FormattedMessage.EscapeText(item.TaskIsFor)))); /// Box Change - fixes nanochat formatting
         msg.PushNewline();
-        msg.AddText(item.Priority switch {
+    /// msg.AddText(item.Priority switch { /// Box Change - fixes nanochat formatting
+        msg.AddMarkupOrThrow(item.Priority switch {
             NanoTaskPriority.High => Loc.GetString("nano-task-printed-high-priority"),
             NanoTaskPriority.Medium => Loc.GetString("nano-task-printed-medium-priority"),
             NanoTaskPriority.Low => Loc.GetString("nano-task-printed-low-priority"),

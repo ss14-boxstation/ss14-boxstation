@@ -895,3 +895,74 @@
   id: 102
   time: '2026-04-26T23:34:05.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/156
+- author: DrWhoFan13
+  changes:
+  - message: Departmental order consoles now print slips again. Visit your friendly
+      Cargo Technician or Quartmaster today!
+    type: Tweak
+  id: 103
+  time: '2026-05-12T01:40:40.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/164
+- author: Dizzy-Eevee
+  changes:
+  - message: Paradox Clones now have a chance to survive the end of the round, even
+      if they did not kill their original.
+    type: Tweak
+  id: 104
+  time: '2026-05-12T02:02:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/144
+- author: CollectionOfBones128
+  changes:
+  - message: Paradox Clones can now spawn with an objective set focused on keeping
+      their other self alive.
+    type: Add
+  id: 105
+  time: '2026-05-12T02:01:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/143
+- author: BlueMoon059
+  changes:
+  - message: Nanotasks and Bounty slips no longer show the markup formatting and now
+      look normal.
+    type: Fix
+  id: 106
+  time: '2026-05-12T02:04:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/165
+- author: BlueMoon059
+  changes:
+  - message: The Energy Magnum and Shotgun popups when changing firemodes have been
+      fixed.
+    type: Fix
+  id: 107
+  time: '2026-05-12T02:05:40.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/166
+- author: DrWhoFan13
+  changes:
+  - message: Hitman guidebook entry now shows up!
+    type: Fix
+  id: 108
+  time: '2026-05-12T02:10:53.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/148
+- author: BlueMoon059
+  changes:
+  - message: The Syndicate Dropship ruin has been removed.
+    type: Remove
+  id: 109
+  time: '2026-05-12T02:21:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/163
+- author: Dizzy-Eevee
+  changes:
+  - message: Added reams of both white and colored paper to the bureaucracy crate,
+      along with sticky notes that can be thrown to stick to entities.
+    type: Add
+  - message: The bureaucracy crate no longer contains loose paper.
+    type: Tweak
+  id: 110
+  time: '2026-05-12T15:41:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/141
+- author: BlueMoon059
+  changes:
+  - message: Landmines no longer spawn on debris.
+    type: Remove
+  id: 111
+  time: '2026-05-12T15:51:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/158
