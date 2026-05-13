@@ -1154,7 +1154,6 @@
   cost:
     Telecrystal: 14
   categories:
-  - UplinkDisruption
   - UplinkObjective #Box Change
   conditions:
   - !type:StoreWhitelistCondition
@@ -1255,8 +1254,7 @@
   cost:
     Telecrystal: 12
   categories:
-    - UplinkDisruption
-    - UplinkObjective #Box
+  - UplinkObjective #Box
   #Start of Harmony change
   conditions:
   - !type:BuyerWhitelistCondition
