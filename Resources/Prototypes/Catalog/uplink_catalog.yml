@@ -1161,12 +1161,12 @@
      blacklist:
        tags:
        - NukeOpsUplink
-  # Box - Make Antimov DAGD-only
+  # Box Change Start - Make Antimov DAGD-only
   - !type:BuyerObjectiveWhitelistCondition
     whitelist:
       components:
         - DieCondition
-  # Box End
+  # Box Change End
 
 - type: listing
   id: UplinkNukieAntimovCircuitBoard
@@ -1264,12 +1264,12 @@
       components:
       - SurplusBundle
   #End of Harmony change
-  # Box - Make Singulo Beacon DAGD-only
+  # Box Change Start - Make Singulo Beacon DAGD-only
   - !type:BuyerObjectiveWhitelistCondition
     whitelist:
       components:
         - DieCondition
-  # Box End
+  # Box Change End
 
 - type: listing
   id: UplinkCameraBug
