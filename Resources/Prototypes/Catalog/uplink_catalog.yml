@@ -2126,11 +2126,17 @@
   cost:
     Telecrystal: 20
   categories:
-  - UplinkJob
+  - UplinkObjective #Box Change - Changed from UplinkJob to UplinkObjective
   conditions:
   - !type:BuyerJobCondition
     whitelist:
     - Chaplain
+  # Box Change Start - Make HHG DAGD-only
+  - !type:BuyerObjectiveWhitelistCondition
+    whitelist:
+      components:
+        - DieCondition
+  # Box Change End
 
 - type: listing
   id: uplinkRevolverCapGunFake
