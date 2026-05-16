@@ -127,11 +127,11 @@
       entity_storage: !type:AllSelector
         children:
         - id: BarberScissors
-        # Begin Macrocosm: Costume bundles
+        # Box change start - Macrocosm Theatre Crate changes
         # - id: ClothingOuterSuitMonkey
         # - id: ClothingHeadHatAnimalMonkey
         - id: CostumeBundleMonkey
-        # End Macrocosm
+        # Box change end - Macrocosm Theatre Crate changes
         - id: ClothingUniformJumpskirtJanimaid
         - id: ClothingUniformJumpskirtOldDress
         - id: ClothingHeadHatMagician
@@ -155,14 +155,14 @@
           - id: ClothingMaskMime
           - id: ClothingBeltSuspendersRed
           - id: ClothingBeltSuspendersBlack
-        # Begin Macrocosm: Costume bundles
+        # Box change start - Macrocosm Theatre Crate changes
         # - !type:AllSelector # Performer starter kit
         #   children:
         #   - id: ClothingUniformJumpskirtPerformer
         #   - id: ClothingShoesBootsPerformer
         #   - id: ClothingHeadPerformerWig
         - id: CostumeBundlePerformer
-        # End Macrocosm
+        # Box change end - Macrocosm Theatre Crate changes
 
 - type: entity
   parent: CrateGenericSteel
