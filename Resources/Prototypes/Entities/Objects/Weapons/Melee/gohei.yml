@@ -15,6 +15,6 @@
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/gohei.rsi
-  - type: Tag # MACROCOSM: Allow item to be inserted in costume bundles
+  - type: Tag # Box change - allow for item to be added in costume bundles
     tags:
     - CostumeItem
