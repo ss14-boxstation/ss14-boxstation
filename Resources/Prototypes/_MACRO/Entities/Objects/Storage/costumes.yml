@@ -26,6 +26,7 @@
   abstract: true
   parent: [BaseStorageItem, BaseBagOpenClose]
   id: BaseCostumeBundle
+  suffix: Box
   name: costume bundle
   description: A bag containing assorted costume parts.
   components:
@@ -66,7 +67,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: EmptyCostumeBundle
-  suffix: Empty
+  suffix: Empty, Box
   description: A bag for storing assorted costume parts.
   components:
   - type: Sprite
@@ -84,6 +85,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleCardborg
+  suffix: Box
   name: cardborg costume bundle
   components:
   - type: Sprite
@@ -106,6 +108,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleChicken
+  suffix: Box
   name: chicken costume bundle
   components:
   - type: Sprite
@@ -128,6 +131,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleGladiator
+  suffix: Box
   name: gladiator costume bundle
   components:
   - type: Sprite
@@ -150,6 +154,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleJudge
+  suffix: Box
   name: judge costume bundle
   components:
   - type: Sprite
@@ -172,6 +177,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleMonkey
+  suffix: Box
   name: monkey costume bundle
   components:
   - type: Sprite
@@ -194,6 +200,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundlePirate
+  suffix: Box
   name: pirate costume bundle
   components:
   - type: Sprite
@@ -221,6 +228,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundlePerformer
+  suffix: Box
   name: performer costume bundle
   components:
   - type: Sprite
@@ -244,6 +252,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleRedRaccoon
+  suffix: Box
   name: red raccoon costume bundle
   components:
   - type: Sprite
@@ -266,6 +275,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleSafari
+  suffix: Box
   name: safari costume bundle
   components:
   - type: Sprite
@@ -288,6 +298,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleSanta
+  suffix: Box
   name: santa costume bundle
   components:
   - type: Sprite
@@ -310,6 +321,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleShrineMaiden
+  suffix: Box
   name: shrine maiden costume bundle
   components:
   - type: Sprite
@@ -333,6 +345,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleSkub
+  suffix: Box
   name: skub costume bundle
   components:
   - type: Sprite
@@ -355,6 +368,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleWitch
+  suffix: Box
   name: witch costume bundle
   components:
   - type: Sprite
@@ -378,6 +392,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleYakuza
+  suffix: Box
   name: yakuza costume bundle
   components:
   - type: Sprite

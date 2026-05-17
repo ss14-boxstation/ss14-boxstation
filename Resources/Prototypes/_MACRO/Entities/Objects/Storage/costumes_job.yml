@@ -4,6 +4,7 @@
 - type: entity
   parent: BaseCostumeBundle
   id: CostumeBundleJester
+  suffix: Box
   name: jester costume bundle
   components:
   - type: Sprite
