@@ -1,28 +1,28 @@
 - type: soundCollection
   id: LobbyMusic
   files:
-  #  - /Audio/Lobby/thunderdome.ogg # Box - Undo harmony commenting out of song
-  #  - /Audio/Lobby/absconditus.ogg # Box - Undo harmony commenting out of song
-  #  - /Audio/Lobby/space_asshole.ogg
-  #  - /Audio/Lobby/the_wizard.ogg
-  #  - /Audio/Lobby/endless_space.ogg # Box - Undo harmony commenting out of song
-  #  - /Audio/Lobby/singuloose.ogg
-  #  - /Audio/Lobby/comet_haley.ogg # Box - Undo harmony commenting out of song
-  #  - /Audio/Lobby/title2.ogg
-  #  - /Audio/Lobby/title3.ogg
-  #  - /Audio/Lobby/mod.flip-flap.ogg
-  #  - /Audio/Lobby/Spac_Stac.ogg # Box - Undo harmony commenting out of song
-  #  - /Audio/Lobby/pwmur.ogg
-  #  - /Audio/Lobby/lasers_rip_apart_the_bulkhead.ogg
-  #  - /Audio/Lobby/every_light_is_blinking_at_once.ogg
-  #  - /Audio/Lobby/atomicamnesiammx.ogg
+    - /Audio/Lobby/thunderdome.ogg # Box - Undo harmony commenting out of song
+    - /Audio/Lobby/absconditus.ogg # Box - Undo harmony commenting out of song
+    - /Audio/Lobby/space_asshole.ogg
+    - /Audio/Lobby/the_wizard.ogg
+    - /Audio/Lobby/endless_space.ogg # Box - Undo harmony commenting out of song
+    - /Audio/Lobby/singuloose.ogg
+    - /Audio/Lobby/comet_haley.ogg # Box - Undo harmony commenting out of song
+    - /Audio/Lobby/title2.ogg
+    - /Audio/Lobby/title3.ogg
+    - /Audio/Lobby/mod.flip-flap.ogg
+    - /Audio/Lobby/Spac_Stac.ogg # Box - Undo harmony commenting out of song
+    - /Audio/Lobby/pwmur.ogg
+    - /Audio/Lobby/lasers_rip_apart_the_bulkhead.ogg
+    - /Audio/Lobby/every_light_is_blinking_at_once.ogg
+    - /Audio/Lobby/atomicamnesiammx.ogg
 # Harmony additions
-  #  - /Audio/_Harmony/Lobby/rustycansbattle.ogg
-  #  - /Audio/_Harmony/Lobby/harmonilla.ogg
-  #  - /Audio/_Harmony/Lobby/dropzone.ogg
-  #  - /Audio/_Harmony/Lobby/see_your_sunbeam.ogg
-  #  - /Audio/_Harmony/Lobby/droopy_likes_your_face.ogg
-  #  - /Audio/_Harmony/Lobby/GetThatAntag!.ogg
+    - /Audio/_Harmony/Lobby/rustycansbattle.ogg
+    - /Audio/_Harmony/Lobby/harmonilla.ogg
+    - /Audio/_Harmony/Lobby/dropzone.ogg
+    - /Audio/_Harmony/Lobby/see_your_sunbeam.ogg
+    - /Audio/_Harmony/Lobby/droopy_likes_your_face.ogg
+    - /Audio/_Harmony/Lobby/GetThatAntag!.ogg
 # End Harmony additions
 # Box additions
     - /Audio/_Box/Lobby/Spacedog.ogg
