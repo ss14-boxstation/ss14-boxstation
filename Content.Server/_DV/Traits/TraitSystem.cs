@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Body.Systems; // Box Change: Blood change traits
 using Content.Shared._DV.CCVars;
 using Content.Shared._DV.Traits;
@@ -69,13 +70,15 @@ public sealed class TraitSystem : EntitySystem
         var validTraits = ValidateTraits(args.Mob, args.Profile.TraitPreferences, args.Player, args.JobId, speciesId, args.Profile, disabledTraits);
 
         // Apply valid traits
+        var validPrototypes = new List<TraitPrototype>();
         foreach (var traitId in validTraits)
         {
             if (!_prototype.TryIndex(traitId, out var trait))
                 continue;
-
-            ApplyTrait(args.Mob, trait);
+            validPrototypes.Add(trait);
         }
+        foreach (var trait in validPrototypes.OrderByDescending(a => a.Priority).ThenBy(a => a.Cost))
+            ApplyTrait(args.Mob, trait);
 
         // Send disabled traits notification to client if any were rejected
         if (disabledTraits.Count > 0)
