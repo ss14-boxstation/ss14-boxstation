@@ -347,6 +347,8 @@ public sealed partial class CarryingSystem : EntitySystem
             carrier != carried.Owner &&
                 // can't carry multiple people, even if you have 4 hands it will break invariants when removing carryingcomponent for first carried person
                 !HasComp<CarryingComponent>(carrier) &&
+                // can't carry someone in a locker, buckled, etc
+                HasComp<MapGridComponent>(Transform(carrier).ParentUid) &&
                 // no tower of spacemen or stack overflow
                 !HasComp<BeingCarriedComponent>(carrier) && !HasComp<BeingCarriedComponent>(carried) &&
                 // finally check that there are enough free hands
