@@ -13,14 +13,6 @@ public sealed partial class CarriableComponent : Component
     [DataField]
     public int FreeHandsRequired = 2;
 
-    // Box Change: Imp addition for Allulalo
-    /// <summary>
-    ///     Will override the CarrierOneHand tag for carrier entities, instead using FreeHandsRequired.
-    /// </summary>
-    [DataField]
-    public bool OneHandOverride = false;
-    // End Box Change
-
     // begin Frontier edits
     public CancellationTokenSource? CancelToken;
 
