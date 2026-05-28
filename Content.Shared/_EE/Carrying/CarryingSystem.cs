@@ -341,6 +341,18 @@ public sealed partial class CarryingSystem : EntitySystem
 
     private bool CanCarry(EntityUid carrier, Entity<CarriableComponent> carried)
     {
+        // Start Box Change: Imp rewrite
+        /*
+        return
+            carrier != carried.Owner &&
+                // can't carry multiple people, even if you have 4 hands it will break invariants when removing carryingcomponent for first carried person
+                !HasComp<CarryingComponent>(carrier) &&
+                // no tower of spacemen or stack overflow
+                !HasComp<BeingCarriedComponent>(carrier) && !HasComp<BeingCarriedComponent>(carried) &&
+                // finally check that there are enough free hands
+                _hands.CountFreeHands(carrier) >= carried.Comp.FreeHandsRequired;
+                _hands.CountFreeHands(carrier) >= carried.Comp.FreeHandsRequired;
+        */
         // cant carry yourself, no tower of spacemen or stack overflow
         if (carrier == carried.Owner ||
             HasComp<BeingCarriedComponent>(carrier) ||
@@ -382,6 +394,7 @@ public sealed partial class CarryingSystem : EntitySystem
         }
 
         return true;
+        // End Box Change
     }
 
     public override void Update(float frameTime)
