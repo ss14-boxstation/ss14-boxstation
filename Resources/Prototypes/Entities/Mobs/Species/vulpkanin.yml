@@ -18,6 +18,10 @@
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
     allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
+  # Box - Early Merge of WizDen code start
+  - type: TypingIndicator
+    proto: vulpkanin
+  # Box - Early Merge of Wizden code end
   - type: Vocal
     sounds:
       Male: MaleVulpkanin

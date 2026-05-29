@@ -82,3 +82,11 @@
   typingState: regal0
   idleState: regal3
   offset: 0, 0.125
+
+# Box - Early Merge of WizDen code start
+- type: typingIndicator
+  id: vulpkanin
+  typingState: vulpkanin0
+  idleState: vulpkanin3
+  offset: 0, 0.125
+# Box - Early Merge of WizDen code end
