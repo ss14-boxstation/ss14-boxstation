@@ -975,3 +975,10 @@
   id: 112
   time: '2026-05-13T20:13:38.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/171
+- author: Dizzy-Eevee
+  changes:
+  - message: Loadout items can now be given custom names and descriptions.
+    type: Add
+  id: 113
+  time: '2026-06-01T01:01:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/138
