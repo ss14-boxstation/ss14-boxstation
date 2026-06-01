@@ -777,6 +777,9 @@
       sprite: Objects/Weapons/Melee/cutlass.rsi
     shape:
     - 0,0,0,2
+  - type: Tag # Box change - allow for item to be added in costume bundles
+    tags:
+    - CostumeItem
 
 - type: entity
   parent: BaseItem
