@@ -949,3 +949,44 @@
   id: 109
   time: '2026-05-12T02:21:04.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/163
+- author: Dizzy-Eevee
+  changes:
+  - message: Added reams of both white and colored paper to the bureaucracy crate,
+      along with sticky notes that can be thrown to stick to entities.
+    type: Add
+  - message: The bureaucracy crate no longer contains loose paper.
+    type: Tweak
+  id: 110
+  time: '2026-05-12T15:41:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/141
+- author: BlueMoon059
+  changes:
+  - message: Landmines no longer spawn on debris.
+    type: Remove
+  id: 111
+  time: '2026-05-12T15:51:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/158
+- author: BlueMoon059
+  changes:
+  - message: the "hands" emote wheel category has been renamed to "body".
+    type: Tweak
+  - message: Mute characters can now use the sound part of the "blink" emote.
+    type: Fix
+  id: 112
+  time: '2026-05-13T20:13:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/171
+- author: Dizzy-Eevee
+  changes:
+  - message: Loadout items can now be given custom names and descriptions.
+    type: Add
+  id: 113
+  time: '2026-06-01T01:01:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/138
+- author: Dizzy-Eevee
+  changes:
+  - message: You can now carry someone you're actively dragging, instead of having
+      to put them down first.
+    type: Tweak
+  id: 114
+  time: '2026-06-01T01:14:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/175
