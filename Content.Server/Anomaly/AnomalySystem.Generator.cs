@@ -10,6 +10,7 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Content.Shared.Power;
+using Content.Shared.Emag.Systems; // Box - Emaggable Anom Generator port
 
 namespace Content.Server.Anomaly;
 
@@ -30,6 +31,7 @@ public sealed partial class AnomalySystem
         SubscribeLocalEvent<AnomalyGeneratorComponent, AnomalyGeneratorGenerateButtonPressedEvent>(OnGenerateButtonPressed);
         SubscribeLocalEvent<AnomalyGeneratorComponent, PowerChangedEvent>(OnGeneratorPowerChanged);
         SubscribeLocalEvent<GeneratingAnomalyGeneratorComponent, ComponentStartup>(OnGeneratingStartup);
+        SubscribeLocalEvent<AnomalyGeneratorComponent, GotEmaggedEvent>(OnEmagged); // Box - Emaggable Anom Generator port
     }
 
     private void OnGeneratorPowerChanged(EntityUid uid, AnomalyGeneratorComponent component, ref PowerChangedEvent args)
