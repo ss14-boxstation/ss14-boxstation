@@ -990,3 +990,10 @@
   id: 114
   time: '2026-06-01T01:14:28.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/175
+- author: BlueMoon059
+  changes:
+  - message: Adds pronouns to the manifest, both in the PDA and in the lobby.
+    type: Add
+  id: 115
+  time: '2026-06-01T01:44:17.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/151
