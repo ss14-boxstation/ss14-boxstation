@@ -5,6 +5,7 @@
          HorizontalExpand="True"
          MouseFilter="Ignore"
          Margin="0 0 0 5">
+    <Button Access="Public" Name="ConfigureButton" Text="🖉" TextAlign="Fill" Margin="0 0 5 0" /> <!-- Box Change - Floof item metadata editor. Changed to a basic button with a unicode pencil instead of an incongruous texture -->
     <Button Name="SelectButton" ToggleMode="True" Margin="0 0 5 0" HorizontalExpand="True"/>
     <PanelContainer SetSize="64 64" HorizontalAlignment="Right">
         <PanelContainer.PanelOverride>
