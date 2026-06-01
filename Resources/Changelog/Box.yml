@@ -997,3 +997,21 @@
   id: 115
   time: '2026-06-01T01:44:17.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/151
+- author: DrWhoFan13
+  changes:
+  - message: Costume bundles have been added, with both empty and filled variants!
+    type: Add
+  - message: The AutoDrobe & Theatrical Performances crate use costume bundles instead
+      of costume parts where appropriate
+    type: Tweak
+  id: 116
+  time: '2026-06-01T19:16:22.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/157
+- author: DrWhoFan13
+  changes:
+  - message: You can now emag the anom generator to remove the time between generating
+      anoms!
+    type: Add
+  id: 117
+  time: '2026-06-01T19:15:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/139
