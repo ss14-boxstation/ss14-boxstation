@@ -982,3 +982,11 @@
   id: 113
   time: '2026-06-01T01:01:01.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/138
+- author: Dizzy-Eevee
+  changes:
+  - message: You can now carry someone you're actively dragging, instead of having
+      to put them down first.
+    type: Tweak
+  id: 114
+  time: '2026-06-01T01:14:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/175
