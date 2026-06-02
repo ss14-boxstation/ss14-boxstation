@@ -554,6 +554,12 @@ namespace Content.Server.Database
         /*
          * Insert extra data here like custom descriptions or colors or whatever.
          */
+        // Start Box Change: Floofstation item metadata
+        // it's as if wizden knew.
+        // Length limits are also defined in SharedStationSpawningSystem, make sure to sync the two!
+        [MaxLength(96)] public string? NameOverride { get; set; }
+        [MaxLength(512)] public string? DescriptionOverride { get; set; }
+        // End Box Change
     }
 
     #endregion

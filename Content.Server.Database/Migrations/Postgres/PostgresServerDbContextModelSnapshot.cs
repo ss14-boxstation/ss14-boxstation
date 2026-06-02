@@ -996,10 +996,20 @@ namespace Content.Server.Database.Migrations.Postgres
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("DescriptionOverride")
+                        .HasMaxLength(512)
+                        .HasColumnType("character varying(512)")
+                        .HasColumnName("description_override");
+
                     b.Property<string>("LoadoutName")
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("loadout_name");
+
+                    b.Property<string>("NameOverride")
+                        .HasMaxLength(96)
+                        .HasColumnType("character varying(96)")
+                        .HasColumnName("name_override");
 
                     b.Property<int>("ProfileLoadoutGroupId")
                         .HasColumnType("integer")

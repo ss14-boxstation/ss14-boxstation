@@ -1,7 +1,7 @@
 - type: emote
   id: Blink
   name: chat-emote-name-blink
-  category: General
+  category: Hands #Box Change - General --> Hands - So mute characters can blink
   icon: _Impstation/Interface/Emotes/blink.png #imp
   chatMessages: ["chat-emote-msg-blink"]
   chatTriggers:
