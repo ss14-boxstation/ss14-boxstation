@@ -254,7 +254,7 @@
   - type: Carriable # Box Change - Carrying system from nyanotrasen.
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganVox
   abstract: true
   suffix: Vox
