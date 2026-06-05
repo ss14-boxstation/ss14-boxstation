@@ -99,6 +99,7 @@
         Burn: -0.5
   - type: FlashImmunity
   - type: Bingle
+  - type: ProtectedFromStepTriggers
 
 - type: entity
   parent: MobBingle
