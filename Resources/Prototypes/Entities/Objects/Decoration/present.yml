@@ -244,8 +244,10 @@
         orGroup: GiftPool
       - id: Spear
         orGroup: GiftPool
-      - id: LidSalami
-        orGroup: GiftPool
+      # Start Box Change: Remove Salami Lid
+      # - id: LidSalami
+      #   orGroup: GiftPool
+      # End Box Change
       - id: Soap
         orGroup: GiftPool
       - id: SoapHomemade

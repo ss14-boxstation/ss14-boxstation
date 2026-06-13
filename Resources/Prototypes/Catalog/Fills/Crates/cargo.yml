@@ -224,7 +224,7 @@
   id: LotteryNotUsefulEntityTable
   table: !type:GroupSelector
     children:
-    - id: LidSalami
+    # - id: LidSalami # Box Change: Remove Salami Lid
     - id: MobHamsterHamlet
     - id: MobLaserRaptor
     - id: DrinkNothing
