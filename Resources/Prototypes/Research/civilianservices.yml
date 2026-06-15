@@ -148,6 +148,7 @@
   - AdvMopItem
   - MegaSprayBottle
   - BorgModuleAdvancedCleaning
+  - WashingMachineCircuitboard # Box Change: Forky clothing stains
 
 - type: technology
   id: HONKMech

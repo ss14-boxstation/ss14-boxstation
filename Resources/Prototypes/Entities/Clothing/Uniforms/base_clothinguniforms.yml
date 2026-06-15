@@ -26,11 +26,33 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 30
+      # Start Box Change: Forky clothing stains
+      stain:
+        maxVol: 5
+      # End Box Change
   - type: Tag
     tags:
     - ClothMade
     - Recyclable
     - WhitelistChameleon
+  # Start Box Change: Forky clothing stains
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpsuit.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumpsuit.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: uniformbloodicon
+   # End Box Change
 
 - type: entity
   abstract: true
@@ -40,6 +62,23 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  # Start Box Change: Forky clothing stains
+  - type: Stainable
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumppskirt.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: uniformbloodicon
+   # End Box Change
 
 
 - type: entity
@@ -64,6 +103,21 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  - type: Stainable
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumpskirt.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: uniformbloodicon
 
 - type: entity
   abstract: true

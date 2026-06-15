@@ -8,6 +8,28 @@
     - outerClothing
   - type: Sprite
     state: icon
+  # Start Box Change: Forky clothing stains
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      outerClothing:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: outerclothing
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: outerclothing
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 30
+      stain:
+        maxVol: 5
+  - type: StainBlocker
+    slots: [INNERCLOTHING]
+  # End Box Change
 
 - type: entity
   abstract: true
@@ -23,6 +45,18 @@
     walkModifier: 0.9
     sprintModifier: 0.9
   - type: HeldSpeedModifier
+  # Start Box Change: Forky clothing stains
+  - type: Stainable
+    clothingVisuals:
+      outerClothing:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: suitblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: suitbloodicon
+  - type: StainBlocker
+    slots: [INNERCLOTHING, FEET, GLOVES]
+  # End Box Change: Forky clothing stains
 
 - type: entity
   abstract: true
@@ -42,6 +76,14 @@
         type: StorageBoundUserInterface
   - type: StaticPrice
     price: 70
+  - type: Stainable
+    clothingVisuals:
+      outerClothing:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: coatblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: coatbloodicon
 
 - type: entity
   abstract: true
@@ -63,6 +105,14 @@
     - state: icon-open
       map: ["foldedLayer"]
       visible: false
+  - type: Stainable
+    clothingVisuals:
+      outerClothing:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: outerclothing
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: outerclothing
 
 - type: entity
   abstract: true
@@ -150,6 +200,10 @@
 #    slots:
 #    - Tail
 # Harmony change ends
+  # Start Box Change: Forky clothing stains
+  - type: StainBlocker
+    slots: [INNERCLOTHING, FEET, GLOVES]
+  # End Box Change
 
 - type: entity
   abstract: true
@@ -184,6 +238,11 @@
 #    slots:
 #    - Tail
 # Harmony change ends
+  # Start Box Change: Forky clothing stains
+  - type: StainBlocker
+    slots: [INNERCLOTHING, FEET, GLOVES]
+  # End Box Change
+
 - type: entity
   parent: ClothingOuterBase
   id: ClothingOuterBaseToggleable
