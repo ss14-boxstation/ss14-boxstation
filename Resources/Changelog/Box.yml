@@ -1058,3 +1058,17 @@
   id: 123
   time: '2026-06-20T15:28:05.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/153
+- author: CollectionOfBones128
+  changes:
+  - message: New Space Law has been added for a Playtest!
+    type: Tweak
+  id: 124
+  time: '2026-06-20T15:30:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/180
+- author: Dizzy-Eevee
+  changes:
+  - message: Added butter and brownies made from rainbow cannabis.
+    type: Add
+  id: 125
+  time: '2026-06-20T15:29:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/150
