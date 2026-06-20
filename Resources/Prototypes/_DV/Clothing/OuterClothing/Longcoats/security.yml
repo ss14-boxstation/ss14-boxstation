@@ -23,7 +23,7 @@
 - type: entity
   parent: [ ClothingOuterWinterCoat, AllowSuitStorageClothing, BaseSecurityContraband ] # Same as ClothingOuterWinterSec, without ClothingOuterWinterCoatToggleable
   id: ClothingLongcoatSecurity
-  name: security officer's armored longcoat
+  name: security guard's armored longcoat # Box Change - SecOff > SecGuard
   suffix: BoxStation #Box - Add Suffix
   description: A black double-breasted longcoat with silver buttons and red bands, specifically designed for security personnel. Security longcoats sport protective plates underneath, but are fairly heavy.
   components:

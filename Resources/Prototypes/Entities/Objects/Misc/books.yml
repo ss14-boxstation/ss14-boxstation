@@ -351,7 +351,7 @@
 - type: entity
   id: BookSpaceLaw
   parent: BaseGuidebook
-  name: space law
+  name: internal security guidelines # Box Change - space law > internal security guidelines
   description: A set of Nanotrasen guidelines for keeping law and order on their space stations.
   components:
   - type: Sprite

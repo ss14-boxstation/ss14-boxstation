@@ -140,7 +140,7 @@
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService
     - id: HoPIDCard
-    - id: WeaponDisabler
+    # - id: WeaponDisabler # Box Change - Remove HoP Disabler
     - id: ClothingEyesHudCommand
     - id: BookSOP # Harmony Change
     - id: BoxTapeRecorder # Box Change - HoP can use these for recording interviews etc to cut down on paperwork

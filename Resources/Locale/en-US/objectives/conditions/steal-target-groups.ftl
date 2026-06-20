@@ -23,7 +23,9 @@ steal-target-groups-encryption-keys = encryption key
 steal-target-groups-technology-disks = technology disk
 steal-target-groups-mail = mail
 steal-target-groups-id-cards = ID Card
-steal-target-groups-officer-handguns = security officer's handgun
+# Box Change Start - SecOff > SecGuard
+steal-target-groups-officer-handguns = security guard's handgun
+# Box Change End
 steal-target-groups-lamps = LAMP
 
 # Thief single item

@@ -669,7 +669,7 @@
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseSecurityContraband]
   id: ClothingUniformJumpskirtSeniorOfficer
-  name: senior officer jumpskirt
+  name: senior guard jumpskirt # Box Change - SecOff > SecGuard
   description: A sign of skill and prestige within the security department.
   components:
   - type: Sprite

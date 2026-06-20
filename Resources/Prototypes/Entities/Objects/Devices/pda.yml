@@ -1467,7 +1467,7 @@
 - type: entity
   parent: BaseSecurityPDA
   id: SeniorOfficerPDA
-  name: senior officer PDA
+  name: senior guard PDA # Box Change - SecOff > SecGuard
   description: Beaten, battered and broken, but just barely useable.
   components:
   - type: Pda

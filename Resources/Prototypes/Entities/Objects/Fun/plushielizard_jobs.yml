@@ -322,8 +322,10 @@
 - type: entity
   parent: BasePlushieLizardJob
   id: PlushieLizardJobSecurityofficer
-  name: security officer lizard plushie
-  description: An adorable stuffed toy that resembles a lizardperson as a security officer. The stuffing has been padded down from a lot of punching.
+# Box Change Start - SecOff > SecGuard
+  name: security guard lizard plushie
+  description: An adorable stuffed toy that resembles a lizardperson as a security guard. The stuffing has been padded down from a lot of punching.
+# Box Change End
   components:
   - type: Sprite
     state: securityofficer
