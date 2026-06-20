@@ -1043,3 +1043,18 @@
   id: 121
   time: '2026-06-20T15:24:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/167
+- author: Dizzy-Eevee
+  changes:
+  - message: Shark soft toys now have a toggle to allow them to be rotated.
+    type: Add
+  id: 122
+  time: '2026-06-20T15:27:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/160
+- author: DrWhoFan13
+  changes:
+  - message: The Singularity Beacon, Antimov Lawboard, and HHG are now DAGD-exclusive.
+      You won't see them in the shop otherwise.
+    type: Tweak
+  id: 123
+  time: '2026-06-20T15:28:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/153
