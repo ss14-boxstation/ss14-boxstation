@@ -1036,3 +1036,10 @@
   id: 120
   time: '2026-06-20T15:23:44.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/174
+- author: BlueMoon059
+  changes:
+  - message: Fixes a spelling mistake in certain synthanol flavortext popups.
+    type: Fix
+  id: 121
+  time: '2026-06-20T15:24:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/167
