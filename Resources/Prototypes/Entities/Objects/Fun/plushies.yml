@@ -660,8 +660,30 @@
   description: Big and safe to have by your side if you want to discover the world below the surface of the ocean.
   components:
   - type: Sprite
-    sprite: Objects/Fun/Plushies/shark.rsi
-    state: blue
+  # Start Box Change: Sprite and component changes to allow toggleable rotation
+    sprite: _Box/Objects/Fun/Plushies/shark.rsi
+    layers:
+    - state: blue
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: blueRotatable}
+          False: {state: blue}
+  - type: ItemToggle
+    onUse: false
+    onActivate: false
+  - type: ComponentToggler
+    components:
+    - type: Rotatable # Get rotated idiot
+  - type: TriggerOnVerb # Use a verb to toggle so it doesn't conflict with the standard use-to-rawr behavior. Alt-interact will automatically use this verb.
+    text: trigger-on-verb-toggle-rotation
+    keyOut: "rotate" # Without specifying a key it will just trigger the sound every time you alt-activate and allow no-cooldown rawr spam...
+  - type: ItemToggleOnTrigger
+    keysIn: [ "rotate" ]
+  # End Box Change
   - type: EmitSoundOnUse
     sound: &PlushieSharkSound
       path: /Audio/Items/Toys/rawr.ogg
@@ -682,6 +704,11 @@
   - type: Item
     heldPrefix: blue
     storedRotation: -90
+    # Start Box Change: Use default sprite while in inventory, even if rotation is enabled
+    storedSprite:
+      sprite: _Box/Objects/Fun/Plushies/shark.rsi
+      state: blue
+    # End Box Change
   - type: FoodSequenceElement
     entries:
       CottonBurger: BlueSharkPlushie
@@ -698,10 +725,25 @@
   description: Hehe shonk :)
   components:
   - type: Sprite
-    sprite: Objects/Fun/Plushies/shark.rsi
-    state: pink
+  # Start Box Change: Sprite and component changes to allow toggleable rotation
+    sprite: _Box/Objects/Fun/Plushies/shark.rsi
+    layers:
+    - state: pink
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: pinkRotatable}
+          False: {state: pink}
+  # End Box Change
   - type: Item
     heldPrefix: pink
+    # Start Box Change: Use default sprite while in inventory, even if rotation is enabled
+    storedSprite:
+      sprite: _Box/Objects/Fun/Plushies/shark.rsi
+      state: pink
+    # End Box Change
   - type: FoodSequenceElement
     entries:
       CottonBurger: PinkSharkPlushie
@@ -718,10 +760,25 @@
   description: A quiet, reserved kind of shonk. Loves to ride the grey tide.
   components:
   - type: Sprite
-    sprite: Objects/Fun/Plushies/shark.rsi
-    state: grey
+  # Start Box Change: Sprite and component changes to allow toggleable rotation
+    sprite: _Box/Objects/Fun/Plushies/shark.rsi
+    layers:
+    - state: grey
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: greyRotatable}
+          False: {state: grey}
+  # End Box Change
   - type: Item
     heldPrefix: grey
+    # Start Box Change: Use default sprite while in inventory, even if rotation is enabled
+    storedSprite:
+      sprite: _Box/Objects/Fun/Plushies/shark.rsi
+      state: grey
+    # End Box Change
   - type: FoodSequenceElement
     entries:
       CottonBurger: GreySharkPlushie
