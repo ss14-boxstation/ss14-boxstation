@@ -103,22 +103,6 @@
   priority: 12
   text: "/ServerInfo/_Harmony/Guidebook/ServerRules/HarmonyRules/HarmonyS3.xml"
 
-## Space law
-
-- type: guideEntry
-  id: SpaceLaw
-  name: guide-entry-rules-space-law
-  priority: 1
-  text: "/ServerInfo/_Harmony/Guidebook/ServerRules/SpaceLaw/HarmonySpaceLaw.xml"
-  children:
-  - SpaceLawCrimeList
-
-- type: guideEntry
-  id: SpaceLawCrimeList
-  name: guide-entry-rules-sl-crime-list
-  priority: 5
-  text: "/ServerInfo/_Harmony/Guidebook/ServerRules/SpaceLaw/HarmonySLCrimeList.xml"
-
 ## SOP
 - type: guideEntry
   id: HarmonyStandardOperatingProcedure
