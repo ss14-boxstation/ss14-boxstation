@@ -1015,3 +1015,17 @@
   id: 117
   time: '2026-06-01T19:15:23.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/139
+- author: Dizzy-Eevee
+  changes:
+  - message: Added an toggle for "hold-to-attack" under the accessibility tab.
+    type: Add
+  id: 118
+  time: '2026-06-20T15:21:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/179
+- author: BlueMoon059
+  changes:
+  - message: Removes sound effects from computers due to copyright concerns.
+    type: Remove
+  id: 119
+  time: '2026-06-20T15:20:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/176
