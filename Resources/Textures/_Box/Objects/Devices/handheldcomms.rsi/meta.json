@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "handheld mass scanner made by Tem Armoff taken from Frontier at commit https://github.com/new-frontiers-14/frontier-station-14/commit/c96305fb61ff22da6dfdedd31d3b05d7cdc8d571 used as base by letter_j (Discord)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon",
+            "directions": 1
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+}

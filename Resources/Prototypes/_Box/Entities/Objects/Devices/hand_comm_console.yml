@@ -7,10 +7,10 @@
   description: A hand-held communications computer capable of creating station wide announcements, setting alert levels, and calling the shuttle.
   components:
   - type: Item
-    heldPrefix: scanner
+    sprite: _Box/Objects/Devices/handheldcomms.rsi
   - type: Sprite
-    sprite: Objects/Specific/Medical/handheldcrewmonitor.rsi
-    state: scanner
+    sprite: _Box/Objects/Devices/handheldcomms.rsi
+    state: icon
   - type: AccessReader
     access: [[ "Command" ]]
   - type: CommunicationsConsole
