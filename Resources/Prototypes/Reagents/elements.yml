@@ -123,6 +123,7 @@
   physicalDesc: reagent-physical-desc-gaseous
   flavor: bitter
   color: "#cccccc"
+  flammability: 3 # Box Change: Forky reagent fires
   boilingPoint: -253.0
   meltingPoint: -259.2
 

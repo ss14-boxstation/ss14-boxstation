@@ -179,6 +179,20 @@ namespace Content.Shared.Chemistry.Reagent
         public HashSet<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories = ["Organic"];
         // Box Change End
 
+        // Start Box Change: Forky reagent fires
+        /// <summary>
+        /// Funky - How flammable this reagent is. Higher values make it catch fire more easily and burn hotter.
+        /// </summary>
+        [DataField]
+        public int Flammability;
+
+        /// <summary>
+        /// Funky - If true, this reagent acts as its own oxidizer and can burn in vacuums or oxygen-deprived environments.
+        /// </summary>
+        [DataField]
+        public bool SelfOxidizing;
+        // End Box Change
+
         [DataField, AlwaysPushInheritance]
         public ReagentMetabolisms? Metabolisms;
 

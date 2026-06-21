@@ -5,6 +5,10 @@
   physicalDesc: reagent-physical-desc-acidic
   flavor: bitter
   color: "#AF14B7"
+  # Start Box Change: Forky reagent fires
+  flammability: 3 # Funky change
+  selfOxidizing: true # Funky change
+  # End Box Change
   boilingPoint: 55.5
   meltingPoint: -50.0
 
@@ -35,6 +39,7 @@
   color: "#22282b"
   boilingPoint: 4200.0
   meltingPoint: 3550.0
+  flammability: 2 # Box Change: Forky reagent fires
   metabolisms:
     Bloodstream:
       effects:
@@ -126,6 +131,10 @@
   allowedJobs:
   - Chemist
   color: "#E7EA91"
+  # Start Box Change: Forky reagent fires
+  flammability: 2 # Funky change
+  selfOxidizing: true # Funky change
+  # End Box Change
   boilingPoint: 353.2
   meltingPoint: 278.7
   metabolisms:

@@ -1,4 +1,5 @@
 using System.Globalization;
+using Content.Server._Funkystation.Atmos.Events; // Box Change: Forky reagent fires
 using Content.Server.Atmos.Components;
 using Content.Server.Decals;
 using Content.Shared.Atmos;
@@ -200,6 +201,11 @@ public sealed partial class AtmosphereSystem
     {
         if (tile.Air == null)
             return;
+
+        // Start Box Change: Forky reagent fires
+        var ev = new TileExposedEvent(tile.GridIndices, exposedTemperature, exposedVolume, sparkSourceUid);
+        RaiseLocalEvent(gridAtmosphere.Owner, ref ev);
+        // End Box Change
 
         if (!IsMixtureOxidizer(tile.Air))
             return;

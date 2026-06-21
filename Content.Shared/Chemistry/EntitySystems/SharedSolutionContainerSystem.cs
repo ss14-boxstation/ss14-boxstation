@@ -440,6 +440,14 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
         UpdateChemicals(soln);
     }
 
+    // Box Change: Forky reagent fires
+    public void BurnFlammableReagents(Entity<SolutionComponent> soln, float fraction)
+    {
+        soln.Comp.Solution.BurnFlammableReagents(fraction, PrototypeManager);
+        UpdateChemicals(soln);
+    }
+    // End Box Change
+
     /// <summary>
     ///     Sets the capacity (maximum volume) of a solution to a new value.
     /// </summary>
