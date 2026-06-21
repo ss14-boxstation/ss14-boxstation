@@ -1,0 +1,43 @@
+- type: entity
+  parent: [ BaseHandheldComputer, BaseGrandTheftContraband ]
+  id: HandheldComms
+  categories: [ DoNotMap ] # Captain-only
+  name: co's handheld communications computer
+  suffix: Box
+  description: A hand-held communications computer capable of creating station wide announcements, setting alert levels, and calling the shuttle.
+  components:
+  - type: Item
+    heldPrefix: scanner
+  - type: Sprite
+    sprite: Objects/Specific/Medical/handheldcrewmonitor.rsi
+    state: scanner
+  - type: AccessReader
+    access: [[ "Command" ]]
+  - type: CommunicationsConsole
+    title: comms-console-announcement-title-co-handheld
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    transmitFrequencyId: ShuttleTimer
+  - type: ActivatableUI
+    key: enum.CommunicationsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CommunicationsConsoleUiKey.Key:
+        type: CommunicationsConsoleBoundUserInterface
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: HandheldComms
+
+- type: entity
+  parent: HandheldComms
+  id: HandheldCommsEmpty
+  suffix: Empty, Box
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
