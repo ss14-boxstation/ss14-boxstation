@@ -32,7 +32,7 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity
     id: DetectivePDA
-    ears: ClothingHeadsetSecurity
+    # ears: ClothingHeadsetSecurity # Box Change: Headset moved to loadout option
     belt: ClothingBeltHolsterFilled
   storage:
     back:

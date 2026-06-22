@@ -1,0 +1,233 @@
+# passenger
+- type: loadout
+  id: ClothingHeadsetGrey
+  equipment:
+    ears: ClothingHeadsetGrey
+
+- type: loadout
+  id: ClothingWristsetGrey
+  equipment:
+    ears: ClothingWristsetGrey
+
+# command 
+- type: loadout
+  id: ClothingHeadsetCommand
+  equipment:
+    ears: ClothingHeadsetCommand
+    
+- type: loadout
+  id: ClothingHeadsetAltCommand
+  equipment:
+    ears: ClothingHeadsetAltCommand
+        
+- type: loadout
+  id: ClothingWristsetCaptain
+  equipment:
+    ears: ClothingWristsetCaptain
+    
+# service
+- type: loadout
+  id: ClothingHeadsetService
+  equipment:
+    ears: ClothingHeadsetService
+    
+- type: loadout
+  id: ClothingWristsetHoP
+  equipment:
+    ears: ClothingWristsetHoP
+    
+- type: loadout
+  id: ClothingWristsetService
+  equipment:
+    ears: ClothingWristsetService
+      
+- type: loadout
+  id: ClothingWristsetServiceJanitor
+  equipment:
+    ears: ClothingWristsetServiceJanitor
+    
+- type: loadout
+  id: ClothingWristsetServiceBotany
+  equipment:
+    ears: ClothingWristsetServiceBotany
+    
+- type: loadout
+  id: ClothingWristsetServiceClown
+  equipment:
+    ears: ClothingWristsetServiceClown
+    
+- type: loadout
+  id: ClothingWristsetServiceMime
+  equipment:
+    ears: ClothingWristsetServiceMime
+    
+# cargo
+- type: loadout
+  id: ClothingHeadsetQM
+  equipment:
+    ears: ClothingHeadsetQM
+    
+- type: loadout
+  id: ClothingHeadsetAltCargo
+  equipment:
+    ears: ClothingHeadsetAltCargo
+    
+- type: loadout
+  id: ClothingHeadsetCargo
+  equipment:
+    ears: ClothingHeadsetCargo
+    
+- type: loadout
+  id: ClothingHeadsetMining
+  equipment:
+    ears: ClothingHeadsetMining
+    
+- type: loadout
+  id: ClothingWristsetQM
+  equipment:
+    ears: ClothingWristsetQM
+    
+- type: loadout
+  id: ClothingWristsetCargo
+  equipment:
+    ears: ClothingWristsetCargo
+    
+- type: loadout
+  id: ClothingWristsetMining
+  equipment:
+    ears: ClothingWristsetMining
+    
+# engineering
+- type: loadout
+  id: ClothingHeadsetCE
+  equipment:
+    ears: ClothingHeadsetCE
+    
+- type: loadout
+  id: ClothingHeadsetAltEngineering
+  equipment:
+    ears: ClothingHeadsetAltEngineering
+    
+- type: loadout
+  id: ClothingHeadsetEngineering
+  equipment:
+    ears: ClothingHeadsetEngineering
+    
+- type: loadout
+  id: ClothingWristsetCE
+  equipment:
+    ears: ClothingWristsetCE
+    
+- type: loadout
+  id: ClothingWristsetEngineering
+  equipment:
+    ears: ClothingWristsetEngineering
+    
+- type: loadout
+  id: ClothingWristsetAtmospherics
+  equipment:
+    ears: ClothingWristsetAtmospherics
+    
+# medical
+- type: loadout
+  id: ClothingHeadsetCMO
+  equipment:
+    ears: ClothingHeadsetCMO
+    
+- type: loadout
+  id: ClothingHeadsetAltMedical
+  equipment:
+    ears: ClothingHeadsetAltMedical
+    
+- type: loadout
+  id: ClothingHeadsetMedical
+  equipment:
+    ears: ClothingHeadsetMedical
+    
+- type: loadout
+  id: ClothingWristsetCMO
+  equipment:
+    ears: ClothingWristsetCMO
+    
+- type: loadout
+  id: ClothingWristsetMedical
+  equipment:
+    ears: ClothingWristsetMedical
+    
+- type: loadout
+  id: ClothingWristsetParamedic
+  equipment:
+    ears: ClothingWristsetParamedic
+    
+- type: loadout
+  id: ClothingWristsetChemist
+  equipment:
+    ears: ClothingWristsetChemist
+    
+# science
+- type: loadout
+  id: ClothingHeadsetRD
+  equipment:
+    ears: ClothingHeadsetRD
+    
+- type: loadout
+  id: ClothingHeadsetAltScience
+  equipment:
+    ears: ClothingHeadsetAltScience
+    
+- type: loadout
+  id: ClothingHeadsetScience
+  equipment:
+    ears: ClothingHeadsetScience
+    
+- type: loadout
+  id: ClothingWristsetRD
+  equipment:
+    ears: ClothingWristsetRD
+    
+- type: loadout
+  id: ClothingWristsetScience
+  equipment:
+    ears: ClothingWristsetScience
+    
+- type: loadout
+  id: ClothingWristsetRobotics
+  equipment:
+    ears: ClothingWristsetRobotics
+    
+# security
+- type: loadout
+  id: ClothingHeadsetAltSecurity
+  equipment:
+    ears: ClothingHeadsetAltSecurity
+    
+- type: loadout
+  id: ClothingHeadsetWarden
+  equipment:
+    ears: ClothingHeadsetWarden
+    
+- type: loadout
+  id: ClothingHeadsetAltWarden
+  equipment:
+    ears: ClothingHeadsetAltWarden
+    
+- type: loadout
+  id: ClothingHeadsetSecurity
+  equipment:
+    ears: ClothingHeadsetSecurity
+    
+- type: loadout
+  id: ClothingWristsetHoS
+  equipment:
+    ears: ClothingWristsetHoS
+    
+- type: loadout
+  id: ClothingWristsetWarden
+  equipment:
+    ears: ClothingWristsetWarden
+    
+- type: loadout
+  id: ClothingWristsetSecurity
+  equipment:
+    ears: ClothingWristsetSecurity
+    

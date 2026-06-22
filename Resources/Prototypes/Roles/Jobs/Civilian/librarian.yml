@@ -15,7 +15,7 @@
   equipment:
     shoes: ClothingShoesBootsLaceup
     id: LibrarianPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Headset moved to loadout option
     pocket1: d20Dice
     pocket2: HandLabeler # for making named bestsellers
   storage:
