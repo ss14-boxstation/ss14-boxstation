@@ -44,3 +44,17 @@ new_player_threshold = 120
 random_characters = false # Box Change - True > False - Gives devs control of who to bring into devenv
 random_species_weights = ""
 ssd_sleep_time = 3600
+<<<<<<< HEAD
+=======
+
+[server] # DeltaV
+rules_file = "FloofstationRuleset"
+
+[control] # DeltaV
+storage_limit = 3
+
+
+# Floof - annoying
+[vote]
+autovote_enabled = false
+>>>>>>> e3e46a355ed (Loadout improvements and fixes (#733))
