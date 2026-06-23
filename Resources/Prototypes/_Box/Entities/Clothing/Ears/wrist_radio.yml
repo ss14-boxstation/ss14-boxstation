@@ -5,6 +5,7 @@
   parent: ClothingHeadset
   id: BaseClothingWristset
   name: wristset
+  suffix: Box
   description: An updated, modular intercom worn on the wrist. It accepts encryption keys.
   components:
   - type: Sprite
