@@ -11,8 +11,10 @@
         - id: FoodBoxPizzaFilled
           amount: 3
         - id: FoodBoxPizzaCotton
-        - id: LidSalami
-          prob: 0.01
+        # Start Box Change: Remove Salami Lid
+        #- id: LidSalami
+        #  prob: 0.01
+        # End Box Change
 
 - type: entity
   parent: CratePlastic
