@@ -1072,3 +1072,10 @@
   id: 125
   time: '2026-06-20T15:29:44.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/150
+- author: Dizzy-Eevee
+  changes:
+  - message: removed the salami lid (it didn't fit)
+    type: Remove
+  id: 126
+  time: '2026-06-23T01:23:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/178
