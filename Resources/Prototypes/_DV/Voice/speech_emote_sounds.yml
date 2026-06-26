@@ -103,8 +103,10 @@
       collection: HarpyHisses
     Meow:
       collection: HarpyMeows
-    Mew:
-      collection: HarpyMews
+    # Start Box Change - Remove empty emote
+    #Mew:
+    #  collection: HarpyMews
+    # End Box Change
     Growl:
       collection: HarpyGrowls
     Purr:
