@@ -1,23 +1,25 @@
-using System.Collections.Frozen;
 using Content.Shared._RMC14.Voicelines; // Harmony, RMC14
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Speech;
-using Robust.Shared.Player; // Harmony, RMC14
 using Robust.Shared.Audio;
+using Robust.Shared.Player; // Harmony, RMC14
 using Robust.Shared.Random;
+using System.Collections.Frozen;
+using System.Collections.Immutable; // DeltaV
+using System.Security.Cryptography;
 
 namespace Content.Shared.Chat;
 
 public abstract partial class SharedChatSystem
 {
-    private FrozenDictionary<string, EmotePrototype> _wordEmoteDict = FrozenDictionary<string, EmotePrototype>.Empty;
+    private FrozenDictionary<string, ImmutableList<EmotePrototype>> _wordEmoteDict = FrozenDictionary<string, ImmutableList<EmotePrototype>>.Empty; // DeltaV - Multiple emotes
 
     // Harmony, RMC14 - Mute Emotes Option
     [Dependency] private readonly HumanoidVoicelinesSystem _humanoidVoicelines = default!;
 
     private void CacheEmotes()
     {
-        var dict = new Dictionary<string, EmotePrototype>();
+        var dict = new Dictionary<string, ImmutableList<EmotePrototype>>(); // DeltaV - Multiple triggers for the same emote
         var emotes = _prototypeManager.EnumeratePrototypes<EmotePrototype>();
         foreach (var emote in emotes)
         {
@@ -26,12 +28,16 @@ public abstract partial class SharedChatSystem
                 var lowerWord = word.ToLower();
                 if (dict.TryGetValue(lowerWord, out var value))
                 {
-                    var errMsg = $"Duplicate of emote word {lowerWord} in emotes {emote.ID} and {value.ID}";
-                    Log.Error(errMsg);
+                    // Begin DeltaV modification - Multiple emotes for the same words
+                    dict[lowerWord] = value.Add(emote);
+
+                    var errMsg = $"Duplicate of emote word {lowerWord}";
+                    Log.Warning(errMsg);
+
                     continue;
                 }
 
-                dict.Add(lowerWord, emote);
+                dict.Add(lowerWord, ImmutableList.Create(emote)); // End DeltaV modification
             }
         }
 
@@ -180,13 +186,32 @@ public abstract partial class SharedChatSystem
     protected bool TryEmoteChatInput(EntityUid source, string textInput)
     {
         var actionTrimmedLower = TrimPunctuation(textInput.ToLower());
-        if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emote))
+        //Start Box Change - DV Refactor to allow multiple emotes for the same word trigger
+        //if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emote))
+        //    return true;
+
+        //if (!AllowedToUseEmote(source, emote))
+        //    return true;
+
+        //return TryInvokeEmoteEvent(source, emote);
+        if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emotes)) // DeltaV, renames to emotes
             return true;
 
-        if (!AllowedToUseEmote(source, emote))
-            return true;
+        var validEmote = false; // DeltaV - Multiple emotes for the same trigger
+        foreach (var emote in emotes)
+        {
+            if (!AllowedToUseEmote(source, emote))
+                continue;
 
-        return TryInvokeEmoteEvent(source, emote);
+            if (TryInvokeEmoteEvent(source, emote))
+            {
+                validEmote = true; // DeltaV
+                break; // Frontier: break on first emote (avoid playing multiple sounds at once)
+            }
+        }
+        //End Box Change
+
+        return validEmote;
 
     }
     /// <summary>
