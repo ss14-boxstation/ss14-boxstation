@@ -9,8 +9,12 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: Blood
+      - ReagentId: ShimmeringBlood # Box Change: Give fish shimmering blood
         Quantity: 650
+  # Start Box Change: Unique organs
+  - type: Body
+    prototype: AnimalCarp
+  # End Box Change
   - type: GhostRole
     allowMovement: true
     allowSpeech: true

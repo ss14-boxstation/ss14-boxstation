@@ -86,6 +86,15 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
+    # Start Box Change: Give fish shimmering blood and unique organs
+    - type: Bloodstream
+      bloodReferenceSolution:
+        reagents:
+        - ReagentId: ShimmeringBlood
+          Quantity: 300
+    - type: Body
+      prototype: AnimalCarp
+    # End Box Change
 
 - type: entity
   parent: BaseMobCarp
