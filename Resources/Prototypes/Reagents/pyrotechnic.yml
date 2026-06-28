@@ -53,7 +53,6 @@
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   # Start Box Change: Forky reagent fires
   flammability: 4 # Funky change
-  selfOxidizing: true # Funky change
   # End Box Change
   tileReactions:
   - !type:FlammableTileReaction

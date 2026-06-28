@@ -16,6 +16,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Spawners;
 using System.Numerics;
+using Content.Shared._Funkystation.WallStains; // Box Change: Forky wall stains
 
 namespace Content.Server.Chemistry.EntitySystems
 {
@@ -39,13 +40,30 @@ namespace Content.Server.Chemistry.EntitySystems
 
         private void HandleCollide(Entity<VaporComponent> entity, ref StartCollideEvent args)
         {
-            if (!TryComp(entity.Owner, out SolutionContainerManagerComponent? contents)) return;
+            // Start Box Change: Forky wall stains
+            //if (!TryComp(entity.Owner, out SolutionContainerManagerComponent? contents)) return;
 
-            foreach (var (_, soln) in _solutionContainerSystem.EnumerateSolutions((entity.Owner, contents)))
+            //foreach (var (_, soln) in _solutionContainerSystem.EnumerateSolutions((entity.Owner, contents)))
+            //{
+            //    var solution = soln.Comp.Solution;
+            //    _reactive.DoEntityReaction(args.OtherEntity, solution, ReactionMethod.Touch);
+            // Funky Wall Stains
+            var hitWall = (args.OtherFixture.CollisionLayer & (int)CollisionGroup.Impassable) != 0
+                          && args.OtherFixture.Hard;
+
+            foreach (var (_, soln) in _solutionContainerSystem.EnumerateSolutions(entity.Owner))
             {
                 var solution = soln.Comp.Solution;
                 _reactive.DoEntityReaction(args.OtherEntity, solution, ReactionMethod.Touch);
+
+                // Funky Wall Stains
+                if (hitWall && solution.Volume > 0)
+                {
+                    var splashEv = new SplashOnWallEvent(Transform(entity.Owner).Coordinates, solution.Clone());
+                    RaiseLocalEvent(ref splashEv);
+                }
             }
+            // End Box Change
 
             // Check for collision with a impassable object (e.g. wall) and stop
             if ((args.OtherFixture.CollisionLayer & (int)CollisionGroup.Impassable) != 0 && args.OtherFixture.Hard)
