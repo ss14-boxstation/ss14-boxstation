@@ -1,0 +1,22 @@
+## Space law
+
+- type: guideEntry
+  id: SpaceLaw
+  name: guide-entry-rules-space-law
+  priority: 1
+  text: "/ServerInfo/_Box/Guidebook/ServerRules/SpaceLaw/BoxSpaceLaw.xml"
+  children:
+  - SpaceLawCrimeList
+  - SpaceLawContraband
+
+- type: guideEntry
+  id: SpaceLawCrimeList
+  name: guide-entry-rules-sl-crime-list
+  priority: 5
+  text: "/ServerInfo/_Box/Guidebook/ServerRules/SpaceLaw/BoxSLCrimeList.xml"
+
+- type: guideEntry
+  id: SpaceLawContraband
+  name: guide-entry-rules-sl-contraband
+  priority: 5
+  text: "/ServerInfo/_Box/Guidebook/ServerRules/SpaceLaw/BoxSLContraband.xml"

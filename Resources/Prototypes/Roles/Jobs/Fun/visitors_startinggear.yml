@@ -104,7 +104,7 @@
     back: ClothingBackpackDebug
     ears: ClothingHeadsetAltCommand
     outerClothing: ClothingOuterWinterHoP
-    pocket1: WeaponDisabler
+    # pocket1: WeaponDisabler # Box Change - Remove HoP Disabler
 
 - type: startingGear
   id: VisitorHOPAlt
@@ -118,7 +118,7 @@
     back: ClothingBackpackSatchelLeather
     ears: ClothingHeadsetAltCommand
     outerClothing: ClothingOuterWinterHoP
-    pocket1: WeaponDisabler
+    # pocket1: WeaponDisabler # Box Change - Remove HoP Disabler
 
 - type: startingGear
   id: VisitorHOS

@@ -196,7 +196,10 @@ guide-entry-rules-s9 = S9
 guide-entry-rules-s10 = S10
 guide-entry-rules-mrp-m0 = MRP Rules
 guide-entry-rules-m1 = M1
-guide-entry-rules-space-law = Space Law
+# Box Change Start - New Space Law
+guide-entry-rules-space-law = Internal Security Guidelines
+guide-entry-rules-sl-contraband = Contraband
+# Box Change End
 guide-entry-rules-sl-crime-list = Crime List
 guide-entry-rules-sl-controlled-substances = Controlled Substances
 guide-entry-rules-sl-restricted-gear = Restricted Gear

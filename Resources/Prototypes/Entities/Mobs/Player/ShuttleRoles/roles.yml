@@ -88,7 +88,7 @@
 
 - type: entity
   id: RandomHumanoidVisitorSecurityOfficer
-  name: visiting security officer ghost role
+  name: visiting security guard ghost role # Box Change - SecOff > SecGuard
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi

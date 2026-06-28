@@ -16,6 +16,7 @@
     - UplinkWearables
     - UplinkJob
     - UplinkPointless
+    - UplinkObjective # Box - Early Merge of WizDen code
     currencyWhitelist:
     - Telecrystal
     balance:

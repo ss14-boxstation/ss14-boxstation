@@ -303,8 +303,10 @@
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
       - id: WehpetInstrument  # Harmony change to add weh-pet to rare maints loot
-      - id: LidSalami
-        weight: 0.05
+      # Start Box Change: Remove Salami Lid
+      #- id: LidSalami
+      #  weight: 0.05
+      # End Box Change
 
 - type: entity
   name: Maint Loot Spawner

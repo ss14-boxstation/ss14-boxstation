@@ -1,0 +1,45 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Brownie sprite seemingly by EmoGarbage, originally contributed at https://github.com/space-wizards/space-station-14/commit/d953f885307693be9e5011cb87efef05576d34be (snacks.rsi copyright was not updated, the other sprite in the commit *is* attributed to EmoGarbage, and I could not find the sprite in the TG repo), brownie-batch by Velcroboy originally contributed at https://github.com/space-wizards/space-station-14/commit/1de23dc4d03cc4fdcb35750a46009d0c3ec5c0f8. Several pixels added by Dizzy-Eevee.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states":
+    [
+        {
+            "name": "rainbow-brownie-batch"
+        },
+        {
+            "name": "rainbow-brownie-1"
+        },
+        {
+            "name": "rainbow-brownie-2"
+        },
+        {
+            "name": "rainbow-brownie-3"
+        },
+        {
+            "name": "rainbow-brownie-4"
+        },
+        {
+            "name": "rainbow-brownie-5"
+        },
+        {
+            "name": "rainbow-brownie-6"
+        },
+        {
+            "name": "rainbow-brownie-7"
+        },
+        {
+            "name": "rainbow-brownie-8"
+        },
+        {
+            "name": "rainbow-brownie-9"
+        },
+        {
+            "name": "rainbow-brownie-10"
+        }
+    ]
+}

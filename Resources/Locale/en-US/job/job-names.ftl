@@ -1,5 +1,7 @@
 job-name-warden = Warden
-job-name-security = Security Officer
+# Box Change Start - SecOff > SecGuard
+job-name-security = Security Guard
+# Box Change End
 job-name-cadet = Security Cadet
 job-name-hos = Head of Security
 job-name-detective = Detective

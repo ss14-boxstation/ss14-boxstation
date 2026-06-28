@@ -1154,12 +1154,18 @@
   cost:
     Telecrystal: 14
   categories:
-  - UplinkDisruption
+  - UplinkObjective #Box Change - Changed from UplinkDisruption to UplinkObjective
   conditions:
   - !type:StoreWhitelistCondition
      blacklist:
        tags:
        - NukeOpsUplink
+  # Box Change Start - Make Antimov DAGD-only
+  - !type:BuyerObjectiveWhitelistCondition
+    whitelist:
+      components:
+        - DieCondition
+  # Box Change End
 
 - type: listing
   id: UplinkNukieAntimovCircuitBoard
@@ -1248,7 +1254,7 @@
   cost:
     Telecrystal: 12
   categories:
-    - UplinkDisruption
+  - UplinkObjective #Box Change - Changed from UplinkDisruption to UplinkObjective
   #Start of Harmony change
   conditions:
   - !type:BuyerWhitelistCondition
@@ -1256,6 +1262,12 @@
       components:
       - SurplusBundle
   #End of Harmony change
+  # Box Change Start - Make Singulo Beacon DAGD-only
+  - !type:BuyerObjectiveWhitelistCondition
+    whitelist:
+      components:
+        - DieCondition
+  # Box Change End
 
 - type: listing
   id: UplinkCameraBug
@@ -2114,11 +2126,17 @@
   cost:
     Telecrystal: 20
   categories:
-  - UplinkJob
+  - UplinkObjective #Box Change - Changed from UplinkJob to UplinkObjective
   conditions:
   - !type:BuyerJobCondition
     whitelist:
     - Chaplain
+  # Box Change Start - Make HHG DAGD-only
+  - !type:BuyerObjectiveWhitelistCondition
+    whitelist:
+      components:
+        - DieCondition
+  # Box Change End
 
 - type: listing
   id: uplinkRevolverCapGunFake
