@@ -31,6 +31,10 @@
     - HighRiskItem
   - type: StealTarget
     stealGroup: HandheldComms
+  - type: RadarBlip
+    radarColor: Yellow
+    scale: 2
+    shape: Star
 
 - type: entity
   parent: HandheldComms
