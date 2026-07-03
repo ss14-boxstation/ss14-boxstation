@@ -3,6 +3,7 @@
   id: HarpyRing
   name: delta-chat-emote-name-ring
   category: Vocal
+  icon: _EE/Interface/Emotes/ring.png
   available: false
   whitelist:
     components:
@@ -22,6 +23,7 @@
   id: HarpyPew
   name: delta-chat-emote-name-pew
   category: Vocal
+  icon: _EE/Interface/Emotes/pew.png
   available: false
   whitelist:
     components:
@@ -39,6 +41,7 @@
   id: HarpyBang
   name: delta-chat-emote-name-bang
   category: Vocal
+  icon: _EE/Interface/Emotes/bang.png
   available: false
   whitelist:
     components:
@@ -57,6 +60,7 @@
   id: HarpyRev
   name: delta-chat-emote-name-rev
   category: Vocal
+  icon: _EE/Interface/Emotes/rev.png
   available: false
   whitelist:
     components:
@@ -75,6 +79,7 @@
   id: HarpyCaw
   name: delta-chat-emote-name-caw
   category: Vocal
+  icon: _EE/Interface/Emotes/caw.png
   available: false
   whitelist:
     components:

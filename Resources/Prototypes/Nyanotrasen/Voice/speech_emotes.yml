@@ -1,33 +1,8 @@
-# vocal emotes
-# - type: emote
-  # id: Hiss
-  # category: Vocal
-  # name: Hiss
-  # icon: Interface/Actions/scream.png
-  # available: false
-  # whitelist:
-    # components:
-    # - Vocal
-  # blacklist:
-    # components:
-    # - BorgChassis
-  # chatMessages: [hisses.]
-  # chatTriggers:
-    # - hiss
-    # - hisses
-    # - hiss.
-    # - hisses.
-    # - hisses!
-    # - hissing
-    # - hissed
-    # - hissing.
-    # - hissed.
-
 - type: emote
   id: Meow
   category: Vocal
   name: Meow
-  icon: Interface/Actions/scream.png
+  icon: _EE/Interface/Emotes/meow.png
   available: false
   whitelist:
     components:
@@ -65,49 +40,11 @@
     - mraows!
     - mraows~
 
-# - type: emote
-  # id: Mew
-  # category: Vocal
-  # name: Mew
-  # icon: Interface/Actions/scream.png
-  # available: false
-  # whitelist:
-    # components:
-    # - Vocal
-  # blacklist:
-    # components:
-    # - BorgChassis
-  # chatMessages: [mews.]
-  # chatTriggers:
-    # - mew
-    # - mews
-    # - mewing
-    # - mewed
-
-# - type: emote
-  # id: Growl
-  # category: Vocal
-  # name: Growl
-  # icon: Interface/Actions/scream.png
-  # available: false
-  # whitelist:
-    # components:
-    # - Vocal
-  # blacklist:
-    # components:
-    # - BorgChassis
-  # chatMessages: [growls.]
-  # chatTriggers:
-    # - growl
-    # - growls
-    # - growling
-    # - growled
-
 - type: emote
   id: Purr
   category: Vocal
   name: Purr
-  icon: Interface/Actions/scream.png
+  icon: _EE/Interface/Emotes/purr.png
   available: false
   whitelist:
     components:
