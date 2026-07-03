@@ -23,3 +23,7 @@
 
 - type: Tag
   id: GoliathMeat
+
+# Emote whitelist tag for harpies
+- type: Tag
+  id: HarpyEmotes
