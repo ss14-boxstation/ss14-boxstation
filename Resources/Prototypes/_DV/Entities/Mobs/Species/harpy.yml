@@ -110,7 +110,7 @@
   - type: Speech
     speechSounds: Harpy
     speechVerb: Harpy
-    allowedEmotes: ['Meow', 'Hiss', 'Mew', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Squish'] # Frontier: add Belch, Squish, Bubble, Pop
+    allowedEmotes: ['Meow', 'Hiss', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Squish'] # Frontier: add Belch, Squish, Bubble, Pop
   - type: Vocal
     sounds:
       Male: SoundsHarpy
