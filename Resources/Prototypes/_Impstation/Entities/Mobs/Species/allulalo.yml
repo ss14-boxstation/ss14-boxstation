@@ -101,6 +101,7 @@
     - AnomalyHost
     - CanPilot
     - FootstepSound
+  - type: Carriable # Box Change - Carrying system from Nyanotrasen
   - type: TypingIndicator
     proto: allulalo
   - type: Vocal
