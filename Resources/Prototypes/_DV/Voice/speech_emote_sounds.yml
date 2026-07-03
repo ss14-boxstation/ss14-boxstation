@@ -147,8 +147,6 @@
       collection: VulpkaninWhines
     Howl:
       collection: VulpkaninHowls
-    Awoo:
-      collection: VulpkaninHowls
     Weh:
       collection: Weh
     Hew:
@@ -161,9 +159,9 @@
     #  collection: Belch # Frontier
     Squish: # Frontier
       collection: HarpySquishes # Frontier
-    Bubble: # Imp
-      collection: Bubbles # Imp
-    Pop: # Imp
-      collection: Pops # Imp
+    #Bubble: # Imp
+    #  collection: Bubbles # Imp
+    #Pop: # Imp
+    #  collection: Pops # Imp
     MonkeyScreeches: # Frontier
       collection: MonkeyScreeches # Frontier
