@@ -57,7 +57,7 @@
     - chortles
     - chortling
 
- - type: emote
+- type: emote
   id: Honk
   name: chat-emote-name-honk
   category: Vocal
