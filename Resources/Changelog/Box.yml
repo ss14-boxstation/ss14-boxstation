@@ -1079,3 +1079,10 @@
   id: 126
   time: '2026-06-23T01:23:06.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/178
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Allulalo, a species of diminutive raptor creatures from Impstation.
+    type: Add
+  id: 127
+  time: '2026-07-04T01:07:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/170
