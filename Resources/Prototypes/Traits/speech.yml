@@ -16,6 +16,7 @@
     - type: ReplacementAccent
       accent: dwarf
     - type: NoContractionsAccent # Box Change - Accentless Thaven
+    - type: AllulaloAccent # Box Change - Accentless Allulalo
 
 # 1 Cost
 
