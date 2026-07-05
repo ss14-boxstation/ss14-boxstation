@@ -23,7 +23,7 @@
   parent: CrateGenericSteel
   id: CrateBlackChessPiece
   name: black chess piece set
-  sufix: Box
+  suffix: Box
   description: A full set of large black chess pieces, including some extra for pawn promotions!
   components:
   - type: StorageFill
