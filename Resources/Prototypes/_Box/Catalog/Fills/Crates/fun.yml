@@ -2,6 +2,7 @@
   parent: CrateGenericSteel
   id: CrateWhiteChessPiece
   name: white chess piece set
+  suffix: Box
   description: A full set of large white chess pieces, including some extra for pawn promotions!
   components:
   - type: StorageFill
@@ -22,6 +23,7 @@
   parent: CrateGenericSteel
   id: CrateBlackChessPiece
   name: black chess piece set
+  sufix: Box
   description: A full set of large black chess pieces, including some extra for pawn promotions!
   components:
   - type: StorageFill
