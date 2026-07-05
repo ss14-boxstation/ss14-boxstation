@@ -1,0 +1,39 @@
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateWhiteChessPiece
+  name: white chess piece set
+  description: A full set of large white chess pieces, including some extra for pawn promotions!
+  components:
+  - type: StorageFill
+    contents:
+    - id: WhitePawn
+      amount: 8
+    - id: WhiteRook
+      amount: 3
+    - id: WhiteKnight
+      amount: 3
+    - id: WhiteBishop
+      amount: 3
+    - id: WhiteQueen
+      amount: 2
+    - id: WhiteKing
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateBlackChessPiece
+  name: black chess piece set
+  description: A full set of large black chess pieces, including some extra for pawn promotions!
+  components:
+  - type: StorageFill
+    contents:
+    - id: BlackPawn
+      amount: 8
+    - id: BlackRook
+      amount: 3
+    - id: BlackKnight
+      amount: 3
+    - id: BlackBishop
+      amount: 3
+    - id: BlackQueen
+      amount: 2
+    - id: BlackKing
