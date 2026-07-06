@@ -121,8 +121,10 @@
   - type: PredictedBattery # Box Change: Update to predicted
     maxCharge: 1200
     startingCharge: 1200
-  - type: PredictedBatterySelfRecharger # Box Change: Update to predicted
-    autoRecharge: true
+  # Start Box Change: Update to predicted
+  - type: PredictedBatterySelfRecharger 
+    # autoRecharge: true
+  # End Box Change
     autoRechargeRate: 10
   - type: BatteryAmmoProvider # Box Change: Update component name
     proto: HoloFlareCyan
