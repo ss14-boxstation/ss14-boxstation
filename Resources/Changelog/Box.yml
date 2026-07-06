@@ -1086,3 +1086,10 @@
   id: 127
   time: '2026-07-04T01:07:02.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/170
+- author: SomegnihT
+  changes:
+  - message: Cargo can now order sets of chess pieces
+    type: Add
+  id: 128
+  time: '2026-07-06T09:26:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/188
