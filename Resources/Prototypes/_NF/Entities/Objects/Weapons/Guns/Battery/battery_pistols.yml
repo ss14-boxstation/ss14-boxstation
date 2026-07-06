@@ -69,8 +69,10 @@
   - type: PredictedBattery # Default: 16 shots with 60 fireCost # Box Change: Update to predicted
     maxCharge: 960
     startingCharge: 960
-  - type: PredictedBatterySelfRecharger # Box Change: Update to predicted
-    autoRecharge: true
+  # Start Box Change: Update to predicted
+  - type: PredictedBatterySelfRecharger 
+    # autoRecharge: true
+  # End Box Change
     autoRechargeRate: 3 # Default recharge rate: 1 shot per 20 seconds with 60 fireCost
   - type: StaticPrice
     price: 250
@@ -108,7 +110,7 @@
       - state: inhand-right-unshaded
         shader: unshaded
   - type: Gun
-    examineCaliber: gun-examine-energybolt-holoflare
+    # examineCaliber: gun-examine-energybolt-holoflare # Box Change: frontier field
     selectedMode: SemiAuto
     fireRate: 2
     availableModes:
