@@ -383,6 +383,15 @@
       Lung:
         maxVol: 100.0
         canReact: false
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Sprite
     layers:
     - state: lung-l
@@ -423,6 +432,15 @@
     solutions:
       stomach:
         maxVol: 50
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Metabolizer
     maxReagents: 3
     groups:

@@ -796,5 +796,11 @@ RightLegHuman: OrganHumanLegRight
 TorsoSkeleton: OrganSkeletonPersonTorso
 RightArmSkeleton: OrganSkeletonPersonArmRight
 
+# 2026-02-23 Harmony
+LeftFootHuman: OrganHumanFootLeft
+TorsoHuman: OrganHumanTorso
+LeftHandHuman: OrganHumanHandLeft
+RightHandHuman: OrganHumanHandRight
+
 # 2026-06-13 BoxStation
 LidSalami: null

@@ -258,6 +258,15 @@
     solutions:
       stomach:
         maxVol: 50.0
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: GreyMatter
+          Quantity: 5
   - type: Stomach
   - type: Metabolizer
     maxReagents: 6
