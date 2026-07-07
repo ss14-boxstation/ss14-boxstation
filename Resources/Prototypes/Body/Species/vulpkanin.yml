@@ -192,11 +192,13 @@
         pitch: 1.33
         volume: -5
         variation: 0.05
-  - type: Bloodstream
-    bloodReferenceSolution:
-      reagents:
-      - ReagentId: SulfurBlood
-        Quantity: 300
+  # Box Change Start - Red Blood Vulpkanin
+  # - type: Bloodstream
+  #   bloodReferenceSolution:
+  #     reagents:
+  #     - ReagentId: SulfurBlood
+  #       Quantity: 300
+  # Box Change End
   - type: CreamPied
     sprite:
       sprite: Effects/creampie.rsi
