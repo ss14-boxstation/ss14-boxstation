@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._CD.Records; // Box Change - Character Records
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
@@ -79,9 +80,12 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public PreferenceUnavailableMode PreferenceUnavailable;
 
+    [DataField("cosmaticDriftCharacterRecords")] // Box Change - Character Records
+    public PlayerProvidedCharacterRecords? CDCharacterRecords;
+
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
+        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, CDCharacterRecords); // Box Change - Character Records
     }
 }
 
