@@ -240,14 +240,13 @@
 
 # # Snout
 
-# - type: marking
-#   id: VoxBeakColor
-#   bodyPart: Snout
-#   markingCategory: Snout
-#   speciesRestriction: [ Vox ]
-#   sprites:
-#   - sprite: _Impstation/Mobs/Customization/Vox/snout.rsi
-#     state: color
+- type: marking # Box - Fixed for Nubody - Prevents Linter fails
+  id: VoxBeakColor
+  bodyPart: Snout
+  groupWhitelist: [ Vox ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Vox/snout.rsi
+    state: color
 
 # - type: marking
 #   id: VoxBeakSplit
@@ -771,16 +770,14 @@
 #   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
 #     state: footspines
 
-# - type: marking
-#   id: VoxTailBack
-#   bodyPart: Tail
-#   markingCategory: Tail
-#   speciesRestriction: [ Vox ]
-#   forcedColoring: true
-#   followSkinColor: true
-#   sprites:
-#   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
-#     state: colorable
+- type: marking # Box - Fixed for Nubody - Prevents Linter fails
+  id: VoxTailBack
+  bodyPart: Tail
+  groupWhitelist: [ Vox ]
+  forcedColoring: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
+    state: colorable
 
 # - type: marking
 #   id: VoxTailBalled
