@@ -140,7 +140,7 @@ public sealed class BloodBrotherRuleSystem : GameRuleSystem<BloodBrotherRuleComp
         DebugTools.AssertNotNull(targetRole, "Blood brother role was null after assigning it.");
 
         convertedComp.Brother = entity;
-        targetRole.Value.Comp2.Brother = entity;
+        targetRole!.Value.Comp2.Brother = entity; // Box Change - Readd "!" presumably for differing RT reasons
         Dirty(targetRole.Value);
 
         if (!_objectivesSystem.TryCreateObjective((targetMindId, targetMind),
