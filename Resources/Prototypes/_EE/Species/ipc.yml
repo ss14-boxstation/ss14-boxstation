@@ -1,255 +1,257 @@
-- type: species
-  id: IPC
-  name: species-name-ipc
-  roundStart: true
-  prototype: MobIPC
-  sprites: MobIPCSprites
-  markingLimits: MobIPCMarkingLimits
-  dollPrototype: MobIPCDummy
-  skinColoration: Hues
-  minAge: 1
-  maxAge: 240
-  oldAge: 50
-  youngAge: 50
-  maleFirstNames: IpcFirst
-  femaleFirstNames: IpcFirst
-  lastNames: IpcLast
-  naming: FirstDashLast
-  sexes:
-  - Unsexed
+#  IPCs disabled pending Nubody fixes (Please just rewrite this in _Box)
 
-# The lack of a layer means that
-# this person cannot have round-start anything
-# applied to that layer. It has to instead
-# be defined as a 'custom base layer'
-# in either the mob's starting marking prototype,
-# or it has to be added in C#.
-- type: speciesBaseSprites
-  id: MobIPCSprites
-  sprites:
-    Head: MobIPCHead
-    HeadTop: MobHumanoidAnyMarking
-    HeadSide: MobHumanoidAnyMarking
-    Tail: MobHumanoidAnyMarking
-    # Begin DeltaV Additions - Adds new layer types for markings-sake
-    Eyes: MobHumanoidAnyMarking
-    Hair: MobHumanoidAnyMarking
-    Snout: MobHumanoidAnyMarking # Box Change
-    # End DeltaV Additions
-    Chest: MobIPCTorso
-    LArm: MobIPCLArm
-    RArm: MobIPCRArm
-    LHand: MobIPCLHand
-    RHand: MobIPCRHand
-    LLeg: MobIPCLLeg
-    RLeg: MobIPCRLeg
-    LFoot: MobIPCLFoot
-    RFoot: MobIPCRFoot
+# - type: species
+#   id: IPC
+#   name: species-name-ipc
+#   roundStart: true
+#   prototype: MobIPC
+#   sprites: MobIPCSprites
+#   markingLimits: MobIPCMarkingLimits
+#   dollPrototype: MobIPCDummy
+#   skinColoration: Hues
+#   minAge: 1
+#   maxAge: 240
+#   oldAge: 50
+#   youngAge: 50
+#   maleFirstNames: IpcFirst
+#   femaleFirstNames: IpcFirst
+#   lastNames: IpcLast
+#   naming: FirstDashLast
+#   sexes:
+#   - Unsexed
 
-- type: markingPoints
-  id: MobIPCMarkingLimits
-  points:
-    Hair:
-      points: 1 # DeltaV - Fixes hair not displaying
-      required: false
-    FacialHair:
-      points: 1 # DeltaV - Fixes hair not displaying
-      required: false
-    Eyes: # DeltaV - Moves screen to the eyes layer
-      points: 2 # Funky - Increase to 2 for Protogen mouth and eyes
-      required: false # Funky - Disable requirement
-      # defaultMarkings: [ MobIPCEyesDefault ] # Box Change - not needed
-    Head:
-      points: 1
-      required: true
-      defaultMarkings: [ MobIPCHeadDefault ]
-    Chest:
-      points: 1
-      required: true
-      defaultMarkings: [ MobIPCTorsoDefault ]
-    Legs:
-      points: 4
-      required: true
-      defaultMarkings: [ MobIPCLLegDefault, MobIPCLFootDefault, MobIPCRLegDefault, MobIPCRFootDefault ]
-    Arms:
-      points: 4
-      required: true
-      defaultMarkings: [ MobIPCLArmDefault, MobIPCLHandDefault, MobIPCRArmDefault, MobIPCRHandDefault ]
-    Snout: # DeltaV - Adds ability to use more marking types
-        points: 1
-        required: false
-    HeadSide:
-      points: 1
-      required: false
+# # The lack of a layer means that
+# # this person cannot have round-start anything
+# # applied to that layer. It has to instead
+# # be defined as a 'custom base layer'
+# # in either the mob's starting marking prototype,
+# # or it has to be added in C#.
+# - type: speciesBaseSprites
+#   id: MobIPCSprites
+#   sprites:
+#     Head: MobIPCHead
+#     HeadTop: MobHumanoidAnyMarking
+#     HeadSide: MobHumanoidAnyMarking
+#     Tail: MobHumanoidAnyMarking
+#     # Begin DeltaV Additions - Adds new layer types for markings-sake
+#     Eyes: MobHumanoidAnyMarking
+#     Hair: MobHumanoidAnyMarking
+#     Snout: MobHumanoidAnyMarking # Box Change
+#     # End DeltaV Additions
+#     Chest: MobIPCTorso
+#     LArm: MobIPCLArm
+#     RArm: MobIPCRArm
+#     LHand: MobIPCLHand
+#     RHand: MobIPCRHand
+#     LLeg: MobIPCLLeg
+#     RLeg: MobIPCRLeg
+#     LFoot: MobIPCLFoot
+#     RFoot: MobIPCRFoot
 
-- type: humanoidBaseSprite
-  id: MobIPCMarkingFollowSkin
-  markingsMatchSkin: true
-  layerAlpha: 0.5
+# - type: markingPoints
+#   id: MobIPCMarkingLimits
+#   points:
+#     Hair:
+#       points: 1 # DeltaV - Fixes hair not displaying
+#       required: false
+#     FacialHair:
+#       points: 1 # DeltaV - Fixes hair not displaying
+#       required: false
+#     Eyes: # DeltaV - Moves screen to the eyes layer
+#       points: 2 # Funky - Increase to 2 for Protogen mouth and eyes
+#       required: false # Funky - Disable requirement
+#       # defaultMarkings: [ MobIPCEyesDefault ] # Box Change - not needed
+#     Head:
+#       points: 1
+#       required: true
+#       defaultMarkings: [ MobIPCHeadDefault ]
+#     Chest:
+#       points: 1
+#       required: true
+#       defaultMarkings: [ MobIPCTorsoDefault ]
+#     Legs:
+#       points: 4
+#       required: true
+#       defaultMarkings: [ MobIPCLLegDefault, MobIPCLFootDefault, MobIPCRLegDefault, MobIPCRFootDefault ]
+#     Arms:
+#       points: 4
+#       required: true
+#       defaultMarkings: [ MobIPCLArmDefault, MobIPCLHandDefault, MobIPCRArmDefault, MobIPCRHandDefault ]
+#     Snout: # DeltaV - Adds ability to use more marking types
+#         points: 1
+#         required: false
+#     HeadSide:
+#       points: 1
+#       required: false
 
-- type: humanoidBaseSprite
-  id: MobIPCScreen
+# - type: humanoidBaseSprite
+#   id: MobIPCMarkingFollowSkin
+#   markingsMatchSkin: true
+#   layerAlpha: 0.5
 
-# Head
+# - type: humanoidBaseSprite
+#   id: MobIPCScreen
 
-- type: humanoidBaseSprite
-  id: MobIPCHead
+# # Head
 
-- type: humanoidBaseSprite
-  id: MobIPCHeadMale
+# - type: humanoidBaseSprite
+#   id: MobIPCHead
 
-- type: humanoidBaseSprite
-  id: MobIPCHeadFemale
+# - type: humanoidBaseSprite
+#   id: MobIPCHeadMale
 
-- type: marking
-  id: MobIPCHeadDefault
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: head_m
+# - type: humanoidBaseSprite
+#   id: MobIPCHeadFemale
 
-# Torso
+# - type: marking
+#   id: MobIPCHeadDefault
+#   bodyPart: Head
+#   markingCategory: Head
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: head_m
 
-- type: humanoidBaseSprite
-  id: MobIPCTorso
+# # Torso
 
-- type: humanoidBaseSprite
-  id: MobIPCTorsoMale
+# - type: humanoidBaseSprite
+#   id: MobIPCTorso
 
-- type: humanoidBaseSprite
-  id: MobIPCTorsoFemale
+# - type: humanoidBaseSprite
+#   id: MobIPCTorsoMale
 
-- type: marking
-  id: MobIPCTorsoDefault
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: torso_m
+# - type: humanoidBaseSprite
+#   id: MobIPCTorsoFemale
 
-- type: marking
-  id: MobIPCTorsoFemaleDefault
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: torso_f
+# - type: marking
+#   id: MobIPCTorsoDefault
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: torso_m
 
-# Left Leg
+# - type: marking
+#   id: MobIPCTorsoFemaleDefault
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: torso_f
 
-- type: humanoidBaseSprite
-  id: MobIPCLLeg
+# # Left Leg
 
-- type: marking
-  id: MobIPCLLegDefault
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: l_leg
+# - type: humanoidBaseSprite
+#   id: MobIPCLLeg
 
-# Left Arm
+# - type: marking
+#   id: MobIPCLLegDefault
+#   bodyPart: LLeg
+#   markingCategory: Legs
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: l_leg
 
-- type: humanoidBaseSprite
-  id: MobIPCLArm
+# # Left Arm
 
-- type: marking
-  id: MobIPCLArmDefault
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: l_arm
+# - type: humanoidBaseSprite
+#   id: MobIPCLArm
 
-#LHand
+# - type: marking
+#   id: MobIPCLArmDefault
+#   bodyPart: LArm
+#   markingCategory: Arms
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: l_arm
 
-- type: humanoidBaseSprite
-  id: MobIPCLHand
+# #LHand
 
-- type: marking
-  id: MobIPCLHandDefault
-  bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: l_hand
+# - type: humanoidBaseSprite
+#   id: MobIPCLHand
 
-#LFoot
+# - type: marking
+#   id: MobIPCLHandDefault
+#   bodyPart: LHand
+#   markingCategory: Arms
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: l_hand
 
-- type: humanoidBaseSprite
-  id: MobIPCLFoot
+# #LFoot
 
-- type: marking
-  id: MobIPCLFootDefault
-  bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: l_foot
+# - type: humanoidBaseSprite
+#   id: MobIPCLFoot
 
-#RLeg
+# - type: marking
+#   id: MobIPCLFootDefault
+#   bodyPart: LFoot
+#   markingCategory: Legs
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: l_foot
 
-- type: humanoidBaseSprite
-  id: MobIPCRLeg
+# #RLeg
 
-- type: marking
-  id: MobIPCRLegDefault
-  bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: r_leg
+# - type: humanoidBaseSprite
+#   id: MobIPCRLeg
 
-#RArm
+# - type: marking
+#   id: MobIPCRLegDefault
+#   bodyPart: RLeg
+#   markingCategory: Legs
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: r_leg
 
-- type: humanoidBaseSprite
-  id: MobIPCRArm
+# #RArm
 
-- type: marking
-  id: MobIPCRArmDefault
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: r_arm
+# - type: humanoidBaseSprite
+#   id: MobIPCRArm
 
-#RHand
+# - type: marking
+#   id: MobIPCRArmDefault
+#   bodyPart: RArm
+#   markingCategory: Arms
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: r_arm
 
-- type: humanoidBaseSprite
-  id: MobIPCRHand
+# #RHand
 
-- type: marking
-  id: MobIPCRHandDefault
-  bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: r_hand
+# - type: humanoidBaseSprite
+#   id: MobIPCRHand
 
-#RFoot
+# - type: marking
+#   id: MobIPCRHandDefault
+#   bodyPart: RHand
+#   markingCategory: Arms
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: r_hand
 
-- type: humanoidBaseSprite
-  id: MobIPCRFoot
+# #RFoot
 
-- type: marking
-  id: MobIPCRFootDefault
-  bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
-  sprites:
-  - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: r_foot
+# - type: humanoidBaseSprite
+#   id: MobIPCRFoot
+
+# - type: marking
+#   id: MobIPCRFootDefault
+#   bodyPart: RFoot
+#   markingCategory: Legs
+#   speciesRestriction: [IPC]
+#   sprites:
+#   - sprite: _DV/Mobs/Species/IPC/parts.rsi
+#     state: r_foot
 
 - type: Tag
-  id: IPCMaskWearable
+  id: IPCMaskWearable # Box Comment: Why the fuck is this here???

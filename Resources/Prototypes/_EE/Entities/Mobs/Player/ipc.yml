@@ -1,3 +1,5 @@
+#  IPCs disabled pending Nubody fixes (Please just rewrite this in _Box)
+
 - type: entity
   id: MobIPC
   parent: PlayerSiliconHumanoidBase

@@ -8,6 +8,8 @@ namespace Content.Server._EE.Silicon;
 
 public sealed class EmitSoundOnCritSystem : EntitySystem
 {
+// Box Change Start - Disable IPC Code until reimplementation
+    /*
     [Dependency] private readonly EmitSoundSystem _emitSound = default!;
     public override void Initialize()
     {
@@ -40,4 +42,6 @@ public sealed class EmitSoundOnCritSystem : EntitySystem
 
         RemComp<SpamEmitSoundComponent>(uid);
     }
+    */
+// Box Change End
 }
