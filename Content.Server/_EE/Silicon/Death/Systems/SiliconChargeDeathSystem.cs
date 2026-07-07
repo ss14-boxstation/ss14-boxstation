@@ -19,6 +19,8 @@ namespace Content.Server._EE.Silicon.Death;
 
 public sealed class SiliconDeathSystem : EntitySystem
 {
+// Box Change Start - Disable IPC Code until reimplementation
+    /*
     [Dependency] private readonly SleepingSystem _sleep = default!;
     [Dependency] private readonly SiliconChargeSystem _silicon = default!;
     [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
@@ -184,4 +186,6 @@ public sealed class SiliconChargeAliveEvent : EntityEventArgs
         BatteryComp = batteryComp;
         BatteryUid = batteryUid;
     }
+    */
+// Box Change End
 }

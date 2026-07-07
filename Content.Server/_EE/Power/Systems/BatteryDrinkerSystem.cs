@@ -21,6 +21,8 @@ namespace Content.Server._EE.Power;
 
 public sealed class BatteryDrinkerSystem : EntitySystem
 {
+// Box Change Start - Disable IPC Code until reimplementation
+    /*
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
@@ -141,4 +143,6 @@ public sealed class BatteryDrinkerSystem : EntitySystem
             Spawn("EffectSparks", Transform(source).Coordinates);
         }
     }
+    */
+// Box Change End
 }

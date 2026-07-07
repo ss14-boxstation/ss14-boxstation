@@ -166,7 +166,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -676,7 +676,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 - type: loadoutGroup
   id: ClownJobTrinkets
@@ -742,7 +742,7 @@
   - EmergencyOxygenMime
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 - type: loadoutGroup
   id: MimeJobTrinkets
@@ -1115,7 +1115,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 # Science
 - type: loadoutGroup
@@ -1482,7 +1482,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 # Medical
 - type: loadoutGroup
@@ -1717,7 +1717,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 # Wildcards
 - type: loadoutGroup
@@ -1758,7 +1758,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
-  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
+  # - EmergencyIPCBox # Box Change, Port DeltaV IPCs # Box - Disabled pending Nubody fixes
 
 - type: loadoutGroup
   id: SurvivalMilitaryDouble

@@ -1,7 +1,9 @@
-- type: entity
-  save: false
-  name: Urist McRaptor
-  parent: BaseMobAvali
-  id: MobAvali
+#  Avali disabled pending Nubody fixes (check if you can port before rewriting)
 
-#chirp!
+# - type: entity
+#   save: false
+#   name: Urist McRaptor
+#   parent: BaseMobAvali
+#   id: MobAvali
+
+# #chirp!

@@ -1,16 +1,18 @@
-- type: entity
-  id: OrganAllulaloHeart
-  parent: OrganAnimalHeart
-  name: animal heart
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Metabolizer
-    maxReagents: 2
-    metabolizerTypes: [ Allulalo ]
-    groups:
-    - id: Medicine
-      rateModifier: 1.5
-    - id: Poison
-      rateModifier: 1.5
-    - id: Narcotic
-      rateModifier: 1.5
+#  Allulalo disabled pending Nubody fixes (check if you can port before rewriting)
+
+# - type: entity
+#   id: OrganAllulaloHeart
+#   parent: OrganAnimalHeart
+#   name: animal heart
+#   categories: [ HideSpawnMenu ]
+#   components:
+#   - type: Metabolizer
+#     maxReagents: 2
+#     metabolizerTypes: [ Allulalo ]
+#     groups:
+#     - id: Medicine
+#       rateModifier: 1.5
+#     - id: Poison
+#       rateModifier: 1.5
+#     - id: Narcotic
+#       rateModifier: 1.5

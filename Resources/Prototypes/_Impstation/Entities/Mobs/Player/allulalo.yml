@@ -1,5 +1,7 @@
-- type: entity
-  save: false
-  name: Uristia Mc-hands
-  parent: BaseMobAllulalo
-  id: MobAllulalo
+#  Allulalo disabled pending Nubody fixes (check if you can port before rewriting)
+
+# - type: entity
+#   save: false
+#   name: Uristia Mc-hands
+#   parent: BaseMobAllulalo
+#   id: MobAllulalo

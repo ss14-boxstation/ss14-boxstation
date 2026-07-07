@@ -26,17 +26,25 @@
   id: OrganBaseOrganic
   name: organ
   abstract: true
-  parent: [ OrganBase, SolutionFood, SolutionTiny ]
+  parent: [ OrganBase ] # Box Change - Re-refactor solutions back to old solutions
   components:
   - type: FlavorProfile
     flavors:
-    - chicken # INTRODUCING OUR NEW EVERY-MEAT BURRITO, IT'S GOT EVERY MEAT!
+    - people # INTRODUCING OUR NEW EVERY-MEAT BURRITO, IT'S GOT EVERY MEAT! # Box Change - Re-refactor solutions back to old solutions - chicken > people
   - type: Edible
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: UncookedAnimalProteins
-        Quantity: 20
+  - type: Extractable # Box Change - Re-refactor solutions back to old solutions
+    grindableSolutionName: organ
+  - type: SolutionContainerManager # Box Change - Re-refactor solutions back to old solutions
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Tag # I am nearing my limit of tolerance for TagComponent.
     tags:
     - Raw
@@ -275,13 +283,17 @@
   - type: Examiner
   - type: BlockMovement
   - type: BadFood
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: UncookedAnimalProteins
-        Quantity: 15
-      - ReagentId: GreyMatter
-        Quantity: 10
+  - type: SolutionContainerManager # Box Change - Re-refactor solutions back to old solutions
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: GreyMatter
+          Quantity: 5
   - type: FoodSequenceElement
     entries:
       Burger: Brain
@@ -371,6 +383,15 @@
       Lung:
         maxVol: 100.0
         canReact: false
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Sprite
     layers:
     - state: lung-l
@@ -411,6 +432,15 @@
     solutions:
       stomach:
         maxVol: 50
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
   - type: Metabolizer
     maxReagents: 3
     groups:

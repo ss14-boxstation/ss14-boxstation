@@ -19,10 +19,10 @@
     - Moth
     - Reptilian
     - Vulpkanin
-    - Avali # Latestation
-    - Rodentia # Box Change - Adds Rodentia
-    - Thaven #Box Change - Add Thaven
-    - Allulalo # Box Change - Add Allulalo
+    # - Avali # Latestation # Box - Readd after Nubody fixes
+    # - Rodentia # Box Change - Adds Rodentia # Box - Readd after Nubody fixes
+    # - Thaven #Box Change - Add Thaven # Box - Readd after Nubody fixes
+    # - Allulalo # Box Change - Add Allulalo # Box - Readd after Nubody fixes
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

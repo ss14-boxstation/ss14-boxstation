@@ -16,6 +16,8 @@ namespace Content.Server._EE.Silicon.WeldingHealable;
 
 public sealed class WeldingHealableSystem : SharedWeldingHealableSystem
 {
+// Box Change Start - Disable IPC Code until reimplementation
+    /*
     [Dependency] private readonly SharedToolSystem _toolSystem = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
@@ -121,4 +123,6 @@ public sealed class WeldingHealableSystem : SharedWeldingHealableSystem
 
         return false;
     }
+    */
+// Box Change End
 }

@@ -13,6 +13,15 @@
     solutions:
       stomach:
         maxVol: 80
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
 
 - type: entity
   id: BaseMobRuminant
