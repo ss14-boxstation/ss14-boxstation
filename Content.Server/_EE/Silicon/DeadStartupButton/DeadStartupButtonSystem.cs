@@ -22,6 +22,8 @@ namespace Content.Server._EE.Silicon.DeadStartupButton;
 
 public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
 {
+// Box Change Start - Disable IPC Code until reimplementation
+    /*
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
@@ -94,5 +96,7 @@ public sealed class DeadStartupButtonSystem : SharedDeadStartupButtonSystem
         _popup.PopupEntity(Loc.GetString("dead-startup-system-reboot-success", ("target", MetaData(uid).EntityName)), uid);
         _audio.PlayPvs(comp.Sound, uid);
     }
+    */
+// Box Change End
 
 }
