@@ -1,5 +1,7 @@
-- type: entity
-  save: false
-  name: Urist McEars
-  parent: BaseMobThaven
-  id: MobThaven
+#  Thaven disabled pending Nubody fixes (check if you can port before rewriting)
+
+# - type: entity
+#   save: false
+#   name: Urist McEars
+#   parent: BaseMobThaven
+#   id: MobThaven
