@@ -1,295 +1,297 @@
-# Chest
+#  Allulalo disabled pending Nubody fixes (check if you can port before rewriting)
 
-- type: marking
-  id: AllulaloUnderbelly
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/chest.rsi
-    state: allulaloChestUnderbelly
+# # Chest
 
-- type: marking
-  id: AllulaloChestHeartMonitor
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/chest.rsi
-    state: allulaloChestHeartMonitor
-  shader: unshaded
+# - type: marking
+#   id: AllulaloUnderbelly
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/chest.rsi
+#     state: allulaloChestUnderbelly
 
-# Head
+# - type: marking
+#   id: AllulaloChestHeartMonitor
+#   bodyPart: Chest
+#   markingCategory: Chest
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/chest.rsi
+#     state: allulaloChestHeartMonitor
+#   shader: unshaded
 
-- type: marking
-  id: AllulaloHeadUnderbelly
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
-    state: allulaloHeadUnderbelly
+# # Head
 
-- type: marking
-  id: AllulaloHeadNeckFluff
-  bodyPart: Tail #layering sucks
-  markingCategory: Head
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
-    state: allulaloHeadNeckFluff
+# - type: marking
+#   id: AllulaloHeadUnderbelly
+#   bodyPart: Head
+#   markingCategory: Head
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
+#     state: allulaloHeadUnderbelly
 
-- type: marking
-  id: AllulaloHeadSpikes
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
-    state: allulaloHeadSpikes
+# - type: marking
+#   id: AllulaloHeadNeckFluff
+#   bodyPart: Tail #layering sucks
+#   markingCategory: Head
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
+#     state: allulaloHeadNeckFluff
 
-#- type: marking #I think this one might be too much
-#  id: AllulaloHeadNeckPlumageOutrageous
-#  bodyPart: Tail #layering sucks
-#  markingCategory: Head
-#  speciesRestriction: [ Allulalo ]
-#  sprites:
-#  - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
-#    state: allulaloHeadNeckPlumageOutrageous
+# - type: marking
+#   id: AllulaloHeadSpikes
+#   bodyPart: Head
+#   markingCategory: Head
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
+#     state: allulaloHeadSpikes
 
-# Snout
+# #- type: marking #I think this one might be too much
+# #  id: AllulaloHeadNeckPlumageOutrageous
+# #  bodyPart: Tail #layering sucks
+# #  markingCategory: Head
+# #  speciesRestriction: [ Allulalo ]
+# #  sprites:
+# #  - sprite: _Impstation/Mobs/Customization/Allulalo/head.rsi
+# #    state: allulaloHeadNeckPlumageOutrageous
 
-# Eyes
+# # Snout
 
-- type: marking
-  id: AllulaloEyesDefault
-  bodyPart: Eyes
-  markingCategory: Eyes
-  speciesRestriction: [ Allulalo ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#78bfc2"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
-    state: allulaloEyesDefaultLeft
-  - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
-    state: allulaloEyesDefaultRight
+# # Eyes
 
-- type: marking
-  id: AllulaloEyesUnshaded
-  bodyPart: Eyes
-  markingCategory: Eyes
-  speciesRestriction: [ Allulalo ]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#78bfc2"
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
-    state: allulaloEyesUnshadedLeft
-  - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
-    state: allulaloEyesUnshadedRight
-  shader: unshaded
+# - type: marking
+#   id: AllulaloEyesDefault
+#   bodyPart: Eyes
+#   markingCategory: Eyes
+#   speciesRestriction: [ Allulalo ]
+#   coloring:
+#     default:
+#       type:
+#         !type:SimpleColoring
+#         color: "#78bfc2"
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
+#     state: allulaloEyesDefaultLeft
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
+#     state: allulaloEyesDefaultRight
 
-# RArm
+# - type: marking
+#   id: AllulaloEyesUnshaded
+#   bodyPart: Eyes
+#   markingCategory: Eyes
+#   speciesRestriction: [ Allulalo ]
+#   coloring:
+#     default:
+#       type:
+#         !type:SimpleColoring
+#         color: "#78bfc2"
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
+#     state: allulaloEyesUnshadedLeft
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/eyes.rsi
+#     state: allulaloEyesUnshadedRight
+#   shader: unshaded
 
-- type: marking
-  id: AllulaloWingsDefault
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmDefaultRight
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmDefaultLeft
+# # RArm
 
-- type: marking
-  id: AllulaloWingsSplit
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmSplit1
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmSplit2
+# - type: marking
+#   id: AllulaloWingsDefault
+#   bodyPart: RArm
+#   markingCategory: Arms
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmDefaultRight
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmDefaultLeft
 
-- type: marking
-  id: AllulaloWingsOwl
-  bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmOwl1
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmOwl2
-  - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
-    state: allulaloArmOwl3
+# - type: marking
+#   id: AllulaloWingsSplit
+#   bodyPart: RArm
+#   markingCategory: Arms
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmSplit1
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmSplit2
 
-# LArm
+# - type: marking
+#   id: AllulaloWingsOwl
+#   bodyPart: RArm
+#   markingCategory: Arms
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmOwl1
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmOwl2
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/arms.rsi
+#     state: allulaloArmOwl3
 
-# RLeg
+# # LArm
 
-# LLeg
+# # RLeg
 
-- type: marking
-  id: AllulaloLegUnderbellyDefault
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/legs.rsi
-    state: allulaloLegUnderbellyDefaultRight
-  - sprite: _Impstation/Mobs/Customization/Allulalo/legs.rsi
-    state: allulaloLegUnderbellyDefaultLeft
+# # LLeg
 
-- type: marking
-  id: AllulaloLegPlumage
-  bodyPart: LFoot #dont look at me
-  markingCategory: Legs
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/legs.rsi
-    state: allulaloLegPlumage
+# - type: marking
+#   id: AllulaloLegUnderbellyDefault
+#   bodyPart: LLeg
+#   markingCategory: Legs
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/legs.rsi
+#     state: allulaloLegUnderbellyDefaultRight
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/legs.rsi
+#     state: allulaloLegUnderbellyDefaultLeft
 
-# UndergarmentBottom
+# - type: marking
+#   id: AllulaloLegPlumage
+#   bodyPart: LFoot #dont look at me
+#   markingCategory: Legs
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/legs.rsi
+#     state: allulaloLegPlumage
 
-# UndergarmentTop
+# # UndergarmentBottom
 
-# LFoot
+# # UndergarmentTop
 
-# RFoot
+# # LFoot
 
-# LHand
+# # RFoot
 
-# RHand
+# # LHand
 
-# FacialHair
+# # RHand
 
-# Hair
+# # FacialHair
 
-# HeadSide
+# # Hair
 
-# HeadTop
+# # HeadSide
 
-- type: marking
-  id: AllulaloHeadTopHorn
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopHorn
+# # HeadTop
 
-- type: marking
-  id: AllulaloHeadTopFeathers
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopFeathers
+# - type: marking
+#   id: AllulaloHeadTopHorn
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopHorn
 
-- type: marking
-  id: AllulaloHeadTopCurvedHorns
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopCurvedHorns
+# - type: marking
+#   id: AllulaloHeadTopFeathers
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopFeathers
 
-- type: marking
-  id: AllulaloHeadTopSweptHorns
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopSweptHorns
+# - type: marking
+#   id: AllulaloHeadTopCurvedHorns
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopCurvedHorns
 
-- type: marking
-  id: AllulaloHeadTopStubHorns
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopStubHorns
+# - type: marking
+#   id: AllulaloHeadTopSweptHorns
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopSweptHorns
 
-- type: marking
-  id: AllulaloHeadTopPlumage1
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopPlumage1
+# - type: marking
+#   id: AllulaloHeadTopStubHorns
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopStubHorns
 
-- type: marking
-  id: AllulaloHeadTopPlumage2
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
-    state: allulaloHeadTopPlumage2
+# - type: marking
+#   id: AllulaloHeadTopPlumage1
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopPlumage1
 
-# Tail
+# - type: marking
+#   id: AllulaloHeadTopPlumage2
+#   bodyPart: HeadTop
+#   markingCategory: HeadTop
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/headtop.rsi
+#     state: allulaloHeadTopPlumage2
 
-- type: marking
-  id: AllulaloTailDefault
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailDefault
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailDefault2
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailDefault3
+# # Tail
 
-- type: marking
-  id: AllulaloTailThick
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailLarge
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailLarge2
+# - type: marking
+#   id: AllulaloTailDefault
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailDefault
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailDefault2
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailDefault3
 
-- type: marking
-  id: AllulaloTailThickSpikes
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailLarge
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailLarge2
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailLarge3
+# - type: marking
+#   id: AllulaloTailThick
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailLarge
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailLarge2
 
-- type: marking
-  id: AllulaloTailTuft
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Allulalo ]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailTuft
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailTuft2
-  - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
-    state: allulaloTailTuft3
+# - type: marking
+#   id: AllulaloTailThickSpikes
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailLarge
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailLarge2
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailLarge3
 
-# RArmExtension
+# - type: marking
+#   id: AllulaloTailTuft
+#   bodyPart: Tail
+#   markingCategory: Tail
+#   speciesRestriction: [ Allulalo ]
+#   sprites:
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailTuft
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailTuft2
+#   - sprite: _Impstation/Mobs/Customization/Allulalo/tail.rsi
+#     state: allulaloTailTuft3
+
+# # RArmExtension
