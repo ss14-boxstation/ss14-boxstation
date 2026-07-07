@@ -19,7 +19,7 @@ public sealed class HumanoidVoicelinesSystem : EntitySystem
     private static readonly ProtoId<SpeciesPrototype> MothSpecies = "Moth";
     private static readonly ProtoId<SpeciesPrototype> ReptilianSpecies = "Reptilian";
     private static readonly ProtoId<SpeciesPrototype> SlimeSpecies = "SlimePerson";
-    private static readonly ProtoId<SpeciesPrototype> AvaliSpecies = "Avali";
+    // private static readonly ProtoId<SpeciesPrototype> AvaliSpecies = "Avali"; // Box - disabled pending Nubody fixes
     private static readonly ProtoId<SpeciesPrototype> VulpkaninSpecies = "Vulpkanin";
     // private static readonly ProtoId<SpeciesPrototype> RodentiaSpecies = "Rodentia"; // Harmony - No Rodentia
     // private static readonly ProtoId<SpeciesPrototype> FeroxiSpecies = "Feroxi"; // Harmony - No Feroxi
@@ -36,7 +36,7 @@ public sealed class HumanoidVoicelinesSystem : EntitySystem
         [MothSpecies] = RMCCVars.RMCPlayVoicelinesMoth,
         [ReptilianSpecies] = RMCCVars.RMCPlayVoicelinesReptilian,
         [SlimeSpecies] = RMCCVars.RMCPlayVoicelinesSlime,
-        [AvaliSpecies] = RMCCVars.RMCPlayVoicelinesAvali,
+        // [AvaliSpecies] = RMCCVars.RMCPlayVoicelinesAvali, // Box - disabled pending Nubody fixes
         [VulpkaninSpecies] = RMCCVars.RMCPlayVoicelinesVulpkanin,
         // [RodentiaSpecies] = RMCCVars.RMCPlayVoicelinesRodentia, // Harmony - No Rodentia
         // [FeroxiSpecies] = RMCCVars.RMCPlayVoicelinesFeroxi, // Harmony - No Feroxi
@@ -54,7 +54,7 @@ public sealed class HumanoidVoicelinesSystem : EntitySystem
         [MothSpecies] = RMCCVars.RMCPlayEmotesMoth,
         [ReptilianSpecies] = RMCCVars.RMCPlayEmotesReptilian,
         [SlimeSpecies] = RMCCVars.RMCPlayEmotesSlime,
-        [AvaliSpecies] = RMCCVars.RMCPlayEmotesAvali,
+        // [AvaliSpecies] = RMCCVars.RMCPlayEmotesAvali, // Box - disabled pending Nubody fixes
         [VulpkaninSpecies] = RMCCVars.RMCPlayEmotesVulpkanin,
         // [RodentiaSpecies] = RMCCVars.RMCPlayEmotesRodentia, // Harmony - No Rodentia
         // [FeroxiSpecies] = RMCCVars.RMCPlayEmotesFeroxi, // Harmony - No Feroxi
