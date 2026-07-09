@@ -111,28 +111,28 @@
   - !type:SpillTileReaction
   friction: 0.05
   # Box Change Start - IPC Chem
-  metabolisms:
-    Drink: # This way organics can filter it
-      effects:
-      - !type:MovementSpeedModifier
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [Synthetic]
-        walkSpeedModifier: 1.3
-        sprintSpeedModifier: 1.3
-      - !type:HealthChange
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [Synthetic]
-        damage:
-          types:
-            Heat: 0.5
-            Blunt: 0.5
-      - !type:SatiateThirst
-        factor: 1
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [Vox]
+  # metabolisms:
+  #   Drink: # This way organics can filter it # SynthChem - Disabled until artificial metabolism can be reimplemented
+  #     effects:
+  #     - !type:MovementSpeedModifier
+  #       conditions:
+  #       - !type:MetabolizerTypeCondition
+  #         type: [Synthetic]
+  #       walkSpeedModifier: 1.3
+  #       sprintSpeedModifier: 1.3
+  #     - !type:HealthChange
+  #       conditions:
+  #       - !type:MetabolizerTypeCondition
+  #         type: [Synthetic]
+  #       damage:
+  #         types:
+  #           Heat: 0.5
+  #           Blunt: 0.5
+  #     - !type:SatiateThirst
+  #       factor: 1
+  #       conditions:
+  #       - !type:MetabolizerTypeCondition
+  #         type: [Vox]
   # Box Change End
 
 - type: reagent

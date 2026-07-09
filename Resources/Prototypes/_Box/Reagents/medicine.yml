@@ -10,12 +10,12 @@
   flavor: medicine
   color: "#ffaa00"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -2 # -1.5 > -2
+            Brute: -2
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -48,7 +48,7 @@
   flavor: sour
   color: "#ff3636"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -73,7 +73,7 @@
   flavor: syrupy
   color: "#283332"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -93,14 +93,12 @@
   id: Puncturase
   name: reagent-name-puncturase
   group: Medicine
-
   desc: reagent-desc-puncturase
   physicalDesc: reagent-physical-desc-fizzy
   flavor: fizzy
   color: "#b9bf93"
   metabolisms:
-    Medicine:
-
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -126,7 +124,7 @@
   flavor: metallic
   color: "#8147ff"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       # heals shocks and removes shock chems
       - !type:HealthChange
@@ -173,7 +171,7 @@
   flavor: sweet
   color: "#e0a5b9"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:

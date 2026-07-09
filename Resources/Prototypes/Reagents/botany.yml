@@ -290,8 +290,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Vox ]
-        factor: -4
+          type: [ Thaven ]
 #End Box Change - Imp - Allows Thaven to breathe any gas
 
 
