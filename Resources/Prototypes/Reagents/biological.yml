@@ -266,10 +266,10 @@
           types:
             Cellular: 2
     # Box Change Start - IPC Chem - I don't know if IPCs can even get this stuff yet but might as well do this now.
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Data: 2
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Data: 2
     # Box Change End

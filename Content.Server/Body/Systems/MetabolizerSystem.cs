@@ -215,11 +215,6 @@ public sealed class MetabolizerSystem : SharedMetabolizerSystem
                     if (effect.Conditions != null && !CanMetabolizeEffect(actualEntity, ent, soln.Value, effect.Conditions))
                         continue;
 
-                    // Box Change Start - IPC Metab Filter
-                    if (group.MetabolismFilter)
-                        continue;
-                    // Box Change End
-
                     ApplyEffect(effect);
 
                 }

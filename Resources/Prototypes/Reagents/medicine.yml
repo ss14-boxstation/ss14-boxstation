@@ -663,13 +663,13 @@
               reagent: Ambuzol
               min: 10
 #Box Change Start - Lets IPCs metabolize Ambuzol
-    Industrial:
-      effects:
-        - !type:CureZombieInfection
-          conditions:
-            - !type:ReagentCondition
-              reagent: Ambuzol
-              min: 10
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #     - !type:CureZombieInfection
+    #       conditions:
+    #         - !type:ReagentCondition
+    #           reagent: Ambuzol
+    #           min: 10
 #Box Change End - Lets IPCs metabolize Ambuzol
 
 - type: reagent
@@ -690,14 +690,14 @@
               reagent: AmbuzolPlus
               min: 5
 #Box Change Start - Lets IPCs metabolize Ambuzol+
-    Industrial:
-        effects:
-        - !type:CureZombieInfection
-          innoculate: true
-          conditions:
-            - !type:ReagentCondition
-              reagent: AmbuzolPlus
-              min: 5
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #     effects:
+    #     - !type:CureZombieInfection
+    #       innoculate: true
+    #       conditions:
+    #         - !type:ReagentCondition
+    #           reagent: AmbuzolPlus
+    #           min: 5
 #Box Change End - Lets IPCs metabolize Ambuzol+
 
 - type: reagent

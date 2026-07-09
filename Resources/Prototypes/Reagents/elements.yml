@@ -105,12 +105,12 @@
             Caustic: 0.5
             Poison: 0.5
     # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 0.5
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Caustic: 0.5
     # Box Change End
 - type: reagent
   id: Gold
@@ -311,12 +311,12 @@
           types:
             Caustic: 0.1
     # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 0.1
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Caustic: 0.1
     # Box Change End
 
 - type: reagent
@@ -358,12 +358,12 @@
           types:
             Radiation: 2
     # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Radiation: 2
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Radiation: 2
     # Box Change End
 
 - type: reagent

@@ -1081,8 +1081,8 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 5
-        - ReagentId: Polydimethylsiloxane # Box Change - Sulfuric Acid > Polydimethylsiloxane - IPC Food and Drink
-          Quantity: 5
+        # - ReagentId: Polydimethylsiloxane # Box Change - Sulfuric Acid > Polydimethylsiloxane - IPC Food and Drink # SynthChem - Disabled until artificial metabolism can be reimplemented
+        #   Quantity: 5
   - type: Tag
     tags:
     - Meat

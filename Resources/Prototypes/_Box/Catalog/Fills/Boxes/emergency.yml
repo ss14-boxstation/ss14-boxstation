@@ -13,5 +13,5 @@
         - id: ChassisPatch1
         - id: WelderMini
         - id: Flare
-        - id: EmergencySilipen
+        # - id: EmergencySilipen # SynthChem - Disabled until artificial metabolism can be reimplemented
 

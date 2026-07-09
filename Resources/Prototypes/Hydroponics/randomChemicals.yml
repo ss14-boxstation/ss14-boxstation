@@ -11,8 +11,8 @@
     - Honk
     - BuzzochloricBees
 #Box Change Start - Adds Synthchems to Botany Mutations
-    - SmartMetal
-    - Surge
+    # - SmartMetal # SynthChem - Disabled until artificial metabolism can be reimplemented
+    # - Surge
 #Box Change End - Adds Synthetic Chems to Botany Mutations
   - quantity: 5
     weight: 1
@@ -39,9 +39,9 @@
     - Lipolicide
     - Benzene
 #Box Change Start - Adds Synthchems to Botany Mutations
-    - Cryosilicate
-    - ThermalPaste
-    - WeedDotExe
+    # - Cryosilicate # SynthChem - Disabled until artificial metabolism can be reimplemented
+    # - ThermalPaste
+    # - WeedDotExe
 #Box Change End - Adds Synthchems to Botany Mutations
   - quantity: 5
     weight: 2
@@ -71,7 +71,7 @@
     - Iron
     - Bleach
     - Mannitol
-    - RoutineMaintenance #Box Change Start - Adds Synthchems to Botany Mutations
+    # - RoutineMaintenance #Box Change Start - Adds Synthchems to Botany Mutations # SynthChem - Disabled until artificial metabolism can be reimplemented
   - quantity: 10
     weight: 3
     reagents:

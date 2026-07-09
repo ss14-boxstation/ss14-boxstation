@@ -179,18 +179,18 @@
         emote: Scream
         probability: 0.3
     # Box Change Start - IPC Chem
-    Industrial:
-      metabolismRate : 3.00
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 11.0
-      - !type:PopupMessage
-        type: Local
-        visualType: Large
-        messages: [ "generic-reagent-effect-burning-insides" ]
-        probability: 0.33
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   metabolismRate : 3.00
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Caustic: 11.0
+    #   - !type:PopupMessage
+    #     type: Local
+    #     visualType: Large
+    #     messages: [ "generic-reagent-effect-burning-insides" ]
+    #     probability: 0.33
     # Box Change End
 
 - type: reagent
@@ -253,18 +253,18 @@
         emote: Scream
         probability: 0.25
     # Box Change Start - IPC Chem
-    Industrial:
-      metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 8
-      - !type:PopupMessage
-        type: Local
-        visualType: Large
-        messages: [ "generic-reagent-effect-burning-insides" ]
-        probability: 0.33
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Caustic: 8
+    #   - !type:PopupMessage
+    #     type: Local
+    #     visualType: Large
+    #     messages: [ "generic-reagent-effect-burning-insides" ]
+    #     probability: 0.33
     # Box Change End
 
 - type: reagent
@@ -316,18 +316,18 @@
         emote: Scream
         probability: 0.2
     # Box Change Start - IPC Chem
-    Industrial:
-      metabolismRate: 3.00 # Okay damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 5
-      - !type:PopupMessage
-        type: Local
-        visualType: Large
-        messages: [ "generic-reagent-effect-burning-insides" ]
-        probability: 0.33
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   metabolismRate: 3.00 # Okay damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Caustic: 5
+    #   - !type:PopupMessage
+    #     type: Local
+    #     visualType: Large
+    #     messages: [ "generic-reagent-effect-burning-insides" ]
+    #     probability: 0.33
     # Box Change End
 
 - type: reagent
@@ -528,13 +528,13 @@
               reagent: Romerol
               min: 5
     # Box Change Start: IPCs can now be affected by romerol injection
-    Industrial:
-      effects:
-        - !type:CauseZombieInfection
-          conditions:
-            - !type:ReagentCondition
-              reagent: Romerol
-              min: 5
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #     - !type:CauseZombieInfection
+    #       conditions:
+    #         - !type:ReagentCondition
+    #           reagent: Romerol
+    #           min: 5
     # Box change end
 
 - type: reagent
@@ -632,12 +632,12 @@
         component: Pacified
         time: 4
     # Box Change Start - IPC Chem
-    Industrial: # This should probably be its own Pax-derived Software chem, but fuck it.
-      effects:
-      - !type:GenericStatusEffect
-        key: Pacified
-        component: Pacified
-        time: 4
+    # Industrial: # This should probably be its own Pax-derived Software chem, but fuck it. # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:GenericStatusEffect
+    #     key: Pacified
+    #     component: Pacified
+    #     time: 4
     # Box Change End
 
 - type: reagent
@@ -747,14 +747,14 @@
       - !type:Electrocute
         probability: 0.8
     # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:Electrocute
-        probability: 0.8
-      - !type:HealthChange
-        damage:
-          types:
-            Shock: 1
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:Electrocute
+    #     probability: 0.8
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Shock: 1
     # Box Change End
 
 - type: reagent

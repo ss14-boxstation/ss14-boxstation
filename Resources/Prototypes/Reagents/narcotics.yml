@@ -328,12 +328,12 @@
         type: Add
         time: 5
     # Box Change Start - IPC Chem - Sure, clown weed works for IPCs. Why not.
-    Industrial:
-      effects:
-      - !type:ModifyStatusEffect
-        effectProto: StatusEffectSeeingRainbow
-        type: Add
-        time: 5
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:ModifyStatusEffect
+    #     effectProto: StatusEffectSeeingRainbow
+    #     type: Add
+    #     time: 5
     # Box Change Eng
 
 # Probably replace this one with sleeping chem when putting someone in a comatose state is easier

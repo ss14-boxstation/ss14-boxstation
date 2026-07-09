@@ -27,12 +27,12 @@
         emote: Scream
         probability: 0.15
     # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 2
+    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
+    #   effects:
+    #   - !type:HealthChange
+    #     damage:
+    #       types:
+    #         Caustic: 2
     # Box Change End
   tileReactions:
   - !type:CleanTileReaction
