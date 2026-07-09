@@ -1,3 +1,4 @@
+using Content.Shared._Box.Metabolism; // Box Change - SynthChem Metabolism
 using Content.Shared.Body.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.GameStates;
@@ -79,6 +80,15 @@ public sealed partial class MetabolizerComponent : Component
     /// </remarks>
     [DataField]
     public bool SolutionOnBody = true;
+
+    // Box Change Start - SynthMetabolism
+    /// <summary>
+    ///    List of Metabolizer Categories that this organ can process (ex. Organic, Artifial)
+    ///    Defaults to Organic
+    /// </summary>
+    [DataField]
+    public HashSet<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories = ["Organic"];
+    // Box Change End
 
     /// <summary>
     ///     List of metabolizer types that this organ is. ex. Human, Slime, Felinid, w/e.

@@ -17,6 +17,7 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
 using Robust.Shared.Utility;
+using Content.Shared._Box.Metabolism; // Box Change - SynthChem Metabolism
 
 namespace Content.Shared.Chemistry.Reagent
 {
@@ -168,6 +169,15 @@ namespace Content.Shared.Chemistry.Reagent
         /// </summary>
         [DataField]
         public bool WorksOnTheDead;
+
+        // Box Change Start - SynthMetabolism
+        /// <summary>
+        /// List of Metabolizer Categories this Reagent falls under
+        /// Defaults to Organic
+        /// </summary>
+        [DataField]
+        public HashSet<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories = ["Organic"];
+        // Box Change End
 
         [DataField, AlwaysPushInheritance]
         public ReagentMetabolisms? Metabolisms;
