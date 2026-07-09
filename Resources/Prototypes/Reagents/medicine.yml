@@ -137,9 +137,10 @@
             Brute: 1.5
 
 - type: reagent
-  id: Bicaridine
+  id: WizDenBicaridine # Box Change - Bicaridine > WizDenBicaridine - Hardfork AdmiralChem
   name: reagent-name-bicaridine
   group: Medicine
+  abstract: true # Box Change - Hardfork AdmiralChem
   desc: reagent-desc-bicaridine
   physicalDesc: reagent-physical-desc-opaque
   flavor: medicine
@@ -1040,9 +1041,10 @@
         probability: 0.1
 
 - type: reagent
-  id: Sigynate
+  id: WizDenSigynate # Box Change - Sigynate > WizDenSigynate - Hardfork AdmiralChem
   name: reagent-name-sigynate
   group: Medicine
+  abstract: true # Box Change - Hardfork AdmiralChem
   desc: reagent-desc-sigynate
   physicalDesc: reagent-physical-desc-thick
   flavor: sweet
@@ -1100,9 +1102,10 @@
         probability: 0.2
 
 - type: reagent
-  id: Lacerinol
+  id: WizDenLacerinol # Box Change - Lacerinol > WizDenLacerinol - Hardfork AdmiralChem
   name: reagent-name-lacerinol
   group: Medicine
+  abstract: true # Box Change - Hardfork AdmiralChem
   desc: reagent-desc-lacerinol
   physicalDesc: reagent-physical-desc-viscous
   flavor: syrupy
@@ -1126,9 +1129,10 @@
             Cold: 3 # Box - 1.5 > 3 - Revert Advanced Chem Change
 
 - type: reagent
-  id: Puncturase
+  id: WizDenPuncturase # Box Change - Puncturase > WizDenPuncturase - Hardfork AdmiralChem
   name: reagent-name-puncturase
   group: Medicine
+  abstract: true # Box Change - Hardfork AdmiralChem
   desc: reagent-desc-puncturase
   physicalDesc: reagent-physical-desc-fizzy
   flavor: fizzy
@@ -1153,9 +1157,10 @@
             Blunt: 5 # Box - 3 > 5 - Revert Advanced Chem Change
 
 - type: reagent
-  id: Bruizine
+  id: WizDenBruizine # Box Change - Bruizine > WizDenBruizine - Hardfork AdmiralChem
   name: reagent-name-bruizine
   group: Medicine
+  abstract: true # Box Change - Hardfork AdmiralChem
   desc: reagent-desc-bruizine
   physicalDesc: reagent-physical-desc-mucus-like
   flavor: sour
@@ -1266,9 +1271,10 @@
         probability: 0.2
 
 - type: reagent
-  id: Insuzine
+  id: WizDenInsuzine # Box Change - Insuzine > WizDenInsuzine - Hardfork AdmiralChem
   name: reagent-name-insuzine
   group: Medicine
+  abstract: true # Box Change - Hardfork AdmiralChem
   desc: reagent-desc-insuzine
   physicalDesc: reagent-physical-desc-frosty
   flavor: metallic
