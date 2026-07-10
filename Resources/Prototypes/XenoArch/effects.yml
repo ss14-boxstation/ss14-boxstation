@@ -1051,10 +1051,10 @@
     - Mold
     - Amatoxin
 #Box Change Start - Adds Synthchems to Artifact Systems
-    # - Bootloop # SynthChem - Disabled until artificial metabolism can be reimplemented
-    # - WeedDotExe
-    # - CIH
-    # - Surge
+    - Bootloop
+    - WeedDotExe
+    - CIH
+    - Surge
 #Box Change End - Adds Synthchems to Artifact Systems
 
 - type: entity
@@ -1087,12 +1087,12 @@
     - Pax
     - Siderlac
 #Box Change Start - Adds Synthchems to Artifact Systems
-    # - SmartMetal # SynthChem - Disabled until artificial metabolism can be reimplemented
-    # - RoutineMaintenance
-    # - Cryosilicate
-    # - Nanoweldite
-    # - Surge
-    # - Overclocker
+    - SmartMetal
+    - RoutineMaintenance
+    - Cryosilicate
+    - Nanoweldite
+    - Surge
+    - Overclocker
 #Box Change End - Adds Synthchems to Artifact Systems
 
 - type: entity
