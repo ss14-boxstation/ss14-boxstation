@@ -71,22 +71,12 @@
       effects:
       - !type:Vomit
         conditions:
-        # Box Change Start - IPCs
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         - !type:ReagentCondition
           reagent: SoapReagent
           min: 6
         probability: 0.20
       - !type:Vomit
         conditions:
-        # Box Change Start - IPCs
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         - !type:ReagentCondition
           reagent: SoapReagent
           min: 6
