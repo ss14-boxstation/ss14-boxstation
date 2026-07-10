@@ -365,7 +365,7 @@
   physicalDesc: reagent-physical-desc-shiny
   flavor: metallic
   color: "#0f52ba"
-  metabolismCategories: [ Artificial ]
+  metabolismCategories: [ Organic, Artificial ]
   metabolisms:
     Bloodstream:
       effects:
