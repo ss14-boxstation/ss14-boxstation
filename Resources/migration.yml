@@ -784,3 +784,7 @@ SpacemenFigureSpawner: SpacemenFigurineSpawner90
 
 # 2026-06-13 BoxStation
 LidSalami: null
+
+# 2026-07-10 BoxStation - Dove Station port
+ChemistryEmptyVial: BaseChemistryEmptyVial
+Magic9Ball: null
