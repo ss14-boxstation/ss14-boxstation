@@ -143,6 +143,7 @@
   color: "#a1000b"
   boilingPoint: 78.2 # This isn't a real chemical...
   meltingPoint: -19.4
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 20
@@ -160,6 +161,12 @@
           types:
             Caustic: 0.5
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.3
   metabolisms:
@@ -176,22 +183,14 @@
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.3
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   metabolismRate : 3.00
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 11.0
-    #   - !type:PopupMessage
-    #     type: Local
-    #     visualType: Large
-    #     messages: [ "generic-reagent-effect-burning-insides" ]
-    #     probability: 0.33
-    # Box Change End
 
 - type: reagent
   id: FerrochromicAcid
@@ -224,6 +223,7 @@
   color: "#5050ff"
   boilingPoint: 165
   meltingPoint: -87
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -234,6 +234,12 @@
           types:
             Caustic: 0.3
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.2
   metabolisms:
@@ -250,22 +256,14 @@
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.25
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 8
-    #   - !type:PopupMessage
-    #     type: Local
-    #     visualType: Large
-    #     messages: [ "generic-reagent-effect-burning-insides" ]
-    #     probability: 0.33
-    # Box Change End
 
 - type: reagent
   id: SulfuricAcid
@@ -280,6 +278,7 @@
   recognizable: true
   boilingPoint: 337.0
   meltingPoint: 10.31
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   plantMetabolism:
   - !type:PlantAdjustToxins
     amount: 10
@@ -297,6 +296,12 @@
           types:
             Caustic: 0.1
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.1
   metabolisms:
@@ -313,22 +318,14 @@
         messages: [ "generic-reagent-effect-burning-insides" ]
         probability: 0.33
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.2
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   metabolismRate: 3.00 # Okay damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 5
-    #   - !type:PopupMessage
-    #     type: Local
-    #     visualType: Large
-    #     messages: [ "generic-reagent-effect-burning-insides" ]
-    #     probability: 0.33
-    # Box Change End
 
 - type: reagent
   id: UnstableMutagen
@@ -519,6 +516,7 @@
   flavor: bitter
   color: "#7e916e"
   worksOnTheDead: true
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem - IPCs can now be affected by romerol injection
   metabolisms:
     Bloodstream:
       effects:
@@ -527,15 +525,6 @@
             - !type:ReagentCondition
               reagent: Romerol
               min: 5
-    # Box Change Start: IPCs can now be affected by romerol injection
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #     - !type:CauseZombieInfection
-    #       conditions:
-    #         - !type:ReagentCondition
-    #           reagent: Romerol
-    #           min: 5
-    # Box change end
 
 - type: reagent
   id: UncookedAnimalProteins
@@ -551,7 +540,7 @@
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, IPC ] # Box Change - Add IPC metab tag
+          type: [ Animal, Vox ]
           inverted: true
         type: Local
         visualType: MediumCaution
@@ -561,12 +550,12 @@
         probability: 0.1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant, IPC ] # Box Change - Add IPC metab tag
+          type: [ Animal, Vox, Plant ]
           inverted: true
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox, Plant, IPC ] # Box Change - Add IPC metab tag
+          type: [ Animal, Vox, Plant ]
           inverted: true
         damage:
           types:
@@ -624,6 +613,7 @@
   - Security
   - Medical
   color: "#AAAAAA"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem - This should probably be its own Pax-derived Software chem, but fuck it.
   metabolisms:
     Bloodstream:
       effects:
@@ -631,14 +621,6 @@
         key: Pacified
         component: Pacified
         time: 4
-    # Box Change Start - IPC Chem
-    # Industrial: # This should probably be its own Pax-derived Software chem, but fuck it. # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:GenericStatusEffect
-    #     key: Pacified
-    #     component: Pacified
-    #     time: 4
-    # Box Change End
 
 - type: reagent
   id: Honk
@@ -743,6 +725,7 @@
   contrabandSeverity: Syndicate
   flavor: shocking
   color: "#FDD023"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Bloodstream:
       metabolismRate: 2.0
@@ -750,16 +733,15 @@
       - !type:Electrocute
         electrocuteTime: 1
         probability: 0.5
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:Electrocute
-    #     probability: 0.8
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Shock: 1
-    # Box Change End
+      # Box Change Start - SynthChem
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+        damage:
+          types:
+            Shock: 1
+      # Box Change End
 
 - type: reagent
   id: Lipolicide
@@ -834,6 +816,7 @@
   desc: reagent-desc-toxintrash
   flavor: trashy
   physicalDesc: reagent-physical-desc-nondescript
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Digestion:
       effects:
@@ -842,7 +825,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Vox]
-      # Box Change Start - IPCs
+      # Box Change Start - SynthChem
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition

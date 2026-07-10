@@ -85,6 +85,7 @@
   color: "#ba85cc"
   boilingPoint: -188.11
   meltingPoint: -219.67
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   plantMetabolism:
     - !type:PlantAdjustWater
       amount: -0.5
@@ -102,14 +103,7 @@
           types:
             Caustic: 0.5
             Poison: 0.5
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 0.5
-    # Box Change End
+
 - type: reagent
   id: Gold
   name: reagent-name-gold
@@ -299,6 +293,7 @@
   color: "#fff385"
   boilingPoint: 445.0
   meltingPoint: 120.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Bloodstream:
       effects:
@@ -306,14 +301,6 @@
         damage:
           types:
             Caustic: 0.1
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 0.1
-    # Box Change End
 
 - type: reagent
   id: Sodium
@@ -336,6 +323,7 @@
   color: "#8fa191"
   meltingPoint: 1133.0
   boilingPoint: 4131.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   plantMetabolism:
   - !type:PlantAdjustMutationLevel
     amount: 0.6
@@ -353,14 +341,6 @@
         damage:
           types:
             Radiation: 2
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Radiation: 2
-    # Box Change End
 
 - type: reagent
   id: Zinc

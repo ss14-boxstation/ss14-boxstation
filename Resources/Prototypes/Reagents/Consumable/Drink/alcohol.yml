@@ -151,7 +151,7 @@
           reagent: Ethanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf, IPC ] # Box Change - Add IPC metab tag
+          type: [ Dwarf ]
           inverted: true
         damage:
           types:
@@ -185,15 +185,9 @@
           min: 12
         # dwarves immune to vomiting from alcohol
         - !type:MetabolizerTypeCondition
-          type: [ Dwarf, IPC ] # Box Change - Add IPC metab tag
+          type: [ Dwarf ]
           inverted: true
       - !type:Drunk
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         boozePower: 2
 
 - type: reagent
@@ -884,12 +878,6 @@
       - !type:SatiateHunger
         factor: -2
       - !type:HealthChange
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         damage:
           groups:
             Burn: -1
@@ -2115,29 +2103,12 @@
         - !type:ReagentCondition
           reagent: Mayojito
           min: 5
-        # Box Change Start - IPCs
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         probability: 0.5
       - !type:HealthChange
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         damage:
           types:
             Poison: .5
       - !type:SatiateThirst
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         factor: 1
 
 - type: reagent
@@ -2295,12 +2266,6 @@
       - !type:SatiateThirst
         factor: 3
       - !type:Drunk
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         boozePower: 10
       - !type:HealthChange
         conditions:
@@ -2308,7 +2273,7 @@
           reagent: BacchusBlessing
           min: 6
         - !type:MetabolizerTypeCondition
-          type: [Dwarf, IPC] # Box Change - Add IPC metab tag
+          type: [Dwarf]
           inverted: true
         damage:
           types:
@@ -2330,5 +2295,5 @@
           reagent: BacchusBlessing
           min: 8
         - !type:MetabolizerTypeCondition
-          type: [Dwarf, IPC] # Box Change - Add IPC metab tag
+          type: [Dwarf]
           inverted: true
