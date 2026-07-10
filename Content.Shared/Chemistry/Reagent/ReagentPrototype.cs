@@ -257,6 +257,8 @@ namespace Content.Shared.Chemistry.Reagent
 
         public List<string>? PlantMetabolisms = null;
 
+        public List<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories; // Box Change - SyntChem metabolism categories
+
         public ReagentGuideEntry(ReagentPrototype proto, IPrototypeManager prototype, IEntitySystemManager entSys)
         {
             ReagentPrototype = proto.ID;
@@ -268,6 +270,7 @@ namespace Content.Shared.Chemistry.Reagent
                 PlantMetabolisms =
                     new List<string>(proto.GuidebookReagentEffectsDescription(prototype, entSys, proto.PlantMetabolisms, FixedPoint2.New(1f)));
             }
+            MetabolismCategories = proto.MetabolismCategories.ToList(); // Box Change - SyntChem metabolism categories
         }
     }
 
