@@ -20,7 +20,7 @@
   - type: StorageFill
     contents:
     - id: IPCOilPack
-    # - id: Silipen # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   amount: 2
+    - id: Silipen
+      amount: 2
     - id: RobotBurnPatch
     - id: RobotTraumaPatch
