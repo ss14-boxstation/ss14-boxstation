@@ -83,7 +83,7 @@ public sealed partial class MetabolizerComponent : Component
 
     // Box Change Start - SynthMetabolism
     /// <summary>
-    ///    List of Metabolizer Categories that this organ can process (ex. Organic, Artifial)
+    ///    List of Metabolizer Categories that this organ can process (ex. Organic, Artificial)
     ///    Defaults to Organic
     /// </summary>
     [DataField]
