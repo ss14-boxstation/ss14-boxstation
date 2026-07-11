@@ -130,11 +130,6 @@
       - !type:Vomit
         probability: 0.1
         conditions:
-        # Box Change Start - IPCs
-          - !type:MetabolizerTypeCondition
-            type: [IPC]
-            inverted: true
-        # Box Change End
           - !type:ReagentCondition
             reagent: Vinegar
             min: 6

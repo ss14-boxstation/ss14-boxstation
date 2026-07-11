@@ -17,6 +17,7 @@
   color: "#E7EA91"
   boilingPoint: 55.5
   meltingPoint: -50.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Bloodstream:
       effects:
@@ -25,14 +26,6 @@
           types:
             Caustic: 1
             Poison: 2 # Phenol is definitely not safe
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 1
-    # Box Change End
 
 - type: reagent
   id: Charcoal
@@ -91,6 +84,7 @@
   allowedDepartments:
   - Science
   color: "#776291"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Bloodstream:
       effects:
@@ -98,14 +92,6 @@
         damage:
           types:
             Caustic: 2
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Caustic: 2
-    # Box Change End
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -225,6 +211,7 @@
   group: Biological
   flavor: tingly
   physicalDesc: reagent-physical-desc-refreshing
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   color: "#bf1365"
   metabolisms:
     Bloodstream:
@@ -237,15 +224,3 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 120
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       groups:
-    #         Brute: -4
-    #   - !type:GenericStatusEffect
-    #     key: Adrenaline
-    #     component: IgnoreSlowOnDamage
-    #     time: 120
-    # Box Change End

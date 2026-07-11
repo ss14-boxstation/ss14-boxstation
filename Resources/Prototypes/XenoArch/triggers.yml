@@ -250,8 +250,9 @@
     - AmmoniaBlood
     - ZombieBlood
     - Sap
-    # - IPCOil #Box Change - IPC blood can be used for artifacts # SynthChem - Disabled until artificial metabolism can be reimplemented
+    - IPCOil #Box Change - IPC blood can be used for artifacts
     - ShimmeringBlood #Box Change - imp - thaven blood compatibility
+    - BloodAllulalo # Box Change
 
 - type: xenoArchTrigger
   id: TriggerThrow

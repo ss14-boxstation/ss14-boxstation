@@ -314,6 +314,7 @@
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
   color: "#ffff00"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem - Sure, clown weed works for IPCs. Why not.
   metabolisms:
     Bloodstream:
       effects:
@@ -321,14 +322,6 @@
         effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 5
-    # Box Change Start - IPC Chem - Sure, clown weed works for IPCs. Why not.
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:ModifyStatusEffect
-    #     effectProto: StatusEffectSeeingRainbow
-    #     type: Add
-    #     time: 5
-    # Box Change Eng
 
 # Probably replace this one with sleeping chem when putting someone in a comatose state is easier
 - type: reagent

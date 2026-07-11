@@ -51,6 +51,7 @@
   contrabandSeverity: Minor
   flavor: bee
   color: "#FFD35D"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   tileReactions:
   - !type:CreateEntityTileReaction
     entity: MobBee
@@ -98,6 +99,11 @@
         - !type:TagCondition
           inverted: true
           tag: Bee
+        # Box Change Start - IPCs
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
       - !type:PopupMessage
         type: Local
         visualType: Medium
@@ -136,61 +142,6 @@
         - !type:TagCondition
           inverted: true
           tag: Bee
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:PopupMessage
-    #     type: Local
-    #     visualType: MediumCaution
-    #     messages:
-    #     - "buzzochloricbees-effect-oh-god-bees"
-    #     - "buzzochloricbees-effect-its-the-bees"
-    #     - "buzzochloricbees-effect-why-am-i-covered-in-bees"
-    #     - "buzzochloricbees-effect-one-with-the-bees"
-    #     - "buzzochloricbees-effect-squeaky-clean"
-    #     probability: 0.1
-    #     conditions:
-    #     - !type:TagCondition
-    #       inverted: true
-    #       tag: Bee
-    #   - !type:PopupMessage
-    #     type: Local
-    #     visualType: Medium
-    #     messages:
-    #       - "buzzochloricbees-effect-licoxide-electrifying"
-    #       - "buzzochloricbees-effect-licoxide-shocked-by-bee-facts"
-    #       - "buzzochloricbees-effect-licoxide-buzzed"
-    #       - "buzzochloricbees-effect-licoxide-buzzes"
-    #     probability: 0.05
-    #     conditions:
-    #     - !type:TagCondition
-    #       inverted: true
-    #       tag: Bee
-    #     - !type:ReagentCondition
-    #       min: 0.01
-    #       reagent: Licoxide
-    #   - !type:PopupMessage
-    #     type: Local
-    #     messages:
-    #       - "buzzochloricbees-effect-fiber-hairy"
-    #       - "buzzochloricbees-effect-fiber-soft"
-    #     probability: 0.05
-    #     conditions:
-    #     - !type:TagCondition
-    #       inverted: true
-    #       tag: Bee
-    #     - !type:ReagentCondition
-    #       min: 0.01
-    #       reagent: Fiber
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Piercing: 2
-    #     conditions:
-    #     - !type:TagCondition
-    #       inverted: true
-    #       tag: Bee
-    # Box Change End
 
 - type: reagent
   id: GroundBee
@@ -217,6 +168,7 @@
   contrabandSeverity: Minor
   flavor: shocking
   color: "#FDD023"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Bloodstream:
       metabolismRate: 2.0
@@ -224,16 +176,15 @@
       - !type:Electrocute
         siemensCoefficient: 0.5
         probability: 0.5
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #   - !type:Electrocute
-    #     probability: 0.35
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #         Shock: 0.1
-    # Box Change End
+      # Box Change Start - SynthChem
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
+        damage:
+          types:
+            Shock: 0.1
+      # Box Change End
 
 - type: reagent
   id: Razorium
@@ -245,6 +196,7 @@
   physicalDesc: reagent-physical-desc-reflective
   flavor: sharp
   color: "#e3fffb"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -255,6 +207,12 @@
           types:
             Slash: 0.25
       - !type:Emote
+        # Box Change Start - IPCs
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [IPC]
+          inverted: true
+        # Box Change End
         emote: Scream
         probability: 0.7
   metabolisms:
@@ -273,19 +231,6 @@
       - !type:Emote
         emote: Scream
         probability: 0.3
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   metabolismRate : 3.00
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #          Slash : 9
-    #   - !type:PopupMessage
-    #     type: Local
-    #     visualType: LargeCaution
-    #     messages: [ "generic-reagent-effect-slicing-insides"]
-    # Box Change End
 
 - type: reagent
   id: Fresium
@@ -301,6 +246,7 @@
   color: "#b3f1ff"
   boilingPoint: 50.0
   meltingPoint: 45.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   tileReactions:
   - !type:CreateEntityTileReaction
     entity: IceCrust
@@ -380,62 +326,6 @@
         visualType: LargeCaution
         messages: [ "fresium-effect-frozen"]
         probability: 0.4
-    # Box Change Start - IPC Chem
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   metabolismRate : 0.45
-    #   effects:
-    #   - !type:HealthChange
-    #     damage:
-    #       types:
-    #          Cold: 0.01 # slightly nips directly, other cold damage comes from the temp change
-    #          Heat: -3 # ghetto burn chem. i don't think anyone would use this intentionally but it's funny
-    #   - !type:PopupMessage
-    #     conditions:
-    #     - !type:ReagentCondition
-    #       reagent: Fresium
-    #       max: 35
-    #     type: Local
-    #     visualType: LargeCaution
-    #     messages: [ "fresium-effect-freeze-insides"]
-    #     probability: 0.05
-    #   - !type:PopupMessage
-    #     conditions:
-    #     - !type:ReagentCondition
-    #       reagent: Fresium
-    #       max: 35
-    #     type: Local
-    #     visualType: LargeCaution
-    #     messages: [ "fresium-effect-slow"]
-    #     probability: 0.2
-    #   - !type:AdjustTemperature
-    #     conditions:
-    #     - !type:TemperatureCondition
-    #       min: 160.15 # not quite enough for cryo, but can speed it up if you wanna take the risk
-    #     amount: -10000
-    #   - !type:MovementSpeedModifier
-    #     conditions:
-    #     - !type:ReagentCondition
-    #       reagent: Fresium
-    #       max: 40 # slows when less than 40
-    #     walkSpeedModifier: 0.6
-    #     sprintSpeedModifier: 0.6
-    #   - !type:MovementSpeedModifier
-    #     conditions:
-    #     - !type:ReagentCondition
-    #       reagent: Fresium
-    #       min: 40 # your legs stop working when above 40
-    #     walkSpeedModifier: 0.00
-    #     sprintSpeedModifier: 0.00
-    #   - !type:PopupMessage
-    #     conditions:
-    #     - !type:ReagentCondition
-    #       reagent: Fresium
-    #       min: 40
-    #     type: Local
-    #     visualType: LargeCaution
-    #     messages: [ "fresium-effect-frozen"]
-    #     probability: 0.4
-    # Box Change End
 
 - type: reagent
   id: Laughter

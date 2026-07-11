@@ -7,7 +7,7 @@
       weight: 5
       reagents:
       - Stimulants
-      # - Mechazine # Box Change - Box Change - adds Synthchems to world reagent spawners # SynthChem - Disabled until artificial metabolism can be reimplemented
+      - Mechazine # Box Change - Box Change - adds Synthchems to world reagent spawners
     - quantity: 10
       weight: 5
       reagents:
@@ -33,9 +33,9 @@
       - PolypyryliumOligomers
       - Charcoal
 # Box Change Start - adds Synthchems to world reagent spawners
-      # - SmartMetal # SynthChem - Disabled until artificial metabolism can be reimplemented
-      # - RoutineMaintenance
-      # - Nanoweldite
+      - SmartMetal
+      - RoutineMaintenance
+      - Nanoweldite
 # Box Change End - adds Synthchems to world reagent spawners
   # Neutral - weight: 20
     - quantity: 20
@@ -55,14 +55,14 @@
       - Mustard
       - HorseradishSauce
  #Box Change Start - adds Synthchems to world reagent spawners
-      # - WeedDotExe # SynthChem - Disabled until artificial metabolism can be reimplemented
-      # - SOISapphire
-      # - ECCMemory
-      # - Polydimethylsiloxane
-      # - Degreaser
-      # - ThermalPaste
-      # - ComputerCoolant
-      # - Bitflipper
+      - WeedDotExe
+      - SOISapphire
+      - ECCMemory
+      - Polydimethylsiloxane
+      - Degreaser
+      - ThermalPaste
+      - ComputerCoolant
+      - Bitflipper
  #Box Change End - adds Synthchems to world reagent spawners
     - quantity: 5
       weight: 2.5
@@ -84,12 +84,12 @@
       - Razorium
       - Potassium
       - Phlogiston
-      # - Bootloop  #Box Change - adds Synthchems to world reagent spawners # SynthChem - Disabled until artificial metabolism can be reimplemented
+      - Bootloop  #Box Change - adds Synthchems to world reagent spawners
     - quantity: 5
       weight: 4
       reagents:
       - Toxin
-      # - CIH #Box Change - adds Synthchems to world reagent spawners # SynthChem - Disabled until artificial metabolism can be reimplemented
+      - CIH #Box Change - adds Synthchems to world reagent spawners
   # Very Bad - weight: 15
     - quantity: 20
       weight: 2.5
@@ -103,7 +103,7 @@
       - BuzzochloricBees
       - Amatoxin
       - Tazinide
-      # - ZipBomb #Box Change - adds Synthchems to world reagent spawners # SynthChem - Disabled until artificial metabolism can be reimplemented
+      - ZipBomb #Box Change - adds Synthchems to world reagent spawners
     - quantity: 5
       weight: 2.5
       reagents:

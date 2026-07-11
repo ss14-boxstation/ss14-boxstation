@@ -121,13 +121,13 @@
       - DrinkTheMartinez
       - DrinkMoonshineGlass
 # Box Change Start - Synthanol Drinks
-      # - DrinkIPCAGlass # SynthChem - Disabled until artificial metabolism can be reimplemented
-      # - DrinkRobotTearsGlass
-      # - DrinkTrinaryGlass
-      # - DrinkServoGlass
-      # - DrinkSynthNSodaGlass
-      # - DrinkSynthignonGlass
-      # - DrinkUplinkGlass
+      - DrinkIPCAGlass
+      - DrinkRobotTearsGlass
+      - DrinkTrinaryGlass
+      - DrinkServoGlass
+      - DrinkSynthNSodaGlass
+      - DrinkSynthignonGlass
+      - DrinkUplinkGlass
 # Box Change End
     chance: 0.8
     offset: 0.0

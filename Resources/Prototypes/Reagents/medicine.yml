@@ -652,6 +652,7 @@
   physicalDesc: reagent-physical-desc-crisp
   flavor: medicine
   color: "#86caf7"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem - Lets IPCs metabolize Ambuzol
   metabolisms:
     Bloodstream:
       effects:
@@ -660,15 +661,6 @@
             - !type:ReagentCondition
               reagent: Ambuzol
               min: 10
-#Box Change Start - Lets IPCs metabolize Ambuzol
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #   effects:
-    #     - !type:CureZombieInfection
-    #       conditions:
-    #         - !type:ReagentCondition
-    #           reagent: Ambuzol
-    #           min: 10
-#Box Change End - Lets IPCs metabolize Ambuzol
 
 - type: reagent
   id: AmbuzolPlus
@@ -678,6 +670,7 @@
   physicalDesc: reagent-physical-desc-crisp
   flavor: medicine
   color: "#1274b5"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem - Lets IPCs metabolize Ambuzol+
   metabolisms:
     Bloodstream:
       effects:
@@ -687,16 +680,6 @@
             - !type:ReagentCondition
               reagent: AmbuzolPlus
               min: 5
-#Box Change Start - Lets IPCs metabolize Ambuzol+
-    # Industrial: # SynthChem - Disabled until artificial metabolism can be reimplemented
-    #     effects:
-    #     - !type:CureZombieInfection
-    #       innoculate: true
-    #       conditions:
-    #         - !type:ReagentCondition
-    #           reagent: AmbuzolPlus
-    #           min: 5
-#Box Change End - Lets IPCs metabolize Ambuzol+
 
 - type: reagent
   id: PulpedBananaPeel
@@ -729,7 +712,7 @@
           # start harmony change
           conditions:
           - !type:MetabolizerTypeCondition
-            type: [ Avali, IPC ] # Box Change - Add IPC metab condition
+            type: [ Avali ]
             inverted: true
           # end harmony change
           amount: 6
