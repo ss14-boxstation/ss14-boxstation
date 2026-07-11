@@ -14,7 +14,7 @@
 - type: entity
   parent: [ BaseSubfloorAnchorStorageAnchored, BriefcaseSecure, BaseSyndicateContraband ] #Box Change - BriefcaseSyndi --> BriefcaseSecure
   id: BriefcaseSyndieDeadDrop
-  categories [ DoNotMap ] # Box Change
+  categories: [ DoNotMap ] # Box Change
   name: syndicate briefcase
   suffix: Dead Drop, Box # Box Change - Adjust Suffix
   description: A robust operatives briefcase with a MI13 patent lock. Accessible only to those with Syndicate access, or the patience to force it open.
