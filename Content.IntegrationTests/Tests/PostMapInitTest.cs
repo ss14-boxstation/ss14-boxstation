@@ -123,6 +123,7 @@ namespace Content.IntegrationTests.Tests
 			"Elkridge", // Harmony, Developed by deerstop, maintained by luckyshotpictures
 			"Wapiti", // Harmony, Developed by deerstop, maintained by luckyshotpictures
             "Amber", // Harmony, Developed by Southbridge, maintained by whythelettuce
+            "Dove", // Box, Ported from Harmony, By TillsterRulz
             "Dev",
             "TestTeg",
             "Fland",
