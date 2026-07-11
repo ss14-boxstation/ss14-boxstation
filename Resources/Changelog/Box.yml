@@ -1117,3 +1117,24 @@
   id: 131
   time: '2026-07-11T06:23:26.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/181
+- author: BlueMoon059
+  changes:
+  - message: Adds a crashed syndicate freighter to the roundstart salvage ruins pool,
+      made by BlueMoon059.
+    type: Add
+  - message: Adds an abandoned shipyard to the roundstart salvage ruins pool, made
+      by HiddenSoundTest.
+    type: Add
+  - message: Several salvage ruins have been replaced with modern versions courtesy
+      of Collectionofbones128
+    type: Tweak
+  id: 132
+  time: '2026-07-11T14:19:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/162
+- author: BlueMoon059
+  changes:
+  - message: Adds new carp and sharkminnow variants, ported from Starcup.
+    type: Add
+  id: 133
+  time: '2026-07-11T14:20:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/159
