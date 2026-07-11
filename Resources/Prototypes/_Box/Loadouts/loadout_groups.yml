@@ -50,3 +50,180 @@
   loadouts:
   - YellowJumpsuit
   - YellowJumpskirt
+
+# Headsets
+- type: loadoutGroup
+  id: HeadsetsPassenger
+  name: loadout-group-headset-passenger
+  loadouts:
+  - ClothingHeadsetGrey
+  - ClothingWristsetGrey
+
+- type: loadoutGroup
+  id: HeadsetsCaptain
+  name: loadout-group-headset-captain
+  loadouts:
+  - ClothingHeadsetCommand
+  - ClothingHeadsetAltCommand
+  - ClothingWristsetCaptain
+  
+- type: loadoutGroup
+  id: HeadsetsHoP
+  name: loadout-group-headset-hop
+  loadouts:
+  - ClothingHeadsetCommand
+  - ClothingHeadsetAltCommand
+  - ClothingWristsetHoP
+
+- type: loadoutGroup
+  id: HeadsetsHoS
+  name: loadout-group-headset-hos
+  loadouts:
+  - ClothingHeadsetAltSecurity
+  - ClothingWristsetHoS
+
+- type: loadoutGroup
+  id: HeadsetsWarden
+  name: loadout-group-headset-warden
+  loadouts:
+  - ClothingHeadsetWarden
+  - ClothingHeadsetAltWarden
+  - ClothingWristsetWarden
+
+- type: loadoutGroup
+  id: HeadsetsRD
+  name: loadout-group-headset-rd
+  loadouts:
+  - ClothingHeadsetRD
+  - ClothingHeadsetAltScience
+  - ClothingWristsetRD
+
+- type: loadoutGroup
+  id: HeadsetsCE
+  name: loadout-group-headset-ce
+  loadouts:
+  - ClothingHeadsetCE
+  - ClothingHeadsetAltEngineering
+  - ClothingWristsetCE
+
+- type: loadoutGroup
+  id: HeadsetsCMO
+  name: loadout-group-headset-cmo
+  loadouts:
+  - ClothingHeadsetCMO
+  - ClothingHeadsetAltMedical
+  - ClothingWristsetCMO
+
+- type: loadoutGroup
+  id: HeadsetsQM
+  name: loadout-group-headset-qm
+  loadouts:
+  - ClothingHeadsetQM
+  - ClothingHeadsetAltCargo
+  - ClothingWristsetQM
+
+- type: loadoutGroup
+  id: HeadsetsService
+  name: loadout-group-headset-service
+  loadouts:
+  - ClothingHeadsetService
+  - ClothingWristsetService
+
+- type: loadoutGroup
+  id: HeadsetsJanitor
+  name: loadout-group-headset-janitor
+  loadouts:
+  - ClothingHeadsetService
+  - ClothingWristsetService
+  - ClothingWristsetServiceJanitor
+
+- type: loadoutGroup
+  id: HeadsetsBotanist
+  name: loadout-group-headset-botanist
+  loadouts:
+  - ClothingHeadsetService
+  - ClothingWristsetService
+  - ClothingWristsetServiceBotany
+
+- type: loadoutGroup
+  id: HeadsetsClown
+  name: loadout-group-headset-clown
+  loadouts:
+  - ClothingHeadsetService
+  - ClothingWristsetService
+  - ClothingWristsetServiceClown
+
+- type: loadoutGroup
+  id: HeadsetsMime
+  name: loadout-group-headset-mime
+  loadouts:
+  - ClothingHeadsetService
+  - ClothingWristsetService
+  - ClothingWristsetServiceMime
+
+- type: loadoutGroup
+  id: HeadsetsCargo
+  name: loadout-group-headset-cargo
+  loadouts:
+  - ClothingHeadsetCargo
+  - ClothingWristsetCargo
+
+- type: loadoutGroup
+  id: HeadsetsSalvage
+  name: loadout-group-headset-salvage
+  loadouts:
+  - ClothingHeadsetMining
+  - ClothingWristsetMining
+
+- type: loadoutGroup
+  id: HeadsetsEngineering
+  name: loadout-group-headset-engineering
+  loadouts:
+  - ClothingHeadsetEngineering
+  - ClothingWristsetEngineering
+
+- type: loadoutGroup
+  id: HeadsetsAtmos
+  name: loadout-group-headset-atmos
+  loadouts:
+  - ClothingHeadsetEngineering
+  - ClothingWristsetEngineering
+  - ClothingWristsetAtmospherics
+
+- type: loadoutGroup
+  id: HeadsetsScience
+  name: loadout-group-headset-science
+  loadouts:
+  - ClothingHeadsetScience
+  - ClothingWristsetScience
+  - ClothingWristsetRobotics
+
+- type: loadoutGroup
+  id: HeadsetsSecurity
+  name: loadout-group-headset-security
+  loadouts:
+  - ClothingHeadsetSecurity
+  - ClothingWristsetSecurity
+
+- type: loadoutGroup
+  id: HeadsetsDoctor
+  name: loadout-group-headset-doctor
+  loadouts:
+  - ClothingHeadsetMedical
+  - ClothingWristsetMedical
+
+- type: loadoutGroup
+  id: HeadsetsChemist
+  name: loadout-group-headset-chemist
+  loadouts:
+  - ClothingHeadsetMedical
+  - ClothingWristsetMedical
+  - ClothingWristsetChemist
+
+- type: loadoutGroup
+  id: HeadsetsParamedic
+  name: loadout-group-headset-paramedic
+  loadouts:
+  - ClothingHeadsetMedical
+  - ClothingWristsetMedical
+  - ClothingWristsetParamedic

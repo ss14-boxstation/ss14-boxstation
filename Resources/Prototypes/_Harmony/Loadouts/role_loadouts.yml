@@ -4,6 +4,7 @@
   id: JobZookeeper
   groups:
   - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
   - CommonBackpack
   - Glasses
   - Survival
@@ -15,6 +16,7 @@
   id: JobBoxer
   groups:
   - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
   - BoxerJumpsuit
   - BoxerGloves
   - CommonBackpack
