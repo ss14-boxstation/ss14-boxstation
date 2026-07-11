@@ -1138,3 +1138,11 @@
   id: 133
   time: '2026-07-11T14:20:12.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/159
+- author: BlueMoon059
+  changes:
+  - message: The Syndicate will now ocasionally teleport secure briefcases with contraband
+      onto the station in support of their agents.
+    type: Add
+  id: 134
+  time: '2026-07-11T16:39:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/169
