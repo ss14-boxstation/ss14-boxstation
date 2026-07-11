@@ -5,7 +5,8 @@ using Content.Shared.GameTicking.Components;
 using Content.Server.Radio.EntitySystems;
 using Content.Server.Pinpointer;
 using Robust.Shared.Utility;
-// Box - Moffstation - End
+//Box - Moffstation - End
+
 namespace Content.Server.StationEvents.Events;
 
 public sealed class RandomSpawnRule : StationEventSystem<RandomSpawnRuleComponent>
