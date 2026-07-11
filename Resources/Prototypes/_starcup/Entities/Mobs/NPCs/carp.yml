@@ -1,5 +1,5 @@
 - type: entity
-  suffix: splitfin
+  suffix: splitfin, Box
   parent: MobCarp
   id: MobCarpSplitfin
   components:
@@ -289,7 +289,7 @@
 - type: entity
   parent: MobCarpVampire
   id: MobCarpSalvageVampire
-  suffix: Salvage Ruleset Box
+  suffix: Salvage Ruleset, Box
   components:
   - type: SalvageMobRestrictions
 
