@@ -1100,3 +1100,13 @@
   id: 129
   time: '2026-07-09T10:10:30.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/193
+- author: BlueMoon059
+  changes:
+  - message: The Head of Security and the Warden lockers have gained a flatpacked
+      cyborg recharging station for IPC prisoners.
+    type: Add
+  - message: The Head of Security no longer starts with a WT-550.
+    type: Remove
+  id: 130
+  time: '2026-07-11T06:10:41.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/161
