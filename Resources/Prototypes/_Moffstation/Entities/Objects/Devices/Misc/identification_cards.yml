@@ -3,6 +3,6 @@
   parent: SyndicateIDCard
   id: SyndicateIDCardAgent
   description: A card necessary to access various areas aboard the station. Comes with access duplication functionality.
-  suffix: Agent
+  suffix: Agent, Box # Box Change - Adjust Suffix
   components:
   - type: AgentIDCard
