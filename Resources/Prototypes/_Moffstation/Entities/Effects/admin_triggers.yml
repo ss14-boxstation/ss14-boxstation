@@ -1,6 +1,6 @@
 - type: entity
   id: AdminInstantEffectRedspace
-  suffix: RedspaceFlash
+  suffix: RedspaceFlash, Box # Box Change - Adjust Suffix
   parent: AdminInstantEffectBase
   components:
   - type: SpawnOnTrigger
