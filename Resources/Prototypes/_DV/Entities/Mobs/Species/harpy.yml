@@ -126,7 +126,10 @@
   - type: MovementSpeedModifier
 #    baseWalkSpeed: 2.5 # Frontier
 #    baseSprintSpeed: 5.0 # Frontier
-    weightlessAcceleration: 2.5
+    # Start Box Change: Move weightlessAcceleration to base, set modifier to 1 for better flight feel
+    baseWeightlessAcceleration: 2.5
+    baseWeightlessModifier: 1
+    # End Box Change
   - type: Inventory
     speciesId: harpy
     displacements:
