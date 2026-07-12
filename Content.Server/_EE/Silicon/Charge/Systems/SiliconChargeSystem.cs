@@ -9,7 +9,7 @@ using Content.Server.Popups;
 using Content.Shared.Popups;
 using Content.Shared._EE.Silicon.Systems;
 using Content.Shared.Movement.Systems;
-using Content.Server.Body.Components;
+using Content.Server.Body; // Box Change: Removed the .components at the end of the reference for nubody integration
 using Content.Shared.Mind.Components;
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.PowerCell;
@@ -32,8 +32,6 @@ namespace Content.Server._EE.Silicon.Charge;
 
 public sealed class SiliconChargeSystem : EntitySystem
 {
-// Box Change Start - Disable IPC Code until reimplementation
-    /*
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly FlammableSystem _flammable = default!;
@@ -226,7 +224,5 @@ public sealed class SiliconChargeSystem : EntitySystem
             siliconComp.DrainPerSecond * siliconComp.IdleDrainReduction * (-1), // Should be a maximum of the idle drain reduction (negative)
             0f); // Minimum reduction is no change to power draw
     }
-    // TheDen End - IPC Dynamic Power draw
-    */
-// Box Change End
+    // TheDen End - IPC Dynamic Power draw 
 }

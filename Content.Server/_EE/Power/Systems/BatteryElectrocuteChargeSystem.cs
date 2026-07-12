@@ -10,8 +10,7 @@ using Content.Server._EE.Power.Components;
 namespace Content.Server._EE.Power.Systems;
 
 public sealed class BatteryElectrocuteChargeSystem : EntitySystem
-{
-    /*
+{ 
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly BatterySystem _battery = default!;
@@ -39,6 +38,5 @@ public sealed class BatteryElectrocuteChargeSystem : EntitySystem
         _battery.SetCharge(uid, battery.CurrentCharge + charge);
 
         _popup.PopupEntity(Loc.GetString("battery-electrocute-charge"), uid, uid);
-    }
-    */
+    }   
 }

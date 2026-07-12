@@ -18,12 +18,9 @@ using Content.Server.Popups;
 namespace Content.Server._EE.Silicon.Death;
 
 public sealed class SiliconDeathSystem : EntitySystem
-{
-// Box Change Start - Disable IPC Code until reimplementation
-    /*
+{ 
     [Dependency] private readonly SleepingSystem _sleep = default!;
     [Dependency] private readonly SiliconChargeSystem _silicon = default!;
-    [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!; // starcup
     // Box Change Start - IPC No Battery Refactor
     [Dependency] private readonly SharedStunSystem _stun = default!;
@@ -71,12 +68,6 @@ public sealed class SiliconDeathSystem : EntitySystem
         // EntityManager.EnsureComponent<SleepingComponent>(uid);
         // _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
         // Box Change End
-
-        if (TryComp(uid, out HumanoidAppearanceComponent? humanoidAppearanceComponent))
-        {
-            var layers = HumanoidVisualLayersExtension.Sublayers(HumanoidVisualLayers.HeadSide);
-            _humanoidAppearanceSystem.SetLayersVisibility((uid, humanoidAppearanceComponent), layers, visible: false);
-        }
 
         siliconDeadComp.Dead = true;
 
@@ -186,6 +177,4 @@ public sealed class SiliconChargeAliveEvent : EntityEventArgs
         BatteryComp = batteryComp;
         BatteryUid = batteryUid;
     }
-    */
-// Box Change End
 }
