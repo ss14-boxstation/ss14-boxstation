@@ -108,6 +108,10 @@
             sprite: _Impstation/Mobs/Species/Thaven/displacement.rsi
             state: hands
   - type: Carriable # Box Change - Carrying system from Nyanotrasen
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box Change
 
 
 - type: entity

@@ -135,6 +135,10 @@
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
   - type: Carriable # Box Change - Carrying system from Nyanotrasen
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: humanFootprint
+  # End Box Change
 
 - type: entity
   save: false
