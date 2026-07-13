@@ -1,0 +1,85 @@
+- type: entity
+  save: false
+  id: BaseSpeciesMobSilicon
+  parent: [BaseSpeciesMob, MobBloodstream, MobAtmosStandard, MobFlammable] # No Mobrespirator because Oxygen is not required for the certainty of steel
+  abstract: true
+  components:
+    # copied over from BaseSpeciesMobOrganic and made changes based on the original BaseSpeciesMobSilicon
+    # if anything gets added or removed from over there it should be mirrored here
+    # Excluded components: Perishable and Respirator
+  - type: Barotrauma
+    damage:
+      types:
+        Blunt: 0.5
+        Heat: 0.1 # represents internal fluids, like coolant and lubricant, boiling away\
+  - type: PassiveDamage # IPCs can heal their own bloodloss (to an extent)
+    allowedStates:
+    - Alive
+    damagecap: 20
+    damage:
+      types:
+        Heat: -0.02
+        Blunt: -0.02
+  - type: Fingerprint # IPCs have fingerprints
+  - type: Blindable
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TempratureDamage
+    heatDamageThreshold: 373.15 # damage point of electronics
+    coldDamageThreshold: 200 # takes into account freezing point of structural elements, like plastics, and the freezing point of internal chemicals
+    coldDamage:
+      types: 
+        Cold: 0.1 # per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 2
+        Shock: 1 # Represents Components overheating with electrical issues resulting
+  - type: ThermalRegulator # Completely new component so left unchanged from BaseOrganic
+    metabolismHeat: 800
+    radiatedHeat: 100
+    implicitHeatRegulation: 500
+    sweatHeatRegulation: 2000
+    shiveringHeatRegulation: 2000
+    normalBodyTemperature: 310.15
+    thermalRegulationTemperatureThreshold: 2
+  - type: FireVisuals
+  - type: StunVisuals
+  # No more Mirroring from this point on
+  - type: Tag # Mirrored from BaseSpeciesMob (i lied)
+    tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - AnomalyHost # IPCs can be anomaly hosts
+      - SiliconEmotes # added
+  - type: Damageable
+    damageContainer: HumanoidSilicon
+    damageModifierSet: IPC
+  # - type: Deathgasp # Commented out in original, probably for a good reason?
+  #   prototype: SiliconDeathgasp
+  #   needsCritical: false
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      165: Dead
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection: MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection: MetalLaserImpact
+  - type: Speech
+    speechSounds: Pai
+  - type: Vocal
+    wilhelm: "/Audio/_EE/Voice/IPC/wilhelm.ogg"
+    sounds:
+      Male: UnisexIPC
+      Female: UnisexIPC
+      Unsexed: UnisexIPC
+      
