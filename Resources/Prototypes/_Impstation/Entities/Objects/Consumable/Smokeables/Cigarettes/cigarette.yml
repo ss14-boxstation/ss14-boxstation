@@ -8,8 +8,10 @@
       smokable:
         maxVol: 40
         reagents:
-          - ReagentId: Nicotine
-            Quantity: 10
+          # Start Box Change: Remove nicotine; not enough taz is being ingested to have an effect. This makes the cig shorter, but the only alternative is to raise the tazinide.
+          #- ReagentId: Nicotine
+          #  Quantity: 10
+          # End Box Change
           - ReagentId: Tazinide
             Quantity: 5
       food: # imp

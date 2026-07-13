@@ -1,6 +1,6 @@
 - type: entity
   id: CigPackMixedRejects
-  parent: [CigPackMixedBase, Tier2Contraband]
+  parent: [CigPackMixedBase] # Box Change: Remove Tier2Contraband
   name: Dan's soaked smokes rejects
   description: Dan worked with Interdyne chemistry to dispose of excess chemicals, ENJOY CAUTIOUSLY.
   components:
