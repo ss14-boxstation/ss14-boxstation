@@ -1,0 +1,94 @@
+- type: markingsGroup
+  parent: Undergarments
+  id: IPC
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayer.Hair:
+      limit: 1  # DeltaV - Fixes hair not displaying
+      onlyGroupWhitelisted: false
+      required: false
+    enum.HumanoidVisualLayer.FacialHair:
+      limit: 1  # DeltaV - Fixes hair not displaying
+      onlyGroupWhitelisted: false
+      required: false
+    enum.HumanoidVisualLayer.HeadBase:
+      limit: 1
+      required: true
+      default: [MobIPCHeadDefault]
+    enum.HumanoidVisualLayer.Head:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayer.HeadTop:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayer.HeadSide:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayer.Chest:
+      limit: 1
+      required: true
+      default: [MobIPCTorsoDefault]
+    enum.HumanoidVisualLayer.Overlay:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayer.LArm:
+      limit: 1
+      required: true
+      default: [MobIPCLArmDefault]
+    enum.HumanoidVisualLayer.RArm:
+      limit: 1
+      required: true
+      default: [MobIPCRArmDefault]
+    enum.HumanoidVisualLayer.LHand:
+      limit: 1
+      required: true
+      default: [MobIPCLHandDefault]
+    enum.HumanoidVisualLayer.Rhand:
+      limit: 1
+      required: true
+      default: [MobIPCRHandDefault]
+    enum.HumanoidVisualLayer.LLeg:
+      limit: 1
+      required: true
+      default: [MobIPCLLegDefault]
+    enum.HumanoidVisualLayer.RLeg:
+      limit: 1
+      required: true
+      default: [MobIPCRLegDefault]
+    enum.HumanoidVisualLayer.LFoot:
+      limit: 1
+      required: true
+      default: [MobIPCLFootDefault]
+    enum.HumanoidVisualLayer.RFoot:
+      limit: 1
+      required: true
+      default: [MobIPCRFootDefault]
+    enum.HumanoidVisualLayer.Snout: # DeltaV: Add ability to use more marking types
+      limit: 1
+      required: false
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: IPCAppearance
+  name: IPC appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganIPCTorso
+      Head: OrganIPCHead
+      ArmRight: OrganIPCArmRight
+      HandRight: OrganIPCHandRight
+      ArmLeft: OrganIPCArmLeft
+      HandLeft: OrganIPCHandLeft
+      LegLeft: OrganIPCLegLeft
+      FootLeft: OrganIPCFootLeft
+      LegRight: OrganIPCLegRight
+      FootRight: OrganIPCFootRight
+      Brain: IPCProcessorHousing
+      Eyes: OrganIPCEyes
+      Ears: OrganIPCEars
+      Heart: OrganIPCPump
+      Stomach: OrganIPCStomach
+      Tongue: OrganIPCTongue
+  - type: HumanoidProfile
+    species: IPC
