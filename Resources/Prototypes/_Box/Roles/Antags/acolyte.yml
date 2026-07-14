@@ -1,0 +1,7 @@
+- type: antag
+  id: Acolyte
+  name: roles-antag-acolyte-name
+  antagonist: true
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 1h

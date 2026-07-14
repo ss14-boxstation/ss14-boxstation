@@ -37,6 +37,7 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultBloodBrotherRule = "BloodBrothers"; // Harmony
     private static readonly EntProtoId DefaultConspiratorRule = "Conspirators"; // Harmony
     private static readonly EntProtoId DefaultTroublemakerRule = "Troublemaker"; // Box
+    private static readonly EntProtoId DefaultAcolyteRule = "Acolyte"; // Box
     private static readonly EntProtoId DefaultHitmanRule = "Hitman"; //_DV
     private static readonly ProtoId<StartingGearPrototype> PirateGearId = "PirateGear";
 
@@ -248,7 +249,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(conspirator);
         // Harmony end
-        // Box start - adds Troublemaker
+        // Box start - adds Troublemaker & Acolyte
         var troublemaker = Loc.GetString("admin-verb-make-troublemaker");
         Verb troublemakers = new()
         {
@@ -263,7 +264,21 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", troublemaker, Loc.GetString("admin-verb-text-make-troublemaker")),
         };
         args.Verbs.Add(troublemakers);
-        // Box End - adds Troublemaker
+
+        var acolyte = Loc.GetString("admin-verb-make-acolyte");
+        Verb acolytes = new()
+        {
+            Text = acolyte,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Box/Interface/Misc/job_icons.rsi"), "Troublemaker"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<AcolyteRuleComponent>(targetPlayer, DefaultAcolyteRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", acolyte, Loc.GetString("admin-verb-text-make-acolyte")),
+        };
+        // Box End - adds Troublemaker & Acolyte
         // start DeltaV Additions - add hitman
         var hitmanName = Loc.GetString("admin-verb-make-hitman");
         Verb hitman = new()
