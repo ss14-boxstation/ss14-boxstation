@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseObjective
+  abstract: true
+  id: BaseAcolyteObjective
+  components:
+  - type: Objective
+    issuer: objective-issuer-acolyte
+    difficulty: 1 #Acolytes will likely have the same set of objectives every time, with who and where being different
+  - type: RoleRequirement
+    roles:
+    - AcolyteRole
+
+# Test Objective to know if I can even force Acolytes
+- type: entity
+  parent: BaseAcolyteObjective
+  id: AcolyteTestObjective
+  name: Acolyte Test
+  description: This is a test to see I can get stuff working
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: magicmissile

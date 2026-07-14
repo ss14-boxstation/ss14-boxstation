@@ -39,6 +39,11 @@
     minPlayers: 10
     cancelPresetOnTooFewPlayers: false
   - type: AcolyteRule
+  - type: AntagRandomObjectives
+    sets:
+    - groups: AcolyteTestObjective
+      maxPicks: 1
+    maxDifficulty: 500
   - type: AntagSelection
     agentName: acolyte-round-end-agent-name
     selectionTime: IntraPlayerSpawn

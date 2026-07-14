@@ -278,6 +278,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", acolyte, Loc.GetString("admin-verb-text-make-acolyte")),
         };
+        args.Verbs.Add(acolytes);
         // Box End - adds Troublemaker & Acolyte
         // start DeltaV Additions - add hitman
         var hitmanName = Loc.GetString("admin-verb-make-hitman");
