@@ -99,6 +99,8 @@
         Burn: -0.5
   - type: FlashImmunity
   - type: Bingle
+  - type: Insulated
+    coefficient: .5
   - type: ProtectedFromStepTriggers
 
 - type: entity
@@ -142,6 +144,10 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: BingleUpgraded
+  - type: Insulated
+    coefficient: 0
+  - type: Injurable
+    damageContainer: Biological
 
 - type: entity
   parent: MobBingleUpgraded
