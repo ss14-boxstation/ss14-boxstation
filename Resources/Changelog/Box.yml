@@ -1153,3 +1153,10 @@
   id: 135
   time: '2026-07-12T05:59:28.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/146
+- author: Dizzy-Eevee
+  changes:
+  - message: Paper reams are now smaller and can be taken as loadout trinkets.
+    type: Tweak
+  id: 136
+  time: '2026-07-14T05:22:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/199
