@@ -1160,3 +1160,13 @@
   id: 136
   time: '2026-07-14T05:22:35.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/199
+- author: CollectionOfBones128
+  changes:
+  - message: Added the CO's Handheld Communications Computer, which spawns in the
+      Captain's locker
+    type: Add
+  - message: The Captain's Jetpack is no longer obtainable and cannot roll as an objective
+    type: Remove
+  id: 137
+  time: '2026-07-14T05:26:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/185
