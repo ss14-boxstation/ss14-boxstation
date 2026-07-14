@@ -25,7 +25,7 @@
     BloodBrotherCorgiMeatStealObjective: 1
     BloodBrotherClipboardStealObjective: 1
     BloodBrotherCaptainGunStealObjective: 0.5
-    BloodBrotherCaptainJetpackStealObjective: 0.5
+    BloodBrotherCaptainHandheldCommsStealObjective: 0.5 # Box Change - Jetpack > Handheld Comms
     BloodBrotherHandTeleporterStealObjective: 0.5
     BloodBrotherEnergyMagnumStealObjective: 0.5
     BloodBrotherAccessConfiguratorStealObjective: 1

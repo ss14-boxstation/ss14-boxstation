@@ -61,6 +61,7 @@
       conditions:
       - !type:PlayerCountCondition
         max: 15
+    - id: HandheldComms # Box Change - Add CO's Handheld Comms
 
 # No laser table + Laser table
 - type: entityTable
@@ -78,7 +79,7 @@
     children:
     - id: ClothingOuterHardsuitCap
     - id: ClothingMaskGasCaptain
-    - id: JetpackCaptainFilled
+    # - id: JetpackCaptainFilled # Box Change - Swap jetpack obj for handheld comms obj
     - id: OxygenTankFilled
 
 # No laser locker, used when the antique laser is placed in the special display crate
