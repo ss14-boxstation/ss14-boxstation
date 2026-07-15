@@ -65,6 +65,10 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
+     
+    # Delta V - Harpy Wings
+    - map: [ "enum.HumanoidVisualLayers.RArmExtension" ]
+    - map: [ "enum.HumanoidVisualLayers.LArmExtension" ]
 
 - type: entity
   id: BaseSpeciesAppearance
