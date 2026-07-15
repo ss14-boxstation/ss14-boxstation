@@ -78,8 +78,10 @@
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
     species: Harpy
-  - type: ScaleVisuals
-    speciesScale: 0.9, 0.9
+  # Box Change: Normal size
+  #- type: ScaleVisuals
+  #  speciesScale: 0.9, 0.9
+  # End Box Change
 
 - type: entity
   parent:
