@@ -8,7 +8,7 @@ namespace Content.Shared._DV.Harpy;
 public sealed class HarpyVisualsSystem : EntitySystem
 {
     // [Dependency] private readonly TagSystem _tagSystem = default!; // Frontier
-    [Dependency] private readonly SharedHumanoidAppearanceSystem _humanoidSystem = default!;
+    [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
 
     //    [ValidatePrototypeId<TagPrototype>] // Frontier
     //    private const string HarpyWingsTag = "HidesHarpyWings"; // Frontier
@@ -25,8 +25,8 @@ public sealed class HarpyVisualsSystem : EntitySystem
     {
         if (args.Slot == "outerClothing" && HasComp<HarpyHideWingsComponent>(args.Equipment)) // Frontier: Swap tag to comp
         {
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, false); // Frontier: RArm<RArmExtension
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, false);
+            _appearanceSystem.SetData(uid, HumanoidVisualLayers.RArmExtension, false); // Frontier: RArm<RArmExtension
+            _appearanceSystem.SetData(uid, HumanoidVisualLayers.Tail, false);
         }
     }
 
@@ -34,8 +34,8 @@ public sealed class HarpyVisualsSystem : EntitySystem
     {
         if (args.Slot == "outerClothing" && HasComp<HarpyHideWingsComponent>(args.Equipment)) // Frontier: Swap tag to comp
         {
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, true); // Frontier: RArm<RArmExtension
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, true);
+            _appearanceSystem.SetData(uid, HumanoidVisualLayers.RArmExtension, true); // Frontier: RArm<RArmExtension
+            _appearanceSystem.SetData(uid, HumanoidVisualLayers.Tail, true);
         }
     }
 }
