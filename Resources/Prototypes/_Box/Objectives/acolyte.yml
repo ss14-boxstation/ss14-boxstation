@@ -10,14 +10,15 @@
     roles:
     - AcolyteRole
 
-# Test Objective to know if I can even force Acolytes
 - type: entity
-  parent: BaseAcolyteObjective
-  id: AcolyteTestObjective
-  name: Acolyte Test
-  description: This is a test to see I can get stuff working
+  parent: [BaseAcolyteObjective, BaseLivingObjective]
+  id: EscapeShuttleObjectiveAcolyte
+  name: Escape to centcomm alive and unrestrained.
+  description: You plan to do the ritual at a safe place off station. Avoid being arrested.
   components:
   - type: Objective
     icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: magicmissile
+      sprite: Structures/Furniture/chairs.rsi
+      state: shuttle
+    unique: true
+  - type: EscapeShuttleCondition

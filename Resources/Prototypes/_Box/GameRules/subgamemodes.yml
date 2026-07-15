@@ -39,10 +39,9 @@
     minPlayers: 10
     cancelPresetOnTooFewPlayers: false
   - type: AcolyteRule
-  - type: AntagRandomObjectives
-    sets:
-    - groups: AcolyteTestObjective
-      maxPicks: 1
+  - type: AntagObjectives
+    objectives:
+    - EscapeShuttleObjectiveAcolyte
     maxDifficulty: 500
   - type: AntagSelection
     agentName: acolyte-round-end-agent-name
@@ -54,7 +53,7 @@
       lateJoinAdditional: true
       briefing:
         text: acolyte-role-greeting-human
-        color: orange
+        color: purple
         sound: /Audio/_Box/Ambience/Antag/Troublemaker_Briefing.ogg
       mindRoles:
       - MindRoleAcolyte
