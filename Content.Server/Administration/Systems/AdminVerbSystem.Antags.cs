@@ -270,7 +270,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = acolyte,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Box/Interface/Misc/job_icons.rsi"), "Troublemaker"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Box/Interface/Misc/job_icons.rsi"), "Acolyte"),
             Act = () =>
             {
                 _antag.ForceMakeAntag<AcolyteRuleComponent>(targetPlayer, DefaultAcolyteRule);
