@@ -174,7 +174,7 @@
   id: SalvageTreasureLegendary
   table: !type:GroupSelector
     children:
-#   - id: ClothingMaskGoldenCursed #Box Change - 1984's golden mask
+    - id: ClothingMaskGoldenCursed
     - id: ClothingHeadHatFancyCrown
     - id: GoldenBikeHorn
     - id: ClothingHeadHatCatEars

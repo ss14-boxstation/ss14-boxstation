@@ -1093,10 +1093,3 @@
   id: 128
   time: '2026-07-06T09:26:48.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/188
-- author: BlueMoon059
-  changes:
-  - message: The golden mask no longer spawns in salvage lootpools.
-    type: Remove
-  id: 129
-  time: '2026-07-09T10:10:30.0000000+00:00'
-  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/193
