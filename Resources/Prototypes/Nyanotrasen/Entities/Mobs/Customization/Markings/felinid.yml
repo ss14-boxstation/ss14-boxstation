@@ -1,0 +1,149 @@
+# SPDX-FileCopyrightText: 2023 Fluffiest Floofers <thebluewulf@gmail.com>
+# SPDX-FileCopyrightText: 2025 Rosycup <178287475+Rosycup@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Tirochora <leotabletdb@gmail.com>
+# SPDX-FileCopyrightText: 2025 sleepyyapril <123355664+sleepyyapril@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
+
+# Felinid Ears
+
+- type: marking
+  id: FelinidEarsBasic
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list 
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: basic_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: basic_inner
+
+- type: marking
+  id: FelinidEarsCurled
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: curled_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: curled_inner
+
+- type: marking
+  id: FelinidEarsDroopy
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: droopy_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: droopy_inner
+
+- type: marking
+  id: FelinidEarsFuzzy
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: basic_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: fuzzy_inner
+
+- type: marking
+  id: FelinidEarsStubby
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: stubby_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: stubby_inner
+
+- type: marking
+  id: FelinidEarsTall
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: tall_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: tall_inner
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: tall_fuzz
+
+- type: marking
+  id: FelinidEarsTorn
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: torn_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: torn_inner
+
+- type: marking
+  id: FelinidEarsWide
+  bodyPart: HeadTop
+  groupWhitelist: [Human, Slime, IPC, Harpy] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: wide_outer
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_ears.rsi
+    state: wide_inner
+
+# Felinid Tails
+
+- type: marking
+  id: FelinidTailBasic
+  bodyPart: Tail
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+
+- type: marking
+  id: FelinidTailBasicWithBow
+  bodyPart: Tail
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_bow
+
+- type: marking
+  id: FelinidTailBasicWithBell
+  bodyPart: Tail
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_bell
+
+- type: marking
+  id: FelinidTailBasicWithBowAndBell
+  bodyPart: Tail
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  sprites:
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_tip
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_even
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_tail_stripes_odd
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_bow
+  - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
+    state: basic_bell
