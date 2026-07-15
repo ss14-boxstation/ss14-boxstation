@@ -58,8 +58,10 @@
       Head: OrganHarpyHead
       ArmLeft: OrganHarpyArmLeft
       ArmRight: OrganHarpyArmRight
-      HandLeft: OrganHarpyHandLeft
+      # Box Change: Swap order to un-break the UI
       HandRight: OrganHarpyHandRight
+      HandLeft: OrganHarpyHandLeft
+      # End Box Change
       LegLeft: OrganHarpyLegLeft
       LegRight: OrganHarpyLegRight
       FootLeft: OrganHarpyFootLeft
@@ -158,7 +160,7 @@
           False: {visible: false}
           True: {visible: true}
   - type: MovementSpeedModifier
-    weightlessAcceleration: 2.5
+    baseWeightlessAcceleration: 2.5 # Box Change: Move this to base because DV didn't.
     baseWeightlessModifier: 1 # Box Change: Faster. Still have extremely low friction though so good luck standing still lol.
     baseWalkSpeed: 2.5
     baseSprintSpeed: 5
