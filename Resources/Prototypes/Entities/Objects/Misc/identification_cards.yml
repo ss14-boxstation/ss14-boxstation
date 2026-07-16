@@ -523,7 +523,7 @@
 - type: entity
   parent: SecurityIDCard
   id: SeniorOfficerIDCard
-  name: senior officer ID card
+  name: senior guard ID card # Box Change - SecOff > SecGuard
   components:
   - type: Sprite
     layers:

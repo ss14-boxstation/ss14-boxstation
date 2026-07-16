@@ -19,4 +19,10 @@
     - TroublemakerWhistleblowerKit
     - TroublemakerArsonistKit
     - TroublemakerCheaterKit
+    - TroublemakerSyndiKit
+    - TroublemakerEscapeKit
+    - TroublemakerBombKit
+    - TroublemakerRiotKit
+    - TroublemakerChameleonKit
+    - TroublemakerMercKit
     spawnedStoragePrototype: ClothingBackpackSatchelSmugglerUnanchored

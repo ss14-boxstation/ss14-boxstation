@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Beestation at commit https://github.com/BeeStation/BeeStation-Hornet/commit/9a035f9365bcb74ac40fbe79c74c43c4c80cc1e4. Storage sprite from https://github.com/impstation/imp-station-14/commit/2c1bafddd8c1eb3b718e72a8f386e4f98a558c0f",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "storage"
+        }
+    ]
+}

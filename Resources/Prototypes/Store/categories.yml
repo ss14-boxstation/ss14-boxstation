@@ -89,6 +89,13 @@
   name: store-category-pointless
   priority: 10
 
+# Box Change Start - Early Merge of WizDen code
+- type: storeCategory
+  id: UplinkObjective
+  name: store-category-objectives
+  priority: 11
+# Box Change End - Early Merge of WizDen code
+
 #revenant
 - type: storeCategory
   id: RevenantAbilities

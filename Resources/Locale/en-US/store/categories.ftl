@@ -12,6 +12,9 @@ store-category-allies = Allies
 store-category-job = Job
 store-category-wearables = Wearables
 store-category-pointless = Pointless
+# Box Change Start - Early Merge of WizDen code
+store-category-objectives = Objectives
+# Box Change End - Early Merge of WizDen code
 store-discounted-items = Discounts
 
 # Revenant

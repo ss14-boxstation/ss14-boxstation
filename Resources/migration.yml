@@ -781,3 +781,6 @@ GlowstickBase: GlowstickGreen
 FigureSpawner: MechFigurineSpawner50
 ToySpawner: PlushieSpawner50
 SpacemenFigureSpawner: SpacemenFigurineSpawner90
+
+# 2026-06-13 BoxStation
+LidSalami: null
