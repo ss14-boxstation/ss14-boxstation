@@ -1,8 +1,8 @@
 - type: construction
-  id: AtmosFanWeak
-  graph: AtmosFanWeak
+  id: HardlightWindow
+  graph: HardlightWindowGraph
   startNode: start
-  targetNode: fan
+  targetNode: entity
   category: construction-category-utilities
   objectType: Structure
   placementMode: SnapgridCenter

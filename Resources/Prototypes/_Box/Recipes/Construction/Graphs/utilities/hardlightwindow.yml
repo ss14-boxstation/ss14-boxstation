@@ -1,0 +1,33 @@
+- type: constructionGraph
+  id: HardlightWindowGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: entity
+          steps:
+            - tag: HardlightWindowAssembly
+              icon:
+                sprite: _Box/Structures/Tools/hardlightwindow.rsi
+                state: loose
+              name: construction-graph-tag-conveyor-belt-assembly
+              doAfter: 2
+    - node: item
+      entity: HardlightWindowAssembly
+      actions:
+        - !type:SetAnchor
+          value: false
+    - node: entity
+      entity: HardlightWindow
+      actions:
+        - !type:SetAnchor
+          value: true
+        - !type:SnapToGrid
+      edges:
+        - to: item
+          steps:
+            - tool: Pulsing
+              doAfter: 3
+          completed:
+            - !type:SetAnchor
+              value: false

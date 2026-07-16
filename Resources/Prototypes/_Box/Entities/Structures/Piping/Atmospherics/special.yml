@@ -1,8 +1,8 @@
 - type: entity
-  id: AtmosDeviceFanDirectionalWeak
-  name: weak directional fan
+  id: HardlightWindow
+  name: hardlight window
   suffix: Box
-  description: A thin fan, stopping the movement of gases across it. This one is vacuum-safe, but can't handle more extreme pressure differences.
+  description: A barrier of hard light that blocks air, but nothing else. Lasts indefinitely unlike its cousin the holofan, but is not rated for pressure differences greater than 150kPa. Can be repaired with a welder.
   placement:
     mode: SnapgridCenter
   components:
@@ -11,8 +11,8 @@
   - type: Physics
     bodyType: Static
   - type: Sprite
-    sprite: Structures/Piping/Atmospherics/directionalfan.rsi
-    state: icon
+    sprite: _Box/Structures/hardlightwindow.rsi
+    state: window
   - type: Fixtures
     fixtures:
       fix1:
@@ -34,7 +34,7 @@
     scalingType: Threshold
   - type: Damageable
     damageContainer: StructuralInorganic
-    damageModifierSet: StructuralMetallic
+    damageModifierSet: Glass
   - type: Destructible
     thresholds:
     - trigger:
@@ -45,11 +45,39 @@
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalSlam
-  - type: RCDDeconstructable
-    cost: 4
-    delay: 2
-    fx: EffectRCDDeconstruct2
+          collection: GlassBreak
+  # - type: RCDDeconstructable
+    # cost: 4
+    # delay: 2
+    # fx: EffectRCDDeconstruct2
   - type: Construction
-    graph: AtmosFanWeak
-    node: fan
+    graph: HardlightWindowGraph
+    node: entity
+  - type: Repairable
+    fuelCost: 15
+    doAfterDelay: 3
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 30]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _Box/Structures/hardlightwindow_overlay.rsi
+
+- type: entity
+  id: HardlightWindowAssembly
+  parent: BaseItem
+  name: hardlight projector
+  description: A projector used to construct a hardlight window.
+  suffix: Box
+  components:
+  - type: Tag
+    tags:
+    - HardlightWindowAssembly
+  - type: Sprite
+    sprite: _Box/Structures/hardlightwindow.rsi
+    state: loose
+  - type: Construction
+    graph: HardlightWindowGraph
+    node: item
+  - type: StaticPrice
+    price: 50
