@@ -6,6 +6,8 @@
   physicalDesc: reagent-physical-desc-thin
   flavor: allulalo
   color: "#c1c7d3"
+  recognizable: true
+  standsout: true
   evaporationSpeed: 0.3 #same as water
   metabolisms: #have to redefine from basealcohol otherwise its slippery which is a hell of a can of worms for a species
     Metabolites:
