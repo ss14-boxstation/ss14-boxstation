@@ -1170,3 +1170,10 @@
   id: 137
   time: '2026-07-14T05:26:36.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/185
+- author: Dizzy-Eevee
+  changes:
+  - message: Boxer and Zookeeper now have access to the Accessibility loadout tab
+    type: Fix
+  id: 138
+  time: '2026-07-16T08:27:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/204
