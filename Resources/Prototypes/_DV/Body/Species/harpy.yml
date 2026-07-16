@@ -162,12 +162,14 @@
           False: {visible: false}
           True: {visible: true}
   - type: MovementSpeedModifier
+    # Start Box Change: Movespeed adjustments
     baseWeightlessAcceleration: 2.5 # Box Change: Move this to base because DV didn't.
-    baseWeightlessModifier: 1 # Box Change: Faster. Still have extremely low friction though so good luck standing still lol.
-    baseWalkSpeed: 2.5
-    baseSprintSpeed: 5
+    baseWeightlessModifier: 1 # Box Change: Faster. Still have extremely low friction so good luck standing still lol.
+    #baseWalkSpeed: 2.5
+    #baseSprintSpeed: 5
+    # End Box Change
   - type: HarpyVisuals
-  - type: UltraVision
+  #- type: UltraVision # Box Change: No ultraviolet
   - type: Tag
     tags:
     - CanPilot
