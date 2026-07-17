@@ -8,9 +8,9 @@
           steps:
             - tag: HardlightWindowAssembly
               icon:
-                sprite: _Box/Structures/Tools/hardlightwindow.rsi
+                sprite: _Box/Structures/hardlightwindow.rsi
                 state: loose
-              name: construction-graph-tag-conveyor-belt-assembly
+              name: construction-graph-tag-hardlight-window-assembly
               doAfter: 2
     - node: item
       entity: HardlightWindowAssembly
