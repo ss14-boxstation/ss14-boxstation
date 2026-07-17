@@ -101,7 +101,7 @@
   suffix: Box
   components:
   - type: Sharp
-  - type: Execution # Good luck executing someone with an item that despawns in 10 seconds
+  - type: Execution # Good luck executing someone with an item that despawns in 5 seconds
     doAfterDuration: 4.0
   - type: Sprite
     layers:
@@ -169,4 +169,4 @@
       - GlassShard
       - Trash
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 6
