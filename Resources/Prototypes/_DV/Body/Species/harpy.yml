@@ -42,6 +42,7 @@
 - type: entity
   parent: BaseSpeciesAppearance
   id: AppearanceHarpy
+  name: harpy appearance # Box Change: Give this a name so it doesn't show up at the very top of the spawn menu
   components:
   - type: Inventory
     speciesId: harpy
@@ -177,6 +178,7 @@
     - DoorBumpOpener
     - AnomalyHost
     - HarpyEmotes # Box Change: Harpy emote tag for silicon emotes
+  - type: Carriable # Box Change - Carrying system from Nyanotrasen
 
 - type: entity
   parent: OrganBase
