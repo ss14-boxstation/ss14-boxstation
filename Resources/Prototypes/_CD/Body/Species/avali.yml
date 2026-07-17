@@ -163,6 +163,7 @@
     shiveringHeatRegulation: 2000
     normalBodyTemperature: 296.15
     thermalRegulationTemperatureThreshold: 10
+  - type: Carriable # Box Change - Carrying system from Nyanotrasen
 
 - type: entity
   parent: OrganBase
