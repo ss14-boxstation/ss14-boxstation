@@ -53,10 +53,6 @@
           ShardHardlight:
             min: 1
             max: 4
-  # - type: RCDDeconstructable
-    # cost: 4
-    # delay: 2
-    # fx: EffectRCDDeconstruct2
   - type: Construction
     graph: HardlightWindowGraph
     node: entity
