@@ -5,6 +5,7 @@
 
   <Box>
   <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Arachnid"/>
+  <GuideEntityEmbed Entity="AppearanceAllulalo" Caption="Allulalo"/> <!--Box - Imp, adds Allulalo-->
   <!-- <GuideEntityEmbed Entity="AppearanceAvali" Caption="Avali"/>  --> <!--harmony-->
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
   <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
