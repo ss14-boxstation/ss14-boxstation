@@ -11,6 +11,18 @@
       "name": "loose"
     },
     {
+      "name": "loose-unlit"
+    },
+    {
+      "name": "shard1"
+    },
+    {
+      "name": "shard2"
+    },
+    {
+      "name": "shard3"
+    },
+    {
       "name": "window",
       "directions": 4,
       "delays": [

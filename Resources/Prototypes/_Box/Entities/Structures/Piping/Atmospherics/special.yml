@@ -12,7 +12,9 @@
     bodyType: Static
   - type: Sprite
     sprite: _Box/Structures/hardlightwindow.rsi
-    state: window
+    layers:
+    - state: window
+      shader: unshaded
   - type: Fixtures
     fixtures:
       fix1:
@@ -45,7 +47,12 @@
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          collection: GlassBreak
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardHardlight:
+            min: 1
+            max: 4
   # - type: RCDDeconstructable
     # cost: 4
     # delay: 2
@@ -67,7 +74,7 @@
   id: HardlightWindowAssembly
   parent: BaseItem
   name: hardlight projector
-  description: A projector used to construct a hardlight window.
+  description: A stationary device used to project a hardlight window. Great for space-facing doors, saunas, or keeping your eccentric botanist's tritium from escaping.
   suffix: Box
   components:
   - type: Tag
@@ -75,9 +82,91 @@
     - HardlightWindowAssembly
   - type: Sprite
     sprite: _Box/Structures/hardlightwindow.rsi
+    layers: 
+    - state: loose
+    - state: loose-unlit
+      shader: unshaded
     state: loose
   - type: Construction
     graph: HardlightWindowGraph
     node: item
   - type: StaticPrice
     price: 50
+
+- type: entity
+  parent: BaseItem
+  id: ShardHardlight
+  name: hardlight shard
+  description: A small shard of hard light. It will fade before long.
+  suffix: Box
+  components:
+  - type: Sharp
+  - type: Execution # Good luck executing someone with an item that despawns in 10 seconds
+    doAfterDuration: 4.0
+  - type: Sprite
+    layers:
+      - sprite: _Box/Structures/hardlightwindow.rsi
+        state: shard1
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+        shader: unshaded
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          shard1: ""
+          shard2: ""
+          shard3: ""
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Piercing: 3.5
+        Heat: 3.5
+  - type: CollisionWake
+    enabled: false
+  - type: Item
+    size: Tiny
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+        - LowImpassable
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        density: 30
+        mask:
+        - ItemMask
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 2
+        Heat: 2
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: PreventableStepTrigger
+  - type: Slippery
+    slipSound:
+      path: /Audio/Effects/glass_step.ogg
+    slipData:
+      launchForwardsMultiplier: 0
+  - type: TriggerOnStepTrigger
+  - type: DamageOnTrigger
+    targetUser: true
+    damage:
+      types:
+        Piercing: 3
+        Heat: 3
+  - type: DeleteOnTrigger
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+      - GlassShard
+      - Trash
+  - type: TimedDespawn
+    lifetime: 10
