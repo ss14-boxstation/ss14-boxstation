@@ -70,8 +70,8 @@
   id: HardlightWindowAssembly
   parent: BaseItem
   name: hardlight projector
-  description: A stationary device used to project a hardlight window. Great for space-facing doors, saunas, or keeping your eccentric botanist's tritium from escaping.
   suffix: Box
+  description: A stationary device used to project a hardlight window. Great for space-facing doors, saunas, or keeping your eccentric botanist's tritium from escaping.
   components:
   - type: Tag
     tags:
@@ -93,8 +93,8 @@
   parent: BaseItem
   id: ShardHardlight
   name: hardlight shard
-  description: A small shard of hard light. It will fade before long.
   suffix: Box
+  description: A small shard of hard light. It will fade before long.
   components:
   - type: Sharp
   - type: Execution # Good luck executing someone with an item that despawns in 5 seconds

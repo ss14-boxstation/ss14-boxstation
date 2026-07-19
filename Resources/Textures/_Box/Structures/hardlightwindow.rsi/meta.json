@@ -1,72 +1,72 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprites by Dizzy-Eevee (github)",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "loose"
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Sprites by Dizzy-Eevee (github)",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "loose-unlit"
-    },
-    {
-      "name": "shard1"
-    },
-    {
-      "name": "shard2"
-    },
-    {
-      "name": "shard3"
-    },
-    {
-      "name": "window",
-      "directions": 4,
-      "delays": [
-        [
-          13,
-          0.1,
-          0.1,
-          0.1,
-          0.5,
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          13,
-          0.1,
-          0.1,
-          0.1,
-          0.5,
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          13,
-          0.1,
-          0.1,
-          0.1,
-          0.5,
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          13,
-          0.1,
-          0.1,
-          0.1,
-          0.5,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    }
-  ]
+    "states": [
+        {
+            "name": "loose"
+        },
+        {
+            "name": "loose-unlit"
+        },
+        {
+            "name": "shard1"
+        },
+        {
+            "name": "shard2"
+        },
+        {
+            "name": "shard3"
+        },
+        {
+            "name": "window",
+            "directions": 4,
+            "delays": [
+                [
+                    13,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.5,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    13,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.5,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    13,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.5,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    13,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.5,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        }
+    ]
 }
