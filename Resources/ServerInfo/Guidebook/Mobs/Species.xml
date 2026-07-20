@@ -10,6 +10,7 @@
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
   <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
+  <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/> <!--Box - DV, adds Harpies-->
   </Box>
   <Box>
   <!-- <GuideEntityEmbed Entity="AppearanceIPC" Caption="I.P.C."/>  --> <!--Box-->

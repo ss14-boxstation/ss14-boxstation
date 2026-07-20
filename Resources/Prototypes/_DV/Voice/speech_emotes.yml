@@ -1,0 +1,95 @@
+# Harpy
+- type: emote
+  id: HarpyRing
+  name: delta-chat-emote-name-ring
+  category: Vocal
+  icon: _EE/Interface/Emotes/ring.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [rings.]
+  chatTriggers:
+    - ring
+    - rings
+    - ringing
+    - ringed
+    - rang
+
+- type: emote
+  id: HarpyPew
+  name: delta-chat-emote-name-pew
+  category: Vocal
+  icon: _EE/Interface/Emotes/pew.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [pews.]
+  chatTriggers:
+    - pew
+    - pews
+    - pewpew
+
+- type: emote
+  id: HarpyBang
+  name: delta-chat-emote-name-bang
+  category: Vocal
+  icon: _EE/Interface/Emotes/bang.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [bangs.]
+  chatTriggers:
+    - bang
+    - bangs
+    - banging
+    - banged
+
+- type: emote
+  id: HarpyRev
+  name: delta-chat-emote-name-rev
+  category: Vocal
+  icon: _EE/Interface/Emotes/rev.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [revs.]
+  chatTriggers:
+    - rev
+    - revs
+    - revving
+    - revved
+
+- type: emote
+  id: HarpyCaw
+  name: delta-chat-emote-name-caw
+  category: Vocal
+  icon: _EE/Interface/Emotes/caw.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [caws.]
+  chatTriggers:
+    - caw
+    - caws
+    - cawing
+    - cawed
