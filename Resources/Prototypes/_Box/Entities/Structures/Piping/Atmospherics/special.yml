@@ -88,9 +88,6 @@
     - state: loose-unlit
       shader: unshaded
     state: loose
-  - type: Construction
-    graph: HardlightWindowGraph
-    node: item
   - type: StaticPrice
     price: 50
 
