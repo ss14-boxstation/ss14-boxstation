@@ -20,7 +20,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-            bounds: "-0.48,-0.48,0.48,-0.40"
+          bounds: "-0.5,-0.5,0.5,-0.28125"
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:
@@ -29,7 +29,7 @@
   - type: Tag
     tags:
       - SpreaderIgnore
-      - Unstackable
+      - Structure
   - type: DeltaPressure
     minPressure: 200
     minPressureDelta: 150
@@ -65,6 +65,11 @@
     trackAllDamage: true
     damageOverlay:
       sprite: _Box/Structures/hardlightwindow_overlay.rsi
+  - type: BlockWeather
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
 
 - type: entity
   id: HardlightWindowAssembly

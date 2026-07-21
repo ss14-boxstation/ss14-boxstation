@@ -12,11 +12,6 @@
                 state: loose
               name: construction-graph-tag-hardlight-window-assembly
               doAfter: 2
-    - node: item
-      entity: HardlightWindowAssembly
-      actions:
-        - !type:SetAnchor
-          value: false
     - node: entity
       entity: HardlightWindow
       actions:
@@ -24,10 +19,12 @@
           value: true
         - !type:SnapToGrid
       edges:
-        - to: item
+        - to: start
           steps:
             - tool: Pulsing
               doAfter: 3
           completed:
-            - !type:SetAnchor
-              value: false
+            - !type:GivePrototype
+              prototype: HardlightWindowAssembly
+              amount: 1
+            - !type:DeleteEntity {}
