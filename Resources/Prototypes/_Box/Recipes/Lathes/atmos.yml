@@ -1,0 +1,8 @@
+- type: latheRecipe
+  id: HardlightWindowAssembly
+  result: HardlightWindowAssembly
+  completetime: 4
+  materials:
+    Steel: 250
+    Plastic: 250
+    Gold: 50
