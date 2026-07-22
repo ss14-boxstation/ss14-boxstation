@@ -14,7 +14,7 @@
   parent: [BaseAcolyteObjective, BaseLivingObjective]
   id: EscapeShuttleObjectiveAcolyte
   name: Escape to centcomm alive and unrestrained.
-  description: You plan to do the ritual at a safe place off station. Avoid being arrested.
+  description: You want your materials to make it back home safe. Avoid being arrested.
   components:
   - type: Objective
     icon:
