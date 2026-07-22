@@ -1177,3 +1177,12 @@
   id: 138
   time: '2026-07-16T08:27:32.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/204
+- author: Dizzy-Eevee
+  changes:
+  - message: Added hardlight windows, which block gasses and allow solid objects to
+      pass through, but cannot withstand the high pressure differences needed for
+      Atmospheric work.
+    type: Add
+  id: 139
+  time: '2026-07-21T20:41:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/208
