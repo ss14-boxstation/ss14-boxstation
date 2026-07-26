@@ -1,5 +1,5 @@
 using System.Collections.Frozen;
-using Content.Shared._RMC14.Voicelines; // Harmony, RMC14
+using Content.Shared._Box.Audio; // Box Change
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Speech;
 using Robust.Shared.Player; // Harmony, RMC14
@@ -13,7 +13,7 @@ public abstract partial class SharedChatSystem
     private FrozenDictionary<string, EmotePrototype> _wordEmoteDict = FrozenDictionary<string, EmotePrototype>.Empty;
 
     // Harmony, RMC14 - Mute Emotes Option
-    [Dependency] private readonly HumanoidVoicelinesSystem _humanoidVoicelines = default!;
+    [Dependency] private readonly SpeciesMutingSystem _speciesMutingSystem = default!;
 
     private void CacheEmotes()
     {
@@ -163,7 +163,7 @@ public abstract partial class SharedChatSystem
         var param = audioParams ?? proto.GeneralParams ?? sound.Params;
         // Harmony Change Start - RMC14, Ports options to mute species sfx
         // _audio.PlayPvs(sound, uid, param);
-        var filter = Filter.Pvs(uid).RemoveWhere(s => !_humanoidVoicelines.ShouldPlayEmote(uid, s));
+        var filter = Filter.Pvs(uid).RemoveWhere(s => !_speciesMutingSystem.ShouldPlayEmote(uid, s));
         if (filter.Count == 0)
             return false;
 
