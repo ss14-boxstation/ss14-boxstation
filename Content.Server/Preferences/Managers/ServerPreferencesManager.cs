@@ -168,6 +168,10 @@ namespace Content.Server.Preferences.Managers
                         groupLoadouts.Add(new Loadout()
                         {
                             Prototype = profLoadout.LoadoutName,
+                            // Start Box Change: Floof item metadata
+                            NameOverride = profLoadout.NameOverride, // Floofstation
+                            DescriptionOverride = profLoadout.DescriptionOverride, // Floofstation
+                            // End Box Change
                         });
                     }
                 }
