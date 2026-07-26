@@ -29,7 +29,7 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 2 # Box Change: 1 > 2 so you can select ears *and* whiskers
       required: true
       default: [ RodentiaHeadTopEarDefault ]
     enum.HumanoidVisualLayers.HeadSide:
