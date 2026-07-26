@@ -68,7 +68,7 @@
 
 - type: marking
   id: EarsSylveon
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
@@ -80,7 +80,7 @@
 
 - type: marking
   id: EarsResomi
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
@@ -90,7 +90,7 @@
 
 - type: marking
   id: EarsChemlight
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
@@ -100,7 +100,7 @@
 
 - type: marking
   id: EarsDragonLong
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
@@ -108,7 +108,7 @@
 
 - type: marking
   id: EarsEasternD
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
@@ -118,7 +118,7 @@
 
 - type: marking
   id: EarsMagus
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
     - sprite: _ADT/Mobs/Customization/Reptilian/reptilian_ears.rsi
@@ -128,7 +128,7 @@
 
 - type: marking
   id: ReptilianHornsBaran
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -136,7 +136,7 @@
 
 - type: marking
   id: ReptilianHornsBullhorns
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -144,7 +144,7 @@
 
 - type: marking
   id: ReptilianHornsCrown
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -152,7 +152,7 @@
 
 - type: marking
   id: ReptilianHornsFive
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -160,7 +160,7 @@
 
 - type: marking
   id: ReptilianHornsHighback
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -168,7 +168,7 @@
 
 - type: marking
   id: ReptilianHornsJacksonchameleon
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -176,7 +176,7 @@
 
 - type: marking
   id: ReptilianHornsLong
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -184,7 +184,7 @@
 
 - type: marking
   id: ReptilianHornsStagbeetle
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -192,7 +192,7 @@
 
 - type: marking
   id: ReptilianHornsSuperlong
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi
@@ -200,7 +200,7 @@
 
 - type: marking
   id: ReptilianHornsTwoago
-  bodyPart: HeadTopTop
+  bodyPart: HeadTop
   groupWhitelist: [Reptilian]
   sprites:
   - sprite: _ADT/Mobs/Customization/Reptilian/custom.rsi

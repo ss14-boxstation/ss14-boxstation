@@ -504,7 +504,7 @@
 
 - type: marking
   id: LargeWattle
-  bodyPart: FacialHairSide
+  bodyPart: FacialHair
   canBeDisplaced: false # Harmony
   groupWhitelist: [ Vox ]
   sprites:
@@ -513,7 +513,7 @@
 
 - type: marking
   id: SmallWattle
-  bodyPart: FacialHairSide
+  bodyPart: FacialHair
   canBeDisplaced: false # Harmony
   groupWhitelist: [ Vox ]
   sprites:
@@ -551,7 +551,7 @@
 
 - type: marking
   id: LargeComb
-  bodyPart: HairSide
+  bodyPart: Hair
   canBeDisplaced: false # Harmony
   groupWhitelist: [ Vox ]
   sprites:
@@ -616,7 +616,7 @@
 
 - type: marking
   id: SideQuills
-  bodyPart: HeadSideSide
+  bodyPart: HeadSide
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/headside.rsi
@@ -716,7 +716,10 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: true
-  followSkinColor: true
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
     state: balled

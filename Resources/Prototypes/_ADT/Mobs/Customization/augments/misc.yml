@@ -1,7 +1,7 @@
 - type: marking
   id: Malstrem
   bodyPart: Eyes
-  groupWhitelist: [Dwarf, Human, Slime, Harpy, Vulpkanin]
+  groupWhitelist: [Human, Slime, Harpy, Vulpkanin]
   forcedColoring: false
   sprites:
   - sprite: _ADT/Mobs/Customization/augments/headaugs.rsi
@@ -10,7 +10,7 @@
 - type: marking
   id: Beholder
   bodyPart: Eyes
-  groupWhitelist: [Dwarf, Human, Slime, Harpy, Vulpkanin]
+  groupWhitelist: [Human, Slime, Harpy, Vulpkanin]
   forcedColoring: false
   sprites:
   - sprite: _ADT/Mobs/Customization/augments/headaugs.rsi

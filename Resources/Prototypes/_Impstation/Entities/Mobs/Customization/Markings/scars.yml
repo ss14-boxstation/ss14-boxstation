@@ -2,7 +2,6 @@
   id: ArmTwistingLeft
   bodyPart: LArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: arm_l_twisting
@@ -11,7 +10,6 @@
   id: ArmTwistingRight
   bodyPart: RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: arm_r_twisting
@@ -20,7 +18,6 @@
   id: ChestBackstabbed
   bodyPart: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_backstabbed
@@ -29,7 +26,6 @@
   id: ChestTwistingLeft
   bodyPart: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_l_twisting
@@ -38,7 +34,6 @@
   id: ChestTwistingRight
   bodyPart: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_r_twisting
@@ -47,7 +42,6 @@
   id: ChestStar
   bodyPart: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_star
@@ -56,7 +50,6 @@
   id: HandTwistingLeft
   bodyPart: LHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: hand_l_twisting
@@ -65,7 +58,6 @@
   id: HandTwistingRight
   bodyPart: RHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: hand_r_twisting
@@ -74,7 +66,6 @@
   id: SmileScars
   bodyPart: Head
   groupWhitelist: [Human, Slime]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: head_smile
@@ -83,7 +74,6 @@
   id: HeadTwisting
   bodyPart: Head
   groupWhitelist: [Human, Slime]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: head_twisting
@@ -92,7 +82,6 @@
   id: HeadTwistingFlipped
   bodyPart: Head
   groupWhitelist: [Human, Slime]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: head_twisting_flipped
@@ -101,7 +90,6 @@
   id: LegTwistingLeft
   bodyPart: LLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: leg_l_twisting
@@ -110,7 +98,6 @@
   id: LegTwistingRight
   bodyPart: RLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: leg_r_twisting
@@ -119,7 +106,6 @@
   id: TorsoIncision
   bodyPart: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: torso_incision
@@ -128,7 +114,6 @@
   id: ArmProstheticLeft
   bodyPart: LArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -142,7 +127,6 @@
   id: ArmProstheticRight
   bodyPart: RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -156,7 +140,6 @@
   id: FootProstheticLeft
   bodyPart: LFoot
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -170,7 +153,6 @@
   id: FootProstheticRight
   bodyPart: RFoot
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -184,7 +166,6 @@
   id: HandProstheticLeft
   bodyPart: LHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -198,7 +179,6 @@
   id: HandProstheticRight
   bodyPart: RHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -212,7 +192,6 @@
   id: LegProstheticLeft
   bodyPart: LLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -226,7 +205,6 @@
   id: LegProstheticRight
   bodyPart: RLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Moth, Vulpkanin]
-  followSkinColor: false
   coloring:
     default:
       type:

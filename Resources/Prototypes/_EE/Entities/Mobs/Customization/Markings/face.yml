@@ -1,7 +1,7 @@
 - type: marking
   id: FaceBindi
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -14,7 +14,7 @@
 - type: marking
   id: FaceFullblush
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -27,7 +27,7 @@
 - type: marking
   id: FaceCheekspotRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -40,7 +40,7 @@
 - type: marking
   id: FaceCheekspotLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -53,7 +53,7 @@
 - type: marking
   id: FaceChesireRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -66,7 +66,7 @@
 - type: marking
   id: FaceChesireLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -79,7 +79,7 @@
 - type: marking
   id: FaceCrowRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -92,7 +92,7 @@
 - type: marking
   id: FaceCrowLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -105,7 +105,7 @@
 - type: marking
   id: FaceEarRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -118,7 +118,7 @@
 - type: marking
   id: FaceEarLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -131,7 +131,7 @@
 - type: marking
   id: FaceEyebrowRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -145,7 +145,7 @@
 - type: marking
   id: FaceEyebrowLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -159,7 +159,7 @@
 - type: marking
   id: FaceEyebrows
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -172,7 +172,7 @@
 - type: marking
   id: FaceEyecornerRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -185,7 +185,7 @@
 - type: marking
   id: FaceEyecornerLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -198,7 +198,7 @@
 - type: marking
   id: FaceEyelashRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -211,7 +211,7 @@
 - type: marking
   id: FaceEyelashLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -224,7 +224,7 @@
 - type: marking
   id: FaceEyestripe
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -237,7 +237,7 @@
 - type: marking
   id: FaceLipcornerRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -250,7 +250,7 @@
 - type: marking
   id: FaceLipcornerLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -263,7 +263,7 @@
 - type: marking
   id: FaceGlabella
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -276,7 +276,7 @@
 - type: marking
   id: FaceLowercheekRight
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -289,7 +289,7 @@
 - type: marking
   id: FaceLowercheekLeft
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -302,7 +302,7 @@
 - type: marking
   id: FaceNosetape
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -315,7 +315,7 @@
 - type: marking
   id: FaceNosetip
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -329,7 +329,7 @@
 - type: marking
   id: FaceNosestripe
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:
@@ -342,7 +342,7 @@
 - type: marking
   id: FaceUnibrow
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
   coloring:
     default:
       type:
@@ -355,8 +355,11 @@
 - type: marking
   id: FaceNeckSlim
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
-  followSkinColor: true
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _EE/Mobs/Customization/face.rsi
     state: neck_f
@@ -364,8 +367,11 @@
 - type: marking
   id: FaceNeckWide
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
-  followSkinColor: true
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _EE/Mobs/Customization/face.rsi
     state: neck_m
@@ -373,8 +379,11 @@
 - type: marking
   id: FaceNeckSlimThick
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
-  followSkinColor: true
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _EE/Mobs/Customization/face.rsi
     state: neck_thick_f
@@ -382,8 +391,11 @@
 - type: marking
   id: FaceNeckWideThick
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Reptilian, Vulpkanin, Harpy]
-  followSkinColor: true
+  groupWhitelist: [Human, Slime, Reptilian, Vulpkanin, Harpy]
+  coloring:
+    default:
+      type:
+        !type:SkinColoring
   sprites:
   - sprite: _EE/Mobs/Customization/face.rsi
     state: neck_thick_m
@@ -391,7 +403,7 @@
 - type: marking
   id: IronJaw
   bodyPart: Head
-  speciesRestriction: [Dwarf, Human, Slime, Harpy]
+  groupWhitelist: [Human, Slime, Harpy]
   coloring:
     default:
       type:

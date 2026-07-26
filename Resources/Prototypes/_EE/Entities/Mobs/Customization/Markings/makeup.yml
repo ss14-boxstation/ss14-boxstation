@@ -1,7 +1,7 @@
 - type: marking
   id: MakeupLips
   bodyPart: Head
-  groupWhitelist: [Dwarf, Human, Slime]
+  groupWhitelist: [Human, Slime]
   coloring:
     default:
       type:
@@ -14,7 +14,7 @@
 - type: marking
   id: MakeupBlush
   bodyPart: Head
-  groupWhitelist: [Dwarf, Human, Reptilian, Slime]
+  groupWhitelist: [Human, Reptilian, Slime]
   coloring:
     default:
       type:
@@ -27,7 +27,7 @@
 - type: marking
   id: MakeupNailPolishRight
   bodyPart: RHand
-  groupWhitelist: [Dwarf, Human, Reptilian, Arachnid, Slime]
+  groupWhitelist: [Human, Reptilian, Arachnid, Slime]
   coloring:
     default:
       type:
@@ -40,7 +40,7 @@
 - type: marking
   id: MakeupNailPolishLeft
   bodyPart: LHand
-  groupWhitelist: [Dwarf, Human, Reptilian, Arachnid, Slime]
+  groupWhitelist: [Human, Reptilian, Arachnid, Slime]
   coloring:
     default:
       type:
