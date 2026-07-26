@@ -17,7 +17,7 @@ public sealed class SpeciesMutingSystem : EntitySystem
     [Dependency] private readonly INetConfigurationManager _config = default!;
 
     private static readonly ProtoId<SpeechSoundsPrototype> ArachnidVoice = "Arachnid";
-    private static readonly ProtoId<SpeechSoundsPrototype> DionaVoice = "Diona";
+    //Dionae use human speech sounds.
     private static readonly ProtoId<SpeechSoundsPrototype> DwarfVoice = "Bass";
     private static readonly ProtoId<SpeechSoundsPrototype> HumanVoice = "Alto";
     private static readonly ProtoId<SpeechSoundsPrototype> MothVoice = "Moth";
@@ -51,7 +51,6 @@ public sealed class SpeciesMutingSystem : EntitySystem
     private readonly Dictionary<ProtoId<SpeechSoundsPrototype>, CVarDef> _voicelineCVars = new()
     {
         [ArachnidVoice] = RMCCVars.RMCPlayVoicelinesArachnid,
-        [DionaVoice] = RMCCVars.RMCPlayVoicelinesDiona,
         [DwarfVoice] = RMCCVars.RMCPlayVoicelinesDwarf,
         [HumanVoice] = RMCCVars.RMCPlayVoicelinesHuman,
         [MothVoice] = RMCCVars.RMCPlayVoicelinesMoth,
