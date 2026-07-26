@@ -628,7 +628,7 @@
 
 - type: marking
   id: VoxStreamers
-  bodyPart: HeadSideSide
+  bodyPart: HeadSide
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/headside.rsi
