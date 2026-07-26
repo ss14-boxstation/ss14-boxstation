@@ -9,7 +9,7 @@
 - type: marking
   id: ScarEyeLeft
   bodyPart: Head
-  groupWhitelist: [Human, Slime, Vulpkanin, Rodentia]# Box - Add Vulps, Rodentia, Slime
+  groupWhitelist: [Human, Slime, Vulpkanin, Rodentia] # Box - Add Vulps, Rodentia, Slime
   sprites:
   - sprite: Mobs/Customization/scars.rsi
     state: scar_eye_left
