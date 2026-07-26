@@ -1,593 +1,3 @@
-#  Rodentia disabled pending Nubody fixes (check if you can port before rewriting)
-
-# # SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# # SPDX-FileCopyrightText: 2024 Tadeo <td12233a@gmail.com>
-# # SPDX-FileCopyrightText: 2025 Falcon <falcon@zigtag.dev>
-# # SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
-# # SPDX-FileCopyrightText: 2025 pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
-# # SPDX-FileCopyrightText: 2025 taydeo <td12233a@gmail.com>
-# #
-# # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
-
-# # HEAD
-
-# ## DEFAULTS
-
-# - type: marking
-#   id: RodentiaHeadTopEarDefault
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [IPC]
-#   coloring:
-#     default:
-#       type: !type:TattooColoring
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: mouse
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: mouse_overlay
-
-# - type: marking
-#   id: RodentiaTailDefault
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [IPC]
-#   coloring:
-#     default:
-#       type: !type:TattooColoring
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: mouse
-
-# ## EARS
-
-# - type: marking
-#   id: RodentiaHeadTopEarBat
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: bat
-
-# - type: marking
-#   id: RodentiaHeadTopEarBatLarge
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: bat_large
-
-# - type: marking
-#   id: RodentiaHeadTopEarHamster
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: hamster
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: hamster_overlay
-
-# - type: marking
-#   id: RodentiaHeadTopEarLong
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: long
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: long_overlay
-
-# - type: marking
-#   id: RodentiaHeadTopEarMouse
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: mouse
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: mouse_overlay
-
-# - type: marking
-#   id: RodentiaHeadTopEarMouseLarge
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: mouse_large
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: mouse_large_overlay
-
-# - type: marking
-#   id: RodentiaHeadTopEarNone
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: none
-
-# - type: marking
-#   id: RodentiaHeadTopEarPointy
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: pointy
-
-# - type: marking
-#   id: RodentiaHeadTopEarRabbit
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: rabbit
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: rabbit_overlay
-
-# - type: marking
-#   id: RodentiaHeadTopEarSmall
-#   markingCategory: HeadTop
-#   bodyPart: HeadTop
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
-#       state: small
-
-# ## SNOUTS
-
-# - type: marking
-#   id: RodentiaSnoutBat
-#   markingCategory: Snout
-#   bodyPart: Snout
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: bat
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: bat_nose
-
-# - type: marking
-#   id: RodentiaSnoutBatCounter
-#   markingCategory: Snout
-#   bodyPart: Snout
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: bat
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: bat_nose
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: bat_overlay
-
-# - type: marking
-#   id: RodentiaSnoutFlat
-#   markingCategory: Snout
-#   bodyPart: Snout
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: flat
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: flat_nose
-
-# - type: marking
-#   id: RodentiaSnoutFlatCounter
-#   markingCategory: Snout
-#   bodyPart: Snout
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: flat
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: flat_nose
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: flat_overlay
-
-# - type: marking
-#   id: RodentiaSnoutRound
-#   markingCategory: Snout
-#   bodyPart: Snout
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: round
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: round_nose
-
-# - type: marking
-#   id: RodentiaSnoutRoundCounter
-#   markingCategory: Snout
-#   bodyPart: Snout
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: round
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: round_nose
-#     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
-#       state: round_overlay
-
-# ## CHEEKS
-
-# - type: marking
-#   id: RodentiaCheeksRound
-#   markingCategory: HeadSide
-#   bodyPart: HeadSide
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: cheeks
-
-# - type: marking
-#   id: RodentiaCheeksRoundCounter
-#   markingCategory: HeadSide
-#   bodyPart: HeadSide
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: cheeks
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: cheeks_overlay
-
-# - type: marking
-#   id: RodentiaCheeksFluff
-#   markingCategory: HeadSide
-#   bodyPart: HeadSide
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: fluff
-
-# - type: marking
-#   id: RodentiaCheeksFluffCounter
-#   markingCategory: HeadSide
-#   bodyPart: HeadSide
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: fluff
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: fluff_overlay
-
-# - type: marking
-#   id: RodentiaCheeksFluffAlt
-#   markingCategory: HeadSide
-#   bodyPart: HeadSide
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: fluff_alt
-
-# - type: marking
-#   id: RodentiaCheeksFluffAltCounter
-#   markingCategory: HeadSide
-#   bodyPart: HeadSide
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: fluff_alt
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: fluff_alt_overlay
-
-# - type: marking
-#   id: RodentiaCheeksWhiskers
-#   markingCategory: Head # for no-cost markings
-#   bodyPart: HeadTop # for layering
-#   speciesRestriction: [Rodentia] # Funky - Remove IPC due to oversight
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
-#       state: whiskers
-
-# # BODY
-
-# ## TAIL
-
-# - type: marking
-#   id: RodentiaTailBeaver
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: beaver
-
-# - type: marking
-#   id: RodentiaTailHamster
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: hamster
-
-# - type: marking
-#   id: RodentiaTailLong
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: long
-
-# - type: marking
-#   id: RodentiaTailLongCounter
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: long
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: long_overlay
-
-# - type: marking
-#   id: RodentiaTailLongCounterTip
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: long
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: long_overlay
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: long_tip
-
-# - type: marking
-#   id: RodentiaTailMouse
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: mouse
-
-# - type: marking
-#   id: RodentiaTailRabbit
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: rabbit
-
-# - type: marking
-#   id: RodentiaTailRabbitCounter
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: rabbit
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: rabbit_overlay
-
-# - type: marking
-#   id: RodentiaTailShort
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: short
-
-# - type: marking
-#   id: RodentiaTailSquirrel
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: squirrel
-
-# - type: marking
-#   id: RodentiaTailSquirrelBicolor
-#   markingCategory: Tail
-#   bodyPart: Tail
-#   speciesRestriction: [Rodentia, IPC]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: squirrel
-#     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
-#       state: squirrel_overlay
-
-# ## PATTERNS
-
-# - type: marking
-#   id: RodentiaChestCountershade
-#   markingCategory: Chest
-#   bodyPart: Chest
-#   speciesRestriction: [Rodentia]
-#   sexRestriction: Male
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: countershade
-
-# - type: marking
-#   id: RodentiaChestCountershadeF
-#   markingCategory: Chest
-#   bodyPart: Chest
-#   speciesRestriction: [Rodentia]
-#   sexRestriction: Female
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: countershade_f
-
-# - type: marking
-#   id: RodentiaLegLeftCountershade
-#   markingCategory: Legs
-#   bodyPart: LLeg
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: l_leg
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: countershade_lleg
-
-# - type: marking
-#   id: RodentiaLegRightCountershade
-#   markingCategory: Legs
-#   bodyPart: RLeg
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: r_leg
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: countershade_rleg
-
-# - type: marking
-#   id: RodentiaChestFawn
-#   markingCategory: Chest
-#   bodyPart: Chest
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: fawn
-
-# - type: marking
-#   id: RodentiaChestHooded
-#   markingCategory: Chest
-#   bodyPart: Chest
-#   speciesRestriction: [Rodentia]
-#   sexRestriction: Male
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: hooded
-
-# - type: marking
-#   id: RodentiaChestHoodedF
-#   markingCategory: Chest
-#   bodyPart: Chest
-#   speciesRestriction: [Rodentia]
-#   sexRestriction: Female
-#   sprites:
-#     - sprite: _DV/Mobs/Customization/Rodentia/body_markings.rsi
-#       state: hooded_f
-
-# ### HEAD PATTERNS
-
-# - type: marking
-#   id: RodentiaHeadBlaze
-#   markingCategory: Head
-#   bodyPart: Head
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: head_m
-#     - sprite: _DV/Mobs/Customization/Rodentia/head_markings.rsi
-#       state: blaze
-
-# - type: marking
-#   id: RodentiaHeadRound
-#   markingCategory: Head
-#   bodyPart: Head
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: head_m
-#     - sprite: _DV/Mobs/Customization/Rodentia/head_markings.rsi
-#       state: round
-
-# # BASE BODY PARTS
-
-# ## HEAD
-
-# - type: marking
-#   id: RodentiaHeadBasic
-#   markingCategory: Head
-#   bodyPart: Head
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: head_m
-
-# ## ARMS
-
-# - type: marking
-#   id: RodentiaArmLeftBasic
-#   markingCategory: Arms
-#   bodyPart: LArm
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: l_arm
-
-# - type: marking
-#   id: RodentiaArmRightBasic
-#   markingCategory: Arms
-#   bodyPart: RArm
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: r_arm
-
-# ## LEGS
-
-# - type: marking
-#   id: RodentiaLegLeftBasic
-#   markingCategory: Legs
-#   bodyPart: LLeg
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: l_leg
-
-# - type: marking
-#   id: RodentiaLegRightBasic
-#   markingCategory: Legs
-#   bodyPart: RLeg
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: r_leg
-
-# ## HANDS
-
-# - type: marking
-#   id: RodentiaHandLeftBasic
-#   markingCategory: Arms
-#   bodyPart: LHand
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: l_hand
-
-# - type: marking
-#   id: RodentiaHandRightBasic
-#   markingCategory: Arms
-#   bodyPart: RHand
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: r_hand
-
-# ## FEET
-
-# - type: marking
-#   id: RodentiaFootLeftBasic
-#   markingCategory: Legs
-#   bodyPart: LFoot
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: l_foot
-
-# - type: marking
-#   id: RodentiaFootRightBasic
-#   markingCategory: Legs
-#   bodyPart: RFoot
-#   speciesRestriction: [Rodentia]
-#   sprites:
-#     - sprite: _DV/Mobs/Species/Rodentia/parts.rsi
-#       state: r_foot
 # HEAD
 
 ## DEFAULTS
@@ -595,7 +5,7 @@
 - type: marking
   id: RodentiaHeadTopEarDefault
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   coloring:
     default:
       type: !type:TattooColoring
@@ -608,7 +18,7 @@
 - type: marking
   id: RodentiaTailDefault
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   coloring:
     default:
       type: !type:TattooColoring
@@ -621,7 +31,7 @@
 - type: marking
   id: RodentiaHeadTopEarBat
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies
+  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: bat
@@ -629,7 +39,7 @@
 - type: marking
   id: RodentiaHeadTopEarBatLarge
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies
+  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: bat_large
@@ -637,7 +47,7 @@
 - type: marking
   id: RodentiaHeadTopEarHamster
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: hamster
@@ -647,7 +57,7 @@
 - type: marking
   id: RodentiaHeadTopEarLong
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia, Human, Slime] # starcup
+  groupWhitelist: [Rodentia, Human, Slime] # starcup # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: long
@@ -657,7 +67,7 @@
 - type: marking
   id: RodentiaHeadTopEarMouse
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: mouse
@@ -667,7 +77,7 @@
 - type: marking
   id: RodentiaHeadTopEarMouseLarge
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia, Human, Slime] # starcup
+  groupWhitelist: [Rodentia, Human, Slime] # starcup # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: mouse_large
@@ -685,7 +95,7 @@
 - type: marking
   id: RodentiaHeadTopEarPointy
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: pointy
@@ -693,7 +103,7 @@
 - type: marking
   id: RodentiaHeadTopEarRabbit
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia, Human, Slime] # starcup
+  groupWhitelist: [Rodentia, Human, Slime] # starcup # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: rabbit
@@ -703,7 +113,7 @@
 - type: marking
   id: RodentiaHeadTopEarSmall
   bodyPart: HeadTop
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/ear_markings.rsi
       state: small
@@ -713,7 +123,7 @@
 - type: marking
   id: RodentiaSnoutBat
   bodyPart: Snout
-  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies
+  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: bat
@@ -723,7 +133,7 @@
 - type: marking
   id: RodentiaSnoutBatCounter
   bodyPart: Snout
-  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies
+  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: bat
@@ -735,7 +145,7 @@
 - type: marking
   id: RodentiaSnoutFlat
   bodyPart: Snout
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: flat
@@ -745,7 +155,7 @@
 - type: marking
   id: RodentiaSnoutFlatCounter
   bodyPart: Snout
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: flat
@@ -757,7 +167,7 @@
 - type: marking
   id: RodentiaSnoutRound
   bodyPart: Snout
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: round
@@ -767,7 +177,7 @@
 - type: marking
   id: RodentiaSnoutRoundCounter
   bodyPart: Snout
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/snout_markings.rsi
       state: round
@@ -781,7 +191,7 @@
 - type: marking
   id: RodentiaCheeksRound
   bodyPart: HeadSide
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: cheeks
@@ -789,7 +199,7 @@
 - type: marking
   id: RodentiaCheeksRoundCounter
   bodyPart: HeadSide
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: cheeks
@@ -799,7 +209,7 @@
 - type: marking
   id: RodentiaCheeksFluff
   bodyPart: HeadSide
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff
@@ -807,7 +217,7 @@
 - type: marking
   id: RodentiaCheeksFluffCounter
   bodyPart: HeadSide
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff
@@ -817,7 +227,7 @@
 - type: marking
   id: RodentiaCheeksFluffAlt
   bodyPart: HeadSide
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff_alt
@@ -825,7 +235,7 @@
 - type: marking
   id: RodentiaCheeksFluffAltCounter
   bodyPart: HeadSide
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi
       state: fluff_alt
@@ -847,7 +257,7 @@
 - type: marking
   id: RodentiaTailBeaver
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: beaver
@@ -855,7 +265,7 @@
 - type: marking
   id: RodentiaTailHamster
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: hamster
@@ -863,7 +273,7 @@
 - type: marking
   id: RodentiaTailLong
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: long
@@ -871,7 +281,7 @@
 - type: marking
   id: RodentiaTailLongCounter
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: long
@@ -881,7 +291,7 @@
 - type: marking
   id: RodentiaTailLongCounterTip
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: long
@@ -893,7 +303,7 @@
 - type: marking
   id: RodentiaTailMouse
   bodyPart: Tail
-  groupWhitelist: [Rodentia, Human, Slime] # starcup
+  groupWhitelist: [Rodentia, Human, Slime] # starcup # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: mouse
@@ -901,7 +311,7 @@
 - type: marking
   id: RodentiaTailRabbit
   bodyPart: Tail
-  groupWhitelist: [Rodentia]
+  groupWhitelist: [Rodentia] # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: rabbit
@@ -909,7 +319,7 @@
 - type: marking
   id: RodentiaTailRabbitCounter
   bodyPart: Tail
-  groupWhitelist: [Rodentia, Human, Slime] # starcup
+  groupWhitelist: [Rodentia, Human, Slime] # starcup # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: rabbit
@@ -919,7 +329,7 @@
 - type: marking
   id: RodentiaTailShort
   bodyPart: Tail
-  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies
+  groupWhitelist: [Rodentia, Harpy] # starcup - added Harpies # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: short
@@ -935,7 +345,7 @@
 - type: marking
   id: RodentiaTailSquirrelBicolor
   bodyPart: Tail
-  groupWhitelist: [Rodentia, Human, Slime] # starcup
+  groupWhitelist: [Rodentia, Human, Slime] # starcup # Box: Add IPC after nubody fixes
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/tail_markings.rsi
       state: squirrel
