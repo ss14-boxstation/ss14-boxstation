@@ -233,7 +233,7 @@
 
 - type: marking
   id: MobIPCHeadDefault
-  bodyPart: Head
+  bodyPart: HeadBase
   groupWhitelist: [IPC]
   coloring:
     default:

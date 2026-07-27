@@ -115,7 +115,7 @@ public sealed class BatteryDrinkerSystem : EntitySystem
 
         var amountToDrink = drinkerComp.DrinkMultiplier * 1000;
 
-        amountToDrink = MathF.Min(amountToDrink, _battery.GetCharge); // Box Change: Battery system got refactored
+        amountToDrink = MathF.Min(amountToDrink, _battery.GetCharge(source)); // Box Change: Battery system got refactored
         amountToDrink = MathF.Min(amountToDrink, drinkerBatteryComponent!.Value.Comp.MaxCharge - drinkerBatteryComponent.Value.Comp.LastCharge);
 
         if (sourceComp != null && sourceComp.MaxAmount > 0)
@@ -131,7 +131,7 @@ public sealed class BatteryDrinkerSystem : EntitySystem
             _battery.SetCharge(drinkerBattery, drinkerBatteryComponent.Value.Comp.LastCharge + amountToDrink);
         else
         {
-            _battery.SetCharge(drinkerBattery, _battery.GetCharge + drinkerBatteryComponent.Value.Comp.LastCharge); // Box Change: Battery system got refactored
+            _battery.SetCharge(drinkerBattery, _battery.GetCharge(drinkerBattery) + drinkerBatteryComponent.Value.Comp.LastCharge); // Box Change: Battery system got refactored
             _battery.SetCharge(source, 0);
         }
 

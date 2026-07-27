@@ -3,67 +3,67 @@
   id: IPC
   onlyGroupWhitelisted: true
   limits:
-    enum.HumanoidVisualLayer.Hair:
+    enum.HumanoidVisualLayers.Hair:
       limit: 1  # DeltaV - Fixes hair not displaying
       onlyGroupWhitelisted: false
       required: false
-    enum.HumanoidVisualLayer.FacialHair:
+    enum.HumanoidVisualLayers.FacialHair:
       limit: 1  # DeltaV - Fixes hair not displaying
       onlyGroupWhitelisted: false
       required: false
-    enum.HumanoidVisualLayer.HeadBase:
+    enum.HumanoidVisualLayers.HeadBase:
       limit: 1
       required: true
       default: [MobIPCHeadDefault]
-    enum.HumanoidVisualLayer.Head:
+    enum.HumanoidVisualLayers.Head:
       limit: 1
       required: false
-    enum.HumanoidVisualLayer.HeadTop:
+    enum.HumanoidVisualLayers.HeadTop:
       limit: 1
       required: false
-    enum.HumanoidVisualLayer.HeadSide:
+    enum.HumanoidVisualLayers.HeadSide:
       limit: 1
       required: false
-    enum.HumanoidVisualLayer.Chest:
+    enum.HumanoidVisualLayers.Chest:
       limit: 1
       required: true
       default: [MobIPCTorsoDefault]
-    enum.HumanoidVisualLayer.Overlay:
+    enum.HumanoidVisualLayers.Overlay:
       limit: 1
       required: false
-    enum.HumanoidVisualLayer.LArm:
+    enum.HumanoidVisualLayers.LArm:
       limit: 1
       required: true
       default: [MobIPCLArmDefault]
-    enum.HumanoidVisualLayer.RArm:
+    enum.HumanoidVisualLayers.RArm:
       limit: 1
       required: true
       default: [MobIPCRArmDefault]
-    enum.HumanoidVisualLayer.LHand:
+    enum.HumanoidVisualLayers.LHand:
       limit: 1
       required: true
       default: [MobIPCLHandDefault]
-    enum.HumanoidVisualLayer.Rhand:
+    enum.HumanoidVisualLayers.Rhand:
       limit: 1
       required: true
       default: [MobIPCRHandDefault]
-    enum.HumanoidVisualLayer.LLeg:
+    enum.HumanoidVisualLayers.LLeg:
       limit: 1
       required: true
       default: [MobIPCLLegDefault]
-    enum.HumanoidVisualLayer.RLeg:
+    enum.HumanoidVisualLayers.RLeg:
       limit: 1
       required: true
       default: [MobIPCRLegDefault]
-    enum.HumanoidVisualLayer.LFoot:
+    enum.HumanoidVisualLayers.LFoot:
       limit: 1
       required: true
       default: [MobIPCLFootDefault]
-    enum.HumanoidVisualLayer.RFoot:
+    enum.HumanoidVisualLayers.RFoot:
       limit: 1
       required: true
       default: [MobIPCRFootDefault]
-    enum.HumanoidVisualLayer.Snout: # DeltaV: Add ability to use more marking types
+    enum.HumanoidVisualLayers.Snout: # DeltaV: Add ability to use more marking types
       limit: 1
       required: false
 
@@ -233,7 +233,7 @@
   description: "01001001 00100000 01110011 01100101 01100101 00100000 01111001 01101111 01110101 00100001"
   components:
   - type: VisualOrgan
-    layer: enum.HumanoidVisualLayer.Eyes
+    layer: enum.HumanoidVisualLayers.Eyes
     data: 
       sprite: Mobs/Customization/eyes.rsi
       state: no_eyes

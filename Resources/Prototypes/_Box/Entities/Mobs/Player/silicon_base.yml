@@ -25,7 +25,7 @@
   - type: Temperature
     currentTemperature: 310.15
     specificHeat: 42
-  - type: TempratureDamage
+  - type: TemperatureDamage
     heatDamageThreshold: 373.15 # damage point of electronics
     coldDamageThreshold: 200 # takes into account freezing point of structural elements, like plastics, and the freezing point of internal chemicals
     coldDamage:
@@ -121,10 +121,10 @@
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
   - type: Destructible
-    thresholds:    
+    thresholds:
     - trigger:
-      !type:DamageTypeTrigger
-      damageType: Blunt
-      damage: 400
-    behaviors:
-    - !type:GibBehavior { }
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }

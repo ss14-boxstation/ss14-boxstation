@@ -27,6 +27,7 @@ using Content.Shared.Movement.Components;
 using Robust.Shared.Physics.Components;
 using Content.Shared.Temperature.Components;
 // End TheDen
+using Content.Server.Body.Components; // Box Change: added for ThermalRegulatorComponent
 
 namespace Content.Server._EE.Silicon.Charge;
 
@@ -185,7 +186,7 @@ public sealed class SiliconChargeSystem : EntitySystem
 
             if (!EntityManager.TryGetComponent<FlammableComponent>(silicon, out var flamComp)
                 || flamComp is { OnFire: true }
-                || !(temperComp.CurrentTemperature > temperComp.HeatDamageThreshold))
+                || !(temperComp.CurrentTemperature > upperThresh))
                 return hotTempMulti;
 
             _popup.PopupEntity(Loc.GetString("silicon-overheating"), silicon, silicon, PopupType.MediumCaution);
