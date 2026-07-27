@@ -49,7 +49,7 @@ public sealed class SiliconChargeSystem : EntitySystem
         SubscribeLocalEvent<SiliconComponent, ComponentStartup>(OnSiliconStartup);
     }
 
-    public bool TryGetSiliconBattery(EntityUid silicon, [NotNullWhen(true)] out Entity<PredictedBatteryComponent>? batteryComp)
+    public bool TryGetSiliconBattery(EntityUid silicon, [NotNullWhen(true)] out Entity<BatteryComponent>? batteryComp)
     {
         batteryComp = null;
         if (!HasComp<SiliconComponent>(silicon))
