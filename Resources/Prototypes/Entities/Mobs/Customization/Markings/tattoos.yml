@@ -105,7 +105,7 @@
 - type: marking
   id: TattooEyeRight
   bodyPart: Eyes
-  groupWhitelist: [Human, Slime, Reptilian] # Box - Add Rodentia after Nubody fixes
+  groupWhitelist: [Human, Slime, Reptilian, Rodentia] # Box - Add Rodentia
   coloring:
     default:
       type:
@@ -118,7 +118,7 @@
 - type: marking
   id: TattooEyeLeft
   bodyPart: Eyes
-  groupWhitelist: [Human, Slime, Reptilian] # Box - Add Rodentia after Nubody fixes
+  groupWhitelist: [Human, Slime, Reptilian, Rodentia] # Box - Add Rodentia
   coloring:
     default:
       type:
