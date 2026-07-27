@@ -13,7 +13,7 @@ public sealed class BatteryElectrocuteChargeSystem : EntitySystem
 { 
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly BatterySystem _battery = default!;
+    [Dependency] private readonly BatterySystem _battery = default!; // Box Change: Battery system got refactored
 
     // Yes, this is absurdly small for a reason.
     public const float ElectrifiedDamagePerWatt = 0.0015f;
