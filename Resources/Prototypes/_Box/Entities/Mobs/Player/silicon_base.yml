@@ -68,6 +68,15 @@
       0: Alive
       199.999: Critical # Make it near impossible
       120: Dead
+    stateAlertDict:
+      # Start Box change to change health states from BorgHealth to IpcHealth, Needed for Numb to work and not also have it apply to Borgs (Unless we want that?)
+      #Alive: BorgHealth
+      #Critical: BorgCrit
+      #Dead: BorgDead
+      Alive: IpcHealth
+      Critical: IpcCrit
+      Dead: IpcDead
+      # End Box change
   - type: RangedDamageSound
     soundGroups:
       Brute:
@@ -111,7 +120,9 @@
   - type: WeldingHealable
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
-  - trigger:
+  - type: Destructible
+    thresholds:    
+    - trigger:
       !type:DamageTypeTrigger
       damageType: Blunt
       damage: 400
