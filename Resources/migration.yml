@@ -784,3 +784,99 @@ SpacemenFigureSpawner: SpacemenFigurineSpawner90
 
 # 2026-06-13 BoxStation
 LidSalami: null
+
+# 2026-07-28 Boxstation: Banana port
+AirAlarmDecapoid: AirAlarm
+AirlockCourierGlassLocked: AirlockCargoGlassLocked
+ApidCryopodEngineer: null
+ApidCryopodSalvageSpecialist: null
+BenchSofaCorpLeft: BenchComfy # Port These
+BenchSofaCorpMiddle: BenchComfy # ^
+BenchSofaCorpRight: BenchComfy # ^
+BookshelfGuidebooksFilled: BookshelfFilled
+BorgSpawnerTckTck: null
+ChairApid: ChairOfficeDark
+CigPackShrimp: CigPackMixed
+ClosetEmergencyFilledWinter: ClosetEmergencyFilledRandom
+ClosetEmergencyN2FilledWinter: ClosetEmergencyN2FilledRandom
+ClothingOuterHardsuitCourier: ClothingOuterHardsuitEVA
+ColdPack1: Ointment1
+ComputerFundingAllocationBroken: ComputerFundingAllocation
+ComputerServiceJobBoard: ComputerBroken
+ComputerShipyard: ComputerBroken
+ComputerTabletopMassMedia: ComputerMassMedia # Port these
+ComputerTabletopRadar: ComputerRadar # ^
+Decalamp: Lamp
+DefaultStationBeaconMailroomCourier: null
+DefaultStationBeaconSolarsNorthEast: DefaultStationBeaconSolarsNE
+DeskIntercomFreelance: null # Port this
+DrinkCottonBoolGlass: null # Port this?
+DrinkGreenAsteradeBottleFull: null
+DrinkRaktaccinoGlass: null
+FoodBoxDonkpocketCloth: FoodBoxDonkpocketMoth
+FoodMealBigLollipop: null # Port these
+FoodMealClothLollipop: null # ^
+FoodMealFruitLollipop: null # ^
+FoodMealMeatLollipop: null # ^???
+GasFilterEnabled: GasFilter # We should add thesse too
+GasPressurePumpEnabled: GasPressurePump
+GasVentScrubberAlt1: null # Wizden feature, port this
+GasVentScrubberAlt2: null #
+GasVentScrubberDecapoid: GasVentScrubber
+GasVentPumpDecapoid: GasVentPump
+GlassBoxNukeDiskFilled: null
+GreatWrench: Wrench # Big wrench is cool but maybe not port-worthy
+HoSGunSpawner: WeaponEnergyMagnum  # HoS gets a mapped emagnum here instead of a WT/etc
+ImpCoffeeMachine: null # PORT THIS PLEAAASE
+KitchenAssembler: KitchenMicrowave # I don't actually know how this is different than a normal microwave aside from visuals
+KitchenElectricRange: KitchenElectricGrill # Port this
+LockerCourierFilled: WardrobeCargoFilled
+LockerHospitalityDirectorFilled: WardrobeMixedFilled # Oh god I forgot about HD how are we gonna handle that
+LockerJanitorFilled: ClosetJanitor
+MedicalAssembler: null # This is basically a super-microwave for medical from frontier idk if we'd want this
+MirrorApid: Mirror
+PlushieAlienGerm: PlushieSpawner50
+PlushieApid: PlushieSpawner50
+PlushieCosmicCult: PlushieSpawner50
+PlushieDecapoid: PlushieSpawner50
+PlushieFinfin: PlushieSpawner50
+PlushieGray: PlushieSpawner50
+PlushieKodepiia: PlushieSpawner50
+PlushieOdds: PlushieSpawner50
+PlushieTeddyBearRecolorableRandom: PlushieSpawner50 # This one doesn't immediately jump out as imp content / an imp meme so look into it
+PoweredlightUV: PoweredlightExterior
+PoweredSmallFloorLightRed: null # Port floor lights pleaaase
+ReagentContainerHoney: null # Port bees actually yeah why not
+RubberStampHatePaperwork: null # maybe for the funny
+ServiceTechFab: null # we will have these at some point
+SignApid: null
+SignMaterialsService: SignMaterials
+SpawnMobChemDog: SpawnMobWalter
+SpawnMobPenguinOswald: null # HD pet
+SpawnPointCourier: SpawnPointCargoTechnician
+SpawnPointLocationMidRoundAntag: null
+SqueakySmileyBall: PlushieSpawner50
+SteelLunchboxApidFilled: null
+SurveillanceWirelessCameraPocket: null # what the fuck even is this
+TableUraniumGlass: TableGlass # port this, why isn't this just upstream
+TableWoodReinforced: TableWood
+TrashNapkin: null # port this, i want like ALL of imp's service goodies
+VendingMachineCourierDrobe: null
+VendingMachineDanShrimp: VendingMachineDiscount
+VendingMachineSalvDrobe: null # Could be worth porting if it's substantial enough to justify splitting it off from cargodrobe
+WallmountTelevisionMini: WallmountTelevision
+WallpaperStarsBig: null # Port these 
+WallpaperStarsMoon: null # ^
+WallpaperStarsSmall: null # ^
+WarningWaterVapor: WarningAir
+WeaponPocketDisabler: WeaponDisabler
+WindoorSecureCourierLocked: WindoorSecureCargoLocked
+YarnNoodles: FoodNoodles # port this we need more moth food desperately
+# Round 2...
+AtmosFixDecapoidMarker: null
+AtmosFixWaterVaporMarker: AtmosFixBlockerMarker
+CrateEngineeringShittle: null 
+CrateServiceJanitorialHardsuit: CrateJanitorBiosuit
+CrateServiceMaintBarKit: null
+SpawnPointHospitalityDirector: null
+SpawnPointLogisticsAssistant: SpawnPointSupplyAssistant
