@@ -1200,3 +1200,14 @@
   id: 141
   time: '2026-07-28T19:39:30.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/218
+- author: Dizzy-Eevee
+  changes:
+  - message: Tape recorders can now be controlled using four signal ports corresponding
+      to their buttons.
+    type: Add
+  - message: Tape recorders now change their voice when hidden in plushies, toilets,
+      or plants.
+    type: Tweak
+  id: 142
+  time: '2026-07-28T19:43:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/214
