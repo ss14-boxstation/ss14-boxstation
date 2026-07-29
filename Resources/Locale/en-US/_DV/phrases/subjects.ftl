@@ -83,12 +83,14 @@ phrase-robotics = robotics
 phrase-circuit-board = circuit board
 phrase-research = research
 phrase-research-console = R&D computer
-phrase-oracle = Oracle
-phrase-sophie = Sophie
-phrase-glimmer = glimmer
-phrase-psionic = psionic
-phrase-lotophagol-oil = lotophagol oil
-phrase-mindbreak-phase = mindbreak
+# Start Box Change: No epistemics
+#phrase-oracle = Oracle
+#phrase-sophie = Sophie
+#phrase-glimmer = glimmer
+#phrase-psionic = psionic
+#phrase-lotophagol-oil = lotophagol oil
+#phrase-mindbreak-phase = mindbreak
+# End Box Change
 phrase-protolathe = protolathe
 phrase-circuit-imprinter = circuit imprinter
 phrase-bounty = bounty

@@ -47,36 +47,38 @@
   id: ResearchConsolePhrase
   parent: BaseScienceSubjectPhrase
   text: phrase-research-console
+  
+# Start Box Change: We are not an epistemics fork
+# - type: quickPhrase
+  # id: OraclePhrase
+  # parent: BaseScienceSubjectPhrase
+  # text: phrase-oracle
 
-- type: quickPhrase
-  id: OraclePhrase
-  parent: BaseScienceSubjectPhrase
-  text: phrase-oracle
+# - type: quickPhrase
+  # id: SophiePhrase
+  # parent: BaseScienceSubjectPhrase
+  # text: phrase-sophie
 
-- type: quickPhrase
-  id: SophiePhrase
-  parent: BaseScienceSubjectPhrase
-  text: phrase-sophie
+# - type: quickPhrase
+  # id: GlimmerPhrase
+  # parent: BaseScienceSubjectPhrase
+  # text: phrase-glimmer
 
-- type: quickPhrase
-  id: GlimmerPhrase
-  parent: BaseScienceSubjectPhrase
-  text: phrase-glimmer
+# - type: quickPhrase
+  # id: PsionicsPhrase
+  # parent: BaseScienceSubjectPhrase
+  # text: phrase-psionic
 
-- type: quickPhrase
-  id: PsionicsPhrase
-  parent: BaseScienceSubjectPhrase
-  text: phrase-psionic
+# - type: quickPhrase
+  # id: LotophagolOilPhrase
+  # parent: BaseScienceSubjectPhrase
+  # text: phrase-lotophagol-oil
 
-- type: quickPhrase
-  id: LotophagolOilPhrase
-  parent: BaseScienceSubjectPhrase
-  text: phrase-lotophagol-oil
-
-- type: quickPhrase
-  id: MindbreakPhase
-  parent: BaseScienceSubjectPhrase
-  text: phrase-mindbreak-phase
+# - type: quickPhrase
+  # id: MindbreakPhase
+  # parent: BaseScienceSubjectPhrase
+  # text: phrase-mindbreak-phase
+# End Box Change
 
 - type: quickPhrase
   id: ProtolathePhrase
