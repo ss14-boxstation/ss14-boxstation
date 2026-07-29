@@ -1224,3 +1224,19 @@
   id: 143
   time: '2026-07-28T19:46:01.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/220
+- author: Dizzy-Eevee
+  changes:
+  - message: Syndicate dead drops will no longer occur within the first 15 minutes
+      of a shift.
+    type: Tweak
+  id: 144
+  time: '2026-07-29T16:25:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/221
+- author: Dizzy-Eevee
+  changes:
+  - message: Passive vent spawns (mice/roaches/snails) will no longer come with an
+      announcement. If you see a warning about vent critters, take it seriously!
+    type: Tweak
+  id: 145
+  time: '2026-07-29T16:24:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/223
