@@ -1240,3 +1240,16 @@
   id: 145
   time: '2026-07-29T16:24:21.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/223
+- author: Dizzy-Eevee
+  changes:
+  - message: The AAC tablet now has a search bar.
+    type: Add
+  - message: The AAC tablet can now send messages over radio using the user's headset.
+    type: Add
+  - message: the AAC tablet can now combine multiple phrases into a single message.
+    type: Add
+  - message: Added a new AAC tablet variant with a more robotic voice.
+    type: Add
+  id: 146
+  time: '2026-07-29T18:00:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/224
