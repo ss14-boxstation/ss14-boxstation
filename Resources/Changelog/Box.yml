@@ -1272,3 +1272,13 @@
   id: 149
   time: '2026-07-29T18:03:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/219
+- author: BlueMoon059
+  changes:
+  - message: The Paramedic now starts with a handheld crew monitor of their own.
+    type: Add
+  - message: The Syndicate Agent "steal the handheld crewmonitor" objective has been
+      disabled from rolling.
+    type: Remove
+  id: 150
+  time: '2026-07-29T22:24:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/226
