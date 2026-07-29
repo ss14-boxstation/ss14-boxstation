@@ -1253,3 +1253,20 @@
   id: 146
   time: '2026-07-29T18:00:20.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/224
+- author: Dizzy-Eevee
+  changes:
+  - message: The option to mute species voicelines/emotes will now apply to characters
+      with voice change traits, and non-humanoid mobs like mothroaches.
+    type: Tweak
+  - message: You can now mute scurrets.
+    type: Add
+  id: 147
+  time: '2026-07-29T18:01:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/215
+- author: Dizzy-Eevee
+  changes:
+  - message: Added voice replacement traits for scurrets. Wawa!
+    type: Add
+  id: 148
+  time: '2026-07-29T18:02:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/216
