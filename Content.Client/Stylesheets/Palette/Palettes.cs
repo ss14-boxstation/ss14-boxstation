@@ -28,7 +28,7 @@ public static class Palettes
     public static readonly ColorPalette AlphaModulate = ColorPalette.FromHexBase("#ffffff");
 
     // begin starcup: department color palettes
-    public static readonly ColorPalette DepartmentCommand = ColorPalette.FromHexBase("#55203f");
+    public static readonly ColorPalette DepartmentCommand = ColorPalette.FromHexBase("#404A58"); // Box Change: Revert to NT command palette
     public static readonly ColorPalette DepartmentEngineering = ColorPalette.FromHexBase("#77684B");
     public static readonly ColorPalette DepartmentScience = ColorPalette.FromHexBase("#6F5973");
     public static readonly ColorPalette DepartmentLogistics = ColorPalette.FromHexBase("#61503A");
