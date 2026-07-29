@@ -268,3 +268,10 @@
     back:
     - BoxReamWhite
   groupBy: "folders"
+
+- type: loadout
+  id: AACTabletSAS
+  storage:
+    back:
+    - AACTabletSAS
+  groupBy: "AAC"
