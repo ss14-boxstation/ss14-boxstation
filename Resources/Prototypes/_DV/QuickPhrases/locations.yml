@@ -264,10 +264,12 @@
   id: LocationSalvagePhrase
   text: station-beacon-salvage
 
-- type: quickPhrase
-  parent: BaseLogisticsLocationPhrase
-  id: LocationMailPhrase
-  text: station-beacon-mailroom
+# Start Box Change: We don't have this
+#- type: quickPhrase
+#  parent: BaseLogisticsLocationPhrase
+#  id: LocationMailPhrase
+#  text: station-beacon-mailroom
+# End Box Change
 
 - type: quickPhrase
   parent: BaseLogisticsLocationPhrase
