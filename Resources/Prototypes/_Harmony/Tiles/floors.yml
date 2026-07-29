@@ -30,13 +30,12 @@
   parent: BaseStationTile # Box Change: Parent to upstream base floor tile
   name: tiles-bingle-floor
   sprite: /Textures/_Harmony/Tiles/binglefloortile.png
-  # Start Box Change: Remove redundant info
-  #variants: 4
-  #placementVariants:
-  #- 1.0
-  #- 1.0
-  #- 1.0
-  #- 1.0
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   #baseTurf: Plating
   #isSubfloor: false
   #deconstructTools: [ Prying ]
