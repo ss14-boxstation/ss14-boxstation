@@ -120,11 +120,3 @@
   - type: WeldingHealable
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
-        damageType: Blunt
-        damage: 400
-      behaviors:
-      - !type:GibBehavior { }

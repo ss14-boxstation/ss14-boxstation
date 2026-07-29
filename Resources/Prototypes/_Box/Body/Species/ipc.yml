@@ -107,6 +107,12 @@
     proto: ipc # Swaps out the silicon indicator proto for the IPC one
   - type: Destructible
     thresholds:
+      - trigger:
+          !type:DamageTypeTrigger
+          damageType: Blunt
+          damage: 400
+        behaviors:
+        - !type:GibBehavior { }
       # Start Box change to make IPCs able to have ashing like behavior
       - trigger:
           !type:DamageTypeTrigger
@@ -123,7 +129,7 @@
         - !type:PlaySoundBehavior
           sound:
             collection: MeatLaserImpact # Either this sound doesn't appear, or it already works good enough
-  - type: PowerCellSlot # battery slot for IPCs
+  - type: PowerCellSlot
     cellSlotId: cell_slot
     fitsInCharger: true
   - type: ItemSlots
@@ -133,12 +139,11 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: BatterySlotRequiresLock
-    itemSlot: cell_slot
+    itemSlot: cell_slot 
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg" # SOMEONE PLEASE FIND A BETTER SOUND FOR THIS.
     minInterval: 99
     maxInterval: 99
-    popUp: "silicon-power-low"aaaaaaaaaaaa
   - type: Lock
     locked: true
     lockOnClick: false
@@ -148,6 +153,7 @@
   - type: GuideHelp
     guides:
       - IPC
+# something something so it lets me commit godamn you git
 
 - type: entity
   parent: OrganBase
@@ -248,7 +254,8 @@
   components:
    - type: Sprite
      sprite: _Box/Mobs/Species/IPC/organs.rsi
-     state: ipc-brain-on
+     layers:
+     - state: ipc-brain-on
    - type: SolutionContainerManager
      solutions:
        organ:
@@ -305,6 +312,7 @@
   - type: Metabolizer
     maxReagents: 2
     removeEmpty: true
+    stages: [Bloodstream]
 
 - type: entity
   parent: [OrganIPCInternal, OrganIPCMetabolizer]
@@ -318,4 +326,5 @@
   - type: Metabolizer
     maxReagents: 2
     removeEmpty: true
+    stages: [ Digestion ]
     
