@@ -60,7 +60,7 @@
 - type: quickPhrase
   parent: BaseCommandJobPhrase
   id: CentralCommandOfficialPhrase
-  text: job-name-centcomm-official
+  text: job-name-centcommoff
 
 - type: quickPhrase
   parent: BaseCommandJobPhrase
@@ -133,15 +133,17 @@
   id: SalvageSpecialistPhrase
   text: job-name-salvagespec
 
-- type: quickPhrase
-  parent: BaseLogisticsJobPhrase
-  id: CourierPhrase
-  text: job-name-courier
+# Start Box Change: We don't have courier
+#- type: quickPhrase
+#  parent: BaseLogisticsJobPhrase
+#  id: CourierPhrase
+#  text: job-name-courier
+# End Box Change
 
 - type: quickPhrase
   parent: BaseLogisticsJobPhrase
   id: CargoAssistantPhrase
-  text: job-name-cargo-assistant
+  text: job-name-supply-assistant # Box Change: cargo-assistant > supply-assistant
 
 # Medical
 

@@ -247,12 +247,12 @@
 - type: quickPhrase
   parent: BaseLogisticsLocationPhrase
   id: LocationLogisticsPhrase
-  text: station-beacon-logistics
+  text: station-beacon-supply # Box Change: Logistics > Supply
 
 - type: quickPhrase
   parent: BaseLogisticsLocationPhrase
   id: LocationLoPhrase
-  text: station-beacon-lo
+  text: station-beacon-qm # Box Change: LO > QM
 
 - type: quickPhrase
   parent: BaseLogisticsLocationPhrase
