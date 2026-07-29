@@ -1,6 +1,88 @@
 # Orignally these were all in their own files for some reason. Im just going to put them all here and mark them individually :)
 # starting with!
 
+## Base
+
+- type: marking
+  id: MobIPCHeadDefault
+  bodyPart: Headbase
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: head
+
+- type: marking
+  id: MobIPCTorsoDefault
+  bodyPart: Chest
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: torso
+
+- type: marking
+  id: MobIPCLArmDefault
+  bodyPart: LArm
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: l_arm
+
+- type: marking
+  id: MobIPCLHandDefault
+  bodyPart: LHand
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: l_hand
+
+- type: marking
+  id: MobIPCRArmDefault
+  bodyPart: RArm
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: r_arm
+
+- type: marking
+  id: MobIPCRHandDefault
+  bodyPart: RHand
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: r_hand
+
+- type: marking
+  id: MobIPCLLegDefault
+  bodyPart: LLeg
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: l_leg
+
+- type: marking
+  id: MobIPCLFootDefault
+  bodyPart: LFoot
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: l_foot
+ 
+- type: marking
+  id: MobIPCRLegDefault
+  bodyPart: RLeg
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: r_leg
+
+- type: marking
+  id: MobIPCRFootDefault
+  bodyPart: RFoot
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: r_foot
+
 ## Bishop
 
 - type: marking
@@ -232,14 +314,9 @@
 ## Morpheus
 
 - type: marking
-  id: MobIPCHeadDefault
-  bodyPart: HeadBase
+  id: CyberLimbsMarkingMorpheusHead
+  bodyPart: Head
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: head
@@ -248,128 +325,78 @@
   id: CyberLimbsMarkingMorpheusHeadAlt
   bodyPart: Head
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_alt1.rsi
     state: head
 
 - type: marking
-  id: MobIPCTorsoDefault
+  id: CyberLimbsMarkingMorpheusChest
   bodyPart: Chest
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: torso
 
 - type: marking
-  id: MobIPCLArmDefault
+  id: CyberLimbsMarkingMorpheusLArm
   bodyPart: LArm
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: l_arm
 
 - type: marking
-  id: MobIPCLHandDefault
+  id: CyberLimbsMarkingMorpheusLHand
   bodyPart: LHand
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: l_hand
 
 - type: marking
-  id: MobIPCLLegDefault
+  id: CyberLimbsMarkingMorpheusLLeg
   bodyPart: LLeg
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: l_leg
 
 - type: marking
-  id: MobIPCLFootDefault
+  id: CyberLimbsMarkingMorpheusLFoot
   bodyPart: LFoot
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: l_foot
 
 - type: marking
-  id: MobIPCRArmDefault
+  id: CyberLimbsMarkingMorpheusRArm
   bodyPart: RArm
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: r_arm
 
 - type: marking
-  id: MobIPCRHandDefault
+  id: CyberLimbsMarkingMorpheusRHand
   bodyPart: RHand
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: r_hand
 
 - type: marking
-  id: MobIPCRLegDefault
+  id: CyberLimbsMarkingMorpheusRLeg
   bodyPart: RLeg
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: r_leg
 
 - type: marking
-  id: MobIPCRFootDefault
+  id: CyberLimbsMarkingMorpheusRFoot
   bodyPart: RFoot
   groupWhitelist: [IPC]
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-          color: "#FFFFFF"
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/morpheus/morpheus_main.rsi
     state: r_foot

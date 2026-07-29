@@ -43,7 +43,7 @@
       limit: 1
       required: true
       default: [MobIPCLHandDefault]
-    enum.HumanoidVisualLayers.Rhand:
+    enum.HumanoidVisualLayers.RHand:
       limit: 1
       required: true
       default: [MobIPCRHandDefault]
@@ -69,7 +69,7 @@
 
 - type: entity
   parent: BaseSpeciesAppearance
-  id: IPCAppearance
+  id: AppearanceIPC
   name: IPC appearance
   components:
   - type: InitialBody
@@ -84,7 +84,7 @@
       FootLeft: OrganIPCFootLeft
       LegRight: OrganIPCLegRight
       FootRight: OrganIPCFootRight
-      Brain: IPCProcessorHousing
+      Brain: OrganIPCProcessorHousing
       Eyes: OrganIPCEyes
       Ears: OrganIPCEars
       Heart: OrganIPCPump
@@ -94,7 +94,7 @@
     species: IPC
 
 - type: entity
-  parent: [IPCAppearance, BaseSpeciesMobSilicon]
+  parent: [AppearanceIPC, BaseSpeciesMobSilicon]
   id: MobIPC
   name: Urist McPositronic
   components:
@@ -123,6 +123,28 @@
         - !type:PlaySoundBehavior
           sound:
             collection: MeatLaserImpact # Either this sound doesn't appear, or it already works good enough
+  - type: PowerCellSlot # battery slot for IPCs
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        locked: true
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: BatterySlotRequiresLock
+    itemSlot: cell_slot
+  - type: SiliconEmitSoundOnDrained
+    sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg" # SOMEONE PLEASE FIND A BETTER SOUND FOR THIS.
+    minInterval: 99
+    maxInterval: 99
+    popUp: "silicon-power-low"aaaaaaaaaaaa
+  - type: Lock
+    locked: true
+    lockOnClick: false
+    unlockOnClick: false
+    lockTime: 5
+    unlockTime: 5
   - type: GuideHelp
     guides:
       - IPC
@@ -162,7 +184,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _DV/Mobs/Species/IPC/organs.rsi
+    sprite: _DV/Mobs/Species/IPC/parts.rsi
   - type: VisualOrgan
     data:
       sprite: null
@@ -177,54 +199,67 @@
     metabolizerTypes: [ Synthetic, IPC ]
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseTorso]
+  parent: [OrganIPCExternal, OrganBaseTorso, OrganBaseTorsoSexed]
   id: OrganIPCTorso
   name: torso
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseHead]
+  parent: [OrganIPCExternal, OrganBaseHead, OrganBaseHeadSexed]
   id: OrganIPCHead
   name: head
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseArmLeft]
   id: OrganIPCArmLeft
-  name: left arm
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseArmRight]
-  id: OrganIPCRightArm
-  name: right arm
+  id: OrganIPCArmRight
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseHandLeft]
   id: OrganIPCHandLeft
-  name: left hand
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseHandRight]
   id: OrganIPCHandRight
-  name: right hand
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseLegLeft]
   id: OrganIPCLegLeft
-  name: left leg
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseLegRight]
   id: OrganIPCLegRight
-  name: right leg
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseFootLeft]
   id: OrganIPCFootLeft
-  name: left foot
 
 - type: entity
   parent: [OrganIPCExternal, OrganBaseFootRight]
   id: OrganIPCFootRight
-  name: right foot
+
+- type: entity
+  parent: [OrganIPCInternal, OrganBaseBrain]
+  id: OrganIPCProcessorHousing
+  name: ipc processor housing
+  description: "Contains either an Advanced Positronic Brain, or an Advanced MMI, you're not quite sure."
+  components:
+   - type: Sprite
+     sprite: _Box/Mobs/Species/IPC/organs.rsi
+     state: ipc-brain-on
+   - type: SolutionContainerManager
+     solutions:
+       organ:
+         reagents:
+         - ReagentId: IPCOil
+           Quantity: 10
+       food:
+         maxVol: 5
+         reagents:
+         - ReagentId: GreyMatter
+           Quantity: 5
 
 - type: entity
   parent: [OrganIPCVisual, OrganBaseEyes, OrganIPCInternal]
@@ -261,6 +296,7 @@
 - type: entity
   parent: [OrganIPCInternal, OrganIPCMetabolizer]
   id: OrganIPCPump
+  name: micro pump
   description: A micro pump, used to circulate coolant and lubricant.
   components: 
   - type: Sprite
