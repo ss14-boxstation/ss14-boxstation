@@ -1,4 +1,4 @@
-﻿using Robust.Shared.GameStates;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Chat.TypingIndicator;
@@ -16,4 +16,10 @@ public sealed partial class TypingIndicatorComponent : Component
     /// </summary>
     [DataField("proto"), AutoNetworkedField]
     public ProtoId<TypingIndicatorPrototype> TypingIndicatorPrototype = "default";
+
+    /// <summary>
+    ///  DeltaV - Allow the indicator to be temporarily overriden
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public ProtoId<TypingIndicatorPrototype>? TypingIndicatorOverridePrototype;
 }

@@ -1,7 +1,6 @@
 - type: quickPhrase
   id: BaseSafetyStatusPhrase
   parent: BaseThreatPhrase
-  group: '! Status'
   abstract: true
 
 - type: quickPhrase
@@ -83,19 +82,19 @@
   id: SafetyHereToHelpPhrase
   parent: BaseSafetyStatusPhrase
   text: phrase-safety-here-to-help
-  styleClass: ServiceButton
+  styleClass: DepartmentService # starcup: ServiceButton -> DepartmentService
 
 - type: quickPhrase
   id: SafetyHowToHelpPhrase
   parent: BaseSafetyStatusPhrase
   text: phrase-safety-how-to-help
-  styleClass: ServiceButton
+  styleClass: DepartmentService # starcup: ServiceButton -> DepartmentService
 
 - type: quickPhrase
   id: SafetyEvacPhrase
   parent: BaseSafetyStatusPhrase
   text: phrase-safety-evac
-  styleClass: ServiceButton
+  styleClass: DepartmentService # starcup: ServiceButton -> DepartmentService
 
 - type: quickPhrase
   id: SafetyNotPhrase
@@ -106,3 +105,13 @@
   id: SafetyLostPhrase
   parent: BaseSafetyStatusPhrase
   text: phrase-safety-lost
+
+- type: quickPhrase
+  id: SafetyIAmPhrase
+  parent: BaseSafetyStatusPhrase
+  text: phrase-i-am
+
+- type: quickPhrase
+  id: SafetyYouArePhrase
+  parent: BaseSafetyStatusPhrase
+  text: phrase-you-are

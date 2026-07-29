@@ -14,13 +14,8 @@
   abstract: true
 
 - type: quickPhrase
-  parent: [ BaseEpistemicsPhrase, BaseJobPhrase ]
-  id: BaseEpistemicsJobPhrase
-  abstract: true
-
-- type: quickPhrase
-  parent: [ BaseJusticePhrase, BaseJobPhrase ]
-  id: BaseJusticeJobPhrase
+  parent: [ BaseSciencePhrase, BaseJobPhrase ]
+  id: BaseScienceJobPhrase
   abstract: true
 
 - type: quickPhrase
@@ -64,13 +59,13 @@
 
 - type: quickPhrase
   parent: BaseCommandJobPhrase
-  id: HeadOfPersonnelPhrase
-  text: job-name-hop
+  id: CentralCommandOfficialPhrase
+  text: job-name-centcomm-official
 
 - type: quickPhrase
   parent: BaseCommandJobPhrase
-  id: CentralCommandOfficialPhrase
-  text: job-name-centcomoff
+  id: StationAIPhrase
+  text: job-name-station-ai
 
 # Engineering
 
@@ -94,25 +89,30 @@
   id: TechAssistantPhrase
   text: job-name-technical-assistant
 
-# Epistemics
+# Science
 
 - type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
-  id: MystagoguePhrase
+  parent: BaseScienceJobPhrase
+  id: ResearchDirectorPhrase
   text: job-name-rd
 
 - type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
+  parent: BaseScienceJobPhrase
   id: ScientistPhrase
   text: job-name-scientist
 
 - type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
+  parent: BaseScienceJobPhrase
   id: ResearchAssistantPhrase
   text: job-name-research-assistant
 
 - type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
+  parent: BaseScienceJobPhrase
+  id: RoboticistPhrase
+  text: job-name-roboticist
+
+- type: quickPhrase
+  parent: BaseScienceJobPhrase
   id: BorgPhrase
   text: job-name-borg
 
@@ -132,6 +132,16 @@
   parent: BaseLogisticsJobPhrase
   id: SalvageSpecialistPhrase
   text: job-name-salvagespec
+
+- type: quickPhrase
+  parent: BaseLogisticsJobPhrase
+  id: CourierPhrase
+  text: job-name-courier
+
+- type: quickPhrase
+  parent: BaseLogisticsJobPhrase
+  id: CargoAssistantPhrase
+  text: job-name-cargo-assistant
 
 # Medical
 
@@ -187,11 +197,6 @@
   id: DetectivePhrase
   text: job-name-detective
 
-- type: quickPhrase
-  parent: BaseSecurityJobPhrase
-  id: LawyerPhrase
-  text: job-name-lawyer
-
 # Service
 
 - type: quickPhrase
@@ -216,6 +221,11 @@
 
 - type: quickPhrase
   parent: BaseServiceJobPhrase
+  id: LawyerPhrase
+  text: job-name-lawyer
+
+- type: quickPhrase
+  parent: BaseServiceJobPhrase
   id: LibrarianPhrase
   text: job-name-librarian
 
@@ -226,6 +236,11 @@
 
 - type: quickPhrase
   parent: BaseServiceJobPhrase
+  id: ServiceWorkerPhrase
+  text: job-name-serviceworker
+
+- type: quickPhrase
+  parent: BaseServiceJobPhrase
   id: ClownPhrase
   text: job-name-clown
 
@@ -233,6 +248,11 @@
   parent: BaseServiceJobPhrase
   id: MimePhrase
   text: job-name-mime
+
+- type: quickPhrase
+  parent: BaseServiceJobPhrase
+  id: HeadOfPersonnelPhrase
+  text: job-name-hop
 
 # Wildcard
 
