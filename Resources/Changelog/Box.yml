@@ -1213,8 +1213,8 @@
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/214
 - author: BlueMoon059
   changes:
-  - message: Changed fun!
-    type: Flavour text examine range has been doubled
+  - message: Flavour text examine range has been doubled
+    type: tweak
   id: 143
   time: '2026-07-28T19:46:01.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/220
