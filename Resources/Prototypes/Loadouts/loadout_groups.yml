@@ -900,6 +900,7 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
+  - BomberCargo # Box - Adds Imp Bomber Jackets
 
 - type: loadoutGroup
   id: CargoTechnicianShoes
@@ -1052,6 +1053,7 @@
   loadouts:
   - StationEngineerOuterVest
   - StationEngineerWintercoat
+  - BomberEngineering # Box Start - Adds imp Bomber Jackets
 
 - type: loadoutGroup
   id: StationEngineerShoes
@@ -1088,6 +1090,10 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  # Box Start - Adds imp bomber jackets
+  - BomberAtmos
+  - BomberAtmosHolo
+  # Box End - adds imp bomber jackets
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -1215,6 +1221,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
+  - BomberScience # Box - adds imp bomber jackets
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1395,6 +1402,7 @@
   - ArmorVestSlim
   - SecurityOfficerWintercoat
   - LongcoatSecurity # Box
+  - BomberSecurity # Box - adds imp bomber jackets
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1573,6 +1581,7 @@
   - RegularLabCoat
   - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
+  - BomberMedical # Box - Adds Imp Bomber Jackets
 
 - type: loadoutGroup
   id: MedicalBackpack
