@@ -1282,3 +1282,11 @@
   id: 150
   time: '2026-07-29T22:24:42.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/226
+- author: BlueMoon059
+  changes:
+  - message: Adds new bomber jackets for the basic jobs in each department + passengers,
+      from Impstation.
+    type: Add
+  id: 151
+  time: '2026-07-30T15:38:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/228
