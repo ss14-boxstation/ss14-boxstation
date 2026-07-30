@@ -19,7 +19,7 @@
   description: A flatpack used for constructing a spacepresso machine.
   components:
   - type: Flatpack
-    entity: Thruster
+    entity: ImpCoffeeMachine
   - type: Sprite
     layers:
     - state: base
