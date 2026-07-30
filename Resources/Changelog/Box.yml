@@ -1290,3 +1290,10 @@
   id: 151
   time: '2026-07-30T15:38:06.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/228
+- author: BlueMoon059
+  changes:
+  - message: Adds missing bomberjackets to the entries.
+    type: Fix
+  id: 152
+  time: '2026-07-30T23:33:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/229
