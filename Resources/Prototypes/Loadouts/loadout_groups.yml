@@ -355,6 +355,10 @@
   - LongcoatBrown
   - LongcoatNanoTrasen
   # Box End - Passenger long coats
+  # Box Start - Imp Bomber Jackets
+  - BomberBlack
+  - BomberWhite
+  #Box End - Imp Bomber Jackets
 
 - type: loadoutGroup
   id: PassengerShoes
