@@ -213,6 +213,10 @@
           sprite: Mobs/Species/Vox/displacement.rsi
           state: hand_r
   - type: Carriable # Box Change - Carrying system from nyanotrasen.
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box Change
 
 - type: entity
   parent: BaseSpeciesDummy

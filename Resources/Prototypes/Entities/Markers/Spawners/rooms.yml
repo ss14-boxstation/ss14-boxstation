@@ -8,9 +8,12 @@
     offset: 0.2
     table: !type:AllSelector
       children:
-      - id: WeaponSubMachineGunWt550
-      - id: MagazinePistolSubMachineGunTopMounted
-      - id: MagazinePistolSubMachineGunTopMounted
+      # Box Change Start - Remove roundstart WT
+      #- id: WeaponSubMachineGunWt550
+      #- id: MagazinePistolSubMachineGunTopMounted
+      #- id: MagazinePistolSubMachineGunTopMounted
+      # Box Change End - Remove roundstart WT
+       - id: WeaponEnergyMagnum # Box Change - Emagnum spawns in place of WT
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:

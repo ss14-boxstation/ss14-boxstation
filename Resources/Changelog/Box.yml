@@ -1079,3 +1079,228 @@
   id: 126
   time: '2026-06-23T01:23:06.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/178
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Allulalo, a species of diminutive raptor creatures from Impstation.
+    type: Add
+  id: 127
+  time: '2026-07-04T01:07:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/170
+- author: SomegnihT
+  changes:
+  - message: Cargo can now order sets of chess pieces
+    type: Add
+  id: 128
+  time: '2026-07-06T09:26:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/188
+- author: BlueMoon059
+  changes:
+  - message: The golden mask no longer spawns in salvage lootpools.
+    type: Remove
+  id: 129
+  time: '2026-07-09T10:10:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/193
+- author: BlueMoon059
+  changes:
+  - message: The Head of Security and the Warden lockers have gained a flatpacked
+      cyborg recharging station for IPC prisoners.
+    type: Add
+  - message: The Head of Security no longer starts with a WT-550.
+    type: Remove
+  id: 130
+  time: '2026-07-11T06:10:41.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/161
+- author: Dizzy-Eevee
+  changes:
+  - message: Added wristsets, an alternative to headsets, available from job loadouts.
+    type: Add
+  id: 131
+  time: '2026-07-11T06:23:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/181
+- author: BlueMoon059
+  changes:
+  - message: Adds a crashed syndicate freighter to the roundstart salvage ruins pool,
+      made by BlueMoon059.
+    type: Add
+  - message: Adds an abandoned shipyard to the roundstart salvage ruins pool, made
+      by HiddenSoundTest.
+    type: Add
+  - message: Several salvage ruins have been replaced with modern versions courtesy
+      of Collectionofbones128
+    type: Tweak
+  id: 132
+  time: '2026-07-11T14:19:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/162
+- author: BlueMoon059
+  changes:
+  - message: Adds new carp and sharkminnow variants, ported from Starcup.
+    type: Add
+  id: 133
+  time: '2026-07-11T14:20:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/159
+- author: BlueMoon059
+  changes:
+  - message: The Syndicate will now ocasionally teleport secure briefcases with contraband
+      onto the station in support of their agents.
+    type: Add
+  id: 134
+  time: '2026-07-11T16:39:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/169
+- author: Dizzy-Eevee
+  changes:
+  - message: Walking through puddles will now leave footprints in your wake.
+    type: Add
+  id: 135
+  time: '2026-07-12T05:59:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/146
+- author: Dizzy-Eevee
+  changes:
+  - message: Paper reams are now smaller and can be taken as loadout trinkets.
+    type: Tweak
+  id: 136
+  time: '2026-07-14T05:22:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/199
+- author: CollectionOfBones128
+  changes:
+  - message: Added the CO's Handheld Communications Computer, which spawns in the
+      Captain's locker
+    type: Add
+  - message: The Captain's Jetpack is no longer obtainable and cannot roll as an objective
+    type: Remove
+  id: 137
+  time: '2026-07-14T05:26:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/185
+- author: Dizzy-Eevee
+  changes:
+  - message: Boxer and Zookeeper now have access to the Accessibility loadout tab
+    type: Fix
+  id: 138
+  time: '2026-07-16T08:27:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/204
+- author: Dizzy-Eevee
+  changes:
+  - message: Added hardlight windows, which block gasses and allow solid objects to
+      pass through, but cannot withstand the high pressure differences needed for
+      Atmospheric work.
+    type: Add
+  id: 139
+  time: '2026-07-21T20:41:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/208
+- author: Dizzy-Eevee
+  changes:
+  - message: Fuel tank explosions will no longer destroy hull tiles.
+    type: Tweak
+  id: 140
+  time: '2026-07-28T19:35:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/217
+- author: Dizzy-Eevee
+  changes:
+  - message: Added tabletop intercoms which do not need to be constructed on a wall.
+    type: Add
+  id: 141
+  time: '2026-07-28T19:39:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/218
+- author: Dizzy-Eevee
+  changes:
+  - message: Tape recorders can now be controlled using four signal ports corresponding
+      to their buttons.
+    type: Add
+  - message: Tape recorders now change their voice when hidden in plushies, toilets,
+      or plants.
+    type: Tweak
+  id: 142
+  time: '2026-07-28T19:43:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/214
+- author: BlueMoon059
+  changes:
+  - message: Flavour text examine range has been doubled
+    type: tweak
+  id: 143
+  time: '2026-07-28T19:46:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/220
+- author: Dizzy-Eevee
+  changes:
+  - message: Syndicate dead drops will no longer occur within the first 15 minutes
+      of a shift.
+    type: Tweak
+  id: 144
+  time: '2026-07-29T16:25:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/221
+- author: Dizzy-Eevee
+  changes:
+  - message: Passive vent spawns (mice/roaches/snails) will no longer come with an
+      announcement. If you see a warning about vent critters, take it seriously!
+    type: Tweak
+  id: 145
+  time: '2026-07-29T16:24:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/223
+- author: Dizzy-Eevee
+  changes:
+  - message: The AAC tablet now has a search bar.
+    type: Add
+  - message: The AAC tablet can now send messages over radio using the user's headset.
+    type: Add
+  - message: the AAC tablet can now combine multiple phrases into a single message.
+    type: Add
+  - message: Added a new AAC tablet variant with a more robotic voice.
+    type: Add
+  id: 146
+  time: '2026-07-29T18:00:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/224
+- author: Dizzy-Eevee
+  changes:
+  - message: The option to mute species voicelines/emotes will now apply to characters
+      with voice change traits, and non-humanoid mobs like mothroaches.
+    type: Tweak
+  - message: You can now mute scurrets.
+    type: Add
+  id: 147
+  time: '2026-07-29T18:01:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/215
+- author: Dizzy-Eevee
+  changes:
+  - message: Added voice replacement traits for scurrets. Wawa!
+    type: Add
+  id: 148
+  time: '2026-07-29T18:02:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/216
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the Spacepresso coffee machine from Impstation! Until mapping changes
+      are made, bartenders will start with a flatpack for one in their locker.
+    type: Add
+  id: 149
+  time: '2026-07-29T18:03:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/219
+- author: BlueMoon059
+  changes:
+  - message: The Paramedic now starts with a handheld crew monitor of their own.
+    type: Add
+  - message: The Syndicate Agent "steal the handheld crewmonitor" objective has been
+      disabled from rolling.
+    type: Remove
+  id: 150
+  time: '2026-07-29T22:24:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/226
+- author: BlueMoon059
+  changes:
+  - message: Adds new bomber jackets for the basic jobs in each department + passengers,
+      from Impstation.
+    type: Add
+  id: 151
+  time: '2026-07-30T15:38:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/228
+- author: BlueMoon059
+  changes:
+  - message: Adds missing bomberjackets to the entries.
+    type: Fix
+  id: 152
+  time: '2026-07-30T23:33:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/229
+- author: Dizzy-Eevee
+  changes:
+  - message: Desk bells no longer throw an error and fail to make noise when used.
+    type: Fix
+  id: 153
+  time: '2026-07-31T13:11:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/231

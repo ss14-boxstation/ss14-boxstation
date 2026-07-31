@@ -1,0 +1,66 @@
+# Syndicate dead drop
+- type: entity
+  parent: MarkerBase
+  id: SyndieDeadDropSpawner
+  name: Syndicate High Command # Used for radio announcement
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableSpawner
+    table: !type:AllSelector
+      children:
+      - id: BriefcaseSyndieDeadDrop
+      - id: EffectFlashRedspace
+
+- type: entity
+  parent: [ BaseSubfloorAnchorStorageAnchored, BriefcaseSecure, BaseSyndicateContraband ] #Box Change - BriefcaseSyndi --> BriefcaseSecure
+  id: BriefcaseSyndieDeadDrop
+  categories: [ DoNotMap ] # Box Change
+  name: syndicate briefcase
+  suffix: Dead Drop, Box # Box Change - Adjust Suffix
+  description: A robust operatives briefcase with a MI13 patent lock. Accessible only to those with Syndicate access, or the patience to force it open.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_syndicate.rsi
+  - type: Item
+    sprite: _Box/Objects/Storage/Briefcases/briefcase_syndicate.rsi
+  - type: AccessReader
+    access: [["NuclearOperative"], ["SyndicateAgent"]]
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:GroupSelector
+        rolls: !type:RangeNumberSelector
+          range: 2, 3
+        children:
+        # Weapons
+        - id: EnergyDaggerLoud
+        - id: WeaponPistolViper
+        - id: WeaponRevolverPython
+        # Grenades
+        - id: SmokeGrenade
+        - id: EmpGrenade
+        - id: C4
+        - id: SingularityGrenade
+        # Clothing
+#       - id: ClothingShoesSkatesSyndicate #Box - Moffstation - Commented out as we dont have these
+        - id: ClothingShoesBootsMagSyndie
+        - id: SyndicateIDCardAgent
+        - id: ClothingMaskGasSyndicate
+        # Tools
+        - id: ChameleonProjector
+        - id: CameraBug
+        - id: SyndicateJawsOfLife
+        - id: RadioJammer
+        - id: AccessBreaker
+        - id: CyberPen
+        - id: EncryptionKeyBinarySyndicate
+        # Chemicals
+        - id: Stimpack
+        - id: CombatMedipen
+        - id: VestineChemistryVial
+        - id: CigPackSyndicate
+        - id: MechazineSilipen # Box Change - IPC intergration
+        # Fun
+        - id: SyndicatePersonalAI
+        - id: RubberStampSyndicate
+        - id: UplinkLighterBox
+        - id: BalloonOperative

@@ -22,6 +22,7 @@
     - Avali # Latestation
     - Rodentia # Box Change - Adds Rodentia
     - Thaven #Box Change - Add Thaven
+    - Allulalo # Box Change - Add Allulalo
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

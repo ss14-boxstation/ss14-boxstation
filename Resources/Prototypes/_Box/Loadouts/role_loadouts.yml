@@ -2,6 +2,7 @@
   id: JobSupplyAssistant
   groups:
   - GroupTankHarness
+  - HeadsetsCargo
   - SupplyAssistantJumpsuit
   - CargoTechnicianBackpack
   - Glasses

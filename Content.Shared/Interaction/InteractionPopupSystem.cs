@@ -11,6 +11,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Shared._Box.Audio; // Box Change: Mute wawas
 
 namespace Content.Shared.Interaction;
 
@@ -23,6 +24,7 @@ public sealed class InteractionPopupSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly INetManager _netMan = default!;
+    [Dependency] private readonly SpeciesMutingSystem _speciesMuting = default!; // Box Change: Mute wawas
 
     public override void Initialize()
     {
@@ -127,10 +129,15 @@ public sealed class InteractionPopupSystem : EntitySystem
             _popupSystem.PopupEntity(msgOthers, uid, Filter.PvsExcept(user, entityManager: EntityManager), true);
         }
 
+        var filter = Filter.Pvs(uid).RemoveWhere(s => !_speciesMuting.ShouldPlayInteractionPopup(uid, s)); // Box Change: Filter to mute species
         if (!predict)
         {
             _popupSystem.PopupEntity(msg, uid, user);
 
+			// Start Box Change: Cancel if sound is muted by user settings
+            if (filter.Count == 0)
+                return;
+			// End Box Change
             if (component.SoundPerceivedByOthers)
                 _audio.PlayPvs(sfx, target);
             else
@@ -145,17 +152,29 @@ public sealed class InteractionPopupSystem : EntitySystem
 
         if (component.SoundPerceivedByOthers)
         {
+			// Start Box Change: Cancel if sound is muted by user settings
+            if (filter.Count == 0)
+                return;
+			// End Box Change
             _audio.PlayPredicted(sfx, target, user);
             return;
         }
 
         if (_netMan.IsClient)
         {
+			// Start Box Change: Cancel if sound is muted by user settings
+            if (filter.Count == 0)
+                return;
+			// End Box Change
             if (_gameTiming.IsFirstTimePredicted)
                 _audio.PlayEntity(sfx, Filter.Local(), target, true);
         }
         else
         {
+			// Start Box Change: Cancel if sound is muted by user settings
+            if (filter.Count == 0)
+                return;
+			// End Box Change
             _audio.PlayEntity(sfx, Filter.Empty().FromEntities(target), target, false);
         }
     }

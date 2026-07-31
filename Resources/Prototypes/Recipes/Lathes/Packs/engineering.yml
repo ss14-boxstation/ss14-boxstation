@@ -28,6 +28,7 @@
   recipes:
   - AirTank
   - GasAnalyzer
+  - HardlightWindowAssembly # Box Change
 
 - type: latheRecipePack
   id: ElectronicsStatic

@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: WhiteChessPieceCrate
+  icon:
+    sprite: Objects/Fun/Tabletop/chess_pieces.rsi
+    state: w_king
+  product: CrateWhiteChessPiece
+  cost: 500
+  category: cargoproduct-category-name-fun
+  group: market
+
+- type: cargoProduct
+  id: BlackChessPieceCrate
+  icon:
+    sprite: Objects/Fun/Tabletop/chess_pieces.rsi
+    state: b_king
+  product: CrateBlackChessPiece
+  cost: 500
+  category: cargoproduct-category-name-fun
+  group: market

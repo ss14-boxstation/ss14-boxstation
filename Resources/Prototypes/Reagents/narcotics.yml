@@ -32,6 +32,12 @@
       effects:
       # Main effects
       - !type:MovementSpeedModifier
+        # Start Box Change: Exclude Allulalo due to their innate speed bonus
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Allulalo]
+          inverted: true
+        # End Box Change
         walkSpeedModifier: 1.20
         sprintSpeedModifier: 1.20
       - !type:ModifyStatusEffect
@@ -82,6 +88,12 @@
       effects:
       # Main effects
       - !type:MovementSpeedModifier
+        # Start Box Change: Exclude Allulalo due to their innate speed bonus
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Allulalo]
+          inverted: true
+        # End Box Change
         walkSpeedModifier: 1.15
         sprintSpeedModifier: 1.15
       - !type:ModifyStatusEffect
@@ -142,6 +154,12 @@
       effects:
       # Main effects
       - !type:MovementSpeedModifier
+        # Start Box Change: Exclude Allulalo due to their innate speed bonus
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Allulalo]
+          inverted: true
+        # End Box Change
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
       - !type:ModifyStatusEffect
