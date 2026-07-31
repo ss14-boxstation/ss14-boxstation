@@ -1297,3 +1297,10 @@
   id: 152
   time: '2026-07-30T23:33:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/229
+- author: Dizzy-Eevee
+  changes:
+  - message: Desk bells no longer throw an error and fail to make noise when used.
+    type: Fix
+  id: 153
+  time: '2026-07-31T13:11:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/231
