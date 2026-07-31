@@ -1186,3 +1186,121 @@
   id: 139
   time: '2026-07-21T20:41:18.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/208
+- author: Dizzy-Eevee
+  changes:
+  - message: Fuel tank explosions will no longer destroy hull tiles.
+    type: Tweak
+  id: 140
+  time: '2026-07-28T19:35:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/217
+- author: Dizzy-Eevee
+  changes:
+  - message: Added tabletop intercoms which do not need to be constructed on a wall.
+    type: Add
+  id: 141
+  time: '2026-07-28T19:39:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/218
+- author: Dizzy-Eevee
+  changes:
+  - message: Tape recorders can now be controlled using four signal ports corresponding
+      to their buttons.
+    type: Add
+  - message: Tape recorders now change their voice when hidden in plushies, toilets,
+      or plants.
+    type: Tweak
+  id: 142
+  time: '2026-07-28T19:43:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/214
+- author: BlueMoon059
+  changes:
+  - message: Flavour text examine range has been doubled
+    type: tweak
+  id: 143
+  time: '2026-07-28T19:46:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/220
+- author: Dizzy-Eevee
+  changes:
+  - message: Syndicate dead drops will no longer occur within the first 15 minutes
+      of a shift.
+    type: Tweak
+  id: 144
+  time: '2026-07-29T16:25:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/221
+- author: Dizzy-Eevee
+  changes:
+  - message: Passive vent spawns (mice/roaches/snails) will no longer come with an
+      announcement. If you see a warning about vent critters, take it seriously!
+    type: Tweak
+  id: 145
+  time: '2026-07-29T16:24:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/223
+- author: Dizzy-Eevee
+  changes:
+  - message: The AAC tablet now has a search bar.
+    type: Add
+  - message: The AAC tablet can now send messages over radio using the user's headset.
+    type: Add
+  - message: the AAC tablet can now combine multiple phrases into a single message.
+    type: Add
+  - message: Added a new AAC tablet variant with a more robotic voice.
+    type: Add
+  id: 146
+  time: '2026-07-29T18:00:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/224
+- author: Dizzy-Eevee
+  changes:
+  - message: The option to mute species voicelines/emotes will now apply to characters
+      with voice change traits, and non-humanoid mobs like mothroaches.
+    type: Tweak
+  - message: You can now mute scurrets.
+    type: Add
+  id: 147
+  time: '2026-07-29T18:01:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/215
+- author: Dizzy-Eevee
+  changes:
+  - message: Added voice replacement traits for scurrets. Wawa!
+    type: Add
+  id: 148
+  time: '2026-07-29T18:02:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/216
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the Spacepresso coffee machine from Impstation! Until mapping changes
+      are made, bartenders will start with a flatpack for one in their locker.
+    type: Add
+  id: 149
+  time: '2026-07-29T18:03:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/219
+- author: BlueMoon059
+  changes:
+  - message: The Paramedic now starts with a handheld crew monitor of their own.
+    type: Add
+  - message: The Syndicate Agent "steal the handheld crewmonitor" objective has been
+      disabled from rolling.
+    type: Remove
+  id: 150
+  time: '2026-07-29T22:24:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/226
+- author: BlueMoon059
+  changes:
+  - message: Adds new bomber jackets for the basic jobs in each department + passengers,
+      from Impstation.
+    type: Add
+  id: 151
+  time: '2026-07-30T15:38:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/228
+- author: BlueMoon059
+  changes:
+  - message: Adds missing bomberjackets to the entries.
+    type: Fix
+  id: 152
+  time: '2026-07-30T23:33:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/229
+- author: Dizzy-Eevee
+  changes:
+  - message: Desk bells no longer throw an error and fail to make noise when used.
+    type: Fix
+  id: 153
+  time: '2026-07-31T13:11:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/231
