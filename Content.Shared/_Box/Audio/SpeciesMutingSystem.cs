@@ -187,21 +187,23 @@ public sealed class SpeciesMutingSystem : EntitySystem
             {
                 collections.Add(specifier.Collection);
             }
-            if (vocalizer.Comp.InteractFailureSound is SoundPathSpecifier pathSpecifier)
+            else
             {
-                paths.Add(pathSpecifier.Path.CanonPath);
+                var x = (SoundPathSpecifier)vocalizer.Comp.InteractSuccessSound;
+                paths.Add(x.Path.CanonPath);
             }
         }
         if (vocalizer.Comp.InteractFailureSound != null)
         {
-            if (vocalizer.Comp.InteractFailureSound is SoundCollectionSpecifier cSpecifier &&
-                cSpecifier.Collection != null)
+            if (vocalizer.Comp.InteractFailureSound is SoundCollectionSpecifier specifier &&
+                specifier.Collection != null)
             {
-                collections.Add(cSpecifier.Collection);
+                collections.Add(specifier.Collection);
             }
-            if (vocalizer.Comp.InteractFailureSound is SoundPathSpecifier pathSpecifier)
+            else
             {
-                paths.Add(pathSpecifier.Path.CanonPath);
+                var x = (SoundPathSpecifier)vocalizer.Comp.InteractFailureSound;
+                paths.Add(x.Path.CanonPath);
             }
         }
 
