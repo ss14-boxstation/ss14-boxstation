@@ -1,0 +1,8 @@
+- type: construction
+  id: HardlightWindow
+  graph: HardlightWindowGraph
+  startNode: start
+  targetNode: entity
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter

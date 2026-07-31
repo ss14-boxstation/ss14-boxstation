@@ -47,7 +47,7 @@
   equipment:
     id: CEPDA
     eyes: ClothingEyesGlassesMeson
-    ears: ClothingHeadsetCE
+    # ears: ClothingHeadsetCE # Box Change: Headset moved to loadout option
     belt: ClothingBeltUtilityEngineering
   storage:
     back:

@@ -52,7 +52,7 @@
     eyes: ClothingEyesGlassesSecurity
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
-    ears: ClothingHeadsetAltSecurity
+    # ears: ClothingHeadsetAltSecurity # Box Change: Headset moved to loadout option
     pocket1: WeaponDisabler
   storage:
     back:

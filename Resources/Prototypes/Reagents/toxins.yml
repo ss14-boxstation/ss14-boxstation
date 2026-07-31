@@ -461,12 +461,15 @@
   boilingPoint: 554 # I'm not a chemist, but it boils at 295, lower than melting point, idk how it works so I gave it higher value
   metabolisms:
     Poison:
-      metabolismRate: 0.05
+      metabolismRate: 0.045 # Box Change: changed on impstation so that it can build up slightly
       effects:
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Animal] # Applying damage to the mobs with lower metabolism capabilities
+        - !type:ReagentCondition #imp
+          reagent: Theobromine
+          min: 0.12
         damage:
           types:
             Poison: 0.4
@@ -475,6 +478,22 @@
         conditions:
           - !type:MetabolizerTypeCondition
             type: [Animal]
+      # Start Box Change: Imp changes. Make theobromine only cause vomiting if enough is present, and give a "you feel sick" popup when vomiting is possible
+          - !type:ReagentCondition #imp
+            reagent: Theobromine
+            min: 0.12
+      - !type:PopupMessage # let them know why they're puking
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Animal]
+        - !type:ReagentCondition #imp
+          reagent: Theobromine
+          min: 0.12
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.2
+      # End Box Change
 
 - type: reagent
   id: Amatoxin

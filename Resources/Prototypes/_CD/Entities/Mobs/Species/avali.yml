@@ -111,6 +111,10 @@
 #      - id: Drink
 # End harmony change
   - type: Carriable # Box Change - Carrying system from Nyanotrasen
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box change
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -213,12 +213,14 @@
   - type: StealCondition
     stealGroup: Hypospray
 
-- type: entity
-  parent: BaseCMOStealObjective
-  id: CMOCrewMonitorStealObjective
-  components:
-  - type: StealCondition
-    stealGroup: HandheldCrewMonitor
+#Box Change Start - Removes handheld crew monitor objective
+# - type: entity
+#   parent: BaseCMOStealObjective
+#   id: CMOCrewMonitorStealObjective
+#   components:
+#   - type: StealCondition
+#     stealGroup: HandheldCrewMonitor
+# Box Change End - Removes handheld crew monitor objective
 
 ## rd
 
@@ -333,6 +335,7 @@
     stealGroup: CaptainIDCard
 
 - type: entity
+  abstract: true # Box Change - Swap jetpack obj for handheld comms obj
   parent: BaseCaptainObjective
   id: CaptainJetpackStealObjective
   components:

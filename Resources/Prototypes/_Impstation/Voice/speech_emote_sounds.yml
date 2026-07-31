@@ -16,3 +16,49 @@
       params:
         volume: -3
         variation: 0.1
+
+- type: emoteSounds
+  id: Allulalo
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_Impstation/Allulalo/allulalo_scream.ogg
+    Laugh:
+      path: /Audio/_Impstation/Allulalo/allulalo_laugh.ogg
+    Hiss:
+      # Start Box Change: Use Avali hiss instead of imp's Vox hiss. We can change this back if we decide to add the Vox emote sounds.
+      #collection: VoxHiss
+      #params:
+      #  volume: -5
+      path: /Audio/_Moffstation/Voice/Avali/avali_hiss.ogg
+    Chitter:
+      path: /Audio/_Impstation/Allulalo/allulalo_chitter.ogg
+    Sneeze:
+      collection: MaleSneezes #placeholder # Box Change: Use MaleSneezes instead of unmerged UnisexSneezes
+    Cough:
+      # Start Box Change: Use Avali cough instead of unmerged UnisexCoughs
+      #collection: UnisexCoughs #placeholder
+      path: /Audio/_Moffstation/Voice/Avali/avali_cough.ogg
+    Yawn:
+      path: /Audio/_Impstation/Allulalo/allulalo_say.ogg
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      path: /Audio/_Impstation/Allulalo/allulalo_say.ogg #placeholder
+    Whistle:
+      collection: Whistles
+    Crying:
+      path: /Audio/_Impstation/Allulalo/allulalo_cry.ogg
+    Weh:
+      collection: Weh
+    # Box Change: Remove imp-exclusive sounds
+    #Wuhey:
+    #  collection: Wuhey
+    #Ungh:
+    #  collection: Ungh
+    #Gasp:
+    #  path: /Audio/_Impstation/Allulalo/allulalo_say.ogg
+    # End Box Change
+    DefaultDeathgasp:
+      /Audio/_Impstation/Allulalo/allulalo_deathgasp.ogg

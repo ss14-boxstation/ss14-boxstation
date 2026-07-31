@@ -100,6 +100,10 @@
             sprite: Mobs/Species/Reptilian/displacement.rsi
             state: mask
   - type: Carriable # Box Change - Carrying system from nyanotrasen.
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box Change
 
 - type: entity
   parent: BaseSpeciesDummy

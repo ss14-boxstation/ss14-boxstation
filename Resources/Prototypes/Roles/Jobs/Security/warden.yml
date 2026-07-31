@@ -38,7 +38,7 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity
     id: WardenPDA
-    ears: ClothingHeadsetWarden # Harmony
+    # ears: ClothingHeadsetWarden # Harmony # Box Change: Headset moved to loadout option
     pocket1: WeaponDisabler # Harmony
   storage:
     back:

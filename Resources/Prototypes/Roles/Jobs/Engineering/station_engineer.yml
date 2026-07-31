@@ -22,7 +22,7 @@
   equipment:
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
-    ears: ClothingHeadsetEngineering
+    # ears: ClothingHeadsetEngineering # Box Change: Headset moved to loadout option
   #storage:
     #back:
     #- Stuff
