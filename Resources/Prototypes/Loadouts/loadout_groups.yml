@@ -1315,6 +1315,7 @@
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
   - HeadofSecurityLongcoat # Box
+  - HeadofSecurityBomberJacket # Box - Imp Bomber Jacket
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
@@ -1347,6 +1348,7 @@
   - WardenCoat
   - WardenArmoredWinterCoat
   - WardenLongcoat # Box
+  - WardenBomberJacket # Box - Imp Bomber Jackets
 
 - type: loadoutGroup
   id: WardenJobTrinkets
