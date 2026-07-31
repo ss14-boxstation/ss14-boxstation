@@ -153,7 +153,6 @@
   - type: GuideHelp
     guides:
       - IPC
-# something something so it lets me commit godamn you git
 
 - type: entity
   parent: OrganBase
@@ -205,45 +204,45 @@
     metabolizerTypes: [ Synthetic, IPC ]
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseTorso, OrganBaseTorsoSexed]
+  parent: [OrganBaseTorso, OrganIPCExternal]
   id: OrganIPCTorso
   name: torso
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseHead, OrganBaseHeadSexed]
+  parent: [ OrganBaseHead, OrganIPCExternal]
   id: OrganIPCHead
   name: head
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseArmLeft]
+  parent: [ OrganBaseArmLeft, OrganIPCExternal]
   id: OrganIPCArmLeft
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseArmRight]
+  parent: [OrganBaseArmRight, OrganIPCExternal]
   id: OrganIPCArmRight
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseHandLeft]
+  parent: [OrganBaseHandLeft, OrganIPCExternal]
   id: OrganIPCHandLeft
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseHandRight]
+  parent: [OrganBaseHandRight, OrganIPCExternal]
   id: OrganIPCHandRight
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseLegLeft]
+  parent: [OrganBaseLegLeft, OrganIPCExternal]
   id: OrganIPCLegLeft
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseLegRight]
+  parent: [OrganBaseLegRight, OrganIPCExternal]
   id: OrganIPCLegRight
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseFootLeft]
+  parent: [OrganBaseFootLeft, OrganIPCExternal]
   id: OrganIPCFootLeft
 
 - type: entity
-  parent: [OrganIPCExternal, OrganBaseFootRight]
+  parent: [OrganBaseFootRight, OrganIPCExternal]
   id: OrganIPCFootRight
 
 - type: entity
@@ -313,6 +312,9 @@
     maxReagents: 2
     removeEmpty: true
     stages: [Bloodstream]
+  - type: GibbableOrgan
+  - type: Organ
+    category: Heart
 
 - type: entity
   parent: [OrganIPCInternal, OrganIPCMetabolizer]
@@ -324,7 +326,19 @@
     sprite: _Box/Mobs/Species/IPC/organs.rsi
     state: ipc-stomach
   - type: Metabolizer
-    maxReagents: 2
+    maxReagents: 3
     removeEmpty: true
     stages: [ Digestion ]
+  - type: Organ
+    category: Stomach
+  - type: Stomach
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 50
+      organ:
+        reagents:
+        - ReagentId: IPCOil
+          Quantity: 10
+  - type: GibbableOrgan
     
