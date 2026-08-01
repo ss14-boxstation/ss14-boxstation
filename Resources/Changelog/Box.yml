@@ -1304,3 +1304,12 @@
   id: 153
   time: '2026-07-31T13:11:03.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/231
+- author: BlueMoon059
+  changes:
+  - message: Fixed an unintentional spawner on the ruined syndicate cargo ship.
+    type: Fix
+  - message: Killed the syndicate dropship (For real this time).
+    type: Fix
+  id: 154
+  time: '2026-08-01T15:03:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/234
