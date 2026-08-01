@@ -144,7 +144,6 @@
           tags:
           - Lens
   # End Box Change
-    correctionPower: 4 # Box Change: Double vision correction power to match Imp's extra strong prescription lenses
   - type: Tag
     tags:
     - HamsterWearable
