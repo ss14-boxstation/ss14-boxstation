@@ -9,7 +9,7 @@
   groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: head
+    state: head_m
 
 - type: marking
   id: MobIPCTorsoDefault
@@ -17,7 +17,7 @@
   groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/IPC/parts.rsi
-    state: torso
+    state: torso_m
 
 - type: marking
   id: MobIPCLArmDefault
