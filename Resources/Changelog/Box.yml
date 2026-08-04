@@ -1313,3 +1313,18 @@
   id: 154
   time: '2026-08-01T15:03:11.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/234
+- author: Dizzy-Eevee
+  changes:
+  - message: All glasses and goggles now have a slot to hold prescription lenses.
+    type: Add
+  - message: The Medical Techfab can now print prescription lenses, for an alternative
+      way of treating eye damage.
+    type: Add
+  - message: Short-sighted characters now start the round with a pair of strong prescription
+      lenses slotted into their eyewear.
+    type: Add
+  - message: Short-sighted characters no longer spawn with a pair of glasses.
+    type: Remove
+  id: 155
+  time: '2026-08-04T19:13:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/235
