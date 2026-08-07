@@ -186,7 +186,7 @@ public sealed class SiliconChargeSystem : EntitySystem
 
             if (!EntityManager.TryGetComponent<FlammableComponent>(silicon, out var flamComp)
                 || flamComp is { OnFire: true }
-                || !(temperComp.CurrentTemperature > upperThresh))
+                || !(temperComp.CurrentTemperature > upperThresh)) // box change: swapped out temperComp.HeatDamageThreshold for upperThresh, shouldnt break anything i think?
                 return hotTempMulti;
 
             _popup.PopupEntity(Loc.GetString("silicon-overheating"), silicon, silicon, PopupType.MediumCaution);
