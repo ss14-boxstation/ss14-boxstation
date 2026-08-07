@@ -1337,3 +1337,11 @@
   id: 156
   time: '2026-08-07T18:44:54.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/233
+- author: Dizzy-Eevee
+  changes:
+  - message: 'New Dan''s Soaked Smokes: Rejects, dangerously fun cigs! Available in
+      uplinks, emag''d Discount Dan''s, and select maints lockers station wide.'
+    type: Add
+  id: 157
+  time: '2026-08-07T23:31:29.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/200
