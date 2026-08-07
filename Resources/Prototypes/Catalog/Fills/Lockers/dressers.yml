@@ -73,8 +73,10 @@
       storagebase: !type:AllSelector
         children:
         - id: ClothingHeadHatBeretHoS
-        - id: ClothingHeadHatHoshat
-        - id: ClothingMaskNeckGaiter
+# Box Start - Comments out some items to make room for the bomber jacket
+#       - id: ClothingHeadHatHoshat
+#       - id: ClothingMaskNeckGaiter
+# Box End - Comments out some items to make room for the bomber jacket
         - id: ClothingUniformJumpskirtHoSAlt
         - id: ClothingUniformJumpsuitHoSAlt
         - id: ClothingUniformJumpskirtHosFormal
