@@ -16,14 +16,13 @@
 
 - type: startingGear
   id: ScientistGear
-# Start Box Change - Null startingGear for Scientist
+# Start Box Change - Null startingGear for Scientist - Wrist Comms
 #  equipment:
     # ears: ClothingHeadsetScience
   #storage:
     #back:
     #- Stuff
 # End Box Change
-
 
 - type: chameleonOutfit
   id: ScientistChameleonOutfit
