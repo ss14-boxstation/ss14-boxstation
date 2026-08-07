@@ -139,7 +139,7 @@
     - NamesOperationSuffix
     nameFormat: name-format-nuclear-operation
   - type: NukeopsRule
-    warDeclarationMinOps: 3 # Harmony addition
+    warDeclarationMinOps: 1 # Harmony addition # Box Change - 3 > 1
   - type: RuleGrids
   - type: AntagSelection
   - type: AntagLoadProfileRule
