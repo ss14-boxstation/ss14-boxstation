@@ -1,3 +1,6 @@
+# Chillshift
+  # Chillshift is a custom alternate "Greenshift" that makes full room for roleplay while maintaining a degree of random events that prompt RP.
+  # Chillshift should never have antags.
 - type: gamePreset
   id: ChillShift
   name: chillshift-title
@@ -9,17 +12,23 @@
   - MeteorSwarmScheduler
   - ChillStationEventsScheduler
 
+# Redshift
+  # Redshift is a custom alternate "Extended" that should in the long run put more of the interest in the unique and strange events rather than what player antags are rolled
+  # Redshift is not intended to be the place for admemes. That is either Chillshift or Extended.
+  # The goal of Redshift is to, eventually, reintroduce the random disaster of antag selection when antags are picked by Admins, and without being as destructive as Kessler
 - type: gamePreset
   id: RedShift
-  name: chillshift-title
+  name: redshift-title
   showInVote: false
-  description: chillshift-description
+  description: redshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+  - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
   - RedShiftEventsScheduler
 
+# Random Nukies
+  # Non-admin called Nukies with a min player count for Secret
 - type: gamePreset
   id: NukeopsRandom
   alias:

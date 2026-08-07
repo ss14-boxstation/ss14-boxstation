@@ -12,11 +12,11 @@
     - id: SolarFlare
 
 - type: entityTable
-  id: RedShiftEventsTable
+  id: RedShiftEventsTable # Redshift events should be interesting
   table: !type:AllSelector
     children:
     - !type:NestedSelector
-      tableId: BasicChillEventsTable
+      tableId: BasicChillEventsTable # No need to duplicate events
     - id: BreakerFlip
     - id: GasLeak
     - id: IonStorm
@@ -24,7 +24,7 @@
     - id: VentClog
 
 - type: entityTable
-  id: RedShiftAntagTable
+  id: RedShiftAntagTable # Redshift Antags should be interesting but not round-ending or paradox clones
   table: !type:AllSelector
     children:
     - !type:NestedSelector # DeltaV
