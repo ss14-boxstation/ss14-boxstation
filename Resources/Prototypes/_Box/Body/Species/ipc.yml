@@ -293,6 +293,9 @@
   id: OrganIPCVisual
   abstract: true
   components:
+  - type: VisualOrgan
+    data: 
+      sprite: _Box/Mobs/Species/IPC/parts.rsi
   - type: VisualOrganMarkings
     markingData:
       group: IPC
@@ -303,7 +306,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _DV/Mobs/Species/IPC/parts.rsi
+    sprite: _Box/Mobs/Species/IPC/parts.rsi
 
 - type: entity
   id: OrganIPCMetabolizer
@@ -316,16 +319,10 @@
 - type: entity
   parent: [OrganBaseTorso, OrganIPCExternal]
   id: OrganIPCTorso
-  components:
-  - type: Sprite
-    state: torso_m
 
 - type: entity
   parent: [ OrganBaseHead, OrganIPCExternal]
   id: OrganIPCHead
-  components:
-  - type: Sprite
-    state: head_m
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganIPCExternal]
@@ -424,7 +421,6 @@
     - state: heart-on
   - type: Metabolizer
     maxReagents: 2
-    removeEmpty: true
     stages: [Bloodstream]
   - type: GibbableOrgan
   - type: Organ
@@ -441,7 +437,6 @@
     state: ipc-stomach
   - type: Metabolizer
     maxReagents: 3
-    removeEmpty: true
     stages: [ Digestion ]
   - type: Organ
     category: Stomach
@@ -455,4 +450,3 @@
         - ReagentId: IPCOil
           Quantity: 10
   - type: GibbableOrgan
-    
