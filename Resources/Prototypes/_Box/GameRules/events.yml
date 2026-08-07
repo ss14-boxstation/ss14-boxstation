@@ -5,9 +5,38 @@
     - id: AnomalySpawn
     - id: BluespaceArtifact
     - id: BluespaceLocker
-    # - id: CockroachMigration
+    - id: CockroachMigration
     - id: MassHallucinations
-    # - id: MouseMigration
+    - id: MouseMigration
     - id: RandomSentience
     - id: SolarFlare
-    # - id: ClosetSkeleton
+
+- type: entityTable
+  id: RedShiftEventsTable
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector
+      tableId: BasicChillEventsTable
+    - id: BreakerFlip
+    - id: GasLeak
+    - id: IonStorm
+    - id: PowerGridCheck
+    - id: VentClog
+
+- type: entityTable
+  id: RedShiftAntagTable
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector # DeltaV
+      tableId: BasicAntagEventsTableDeltaV
+    - !type:NestedSelector
+      tableId: DerelictBorgEventTable
+    - id: NinjaSpawn
+    - id: RevenantSpawn
+    - id: SlimesSpawn
+    - id: SnakeSpawn
+    - id: SpiderClownSpawn
+    - id: SpiderSpawn
+    - id: CarpMigration
+    - id: BingleSpawn
+    - id: SyndicateDeadDrop

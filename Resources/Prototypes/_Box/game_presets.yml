@@ -8,3 +8,28 @@
   - BasicRoundstartVariation
   - MeteorSwarmScheduler
   - ChillStationEventsScheduler
+
+- type: gamePreset
+  id: RedShift
+  name: chillshift-title
+  showInVote: false
+  description: chillshift-description
+  rules:
+  - SpaceTrafficControlFriendlyEventScheduler
+  - BasicRoundstartVariation
+  - MeteorSwarmScheduler
+  - RedShiftEventsScheduler
+
+- type: gamePreset
+  id: NukeopsRandom
+  alias:
+    - nukeopsrandom
+  name: nukeops-title
+  description: nukeops-description
+  showInVote: false
+  rules:
+  - Nukeops
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
