@@ -197,7 +197,7 @@
     weight: 3.5 # Harmony 6.5 -> 3.5
     earliestStart: 40
     reoccurrenceDelay: 40 # Harmony 20 -> 40
-    minimumPlayers: 15 # Harmony 20 -> 15
+    minimumPlayers: 15 # Box 20 -> 15
     duration: null
   - type: SpaceSpawnRule
     spawnDistance: 0
@@ -229,7 +229,7 @@
     duration: null
     earliestStart: 30
     reoccurrenceDelay: 40 # Harmony 20 -> 40
-    minimumPlayers: 10 # Harmony 30 -> 10
+    minimumPlayers: 10 # Box 30 -> 10
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
