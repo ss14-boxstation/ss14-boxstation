@@ -24,7 +24,7 @@
     - id: VentClog
 
 - type: entityTable
-  id: RedShiftAntagTable # Redshift Antags should be interesting but not round-ending or paradox clones
+  id: RedShiftAntagTable # Redshift Antags should be interesting but limited. Dangerous antags should be limited to "Survival" and "Extended"
   table: !type:AllSelector
     children:
     - !type:NestedSelector # DeltaV

@@ -13,9 +13,7 @@
   - ChillStationEventsScheduler
 
 # Redshift
-  # Redshift is a custom alternate "Extended" that should in the long run put more of the interest in the unique and strange events rather than what player antags are rolled
-  # Redshift is not intended to be the place for admemes. That is either Chillshift or Extended.
-  # The goal of Redshift is to, eventually, reintroduce the random disaster of antag selection when antags are picked by Admins, and without being as destructive as Kessler
+  # Redshift is a custom alternate "Extended" that places the focus on the antags selected rather than destruction caused by events the game has picked.
 - type: gamePreset
   id: RedShift
   name: redshift-title
