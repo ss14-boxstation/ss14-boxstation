@@ -84,8 +84,8 @@
 
 - type: trait
   id: FrenchAccent
-  name: trait-french-accent-name
-  description: trait-french-accent-desc
+  name: trait-french-name
+  description: trait-french-desc
   category: Accents
   cost: 0
   effects:
@@ -95,8 +95,8 @@
 
 - type: trait
   id: SpanishAccent
-  name: trait-spanish-accent-name
-  description: trait-spanish-accent-desc
+  name: trait-spanish-name
+  description: trait-spanish-desc
   category: Accents
   cost: 0
   effects:
