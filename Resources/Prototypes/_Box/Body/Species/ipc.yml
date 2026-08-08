@@ -266,6 +266,19 @@
     unlockTime: 5
   - type: Inventory
     templateId: ipc # does this do anything? NO IDEA
+  - type: HealthExaminable
+    examinableTypes:
+      - Blunt
+      - Slash
+      - Piercing
+      - Heat
+      - Shock
+#Start Box Change - adds in more damage types to the examinable in line with what damages ipcs can take
+      - Cold
+      - Caustic
+      - Radiation
+# End Box Change - adds in more damage types to the examinable in line with what damages ipcs can take
+    locPrefix: ipc #Box Change - unique flavor text for ipc injuries
   - type: GuideHelp
     guides:
       - IPC
