@@ -1,32 +1,30 @@
-# DELTA-V
-# Due to the custom trait system, all traits have been moved under \Resources\Prototypes\_DV\Traits
-# If you want to add a new one, do it there
+# If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
+# Box: Traits have been moved to _Box/Traits, any necessary changes should be made there.
 
-## If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
-# - type: trait
-  # id: Pacifist
-  # name: trait-pacifist-name
-  # description: trait-pacifist-desc
-  # category: Quirks
-  # components:
-  # - type: Pacified
+- type: trait
+  id: WizDenPacifist # Box Change: ID sniped for DV trait system
+  name: trait-pacifist-name
+  description: trait-pacifist-desc
+  category: Quirks
+  components:
+  - type: Pacified
 
-# - type: trait
-  # id: LightweightDrunk
-  # name: trait-lightweight-name
-  # description: trait-lightweight-desc
-  # Harmony Addition start
-  # category: DrinkingSkill # CD: Multiple levels
-  # cost: 1 # CD: Multiple levels
-  # Harmony Addition end
-  # components:
-  # - type: LightweightDrunk
-    # boozeStrengthMultiplier: 2
+- type: trait
+  id: WizDenLightweightDrunk # Box Change: ID sniped for DV trait system
+  name: trait-lightweight-name
+  description: trait-lightweight-desc
+  #Harmony Addition start
+  category: DrinkingSkill # CD: Multiple levels
+  cost: 1 # CD: Multiple levels
+  #Harmony Addition end
+  components:
+  - type: LightweightDrunk
+    boozeStrengthMultiplier: 2
 
-# - type: trait
-  # id: Snoring
-  # name: trait-snoring-name
-  # description: trait-snoring-desc
-  # category: Quirks
-  # components:
-  # - type: Snoring
+- type: trait
+  id: WizDenSnoring # Box Change: ID sniped for DV trait system
+  name: trait-snoring-name
+  description: trait-snoring-desc
+  category: Quirks
+  components:
+  - type: Snoring

@@ -1,0 +1,14 @@
+# 1 Cost
+
+- type: trait
+  id: MobsterAccent
+  name: trait-mobster-name
+  description: trait-mobster-desc
+  # Start Box Change: Update for DV trait system
+  category: Accents
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: MobsterAccent
+  # End Box Change

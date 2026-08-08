@@ -1,16 +1,13 @@
-# DELTA-V
-# Due to the custom trait system, all traits have been moved under \Resources\Prototypes\_DV\Traits
-# If you want to add a new one, do it there
+# Box: Traits have been moved to _Box/Traits, any necessary changes should be made there.
+- type: traitCategory
+  id: WizDenDisabilities # Box Change: ID sniped for DV trait system
+  name: trait-category-disabilities
 
-#- type: traitCategory
-#  id: Disabilities
-#  name: trait-category-disabilities
-#
-#- type: traitCategory
-#  id: SpeechTraits
-#  name: trait-category-speech
-#  maxTraitPoints: 2
-#
-#- type: traitCategory
-#  id: Quirks
-#  name: trait-category-quirks
+- type: traitCategory
+  id: WizDenSpeechTraits # Box Change: ID sniped for DV trait system
+  name: trait-category-speech
+  maxTraitPoints: 2
+
+- type: traitCategory
+  id: WizDenQuirks # Box Change: ID sniped for DV trait system
+  name: trait-category-quirks
