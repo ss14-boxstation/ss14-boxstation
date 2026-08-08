@@ -50,7 +50,7 @@
   id: Muted
   name: trait-muted-name
   description: trait-muted-desc
-  category: Accents
+  category: Vocal # Box Change: Move to Vocal category
   cost: 2
   conditions:
   - !type:HasCompCondition
