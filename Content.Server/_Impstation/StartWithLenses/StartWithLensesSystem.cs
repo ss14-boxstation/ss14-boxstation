@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Server.Bed.Cryostorage;
-using Content.Server.Traits;
+using Content.Server._DV.Traits;
 using Content.Shared.Clothing;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.GameTicking;

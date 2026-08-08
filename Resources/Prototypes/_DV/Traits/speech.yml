@@ -159,18 +159,18 @@
     components:
     - type: FrontalLisp
 
-- type: trait
-  id: Hushed
-  name: trait-hushed-name
-  description: trait-hushed-desc
-  category: Accents
-  cost: 0
-  conditions:
-  - !type:HasCompCondition
-    component: BorgChassis
-    invert: true
-    tooltip: trait-condition-borg-not
-  effects:
-  - !type:AddCompsEffect
-    components:
-    - type: Hushed
+# - type: trait
+  # id: Hushed
+  # name: trait-hushed-name
+  # description: trait-hushed-desc
+  # category: Accents
+  # cost: 0
+  # conditions:
+  # - !type:HasCompCondition
+    # component: BorgChassis
+    # invert: true
+    # tooltip: trait-condition-borg-not
+  # effects:
+  # - !type:AddCompsEffect
+    # components:
+    # - type: Hushed
