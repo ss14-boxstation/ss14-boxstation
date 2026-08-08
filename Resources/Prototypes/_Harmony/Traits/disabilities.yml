@@ -17,8 +17,8 @@
   id: Uncloneable
   name: trait-uncloneable-name
   description: trait-uncloneable-desc
-  category: Disabilities
-  # Start Box Change: Update for DV trait system
+  # Start Box Change: Update for DV trait system; move to Medical category
+  category: Medical
   effects:
   - !type:AddCompsEffect
     components:

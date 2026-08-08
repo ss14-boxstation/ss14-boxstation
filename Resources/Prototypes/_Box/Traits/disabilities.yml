@@ -4,7 +4,7 @@
   id: BloodDeficiency
   name: trait-blood-deficiency-name
   description: trait-blood-deficiency-desc
-  category: Disabilities
+  category: Medical
   cost: 1
   conditions:
   - !type:TraitDependencyCondition
@@ -21,7 +21,7 @@
   id: BloodDeficiencyMinor
   name: trait-blood-deficiency-minor-name
   description: trait-blood-deficiency-minor-desc
-  category: Disabilities
+  category: Medical
   cost: 1  
   conditions:
   - !type:TraitDependencyCondition

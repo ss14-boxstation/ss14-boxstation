@@ -30,7 +30,7 @@
   id: LightweightDrunk
   name: trait-lightweight-name
   description: trait-lightweight-desc
-  category: Medical
+  category: DrinkingSkill # Box Change: Move to CD alcohol tolerance category
   effects:
   - !type:AddCompsEffect
     components:
