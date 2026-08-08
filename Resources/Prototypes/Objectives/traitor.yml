@@ -102,7 +102,7 @@
     title: objective-condition-maroon-person-title
   - type: PickRandomPerson
     filters:
-    - !type:ObjectiveImmuneFilter # DeltaV
+    - !type:ObjectiveImmuneFilter # Box Change: Marked as protected trait prevents RR objectives
     # Can't have multiple objectives to kill the same person.
     - !type:TargetObjectiveMindFilter
       blacklist:
@@ -129,7 +129,7 @@
       whitelist:
         components:
         - CommandStaff
-    - !type:ObjectiveImmuneFilter # DeltaV
+    - !type:ObjectiveImmuneFilter # Box Change: Marked as protected trait prevents RR objectives
     # Can't have multiple objectives to kill the same person.
     - !type:TargetObjectiveMindFilter
       blacklist:
