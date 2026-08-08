@@ -73,6 +73,7 @@ public sealed partial class LoadoutMetadataEditorDialog : FancyWindow
             // The "copy loadout to all" check does nothing if "copy metadata to all" is not checked
             CopyLoadoutToAllCheckbox.Pressed = false;
             CopyLoadoutToAllCheckbox.Disabled = !args.Pressed;
+            CopyLoadoutToAllCheckbox.Visible = args.Pressed; // Box Change: Toggle visibility of second button when disabled, for better UX
         };
     }
 
