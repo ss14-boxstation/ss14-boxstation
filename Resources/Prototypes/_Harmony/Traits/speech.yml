@@ -3,7 +3,6 @@
   id: HarmonyRaisedByArachnids
   name: trait-raisedbyarachnids-name
   description: trait-raisedbyarachnids-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -19,7 +18,6 @@
   id: HarmonyRaisedByDiona
   name: trait-raisedbydiona-name
   description: trait-raisedbydiona-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -35,7 +33,6 @@
   id: HarmonyRaisedByDwarfs
   name: trait-raisedbydwarfs-name
   description: trait-raisedbydwarfs-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -51,7 +48,6 @@
   id: HarmonyRaisedByHumans
   name: trait-raisedbyhumans-name
   description: trait-raisedbyhumans-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -67,7 +63,6 @@
   id: HarmonyRaisedByMoths
   name: trait-raisedbymoths-name
   description: trait-raisedbymoths-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -83,7 +78,6 @@
   id: HarmonyRaisedByReptilians
   name: trait-raisedbyreptilians-name
   description: trait-raisedbyreptilians-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -99,7 +93,6 @@
   id: HarmonyRaisedBySlimes
   name: trait-raisedbyslimes-name
   description: trait-raisedbyslimes-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -115,7 +108,6 @@
   id: HarmonyRaisedByVox
   name: trait-raisedbyvox-name
   description: trait-raisedbyvox-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -145,7 +137,6 @@
   id: HarmonyArachnidVocals
   name: trait-arachnidvocals-name
   description: trait-arachnidvocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -167,7 +158,6 @@
   id: HarmonyDionaVocals
   name: trait-dionavocals-name
   description: trait-dionavocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -188,7 +178,6 @@
   id: HarmonyDwarfVocals
   name: trait-dwarfvocals-name
   description: trait-dwarfvocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -211,7 +200,6 @@
   id: HarmonyHumanVocals
   name: trait-humanvocals-name
   description: trait-humanvocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -232,7 +220,6 @@
   id: HarmonyMothsVocals
   name: trait-mothvocals-name
   description: trait-mothvocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -255,7 +242,6 @@
   id: HarmonyReptilianVocals
   name: trait-reptilianvocals-name
   description: trait-reptilianvocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -277,7 +263,6 @@
   id: HarmonySlimeVocals
   name: trait-slimevocals-name
   description: trait-slimevocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal
@@ -299,7 +284,6 @@
   id: HarmonyVoxVocals
   name: trait-voxvocals-name
   description: trait-voxvocals-desc
-  replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
   category: Vocal

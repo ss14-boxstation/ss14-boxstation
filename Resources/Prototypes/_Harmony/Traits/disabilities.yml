@@ -3,10 +3,12 @@
   name: trait-hypophonia-name
   description: trait-hypophonia-desc
   category: Disabilities
-  blacklist:
-    components:
-      - BorgChassis
   # Start Box Change: Update for DV trait system
+  conditions:
+  - !type:HasCompCondition
+    component: BorgChassis
+    invert: true
+    tooltip: trait-condition-borg-not
   effects:
   - !type:AddCompsEffect
     components:
