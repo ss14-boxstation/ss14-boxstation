@@ -48,16 +48,16 @@
     - type: Unrevivable
       cloneable: true
 
-- type: trait
-  id: Uncloneable
-  name: trait-uncloneable-name
-  description: trait-uncloneable-desc
-  category: Medical
-  effects:
-  - !type:AddCompsEffect
-    components:
-    - type: Unrevivable
-      cloneable: false
+# - type: trait
+  # id: Uncloneable
+  # name: trait-uncloneable-name
+  # description: trait-uncloneable-desc
+  # category: Medical
+  # effects:
+  # - !type:AddCompsEffect
+    # components:
+    # - type: Unrevivable
+      # cloneable: false
 
 # - type: trait
   # id: Unborgable

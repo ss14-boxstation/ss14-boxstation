@@ -5,33 +5,35 @@
 
     <!-- Header Panel with Global Stats -->
     <PanelContainer StyleClasses="TraitsHeaderPanel" Margin="0 0 0 8">
-        <BoxContainer Orientation="Vertical" Margin="12 10">
+        <BoxContainer Orientation="Horizontal" Margin="12 10">
+		<!-- Start Box Change: Don't display total points or trait limit; revert this later if we decide to implement positive traits and global point balancing -->
             <!-- Title Row -->
-            <BoxContainer Orientation="Horizontal" Margin="0 0 0 8">
+            <!-- <BoxContainer Orientation="Horizontal" Margin="0 0 0 8"> -->
                 <Label Text="{Loc 'trait-editor-title'}"
                        StyleClasses="TraitsTitleLabel"/>
                 <Control HorizontalExpand="True"/>
-                <Label Name="GlobalTraitCountLabel"
-                       StyleClasses="TraitsStatLabel"/>
-            </BoxContainer>
+                <!--<Label Name="GlobalTraitCountLabel"-->
+                       <!-- StyleClasses="TraitsStatLabel"/>  -->
+            <!-- </BoxContainer> -->
 
             <!-- Points Progress Bar -->
-            <BoxContainer Orientation="Vertical" Margin="0 4 0 0">
-                <BoxContainer Orientation="Horizontal" Margin="0 0 0 4">
-                    <Label Text="{Loc 'trait-editor-points-label'}"
-                           StyleClasses="TraitsSubtitleLabel"/>
-                    <Control HorizontalExpand="True"/>
-                    <Label Name="GlobalPointsLabel"
-                           StyleClasses="TraitsStatLabel"/>
-                </BoxContainer>
+            <!-- <BoxContainer Orientation="Vertical" Margin="0 4 0 0"> -->
+                <!-- <BoxContainer Orientation="Horizontal" Margin="0 0 0 4"> -->
+                    <!-- <Label Text="{Loc 'trait-editor-points-label'}" -->
+                           <!-- StyleClasses="TraitsSubtitleLabel"/> -->
+                    <!-- <Control HorizontalExpand="True"/> -->
+                     <!-- <Label Name="GlobalPointsLabel" -->
+                           <!-- StyleClasses="TraitsStatLabel"/>  -->
+                <!-- </BoxContainer> -->
 
                 <!-- Progress Bar Container -->
-                <PanelContainer StyleClasses="TraitsProgressBarBg" SetHeight="12">
-                    <PanelContainer Name="GlobalPointsBar"
-                                    StyleClasses="TraitsProgressBarFill"
-                                    HorizontalAlignment="Left"/>
-                </PanelContainer>
-            </BoxContainer>
+                <!-- <PanelContainer StyleClasses="TraitsProgressBarBg" SetHeight="12"> -->
+                    <!-- <PanelContainer Name="GlobalPointsBar" -->
+                                    <!-- StyleClasses="TraitsProgressBarFill" -->
+                                    <!-- HorizontalAlignment="Left"/> -->
+                <!-- </PanelContainer> -->
+            <!-- </BoxContainer> -->
+		<!-- End Box Change -->
         </BoxContainer>
     </PanelContainer>
 

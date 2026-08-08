@@ -6,13 +6,21 @@
   blacklist:
     components:
       - BorgChassis
-  components:
+  # Start Box Change: Update for DV trait system
+  effects:
+  - !type:AddCompsEffect
+    components:
     - type: Hypophonia
+  # End Box Change
 
-# - type: trait
-  # id: Uncloneable
-  # name: trait-uncloneable-name
-  # description: trait-uncloneable-desc
-  # category: Disabilities
-  # components:
-  # - type: Uncloneable
+- type: trait
+  id: Uncloneable
+  name: trait-uncloneable-name
+  description: trait-uncloneable-desc
+  category: Disabilities
+  # Start Box Change: Update for DV trait system
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: Uncloneable
+  # End Box Change

@@ -4,9 +4,13 @@
   name: trait-raisedbyarachnids-name
   description: trait-raisedbyarachnids-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechVerb: Arachnid
       speechSounds: Arachnid
@@ -16,9 +20,13 @@
   name: trait-raisedbydiona-name
   description: trait-raisedbydiona-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Alto
       speechVerb: Plant
@@ -28,9 +36,13 @@
   name: trait-raisedbydwarfs-name
   description: trait-raisedbydwarfs-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Bass
       speechVerb: Default
@@ -40,9 +52,13 @@
   name: trait-raisedbyhumans-name
   description: trait-raisedbyhumans-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Alto
       speechVerb: Default
@@ -52,9 +68,13 @@
   name: trait-raisedbymoths-name
   description: trait-raisedbymoths-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Alto
       speechVerb: Moth
@@ -64,9 +84,13 @@
   name: trait-raisedbyreptilians-name
   description: trait-raisedbyreptilians-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Lizard
       speechVerb: Reptilian
@@ -76,9 +100,13 @@
   name: trait-raisedbyslimes-name
   description: trait-raisedbyslimes-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechVerb: Slime
       speechSounds: Slime
@@ -88,9 +116,13 @@
   name: trait-raisedbyvox-name
   description: trait-raisedbyvox-desc
   replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechVerb: Vox
       speechSounds: Vox
@@ -99,10 +131,14 @@
   id: HarmonyIlleism
   name: trait-illeism-name
   description: trait-illeism-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: IlleismAccent
+  # Start Box Change: Update for DV trait system
+  category: Accents
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: IlleismAccent
+  # End Box Change
 
 # Full speech and vocal replacement traits
 - type: trait
@@ -110,9 +146,13 @@
   name: trait-arachnidvocals-name
   description: trait-arachnidvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechVerb: Arachnid
       speechSounds: Arachnid
@@ -128,9 +168,13 @@
   name: trait-dionavocals-name
   description: trait-dionavocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Alto
       speechVerb: Plant
@@ -145,9 +189,13 @@
   name: trait-dwarfvocals-name
   description: trait-dwarfvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Bass
       speechVerb: Default
@@ -164,9 +212,13 @@
   name: trait-humanvocals-name
   description: trait-humanvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechSounds: Alto
       speechVerb: Default
@@ -181,9 +233,13 @@
   name: trait-mothvocals-name
   description: trait-mothvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: MothAccent
     - type: Speech
       speechSounds: Alto
@@ -200,9 +256,13 @@
   name: trait-reptilianvocals-name
   description: trait-reptilianvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: LizardAccent
     - type: Speech
       speechSounds: Lizard
@@ -218,9 +278,13 @@
   name: trait-slimevocals-name
   description: trait-slimevocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechVerb: Slime
       speechSounds: Slime
@@ -236,9 +300,13 @@
   name: trait-voxvocals-name
   description: trait-voxvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  # Start Box Change: Update for DV trait system
+  cost: 0
+  category: VoiceSwap
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+  # End Box Change
     - type: Speech
       speechVerb: Vox
       speechSounds: Vox
@@ -261,7 +329,11 @@
   id: ScandinavianAccent
   name: trait-scandinavian-name
   description: trait-scandinavian-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: ScandinavianAccent
+  # Start Box Change: Update for DV trait system
+  category: Accents
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: ScandinavianAccent
+  # End Box Change

@@ -44,24 +44,29 @@ public sealed partial class TraitsTab : BoxContainer
         _prototype.PrototypesReloaded += OnProtoReload;
 
         // Subscribe to CVars
-        _cfg.OnValueChanged(DCCVars.MaxTraitCount, OnMaxTraitCountChanged, true);
-        _cfg.OnValueChanged(DCCVars.MaxTraitPoints, OnMaxTraitPointsChanged, true);
+		// Start Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
+        //_cfg.OnValueChanged(DCCVars.MaxTraitCount, OnMaxTraitCountChanged, true);
+        //_cfg.OnValueChanged(DCCVars.MaxTraitPoints, OnMaxTraitPointsChanged, true);
+		// End Box Change
 
         PopulateCategories();
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
     }
 
-    private void OnMaxTraitCountChanged(int value)
-    {
-        _maxGlobalTraits = value;
-        UpdateGlobalStats();
-    }
+	// Start Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
+	//
+    // private void OnMaxTraitCountChanged(int value)
+    // {
+        // _maxGlobalTraits = value;
+        // UpdateGlobalStats();
+    // }
 
-    private void OnMaxTraitPointsChanged(int value)
-    {
-        _maxGlobalPoints = value;
-        UpdateGlobalStats();
-    }
+    // private void OnMaxTraitPointsChanged(int value)
+    // {
+        // _maxGlobalPoints = value;
+        // UpdateGlobalStats();
+    // }
+	// End Box Change
 
     private void OnProtoReload(PrototypesReloadedEventArgs args)
     {
@@ -76,7 +81,7 @@ public sealed partial class TraitsTab : BoxContainer
     public void RefreshTraits()
     {
         PopulateCategories();
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
     }
 
     private void PopulateCategories()
@@ -115,18 +120,20 @@ public sealed partial class TraitsTab : BoxContainer
 
         if (selected)
         {
+		    // Start Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
             // Check global limits
-            if (_currentTraitCount >= _maxGlobalTraits)
-            {
-                RevertTraitToggle(traitId);
-                return;
-            }
+            // if (_currentTraitCount >= _maxGlobalTraits)
+            // {
+                // RevertTraitToggle(traitId);
+                // return;
+            // }
 
-            if (_currentPointsSpent + trait.Cost > _maxGlobalPoints)
-            {
-                RevertTraitToggle(traitId);
-                return;
-            }
+            //if (_currentPointsSpent + trait.Cost > _maxGlobalPoints)
+            // {
+                // RevertTraitToggle(traitId);
+                // return;
+            // }
+			// End Box Change
 
             // Check category limits
             if (_categoryUis.TryGetValue(trait.Category, out var categoryUi))
@@ -179,7 +186,7 @@ public sealed partial class TraitsTab : BoxContainer
             _currentPointsSpent -= trait.Cost;
         }
 
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
         UpdateAllConditions();
         UpdateCategoryStats(trait.Category);
         OnTraitsChanged?.Invoke(_selectedTraits);
@@ -194,63 +201,65 @@ public sealed partial class TraitsTab : BoxContainer
         }
     }
 
-    private void UpdateGlobalStats()
-    {
-        GlobalTraitCountLabel.Text = $"{_currentTraitCount} / {_maxGlobalTraits}";
-        GlobalPointsLabel.Text = $"{_maxGlobalPoints - _currentPointsSpent} / {_maxGlobalPoints}";
-
+	// Start Box Change: Don't display total points or trait limit; revert this later if we decide to implement positive traits and global point balancing
+    //private void UpdateGlobalStats()
+    //{
+       // GlobalTraitCountLabel.Text = $"{_currentTraitCount} / {_maxGlobalTraits}";
+       // GlobalPointsLabel.Text = $"{_maxGlobalPoints - _currentPointsSpent} / {_maxGlobalPoints}";
+	
         // Calculate remaining points (clamped to not go below 0 in display)
-        var remainingPoints = _maxGlobalPoints - _currentPointsSpent;
-        GlobalPointsLabel.Text = $"{remainingPoints} / {_maxGlobalPoints}";
-
+       // var remainingPoints = _maxGlobalPoints - _currentPointsSpent;
+       // GlobalPointsLabel.Text = $"{remainingPoints} / {_maxGlobalPoints}";
+    
         // Calculate progress bar percentage - clamp between 0 and 1
-        var percentage = _maxGlobalPoints > 0
-            ? Math.Clamp((float)remainingPoints / _maxGlobalPoints, 0f, 1f)
-            : 0f;
+       // var percentage = _maxGlobalPoints > 0
+           // ? Math.Clamp((float)remainingPoints / _maxGlobalPoints, 0f, 1f)
+           // : 0f;
 
         // Update progress bar using percentage-based sizing
-        var parent = GlobalPointsBar.Parent;
-        if (parent != null)
-        {
-            var parentWidth = parent.Width;
+        // var parent = GlobalPointsBar.Parent;
+        // if (parent != null)
+        // {
+            // var parentWidth = parent.Width;
             // If parent width is 0 (not laid out yet), defer until layout happens
-            if (parentWidth > 0)
-            {
-                GlobalPointsBar.SetWidth = (int)((parentWidth - 2) * percentage);
-                _awaitingLayoutUpdate = false;
-            }
-            else if (!_awaitingLayoutUpdate)
-            {
+            // if (parentWidth > 0)
+            // {
+                // GlobalPointsBar.SetWidth = (int)((parentWidth - 2) * percentage);
+                // _awaitingLayoutUpdate = false;
+            // }
+            // else if (!_awaitingLayoutUpdate)
+            // {
                 // Schedule update after parent layout (only once)
-                _awaitingLayoutUpdate = true;
-                parent.OnResized += OnProgressBarParentResized;
-            }
-        }
+                // _awaitingLayoutUpdate = true;
+                // parent.OnResized += OnProgressBarParentResized;
+            // }
+        // }
 
         // Update progress bar color class
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarFull");
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarPartial");
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarLow");
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarEmpty");
+        // GlobalPointsBar.RemoveStyleClass("TraitsProgressBarFull");
+        // GlobalPointsBar.RemoveStyleClass("TraitsProgressBarPartial");
+        // GlobalPointsBar.RemoveStyleClass("TraitsProgressBarLow");
+        // GlobalPointsBar.RemoveStyleClass("TraitsProgressBarEmpty");
 
-        GlobalPointsBar.AddStyleClass(percentage switch
-        {
-            >= 0.99f => "TraitsProgressBarFull",
-            >= 0.5f => "TraitsProgressBarPartial",
-            > 0f => "TraitsProgressBarLow",
-            _ => "TraitsProgressBarEmpty"
-        });
+        // GlobalPointsBar.AddStyleClass(percentage switch
+        // {
+            // >= 0.99f => "TraitsProgressBarFull",
+            // >= 0.5f => "TraitsProgressBarPartial",
+            // > 0f => "TraitsProgressBarLow",
+            // _ => "TraitsProgressBarEmpty"
+        // });
 
-        foreach (var (_, categoryUi) in _categoryUis)
-        {
-            categoryUi.UpdateGlobalPointsLock(remainingPoints);
-        }
-    }
+        // foreach (var (_, categoryUi) in _categoryUis)
+        // {
+            // categoryUi.UpdateGlobalPointsLock(remainingPoints);
+        // }
+    // }
+	// End Box Change
 
     private void OnProgressBarParentResized()
     {
         _awaitingLayoutUpdate = false;
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
     }
 
     private void UpdateCategoryStats(ProtoId<TraitCategoryPrototype> categoryId)
@@ -322,7 +331,7 @@ public sealed partial class TraitsTab : BoxContainer
             }
         }
 
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
         foreach (var (categoryId, _) in _categoryUis)
         {
             UpdateCategoryStats(categoryId);
@@ -366,7 +375,7 @@ public sealed partial class TraitsTab : BoxContainer
             }
         }
 
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // Box Change: Disable global trait/points limit ; revert this later if we decide to implement positive traits and global point balancing
         foreach (var (categoryId, _) in _categoryUis)
         {
             UpdateCategoryStats(categoryId);

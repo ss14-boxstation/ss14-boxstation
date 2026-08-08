@@ -8,6 +8,9 @@
   conditions:
   - !type:HasCompCondition
     component: Blindable
+  - !type:TraitDependencyCondition
+    conflicts:
+    - PoorVision
   effects:
   - !type:AddCompsEffect
     components:
@@ -23,6 +26,9 @@
   conditions:
   - !type:HasCompCondition
     component: Blindable
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Blindness
   effects:
   - !type:AddCompsEffect
     components:
