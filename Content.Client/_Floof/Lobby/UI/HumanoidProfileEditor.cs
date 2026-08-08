@@ -3,6 +3,7 @@ using Content.Shared.Preferences.Loadouts;
 using Robust.Shared.Player;
 using Content.Shared.Roles;
 using Robust.Shared.Utility;
+using Content.Shared.Clothing;
 
 // ReSharper disable once CheckNamespace
 namespace Content.Client.Lobby.UI;
@@ -19,12 +20,21 @@ public sealed partial class HumanoidProfileEditor
         // Loadout metadata editor
         _loadoutWindow!.OnRequestLoadoutMetadataEdit += (groupProto, loadoutProto) =>
         {
+            _loadoutMetadataEditorDialog?.Dispose(); // Box Change: Close it before trying to make a new one
             if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var group)
                 || group.Find(it => it.Prototype == loadoutProto) is not { } loadout)
                 return;
 
-            var dlg = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto);
-            dlg.OnSave += (args) =>
+            // Start Box Change: Replace "var dlg" with the singular window variable, get item name for use in window title
+            var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
+            string title = "";
+            if (_prototypeManager.Resolve(loadoutProto, out var loadoutResolved))
+            {
+                title = loadoutSystem.GetName(loadoutResolved);
+            }
+            _loadoutMetadataEditorDialog = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto) { Title = title };
+            _loadoutMetadataEditorDialog.OnSave += (args) =>
+            // End Box Change
             {
                 var (newLoadout, copyMetadataToAll, copyLoadoutToAll) = args;
                 // The role loadouts could have changed, we cant trust the old value
@@ -63,7 +73,7 @@ public sealed partial class HumanoidProfileEditor
                 SetDirty();
                 ReloadPreview();
             };
-            dlg.OpenCentered();
+            _loadoutMetadataEditorDialog.OpenCentered(); //Box Change: Replace "var dlg" with the singular window variable
         };
     }
 }
