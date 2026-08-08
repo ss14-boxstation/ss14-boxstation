@@ -8,7 +8,7 @@
     currentLabel: reagent-name-universal-blood
   - type: SolutionContainerManager
     solutions:
-      drink:
+      beaker: # Box Change - drink > beaker
         reagents:
         - ReagentId: UniversalBlood
           Quantity: 200
