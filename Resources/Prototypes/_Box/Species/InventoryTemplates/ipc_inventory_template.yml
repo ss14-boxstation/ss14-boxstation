@@ -66,8 +66,7 @@
         components:
         - IdentityBlocker
         tags:
-        # - IPCMaskWearable # Box Change - was causing linter fail
-        # Box Change Start - Allow IPCs to smoke
+        - IPCMaskWearable 
         - Cigar
         - Cigarette
         # Box Change End
