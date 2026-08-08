@@ -1360,3 +1360,16 @@
   id: 158
   time: '2026-08-07T23:56:00.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/237
+- author: CollectionOfBones128
+  changes:
+  - message: Added Universal Blood Substitue for Nuclear Operative Medics.
+    type: Add
+  - message: The Combat Medkit now comes with a syringe of Universal Blood Substitute
+      instead of a syringe of Saline
+    type: Tweak
+  - message: Airloss Auto-Injectors now use Universal Blood Substitute instead of
+      Saline
+    type: Tweak
+  id: 159
+  time: '2026-08-08T00:33:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/239
