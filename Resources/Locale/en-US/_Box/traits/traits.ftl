@@ -9,3 +9,6 @@ trait-raisedbyscurrets-desc = You've lived with Scurrets for so long that you so
 
 trait-scurretvocals-name = Voice of Scurret
 trait-scurretvocals-desc = You are somehow able to fully mimic Scurret speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-removal-name = Marked for Removal
+trait-removal-desc = Someone wants you gone. You will be a valid target for round-removal objectives.

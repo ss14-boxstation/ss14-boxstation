@@ -15,8 +15,3 @@ trait-dysgraphia-desc = You cannot write, whether because of a disability, your 
 
 trait-irish-accent-name = Irish accent
 trait-irish-accent-desc = Ya sap! Seems you got a pet hate fer rubbish!
-
-trait-protected-name = Marked as Protected
-# Box Change: Marked as protected prevents RR objectives, not kill objectives as a whole
-#trait-protected-desc = Due to your position, value, or circumstances, your survival is considered preferable. You won't be targeted by kill objectives.
-trait-protected-desc = Due to your position, value, or circumstances, your long-term survival is considered preferable. You won't be targeted by round-removal objectives.

@@ -4,7 +4,7 @@
   name: trait-raisedbyscurrets-name
   description: trait-raisedbyscurrets-desc
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -18,7 +18,7 @@
   name: trait-scurretvocals-name
   description: trait-scurretvocals-desc
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:

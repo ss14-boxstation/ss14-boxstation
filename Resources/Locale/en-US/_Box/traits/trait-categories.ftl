@@ -1,0 +1,1 @@
+trait-category-vocal = Vocal

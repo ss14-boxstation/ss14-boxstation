@@ -6,7 +6,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -22,7 +22,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -38,7 +38,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -54,7 +54,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -70,7 +70,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -86,7 +86,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -102,7 +102,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -118,7 +118,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -148,7 +148,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -170,7 +170,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -191,7 +191,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -214,7 +214,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -235,7 +235,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -258,7 +258,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -280,7 +280,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:
@@ -302,7 +302,7 @@
   replaceComponents: true
   # Start Box Change: Update for DV trait system
   cost: 0
-  category: VoiceSwap
+  category: Vocal
   effects:
   - !type:OverrideCompsEffect
     components:

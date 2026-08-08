@@ -1,0 +1,9 @@
+- type: trait
+  id: MarkedForRemoval
+  name: trait-removal-name
+  description: trait-removal-desc
+  category: Meta
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: RoundRemoveConsent
