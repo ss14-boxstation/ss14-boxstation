@@ -41,7 +41,7 @@ using Direction = Robust.Shared.Maths.Direction;
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
 //End Box Change
-using Content.Shared._DV.Traits; // DV - Traits
+using Content.Shared._DV.Traits; // Box Change: DV - Traits
 
 namespace Content.Client.Lobby.UI
 {
@@ -179,7 +179,7 @@ namespace Content.Client.Lobby.UI
                 Save?.Invoke();
             };
 
-            Traits.OnTraitsChanged += OnTraitsSelectionChanged; // DeltaV
+            Traits.OnTraitsChanged += OnTraitsSelectionChanged; // Box Change: DeltaV traits menu
 
             #region Left
 
@@ -425,7 +425,7 @@ namespace Content.Client.Lobby.UI
 
             TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
 
-            // RefreshTraits(); // DeltaV
+            // RefreshTraits(); // Box Change: DeltaV systems handle this
 
             #region Markings
 
@@ -478,7 +478,7 @@ namespace Content.Client.Lobby.UI
             IsDirty = false;
         }
 
-        // Begin DeltaV - Traits Integration
+        // Start Box Change: DeltaV - Traits menu
         /// <summary>
         /// Called when trait selection changes in the TraitsTab.
         /// Updates the profile with the new trait selection.
@@ -528,7 +528,7 @@ namespace Content.Client.Lobby.UI
             Traits.SetSelectedTraits(selectedTraits);
             Traits.UpdateConditions(Profile);
         }
-        // End DeltaV - Traits Integration
+        // End Box Change
 
         /// <summary>
         /// Refreshes the flavor text editor status.
@@ -564,6 +564,7 @@ namespace Content.Client.Lobby.UI
         /// <summary>
         /// Refreshes traits selector
         /// </summary>
+        // Start Box Change: DeltaV's trait menu's systems handle this now
         // public void RefreshTraits()
         // {
         //     TraitsList.RemoveAllChildren();
@@ -680,6 +681,7 @@ namespace Content.Client.Lobby.UI
         //         }
         //     }
         // }
+        // End Box Change
 
         /// <summary>
         /// Refreshes the species selector.
@@ -862,13 +864,13 @@ namespace Content.Client.Lobby.UI
 
             _recordsTab.Update(profile); //Box Change: CD records
 
-            UpdateTraitsSelection(); // DeltaV - Traits
+            UpdateTraitsSelection(); // Box Change: DeltaV - Traits
 
             RefreshAntags();
             RefreshJobs();
             RefreshLoadouts();
             RefreshSpecies();
-            // RefreshTraits(); // DeltaV
+            // RefreshTraits(); // Box Change: DeltaV's systems handle this
             RefreshFlavorText();
             ReloadPreview();
 

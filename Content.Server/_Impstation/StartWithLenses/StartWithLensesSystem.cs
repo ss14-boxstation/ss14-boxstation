@@ -1,6 +1,6 @@
 using System.Linq;
 using Content.Server.Bed.Cryostorage;
-using Content.Server._DV.Traits;
+using Content.Server._DV.Traits; // Box Change: Traits system moved to _DV
 using Content.Shared.Clothing;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.GameTicking;

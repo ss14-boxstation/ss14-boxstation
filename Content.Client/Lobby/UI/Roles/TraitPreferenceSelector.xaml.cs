@@ -19,7 +19,7 @@ public sealed partial class TraitPreferenceSelector : Control
 
     public event Action<bool>? PreferenceChanged;
 
-    // DeltaV - This whole control is generally unused but the compiler wouldn't compile if I removed it
+    // Start Box Change: DeltaV - This whole control is generally unused but the compiler wouldn't compile if I removed it
     // So I'm just gonna comment this part out
     // public TraitPreferenceSelector(TraitPrototype trait)
     // {
@@ -37,6 +37,7 @@ public sealed partial class TraitPreferenceSelector : Control
     //         Checkbox.ToolTip = Loc.GetString(desc);
     //     }
     // }
+    // End Box Change
 
     private void OnCheckBoxToggled(BaseButton.ButtonToggledEventArgs args)
     {

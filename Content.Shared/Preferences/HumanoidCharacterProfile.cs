@@ -17,7 +17,7 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
 using Content.Shared._CD.Records; // Box Change - CD imports
-using Content.Shared._DV.Traits; // DeltaV - Traits rework
+using Content.Shared._DV.Traits; // Box Change: DeltaV - Traits rework
 
 namespace Content.Shared.Preferences
 {
@@ -413,12 +413,12 @@ namespace Content.Shared.Preferences
             // Category not found so dump it.
             TraitCategoryPrototype? traitCategory = null;
 
-            if (!protoManager.Resolve(category, out traitCategory)) // DeltaV 13/01/26 - Traits: Category is no longer nullable
+            if (!protoManager.Resolve(category, out traitCategory)) // Box Change: DeltaV 13/01/26 - Traits: Category is no longer nullable
                 return new(this);
 
             var list = new HashSet<ProtoId<TraitPrototype>>(_traitPreferences) { traitId };
 
-            if (traitCategory.MaxPoints < 0) // DeltaV 13/01/26 - Traits: Changed to MaxPoints
+            if (traitCategory.MaxPoints < 0) // Box Change: DeltaV 13/01/26 - Traits: Changed to MaxPoints
             {
                 return new(this)
                 {
@@ -439,7 +439,7 @@ namespace Content.Shared.Preferences
                 count += otherProto.Cost;
             }
 
-            if (count > traitCategory.MaxPoints && traitProto.Cost != 0) // DeltaV 13/01/26 - Traits: Changed to MaxPoints
+            if (count > traitCategory.MaxPoints && traitProto.Cost != 0) // Box Change: DeltaV 13/01/26 - Traits: Changed to MaxPoints
             {
                 return new(this);
             }
@@ -693,11 +693,13 @@ namespace Content.Shared.Preferences
                     continue;
 
                 // Always valid.
-                // if (traitProto.Category == null) // DeltaV 13/01/26 - Traits rework
+                // Start Box Change: DeltaV 13/01/26 - Traits rework
+                // if (traitProto.Category == null) 
                 // {
                 //     result.Add(trait);
                 //     continue;
                 // }
+                // End Box Change
 
                 // No category so dump it.
                 if (!protoManager.Resolve(traitProto.Category, out var category))
@@ -707,7 +709,7 @@ namespace Content.Shared.Preferences
                 existing += traitProto.Cost;
 
                 // Too expensive.
-                if (existing > category.MaxPoints) // DeltaV 13/01/26 - Traits:  Was MaxTraitPoints
+                if (existing > category.MaxPoints) // Box Change: DeltaV 13/01/26 - Traits:  Was MaxTraitPoints
                     continue;
 
                 groups[category.ID] = existing;
