@@ -7,3 +7,13 @@
   - !type:AddCompsEffect
     components:
     - type: RoundRemoveConsent
+    
+- type: trait
+  id: DAGDConsent
+  name: trait-dagd-name
+  description: trait-dagd-desc
+  category: Meta
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: DAGDConsent

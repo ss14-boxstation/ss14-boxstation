@@ -28,5 +28,5 @@
   id: Meta
   name: trait-category-meta
   priority: 50
-  maxTraits: 1
+  #maxTraits: 1 # Box Change: No limit (why was there one in the first place?)
   accentColor: "#eab308"  # Yellow

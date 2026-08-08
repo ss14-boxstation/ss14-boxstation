@@ -2,7 +2,7 @@
 namespace Content.Server._Box.Objectives.Components;
 
 /// <summary>
-/// Use this to mark a player as immune to any target objectives, useful for ghost roles or events.
+/// Required for a player to be the target of an RR objective.
 /// </summary>
 [RegisterComponent]
 public sealed partial class RoundRemoveConsentComponent : Component;

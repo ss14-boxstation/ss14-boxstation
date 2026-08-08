@@ -12,3 +12,6 @@ trait-scurretvocals-desc = You are somehow able to fully mimic Scurret speech. (
 
 trait-removal-name = Marked for Removal
 trait-removal-desc = Someone wants you gone. You will be a valid target for round-removal objectives.
+
+trait-dagd-name = DAGD Consent
+trait-dagd-desc = Opt-in for the "Die a Glorious Death" objective. 

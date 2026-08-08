@@ -65,6 +65,10 @@
     icon:
       sprite: Mobs/Ghosts/ghost_human.rsi
       state: icon
+  - type: ObjectiveComponentWhitelist
+    whitelist:
+      components:
+      - DAGDConsent
   - type: ObjectiveBlacklistRequirement
     blacklist:
       components:
@@ -102,10 +106,12 @@
     title: objective-condition-maroon-person-title
   - type: PickRandomPerson
     filters:
+    # Start Box Change: Marked for Removal/Automatic RR consent check
     - !type:BodyMindFilter
       whitelist:
         components:
-        - RoundRemoveConsentFilter
+        - RoundRemoveConsent
+    # End Box Change
     # Can't have multiple objectives to kill the same person.
     - !type:TargetObjectiveMindFilter
       blacklist:
@@ -132,10 +138,10 @@
       whitelist:
         components:
         - CommandStaff
-    - !type:BodyMindFilter
-      whitelist:
-        components:
-        - RoundRemoveConsentFilter
+        # Start Box Change: Marked for Removal/Automatic RR consent check
+        - RoundRemoveConsent 
+        requireAll: true
+        # End Box Change
     # Can't have multiple objectives to kill the same person.
     - !type:TargetObjectiveMindFilter
       blacklist:
