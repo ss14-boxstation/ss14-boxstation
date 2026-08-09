@@ -47,7 +47,8 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
     state: eyeglow
-    shader: unshaded
+  shaders:
+    eyeglow: unshaded
 
 - type: marking
   id: SlimeLungs
@@ -244,4 +245,5 @@
     state: fadingstars2
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: fadingstars3
-    shader: unshaded
+  shaders:
+    fadingstars3: unshaded
