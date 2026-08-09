@@ -25,7 +25,7 @@
   equipment:
     shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
-    ears: ClothingHeadsetSecurity
+    # ears: ClothingHeadsetSecurity # Box Change: Headset moved to loadout option
   inhand:
     # Start Box Change - Replace generic briefcase with lawyer's own personal briefcase
     # - BriefcaseBrownFilled

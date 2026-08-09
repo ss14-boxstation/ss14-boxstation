@@ -41,6 +41,7 @@ phrase-wood = wood
 phrase-cloth = cloth
 phrase-cardboard = cardboard
 phrase-gold = gold
+phrase-glass = glass
 phrase-silver = silver
 phrase-bluespace = bluespace
 phrase-access = access
@@ -72,6 +73,7 @@ phrase-teg = TEG
 phrase-tesla = tesla
 phrase-tritium = tritium
 phrase-magboots = magboots
+phrase-holofan = holofan
 phrase-anomaly = anomaly
 phrase-ape = A.P.E.
 phrase-anomaly-vessel = anomaly vessel
@@ -81,6 +83,14 @@ phrase-robotics = robotics
 phrase-circuit-board = circuit board
 phrase-research = research
 phrase-research-console = R&D computer
+# Start Box Change: No epistemics
+#phrase-oracle = Oracle
+#phrase-sophie = Sophie
+#phrase-glimmer = glimmer
+#phrase-psionic = psionic
+#phrase-lotophagol-oil = lotophagol oil
+#phrase-mindbreak-phase = mindbreak
+# End Box Change
 phrase-protolathe = protolathe
 phrase-circuit-imprinter = circuit imprinter
 phrase-bounty = bounty
@@ -187,3 +197,50 @@ phrase-salt = salt
 phrase-artifact-fragment = artifact fragment
 phrase-bluespace-crystal = bluespace
 phrase-diamond = diamond
+phrase-chemicals = chemicals
+phrase-box = box
+phrase-locker = locker
+phrase-machine = machine
+phrase-blood = blood
+phrase-nukedisk = nuclear disk
+phrase-pinpointer = pinpointer
+phrase-law = law
+phrase-chassis = chassis
+phrase-engi-on = on
+phrase-engi-off = off
+phrase-gas-analyzer = gas analyzer
+phrase-planetside = planetside
+phrase-holopad = holopad
+phrase-upgrade = upgrade
+
+# colors
+phrase-color-red = red
+phrase-color-orange = orange
+phrase-color-yellow = yellow
+phrase-color-green = green
+phrase-color-blue = blue
+phrase-color-purple = purple
+phrase-color-pink = pink
+phrase-color-black = black
+phrase-color-white = white
+phrase-color-bright = bright
+phrase-color-light = light
+phrase-color-dark = dark
+phrase-color-rainbow = rainbow
+phrase-color-brown = brown
+phrase-color-gray = gray
+
+# flavors
+phrase-sweet = sweet
+phrase-sour = sour
+phrase-spicy = spicy
+phrase-savory = savory
+phrase-bitter = bitter
+
+# plants
+phrase-tomato = tomato
+phrase-potato = potato
+phrase-onion = onion
+phrase-aloe = aloe
+phrase-poppy = poppy
+phrase-galaxythistle = galaxythistle

@@ -3,3 +3,4 @@
   id: AACTabletStatic
   recipes:
   - AACTablet
+  - AACTabletSAS # Box Change: S&S tablet

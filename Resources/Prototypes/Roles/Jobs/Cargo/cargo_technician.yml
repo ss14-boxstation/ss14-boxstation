@@ -25,7 +25,7 @@
 - type: startingGear
   id: CargoTechGear
   equipment:
-    ears: ClothingHeadsetCargo
+    # ears: ClothingHeadsetCargo # Box Change: Headset moved to loadout option
 #Box change start - comments out appraisal tool and places it into the belt
     #pocket1: AppraisalTool
     belt: ClothingBeltUtilityCargo

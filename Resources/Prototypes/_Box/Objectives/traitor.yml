@@ -1,0 +1,6 @@
+- type: entity
+  parent: BaseCaptainObjective
+  id: CaptainHandheldCommsStealObjective
+  components:
+  - type: StealCondition
+    stealGroup: HandheldComms

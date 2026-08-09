@@ -1,10 +1,19 @@
+# Traitor Objectives
+- type: stealTargetGroup
+  id: HandheldComms
+  name: steal-target-groups-handheld-comms
+  sprite:
+    sprite: _Box/Objects/Devices/handheldcomms.rsi
+    state: icon
+
+# Thief Objectives
 - type: stealTargetGroup
   id: DigiboardMassMedia
   name: steal-target-groups-reporter-digiboard
   sprite:
     sprite: _Box/Objects/Specific/Service/reporter_digiboard.rsi
     state: digiboard-off
-    
+
 - type: stealTargetGroup
   id: BriefcaseHoP
   name: steal-target-groups-hop-briefcase
@@ -18,7 +27,7 @@
   sprite:
     sprite: _Box/Objects/Storage/Briefcases/briefcase_detective.rsi
     state: icon
-    
+
 - type: stealTargetGroup
   id: BriefcaseLawyer
   name: steal-target-groups-lawyer-briefcase

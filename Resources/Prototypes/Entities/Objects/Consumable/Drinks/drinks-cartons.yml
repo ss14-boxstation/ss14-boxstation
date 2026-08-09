@@ -18,6 +18,11 @@
     solution: drink
   - type: Item
     size: Normal
+  # Start Box Change: Let smaller cartons (mostly meaning milks) fit in dispensers
+  - type: Tag
+    tags:
+    - DrinkBottle
+  # End Box Change
 
 - type: entity
   abstract: true

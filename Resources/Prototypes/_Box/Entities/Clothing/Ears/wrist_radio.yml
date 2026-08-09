@@ -1,0 +1,779 @@
+# Based on and heavily modified from https://github.com/new-frontiers-14/frontier-station-14/commit/a62934f044a3f460e4a3a2777e55ddf405a2e342
+# Base Wristset
+- type: entity
+  abstract: true
+  parent: ClothingHeadset
+  id: BaseClothingWristset
+  name: wristset
+  suffix: Box
+  description: An updated, modular intercom worn on the wrist. It accepts encryption keys.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Ears/Headsets/wrist_color.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Ears/Headsets/wrist_color.rsi
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      
+#passenger
+- type: entity
+  parent: BaseClothingWristset
+  id: ClothingWristsetGrey
+  name: passenger wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#6f6f6f"
+    - state: icon-unshaded
+      color: "#c6fafb"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#6f6f6f"
+      - state: equipped-EARS-unshaded
+        color: "#c6fafb"
+        shader: unshaded
+
+#command
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetAltCommand]
+  id: ClothingWristsetCaptain
+  name: captain wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#3a6781"
+    - state: icon-decal-02
+      color: "#ffce5b"
+    - state: icon-unshaded
+      color: "#ffce5b"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3a6781"
+      - state: equipped-EARS-unshaded
+        color: "#ffce5b"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyStationMaster
+      
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetCommand]
+  id: ClothingWristsetHoP
+  name: hop wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#3a6781"
+    - state: icon-decal-02
+      color: "#b00000"
+    - state: icon-unshaded
+      color: "#ffce5b"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3a6781"
+      - state: equipped-EARS-unshaded
+        color: "#ffce5b"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyStationMaster
+      
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetCE]
+  id: ClothingWristsetCE
+  name: ce wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#fff4e2"
+    - state: icon-decal-02
+      color: "#f39f27"
+    - state: icon-unshaded
+      color: "#00ffd0"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#fff4e2"
+      - state: equipped-EARS-unshaded
+        color: "#00ffd0"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyEngineering
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+      
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetAltSecurity]
+  id: ClothingWristsetHoS
+  name: hos wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: icon-decal-02
+      color: "#ffd735"
+    - state: icon-unshaded
+      color: "#db2226"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3f3f3f"
+      - state: equipped-EARS-unshaded
+        color: "#db2226"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetAltSecurity]
+  id: ClothingWristsetWarden
+  name: warden wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: icon-decal-02
+      color: "#fffcfc"
+    - state: icon-unshaded
+      color: "#db2226"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3f3f3f"
+      - state: equipped-EARS-unshaded
+        color: "#db2226"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+      
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetCMO]
+  id: ClothingWristsetCMO
+  name: cmo wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#e2e2e2"
+    - state: icon-decal-01
+      color: "#5a96bb"
+    - state: icon-decal-02
+      color: "#ffce5b"
+    - state: icon-unshaded
+      color: "#90ccf1"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#e2e2e2"
+      - state: equipped-EARS-unshaded
+        color: "#90ccf1"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetQM]
+  id: ClothingWristsetQM
+  name: qm wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#3a2717"
+    - state: icon-decal-02
+      color: "#b18928"
+    - state: icon-unshaded
+      color: "#f1c98b"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#b18644"
+      - state: equipped-EARS-unshaded
+        color: "#f1c98b"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCargo
+      - EncryptionKeySalvage
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetRD]
+  id: ClothingWristsetRD
+  name: rd wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+    - state: icon-decal-01
+      color: "#c96dbf"
+    - state: icon-decal-02
+      color: "#ffce5b"
+    - state: icon-unshaded
+      color: "#f8a2e6"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#c96dbf"
+      - state: equipped-EARS-unshaded
+        color: "#f8a2e6"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyScience
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+      
+# cargo
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetCargo]
+  id: ClothingWristsetCargo
+  name: cargo wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#b18644"
+    - state: icon-unshaded
+      color: "#f1c98b"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#b18644"
+      - state: equipped-EARS-unshaded
+        color: "#f1c98b"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCargo
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetMining]
+  id: ClothingWristsetMining
+  name: mining wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#b18644"
+    - state: icon-decal-02
+      color: "#963dca"
+    - state: icon-unshaded
+      color: "#f1c98b"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#b18644"
+      - state: equipped-EARS-unshaded
+        color: "#f18bcf"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySalvageCargo
+      - EncryptionKeyCommon
+      
+# engineering
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetEngineering]
+  id: ClothingWristsetEngineering
+  name: engineering wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#ae8637"
+    - state: icon-unshaded
+      color: "#00ffd0"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#ae8637"
+      - state: equipped-EARS-unshaded
+        color: "#00ffd0"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyEngineering
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetEngineering]
+  id: ClothingWristsetAtmospherics
+  name: atmospherics wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#ae8637"
+    - state: icon-decal-02
+      color: "#609e8a"
+    - state: icon-unshaded
+      color: "#00ffd0"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#ae8637"
+      - state: equipped-EARS-unshaded
+        color: "#00ffd0"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyEngineering
+
+# medical
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetMedical]
+  id: ClothingWristsetMedical
+  name: medical wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#e2e2e2"
+    - state: icon-decal-01
+      color: "#5a96bb"
+    - state: icon-unshaded
+      color: "#90ccf1"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#e2e2e2"
+      - state: equipped-EARS-unshaded
+        color: "#90ccf1"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+      - EncryptionKeyCommon
+      
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetMedical]
+  id: ClothingWristsetParamedic
+  name: paramedic wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#6a4f4f"
+    - state: icon-decal-01
+      color: "#104047"
+    - state: icon-unshaded
+      color: "#90ccf1"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#6a4f4f"
+      - state: equipped-EARS-unshaded
+        color: "#90ccf1"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+      - EncryptionKeyCommon
+      
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetMedical]
+  id: ClothingWristsetChemist
+  name: chemist wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#e2e2e2"
+    - state: icon-decal-01
+      color: "#ff9019"
+    - state: icon-unshaded
+      color: "#90ccf1"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#ff9019"
+      - state: equipped-EARS-unshaded
+        color: "#90ccf1"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+      - EncryptionKeyCommon
+
+# science
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetScience]
+  id: ClothingWristsetScience
+  name: science wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+    - state: icon-decal-01
+      color: "#c96dbf"
+    - state: icon-unshaded
+      color: "#f8a2e6"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#c96dbf"
+      - state: equipped-EARS-unshaded
+        color: "#f8a2e6"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyScience
+      - EncryptionKeyCommon
+
+# Leaving this in, in the event that the medsci headset actually becomes used regularly in the future? idk
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetMedicalScience]
+  id: ClothingWristsetMedicalScience
+  name: medical science wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#749eb2"
+    - state: icon-decal-01
+      color: "#c96dbf"
+    - state: icon-unshaded
+      color: "#f8a2e6"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#c96dbf"
+      - state: equipped-EARS-unshaded
+        color: "#f8a2e6"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedicalScience
+      - EncryptionKeyCommon
+
+# This uses the normal science keys instead of roboticist, since it's currently just a cosmetic variant for scientists
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetScience]
+  id: ClothingWristsetRobotics
+  name: roboticist wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#494949"
+    - state: icon-decal-01
+      color: "#d33725"
+    - state: icon-unshaded
+      color: "#f8a2e6"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#d33725"
+      - state: equipped-EARS-unshaded
+        color: "#f8a2e6"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyScience
+      - EncryptionKeyCommon
+
+# security
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetSecurity]
+  id: ClothingWristsetSecurity
+  name: security wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#3f3f3f"
+    - state: icon-unshaded
+      color: "#db2226"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3f3f3f"
+      - state: equipped-EARS-unshaded
+        color: "#db2226"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetBrigmedic]
+  id: ClothingWristsetBrigmedicCommon
+  name: brigmedic wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#e5e5e5"
+    - state: icon-decal-02
+      color: "#5995ba"
+    - state: icon-unshaded
+      color: "#db2226"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#e5e5e5"
+      - state: equipped-EARS-unshaded
+        color: "#db2226"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySecurity
+      - EncryptionKeyMedical
+      - EncryptionKeyCommon
+
+# service
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetService]
+  id: ClothingWristsetService
+  name: service wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#e2e2e2"
+    - state: icon-decal-01
+      color: "#9fed58"
+    - state: icon-unshaded
+      color: "#9fed58"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3f3f3f"
+      - state: equipped-EARS-unshaded
+        color: "#9fed58"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyService
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetService]
+  id: ClothingWristsetServiceJanitor
+  name: janitor wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#f6d521"
+    - state: icon-decal-01
+      color: "#891eb8"
+    - state: icon-unshaded
+      color: "#9fed58"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#891eb8"
+      - state: equipped-EARS-unshaded
+        color: "#9fed58"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyService
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetService]
+  id: ClothingWristsetServiceBotany
+  name: hydroponics wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#6ad427"
+    - state: icon-decal-01
+      color: "#3164ff"
+    - state: icon-unshaded
+      color: "#9fed58"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#3164ff"
+      - state: equipped-EARS-unshaded
+        color: "#9fed58"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyService
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetService]
+  id: ClothingWristsetServiceClown
+  name: clown wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#00ff00"
+    - state: icon-decal-01
+      color: "#006097"
+    - state: icon-decal-02
+      color: "#00ff00"
+    - state: icon-unshaded
+      color: "#cc3300"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#00ff00"
+      - state: equipped-EARS-unshaded
+        color: "#cc3300"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyService
+      - EncryptionKeyCommon
+
+- type: entity
+  parent: [BaseClothingWristset, ClothingHeadsetService]
+  id: ClothingWristsetServiceMime
+  name: mime wristset
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#ffffff"
+    - state: icon-decal-02
+      color: "#232323"
+    - state: icon-unshaded
+      color: "#87c0c1"
+      shader: unshaded
+    - state: icon-buttons
+  - type: Clothing
+    clothingVisuals:
+      ears:
+      - state: equipped-EARS
+        color: "#ffffff"
+      - state: equipped-EARS-unshaded
+        color: "#87c0c1"
+        shader: unshaded
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyService
+      - EncryptionKeyCommon

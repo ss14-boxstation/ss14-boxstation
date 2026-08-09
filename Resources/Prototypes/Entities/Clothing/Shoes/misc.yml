@@ -8,6 +8,10 @@
     sprite: Clothing/Shoes/Misc/flippers.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Misc/flippers.rsi
+  # Start Box Change: starcup footprints
+  - type: FootprintModifier
+    footprint: lizardFootprint
+  # End Box Change
 
 - type: entity
   parent: ClothingShoesBaseButcherable

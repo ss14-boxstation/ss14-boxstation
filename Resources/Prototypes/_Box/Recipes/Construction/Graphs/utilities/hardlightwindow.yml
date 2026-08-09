@@ -1,0 +1,30 @@
+- type: constructionGraph
+  id: HardlightWindowGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: entity
+          steps:
+            - tag: HardlightWindowAssembly
+              icon:
+                sprite: _Box/Structures/hardlightwindow.rsi
+                state: loose
+              name: construction-graph-tag-hardlight-window-assembly
+              doAfter: 2
+    - node: entity
+      entity: HardlightWindow
+      actions:
+        - !type:SetAnchor
+          value: true
+        - !type:SnapToGrid
+      edges:
+        - to: start
+          steps:
+            - tool: Pulsing
+              doAfter: 3
+          completed:
+            - !type:GivePrototype
+              prototype: HardlightWindowAssembly
+              amount: 1
+            - !type:DeleteEntity {}

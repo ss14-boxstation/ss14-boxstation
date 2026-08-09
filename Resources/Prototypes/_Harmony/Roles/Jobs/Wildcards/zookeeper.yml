@@ -21,7 +21,7 @@
     head: ClothingHeadSafari
     shoes: ClothingShoesColorWhite
     id: ZookeeperPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Move headsets to loadout
   #storage:
     #back:
     #- Stuff

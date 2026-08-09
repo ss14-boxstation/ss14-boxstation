@@ -39,7 +39,7 @@
   id: ResearchDirectorGear
   equipment:
     id: RnDPDA
-    ears: ClothingHeadsetRD
+    # ears: ClothingHeadsetRD # Box Change: Headset moved to loadout option
   storage:
     back:
     - Flash

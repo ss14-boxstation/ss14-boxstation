@@ -25,7 +25,7 @@
   id: SecurityOfficerGear
   equipment:
     eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetSecurity
+    # ears: ClothingHeadsetSecurity # Box Change: Headset moved to loadout option
     pocket1: WeaponDisabler
   storage:
     back:

@@ -23,7 +23,7 @@
   id: ParamedicGear
   equipment:
     id: ParamedicPDA
-    ears: ClothingHeadsetMedical
+    # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
     belt: ClothingBeltMedicalEMTFilled
   storage:
     back:

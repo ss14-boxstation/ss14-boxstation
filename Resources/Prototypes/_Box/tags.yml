@@ -24,6 +24,9 @@
 - type: Tag
   id: GoliathMeat
 
+- type: Tag
+  id: HardlightWindowAssembly
+
 # Emote whitelist tag for harpies
 - type: Tag
   id: HarpyEmotes

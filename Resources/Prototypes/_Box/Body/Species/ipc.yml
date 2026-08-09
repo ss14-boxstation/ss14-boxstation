@@ -123,7 +123,7 @@
     heatDamageThreshold: 373.15 # damage point of electronics
     coldDamageThreshold: 200 # takes into account freezing point of structural elements, like plastics, and the freezing point of internal chemicals
     coldDamage:
-      types: 
+      types:
         Cold: 0.1 # per second, scales with temperature & other constants
     heatDamage:
       types:
@@ -186,6 +186,8 @@
       Female: UnisexIPC
       Unsexed: UnisexIPC
   - type: Carriable # Carrying from nyanotransen
+  - type: FootprintOwner
+    footprint: humanFootprint
   # stuff that makes the IPC do IPC things
   - type: Silicon
     entityType: enum.SiliconType.Player
@@ -252,7 +254,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: BatterySlotRequiresLock
-    itemSlot: cell_slot 
+    itemSlot: cell_slot
   - type: SiliconEmitSoundOnDrained
     sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg" # SOMEONE PLEASE FIND A BETTER SOUND FOR THIS.
     minInterval: 99
@@ -306,7 +308,7 @@
   abstract: true
   components:
   - type: VisualOrgan
-    data: 
+    data:
       sprite: _DV/Mobs/Species/IPC/parts.rsi
   - type: VisualOrganMarkings
     markingData:
@@ -410,7 +412,7 @@
   components:
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.Eyes
-    data: 
+    data:
       sprite: Mobs/Customization/eyes.rsi
       state: no_eyes
 
@@ -439,7 +441,7 @@
   id: OrganIPCPump
   name: micro pump
   description: A micro pump, used to circulate coolant and lubricant.
-  components: 
+  components:
   - type: Sprite
     layers:
     - state: heart-on

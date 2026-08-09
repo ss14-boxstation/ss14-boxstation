@@ -163,7 +163,10 @@
     shiveringHeatRegulation: 2000
     normalBodyTemperature: 296.15
     thermalRegulationTemperatureThreshold: 10
-  - type: Carriable # Box Change - Carrying system from Nyanotrasen
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box change
 
 - type: entity
   parent: OrganBase
