@@ -289,9 +289,10 @@
   id: HarpyWingBionic
   bodyPart: RArmExtension # Frontier: RArm<RArmExtension
   groupWhitelist: [Harpy]
-  sprites:
-    - sprite: _EE/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: bionic_wings_tone_1
-    - sprite: _EE/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: bionic_wings_tone_2
-      shader: unshaded
+  sprites: # Box Change - Reindented for new unshaded markings
+  - sprite: _EE/Mobs/Customization/Harpy/harpy_wings.rsi
+    state: bionic_wings_tone_1
+  - sprite: _EE/Mobs/Customization/Harpy/harpy_wings.rsi
+    state: bionic_wings_tone_2
+  shaders:
+    bionic_wings_tone_2: unshaded

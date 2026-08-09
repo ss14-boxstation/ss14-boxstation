@@ -139,7 +139,8 @@
 #  sprites:
 #  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
 #    state: thavenspinechill
-#  shader: unshaded
+  # shaders:
+  #   thavenspinechill: unshaded
 
 - type: marking
   id: ThavenTattooVines
@@ -159,7 +160,8 @@
 #  sprites:
 #  - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
 #    state: thavenspines
-#  shader: unshaded
+#  shaders:
+#    thavenspines: unshaded
 
 - type: marking
   id: ThavenBiteMark

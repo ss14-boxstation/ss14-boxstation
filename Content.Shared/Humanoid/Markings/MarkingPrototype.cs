@@ -36,10 +36,15 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("sprites", required: true)]
         public List<SpriteSpecifier> Sprites { get; private set; } = default!;
 
-        /// Box Change Start - Imp - for glowing eyes for thaven port
+        /// Box Change Start - MACRO - for glowing eyes for thaven port
+        // MACRO ADDITION
+        /// <summary>
+        ///     Optional dictionary allowing assignment of shaders to sprite layers in a marking.
+        ///     This implementation is very messy but unfortunately Robust doesn't like shaders in SpriteSpecifiers.
+        /// </summary>
         [DataField]
-        public string? Shader { get; private set; } = null;
-        /// Box Change End - Imp - for glowing eyes for thaven port
+        public Dictionary<string, string>? Shaders { get; private set; }
+        /// Box Change End - MACRO - for glowing eyes for thaven port
 
         public Marking AsMarking()
         {
