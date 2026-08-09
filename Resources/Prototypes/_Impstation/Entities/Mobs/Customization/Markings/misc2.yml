@@ -10,7 +10,6 @@
   id: ThavenAbs
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: muscularthaven

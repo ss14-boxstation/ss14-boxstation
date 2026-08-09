@@ -3,7 +3,6 @@
   bodyPart: HeadSide
   groupWhitelist: [Thaven]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: ears1
@@ -13,7 +12,6 @@
   bodyPart: HeadSide
   groupWhitelist: [Thaven]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: ears2
@@ -23,7 +21,6 @@
   bodyPart: HeadSide
   groupWhitelist: [Thaven]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: ears3
@@ -33,7 +30,6 @@
   bodyPart: HeadSide
   groupWhitelist: [Thaven]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: ears4
@@ -43,7 +39,6 @@
   bodyPart: HeadTop
   groupWhitelist: [Thaven]
   forcedColoring: false
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -58,7 +53,6 @@
   bodyPart: HeadTop
   groupWhitelist: [Thaven]
   forcedColoring: false
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -167,7 +161,6 @@
   bodyPart: Tail
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: taileel1
@@ -193,7 +186,6 @@
   bodyPart: Tail
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: tailnurse1
@@ -205,7 +197,6 @@
   bodyPart: Tail
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: tailstub1
@@ -217,7 +208,6 @@
   bodyPart: RArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: rarmfins1
@@ -229,7 +219,6 @@
   bodyPart: LArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: larmfins1
@@ -241,7 +230,6 @@
   bodyPart: RArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: rarmfins2
@@ -253,7 +241,6 @@
   bodyPart: LArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: larmfins2
@@ -265,7 +252,6 @@
   bodyPart: LLeg
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: llegfins1
@@ -277,7 +263,6 @@
   bodyPart: RLeg
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: rlegfins1
@@ -289,7 +274,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: backfin
@@ -301,7 +285,6 @@
   bodyPart: Tail
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: carpish
@@ -313,7 +296,6 @@
   bodyPart: Tail
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: draconiclong
@@ -325,7 +307,6 @@
   bodyPart: Tail
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/thaven/thaven.rsi
     state: fishtail

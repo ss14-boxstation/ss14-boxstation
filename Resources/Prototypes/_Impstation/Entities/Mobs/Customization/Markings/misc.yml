@@ -17,7 +17,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenchestgills
@@ -27,7 +26,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenchestscales
@@ -37,7 +35,6 @@
   bodyPart: Head
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenheadscales
@@ -47,7 +44,6 @@
   bodyPart: LArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenleftarmscales
@@ -57,7 +53,6 @@
   bodyPart: RArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenrightarmscales
@@ -67,7 +62,6 @@
   bodyPart: LLeg
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenleftlegscales
@@ -77,7 +71,6 @@
   bodyPart: RLeg
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenrightlegscales
@@ -119,7 +112,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavennonaturals
@@ -129,7 +121,6 @@
   bodyPart: HeadSide
   groupWhitelist: [ Thaven ]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenfishears
@@ -155,7 +146,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thaventattoovines
@@ -176,7 +166,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenbitemark
@@ -186,7 +175,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thaventattoowave
@@ -196,7 +184,6 @@
   bodyPart: Eyes
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thaventattoosharkminnoweyeliner
@@ -206,7 +193,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thaventiger1
@@ -218,7 +204,6 @@
   bodyPart: RArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thaventigerarmsr
@@ -228,7 +213,6 @@
   bodyPart: LArm
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thaventigerarmsl
@@ -238,7 +222,6 @@
   bodyPart: Head
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenheadstripes
@@ -248,7 +231,6 @@
   bodyPart: Chest
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenbodystripes
@@ -258,7 +240,6 @@
   bodyPart: HeadSide
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenearsbigfins
@@ -270,7 +251,6 @@
   bodyPart: Head
   groupWhitelist: [ Thaven ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: thavenheadcap1
