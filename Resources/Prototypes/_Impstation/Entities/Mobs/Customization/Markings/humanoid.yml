@@ -121,7 +121,7 @@
 - type: marking
   id: HumanHairSpikyPonytailLong
   bodyPart: Hair
-  groupWhitelist: [ Human, Slime ]
+  groupWhitelist: [ Human, Slime, IPC, Harpy, Rodentia ] # Box Change: Whitelist extra species
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: spikyponytaillong
@@ -136,7 +136,7 @@
 - type: marking
   id: MessyPonytail
   bodyPart: Hair
-  groupWhitelist: [ Human, Slime ]
+  groupWhitelist: [ Human, Slime, IPC, Harpy, Rodentia ] # Box Change: Whitelist extra species
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: messyponytail
@@ -144,7 +144,7 @@
 - type: marking
   id: Niqab
   bodyPart: Hair
-  groupWhitelist: [ Human, Slime ]
+  groupWhitelist: [ Human, Slime, IPC, Harpy, Rodentia ] # Box Change: Whitelist extra species
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: niqab
