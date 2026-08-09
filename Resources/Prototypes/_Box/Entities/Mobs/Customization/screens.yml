@@ -2,7 +2,7 @@
 
 - type: marking
   id: ScreenStatic 
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer 
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -10,7 +10,7 @@
 
 - type: marking
   id: ScreenBlue
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer  
+  bodyPart: Eyes  
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -18,7 +18,7 @@
 
 - type: marking
   id: ScreenBreakout
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer  
+  bodyPart: Eyes  
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -26,7 +26,7 @@
 
 - type: marking
   id: ScreenEight
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer  
+  bodyPart: Eyes  
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -34,7 +34,7 @@
 
 - type: marking
   id: ScreenGoggles
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer  
+  bodyPart: Eyes  
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -42,7 +42,7 @@
 
 - type: marking
   id: ScreenExclaim
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -50,7 +50,7 @@
 
 - type: marking
   id: ScreenHeart
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -58,7 +58,7 @@
 
 - type: marking
   id: ScreenMonoeye
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -66,7 +66,7 @@
 
 - type: marking
   id: ScreenNature
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -74,7 +74,7 @@
 
 - type: marking
   id: ScreenOrange
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -82,7 +82,7 @@
 
 - type: marking
   id: ScreenPink
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -90,7 +90,7 @@
 
 - type: marking
   id: ScreenQuestion
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -98,7 +98,7 @@
 
 - type: marking
   id: ScreenShower
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -106,7 +106,7 @@
 
 - type: marking
   id: ScreenYellow
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -114,7 +114,7 @@
 
 - type: marking
   id: ScreenScroll
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -122,7 +122,7 @@
 
 - type: marking
   id: ScreenConsole
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -130,7 +130,7 @@
 
 - type: marking
   id: ScreenRgb
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -138,7 +138,7 @@
 
 - type: marking
   id: ScreenGlider
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -146,7 +146,7 @@
 
 - type: marking
   id: ScreenRainbowhoriz
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -154,7 +154,7 @@
 
 - type: marking
   id: ScreenBsod
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -162,7 +162,7 @@
 
 - type: marking
   id: ScreenRedtext
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -170,7 +170,7 @@
 
 - type: marking
   id: ScreenSinewave
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -178,7 +178,7 @@
 
 - type: marking
   id: ScreenSquarewave
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -186,7 +186,7 @@
 
 - type: marking
   id: ScreenEcgwave
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -194,7 +194,7 @@
 
 - type: marking
   id: ScreenEyes
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -202,7 +202,7 @@
 
 - type: marking
   id: ScreenEyestall
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -210,7 +210,7 @@
 
 - type: marking
   id: ScreenEyesangry
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -218,7 +218,7 @@
 
 - type: marking
   id: ScreenLoading
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -226,7 +226,7 @@
 
 - type: marking
   id: ScreenWindowsxp
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -234,7 +234,7 @@
 
 - type: marking
   id: ScreenTetris
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -242,7 +242,7 @@
 
 - type: marking
   id: ScreenTv
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -250,7 +250,7 @@
 
 - type: marking
   id: ScreenTextdrop
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -258,7 +258,7 @@
 
 - type: marking
   id: ScreenStars
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -266,7 +266,7 @@
 
 - type: marking
   id: ScreenRainbowdiag
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -274,7 +274,7 @@
 
 - type: marking
   id: ScreenBlank
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -282,7 +282,7 @@
 
 - type: marking
   id: ScreenSmile
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -290,7 +290,7 @@
 
 - type: marking
   id: ScreenFrown
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -298,7 +298,7 @@
 
 - type: marking
   id: ScreenRing
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
@@ -306,7 +306,7 @@
 
 - type: marking
   id: ScreenL
-  bodyPart: Eyes # DeltaV - Moves screen to the eyes layer
+  bodyPart: Eyes 
   groupWhitelist: [IPC]
   sprites:
     - sprite: _EE/Mobs/Customization/ipc_screens.rsi
