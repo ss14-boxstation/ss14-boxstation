@@ -15,7 +15,7 @@
   equipment:
     shoes: ClothingShoesColorWhite
     id: ReporterPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Headset moved to loadout option
     belt: DigiboardMassMedia # Box Change - Add news digiboard
   storage: # DeltaV: Give reporters tape recording equipment
     back:

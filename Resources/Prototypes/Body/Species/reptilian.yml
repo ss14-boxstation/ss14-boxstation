@@ -170,6 +170,10 @@
       295: 0.8
       285: 0.7
   - type: Wagging
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box Change
 
 - type: entity
   parent: OrganBaseOrganic

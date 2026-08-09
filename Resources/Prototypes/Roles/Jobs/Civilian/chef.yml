@@ -23,7 +23,7 @@
   equipment:
     shoes: ClothingShoesChef
     id: ChefPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Headset moved to loadout option
     belt: ClothingBeltChefFilled
   #storage:
     #back:

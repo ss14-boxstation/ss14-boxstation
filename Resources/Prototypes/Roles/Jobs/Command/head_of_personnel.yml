@@ -81,7 +81,7 @@
   # shoes: ClothingShoesColorBrown # Harmony uses a custom loadout group
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand # Box Change: Headset moved to loadout option
     belt: BoxFolderClipboardThreePapers
     eyes: ClothingEyesHudCommand
     pocket1: BookSOP #Harmony Change

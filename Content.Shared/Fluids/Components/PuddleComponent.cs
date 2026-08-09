@@ -27,5 +27,15 @@ namespace Content.Shared.Fluids.Components
 
         [ViewVariables]
         public Entity<SolutionComponent>? Solution;
+
+        // Start Box Change: starcup/CorvaxNext footprints
+        /// <summary>
+        /// Whether or not the contents of this puddle can slow you down.
+        /// Used to prevent footprints from slowing movers down, as this causes
+        /// prediction issues when they place new puddles.
+        /// </summary>
+        [DataField]
+        public bool AffectsMovement = true;
+        // End Box Change
     }
 }

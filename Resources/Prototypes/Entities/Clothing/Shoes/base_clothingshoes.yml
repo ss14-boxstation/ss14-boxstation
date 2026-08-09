@@ -25,6 +25,10 @@
     - Recyclable
     - WhitelistChameleon
   - type: ProtectedFromStepTriggers
+  # Start Box Change: starcup footprints
+  - type: FootprintModifier
+    footprint: baseFootprint
+  # End Box Change
 
 - type: entity
   abstract: true

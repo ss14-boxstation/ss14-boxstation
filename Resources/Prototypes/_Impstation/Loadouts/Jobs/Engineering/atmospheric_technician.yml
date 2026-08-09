@@ -1,0 +1,10 @@
+#OuterClothing
+- type: loadout
+  id: BomberAtmos
+  equipment:
+    outerClothing: ClothingOuterCoatBomberAtmos
+
+- type: loadout
+  id: BomberAtmosHolo
+  equipment:
+    outerClothing: ClothingOuterCoatBomberAtmosHolo

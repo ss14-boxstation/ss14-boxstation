@@ -151,7 +151,10 @@
       reagents:
       - ReagentId: ShimmeringBlood
         Quantity: 300
-  - type: Carriable # Box Change - Carrying system from Nyanotrasen
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box Change
 
 - type: entity
   parent: OrganBase

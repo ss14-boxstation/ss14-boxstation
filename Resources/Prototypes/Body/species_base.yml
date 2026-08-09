@@ -156,12 +156,17 @@
     price: 1500 # Kidnapping a living person and selling them for cred is a good move.
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
   - type: CanEscapeInventory # Box Change - Carrying system from nyanotrasen.
+  - type: Carriable # Box Change - Carrying system from nyanotrasen.
   - type: Tag
     tags:
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: humanFootprint
+  # End Box change
 
 - type: entity
   abstract: true
@@ -233,3 +238,4 @@
   - type: FireVisuals
     alternateState: Standing
   - type: StunVisuals
+  - type: FootprintOwner # Box Change: starcup footprints

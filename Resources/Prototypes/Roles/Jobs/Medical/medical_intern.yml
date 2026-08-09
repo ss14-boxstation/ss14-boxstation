@@ -21,7 +21,7 @@
   equipment:
     shoes: ClothingShoesColorWhite
     id: MedicalInternPDA
-    ears: ClothingHeadsetMedical
+    # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
     belt: ClothingBeltMedicalFilled
     pocket2: BookMedicalReferenceBook
   #storage:
