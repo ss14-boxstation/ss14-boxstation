@@ -264,7 +264,10 @@
     damage:
       types:
         Slash: 5 # Reduce?
-  - type: Carriable # Box Change - Carrying system from nyanotrasen.
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: lizardFootprint
+  # End Box Change
 
 - type: entity
   parent: OrganBaseOrganic

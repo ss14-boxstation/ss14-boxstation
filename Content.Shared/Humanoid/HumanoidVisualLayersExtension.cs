@@ -32,6 +32,7 @@ namespace Content.Shared.Humanoid
             switch (layer)
             {
                 case HumanoidVisualLayers.Head:
+                    yield return HumanoidVisualLayers.HeadBase; // starcup
                     yield return HumanoidVisualLayers.Head;
                     yield return HumanoidVisualLayers.Eyes;
                     yield return HumanoidVisualLayers.HeadSide;
@@ -47,10 +48,12 @@ namespace Content.Shared.Humanoid
                     break;
                 case HumanoidVisualLayers.LArm:
                     yield return HumanoidVisualLayers.LArm;
+                    yield return HumanoidVisualLayers.LArmExtension; // Delta V - Addition for Harpies
                     yield return HumanoidVisualLayers.LHand;
                     break;
                 case HumanoidVisualLayers.RArm:
                     yield return HumanoidVisualLayers.RArm;
+                    yield return HumanoidVisualLayers.RArmExtension; // Delta V - Addition for Harpies
                     yield return HumanoidVisualLayers.RHand;
                     break;
                 case HumanoidVisualLayers.LLeg:

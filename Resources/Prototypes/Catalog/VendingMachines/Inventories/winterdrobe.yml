@@ -24,6 +24,10 @@
     ClothingLongcoatBrown: 2
     ClothingLongcoatNanoTrasen: 2
     #Box Change End - Longcoats
+    #Box Change Start - Imp Bomber Jackets
+    ClothingOuterCoatBomberBlack: 2
+    ClothingOuterCoatBomberWhite: 2
+    #Box Change End - Imp Bomber Jackets
     #Harmony change start
     ClothingUniformTurtleneckColorWhite: 2
     ClothingUniformTurtleneckColorGrey: 2

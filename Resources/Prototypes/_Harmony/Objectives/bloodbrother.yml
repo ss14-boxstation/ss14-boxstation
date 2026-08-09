@@ -91,9 +91,11 @@
   parent: [BaseBloodBrotherObjective, CMOHyposprayStealObjective]
   id: BloodBrotherCMOHyposprayStealObjective
 
-- type: entity
-  parent: [BaseBloodBrotherObjective, CMOCrewMonitorStealObjective]
-  id: BloodBrotherCMOCrewMonitorStealObjective
+# Box Change Start - Removes crew monitor objective
+# - type: entity
+#   parent: [BaseBloodBrotherObjective, CMOCrewMonitorStealObjective]
+#   id: BloodBrotherCMOCrewMonitorStealObjective
+# Box Change End - Removes crew monitor objective
 
 ## rd
 
@@ -136,8 +138,8 @@
   id: BloodBrotherCaptainIDStealObjective
 
 - type: entity
-  parent: [BaseBloodBrotherObjective, CaptainJetpackStealObjective]
-  id: BloodBrotherCaptainJetpackStealObjective
+  parent: [BaseBloodBrotherObjective, CaptainHandheldCommsStealObjective] # Box Change - Jetpack > Handheld Comms
+  id: BloodBrotherCaptainHandheldCommsStealObjective # Box Change - Jetpack > Handheld Comms
 
 - type: entity
   parent: [BaseBloodBrotherObjective, CaptainGunStealObjective]

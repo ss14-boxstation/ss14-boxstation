@@ -28,6 +28,7 @@
   - WireBrush
   - CassetteTape # DeltaV
   - TapeRecorder # DeltaV
+  - DrinkDisposableCup # Box Change: Imp disposable coffee cups # TODO: Move this to service techfab when we have them
 
 - type: latheRecipePack
   id: ServiceBoardsStatic
@@ -40,6 +41,7 @@
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
   - SmartFridgeCircuitboard
+  - ImpCoffeeMachineCircuitboard # Box Change: Spacepresso from imp
 
 ## Dynamic
 

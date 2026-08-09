@@ -30,7 +30,7 @@
     # Harmony Change Start
     # id: SalvagePDA - Harmony change
     # ears: ClothingHeadsetCargo
-    ears: ClothingHeadsetMining # Salvage Channel
+    # ears: ClothingHeadsetMining # Salvage Channel # Box Change: Headset moved to loadout option
     # Harmony Change End
   #storage:
     #back:

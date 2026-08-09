@@ -173,6 +173,10 @@
       types:
         Asphyxiation: -1.0
     maxSaturation: 15
+  # Start Box Change: starcup footprints
+  - type: FootprintOwner
+    footprint: slimeFootprint
+  # End Box Change
 
 - type: entity
   parent: OrganBaseOrganic

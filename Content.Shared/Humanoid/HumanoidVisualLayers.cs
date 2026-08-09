@@ -15,6 +15,7 @@ namespace Content.Shared.Humanoid
         UndergarmentBottom,
         Chest,
         Head,
+        HeadBase, // starcup: base head shapes
         Snout,
         SnoutCover, // things layered over snouts (i.e. noses)
         HeadSide, // side parts (i.e., frills)
@@ -33,6 +34,8 @@ namespace Content.Shared.Humanoid
         StencilMask,
         Ensnare,
         Fire,
+        LArmExtension, // Frontier: a species-specific extension layer, e.g. for harpy wings
+        RArmExtension, // Frontier: a species-specific extension layer, e.g. for harpy wings
 
     }
 }

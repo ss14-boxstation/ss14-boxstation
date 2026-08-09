@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared._starcup.Footprints; // Box Change: starcup footprints
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.FixedPoint;
@@ -350,6 +351,8 @@ public abstract class SharedAbsorbentSystem : EntitySystem
         localPos = userXform.LocalRotation.RotateVec(localPos);
 
         _melee.DoLunge(user, absorbEnt, Angle.Zero, localPos, null);
+
+        RaiseLocalEvent(target, new FootprintCleanEvent()); // Box Change: starcup footprints
 
         return true;
     }

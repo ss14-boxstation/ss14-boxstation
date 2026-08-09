@@ -16,15 +16,12 @@ namespace Content.Server._EE.Silicon.WeldingHealable;
 
 public sealed class WeldingHealableSystem : SharedWeldingHealableSystem
 {
-// Box Change Start - Disable IPC Code until reimplementation
-    /*
     [Dependency] private readonly SharedToolSystem _toolSystem = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstream = default!; // DeltaV
 
-    [Dependency] private readonly SharedBodySystem _bodySystem = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<WeldingHealableComponent, InteractUsingEvent>(Repair);
@@ -123,6 +120,4 @@ public sealed class WeldingHealableSystem : SharedWeldingHealableSystem
 
         return false;
     }
-    */
-// Box Change End
 }

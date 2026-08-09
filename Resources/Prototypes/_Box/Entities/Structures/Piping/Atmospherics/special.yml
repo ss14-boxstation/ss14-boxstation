@@ -1,0 +1,170 @@
+- type: entity
+  id: HardlightWindow
+  name: hardlight window
+  suffix: Box
+  description: A barrier of hard light that blocks air, but nothing else. Lasts indefinitely unlike its cousin the holofan, but is not rated for pressure differences greater than 150kPa. Can be repaired with a welder.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _Box/Structures/hardlightwindow.rsi
+    layers:
+    - state: window
+      shader: unshaded
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,-0.28125"
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+      - South
+  - type: Clickable
+  - type: Tag
+    tags:
+      - SpreaderIgnore
+      - Structure
+  - type: DeltaPressure
+    minPressure: 200
+    minPressureDelta: 150
+    scalingType: Threshold
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardHardlight:
+            min: 1
+            max: 4
+  - type: Construction
+    graph: HardlightWindowGraph
+    node: entity
+  - type: Repairable
+    fuelCost: 15
+    doAfterDelay: 3
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 30]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _Box/Structures/hardlightwindow_overlay.rsi
+  - type: BlockWeather
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
+
+- type: entity
+  id: HardlightWindowAssembly
+  parent: BaseItem
+  name: hardlight projector
+  suffix: Box
+  description: A stationary device used to project a hardlight window. Great for space-facing doors, saunas, or keeping your eccentric botanist's tritium from escaping.
+  components:
+  - type: Tag
+    tags:
+    - HardlightWindowAssembly
+  - type: Sprite
+    sprite: _Box/Structures/hardlightwindow.rsi
+    layers: 
+    - state: loose
+    - state: loose-unlit
+      shader: unshaded
+    state: loose
+  - type: StaticPrice
+    price: 50
+
+- type: entity
+  parent: BaseItem
+  id: ShardHardlight
+  name: hardlight shard
+  suffix: Box
+  description: A small shard of hard light. It will fade before long.
+  components:
+  - type: Sharp
+  - type: Execution # Good luck executing someone with an item that despawns in 5 seconds
+    doAfterDuration: 4.0
+  - type: Sprite
+    layers:
+      - sprite: _Box/Structures/hardlightwindow.rsi
+        state: shard1
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+        shader: unshaded
+  - type: RandomSprite
+    available:
+      - enum.DamageStateVisualLayers.Base:
+          shard1: ""
+          shard2: ""
+          shard3: ""
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Piercing: 3.5
+        Heat: 3.5
+  - type: CollisionWake
+    enabled: false
+  - type: Item
+    size: Tiny
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+        - LowImpassable
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        density: 30
+        mask:
+        - ItemMask
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 2
+        Heat: 2
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: PreventableStepTrigger
+  - type: Slippery
+    slipSound:
+      path: /Audio/Effects/glass_step.ogg
+    slipData:
+      launchForwardsMultiplier: 0
+  - type: TriggerOnStepTrigger
+  - type: DamageOnTrigger
+    targetUser: true
+    damage:
+      types:
+        Piercing: 3
+        Heat: 3
+  - type: DeleteOnTrigger
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+      - GlassShard
+      - Trash
+  - type: TimedDespawn
+    lifetime: 6

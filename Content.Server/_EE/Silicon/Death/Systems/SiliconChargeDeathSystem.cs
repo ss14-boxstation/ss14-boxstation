@@ -18,12 +18,9 @@ using Content.Server.Popups;
 namespace Content.Server._EE.Silicon.Death;
 
 public sealed class SiliconDeathSystem : EntitySystem
-{
-// Box Change Start - Disable IPC Code until reimplementation
-    /*
+{ 
     [Dependency] private readonly SleepingSystem _sleep = default!;
     [Dependency] private readonly SiliconChargeSystem _silicon = default!;
-    [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!; // starcup
     // Box Change Start - IPC No Battery Refactor
     [Dependency] private readonly SharedStunSystem _stun = default!;
@@ -59,7 +56,7 @@ public sealed class SiliconDeathSystem : EntitySystem
                 SiliconUnDead(uid, siliconDeadComp, batteryComp, uid);
     }
 
-    private void SiliconDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, PredictedBatteryComponent? batteryComp, EntityUid batteryUid)
+    private void SiliconDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, BatteryComponent? batteryComp, EntityUid batteryUid) // Box Change: Battery system got refactored
     {
         var deadEvent = new SiliconChargeDyingEvent(uid, batteryComp, batteryUid);
         RaiseLocalEvent(uid, deadEvent);
@@ -72,12 +69,6 @@ public sealed class SiliconDeathSystem : EntitySystem
         // _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
         // Box Change End
 
-        if (TryComp(uid, out HumanoidAppearanceComponent? humanoidAppearanceComponent))
-        {
-            var layers = HumanoidVisualLayersExtension.Sublayers(HumanoidVisualLayers.HeadSide);
-            _humanoidAppearanceSystem.SetLayersVisibility((uid, humanoidAppearanceComponent), layers, visible: false);
-        }
-
         siliconDeadComp.Dead = true;
 
         EnsureComp<KnockedDownComponent>(uid); // Box Change - IPC No Battery Refactor
@@ -85,7 +76,7 @@ public sealed class SiliconDeathSystem : EntitySystem
         RaiseLocalEvent(uid, new SiliconChargeDeathEvent(uid, batteryComp, batteryUid));
     }
 
-    private void SiliconUnDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, PredictedBatteryComponent? batteryComp, EntityUid batteryUid)
+    private void SiliconUnDead(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, BatteryComponent? batteryComp, EntityUid batteryUid) // Box Change: Battery system got refactored
     {
         // Box Change Start - IPC No Battery Refactor
         // _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
@@ -143,10 +134,10 @@ public sealed class SiliconDeathSystem : EntitySystem
 public sealed class SiliconChargeDyingEvent : CancellableEntityEventArgs
 {
     public EntityUid SiliconUid { get; }
-    public PredictedBatteryComponent? BatteryComp { get; }
+    public BatteryComponent? BatteryComp { get; } // Box Change: Battery system got refactored
     public EntityUid BatteryUid { get; }
 
-    public SiliconChargeDyingEvent(EntityUid siliconUid, PredictedBatteryComponent? batteryComp, EntityUid batteryUid)
+    public SiliconChargeDyingEvent(EntityUid siliconUid, BatteryComponent? batteryComp, EntityUid batteryUid) // Box Change: Battery system got refactored
     {
         SiliconUid = siliconUid;
         BatteryComp = batteryComp;
@@ -160,10 +151,10 @@ public sealed class SiliconChargeDyingEvent : CancellableEntityEventArgs
 public sealed class SiliconChargeDeathEvent : EntityEventArgs
 {
     public EntityUid SiliconUid { get; }
-    public PredictedBatteryComponent? BatteryComp { get; }
+    public BatteryComponent? BatteryComp { get; } // Box Change: Battery system got refactored
     public EntityUid BatteryUid { get; }
 
-    public SiliconChargeDeathEvent(EntityUid siliconUid, PredictedBatteryComponent? batteryComp, EntityUid batteryUid)
+    public SiliconChargeDeathEvent(EntityUid siliconUid, BatteryComponent? batteryComp, EntityUid batteryUid) // Box Change: Battery system got refactored
     {
         SiliconUid = siliconUid;
         BatteryComp = batteryComp;
@@ -177,15 +168,13 @@ public sealed class SiliconChargeDeathEvent : EntityEventArgs
 public sealed class SiliconChargeAliveEvent : EntityEventArgs
 {
     public EntityUid SiliconUid { get; }
-    public PredictedBatteryComponent? BatteryComp { get; }
+    public BatteryComponent? BatteryComp { get; } // Box Change: Battery system got refactored
     public EntityUid BatteryUid { get; }
 
-    public SiliconChargeAliveEvent(EntityUid siliconUid, PredictedBatteryComponent? batteryComp, EntityUid batteryUid)
+    public SiliconChargeAliveEvent(EntityUid siliconUid, BatteryComponent? batteryComp, EntityUid batteryUid) // Box Change: Battery system got refactored
     {
         SiliconUid = siliconUid;
         BatteryComp = batteryComp;
         BatteryUid = batteryUid;
     }
-    */
-// Box Change End
 }

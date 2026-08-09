@@ -8,6 +8,7 @@
     - map: [ "enum.HumanoidVisualLayers.Chest" ]
 
     # Head
+    - map: [ "enum.HumanoidVisualLayers.HeadBase" ] # starcup: base head shapes
     - map: [ "enum.HumanoidVisualLayers.Head" ]
     - map: [ "enum.HumanoidVisualLayers.Snout" ]
     - map: [ "enum.HumanoidVisualLayers.Eyes" ]
@@ -65,6 +66,10 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
+     
+    # Delta V - Harpy Wings
+    - map: [ "enum.HumanoidVisualLayers.RArmExtension" ]
+    - map: [ "enum.HumanoidVisualLayers.LArmExtension" ]
 
 - type: entity
   id: BaseSpeciesAppearance

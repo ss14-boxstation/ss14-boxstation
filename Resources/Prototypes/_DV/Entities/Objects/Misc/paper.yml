@@ -233,6 +233,14 @@
     containers:
       storagebase: !type:Container
         ents: []
+  # Start Box Change: Resize to 1x2 and tag as folder (so it will fit in paperwork belts etc)
+  - type: Item
+    size: Small
+    shape: null
+  - type: Tag
+    tags:
+    - Folder
+  # End Box Change
   - type: Storage
     grid:
     - 0,0,3,5

@@ -48,8 +48,10 @@ public sealed class VentCrittersRule : StationEventSystem<VentCrittersRuleCompon
             return;
 
         var nearest = beacon?.Comp?.Text!;
-        Comp<StationEventComponent>(uid).StartAnnouncement = Loc.GetString("station-event-vent-creatures-start-announcement-deltav", ("location", nearest));
-
+        // Start Box Change: Don't send an announcement if StartAnnouncement is null
+        if (Comp<StationEventComponent>(uid).StartAnnouncement != null)
+            Comp<StationEventComponent>(uid).StartAnnouncement = Loc.GetString("station-event-vent-creatures-start-announcement-deltav", ("location", nearest));
+        // End Box Change
         base.Added(uid, comp, gameRule, args);
     }
 
