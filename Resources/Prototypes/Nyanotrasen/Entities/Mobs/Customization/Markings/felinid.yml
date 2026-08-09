@@ -95,7 +95,7 @@
 - type: marking
   id: FelinidTailBasic
   bodyPart: Tail
-  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin, Harpy] # Box Change: Nubodyification, match our species list
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
     state: basic_tail_tip
@@ -107,7 +107,7 @@
 - type: marking
   id: FelinidTailBasicWithBow
   bodyPart: Tail
-  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin, Harpy] # Box Change: Nubodyification, match our species list
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
     state: basic_tail_tip
@@ -121,7 +121,7 @@
 - type: marking
   id: FelinidTailBasicWithBell
   bodyPart: Tail
-  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin, Harpy] # Box Change: Nubodyification, match our species list
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
     state: basic_tail_tip
@@ -135,7 +135,7 @@
 - type: marking
   id: FelinidTailBasicWithBowAndBell
   bodyPart: Tail
-  groupWhitelist: [Human, Slime, IPC, Vulpkanin] # Box Change: Nubodyification, match our species list
+  groupWhitelist: [Human, Slime, IPC, Vulpkanin, Harpy] # Box Change: Nubodyification, match our species list
   sprites:
   - sprite: Nyanotrasen/Mobs/Customization/felinid_tails.rsi
     state: basic_tail_tip
