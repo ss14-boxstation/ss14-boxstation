@@ -16,7 +16,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant ]
+          type: [ Human, Animal, Rat, Plant, Harpy ] # DeltaV
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -47,7 +47,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Thaven ] #Box Change - Add Thaven Metab
+          type: [ Human, Animal, Rat, Plant, Arachnid, Moth, Thaven, Harpy ] #Box Change - Add Thaven and Harpy Metab
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -117,6 +117,13 @@
         minScale: 1.5
         clear: True
         time: 5
+      # Start Box Change: Harpy metabolism
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -8
+      # End Box Change
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
@@ -168,6 +175,13 @@
         minScale: 1.5
         clear: True
         time: 5
+      # Start Box Change: Harpy metabolism
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -8
+      # End Box Change
 
 - type: reagent
   id: CarbonDioxide
@@ -196,9 +210,16 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant ]
+          type: [ Plant, Harpy ] # DeltaV - Harpy moved below
           inverted: true
         factor: -4
+      # Start Box Change: Harpy metabolism
+      - !type:Oxygenate # DeltaV - Harpy more sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -12
+      # End Box Change
     Respiration:
       effects:
       - !type:Oxygenate
@@ -221,12 +242,19 @@
       - !type:Oxygenate # carbon dioxide displaces oxygen from the bloodstream, causing asphyxiation
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Plant, Thaven ] # Box Change - Thaven Metab
+          type: [ Plant, Thaven, Harpy ] # Box Change - Thaven and Harpy Metab
           inverted: true
         factor: -4
       # We need a metabolism effect on reagent removal
       #- !type:AdjustAlert
       #  alertType: CarbonDioxide
+      # Start Box Change: Harpy metabolism
+      - !type:Oxygenate # DeltaV - Harpy more sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -12
+      # End Box Change
 
 - type: reagent
   id: Nitrogen
@@ -449,3 +477,10 @@
         messages: [ "frezon-euphoric" ]
         probability: 0.1
         minScale: 1
+      # Start Box Change: Harpy metabolism
+      - !type:Oxygenate # DeltaV - Harpy sensitive to air quality
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -4
+      # End Box Change

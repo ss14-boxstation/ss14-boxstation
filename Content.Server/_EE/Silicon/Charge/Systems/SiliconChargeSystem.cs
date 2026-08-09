@@ -32,8 +32,6 @@ namespace Content.Server._EE.Silicon.Charge;
 
 public sealed class SiliconChargeSystem : EntitySystem
 {
-// Box Change Start - Disable IPC Code until reimplementation
-    /*
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly FlammableSystem _flammable = default!;
@@ -51,7 +49,7 @@ public sealed class SiliconChargeSystem : EntitySystem
         SubscribeLocalEvent<SiliconComponent, ComponentStartup>(OnSiliconStartup);
     }
 
-    public bool TryGetSiliconBattery(EntityUid silicon, [NotNullWhen(true)] out Entity<PredictedBatteryComponent>? batteryComp)
+    public bool TryGetSiliconBattery(EntityUid silicon, [NotNullWhen(true)] out Entity<BatteryComponent>? batteryComp) // Box Change: Battery system got refactored
     {
         batteryComp = null;
         if (!HasComp<SiliconComponent>(silicon))
@@ -187,7 +185,7 @@ public sealed class SiliconChargeSystem : EntitySystem
 
             if (!EntityManager.TryGetComponent<FlammableComponent>(silicon, out var flamComp)
                 || flamComp is { OnFire: true }
-                || !(temperComp.CurrentTemperature > temperComp.HeatDamageThreshold))
+                || !(temperComp.CurrentTemperature > upperThresh)) // box change: swapped out temperComp.HeatDamageThreshold for upperThresh, shouldnt break anything i think?
                 return hotTempMulti;
 
             _popup.PopupEntity(Loc.GetString("silicon-overheating"), silicon, silicon, PopupType.MediumCaution);
@@ -226,7 +224,5 @@ public sealed class SiliconChargeSystem : EntitySystem
             siliconComp.DrainPerSecond * siliconComp.IdleDrainReduction * (-1), // Should be a maximum of the idle drain reduction (negative)
             0f); // Minimum reduction is no change to power draw
     }
-    // TheDen End - IPC Dynamic Power draw
-    */
-// Box Change End
+    // TheDen End - IPC Dynamic Power draw 
 }
