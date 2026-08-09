@@ -49,7 +49,7 @@ public sealed class SpeciesMutingSystem : EntitySystem
     private static readonly HashSet<ProtoId<EmoteSoundsPrototype>> ScurretEmotes = ["Scurret"];
     private static readonly HashSet<ProtoId<EmoteSoundsPrototype>> IPCEmotes = ["UnisexIPC"];
     private static readonly HashSet<ProtoId<EmoteSoundsPrototype>> ThavenEmotes = ["MaleThaven"];
-    private static readonly HashSet<ProtoId<EmoteSoundsPrototype>> AllulaloEmotes = ["Allulalo"];
+    private static readonly HashSet<ProtoId<EmoteSoundsPrototype>> AllulaloEmotes = ["UnisexAllulalo"];
 
     /// <summary>
     /// A collection of speech sounds to mute, and their associated CVar.

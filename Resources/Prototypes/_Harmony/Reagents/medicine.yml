@@ -9,17 +9,9 @@
   flavor: metallic
   color: "#9188BF"
   metabolisms:
-  # Box Change Start - Pre-solutions refactor
-    # Bloodstream:
-    #   effects:
-    #     - !type:SatiateThirst
-    #       factor: 6
-    #     - !type:ModifyBloodLevel
-    #       amount: 6
-    Drink:
+    Bloodstream:
       effects:
         - !type:SatiateThirst
           factor: 6
         - !type:ModifyBloodLevel
           amount: 6
-  # Box Change End
