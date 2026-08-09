@@ -81,6 +81,7 @@
   - sprite: _MACRO/Mobs/Customization/Allulalo/eyes.rsi
     state: allulaloEyesUnshadedRight
   shaders: # Box Change - Enable Unshaded
+    allulaloEyesUnshadedLeft: unshaded
     allulaloEyesUnshadedRight: unshaded
 
 # RArm
