@@ -1,5 +1,4 @@
-## CANT SET THESE SCREENS TO "shader: unshaded"
-## RobustToolbox/Robust.Shared/Utility/SpriteSpecifier.cs
+##TO-DO: Add shader: unshaded with Thaven code
 
 - type: marking
   id: ScreenStatic 

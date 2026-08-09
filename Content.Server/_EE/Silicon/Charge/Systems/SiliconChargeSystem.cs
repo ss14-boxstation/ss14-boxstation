@@ -9,7 +9,7 @@ using Content.Server.Popups;
 using Content.Shared.Popups;
 using Content.Shared._EE.Silicon.Systems;
 using Content.Shared.Movement.Systems;
-using Content.Server.Body; // Box Change: Removed the .components at the end of the reference for nubody integration
+using Content.Server.Body.Components;
 using Content.Shared.Mind.Components;
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.PowerCell;
@@ -27,7 +27,6 @@ using Content.Shared.Movement.Components;
 using Robust.Shared.Physics.Components;
 using Content.Shared.Temperature.Components;
 // End TheDen
-using Content.Server.Body.Components; // Box Change: added for ThermalRegulatorComponent
 
 namespace Content.Server._EE.Silicon.Charge;
 

@@ -69,7 +69,6 @@
         - IPCMaskWearable 
         - Cigar
         - Cigarette
-        # Box Change End
     - name: eyes
       slotTexture: glasses
       slotFlags: EYES
@@ -77,7 +76,6 @@
       uiWindowPos: 0,3
       strippingWindowPos: 0,0
       displayName: Eyes
-# Box Change Start, Re-enables ear slot so IPCs wear headsets to compensate for removal of intrinsic radio
     - name: ears
       slotTexture: ears
       slotFlags: EARS
@@ -85,7 +83,6 @@
       uiWindowPos: 2,2
       strippingWindowPos: 2,0
       displayName: Ears
-# Box Change End
     - name: head
       slotTexture: head
       slotFlags: HEAD
