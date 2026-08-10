@@ -1,8 +1,17 @@
+# Hardforked from: WizDen
+  # Originally from ss13's /vg/
+# Original Map:
+  # PR https://github.com/space-wizards/space-station-14/pull/5282
+  # Commit https://github.com/space-wizards/space-station-14/commit/c2dbc770a837f63d7877ee8a807198920a869728
+# Hardfork Point:
+  # PR https://github.com/space-wizards/space-station-14/pull/42202
+  # Commit https://github.com/space-wizards/space-station-14/commit/6de41e8051e0d31a1e6653368ee7c3bc606828e5
+# License Forked From: MIT
 
 - type: gameMap
   id: Packed
   mapName: 'Packed'
-  mapPath: /Maps/packed.yml
+  mapPath: _Box/Maps/packed.yml
   minPlayers: 7
   maxPlayers: 35
   stations:
