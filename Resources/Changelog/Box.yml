@@ -1373,3 +1373,167 @@
   id: 159
   time: '2026-08-08T00:33:26.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/239
+- author: CollectionOfBones128
+  changes:
+  - message: NuBody & accompanying Metabolism changes have been merged, alongside
+      other WizDen features.
+    type: Tweak
+  - message: (Bones) SynthChem metabolism has been rewritten, and now shows what chems
+      affect what categories in the guidebook
+    type: Tweak
+  - message: (DizzyEevee) Added harpies, a species of colorful avian humanoids capable
+      of mimicking sounds and instruments.
+    type: Add
+  - message: (DizzyEevee) 63 new hairstyles have been brought over from Impstation!
+    type: Add
+  - message: (DizzyEevee) Added Felinid and Kitsune markings for Humans, Slimes, Vulpkanin,
+      and IPC.
+    type: Add
+  - message: (DizzyEevee) Vulpkanin ears and tails are now available for Humans, Slimes,
+      and IPC.
+    type: Tweak
+  - message: '[Harmony] Headsets and glasses are no longer behind beards.'
+    type: Tweak
+  - message: '[WizDen] The markings editor has been redesigned to have a better UI.'
+    type: Tweak
+  - message: '[WizDen] The character export format has changed and characters from
+      newer servers may not work when exported to older servers.'
+    type: Tweak
+  - message: '[WizDen] Added the ability for Vulps to wag their tails.'
+    type: Add
+  - message: '[WizDen] You can now throw banana cream pies at the station AI.'
+    type: Add
+  - message: '[WizDen] Added a new user interface for cryo pods'
+    type: Add
+  - message: '[WizDen] Botany''s chemical mutation table now takes rarity into account
+      when selecting chemicals. This means Omnizine is no longer the most common chemical
+      to roll.'
+    type: Fix
+  - message: '[WizDen] Vestine chemical mutation table has been adjusted to be less
+      powerful. Vestine is now poisonous to plants.'
+    type: Tweak
+  - message: '[WizDen] Stellibinin now reduces plant toxicity at 50% the effectiveness
+      of Dylovene.'
+    type: Add
+  - message: '[WizDen] Tazinide and Licoxide now are less effective at shocking and
+      don''t last as long.'
+    type: Tweak
+  - message: '[WizDen] Nocturine now lasts 9 seconds instead of 6 seconds.'
+    type: Tweak
+  - message: '[WizDen] Hyperzine overdose can no longer be negated completely with
+      Omnizine.'
+    type: Tweak
+  - message: '[WizDen] Hypodarts now have an increased chemical capacity of 10u up
+      from 7u'
+    type: Tweak
+  - message: '[WizDen] Combat Medkit and Combat Medipen have had their prices reduced
+      to 3 TC'
+    type: Tweak
+  - message: '[WizDen] Drinking or eating things now gradually trickles into the bloodstream,
+      instead of being a fixed delay'
+    type: Tweak
+  - message: '[WizDen] Reagent effect groups are now stages of metabolism in the guidebook'
+    type: Tweak
+  - message: '[WizDen] Many reagents that break down into other ones have clearer
+      guidebook descriptions and slightly adjusted behaviour'
+    type: Tweak
+  - message: '[WizDen] Ghosts appearances will now change depending on their cause
+      of death'
+    type: Add
+  - message: '[WizDen] Ammonia and Nitrous Oxide now do more damage according to the
+      concentration of gas in the atmosphere.'
+    type: Tweak
+  - message: '[WizDen] Warfarin is now named heparin.'
+    type: Fix
+  - message: '[WizDen] Drinking blood as non-animal species makes you sick again.'
+    type: Fix
+  - message: '[WizDen] Injecting someone else''s blood is now slightly poisonous.'
+    type: Add
+  - message: '[WizDen] The chem guidebook now shows when chemicals adjust body temperature
+      again'
+    type: Fix
+  id: 160
+  time: '2026-08-10T13:23:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/189
+- author: CollectionOfBones128
+  changes:
+  - message: NuBody & accompanying Metabolism changes have been merged, alongside
+      other WizDen features.
+    type: Tweak
+  - message: (Bones) SynthChem metabolism has been rewritten, and now shows what chems
+      affect what categories in the guidebook
+    type: Tweak
+  - message: (DizzyEevee) Added harpies, a species of colorful avian humanoids capable
+      of mimicking sounds and instruments.
+    type: Add
+  - message: (DizzyEevee) 63 new hairstyles have been brought over from Impstation!
+    type: Add
+  - message: (DizzyEevee) Added Felinid and Kitsune markings for Humans, Slimes, Vulpkanin,
+      and IPC.
+    type: Add
+  - message: (DizzyEevee) Vulpkanin ears and tails are now available for Humans, Slimes,
+      and IPC.
+    type: Tweak
+  - message: '[Harmony] Headsets and glasses are no longer behind beards.'
+    type: Tweak
+  - message: '[WizDen] The markings editor has been redesigned to have a better UI.'
+    type: Tweak
+  - message: '[WizDen] The character export format has changed and characters from
+      newer servers may not work when exported to older servers.'
+    type: Tweak
+  - message: '[WizDen] Added the ability for Vulps to wag their tails.'
+    type: Add
+  - message: '[WizDen] You can now throw banana cream pies at the station AI.'
+    type: Add
+  - message: '[WizDen] Added a new user interface for cryo pods'
+    type: Add
+  - message: '[WizDen] Botany''s chemical mutation table now takes rarity into account
+      when selecting chemicals. This means Omnizine is no longer the most common chemical
+      to roll.'
+    type: Fix
+  - message: '[WizDen] Vestine chemical mutation table has been adjusted to be less
+      powerful. Vestine is now poisonous to plants.'
+    type: Tweak
+  - message: '[WizDen] Stellibinin now reduces plant toxicity at 50% the effectiveness
+      of Dylovene.'
+    type: Add
+  - message: '[WizDen] Tazinide and Licoxide now are less effective at shocking and
+      don''t last as long.'
+    type: Tweak
+  - message: '[WizDen] Nocturine now lasts 9 seconds instead of 6 seconds.'
+    type: Tweak
+  - message: '[WizDen] Hyperzine overdose can no longer be negated completely with
+      Omnizine.'
+    type: Tweak
+  - message: '[WizDen] Hypodarts now have an increased chemical capacity of 10u up
+      from 7u'
+    type: Tweak
+  - message: '[WizDen] Combat Medkit and Combat Medipen have had their prices reduced
+      to 3 TC'
+    type: Tweak
+  - message: '[WizDen] Drinking or eating things now gradually trickles into the bloodstream,
+      instead of being a fixed delay'
+    type: Tweak
+  - message: '[WizDen] Reagent effect groups are now stages of metabolism in the guidebook'
+    type: Tweak
+  - message: '[WizDen] Many reagents that break down into other ones have clearer
+      guidebook descriptions and slightly adjusted behaviour'
+    type: Tweak
+  - message: '[WizDen] Ghosts appearances will now change depending on their cause
+      of death'
+    type: Add
+  - message: '[WizDen] Ammonia and Nitrous Oxide now do more damage according to the
+      concentration of gas in the atmosphere.'
+    type: Tweak
+  - message: '[WizDen] Warfarin is now named heparin.'
+    type: Fix
+  - message: '[WizDen] Drinking blood as non-animal species makes you sick again.'
+    type: Fix
+  - message: '[WizDen] Injecting someone else''s blood is now slightly poisonous.'
+    type: Add
+  - message: '[WizDen] The chem guidebook now shows when chemicals adjust body temperature
+      again'
+    type: Fix
+  id: 161
+  time: '2026-08-10T14:01:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/248
