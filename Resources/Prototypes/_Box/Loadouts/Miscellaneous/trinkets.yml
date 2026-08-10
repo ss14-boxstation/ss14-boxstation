@@ -247,3 +247,31 @@
   storage:
     back:
     - WhiteCane
+
+- type: loadout
+  id: BoxReamClassic
+  storage:
+    back:
+    - BoxReamClassic
+  groupBy: "folders"
+
+- type: loadout
+  id: BoxReamBright
+  storage:
+    back:
+    - BoxReamBright
+  groupBy: "folders"
+
+- type: loadout
+  id: BoxReamWhite
+  storage:
+    back:
+    - BoxReamWhite
+  groupBy: "folders"
+
+- type: loadout
+  id: AACTabletSAS
+  storage:
+    back:
+    - AACTabletSAS
+  groupBy: "AAC"

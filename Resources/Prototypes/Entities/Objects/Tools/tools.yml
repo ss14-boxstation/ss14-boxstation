@@ -318,6 +318,7 @@
     - HVCable
     - CableTerminal
     - Deconstruct
+    - HardlightWindow # Box Change: Add hardlight windows to RCD
   - type: LimitedCharges
     maxCharges: 30
   - type: Sprite

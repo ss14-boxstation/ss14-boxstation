@@ -24,7 +24,7 @@
   id: ChemistGear
   equipment:
     id: ChemistryPDA
-    ears: ClothingHeadsetMedical
+    # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
     belt: ChemBag
     pocket1: HandLabeler
     eyes: ClothingEyesGlassesChemical

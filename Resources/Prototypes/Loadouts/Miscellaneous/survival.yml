@@ -22,6 +22,8 @@
     - Avali # Latestation
     - Rodentia # Box Change - Adds Rodentia
     - Thaven #Box Change - Add Thaven
+    - Allulalo # Box Change - Add Allulalo
+    - Harpy # Box Change - Add Harpies
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
@@ -80,6 +82,11 @@
     - Human
     - Reptilian
     - Vulpkanin
+    - Avali # Box Change - Add Avali
+    - Rodentia # Box Change - Add Rodentia
+    - Thaven #Box Change - Add Thaven
+    - Allulalo # Box Change - Add Allulalo
+    - Harpy # Box Change - Add Harpies
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth

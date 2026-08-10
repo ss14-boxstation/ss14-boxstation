@@ -4,10 +4,12 @@
   text: "/ServerInfo/Guidebook/Mobs/Species.xml"
   children:
     - Arachnid
+    - Allulalo # Box Change - Imp - Adds Allulalo
     - Avali # harmony
     - Diona
     - Dwarf
     - Human
+    - Harpy # Box Change - Harpies
     - IPC # Harmony Change
     - Moth
     - Reptilian

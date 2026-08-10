@@ -25,7 +25,7 @@
     shoes: ClothingShoesBootsWork
     id: TechnicalAssistantPDA
     belt: ClothingBeltUtilityEngineering
-    ears: ClothingHeadsetEngineering
+    # ears: ClothingHeadsetEngineering # Box Change: Headset moved to loadout option
     pocket2: BookEngineersHandbook
   #storage:
     #back:

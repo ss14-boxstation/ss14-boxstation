@@ -10,10 +10,10 @@ using Content.Server._EE.Power.Components;
 namespace Content.Server._EE.Power.Systems;
 
 public sealed class BatteryElectrocuteChargeSystem : EntitySystem
-{
+{ 
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly BatterySystem _battery = default!;
+    [Dependency] private readonly BatterySystem _battery = default!; // Box Change: Battery system got refactored
 
     // Yes, this is absurdly small for a reason.
     public const float ElectrifiedDamagePerWatt = 0.0015f;
@@ -35,8 +35,8 @@ public sealed class BatteryElectrocuteChargeSystem : EntitySystem
                 battery.MaxCharge * 0.25f)
             * _random.NextFloat(0.75f, 1.25f);
 
-        _battery.SetCharge(uid, battery.CurrentCharge + charge);
+        _battery.SetCharge(uid, _battery.GetCharge(uid) + charge); // Box Change: Battery system got refactored
 
         _popup.PopupEntity(Loc.GetString("battery-electrocute-charge"), uid, uid);
-    }
+    }   
 }

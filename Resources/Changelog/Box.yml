@@ -1079,3 +1079,386 @@
   id: 126
   time: '2026-06-23T01:23:06.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/178
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Allulalo, a species of diminutive raptor creatures from Impstation.
+    type: Add
+  id: 127
+  time: '2026-07-04T01:07:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/170
+- author: SomegnihT
+  changes:
+  - message: Cargo can now order sets of chess pieces
+    type: Add
+  id: 128
+  time: '2026-07-06T09:26:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/188
+- author: BlueMoon059
+  changes:
+  - message: The golden mask no longer spawns in salvage lootpools.
+    type: Remove
+  id: 129
+  time: '2026-07-09T10:10:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/193
+- author: BlueMoon059
+  changes:
+  - message: The Head of Security and the Warden lockers have gained a flatpacked
+      cyborg recharging station for IPC prisoners.
+    type: Add
+  - message: The Head of Security no longer starts with a WT-550.
+    type: Remove
+  id: 130
+  time: '2026-07-11T06:10:41.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/161
+- author: Dizzy-Eevee
+  changes:
+  - message: Added wristsets, an alternative to headsets, available from job loadouts.
+    type: Add
+  id: 131
+  time: '2026-07-11T06:23:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/181
+- author: BlueMoon059
+  changes:
+  - message: Adds a crashed syndicate freighter to the roundstart salvage ruins pool,
+      made by BlueMoon059.
+    type: Add
+  - message: Adds an abandoned shipyard to the roundstart salvage ruins pool, made
+      by HiddenSoundTest.
+    type: Add
+  - message: Several salvage ruins have been replaced with modern versions courtesy
+      of Collectionofbones128
+    type: Tweak
+  id: 132
+  time: '2026-07-11T14:19:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/162
+- author: BlueMoon059
+  changes:
+  - message: Adds new carp and sharkminnow variants, ported from Starcup.
+    type: Add
+  id: 133
+  time: '2026-07-11T14:20:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/159
+- author: BlueMoon059
+  changes:
+  - message: The Syndicate will now ocasionally teleport secure briefcases with contraband
+      onto the station in support of their agents.
+    type: Add
+  id: 134
+  time: '2026-07-11T16:39:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/169
+- author: Dizzy-Eevee
+  changes:
+  - message: Walking through puddles will now leave footprints in your wake.
+    type: Add
+  id: 135
+  time: '2026-07-12T05:59:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/146
+- author: Dizzy-Eevee
+  changes:
+  - message: Paper reams are now smaller and can be taken as loadout trinkets.
+    type: Tweak
+  id: 136
+  time: '2026-07-14T05:22:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/199
+- author: CollectionOfBones128
+  changes:
+  - message: Added the CO's Handheld Communications Computer, which spawns in the
+      Captain's locker
+    type: Add
+  - message: The Captain's Jetpack is no longer obtainable and cannot roll as an objective
+    type: Remove
+  id: 137
+  time: '2026-07-14T05:26:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/185
+- author: Dizzy-Eevee
+  changes:
+  - message: Boxer and Zookeeper now have access to the Accessibility loadout tab
+    type: Fix
+  id: 138
+  time: '2026-07-16T08:27:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/204
+- author: Dizzy-Eevee
+  changes:
+  - message: Added hardlight windows, which block gasses and allow solid objects to
+      pass through, but cannot withstand the high pressure differences needed for
+      Atmospheric work.
+    type: Add
+  id: 139
+  time: '2026-07-21T20:41:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/208
+- author: Dizzy-Eevee
+  changes:
+  - message: Fuel tank explosions will no longer destroy hull tiles.
+    type: Tweak
+  id: 140
+  time: '2026-07-28T19:35:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/217
+- author: Dizzy-Eevee
+  changes:
+  - message: Added tabletop intercoms which do not need to be constructed on a wall.
+    type: Add
+  id: 141
+  time: '2026-07-28T19:39:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/218
+- author: Dizzy-Eevee
+  changes:
+  - message: Tape recorders can now be controlled using four signal ports corresponding
+      to their buttons.
+    type: Add
+  - message: Tape recorders now change their voice when hidden in plushies, toilets,
+      or plants.
+    type: Tweak
+  id: 142
+  time: '2026-07-28T19:43:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/214
+- author: BlueMoon059
+  changes:
+  - message: Flavour text examine range has been doubled
+    type: tweak
+  id: 143
+  time: '2026-07-28T19:46:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/220
+- author: Dizzy-Eevee
+  changes:
+  - message: Syndicate dead drops will no longer occur within the first 15 minutes
+      of a shift.
+    type: Tweak
+  id: 144
+  time: '2026-07-29T16:25:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/221
+- author: Dizzy-Eevee
+  changes:
+  - message: Passive vent spawns (mice/roaches/snails) will no longer come with an
+      announcement. If you see a warning about vent critters, take it seriously!
+    type: Tweak
+  id: 145
+  time: '2026-07-29T16:24:21.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/223
+- author: Dizzy-Eevee
+  changes:
+  - message: The AAC tablet now has a search bar.
+    type: Add
+  - message: The AAC tablet can now send messages over radio using the user's headset.
+    type: Add
+  - message: the AAC tablet can now combine multiple phrases into a single message.
+    type: Add
+  - message: Added a new AAC tablet variant with a more robotic voice.
+    type: Add
+  id: 146
+  time: '2026-07-29T18:00:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/224
+- author: Dizzy-Eevee
+  changes:
+  - message: The option to mute species voicelines/emotes will now apply to characters
+      with voice change traits, and non-humanoid mobs like mothroaches.
+    type: Tweak
+  - message: You can now mute scurrets.
+    type: Add
+  id: 147
+  time: '2026-07-29T18:01:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/215
+- author: Dizzy-Eevee
+  changes:
+  - message: Added voice replacement traits for scurrets. Wawa!
+    type: Add
+  id: 148
+  time: '2026-07-29T18:02:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/216
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the Spacepresso coffee machine from Impstation! Until mapping changes
+      are made, bartenders will start with a flatpack for one in their locker.
+    type: Add
+  id: 149
+  time: '2026-07-29T18:03:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/219
+- author: BlueMoon059
+  changes:
+  - message: The Paramedic now starts with a handheld crew monitor of their own.
+    type: Add
+  - message: The Syndicate Agent "steal the handheld crewmonitor" objective has been
+      disabled from rolling.
+    type: Remove
+  id: 150
+  time: '2026-07-29T22:24:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/226
+- author: BlueMoon059
+  changes:
+  - message: Adds new bomber jackets for the basic jobs in each department + passengers,
+      from Impstation.
+    type: Add
+  id: 151
+  time: '2026-07-30T15:38:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/228
+- author: BlueMoon059
+  changes:
+  - message: Adds missing bomberjackets to the entries.
+    type: Fix
+  id: 152
+  time: '2026-07-30T23:33:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/229
+- author: Dizzy-Eevee
+  changes:
+  - message: Desk bells no longer throw an error and fail to make noise when used.
+    type: Fix
+  id: 153
+  time: '2026-07-31T13:11:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/231
+- author: BlueMoon059
+  changes:
+  - message: Fixed an unintentional spawner on the ruined syndicate cargo ship.
+    type: Fix
+  - message: Killed the syndicate dropship (For real this time).
+    type: Fix
+  id: 154
+  time: '2026-08-01T15:03:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/234
+- author: Dizzy-Eevee
+  changes:
+  - message: All glasses and goggles now have a slot to hold prescription lenses.
+    type: Add
+  - message: The Medical Techfab can now print prescription lenses, for an alternative
+      way of treating eye damage.
+    type: Add
+  - message: Short-sighted characters now start the round with a pair of strong prescription
+      lenses slotted into their eyewear.
+    type: Add
+  - message: Short-sighted characters no longer spawn with a pair of glasses.
+    type: Remove
+  id: 155
+  time: '2026-08-04T19:13:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/235
+- author: BlueMoon059
+  changes:
+  - message: Adds a HoS bomber jacket.
+    type: Add
+  - message: Adds a Warden bomber jacket.
+    type: Add
+  id: 156
+  time: '2026-08-07T18:44:54.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/233
+- author: Dizzy-Eevee
+  changes:
+  - message: 'New Dan''s Soaked Smokes: Rejects, dangerously fun cigs! Available in
+      uplinks, emag''d Discount Dan''s, and select maints lockers station wide.'
+    type: Add
+  id: 157
+  time: '2026-08-07T23:31:29.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/200
+- author: CollectionOfBones128
+  changes:
+  - message: Added a new preset, Redshift, for admin-curated antagonist-driven gameplay!
+    type: Add
+  - message: Changed NukeOps to be better balanced for BoxStation population
+    type: Tweak
+  - message: LoneOps can now spawn when 15 or more players are in a round
+    type: Tweak
+  - message: Ninjas can now spawn when 10 or more players are in a round
+    type: Tweak
+  - message: Dragons can now spawn when 15 or more players are in a round
+    type: Tweak
+  id: 158
+  time: '2026-08-07T23:56:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/237
+- author: CollectionOfBones128
+  changes:
+  - message: Added Universal Blood Substitue for Nuclear Operative Medics.
+    type: Add
+  - message: The Combat Medkit now comes with a syringe of Universal Blood Substitute
+      instead of a syringe of Saline
+    type: Tweak
+  - message: Airloss Auto-Injectors now use Universal Blood Substitute instead of
+      Saline
+    type: Tweak
+  id: 159
+  time: '2026-08-08T00:33:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/239
+- author: CollectionOfBones128
+  changes:
+  - message: NuBody & accompanying Metabolism changes have been merged, alongside
+      other WizDen features.
+    type: Tweak
+  - message: (Bones) SynthChem metabolism has been rewritten, and now shows what chems
+      affect what categories in the guidebook
+    type: Tweak
+  - message: (DizzyEevee) Added harpies, a species of colorful avian humanoids capable
+      of mimicking sounds and instruments.
+    type: Add
+  - message: (DizzyEevee) 63 new hairstyles have been brought over from Impstation!
+    type: Add
+  - message: (DizzyEevee) Added Felinid and Kitsune markings for Humans, Slimes, Vulpkanin,
+      and IPC.
+    type: Add
+  - message: (DizzyEevee) Vulpkanin ears and tails are now available for Humans, Slimes,
+      and IPC.
+    type: Tweak
+  - message: '[Harmony] Headsets and glasses are no longer behind beards.'
+    type: Tweak
+  - message: '[WizDen] The markings editor has been redesigned to have a better UI.'
+    type: Tweak
+  - message: '[WizDen] The character export format has changed and characters from
+      newer servers may not work when exported to older servers.'
+    type: Tweak
+  - message: '[WizDen] Added the ability for Vulps to wag their tails.'
+    type: Add
+  - message: '[WizDen] You can now throw banana cream pies at the station AI.'
+    type: Add
+  - message: '[WizDen] Added a new user interface for cryo pods'
+    type: Add
+  - message: '[WizDen] Botany''s chemical mutation table now takes rarity into account
+      when selecting chemicals. This means Omnizine is no longer the most common chemical
+      to roll.'
+    type: Fix
+  - message: '[WizDen] Vestine chemical mutation table has been adjusted to be less
+      powerful. Vestine is now poisonous to plants.'
+    type: Tweak
+  - message: '[WizDen] Stellibinin now reduces plant toxicity at 50% the effectiveness
+      of Dylovene.'
+    type: Add
+  - message: '[WizDen] Tazinide and Licoxide now are less effective at shocking and
+      don''t last as long.'
+    type: Tweak
+  - message: '[WizDen] Nocturine now lasts 9 seconds instead of 6 seconds.'
+    type: Tweak
+  - message: '[WizDen] Hyperzine overdose can no longer be negated completely with
+      Omnizine.'
+    type: Tweak
+  - message: '[WizDen] Hypodarts now have an increased chemical capacity of 10u up
+      from 7u'
+    type: Tweak
+  - message: '[WizDen] Combat Medkit and Combat Medipen have had their prices reduced
+      to 3 TC'
+    type: Tweak
+  - message: '[WizDen] Drinking or eating things now gradually trickles into the bloodstream,
+      instead of being a fixed delay'
+    type: Tweak
+  - message: '[WizDen] Reagent effect groups are now stages of metabolism in the guidebook'
+    type: Tweak
+  - message: '[WizDen] Many reagents that break down into other ones have clearer
+      guidebook descriptions and slightly adjusted behaviour'
+    type: Tweak
+  - message: '[WizDen] Ghosts appearances will now change depending on their cause
+      of death'
+    type: Add
+  - message: '[WizDen] Ammonia and Nitrous Oxide now do more damage according to the
+      concentration of gas in the atmosphere.'
+    type: Tweak
+  - message: '[WizDen] Warfarin is now named heparin.'
+    type: Fix
+  - message: '[WizDen] Drinking blood as non-animal species makes you sick again.'
+    type: Fix
+  - message: '[WizDen] Injecting someone else''s blood is now slightly poisonous.'
+    type: Add
+  - message: '[WizDen] The chem guidebook now shows when chemicals adjust body temperature
+      again'
+    type: Fix
+  id: 160
+  time: '2026-08-10T13:23:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/189
+- author: Dinoguy12349
+  changes:
+  - message: Ports the Bungo Bomber from Harmony
+    type: Add
+  id: 161
+  time: '2026-08-10T15:19:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/249

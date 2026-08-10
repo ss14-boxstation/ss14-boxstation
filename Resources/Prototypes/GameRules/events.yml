@@ -37,6 +37,7 @@
     - id: RevenantSpawn
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
+    - id: SyndicateDeadDrop #Box Start - Moffstation
 
 - type: entityTable
   id: ModerateAntagEventsTable
@@ -46,7 +47,7 @@
     - id: NinjaSpawn
     - id: ParadoxCloneSpawn
     # - id: SleeperAgents # - Box Change, Comments out Sleeper Agent
-    - id: ZombieOutbreak
+    # - id: ZombieOutbreak # Box Change - Comments out Zeds
     - id: LoneOpsSpawn
     # - id: WizardSpawn - Harmony Change, disables wizard midround
     - id: BingleSpawn # Harmony
@@ -196,7 +197,7 @@
     weight: 3.5 # Harmony 6.5 -> 3.5
     earliestStart: 40
     reoccurrenceDelay: 40 # Harmony 20 -> 40
-    minimumPlayers: 35 # Harmony 20 -> 35
+    minimumPlayers: 15 # Box 20 -> 15
     duration: null
   - type: SpaceSpawnRule
     spawnDistance: 0
@@ -228,7 +229,7 @@
     duration: null
     earliestStart: 30
     reoccurrenceDelay: 40 # Harmony 20 -> 40
-    minimumPlayers: 35 # Harmony 30 -> 35
+    minimumPlayers: 10 # Box 30 -> 10
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -570,7 +571,7 @@
   - type: StationEvent
     earliestStart: 60 # Harmony 35 -> 60
     weight: 2 # Harmony 5.5 -> 2
-    minimumPlayers: 35 # Harmony 20 -> 35
+    minimumPlayers: 15 # Box 20 -> 15
     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end screen (not always "Neutral outcome!") and... ending the game if the station is nuked.
   - type: RuleGrids
   - type: LoadMapRule

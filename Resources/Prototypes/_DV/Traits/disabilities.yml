@@ -1,0 +1,7 @@
+- type: trait
+  id: UltraVision
+  name: trait-ultravision-name
+  description: trait-ultravision-desc
+  category: Disabilities
+  components:
+    - type: UltraVision

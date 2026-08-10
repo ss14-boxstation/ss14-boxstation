@@ -1,7 +1,6 @@
-using Content.Server.Body.Systems;
 using Content.Server.Stack;
 using Content.Server.Xenoarchaeology.XenoArtifacts; // Box Change - #IMP - Duo XenoArch
-using Content.Shared.Body.Components;
+using Content.Shared.Gibbing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Whitelist;
 using Content.Shared.Xenoarchaeology.Equipment;
@@ -15,7 +14,7 @@ namespace Content.Server.Xenoarchaeology.Equipment.Systems;
 public sealed class ArtifactCrusherSystem : SharedArtifactCrusherSystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly BodySystem _body = default!;
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly StackSystem _stack = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ArtifactSystem _artifact = default!; // Box Change - #IMP - Duo XenoArch
@@ -48,10 +47,7 @@ public sealed class ArtifactCrusherSystem : SharedArtifactCrusherSystem
                 _artifact.ForceActivateArtifact(contained);
             // Box Change End
 
-            if (!TryComp<BodyComponent>(contained, out var body))
-                Del(contained);
-
-            var gibs = _body.GibBody(contained, body: body, gibOrgans: true);
+            var gibs = _gibbing.Gib(contained);
             foreach (var gib in gibs)
             {
                 ContainerSystem.Insert((gib, null, null, null), crusher.OutputContainer);

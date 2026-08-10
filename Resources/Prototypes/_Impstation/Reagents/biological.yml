@@ -8,13 +8,13 @@
   recognizable: true
   physicalDesc: reagent-physical-desc-shimmering-blood
   metabolisms:
-    Food:
+    Digestion:
       effects:
       - !type:SatiateHunger
         factor: 1
       - !type:SatiateThirst
         factor: 1
-    Narcotic:
+    Bloodstream:
       effects:
       - !type:ModifyStatusEffect
         effectProto: StatusEffectSeeingRainbow

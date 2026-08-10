@@ -12,6 +12,7 @@
     ClothingHeadHelmetFire: 2
     ClothingOuterSuitFire: 2
     ClothingOuterWinterAtmos: 2
+    ClothingOuterCoatBomberAtmos: 2 #Box - Adds Imp Bomber Jacket
     ClothingNeckScarfStripedLightBlue: 3
   contrabandInventory:
     ToyFigurineAtmosTech: 1

@@ -4,10 +4,12 @@
   id: JobZookeeper
   groups:
   - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - ZookeeperJobTrinkets
   - GroupSpeciesBreathTool
 
@@ -15,11 +17,13 @@
   id: JobBoxer
   groups:
   - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
   - BoxerJumpsuit
   - BoxerGloves
   - CommonBackpack
   - Glasses
   - Survival
   - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
   - BoxerJobTrinkets
   - GroupSpeciesBreathTool
