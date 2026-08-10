@@ -1,7 +1,0 @@
-- type: mapModification
-  id: PlasmaSupplyAssistant
-  applyOn:
-  - Plasma
-  additions:
-  - prototype: SpawnPointSupplyAssistant
-    position: -94.5, 10.5
