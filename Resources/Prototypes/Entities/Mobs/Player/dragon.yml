@@ -12,8 +12,15 @@
       - ReagentId: ShimmeringBlood # Box Change: Give fish shimmering blood
         Quantity: 650
   # Start Box Change: Unique organs
-  - type: Body
-    prototype: AnimalCarp
+  - type: EntityTableContainerFill
+    containers:
+     body_organs: !type:AllSelector
+        children:
+        - id: OrganCarpLungs
+        - id: OrganCarpHeart
+        - id: OrganCarpStomach
+        - id: OrganCarpLiver
+        - id: OrganCarpKidneys
   # End Box Change
   - type: GhostRole
     allowMovement: true
