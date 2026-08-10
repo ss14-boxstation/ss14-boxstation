@@ -8,7 +8,7 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
 
 - type: localizedDataset
-  id: NamesRodentiaFemaleFirst
+  id: NamesRodentiaFemale
   values:
     prefix: names-rodentia-female-dataset-
     count: 159

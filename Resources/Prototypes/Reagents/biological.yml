@@ -15,7 +15,9 @@
   standsout: true
   physicalDesc: reagent-physical-desc-ferrous
   metabolisms:
-    Drink:
+    Digestion:
+      metabolites:
+        UncookedAnimalProteins: 0.2
       effects:
       - !type:SatiateThirst
         factor: 1.0
@@ -23,13 +25,6 @@
           - !type:MetabolizerTypeCondition
             type: [ Human ]
             inverted: true
-    Food:
-      effects:
-        - !type:AdjustReagent
-          reagent: UncookedAnimalProteins
-          amount: 0.1
-    Medicine:
-      effects:
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
@@ -38,6 +33,12 @@
           groups:
             Brute: -3
             Burn: -1.25
+    Bloodstream: # Don't inject someone else's blood into yourself! Your own blood won't actually metabolise.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.2
   plantMetabolism:
     - !type:PlantAdjustWater
       amount: 0.5
@@ -71,7 +72,7 @@
   tileReactions:
     - !type:SpillTileReaction
   metabolisms:
-    Food:
+    Digestion:
       # Delicious!
       effects:
       - !type:SatiateHunger
@@ -103,7 +104,7 @@
   tileReactions:
     - !type:SpillTileReaction
   metabolisms:
-    Food:
+    Digestion:
       # Sweet!
       effects:
       - !type:SatiateHunger
@@ -146,12 +147,12 @@
   flavor: bitter
   color: "#2b0700"
   metabolisms:
-    Drink:
+    Digestion:
       # Disgusting!
       effects:
       - !type:SatiateThirst
         factor: -0.5
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -170,7 +171,7 @@
   color: "#f4692e"
   recognizable: true
   metabolisms:
-    Drink:
+    Bloodstream:
       effects:
       - !type:SatiateThirst
         factor: 1.5
@@ -183,22 +184,10 @@
           Brute: -3
           Toxin: -2
       - !type:HealthChange
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         damage:
           types:
             Bloodloss: -3
       - !type:ModifyBleed
-        # Box Change Start - IPCs
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [IPC]
-          inverted: true
-        # Box Change End
         amount: -1.5
   # Just in case you REALLY want to water your plants
   plantMetabolism:
@@ -234,13 +223,12 @@
     requiredSlipSpeed: 4.0 #It's not as slippery as water
   friction: 0.4
   metabolisms:
-    Drink:
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: 0.5
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
   footstepSound:
     collection: FootstepBlood
     params:
@@ -254,22 +242,14 @@
   physicalDesc: reagent-physical-desc-neural
   flavor: mindful
   color: "#C584B8"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateHunger
         factor: 1.5
-    Poison:
-      effects:
       - !type:HealthChange
         damage:
           types:
             Cellular: 2
-    # Box Change Start - IPC Chem - I don't know if IPCs can even get this stuff yet but might as well do this now.
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Data: 2
-    # Box Change End
+            Data: 2 # Box Change - SynthChem

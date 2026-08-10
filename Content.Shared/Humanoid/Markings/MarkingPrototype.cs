@@ -14,17 +14,11 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("bodyPart", required: true)]
         public HumanoidVisualLayers BodyPart { get; private set; } = default!;
 
-        [DataField("markingCategory", required: true)]
-        public MarkingCategories MarkingCategory { get; private set; } = default!;
-
-        [DataField("speciesRestriction")]
-        public List<string>? SpeciesRestrictions { get; private set; }
+        [DataField]
+        public List<ProtoId<MarkingsGroupPrototype>>? GroupWhitelist;
 
         [DataField("sexRestriction")]
         public Sex? SexRestriction { get; private set; }
-
-        [DataField("followSkinColor")]
-        public bool FollowSkinColor { get; private set; } = false;
 
         [DataField("forcedColoring")]
         public bool ForcedColoring { get; private set; } = false;
@@ -42,10 +36,15 @@ namespace Content.Shared.Humanoid.Markings
         [DataField("sprites", required: true)]
         public List<SpriteSpecifier> Sprites { get; private set; } = default!;
 
-        /// Box Change Start - Imp - for glowing eyes for thaven port
+        /// Box Change Start - MACRO - for glowing eyes for thaven port
+        // MACRO ADDITION
+        /// <summary>
+        ///     Optional dictionary allowing assignment of shaders to sprite layers in a marking.
+        ///     This implementation is very messy but unfortunately Robust doesn't like shaders in SpriteSpecifiers.
+        /// </summary>
         [DataField]
-        public string? Shader { get; private set; } = null;
-        /// Box Change End - Imp - for glowing eyes for thaven port
+        public Dictionary<string, string>? Shaders { get; private set; }
+        /// Box Change End - MACRO - for glowing eyes for thaven port
 
         public Marking AsMarking()
         {
