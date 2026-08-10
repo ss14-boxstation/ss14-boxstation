@@ -66,13 +66,11 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-  - type: PredictedBattery # Default: 16 shots with 60 fireCost # Box Change: Update to predicted
+  - type: Battery # Default: 16 shots with 60 fireCost
     maxCharge: 960
     startingCharge: 960
-  # Start Box Change: Update to predicted
-  - type: PredictedBatterySelfRecharger 
-    # autoRecharge: true
-  # End Box Change
+  - type: BatterySelfRecharger 
+    # autoRecharge: true # Box Change: Remove deprecated field
     autoRechargeRate: 3 # Default recharge rate: 1 shot per 20 seconds with 60 fireCost
   - type: StaticPrice
     price: 250
@@ -118,13 +116,11 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/flaregun.ogg
     projectileSpeed: 15
-  - type: PredictedBattery # Box Change: Update to predicted
+  - type: Battery
     maxCharge: 1200
     startingCharge: 1200
-  # Start Box Change: Update to predicted
-  - type: PredictedBatterySelfRecharger 
-    # autoRecharge: true
-  # End Box Change
+  - type: BatterySelfRecharger 
+    # autoRecharge: true # Box Change: Remove deprecated field
     autoRechargeRate: 10
   - type: BatteryAmmoProvider # Box Change: Update component name
     proto: HoloFlareCyan
