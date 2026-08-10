@@ -1455,3 +1455,10 @@
   id: 160
   time: '2026-08-10T13:23:18.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/189
+- author: Dinoguy12349
+  changes:
+  - message: Ports the Bungo Bomber from Harmony
+    type: Add
+  id: 161
+  time: '2026-08-10T15:19:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/249
