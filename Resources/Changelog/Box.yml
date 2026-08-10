@@ -1462,3 +1462,11 @@
   id: 161
   time: '2026-08-10T15:19:56.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/249
+- author: Dizzy-Eevee
+  changes:
+  - message: Space dragons, space carp, and sharkminnows are now full of shimmering
+      blood, and have unique organs that can be ground into small amounts of carpotoxin.
+    type: Tweak
+  id: 162
+  time: '2026-08-10T21:19:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/184
