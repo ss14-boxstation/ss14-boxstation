@@ -1470,3 +1470,11 @@
   id: 162
   time: '2026-08-10T21:19:27.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/184
+- author: Dizzy-Eevee
+  changes:
+  - message: Added holoflare pistols from Frontier! The salvage vendor stocks two,
+      and more can be printed at an autolathe.
+    type: Add
+  id: 163
+  time: '2026-08-10T23:29:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/190
