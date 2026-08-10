@@ -67,7 +67,7 @@
             #supply (4)
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 2, 2 ]
-            SupplyAssistant: [ 2, 2 ] # Box Change - Adds Supply Assistant - intern, not counted
+            # SupplyAssistant: [ 2, 2 ] # Box Change - Adds Supply Assistant - intern, not counted
             #civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
             Clown: [ 1, 1 ]
