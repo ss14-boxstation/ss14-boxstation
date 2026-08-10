@@ -2448,7 +2448,7 @@
     seedId: bungo
   - type: SpaceGarbage
   - type: BadFood
-  # Start of Harmony specific changes
+  # Box Change Start - Harmony - Bungo Bomber
   - type: Fixtures
     fixtures:
       fix1:
@@ -2473,7 +2473,7 @@
     damage:
       types:
         Blunt: 10
-  # end of Harmony specific change
+  # Box Change end
 
 - type: entity
   parent: FoodProduceBase
