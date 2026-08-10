@@ -7,15 +7,19 @@
     OreBag: 3
     ClothingUniformJumpsuitSalvageSpecialist: 3
     ClothingUniformJumpskirtSalvageSpecialist: 3
-    ClothingUniformJumpskirtSalvageSpecialistDV: 3
-    ClothingUniformJumpsuitSalvageSpecialistDV: 3
+    # Start Box Change: Remove DV suits
+    #ClothingUniformJumpskirtSalvageSpecialistDV: 3
+    #ClothingUniformJumpsuitSalvageSpecialistDV: 3
+    # End Box Change
     ClothingShoesBootsSalvage: 3
     ClothingMaskGasExplorer: 3
     ClothingHeadsetMining: 3
     ClothingOuterCoatBomberCargo: 3
     ClothingNeckMantle: 2
     ClothingOuterWinterMiner: 3
-    ClothingNeckScarfStripedBrown: 3
-    ClothingShoesBootsWinterColorBrown: 3
-  contrabandInventory:
-    ClothingMaskClownCargo: 1
+    ClothingNeckScarfStripedPurple: 3 #purple propaganda
+    ClothingShoesBootsWinterColorPurple: 3 #purple propaganda
+  # Start Box Change: We don't have this
+  #contrabandInventory:
+  #  ClothingMaskClownCargo: 1
+  # End Box Change
