@@ -27,7 +27,7 @@
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
       required: false
-    enum.HumanoidVisualLayers.Eyes
+    enum.HumanoidVisualLayers.Eyes:
       limit: 2
       required: false
     enum.HumanoidVisualLayers.Chest:
