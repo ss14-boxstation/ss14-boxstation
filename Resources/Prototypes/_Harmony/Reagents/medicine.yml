@@ -8,6 +8,7 @@
   contrabandSeverity: Syndicate
   flavor: metallic
   color: "#9188BF"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
     Bloodstream:
       effects:
