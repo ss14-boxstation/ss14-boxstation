@@ -7,6 +7,7 @@
   - Pickaxe
   - UtilityKnife
   - BoxFolderClipboard # Harmony
+  - NFWeaponHoloflareGun # Box Change: Add holoflare pistols; if we decide to add departmental techfabs down the line this should be moved to the salvage techfab instead of the autolathe
 
 - type: latheRecipePack
   id: CargoBoardsStatic
