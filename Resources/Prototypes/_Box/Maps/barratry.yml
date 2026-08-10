@@ -1,3 +1,16 @@
+# Hardforked from: Harmony
+  # Originally from WizDen
+# Original Map (Wiz):
+  # PR https://github.com/space-wizards/space-station-14/pull/7621
+  # Commit https://github.com/space-wizards/space-station-14/commit/085545bff472ba8a184526b154ccb70fa540beee
+# Original Map (Harmony):
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/154
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/79a88374ea9f9c7732a2117b4187d790a0f2c5d2
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1234
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/47ea952ce09fe8efa005d9143100ad875bafdb65
+# License Forked From: MIT
+
 - type: gameMap
   id: Barratry
   mapName: 'Barratry'

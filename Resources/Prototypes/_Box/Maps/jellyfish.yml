@@ -1,3 +1,12 @@
+# Hardforked from: Harmony
+# Original Map:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1153
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/a3bdfd2aa9b7a6ca766bb5ae2f2613ff5f17c890
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1161
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/d5b68ba6b7388430155b9405d2e8280235962b12
+# License Forked From: MIT
+
 - type: gameMap
   id: Jellyfish
   mapName: 'Jellyfish'

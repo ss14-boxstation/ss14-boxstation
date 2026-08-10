@@ -1,3 +1,13 @@
+# Hardforked from: Harmony
+  # Originally from WizDen
+# Original Map:
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/a035f4e6d2325906a838e0a5c0c660417ef2777f
+  # Original WizDen PR: https://github.com/space-wizards/space-station-14/pull/13958
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1199
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/26f2e7f616196c200f7088014033cdc2290ee457
+# License Forked From: AGPL-3.0
+
 - type: gameMap
   id: Aspid
   mapName: 'NCS Aspid'

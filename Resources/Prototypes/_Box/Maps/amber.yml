@@ -1,3 +1,13 @@
+# Hardforked from: Harmony
+  # Originally from WizDen
+# Original Map:
+  # PR https://github.com/space-wizards/space-station-14/pull/33441
+  # Commit https://github.com/space-wizards/space-station-14/commit/e4e84aea7476b48aa6a019efc69a061f763fd381
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1235
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/a32876739cbd0d267be8e7f636f625b170361b64
+# License Forked From: MIT
+
 - type: gameMap
   id: Amber
   mapName: 'Amber'

@@ -1,3 +1,14 @@
+# Hardforked from: Harmony
+  # Originally from Sector Umbra as "Cluster Prime", which was originally "Cluster" from WizDen, apparently.
+    # Its a ship of theseus if you ask me.
+# Original Map:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/637
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/08c72f36043d26a81b78780797c43b1d0aa9ead5
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1211
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/6eb7de9be35ba70307d02d3f4b7c5b61c2cc4b5d
+# License Forked From:
+
 - type: gameMap
   id: Prime
   mapName: Prime

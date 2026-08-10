@@ -1,3 +1,12 @@
+# Hardforked from:
+  # Originally from
+# Original Map:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/390
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/944a2059452a19e7e7c80bc26054ab6d358537e8
+# Hardfork Point:
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/807339b702fd5ea469fb6e6f55614e54fc9f1908
+# License Forked From: AGPL-3.0
+
 - type: gameMap
   id: Mira
   mapName: 'Mira'
