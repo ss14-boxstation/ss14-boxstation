@@ -8,18 +8,11 @@
   contrabandSeverity: Syndicate
   flavor: metallic
   color: "#9188BF"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
-  # Box Change Start - Pre-solutions refactor
-    # Bloodstream:
-    #   effects:
-    #     - !type:SatiateThirst
-    #       factor: 6
-    #     - !type:ModifyBloodLevel
-    #       amount: 6
-    Drink:
+    Bloodstream:
       effects:
         - !type:SatiateThirst
           factor: 6
         - !type:ModifyBloodLevel
           amount: 6
-  # Box Change End

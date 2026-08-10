@@ -7,8 +7,9 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#920A1E"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -39,8 +40,9 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#0827F5"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -57,8 +59,9 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#4AF626"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:MovementSpeedModifier
         conditions:

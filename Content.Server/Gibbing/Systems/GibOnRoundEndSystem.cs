@@ -2,16 +2,16 @@ using Content.Shared.GameTicking;
 using Content.Shared.Gibbing.Components;
 using Content.Shared.Mind;
 using Content.Shared.Objectives.Systems;
-using Content.Server.Body.Systems;
+using Content.Shared.Gibbing;
 using Robust.Shared.Random; // Box Change: For paraclone RNG
 
 namespace Content.Server.Gibbing.Systems;
 public sealed class GibOnRoundEndSystem : EntitySystem
 {
-    [Dependency] private readonly BodySystem _body = default!;
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedObjectivesSystem _objectives = default!;
-    [Dependency] private readonly IRobustRandom _random = default!; // Box Change: For paraclone RNG 
+    [Dependency] private readonly IRobustRandom _random = default!; // Box Change: For paraclone RNG
 
     public override void Initialize()
     {
@@ -58,7 +58,7 @@ public sealed class GibOnRoundEndSystem : EntitySystem
             if (gibComp.SpawnProto != null)
                 SpawnAtPosition(gibComp.SpawnProto, Transform(uid).Coordinates);
 
-            _body.GibBody(uid, splatModifier: 5f);
+            _gibbing.Gib(uid);
         }
     }
 }
