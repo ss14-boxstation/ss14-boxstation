@@ -24,7 +24,7 @@
   equipment:
     shoes: ClothingShoesColorBlack
     id: ServiceWorkerPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Headset moved to loadout option
   #storage:
     #back:
     #- Stuff

@@ -30,7 +30,7 @@
         - id: Dropper
         # It would be cool to have special "syndicate" chemical analysis goggles
         - id: ClothingEyesGlassesChemical
-        - id: SyringeStimulants
+        - id: Syringe
         - id: VestineChemistryVial
           amount: 2
         - id: BaseChemistryEmptyVial
@@ -81,7 +81,7 @@
   components:
   - type: Storage
     grid:
-    - 0,0,3,3
+    - 0,0,4,3 # Box Change - Harmony - Made it slightly larger to fit a bungo fruit inside
     maxItemSize: Normal
   - type: Item
     size: Huge
@@ -100,3 +100,4 @@
         - id: WeaponBaguette
         - id: SyndicateMicrowaveMachineCircuitboard
         - id: PaperWrittenCombatBakeryKit
+        - id: FoodBungo # Box Change - Harmony - Added to facilitate creating the Bungo Bomber

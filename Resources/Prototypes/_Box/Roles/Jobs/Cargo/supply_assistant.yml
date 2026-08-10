@@ -25,7 +25,7 @@
   equipment:
     shoes: ClothingShoesColorBlack
     id: SupplyAssistantPDA
-    ears: ClothingHeadsetCargo
+    # ears: ClothingHeadsetCargo
     pocket1: AppraisalTool
     # we don't have a cargo guidebook item yet...
     # pocket2: (whatever a potential future cargo guidebook item is called)

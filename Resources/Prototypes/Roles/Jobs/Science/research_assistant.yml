@@ -21,7 +21,7 @@
   equipment:
     shoes: ClothingShoesColorWhite
     id: ResearchAssistantPDA
-    ears: ClothingHeadsetScience
+    # ears: ClothingHeadsetScience # Box Change: Headset moved to loadout option
     pocket2: BookScientistsGuidebook
   #storage:
     #back:

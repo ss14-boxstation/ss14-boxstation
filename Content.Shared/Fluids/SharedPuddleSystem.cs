@@ -125,7 +125,7 @@ public abstract partial class SharedPuddleSystem : EntitySystem
 
         _deletionQueue.Remove(entity);
         UpdateSlip((entity, entity.Comp), args.Solution);
-        UpdateSlow(entity, args.Solution);
+        UpdateSlow(entity, args.Solution, entity.Comp); // // Box Change: starcup/CorvaxNext footprints
         UpdateEvaporation(entity, args.Solution);
         UpdateAppearance((entity, entity.Comp));
     }
@@ -318,8 +318,12 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         Dirty(entity, slipComp);
     }
 
-    private void UpdateSlow(EntityUid uid, Solution solution)
+    private void UpdateSlow(EntityUid uid, Solution solution, PuddleComponent component) // // Box Change: CorvaxNext: add component parameter
     {
+        // Box Change: starcup/CorvaxNext footprints
+        if (!component.AffectsMovement)
+            return;
+        // End Box Change
         var maxViscosity = 0f;
         foreach (var (reagent, _) in solution.Contents)
         {

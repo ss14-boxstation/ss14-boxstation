@@ -1,0 +1,10 @@
+# Outer Clothing
+- type: loadout
+  id: BomberBlack
+  equipment:
+    outerClothing: ClothingOuterCoatBomberBlack
+
+- type: loadout
+  id: BomberWhite
+  equipment:
+    outerClothing: ClothingOuterCoatBomberWhite

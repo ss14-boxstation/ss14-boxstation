@@ -1,10 +1,7 @@
 - type: marking
   id: CatEars
-  # Start Box Change: Special > HeadTop - Change cat ear category for better layering and more intuitive categorization.
-  bodyPart: HeadTop
-  markingCategory: HeadTop 
-  # End Box Change
-  speciesRestriction: [Human]
+  bodyPart: HeadTop # Box
+  groupWhitelist: [Human]
   coloring:
     default:
       type:
@@ -26,8 +23,7 @@
 - type: marking
   id: CatTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Human]
+  groupWhitelist: [Human]
   coloring:
     default:
       type:

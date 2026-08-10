@@ -51,7 +51,7 @@
     eyes: ClothingEyesGlassesCommand
     gloves: ClothingHandsGlovesCaptain
     id: CaptainPDA
-    ears: ClothingHeadsetAltCommand
+    # ears: ClothingHeadsetAltCommand # Box Change: Headset moved to loadout option
   storage:
     back:
     - Flash

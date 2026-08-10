@@ -23,7 +23,7 @@
   equipment:
     shoes: ClothingShoesLeather
     id: PsychologistPDA
-    ears: ClothingHeadsetMedical
+    # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
   storage:
     back:
     - RubberStampPsychologist

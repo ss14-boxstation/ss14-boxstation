@@ -1,8 +1,7 @@
 - type: marking
   id: MessyPonytailThaven
   bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [ Thaven ]
+  groupWhitelist: [ Thaven ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: thavenmessyponytail
@@ -10,9 +9,7 @@
 - type: marking
   id: ThavenAbs
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Thaven ]
-  followSkinColor: true
+  groupWhitelist: [ Thaven ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: muscularthaven
@@ -20,8 +17,7 @@
 - type: marking
   id: ThavenBasicTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Thaven ]
+  groupWhitelist: [ Thaven ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: thavenbasictail
@@ -29,8 +25,7 @@
 - type: marking
   id: ThavenTadpoleTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Thaven ]
+  groupWhitelist: [ Thaven ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: thaventadpole1
@@ -40,8 +35,7 @@
 - type: marking
   id: ThavenBigTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [ Thaven ]
+  groupWhitelist: [ Thaven ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: thavenbigtail1

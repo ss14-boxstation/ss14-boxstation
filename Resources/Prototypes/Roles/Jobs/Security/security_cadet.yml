@@ -30,7 +30,7 @@
     shoes: ClothingShoesBootsJackFilled
     outerClothing: ClothingOuterArmorBasic
     id: SecurityCadetPDA
-    ears: ClothingHeadsetSecurity
+    # ears: ClothingHeadsetSecurity # Box Change: Headset moved to loadout option
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponDisabler
     pocket2: BookSecurity

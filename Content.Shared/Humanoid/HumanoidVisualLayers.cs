@@ -8,12 +8,14 @@ namespace Content.Shared.Humanoid
     {
         Special, // for the cat ears
         Tail,
+        TailOverlay, // markings that go ontop of tails
         Hair,
         FacialHair,
         UndergarmentTop,
         UndergarmentBottom,
         Chest,
         Head,
+        HeadBase, // starcup: base head shapes
         Snout,
         SnoutCover, // things layered over snouts (i.e. noses)
         HeadSide, // side parts (i.e., frills)
@@ -27,10 +29,13 @@ namespace Content.Shared.Humanoid
         LLeg,
         RFoot,
         LFoot,
+        Overlay,
         Handcuffs,
         StencilMask,
         Ensnare,
         Fire,
+        LArmExtension, // Frontier: a species-specific extension layer, e.g. for harpy wings
+        RArmExtension, // Frontier: a species-specific extension layer, e.g. for harpy wings
 
     }
 }

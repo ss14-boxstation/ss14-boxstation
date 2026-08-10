@@ -13,7 +13,7 @@
   id: PassengerGear
   equipment:
     id: PassengerPDA
-    ears: ClothingHeadsetGrey
+    # ears: ClothingHeadsetGrey # Box Change: Headset moved to loadout option
   #storage:
     #back:
     #- Stuff

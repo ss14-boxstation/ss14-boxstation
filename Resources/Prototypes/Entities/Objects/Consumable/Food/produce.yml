@@ -2448,6 +2448,32 @@
     seedId: bungo
   - type: SpaceGarbage
   - type: BadFood
+  # Box Change Start - Harmony - Bungo Bomber
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0
+        friction: 1.3
+      projectile:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.5
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Projectile
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Blunt: 10
+  # Box Change end
 
 - type: entity
   parent: FoodProduceBase

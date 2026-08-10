@@ -155,6 +155,7 @@
     # End Box Change
     - id: WeaponSniperMosin
       weight: 2
+    - id: CigPackMixedRejects # Box Change: Impstation Soaked Smokes Rejects
     - id: ClothingHandsKnuckleDustersSyndicate
 
 - type: entityTable

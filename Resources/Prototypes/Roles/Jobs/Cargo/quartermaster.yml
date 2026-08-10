@@ -46,7 +46,7 @@
   id: QuartermasterGear
   equipment:
     id: QuartermasterPDA
-    ears: ClothingHeadsetQM
+    # ears: ClothingHeadsetQM # Box Change: Headset moved to loadout option
     belt: BoxFolderClipboardThreePapers
     pocket1: AppraisalTool
   storage:

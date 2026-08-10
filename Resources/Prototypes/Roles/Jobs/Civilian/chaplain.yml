@@ -19,7 +19,7 @@
   equipment:
     shoes: ClothingShoesColorBlack
     id: ChaplainPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Headset moved to loadout option
   storage:
     back:
     - RubberStampChaplain

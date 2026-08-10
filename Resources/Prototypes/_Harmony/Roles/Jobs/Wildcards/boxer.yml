@@ -18,7 +18,7 @@
   id: BoxerGear
   equipment:
     id: BoxerPDA
-    ears: ClothingHeadsetService
+    # ears: ClothingHeadsetService # Box Change: Move headsets to loadout
     shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
   #storage:
