@@ -9,6 +9,7 @@ using Content.Shared.Traits;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._DV.Traits; // Box Change: DV trait menu
 
 namespace Content.Shared.Humanoid;
 
