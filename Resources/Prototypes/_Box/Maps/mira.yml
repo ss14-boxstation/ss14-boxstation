@@ -10,7 +10,7 @@
 - type: gameMap
   id: Mira
   mapName: 'Mira'
-  mapPath: /Maps/_Harmony/mira.yml
+  mapPath: /Maps/_Box/mira.yml
   minPlayers: 0
   maxPlayers: 25
   stations:

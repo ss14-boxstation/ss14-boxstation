@@ -11,7 +11,7 @@
 - type: gameMap
   id: Aspid
   mapName: 'NCS Aspid'
-  mapPath: /Maps/_Harmony/aspid.yml
+  mapPath: /Maps/_Box/aspid.yml
   minPlayers: 30
   maxPlayers: 65
   stations:

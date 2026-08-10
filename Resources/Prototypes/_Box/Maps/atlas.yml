@@ -13,7 +13,7 @@
 - type: gameMap
   id: Atlas
   mapName: Atlas
-  mapPath: /Maps/_Harmony/atlas.yml
+  mapPath: /Maps/_Box/atlas.yml
   minPlayers: 5
   maxPlayers: 20
   stations:

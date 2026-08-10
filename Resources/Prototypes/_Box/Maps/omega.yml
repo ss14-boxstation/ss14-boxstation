@@ -14,7 +14,7 @@
 - type: gameMap
   id: Omega
   mapName: 'Omega'
-  mapPath: /Maps/_Harmony/omega.yml
+  mapPath: /Maps/_Box/omega.yml
   minPlayers: 1
   maxPlayers: 35
   stations:

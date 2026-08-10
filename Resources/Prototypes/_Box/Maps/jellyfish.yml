@@ -10,7 +10,7 @@
 - type: gameMap
   id: Jellyfish
   mapName: 'Jellyfish'
-  mapPath: /Maps/_Harmony/jellyfish.yml
+  mapPath: /Maps/_Box/jellyfish.yml
   minPlayers: 1
   maxPlayers: 25
   stations:

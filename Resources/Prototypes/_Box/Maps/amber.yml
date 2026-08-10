@@ -11,7 +11,7 @@
 - type: gameMap
   id: Amber
   mapName: 'Amber'
-  mapPath: /Maps/_Harmony/amber.yml
+  mapPath: /Maps/_Box/amber.yml
   minPlayers: 7
   maxPlayers: 50
   stations:
