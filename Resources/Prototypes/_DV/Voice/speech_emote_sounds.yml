@@ -79,3 +79,89 @@
       collection: FemaleGasp
     DefaultDeathgasp:
       collection: FemaleDeathGasp
+      
+- type: emoteSounds
+  id: SoundsHarpy
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: HarpyScreams
+    Laugh:
+      collection: HarpyLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: HarpyCry
+    Whistle:
+      collection: HarpyWhistles # Frontier
+    Hiss:
+      collection: HarpyHisses
+    Meow:
+      collection: HarpyMeows
+    # Start Box Change - Remove empty emote
+    #Mew:
+    #  collection: HarpyMews
+    # End Box Change
+    Growl:
+      collection: HarpyGrowls
+    Purr:
+      collection: HarpyPurrs
+    HarpyRing:
+      collection: HarpyRings
+    Honk:
+      collection: HarpyHonks
+      params: # Frontier
+        volume: -5 # Frontier
+    HarpyPew:
+      collection: HarpyPews
+    HarpyBang:
+      collection: HarpyBangs
+      params: # Frontier
+        volume: -5 # Frontier
+    Beep:
+      collection: HarpyBeeps
+    HarpyRev:
+      collection: HarpyRevs
+      params: # Frontier
+        volume: -5 # Frontier
+    Click:
+      collection: HarpyClicks
+    Chitter:
+      collection: HarpyChitter
+    Squeak:
+      collection: HarpySqueak
+    HarpyCaw:
+      collection: HarpyCaws
+    Chirp:
+      collection: HarpyChirps
+    Snarl:
+      collection: VulpkaninSnarls
+    Bark:
+      collection: VulpkaninBarks
+    Whine:
+      collection: VulpkaninWhines
+    Howl:
+      collection: VulpkaninHowls
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: HarpyGasp
+    DefaultDeathgasp:
+      collection: DeathGasp
+    #Belch: # Frontier
+    #  collection: Belch # Frontier
+    Squish: # Frontier
+      collection: HarpySquishes # Frontier
+    #Bubble: # Imp
+    #  collection: Bubbles # Imp
+    #Pop: # Imp
+    #  collection: Pops # Imp
+    MonkeyScreeches: # Frontier
+      collection: MonkeyScreeches # Frontier

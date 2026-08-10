@@ -4,7 +4,6 @@ using Content.Server.Ghost;
 using Content.Server.Popups;
 using Content.Server.Stack;
 using Content.Server.Wires;
-using Content.Shared.Body.Systems;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
@@ -26,6 +25,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Linq;
+using Content.Shared.Gibbing;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Humanoid;
 
@@ -41,7 +41,7 @@ public sealed class MaterialReclaimerSystem : SharedMaterialReclaimerSystem
     [Dependency] private readonly OpenableSystem _openable = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
-    [Dependency] private readonly SharedBodySystem _body = default!; //bobby
+    [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!; //Harmony
     [Dependency] private readonly PuddleSystem _puddle = default!;
     [Dependency] private readonly StackSystem _stack = default!;
@@ -115,7 +115,7 @@ public sealed class MaterialReclaimerSystem : SharedMaterialReclaimerSystem
             Filter.PvsExcept(victim, entityManager: EntityManager),
             true);
 
-        _body.GibBody(victim, true);
+        _gibbing.Gib(victim);
         _appearance.SetData(entity.Owner, RecyclerVisuals.Bloody, true);
         args.Handled = true;
     }
@@ -193,16 +193,12 @@ public sealed class MaterialReclaimerSystem : SharedMaterialReclaimerSystem
         // Harmony start - reclaimer doesn't gib
         if (CanRecycleMob(uid, item, component))
         {
-            if (component.Damage == null)
-                return;
-
-            var logImpact = HasComp<HumanoidAppearanceComponent>(item) ? LogImpact.High : LogImpact.Medium;
-            if(_damageable.TryChangeDamage(item, component.Damage, true) != null)
-            {
-                _adminLogger.Add(LogType.Damaged, logImpact, $"{ToPrettyString(item):victim} was recycled by {ToPrettyString(uid):entity}, dealing {component.Damage.GetTotal()} damage.");
-                _appearance.SetData(uid, RecyclerVisuals.Bloody, true);
-            }
-            // Harmony end
+            var logImpact = HasComp<HumanoidProfileComponent>(item) ? LogImpact.Extreme : LogImpact.Medium;
+            _adminLogger.Add(LogType.Gib, logImpact, $"{ToPrettyString(item):victim} was gibbed by {ToPrettyString(uid):entity} ");
+            if (component.ReclaimSolutions)
+                SpawnChemicalsFromComposition(uid, item, completion, false, component, xform);
+            _gibbing.Gib(item);
+            _appearance.SetData(uid, RecyclerVisuals.Bloody, true);
         }
         else
         {

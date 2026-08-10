@@ -9,3 +9,14 @@
   - !type:AddCompsEffect
     components:
     - type: BlockWriting
+    
+- type: trait
+  id: UltraVision
+  name: trait-ultravision-name
+  description: trait-ultravision-desc
+  category: Disabilities
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: UltraVision
+    
