@@ -11,6 +11,9 @@
       limit: 1  # DeltaV - Fixes hair not displaying
       onlyGroupWhitelisted: false
       required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: false
     enum.HumanoidVisualLayers.HeadBase:
       limit: 1
       required: true
@@ -349,6 +352,11 @@
   - type: VisualOrgan
     data:
       state: head_m
+  - type: VisualOrganMarkings
+    hideableLayers: # Unless we can get equipment displacement based on what head/snout you pick as an IPC
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.HeadTop
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganIPCExternal]
