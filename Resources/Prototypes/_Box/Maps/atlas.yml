@@ -1,3 +1,15 @@
+# Hardforked from: Harmony
+  # Originally from WizDen, who based it on ss13's goonstation map called Atlas
+# Original Map (WizDen):
+  # PR https://github.com/space-wizards/space-station-14/pull/7676
+  # Commit https://github.com/space-wizards/space-station-14/commit/34aded2c194063ebb2ed21b359273d62ce7a1c55
+# Original Map (Harmony):
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/266
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/f38c39e7b87dbb44cb7132cfb8fd152bd16b3fbb
+# Hardfork Point:
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/6b4fd64e87c099171362b9890489f9ac1558672c
+# License Forked From: AGPL-3.0
+
 - type: gameMap
   id: Atlas
   mapName: Atlas
