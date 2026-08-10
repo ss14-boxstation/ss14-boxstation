@@ -166,7 +166,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      199.999: Critical # Make it near impossible
+      119.999: Critical # Make it near impossible
       120: Dead
     stateAlertDict:
       # change health states from BorgHealth to IpcHealth, Needed for Numb to work and not also have it apply to Borgs (Unless we want that?)
