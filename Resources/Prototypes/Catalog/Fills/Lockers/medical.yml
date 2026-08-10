@@ -130,6 +130,7 @@
     - id: ClothingHeadsetMedical
     - id: ClothingMaskSterile
     - id: HandheldGPSBasic
+    - id: HandheldCrewMonitor # Box change - Paramedic gets the handheld crew monitor.
     - id: MedkitFilled
       prob: 0.3
 

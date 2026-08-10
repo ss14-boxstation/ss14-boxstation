@@ -140746,14 +140746,14 @@ entities:
     - type: Appearance
     missingComponents:
     - Edible
-- proto: OrganAvaliHeart
-  entities:
-  - uid: 7804
-    components:
-    - type: Transform
-      parent: 14915
-    - type: Physics
-      canCollide: False
+# - proto: OrganAvaliHeart
+#   entities:
+#   - uid: 7804
+#     components:
+#     - type: Transform
+#       parent: 14915
+#     - type: Physics
+#       canCollide: False
 - proto: OrganHumanAppendix
   entities:
   - uid: 28219
@@ -142200,12 +142200,12 @@ entities:
     - type: Transform
       pos: -44.496437,-102.42278
       parent: 3
-    - type: ContainerContainer
-      containers:
-        stash: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 7804
+    # - type: ContainerContainer
+    #   containers:
+    #     stash: !type:ContainerSlot
+    #       showEnts: False
+    #       occludes: True
+    #       ent: 7804
 - proto: PlushieRGBee
   entities:
   - uid: 28570

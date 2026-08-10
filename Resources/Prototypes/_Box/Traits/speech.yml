@@ -1,0 +1,30 @@
+# Basic speech-only replacement traits
+- type: trait
+  id: BoxRaisedByScurrets
+  name: trait-raisedbyscurrets-name
+  description: trait-raisedbyscurrets-desc
+  replaceComponents: true
+  cost: 1
+  category: SpeechTraits
+  components:
+    - type: Speech
+      speechVerb: Wawa
+      speechSounds: Wawa
+
+# Full speech and vocal replacement traits
+- type: trait
+  id: BoxScurretVocals
+  name: trait-scurretvocals-name
+  description: trait-scurretvocals-desc
+  replaceComponents: true
+  cost: 2
+  category: SpeechTraits
+  components:
+    - type: Speech
+      speechVerb: Wawa
+      speechSounds: Wawa
+    - type: Vocal
+      sounds:
+        Male: Scurret
+        Female: Scurret
+        Unsexed: Scurret

@@ -92,7 +92,7 @@
 #    interfaces:
 #      enum.WiresUiKey.Key:
 #        type: WiresBoundUserInterface
-  - type: TooShortForUIBlacklist # Box Change: Allulalo blacklist
+  - type: TooShortForUiBlacklist # Box Change: Allulalo blacklist
 
 - type: entity
   parent: BaseComputer

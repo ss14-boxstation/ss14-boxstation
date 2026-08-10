@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original sprite by AnonymousNow, created for tgstation at https://github.com/tgstation/tgstation/commit/db7a8e3510e94e47bcf0751d225fb680840dee13. Icon and lens sprite split (plus slight recoloring) by Dizzy-Eevee (github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "lens"
+        }
+    ]
+}
