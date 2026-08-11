@@ -4,7 +4,7 @@
 - type: gamePreset
   id: ChillShift
   name: chillshift-title
-  showInVote: false
+  showInVote: true
   description: chillshift-description
   rules:
   - SpaceTrafficControlFriendlyEventScheduler

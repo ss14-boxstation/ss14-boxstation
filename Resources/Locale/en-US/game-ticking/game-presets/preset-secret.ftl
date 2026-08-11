@@ -1,4 +1,6 @@
-secret-title = Secret
+# Box Change Start - Secret > Antags - Antag Votes
+secret-title = Antags
+# Box Change End
 secret-description = It's a secret to everyone. The threats you encounter are randomized.
 
 dynamic-title = Dynamic
