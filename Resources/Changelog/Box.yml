@@ -1510,3 +1510,14 @@
   id: 165
   time: '2026-08-11T03:26:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/222
+- author: Dizzy-Eevee
+  changes:
+  - message: A colorful variety of winter coats and boots are now available in the
+      WinterDrobe!
+    type: Add
+  - message: The WinterDrobe now uses its own (more expensive) restock, due to the
+      amount of clothing available in it.
+    type: Tweak
+  id: 166
+  time: '2026-08-11T03:28:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/253
