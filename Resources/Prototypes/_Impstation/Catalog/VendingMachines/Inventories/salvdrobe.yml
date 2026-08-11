@@ -6,8 +6,8 @@
     ClothingBackpackDuffelSalvage: 3
     OreBag: 3
     ClothingUniformJumpsuitSalvageSpecialist: 3
-    ClothingUniformJumpskirtSalvageSpecialist: 3
-    # Start Box Change: Remove DV suits
+    # Start Box Change: Remove missing jumpsuits
+    #ClothingUniformJumpskirtSalvageSpecialist: 3
     #ClothingUniformJumpskirtSalvageSpecialistDV: 3
     #ClothingUniformJumpsuitSalvageSpecialistDV: 3
     # End Box Change

@@ -9,9 +9,11 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    soundVend: /Audio/_Impstation/Machines/vending_drop.ogg #imp
-  - type: DatasetVocalizer # Box Change: Advertise -> DatasetVocalizer
-    pack: SalvDrobeAds
+    soundVend: /Audio/Machines/vending_drop.ogg # Box Change: WizDen sounds 
+  # Start Box Change: Advertise -> DatasetVocalizer
+  - type: DatasetVocalizer
+    dataset: SalvDrobeAds
+  # End Box Change
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Sprite
