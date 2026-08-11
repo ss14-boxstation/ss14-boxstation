@@ -1,8 +1,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuHeadAlt
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_head-1
@@ -12,8 +11,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuChestAlt
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_chest-1
@@ -23,8 +21,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuLArmAlt
   bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_l_arm-1
@@ -34,8 +31,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuLHandAlt
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_l_hand-1
@@ -45,8 +41,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuLLegAlt
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_l_leg-1
@@ -56,8 +51,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuLFootAlt
   bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_l_foot
@@ -65,8 +59,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuRArmAlt
   bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_r_arm-1
@@ -76,8 +69,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuRHandAlt
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_r_hand-1
@@ -87,8 +79,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuRLegAlt
   bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_r_leg-1
@@ -98,8 +89,7 @@
 - type: marking
   id: CyberLimbsMarkingZenghuRFootAlt
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [IPC]
+  groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/Cybernetics/zenghu/zenghu_alt.rsi
     state: zhpipc_r_foot

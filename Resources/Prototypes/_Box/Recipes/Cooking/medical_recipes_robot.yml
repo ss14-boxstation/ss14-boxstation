@@ -15,7 +15,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 20
+    ActivatedSilicon: 20
     Omnizine: 5
 
 - type: microwaveMealRecipe
@@ -26,7 +26,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     Copper: 5
     Dermaline: 20
 
@@ -38,7 +38,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     Bicaridine: 10
     Tricordrazine: 20
 
@@ -50,7 +50,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 10
+    ActivatedSilicon: 10
     Sigynate: 20
 
 - type: microwaveMealRecipe
@@ -61,7 +61,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     Water: 25
     Pyrazine: 20
 
@@ -73,7 +73,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     Iron: 5
     Bruizine: 20
 
@@ -85,7 +85,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 10
+    ActivatedSilicon: 10
     Copper: 10
     Insuzine: 20
 
@@ -97,7 +97,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     Aluminium: 15
     Puncturase: 20
 
@@ -109,7 +109,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 10
+    ActivatedSilicon: 10
     Leporazine: 10
     Insuzine: 10
     Arithrazine: 20
@@ -122,7 +122,7 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     FoamingAgent: 15
     Lacerinol: 20
 
@@ -134,6 +134,6 @@
   solids:
     IPCOilPack: 1
   reagents:
-    Silicon: 5
+    ActivatedSilicon: 5
     Leporazine: 20
     Phosphorus: 5

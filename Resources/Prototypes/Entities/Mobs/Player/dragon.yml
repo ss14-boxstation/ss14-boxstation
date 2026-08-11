@@ -9,8 +9,19 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: Blood
+      - ReagentId: ShimmeringBlood # Box Change: Give fish shimmering blood
         Quantity: 650
+  # Start Box Change: Unique organs
+  - type: EntityTableContainerFill
+    containers:
+     body_organs: !type:AllSelector
+        children:
+        - id: OrganCarpLungs
+        - id: OrganCarpHeart
+        - id: OrganCarpStomach
+        - id: OrganCarpLiver
+        - id: OrganCarpKidneys
+  # End Box Change
   - type: GhostRole
     allowMovement: true
     allowSpeech: true
@@ -109,14 +120,13 @@
     - RadiationProtection
     - Adrenaline
   - type: Temperature
+  - type: TemperatureDamage
     heatDamageThreshold: 2400
   - type: Metabolizer
     solutionOnBody: false
     updateInterval: 0.25
     metabolizerTypes: [ Dragon ]
-    groups:
-    - id: Medicine
-    - id: Poison
+    stages: [ Digestion, Bloodstream ]
   - type: Butcherable
     spawned:
     - id: FoodMeatDragon
@@ -140,7 +150,7 @@
   - type: Devourer
     foodPreferenceWhitelist:
       components:
-      - HumanoidAppearance
+      - HumanoidProfile
     stomachStorageWhitelist:
       components:
       - MobState

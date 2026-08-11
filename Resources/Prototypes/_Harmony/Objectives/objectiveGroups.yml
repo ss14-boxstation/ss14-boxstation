@@ -18,7 +18,7 @@
   weights:
     BloodBrotherCaptainIDStealObjective: 1
     BloodBrotherCMOHyposprayStealObjective: 1
-    BloodBrotherCMOCrewMonitorStealObjective: 1
+#   BloodBrotherCMOCrewMonitorStealObjective: 1 # Box Change - Removes crew mon objective
     BloodBrotherRDHardsuitStealObjective: 1
     BloodBrotherNukeDiskStealObjective: 1
     BloodBrotherMagbootsStealObjective: 1

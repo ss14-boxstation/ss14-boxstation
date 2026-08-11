@@ -1,7 +1,0 @@
-- type: mapModification
-  id: AspidSupplyAssistant
-  applyOn:
-  - Aspid
-  additions:
-  - prototype: SpawnPointSupplyAssistant
-    position: -40.5, 8.5

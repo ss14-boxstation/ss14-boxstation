@@ -113,7 +113,7 @@
         enum.RadioDeviceVisualLayers.Speaker:
           True: { visible: true }
           False: { visible: false }
-  - type: TooShortForUIBlacklist # Box Change: Allulalo blacklist
+  - type: TooShortForUiBlacklist # Box Change: Allulalo blacklist
 
 - type: entity
   id: IntercomAssembly

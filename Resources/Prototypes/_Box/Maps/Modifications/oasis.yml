@@ -1,7 +1,0 @@
-- type: mapModification
-  id: OasisSupplyAssistant
-  applyOn:
-  - Oasis
-  additions:
-  - prototype: SpawnPointSupplyAssistant
-    position: -54.5, 1.5
