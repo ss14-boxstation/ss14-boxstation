@@ -1,7 +1,7 @@
 using Robust.Shared.Prototypes;
 using Content.Shared._DV.Traits.Conditions;
 
-namespace Content.Shared.Box.Traits.Conditions;
+namespace Content.Shared._Box.Traits.Conditions;
 
 /// <summary>
 /// Condition that checks if the player meets overall playtime requirements.
