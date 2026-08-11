@@ -1,29 +1,25 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Bagel
-  - Box
-  - Fland
-  - Marathon
-  - Oasis
-  - Packed
-  - Plasma
-  - Reach
-  - Exo
-  - Snowball
-  # Harmony maps start
+  # - Bagel
+  # - Box
+  # - Fland
+  # - Marathon
+  # - Oasis
+  # - Packed
+  # - Plasma
+  # - Reach
+  # - Exo
+  # - Snowball
+# Box Change Start - Hardfork Maps
+  - Amber
   - Aspid
-  - Atlas
+  # - Atlas
   - Barratry
   - Elkridge
   - Jellyfish
   - Mira
   - Omega
+  - Packed
   - Prime
-  - Scylla
-  - Wapiti
-  - Amber
-  # Harmony maps end
-  # Box maps start
-  - Omega
-  # Box maps end
+# Box Change End

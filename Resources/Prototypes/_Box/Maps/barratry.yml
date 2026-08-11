@@ -1,0 +1,81 @@
+# Hardforked from: Harmony
+  # Originally from WizDen
+# Original Map (Wiz):
+  # PR https://github.com/space-wizards/space-station-14/pull/7621
+  # Commit https://github.com/space-wizards/space-station-14/commit/085545bff472ba8a184526b154ccb70fa540beee
+# Original Map (Harmony):
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/154
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/79a88374ea9f9c7732a2117b4187d790a0f2c5d2
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1234
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/47ea952ce09fe8efa005d9143100ad875bafdb65
+# License Forked From: MIT
+
+- type: gameMap
+  id: Barratry
+  mapName: 'Barratry'
+  mapPath: /Maps/_Box/barratry.yml
+  minPlayers: 15
+  maxPlayers: 40
+  stations:
+    Barratry:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Pioneer {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_Harmony/Shuttles/emergency_pioneer.yml
+        - type: StationCargoShuttle
+          path: /Maps/_Harmony/Shuttles/cargo_barratry.yml
+        - type: StationJobs
+          availableJobs: # 51 jobs, 61 w/ Interns
+          #service (12)
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 2, 2 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+          #engineering (7)
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 3, 3 ]
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ] # Intern Role
+          #medical (8)
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 3, 3 ]
+            MedicalIntern: [ 2, 2 ] # Intern Role
+            Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
+          #science (4)
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 2 ] # Intern Role
+          #security (7)
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            Detective: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ] # Intern Role
+            Lawyer: [ 1, 1 ]
+          #supply (6)
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 3, 3 ]
+            CargoTechnician: [ 2, 2 ]
+            SupplyAssistant: [ 2, 2 ] # Intern Role
+          #civillian (4)
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Reporter: [ 1, 1 ]
+          #silicon (3)
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]
