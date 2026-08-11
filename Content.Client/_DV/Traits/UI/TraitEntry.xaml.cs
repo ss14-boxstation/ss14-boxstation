@@ -138,10 +138,10 @@ public sealed partial class TraitEntry : PanelContainer
                     InDepartmentCondition deptCond => CheckDepartmentCondition(deptCond, jobId),
                     HasCompCondition compCond => !compCond.Invert, // can't check in lobby
                     IsAntagEligibleCondition antagEligibleCond => CheckAntagEligibleCondition(antagEligibleCond, antagPreferences),
-                    PlaytimeCondition playtimeCondition => CheckPlaytime(playtimeCondition),
+                    PlaytimeCondition playtimeCondition => CheckPlaytime(playtimeCondition), // Box Change: CheckPlaytime for playtime requirements
                     AnyOfCondition anyOfCond => CheckAnyOfCondition(anyOfCond, jobId, speciesId, antagPreferences, selectedTraits),
                     _ => true,
-                }; // Box Change: CheckPlaytime for playtime requirements
+                };
 
                 // Apply inversion for non-dependency conditions
                 result ^= condition.Invert;
@@ -272,10 +272,10 @@ public sealed partial class TraitEntry : PanelContainer
                     InDepartmentCondition deptCond => CheckDepartmentCondition(deptCond, jobId),
                     HasCompCondition compCond => !compCond.Invert, // can't check in lobby
                     IsAntagEligibleCondition antagEligibleCond => CheckAntagEligibleCondition(antagEligibleCond, antagPreferences),
-                    PlaytimeCondition playtimeCondition => CheckPlaytime(playtimeCondition),
+                    PlaytimeCondition playtimeCondition => CheckPlaytime(playtimeCondition), // Box Change: CheckPlaytime for playtime requirements
                     AnyOfCondition nestedAnyOf => CheckAnyOfCondition(nestedAnyOf, jobId, speciesId, antagPreferences, selectedTraits),
                     _ => true,
-                }; // Box Change: CheckPlaytime for playtime requirements
+                };
 
                 result ^= childCondition.Invert;
             }
