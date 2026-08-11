@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 268.0.0
-  forkId: harmony
-  forkVersion: c51cf6cdf0128751b3b39fac5640fd7eb86901fd
-  time: 12/19/2025 07:32:36
-  entityCount: 29530
+  engineVersion: 272.0.1
+  forkId: ""
+  forkVersion: ""
+  time: 08/11/2026 00:22:41
+  entityCount: 29532
 maps:
 - 1
 grids:
@@ -79686,13 +79686,6 @@ entities:
     - type: Transform
       pos: 5.5,27.5
       parent: 2
-- proto: FigureSpawner
-  entities:
-  - uid: 12047
-    components:
-    - type: Transform
-      pos: 57.5,25.5
-      parent: 2
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 12048
@@ -120620,13 +120613,6 @@ entities:
     - type: Transform
       pos: -18.5,-50.5
       parent: 2
-- proto: HeadHuman
-  entities:
-  - uid: 17709
-    components:
-    - type: Transform
-      pos: 8.048678,13.340521
-      parent: 2
 - proto: HeatExchanger
   entities:
   - uid: 17710
@@ -134758,6 +134744,13 @@ entities:
     - type: Transform
       pos: 9.5771675,-28.516392
       parent: 2
+- proto: MechFigurineSpawner50
+  entities:
+  - uid: 12047
+    components:
+    - type: Transform
+      pos: 57.5,25.5
+      parent: 2
 - proto: MedicalBed
   entities:
   - uid: 20245
@@ -135763,6 +135756,13 @@ entities:
     components:
     - type: Transform
       pos: 8.376803,13.496771
+      parent: 2
+- proto: OrganHumanHead
+  entities:
+  - uid: 17709
+    components:
+    - type: Transform
+      pos: 8.048678,13.340521
       parent: 2
 - proto: OrganHumanHeart
   entities:
@@ -137509,6 +137509,13 @@ entities:
     components:
     - type: Transform
       pos: -86.087555,-32.8277
+      parent: 2
+- proto: PlushieSpawner50
+  entities:
+  - uid: 25304
+    components:
+    - type: Transform
+      pos: 50.5,7.5
       parent: 2
 - proto: PonderingOrb
   entities:
@@ -156511,6 +156518,18 @@ entities:
     - type: Transform
       pos: 34.5,-2.5
       parent: 2
+- proto: SpawnPointSupplyAssistant
+  entities:
+  - uid: 29531
+    components:
+    - type: Transform
+      pos: 16.5,-28.5
+      parent: 2
+  - uid: 29532
+    components:
+    - type: Transform
+      pos: 17.5,-28.5
+      parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:
   - uid: 24039
@@ -164838,13 +164857,6 @@ entities:
       name: totally a throngler
     - type: Transform
       pos: 42.703545,-0.36938596
-      parent: 2
-- proto: ToySpawner
-  entities:
-  - uid: 25304
-    components:
-    - type: Transform
-      pos: 50.5,7.5
       parent: 2
 - proto: ToySword
   entities:

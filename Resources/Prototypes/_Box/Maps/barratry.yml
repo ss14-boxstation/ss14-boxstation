@@ -15,8 +15,8 @@
   id: Barratry
   mapName: 'Barratry'
   mapPath: /Maps/_Box/barratry.yml
-  minPlayers: 30
-  maxPlayers: 60
+  minPlayers: 15
+  maxPlayers: 40
   stations:
     Barratry:
       stationProto: StandardNanotrasenStation
@@ -31,51 +31,51 @@
         - type: StationCargoShuttle
           path: /Maps/_Harmony/Shuttles/cargo_barratry.yml
         - type: StationJobs
-          availableJobs:
-            #service
+          availableJobs: # 51 jobs, 61 w/ Interns
+          #service (12)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 1 ]
             Botanist: [ 2, 2 ]
-            Chef: [ 2, 2 ]
+            Chef: [ 1, 1 ]
             Janitor: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-            ServiceWorker: [ 1, 2 ]
-            #engineering
+            ServiceWorker: [ 2, 2 ]
+          #engineering (7)
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
-            StationEngineer: [ 5, 5 ]
-            TechnicalAssistant: [ 2, 4 ]
-            #medical
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ] # Intern Role
+          #medical (8)
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 4, 4 ]
-            MedicalIntern: [ 2, 4 ]
+            MedicalDoctor: [ 3, 3 ]
+            MedicalIntern: [ 2, 2 ] # Intern Role
             Paramedic: [ 1, 1 ]
             Psychologist: [ 1, 1 ]
-            #science
+          #science (4)
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 5, 5 ]
-            ResearchAssistant: [2, 4]
-            #security
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 2 ] # Intern Role
+          #security (7)
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             Detective: [ 1, 1 ]
-            SecurityOfficer: [ 6, 6 ]
-            SecurityCadet: [ 2, 4 ]
-            Lawyer: [ 2, 2 ]
-            #supply
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ] # Intern Role
+            Lawyer: [ 1, 1 ]
+          #supply (6)
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 2, 2 ]
-            # SupplyAssistant: [ 2, 4 ] # Box Change - Adds Supply Assistant
-            #civillian
+            SupplyAssistant: [ 2, 2 ] # Intern Role
+          #civillian (4)
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Reporter: [ 1, 1 ]
-            #silicon
+          #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]

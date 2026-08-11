@@ -12,7 +12,7 @@
   id: Packed
   mapName: 'Packed'
   mapPath: /Maps/_Box/packed.yml
-  minPlayers: 7
+  minPlayers: 0
   maxPlayers: 35
   stations:
     Packed:
@@ -26,8 +26,8 @@
       - type: StationEmergencyShuttle
         emergencyShuttlePath: /Maps/Shuttles/emergency_crimson.yml
       - type: StationJobs
-        availableJobs: # 47 jobs total w/o latejoins & interns, 58 jobs total w/ latejoins & interns
-          #command (7)
+        availableJobs: # 41 jobs, 51 w/ Intern
+        #command (7)
           Captain: [ 1, 1 ]
           HeadOfPersonnel: [ 1, 1 ]
           HeadOfSecurity: [ 1, 1 ]
@@ -35,40 +35,41 @@
           ChiefEngineer: [ 1, 1 ]
           ResearchDirector: [ 1, 1 ]
           Quartermaster: [ 1, 1 ]
-          #service (8 - 10)
+        #service (8)
           Bartender: [ 1, 1 ]
-          Botanist: [ 1, 2 ]
+          Botanist: [ 1, 1 ]
           Chef: [ 1, 1 ]
-          Janitor: [ 1, 2 ]
+          Janitor: [ 1, 1 ]
           Chaplain: [ 1, 1 ]
           Librarian: [ 1, 1 ]
           ServiceWorker: [ 2, 2 ]
-          #engineering (6)
+        #engineering (4)
           AtmosphericTechnician: [ 2, 2 ]
-          StationEngineer: [ 4, 4 ]
-          TechnicalAssistant: [ 3, 3 ] #intern, not counted
-          #medical (6)
+          StationEngineer: [ 2, 2 ]
+          TechnicalAssistant: [ 2, 2 ] # Intern Role
+        #medical (5)
           Chemist: [ 2, 2 ]
-          MedicalDoctor: [ 3, 3 ]
-          MedicalIntern: [ 2, 2 ] #intern, not counted
+          MedicalDoctor: [ 2, 2 ]
+          MedicalIntern: [ 2, 2 ] # Intern Role
           Paramedic: [ 1, 1 ]
-          #science (4)
-          Scientist: [ 4, 4 ]
-          ResearchAssistant: [ 2, 2 ] #intern, not counted
-          #security (6)
+        #science (2)
+          Scientist: [ 2, 2 ]
+          ResearchAssistant: [ 2, 2 ] # Intern Role
+        #security (5)
           Warden: [ 1, 1 ]
-          SecurityOfficer: [ 3, 3 ]
+          SecurityOfficer: [ 2, 2 ]
           Detective: [ 1, 1 ]
-          SecurityCadet: [ 2, 2 ] #intern, not counted
+          SecurityCadet: [ 2, 2 ] # Intern Role
           Lawyer: [ 1, 1 ]
-          #supply (4)
+        #supply (4)
           SalvageSpecialist: [ 2, 2 ]
           CargoTechnician: [ 2, 2 ]
-          #civilian (3+)
+          SupplyAssistant: [ 2, 2 ] # Intern Role
+        #civilian (3)
           Passenger: [ -1, -1 ] #infinite, not counted
           Clown: [ 1, 1 ]
           Mime: [ 1, 1 ]
           Musician: [ 1, 1 ]
-          #silicon (3)
+        #silicon (3)
           StationAi: [ 1, 1 ]
           Borg: [ 2, 2 ]

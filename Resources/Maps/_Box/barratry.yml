@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 268.0.0
-  forkId: harmony
-  forkVersion: 9e1e60bc621650b219dceb2540c4403344028efa
-  time: 01/09/2026 01:08:49
-  entityCount: 23231
+  engineVersion: 272.0.1
+  forkId: ""
+  forkVersion: ""
+  time: 08/11/2026 00:16:46
+  entityCount: 23233
 maps:
 - 1
 grids:
@@ -22875,7 +22875,7 @@ entities:
       pos: -80.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -141163.8
+      secondsUntilStateChange: -141261.94
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -138725,6 +138725,18 @@ entities:
     components:
     - type: Transform
       pos: -64.5,26.5
+      parent: 2
+- proto: SpawnPointSupplyAssistant
+  entities:
+  - uid: 23232
+    components:
+    - type: Transform
+      pos: -38.5,-6.5
+      parent: 2
+  - uid: 23233
+    components:
+    - type: Transform
+      pos: -38.5,-5.5
       parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:

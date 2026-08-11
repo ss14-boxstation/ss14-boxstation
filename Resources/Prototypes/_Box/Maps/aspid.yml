@@ -12,8 +12,8 @@
   id: Aspid
   mapName: 'NCS Aspid'
   mapPath: /Maps/_Box/aspid.yml
-  minPlayers: 30
-  maxPlayers: 65
+  minPlayers: 20
+  maxPlayers: 45
   stations:
     Aspid:
       stationProto: StandardNanotrasenStation
@@ -26,51 +26,51 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
-          availableJobs:
-            #service
+          availableJobs: # 50 jobs, 60 with Interns
+          #service (13)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
-            Bartender: [ 1, 2 ]
-            Botanist: [ 2, 3 ]
-            Chef: [ 1, 3 ]
-            Janitor: [ 2, 3 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             Lawyer: [ 2, 2 ]
-            ServiceWorker: [ 1, 1 ]
-            #engineering
+            ServiceWorker: [ 2, 2 ]
+          #engineering (6)
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
-            StationEngineer: [ 3, 4 ]
-            TechnicalAssistant: [ 4, 4 ]
-            #medical
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ] # Intern Role
+          #medical (8)
             ChiefMedicalOfficer: [ 1, 1 ]
             Paramedic: [ 1, 1 ]
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 4 ]
-            MedicalIntern: [ 4, 4 ]
+            MedicalDoctor: [ 3, 3 ]
+            MedicalIntern: [ 2, 2 ] # Intern Role
             Psychologist: [ 1, 1 ]
-            #science
+          #science (3)
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 4, 5 ]
-            ResearchAssistant: [ 4, 4 ]
-            #security
+            Scientist: [ 2, 2 ]
+            ResearchAssistant: [ 2, 2 ] # Intern Role
+          #security (6)
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             Detective: [ 1, 1 ]
-            SecurityOfficer: [ 4, 5 ]
-            SecurityCadet: [ 4, 4 ]
-            #silicon
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ] # Intern Role
+          #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
-            #supply
+          #supply (7)
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 4 ]
-            CargoTechnician: [ 2, 3 ]
-            # SupplyAssistant: [ 4, 4 ] # Box Change - Adds Supply Assistant
-            #civillian
+            SalvageSpecialist: [ 3, 3 ]
+            CargoTechnician: [ 3, 3 ]
+            SupplyAssistant: [ 2, 2 ] # Intern Role
+          #civillian (4)
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Reporter: [ 2, 2 ]
+            Reporter: [ 1, 1 ]

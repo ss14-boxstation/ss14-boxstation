@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 267.3.0
+  engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 11/15/2025 17:55:18
-  entityCount: 14319
+  time: 08/10/2026 23:53:14
+  entityCount: 14323
 maps:
 - 1
 grids:
@@ -5894,6 +5894,7 @@ entities:
     - type: BecomesStation
       id: Mira
     - type: ImplicitRoof
+    - type: ExplosionAirtightGrid
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 4175
@@ -7002,7 +7003,7 @@ entities:
       pos: 12.5,-9.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -800089.3
+      secondsUntilStateChange: -800266.1
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7654,7 +7655,7 @@ entities:
       pos: 17.5,-39.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -598207.75
+      secondsUntilStateChange: -598384.56
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -8106,6 +8107,11 @@ entities:
     - type: Transform
       pos: 35.5,-74.5
       parent: 3
+  - uid: 9589
+    components:
+    - type: Transform
+      pos: 36.5,-36.5
+      parent: 3
   - uid: 9630
     components:
     - type: Transform
@@ -8271,13 +8277,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,-21.5
-      parent: 3
-- proto: AirlockSecurityLocked
-  entities:
-  - uid: 11872
-    components:
-    - type: Transform
-      pos: 36.5,-36.5
       parent: 3
 - proto: AirlockTheatreLocked
   entities:
@@ -9929,10 +9928,22 @@ entities:
       parent: 3
 - proto: BarricadeBlock
   entities:
+  - uid: 11642
+    components:
+    - type: Transform
+      pos: 36.5,-36.5
+      parent: 3
   - uid: 13975
     components:
     - type: Transform
       pos: -17.5,-68.5
+      parent: 3
+- proto: BarricadeDirectional
+  entities:
+  - uid: 11654
+    components:
+    - type: Transform
+      pos: 36.5,-35.5
       parent: 3
 - proto: BarSign
   entities:
@@ -75153,15 +75164,6 @@ entities:
       parent: 3
     - type: Fixtures
       fixtures: {}
-- proto: SignInterrogation
-  entities:
-  - uid: 11903
-    components:
-    - type: Transform
-      pos: 37.5,-36.5
-      parent: 3
-    - type: Fixtures
-      fixtures: {}
 - proto: SignJanitor
   entities:
   - uid: 2288
@@ -77332,6 +77334,23 @@ entities:
     components:
     - type: Transform
       pos: 23.5,-42.5
+      parent: 3
+- proto: SpawnPointSupplyAssistant
+  entities:
+  - uid: 11673
+    components:
+    - type: Transform
+      pos: -14.5,-50.5
+      parent: 3
+  - uid: 11695
+    components:
+    - type: Transform
+      pos: -13.5,-50.5
+      parent: 3
+  - uid: 11698
+    components:
+    - type: Transform
+      pos: -12.5,-50.5
       parent: 3
 - proto: SpawnPointTechnicalAssistant
   entities:

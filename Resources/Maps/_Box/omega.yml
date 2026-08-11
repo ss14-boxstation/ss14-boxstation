@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 267.3.0
-  forkId: harmony
-  forkVersion: f9664519760d8706a57ab1fc6a5445f4ce899b70
-  time: 11/20/2025 20:39:14
-  entityCount: 16101
+  engineVersion: 272.0.1
+  forkId: ""
+  forkVersion: ""
+  time: 08/11/2026 01:46:16
+  entityCount: 16104
 maps:
 - 1
 grids:
@@ -4622,6 +4622,7 @@ entities:
     - type: GridPathfinding
     - type: NavMap
     - type: ImplicitRoof
+    - type: ExplosionAirtightGrid
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 3
@@ -78245,6 +78246,13 @@ entities:
     - type: Transform
       pos: -53.373444,-16.451925
       parent: 2
+- proto: OrganHumanTorso
+  entities:
+  - uid: 13929
+    components:
+    - type: Transform
+      pos: -53.589386,-16.742252
+      parent: 2
 - proto: OxygenCanister
   entities:
   - uid: 11644
@@ -78898,6 +78906,13 @@ entities:
     components:
     - type: Transform
       pos: -29.518469,34.407963
+      parent: 2
+- proto: PlushieSpawner50
+  entities:
+  - uid: 13937
+    components:
+    - type: Transform
+      pos: -10.5,11.5
       parent: 2
 - proto: PortableFlasher
   entities:
@@ -88574,6 +88589,11 @@ entities:
     - type: Transform
       pos: 19.5,19.5
       parent: 2
+  - uid: 16103
+    components:
+    - type: Transform
+      pos: 16.5,27.5
+      parent: 2
 - proto: SpawnPointChaplain
   entities:
   - uid: 13330
@@ -88953,6 +88973,18 @@ entities:
     components:
     - type: Transform
       pos: -49.5,-12.5
+      parent: 2
+- proto: SpawnPointSupplyAssistant
+  entities:
+  - uid: 16102
+    components:
+    - type: Transform
+      pos: 15.5,17.5
+      parent: 2
+  - uid: 16104
+    components:
+    - type: Transform
+      pos: 19.5,20.5
       parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:
@@ -92705,13 +92737,6 @@ entities:
     - type: Transform
       pos: 26.489439,14.7007885
       parent: 2
-- proto: TorsoHuman
-  entities:
-  - uid: 13929
-    components:
-    - type: Transform
-      pos: -53.589386,-16.742252
-      parent: 2
 - proto: TowelColorWhite
   entities:
   - uid: 13930
@@ -92756,13 +92781,6 @@ entities:
     components:
     - type: Transform
       pos: -26.669348,34.58727
-      parent: 2
-- proto: ToySpawner
-  entities:
-  - uid: 13937
-    components:
-    - type: Transform
-      pos: -10.5,11.5
       parent: 2
 - proto: TrashBag
   entities:

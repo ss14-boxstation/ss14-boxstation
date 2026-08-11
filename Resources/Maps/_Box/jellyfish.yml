@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 267.3.0
-  forkId: harmony
-  forkVersion: f9664519760d8706a57ab1fc6a5445f4ce899b70
-  time: 11/22/2025 09:20:06
-  entityCount: 16444
+  engineVersion: 272.0.1
+  forkId: ""
+  forkVersion: ""
+  time: 08/11/2026 00:18:41
+  entityCount: 16446
 maps:
 - 1
 grids:
@@ -5049,6 +5049,7 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Jellyfish
+    - type: ExplosionAirtightGrid
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 11871
@@ -91719,6 +91720,18 @@ entities:
     components:
     - type: Transform
       pos: -28.5,-15.5
+      parent: 2
+- proto: SpawnPointSupplyAssistant
+  entities:
+  - uid: 16445
+    components:
+    - type: Transform
+      pos: 24.5,-18.5
+      parent: 2
+  - uid: 16446
+    components:
+    - type: Transform
+      pos: 32.5,-18.5
       parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:

@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 268.0.0
-  forkId: harmony
-  forkVersion: 9e1e60bc621650b219dceb2540c4403344028efa
-  time: 01/09/2026 10:53:05
-  entityCount: 24988
+  engineVersion: 272.0.1
+  forkId: ""
+  forkVersion: ""
+  time: 08/11/2026 00:03:39
+  entityCount: 24986
 maps:
 - 1
 grids:
@@ -118583,11 +118583,6 @@ entities:
     - type: Transform
       pos: -30.5,-21.5
       parent: 2
-  - uid: 10553
-    components:
-    - type: Transform
-      pos: -31.5,-22.5
-      parent: 2
 - proto: LockerPrisoner
   entities:
   - uid: 11427
@@ -139398,11 +139393,6 @@ entities:
       parent: 2
 - proto: SpawnPointParamedic
   entities:
-  - uid: 12311
-    components:
-    - type: Transform
-      pos: -28.5,-22.5
-      parent: 2
   - uid: 12319
     components:
     - type: Transform
@@ -139752,15 +139742,17 @@ entities:
     - type: Transform
       pos: 0.5,-19.5
       parent: 2
+- proto: SpawnPointSupplyAssistant
+  entities:
   - uid: 4072
     components:
     - type: Transform
-      pos: -1.5,-14.5
+      pos: 4.5,16.5
       parent: 2
   - uid: 4096
     components:
     - type: Transform
-      pos: -0.5,-14.5
+      pos: 1.5,22.5
       parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:
