@@ -30,5 +30,7 @@
     color: "#b89f25"
   - type: AccessReader
     access: [["Cargo"]]
+  # Start Box Change: Don't steal the drip please
   - type: StealTarget #imp
     stealGroup: SalvDrobe
+  # End Box Change
