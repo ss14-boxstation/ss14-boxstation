@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 268.0.0
-  forkId: harmony
-  forkVersion: 9e1e60bc621650b219dceb2540c4403344028efa
-  time: 01/06/2026 15:13:41
-  entityCount: 18853
+  engineVersion: 272.0.1
+  forkId: ""
+  forkVersion: ""
+  time: 08/11/2026 02:24:20
+  entityCount: 18855
 maps:
 - 1
 grids:
@@ -105739,6 +105739,18 @@ entities:
     components:
     - type: Transform
       pos: 34.5,-10.5
+      parent: 2
+- proto: SpawnPointSupplyAssistant
+  entities:
+  - uid: 18854
+    components:
+    - type: Transform
+      pos: 15.5,30.5
+      parent: 2
+  - uid: 18855
+    components:
+    - type: Transform
+      pos: 15.5,33.5
       parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:
