@@ -1,17 +1,19 @@
-- type: gamePreset
-  id: SecretNukeops #For Admin Use: Runs Nukeops but shows "Secret" in lobby.
-  alias:
-    - secretnukeops
-  name: secret-title
-  description: secret-description
-  showInVote: false #Admin Use
-  rules:
-    - Nukeops
-    - SubGamemodesRule
-    - BasicStationEventScheduler
-    - MeteorSwarmScheduler
-    - SpaceTrafficControlEventScheduler
-    - BasicRoundstartVariation
+# Box Change Start - If we force Nukies, it'll be an admeme and should be announced
+# - type: gamePreset
+#   id: SecretNukeops #For Admin Use: Runs Nukeops but shows "Secret" in lobby.
+#   alias:
+#     - secretnukeops
+#   name: secret-title
+#   description: secret-description
+#   showInVote: false #Admin Use
+#   rules:
+#     - Nukeops
+#     - SubGamemodesRule
+#     - BasicStationEventScheduler
+#     - MeteorSwarmScheduler
+#     - SpaceTrafficControlEventScheduler
+#     - BasicRoundstartVariation
+# Box Change End
 
 - type: gamePreset
   id: DeathmatchPROMOD
@@ -21,7 +23,7 @@
   name: death-match-promod-title
   description: death-match-promod-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false # Box Change - true > false - Antag Votes
   supportedMaps: DeathMatchPROMODMapPool
   rules:
     - DeathMatchPROMOD
