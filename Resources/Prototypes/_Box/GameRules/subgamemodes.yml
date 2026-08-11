@@ -55,5 +55,7 @@
         text: acolyte-role-greeting-human
         color: purple
         sound: /Audio/_Box/Ambience/Antag/Troublemaker_Briefing.ogg
+      components:
+      - type: Acolyte
       mindRoles:
       - MindRoleAcolyte

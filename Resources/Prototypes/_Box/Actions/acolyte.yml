@@ -11,7 +11,7 @@
     itemIconStyle: BigAction
   - type: TargetAction
   - type: EntityTargetAction
-    event: !type:AcolyteSoulHarvestEvent
+    event: !type:AcolyteSoulHarvestActionEvent
     whitelist:
       components:
       - HumanoidAppearance

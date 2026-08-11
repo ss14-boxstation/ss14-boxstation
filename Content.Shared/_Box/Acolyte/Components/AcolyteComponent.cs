@@ -10,7 +10,8 @@ namespace Content.Shared._Box.Acolyte.Components;
 /// <summary>
 /// Signifies that an entity is the acolyte chosen by a game rule
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, Access(typeof(SharedAcolyteSystem))]
+[AutoGenerateComponentState]
 public sealed partial class AcolyteComponent : Component
 {
     #region Actions
