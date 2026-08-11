@@ -1498,3 +1498,15 @@
   id: 164
   time: '2026-08-11T03:10:55.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/252
+- author: Dizzy-Eevee
+  changes:
+  - message: Station tiles and floors can now be placed on planets, asteroids and
+      different platings.
+    type: Tweak
+  - message: RCDs can no longer spam lights in the same spot.
+    type: Fix
+  - message: RCDs can no longer be used to destroy indestructible tiles.
+    type: Fix
+  id: 165
+  time: '2026-08-11T03:26:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/222
