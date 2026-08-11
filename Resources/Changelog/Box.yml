@@ -1478,3 +1478,23 @@
   id: 163
   time: '2026-08-10T23:29:46.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/190
+- author: CollectionOfBones128
+  changes:
+  - message: All maps have had their job counts and player ranges adjusted
+    type: Tweak
+  - message: Supply Assistant is now properly mapped on all maps
+    type: Fix
+  - message: Aspid, Barratray, and Prime have been added to the map pool
+    type: Add
+  - message: Mira has been updated, and readded to the map pool
+    type: Fix
+  - message: Map votes now have automation support
+    type: Tweak
+  - message: Multiple maps have been removed from the game, including Snowball and
+      Box.
+    type: Remove
+  - message: Reach has been removed from the map pool and is relegated to admemes
+    type: Tweak
+  id: 164
+  time: '2026-08-11T03:10:55.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/252
