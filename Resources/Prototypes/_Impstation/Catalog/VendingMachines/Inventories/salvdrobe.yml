@@ -1,0 +1,25 @@
+- type: vendingMachineInventory
+  id: SalvDrobeInventory
+  startingInventory:
+    ClothingBackpackSalvage: 3
+    ClothingBackpackSatchelSalvage: 3
+    ClothingBackpackDuffelSalvage: 3
+    OreBag: 3
+    ClothingUniformJumpsuitSalvageSpecialist: 3
+    # Start Box Change: Remove missing jumpsuits
+    #ClothingUniformJumpskirtSalvageSpecialist: 3
+    #ClothingUniformJumpskirtSalvageSpecialistDV: 3
+    #ClothingUniformJumpsuitSalvageSpecialistDV: 3
+    # End Box Change
+    ClothingShoesBootsSalvage: 3
+    ClothingMaskGasExplorer: 3
+    ClothingHeadsetMining: 3
+    ClothingOuterCoatBomberCargo: 3
+    ClothingNeckMantle: 2
+    ClothingOuterWinterMiner: 3
+    ClothingNeckScarfStripedPurple: 3 #purple propaganda
+    ClothingShoesBootsWinterColorPurple: 3 #purple propaganda
+  # Start Box Change: We don't have this
+  #contrabandInventory:
+  #  ClothingMaskClownCargo: 1
+  # End Box Change

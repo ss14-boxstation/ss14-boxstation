@@ -18,7 +18,7 @@
     ClothingHeadBandBrown: 3
     ClothingHeadsetCargo: 3
     ClothingOuterWinterCargo: 2
-    ClothingOuterWinterMiner: 2
+    ClothingOuterWinterMiner: 2 # TODO: Remove this once we've mapped SalvDrobes everywhere
     ClothingOuterCoatBomberCargo: 2 #Box - Adds Imp Bomber Jackets
     ClothingNeckScarfStripedBrown: 3
     ClothingShoesBootsWinterCargo: 2
