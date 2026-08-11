@@ -9,7 +9,7 @@
     offState: off
     brokenState: broken
     normalState: normal-unshaded
-    soundVend: /Audio/Machines/vending_drop.ogg # Box Change: WizDen sounds 
+    #soundVend: /Audio/_Impstationn/Machines/vending_drop.ogg # Box Change: WizDen sounds 
   # Start Box Change: Advertise -> DatasetVocalizer
   - type: DatasetVocalizer
     dataset: SalvDrobeAds
@@ -33,6 +33,6 @@
   - type: AccessReader
     access: [["Cargo"]]
   # Start Box Change: Don't steal the drip please
-  - type: StealTarget #imp
-    stealGroup: SalvDrobe
+  #- type: StealTarget #imp
+  #  stealGroup: SalvDrobe
   # End Box Change
