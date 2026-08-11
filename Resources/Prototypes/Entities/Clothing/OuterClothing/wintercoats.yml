@@ -905,7 +905,7 @@
     clothingVisuals:
       outerClothing:
       - state: coatybits-equipped-OUTERCLOTHING
-        color: "#1d1d1d"
+        color: "#3f3f3f" # Box Change: imp, "#1d1d1d" -> "#3f3f3f" for consistency
       - state: winterbits-equipped-OUTERCLOTHING
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterColorBlack

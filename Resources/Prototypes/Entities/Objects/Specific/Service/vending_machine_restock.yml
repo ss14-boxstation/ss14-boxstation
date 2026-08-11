@@ -112,7 +112,8 @@
   parent: BaseVendingMachineRestock
   id: VendingMachineRestockClothes
   name: wardrobe restock box
-  description: It's time to step up your fashion! Place inside any clothes vendor restock slot to begin.
+  description: "It's time to step up your fashion! Place inside any clothes vendor restock slot to begin. NOTE: Seasonal availability may apply."
+  # Box Change: Cheeky comment about winterdrobe. Wrap in quotes so the game doesn't freak out about the colon.
   components:
   - type: VendingMachineRestock
     canRestock:
@@ -133,7 +134,7 @@
     - SciDrobeInventory
     - SecDrobeInventory
     - ViroDrobeInventory
-    - WinterDrobeInventory
+    #- WinterDrobeInventory # Box Change: Moved to its own restock to prevent arbitrage/price bloat issues
     - CuraDrobeInventory
   - type: Sprite
     layers:
