@@ -12,7 +12,7 @@
   meltingPoint: -30 # same as coolant, good enough
   friction: 0.4
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         conditions:

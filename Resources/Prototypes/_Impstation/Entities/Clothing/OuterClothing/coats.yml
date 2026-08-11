@@ -307,3 +307,31 @@
     spawned:
     - id: ClothingOuterCoatBomberSecurity
       amount: 1
+
+- type: entity
+  parent: [ClothingOuterArmorWarden, ClothingOuterStorageFoldableBase, BaseSecurityCommandContraband]
+  id: ClothingOuterCoatWardenBomber
+  name: warden's bomber jacket
+  description: A large bomber jacket in warden colors with reinforced inserts.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Clothing/OuterClothing/BomberJackets/bomber_warden.rsi
+  - type: Clothing
+    sprite: _Impstation/Clothing/OuterClothing/BomberJackets/bomber_warden.rsi
+  - type: Foldable
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+
+- type: entity
+  parent: [ClothingOuterArmorHoS, ClothingOuterStorageFoldableBase, BaseSecurityCommandContraband]
+  id: ClothingOuterCoatHosBomber
+  name: head of security's bomber jacket
+  description: A large black bomber jacket with kevlar lining and goldwork embroidery.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Clothing/OuterClothing/BomberJackets/bomber_hos.rsi
+  - type: Clothing
+    sprite: _Impstation/Clothing/OuterClothing/BomberJackets/bomber_hos.rsi
+  - type: Foldable
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb

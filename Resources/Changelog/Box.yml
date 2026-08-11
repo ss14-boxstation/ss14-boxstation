@@ -1304,3 +1304,177 @@
   id: 153
   time: '2026-07-31T13:11:03.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/231
+- author: BlueMoon059
+  changes:
+  - message: Fixed an unintentional spawner on the ruined syndicate cargo ship.
+    type: Fix
+  - message: Killed the syndicate dropship (For real this time).
+    type: Fix
+  id: 154
+  time: '2026-08-01T15:03:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/234
+- author: Dizzy-Eevee
+  changes:
+  - message: All glasses and goggles now have a slot to hold prescription lenses.
+    type: Add
+  - message: The Medical Techfab can now print prescription lenses, for an alternative
+      way of treating eye damage.
+    type: Add
+  - message: Short-sighted characters now start the round with a pair of strong prescription
+      lenses slotted into their eyewear.
+    type: Add
+  - message: Short-sighted characters no longer spawn with a pair of glasses.
+    type: Remove
+  id: 155
+  time: '2026-08-04T19:13:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/235
+- author: BlueMoon059
+  changes:
+  - message: Adds a HoS bomber jacket.
+    type: Add
+  - message: Adds a Warden bomber jacket.
+    type: Add
+  id: 156
+  time: '2026-08-07T18:44:54.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/233
+- author: Dizzy-Eevee
+  changes:
+  - message: 'New Dan''s Soaked Smokes: Rejects, dangerously fun cigs! Available in
+      uplinks, emag''d Discount Dan''s, and select maints lockers station wide.'
+    type: Add
+  id: 157
+  time: '2026-08-07T23:31:29.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/200
+- author: CollectionOfBones128
+  changes:
+  - message: Added a new preset, Redshift, for admin-curated antagonist-driven gameplay!
+    type: Add
+  - message: Changed NukeOps to be better balanced for BoxStation population
+    type: Tweak
+  - message: LoneOps can now spawn when 15 or more players are in a round
+    type: Tweak
+  - message: Ninjas can now spawn when 10 or more players are in a round
+    type: Tweak
+  - message: Dragons can now spawn when 15 or more players are in a round
+    type: Tweak
+  id: 158
+  time: '2026-08-07T23:56:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/237
+- author: CollectionOfBones128
+  changes:
+  - message: Added Universal Blood Substitue for Nuclear Operative Medics.
+    type: Add
+  - message: The Combat Medkit now comes with a syringe of Universal Blood Substitute
+      instead of a syringe of Saline
+    type: Tweak
+  - message: Airloss Auto-Injectors now use Universal Blood Substitute instead of
+      Saline
+    type: Tweak
+  id: 159
+  time: '2026-08-08T00:33:26.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/239
+- author: CollectionOfBones128
+  changes:
+  - message: NuBody & accompanying Metabolism changes have been merged, alongside
+      other WizDen features.
+    type: Tweak
+  - message: (Bones) SynthChem metabolism has been rewritten, and now shows what chems
+      affect what categories in the guidebook
+    type: Tweak
+  - message: (DizzyEevee) Added harpies, a species of colorful avian humanoids capable
+      of mimicking sounds and instruments.
+    type: Add
+  - message: (DizzyEevee) 63 new hairstyles have been brought over from Impstation!
+    type: Add
+  - message: (DizzyEevee) Added Felinid and Kitsune markings for Humans, Slimes, Vulpkanin,
+      and IPC.
+    type: Add
+  - message: (DizzyEevee) Vulpkanin ears and tails are now available for Humans, Slimes,
+      and IPC.
+    type: Tweak
+  - message: '[Harmony] Headsets and glasses are no longer behind beards.'
+    type: Tweak
+  - message: '[WizDen] The markings editor has been redesigned to have a better UI.'
+    type: Tweak
+  - message: '[WizDen] The character export format has changed and characters from
+      newer servers may not work when exported to older servers.'
+    type: Tweak
+  - message: '[WizDen] Added the ability for Vulps to wag their tails.'
+    type: Add
+  - message: '[WizDen] You can now throw banana cream pies at the station AI.'
+    type: Add
+  - message: '[WizDen] Added a new user interface for cryo pods'
+    type: Add
+  - message: '[WizDen] Botany''s chemical mutation table now takes rarity into account
+      when selecting chemicals. This means Omnizine is no longer the most common chemical
+      to roll.'
+    type: Fix
+  - message: '[WizDen] Vestine chemical mutation table has been adjusted to be less
+      powerful. Vestine is now poisonous to plants.'
+    type: Tweak
+  - message: '[WizDen] Stellibinin now reduces plant toxicity at 50% the effectiveness
+      of Dylovene.'
+    type: Add
+  - message: '[WizDen] Tazinide and Licoxide now are less effective at shocking and
+      don''t last as long.'
+    type: Tweak
+  - message: '[WizDen] Nocturine now lasts 9 seconds instead of 6 seconds.'
+    type: Tweak
+  - message: '[WizDen] Hyperzine overdose can no longer be negated completely with
+      Omnizine.'
+    type: Tweak
+  - message: '[WizDen] Hypodarts now have an increased chemical capacity of 10u up
+      from 7u'
+    type: Tweak
+  - message: '[WizDen] Combat Medkit and Combat Medipen have had their prices reduced
+      to 3 TC'
+    type: Tweak
+  - message: '[WizDen] Drinking or eating things now gradually trickles into the bloodstream,
+      instead of being a fixed delay'
+    type: Tweak
+  - message: '[WizDen] Reagent effect groups are now stages of metabolism in the guidebook'
+    type: Tweak
+  - message: '[WizDen] Many reagents that break down into other ones have clearer
+      guidebook descriptions and slightly adjusted behaviour'
+    type: Tweak
+  - message: '[WizDen] Ghosts appearances will now change depending on their cause
+      of death'
+    type: Add
+  - message: '[WizDen] Ammonia and Nitrous Oxide now do more damage according to the
+      concentration of gas in the atmosphere.'
+    type: Tweak
+  - message: '[WizDen] Warfarin is now named heparin.'
+    type: Fix
+  - message: '[WizDen] Drinking blood as non-animal species makes you sick again.'
+    type: Fix
+  - message: '[WizDen] Injecting someone else''s blood is now slightly poisonous.'
+    type: Add
+  - message: '[WizDen] The chem guidebook now shows when chemicals adjust body temperature
+      again'
+    type: Fix
+  id: 160
+  time: '2026-08-10T13:23:18.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/189
+- author: Dinoguy12349
+  changes:
+  - message: Ports the Bungo Bomber from Harmony
+    type: Add
+  id: 161
+  time: '2026-08-10T15:19:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/249
+- author: Dizzy-Eevee
+  changes:
+  - message: Space dragons, space carp, and sharkminnows are now full of shimmering
+      blood, and have unique organs that can be ground into small amounts of carpotoxin.
+    type: Tweak
+  id: 162
+  time: '2026-08-10T21:19:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/184
+- author: Dizzy-Eevee
+  changes:
+  - message: Added holoflare pistols from Frontier! The salvage vendor stocks two,
+      and more can be printed at an autolathe.
+    type: Add
+  id: 163
+  time: '2026-08-10T23:29:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/190

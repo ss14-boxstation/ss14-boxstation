@@ -17,22 +17,15 @@
   color: "#E7EA91"
   boilingPoint: 55.5
   meltingPoint: -50.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           types:
             Caustic: 1
             Poison: 2 # Phenol is definitely not safe
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 1
-    # Box Change End
 
 - type: reagent
   id: Charcoal
@@ -43,7 +36,7 @@
   boilingPoint: 4200.0
   meltingPoint: 3550.0
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -68,7 +61,7 @@
   physicalDesc: reagent-physical-desc-alkaline
   color: "#e5420b"
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -91,21 +84,14 @@
   allowedDepartments:
   - Science
   color: "#776291"
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           types:
             Caustic: 2
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 2
-    # Box Change End
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -143,7 +129,7 @@
   boilingPoint: 353.2
   meltingPoint: 278.7
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -168,14 +154,12 @@
   boilingPoint: 1661.0
   meltingPoint: 596.0
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           types:
             Heat: 1.5
-    Medicine:
-      effects:
       - !type:Vomit
         conditions:
         - !type:ReagentCondition
@@ -201,7 +185,7 @@
   physicalDesc: reagent-physical-desc-grainy
   color: "#F0F0F0"
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:SatiateThirst
         factor: -5 # This is basically industrial dessicant
@@ -227,9 +211,10 @@
   group: Biological
   flavor: tingly
   physicalDesc: reagent-physical-desc-refreshing
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   color: "#bf1365"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -239,15 +224,3 @@
         key: Adrenaline
         component: IgnoreSlowOnDamage
         time: 120
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          groups:
-            Brute: -4
-      - !type:GenericStatusEffect
-        key: Adrenaline
-        component: IgnoreSlowOnDamage
-        time: 120
-    # Box Change End
