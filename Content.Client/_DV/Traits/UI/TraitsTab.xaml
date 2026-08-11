@@ -62,9 +62,12 @@
                    Text="{Loc 'trait-editor-footer-hint'}"
                    StyleClasses="TraitsFooterText"/>
             <Control HorizontalExpand="True"/>
-            <Label Name="FooterInfoLabel"
+
+            <!-- Start Box Change: Remove irrelevant info about negative points -->
+            <!--<Label Name="FooterInfoLabel"
                    Text="{Loc 'trait-editor-footer-info'}"
-                   StyleClasses="TraitsFooterText"/>
+                   StyleClasses="TraitsFooterText"/>-->
+            <!-- End Box Change -->
         </BoxContainer>
     </PanelContainer>
 </BoxContainer>
