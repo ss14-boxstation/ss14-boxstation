@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockWinterdrobe
+  name: winterdrobe restock box
+  description: It's time to bundle up! Place inside a WinterDrobe's restock slot to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - WinterDrobeInventory
+  - type: Sprite
+    sprite: _Box/Objects/Specific/Service/vending_machine_restock.rsi
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_winter

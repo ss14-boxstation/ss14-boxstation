@@ -32,7 +32,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockClothesFilled
-  cost: 2690 # Box Change 2500 --> 2690 (Imp Bomber Jackets)
+  cost: 2500
   category: cargoproduct-category-name-service
   group: market
 
