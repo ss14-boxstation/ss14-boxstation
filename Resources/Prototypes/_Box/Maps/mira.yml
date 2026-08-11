@@ -1,0 +1,74 @@
+# Hardforked from:
+  # Originally from
+# Original Map:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/390
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/944a2059452a19e7e7c80bc26054ab6d358537e8
+# Hardfork Point:
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/807339b702fd5ea469fb6e6f55614e54fc9f1908
+# License Forked From: AGPL-3.0
+
+- type: gameMap
+  id: Mira
+  mapName: 'Mira'
+  mapPath: /Maps/_Box/mira.yml
+  minPlayers: 0
+  maxPlayers: 20
+  stations:
+    Mira:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Mira Station {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'AU'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_Harmony/Shuttles/emergency_huyendo.yml
+        - type: StationCargoShuttle
+          path: /Maps/_Harmony/Shuttles/cargo_mira.yml
+        - type: StationJobs
+          availableJobs: # 40 jobs, 45 w/ Interns
+          #service (9)
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+          #engineering (6)
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 1, 1 ] # Intern Role
+          #medical (5)
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 1, 1 ]
+            MedicalDoctor: [ 2, 2 ]
+            MedicalIntern: [ 1, 1 ] # Intern Role
+            Paramedic: [ 1, 1 ]
+          #science (3)
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 2, 2 ]
+            ResearchAssistant: [ 1, 1 ] # Intern Role
+          #security (6)
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 2, 2 ]
+            Detective: [ 1, 1 ]
+            SecurityCadet: [ 1, 1 ] # Intern Role
+            Lawyer: [ 1, 1 ]
+          #supply (5)
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 2, 2 ]
+            SupplyAssistant: [ 1, 1 ] # Intern Role
+          #civilian (3)
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+          #silicon (3)
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]

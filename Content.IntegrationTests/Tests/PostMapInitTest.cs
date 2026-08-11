@@ -55,13 +55,12 @@ namespace Content.IntegrationTests.Tests
         /// </remarks>
         private static readonly Dictionary<string, HashSet<EntProtoId>> DoNotMapWhitelistSpecific = new()
         {
-            {"/Maps/bagel.yml", ["RubberStampMime"]},
+            // {"/Maps/bagel.yml", ["RubberStampMime"]}, // Box Change - Map Hardforking
             {"/Maps/reach.yml", ["HandheldCrewMonitor"]},
             {"/Maps/Shuttles/ShuttleEvent/honki.yml", ["GoldenBikeHorn", "RubberStampClown"]},
             {"/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", ["RubberStampSyndicate"]},
             {"/Maps/Shuttles/ShuttleEvent/cruiser.yml", ["ShuttleGunPerforator"]},
             {"/Maps/Shuttles/ShuttleEvent/instigator.yml", ["ShuttleGunFriendship"]},
-            {"/Maps/_Harmony/eclipse.yml", ["ShuttleGunKinetic", "ShuttleGunSvalinnMachineGun"]}, // Harmony
             // Harmony start
             {
                 "/Maps/_Harmony/Nonstations/listening-outpost.yml",
@@ -109,37 +108,32 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] GameMaps =
         {
             "dm02-sandbomb", // Harmony, deathmatch PROMOD map by Unisol
-            "Barratry", // Harmony, revived by Spanky
-            "Aspid", // Harmony, revived by Golinth and gruesomegray
-            "Atlas", // Harmony revived by Kravin
-            "Mira", // Harmony, developed by tanuko
-            "Eclipse", //Harmony, Developed by Lachryphage
-            "Prime", // Harmony, developed/revived by luckyshotpictures
-            "Spire", // Harmony, Developed by Dogbone10, PenguinCodest, Jack_the_Dragon
-            "Athena", // Harmony, Developed by whythelettuce
-            "Omega", // Harmony, updated from Spanky's version by OrnamentalFreak and CrimsonJupiter
-            "Jellyfish", // Harmony, Developed by whythelettuce
-            "Scylla", // Harmony, Developed by tanuko, luckyshotpictures
-			"Elkridge", // Harmony, Developed by deerstop, maintained by luckyshotpictures
-			"Wapiti", // Harmony, Developed by deerstop, maintained by luckyshotpictures
-            "Amber", // Harmony, Developed by Southbridge, maintained by whythelettuce
             "Dev",
             "TestTeg",
-            "Fland",
+            // "Fland", // Box Change - Map Hardforking
             "Packed",
-            "Bagel",
+            // "Bagel", // Box Change - Map Hardforking
             "CentComm",
-            "Box",
-            "Marathon",
+            // "Box", // Box Change - Map Hardforking
+            // "Marathon", // Box Change - Map Hardforking
             "MeteorArena",
             "Saltern",
             "Reach",
-            "Oasis",
-            "Plasma",
-            "Relic",
+            // "Oasis", // Box Change - Map Hardforking
+            // "Plasma", // Box Change - Map Hardforking
+            // "Relic", // Box Change - Map Hardforking
             "dm01-entryway",
-            "Exo",
-            "Snowball",
+            // "Exo", // Box Change - Map Hardforking
+            // "Snowball", // Box Change - Map Hardforking
+            "Barratry", // Box - Map Hardforking - Harmony, revived by Spanky
+            "Aspid", // Box - Map Hardforking - Harmony, revived by Golinth and gruesomegray
+            "Atlas", // Box - Map Hardforking - Harmony revived by Kravin
+            "Mira", // Box - Map Hardforking - Harmony, developed by tanuko
+            "Prime", // Box - Map Hardforking - Harmony, developed/revived by luckyshotpictures
+            "Omega", // Box - Map Hardforking - Harmony, updated from Spanky's version by OrnamentalFreak and CrimsonJupiter
+            "Jellyfish", // Box - Map Hardforking - Harmony, Developed by whythelettuce
+			"Elkridge", // Box - Map Hardforking - Harmony, Developed by deerstop, maintained by luckyshotpictures
+            "Amber", // Box - Map Hardforking - Harmony, Developed by Southbridge, maintained by whythelettuce
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";

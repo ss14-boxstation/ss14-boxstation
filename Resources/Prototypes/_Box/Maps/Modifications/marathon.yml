@@ -1,7 +1,0 @@
-- type: mapModification
-  id: MarathonSupplyAssistant
-  applyOn:
-  - Marathon
-  additions:
-  - prototype: SpawnPointSupplyAssistant
-    position: 20.5, 1.5

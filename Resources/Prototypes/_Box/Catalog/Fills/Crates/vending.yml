@@ -1,0 +1,10 @@
+- type: entity
+  parent: CratePlastic
+  id: CrateVendingMachineRestockWinterdrobeFilled
+  name: winterdrobe restock crate
+  description: Contains a restock box for the winterdrobe vending machine.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: VendingMachineRestockWinterdrobe

@@ -11,7 +11,33 @@
     ClothingNeckScarfStripedPurple: 3
     ClothingOuterCoatTrench: 6
     ClothingOuterWinterCoat: 6
+    # Start Box Change: Colored winter coats
+    ClothingOuterWinterColorBlack: 3
+    ClothingOuterWinterColorGray: 3
+    ClothingOuterWinterColorWhite: 3
+    ClothingOuterWinterColorLightBrown: 3
+    ClothingOuterWinterColorBrown: 3
+    ClothingOuterWinterColorRed: 3
+    ClothingOuterWinterColorOrange: 3
+    ClothingOuterWinterColorYellow: 3
+    ClothingOuterWinterColorGreen: 3
+    ClothingOuterWinterColorBlue: 3
+    ClothingOuterWinterColorPurple: 3
+    # End Box Change
     ClothingShoesBootsWinter: 6
+    # Start Box Change: Colored winter boots
+    ClothingShoesBootsWinterColorBlack: 3
+    ClothingShoesBootsWinterColorGray: 3
+    ClothingShoesBootsWinterColorWhite: 3
+    ClothingShoesBootsWinterColorLightBrown: 3
+    ClothingShoesBootsWinterColorBrown: 3
+    ClothingShoesBootsWinterColorRed: 3
+    ClothingShoesBootsWinterColorOrange: 3
+    ClothingShoesBootsWinterColorYellow: 3
+    ClothingShoesBootsWinterColorGreen: 3
+    ClothingShoesBootsWinterColorBlue: 3
+    ClothingShoesBootsWinterColorPurple: 3
+    # End Box Change
     ClothingOuterFlannelRed: 2
     ClothingOuterFlannelBlue: 2
     ClothingOuterFlannelGreen: 2
