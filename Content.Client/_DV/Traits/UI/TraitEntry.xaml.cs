@@ -9,6 +9,11 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
+// Start Box Change: Playtime requirements
+using Content.Shared.Players.PlayTimeTracking;
+using Robust.Client.Player;
+// End Box Change
+
 namespace Content.Client._DV.Traits.UI;
 
 [GenerateTypedNameReferences]
@@ -16,6 +21,10 @@ public sealed partial class TraitEntry : PanelContainer
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly ILocalizationManager _loc = default!;
+    // Start Box Change: Playtime requirements
+    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private readonly ISharedPlaytimeManager _playtimeManager = default!;
+    // End Box Change
 
     public event Action<bool>? OnToggled;
 
@@ -129,9 +138,10 @@ public sealed partial class TraitEntry : PanelContainer
                     InDepartmentCondition deptCond => CheckDepartmentCondition(deptCond, jobId),
                     HasCompCondition compCond => !compCond.Invert, // can't check in lobby
                     IsAntagEligibleCondition antagEligibleCond => CheckAntagEligibleCondition(antagEligibleCond, antagPreferences),
+                    PlaytimeCondition playtimeCondition => CheckPlaytime(playtimeCondition),
                     AnyOfCondition anyOfCond => CheckAnyOfCondition(anyOfCond, jobId, speciesId, antagPreferences, selectedTraits),
                     _ => true,
-                };
+                }; // Box Change: CheckPlaytime for playtime requirements
 
                 // Apply inversion for non-dependency conditions
                 result ^= condition.Invert;
@@ -223,6 +233,17 @@ public sealed partial class TraitEntry : PanelContainer
         return antagPreferences.Contains(condition.Antag);
     }
 
+    // Start Box Change: Playtime requirements
+    private bool CheckPlaytime(PlaytimeCondition condition)
+    {
+        if (_playerManager.LocalSession == null)
+            return false;
+        var playtimes = _playtimeManager.GetPlayTimes(_playerManager.LocalSession);
+        playtimes.TryGetValue("Overall", out var overallPlaytime);
+        return (condition.Time < overallPlaytime.TotalMinutes);
+    }
+    // End Box Change
+
     private bool CheckAnyOfCondition(
         AnyOfCondition condition,
         ProtoId<JobPrototype>? jobId,
@@ -251,9 +272,10 @@ public sealed partial class TraitEntry : PanelContainer
                     InDepartmentCondition deptCond => CheckDepartmentCondition(deptCond, jobId),
                     HasCompCondition compCond => !compCond.Invert, // can't check in lobby
                     IsAntagEligibleCondition antagEligibleCond => CheckAntagEligibleCondition(antagEligibleCond, antagPreferences),
+                    PlaytimeCondition playtimeCondition => CheckPlaytime(playtimeCondition),
                     AnyOfCondition nestedAnyOf => CheckAnyOfCondition(nestedAnyOf, jobId, speciesId, antagPreferences, selectedTraits),
                     _ => true,
-                };
+                }; // Box Change: CheckPlaytime for playtime requirements
 
                 result ^= childCondition.Invert;
             }

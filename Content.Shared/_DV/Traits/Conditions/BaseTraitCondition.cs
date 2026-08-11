@@ -51,6 +51,8 @@ public sealed class TraitConditionContext
     public required ILogManager LogMan { get; init; }
     public required StatusEffectsSystem StatusEffects { get; init; }
 
+    public IReadOnlyDictionary<string, TimeSpan>? PlayTimes { get; init; } // Box Change: Playtime requirements
+
     /// <summary>
     /// The job ID of the player, if available.
     /// </summary>

@@ -7,6 +7,7 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
+using Content.Shared.Players.PlayTimeTracking; // Box Change: Playtime requirements
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.StatusEffectNew;
@@ -27,9 +28,12 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
+    [Dependency] private readonly ISharedPlaytimeManager _playtimeManager = default!; // Box Change: Playtime requirements
 
-    private int _maxTraitCount;
-    private int _maxTraitPoints;
+	// Start Box Change: Disable global limits
+    //private int _maxTraitCount;
+    //private int _maxTraitPoints;
+	// End Box Change
 
     public override void Initialize()
     {
@@ -37,8 +41,10 @@ public sealed class TraitSystem : EntitySystem
 
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
 
-        Subs.CVar(_config, DCCVars.MaxTraitCount, value => _maxTraitCount = value, true);
-        Subs.CVar(_config, DCCVars.MaxTraitPoints, value => _maxTraitPoints = value, true);
+        // Start Box Change: Disable global limits
+        //Subs.CVar(_config, DCCVars.MaxTraitCount, value => _maxTraitCount = value, true);
+        //Subs.CVar(_config, DCCVars.MaxTraitPoints, value => _maxTraitPoints = value, true);
+        // End Box Change
     }
 
     private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent args)
@@ -93,6 +99,7 @@ public sealed class TraitSystem : EntitySystem
         var traitCount = 0;
         var categoryTraitCounts = new Dictionary<ProtoId<TraitCategoryPrototype>, int>();
         var categoryPointTotals = new Dictionary<ProtoId<TraitCategoryPrototype>, int>();
+        var playtimes = session != null ? _playtimeManager.GetPlayTimes(session) : null; // Box Change: Playtime requirements
 
         // Build condition context
         var conditionCtx = new TraitConditionContext
@@ -106,8 +113,9 @@ public sealed class TraitSystem : EntitySystem
             JobId = jobId,
             SpeciesId = speciesId,
             Profile = profile,
-            StatusEffects = _statusEffects
-        };
+            StatusEffects = _statusEffects,
+            PlayTimes = playtimes
+        }; // Box Change: Playtime requirements
 
         foreach (var traitId in selectedTraits)
         {
@@ -119,23 +127,25 @@ public sealed class TraitSystem : EntitySystem
 
             var rejectionReasons = new List<string>();
 
+            // Start Box Change: Disable global limits
             // Check global trait count limit
-            if (traitCount >= _maxTraitCount)
-            {
-                Log.Warning($"Trait {traitId} rejected: global trait count limit ({_maxTraitCount}) exceeded");
-                rejectionReasons.Add(Loc.GetString("disabled-traits-reason-global-limit"));
-                disabledTraits[traitId] = rejectionReasons;
-                continue;
-            }
+            //if (traitCount >= _maxTraitCount)
+            //{
+            //    Log.Warning($"Trait {traitId} rejected: global trait count limit ({_maxTraitCount}) exceeded");
+            //    rejectionReasons.Add(Loc.GetString("disabled-traits-reason-global-limit"));
+            //    disabledTraits[traitId] = rejectionReasons;
+            //    continue;
+            //}
 
             // Check global points limit
-            if (totalPoints + trait.Cost > _maxTraitPoints)
-            {
-                Log.Warning($"Trait {traitId} rejected: global points limit ({_maxTraitPoints}) would be exceeded");
-                rejectionReasons.Add(Loc.GetString("disabled-traits-reason-points-limit"));
-                disabledTraits[traitId] = rejectionReasons;
-                continue;
-            }
+            //if (totalPoints + trait.Cost > _maxTraitPoints)
+            //{
+            //    Log.Warning($"Trait {traitId} rejected: global points limit ({_maxTraitPoints}) would be exceeded");
+            //    rejectionReasons.Add(Loc.GetString("disabled-traits-reason-points-limit"));
+            //    disabledTraits[traitId] = rejectionReasons;
+            //    continue;
+            //}
+            // End Box Change
 
             // Check category limits
             if (!ValidateCategoryLimits(trait, categoryTraitCounts, categoryPointTotals, rejectionReasons))
