@@ -3,10 +3,11 @@
   id: BoxRaisedByScurrets
   name: trait-raisedbyscurrets-name
   description: trait-raisedbyscurrets-desc
-  replaceComponents: true
-  cost: 1
-  category: SpeechTraits
-  components:
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
     - type: Speech
       speechVerb: Wawa
       speechSounds: Wawa
@@ -16,10 +17,11 @@
   id: BoxScurretVocals
   name: trait-scurretvocals-name
   description: trait-scurretvocals-desc
-  replaceComponents: true
-  cost: 2
-  category: SpeechTraits
-  components:
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
     - type: Speech
       speechVerb: Wawa
       speechSounds: Wawa

@@ -3,16 +3,26 @@
   name: trait-hypophonia-name
   description: trait-hypophonia-desc
   category: Disabilities
-  blacklist:
+  # Start Box Change: Update for DV trait system
+  conditions:
+  - !type:HasCompCondition
+    component: BorgChassis
+    invert: true
+    tooltip: trait-condition-borg-not
+  effects:
+  - !type:AddCompsEffect
     components:
-      - BorgChassis
-  components:
     - type: Hypophonia
+  # End Box Change
 
 - type: trait
   id: Uncloneable
   name: trait-uncloneable-name
   description: trait-uncloneable-desc
-  category: Disabilities
-  components:
-  - type: Uncloneable
+  # Start Box Change: Update for DV trait system; move to Medical category
+  category: Medical
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: Uncloneable
+  # End Box Change

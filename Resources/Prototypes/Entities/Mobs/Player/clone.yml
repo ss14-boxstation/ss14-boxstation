@@ -68,6 +68,7 @@
   - Speech # For raisedBy traits
   # Hamrony addons end
   - BloodDeficiency # Box Change - For blood deficiency traits
+  - BlockWriting # Box Change: DV dysgraphia trait
   eventComponents:
   - Vocal # voice sounds
 

@@ -1,4 +1,7 @@
-using Content.Shared._Box.Metabolism; // Box Change - SynthChem Metabolism
+// Start Box Change - SynthChem Metabolism
+using Content.Shared._Box.Metabolism;
+using Content.Shared._Box.Traits.Effects;
+// End Box Change
 using Content.Shared.Body.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.GameStates;
@@ -87,6 +90,7 @@ public sealed partial class MetabolizerComponent : Component
     ///    Defaults to Organic
     /// </summary>
     [DataField]
+    [Access(typeof(MetabolizerSystem), typeof(AddMetabolismCategoryEffect), typeof(RemMetabolismCategoryEffect))]
     public HashSet<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories = ["Organic"];
     // Box Change End
 

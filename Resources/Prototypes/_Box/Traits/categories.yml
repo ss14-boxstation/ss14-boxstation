@@ -1,4 +1,6 @@
 - type: traitCategory
-  id: BloodDeficiency
-  name: trait-category-blood-deficiency
-  maxTraitPoints: 1
+  id: Vocal
+  name: trait-category-vocal
+  maxTraits: 1
+  priority: 31 # Right after Accents
+  accentColor: "#3872f8" 

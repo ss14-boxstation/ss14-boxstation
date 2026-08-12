@@ -3,8 +3,9 @@
          xmlns:humanoid="clr-namespace:Content.Client.Humanoid"
          xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
          xmlns:ui="clr-namespace:Content.Client.Lobby.UI"
+         xmlns:traits="clr-namespace:Content.Client._DV.Traits.UI"
          xmlns:profile="clr-namespace:Content.Client.Lobby.UI.ProfileEditorControls"
-         HorizontalExpand="True">
+         HorizontalExpand="True"> <!-- Box Change: Added "xmlns:traits="clr-namespace:Content.Client._DV.Traits.UI" for DV traits UI-->
         <!-- Left side -->
         <BoxContainer Orientation="Vertical" Margin="10 10 10 10" HorizontalExpand="True">
             <!-- Middle container -->
@@ -120,12 +121,15 @@
                         <BoxContainer Name="AntagList" Orientation="Vertical" />
                     </ScrollContainer>
                 </BoxContainer>
-                <BoxContainer Orientation="Vertical" Margin="10">
-                    <!-- Traits -->
-                    <ScrollContainer VerticalExpand="True">
-                        <BoxContainer Name="TraitsList" Orientation="Vertical" />
-                    </ScrollContainer>
-                </BoxContainer>
+                <!-- Start Box Change: DV - Traits -->
+                <!-- <BoxContainer Orientation="Vertical" Margin="10"> -->
+                <!--     ~1~ Traits @1@ -->
+                <!--     <ScrollContainer VerticalExpand="True"> -->
+                <!--         <BoxContainer Name="TraitsList" Orientation="Vertical" /> -->
+                <!--     </ScrollContainer> -->
+                <!-- </BoxContainer> -->
+                <traits:TraitsTab Name="Traits"/>
+                <!-- End Box Change -->
                 <BoxContainer Name="MarkingsTab" Orientation="Vertical" Margin="10">
                     <!-- Markings -->
                     <humanoid:MarkingPicker Name="Markings" HorizontalExpand="True" VerticalExpand="True" />

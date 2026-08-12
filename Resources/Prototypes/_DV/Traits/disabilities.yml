@@ -1,7 +1,22 @@
+## If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
+
+- type: trait
+  id: Dysgraphia
+  name: trait-dysgraphia-name
+  description: trait-dysgraphia-desc
+  category: Disabilities
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: BlockWriting
+    
 - type: trait
   id: UltraVision
   name: trait-ultravision-name
   description: trait-ultravision-desc
   category: Disabilities
-  components:
+  effects:
+  - !type:AddCompsEffect
+    components:
     - type: UltraVision
+    

@@ -2,7 +2,11 @@
   id: StreetpunkAccent
   name: trait-streetpunk-accent-name
   description: trait-streetpunk-accent-desc
-  category: SpeechTraits
-  cost: 1
-  components:
+  # Start Box Change: Update for DV trait system
+  category: Accents
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
     - type: StreetpunkAccent
+  # End Box Change

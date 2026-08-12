@@ -1,4 +1,9 @@
 - type: traitCategory
   id: DrinkingSkill
   name: cd-trait-category-drinking-skill
-  maxTraitPoints: 1
+  # Start Box Change: Update for DV trait system
+  #maxTraitPoints: 1
+  maxTraits: 1
+  priority: 45
+  accentColor: "#e3e77b"  # Color of beer :>
+  # End Box Change
