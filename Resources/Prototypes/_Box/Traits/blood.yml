@@ -1,12 +1,3 @@
-# - type: trait
-  # id: icecreamblood
-  # name: ice cream blood??
-  # description: what the fuck
-  # category: medical
-  # effects:
-  # - !type:changebloodreagenteffect
-    # reagent: icecream
-  
 - type: trait
   id: RedBlood
   name: trait-redblood-name
@@ -141,4 +132,3 @@
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: IPCOil
-    

@@ -1,4 +1,3 @@
-
 using Content.Shared.Alert;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Events;
@@ -11,7 +10,7 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.EntityEffects.Effects.Solution;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids;
-using Content.Shared.Forensics;
+using Content.Shared.Forensics; // Box Change: DNA regeneration helper for use in blood swap traits
 using Content.Shared.Forensics.Components;
 using Content.Shared.Gibbing;
 using Content.Shared.HealthExaminable;

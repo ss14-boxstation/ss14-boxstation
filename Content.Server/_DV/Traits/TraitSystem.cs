@@ -30,7 +30,7 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly ISharedPlaytimeManager _playtimeManager = default!; // Box Change: Playtime requirements
-    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!; // Box Change: Blood change traits
+    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!; // Box Change: Bloodstream system for use in blood swap traits
 
     // Start Box Change: Disable global limits
     //private int _maxTraitCount;
@@ -288,7 +288,7 @@ public sealed class TraitSystem : EntitySystem
             LogMan = _log,
             Transform = transform,
             StatusEffects = _statusEffects,
-            Bloodstream = _bloodstream
+            Bloodstream = _bloodstream // Box Change: Bloodstream system for use in blood swap traits
         };
 
         foreach (var effect in trait.Effects)
