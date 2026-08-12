@@ -1564,3 +1564,14 @@
   id: 170
   time: '2026-08-12T14:04:56.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/240
+- author: CollectionOfBones128
+  changes:
+  - message: Syndicate Scientists can now purchased Indoor Modkits
+    type: Add
+  - message: Indoor Modkits now take up less space in PKAs and are twice as effective
+    type: Tweak
+  - message: You can now only have one indoor modkit in a PKA
+    type: Tweak
+  id: 171
+  time: '2026-08-12T22:20:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/261
