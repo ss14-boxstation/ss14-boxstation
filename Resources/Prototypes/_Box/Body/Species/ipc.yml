@@ -169,9 +169,8 @@
       Brute:
         sprite: Mobs/Effects/brute_damage.rsi
         color: "#DD8822"
-  # - type: Deathgasp # Commented out in original, probably for a good reason?
-  #   prototype: SiliconDeathgasp
-  #   needsCritical: false
+  - type: Deathgasp
+    prototype: SiliconDeathgasp
   - type: MobState
     allowedStates:
       - Alive
