@@ -6,19 +6,19 @@
   <Box>
   <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Arachnid"/>
   <GuideEntityEmbed Entity="AppearanceAllulalo" Caption="Allulalo"/> <!--Box - Imp, adds Allulalo-->
-  <!-- <GuideEntityEmbed Entity="AppearanceAvali" Caption="Avali"/>  --> <!--harmony-->
+  <GuideEntityEmbed Entity="AppearanceAvali" Caption="Avali"/> <!--harmony-->
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
   <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Dwarf"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
   <GuideEntityEmbed Entity="AppearanceHarpy" Caption="Harpy"/> <!--Box - DV, adds Harpies-->
   </Box>
   <Box>
-  <!-- <GuideEntityEmbed Entity="AppearanceIPC" Caption="I.P.C."/>  --> <!--Box-->
+  <GuideEntityEmbed Entity="AppearanceIPC" Caption="I.P.C."/> <!--Box-->
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
-  <!-- <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/>  --> <!--Box-->
+  <GuideEntityEmbed Entity="AppearanceRodentia" Caption="Rodentia"/> <!--Box-->
   <GuideEntityEmbed Entity="AppearanceSlimePerson" Caption="Slime Person"/>
-  <!-- <GuideEntityEmbed Entity="AppearanceThaven" Caption="Thaven"/>  --> <!--Box - Imp, adds Thaven-->
+  <GuideEntityEmbed Entity="AppearanceThaven" Caption="Thaven"/> <!--Box - Imp, adds Thaven-->
   <GuideEntityEmbed Entity="AppearanceVox" Caption="Vox"/>
   </Box>
   <Box>

@@ -1,9 +1,8 @@
-<!--
 <Document>
   # Rodentia
 
   <Box>
-    <GuideEntityEmbed Entity="MobRodentiaDummy" Caption=""/>
+    <GuideEntityEmbed Entity="AppearanceRodentia" Caption=""/>
   </Box>
 
   Rodentia are a race of humanoid beings resembling rodents.
@@ -16,4 +15,4 @@
 
   They take [color=#ffa500]30% more Blunt, 15% more Slash, and 15% more Pierce.[/color]
 
-</Document> -->
+</Document>
