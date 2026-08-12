@@ -43,10 +43,6 @@
   name: trait-monochromacy-name
   description: trait-monochromacy-desc
   category: Disabilities
-  conditions:
-  - !type:TraitDependencyCondition
-    conflicts:
-    - Blindness
   effects:
   - !type:AddCompsEffect
     components:
