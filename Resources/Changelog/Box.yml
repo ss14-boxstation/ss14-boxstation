@@ -1542,3 +1542,25 @@
   id: 169
   time: '2026-08-12T00:50:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/256
+- author: Dizzy-Eevee
+  changes:
+  - message: The traits selection UI has received a total overhaul, courtesy of Delta-V.
+    type: Add
+  - message: The opt-ins for Die a Glorious Death and being a round-removal target
+      are now handled mechanically via the "DAGD Consent" and "Marked for Removal"
+      traits. Be sure to take them you had previously opted in using the antag menu!
+    type: Add
+  - message: Added the "unable to write" trait, which does exactly what it says.
+    type: Add
+  - message: IPCs can no longer take the "minor blood deficiency" trait, since it
+      has no affect on them anyways.
+    type: Tweak
+  - message: The "blindness" and "short-sighted" traits are now mutually incompatible.
+    type: Tweak
+  - message: The "raised by" and "voice of" traits have been moved to their own category
+      (along with "muted"), so you can now use them in addition to regular accent
+      traits.
+    type: Tweak
+  id: 170
+  time: '2026-08-12T14:04:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/240
