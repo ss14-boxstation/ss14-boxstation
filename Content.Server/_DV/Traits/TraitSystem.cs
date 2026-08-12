@@ -1,3 +1,4 @@
+using Content.Shared.Body.Systems; // Box Change: Blood change traits
 using Content.Shared._DV.CCVars;
 using Content.Shared._DV.Traits;
 using Content.Shared._DV.Traits.Conditions;
@@ -29,11 +30,12 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly ISharedPlaytimeManager _playtimeManager = default!; // Box Change: Playtime requirements
+    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!; // Box Change: Blood change traits
 
-	// Start Box Change: Disable global limits
+    // Start Box Change: Disable global limits
     //private int _maxTraitCount;
     //private int _maxTraitPoints;
-	// End Box Change
+    // End Box Change
 
     public override void Initialize()
     {
@@ -114,7 +116,7 @@ public sealed class TraitSystem : EntitySystem
             SpeciesId = speciesId,
             Profile = profile,
             StatusEffects = _statusEffects,
-            PlayTimes = playtimes
+            PlayTimes = playtimes,
         }; // Box Change: Playtime requirements
 
         foreach (var traitId in selectedTraits)
@@ -286,6 +288,7 @@ public sealed class TraitSystem : EntitySystem
             LogMan = _log,
             Transform = transform,
             StatusEffects = _statusEffects,
+            Bloodstream = _bloodstream
         };
 
         foreach (var effect in trait.Effects)

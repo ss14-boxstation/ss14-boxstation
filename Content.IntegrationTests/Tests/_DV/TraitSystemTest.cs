@@ -4,6 +4,7 @@ using Content.Server._DV.Traits;
 using Content.Shared._DV.Traits;
 using Content.Shared._DV.Traits.Conditions;
 using Content.Shared._DV.Traits.Effects;
+using Content.Shared.Body.Systems;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Nutrition.Components;
@@ -793,7 +794,8 @@ public sealed partial class TraitSystemTest
             LogMan = IoCManager.Resolve<ILogManager>(),
             Transform = entMan.GetComponent<TransformComponent>(player),
             StatusEffects = entMan.System<StatusEffectsSystem>(),
-        };
+            Bloodstream = entMan.System<SharedBloodstreamSystem>()
+        }; // Box Change: Blood swap traits
     }
 
     #endregion

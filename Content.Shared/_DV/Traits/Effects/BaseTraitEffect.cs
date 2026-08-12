@@ -1,3 +1,4 @@
+using Content.Shared.Body.Systems; // Box Change: Blood swap traits
 using Content.Shared.StatusEffectNew;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
@@ -30,4 +31,5 @@ public sealed class TraitEffectContext
     public required ILogManager LogMan { get; init; }
     public required TransformComponent Transform { get; init; }
     public required StatusEffectsSystem StatusEffects { get; init; }
+    public required SharedBloodstreamSystem Bloodstream { get; init; } // Box Change: Blood swap traits
 }

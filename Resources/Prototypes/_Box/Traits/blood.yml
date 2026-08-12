@@ -1,0 +1,144 @@
+# - type: trait
+  # id: icecreamblood
+  # name: ice cream blood??
+  # description: what the fuck
+  # category: medical
+  # effects:
+  # - !type:changebloodreagenteffect
+    # reagent: icecream
+  
+- type: trait
+  id: RedBlood
+  name: trait-redblood-name
+  description: trait-redblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Human
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Dwarf
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Reptilian
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Vulpkanin
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Rodentia
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Harpy
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: Blood
+    
+- type: trait
+  id: InsectBlood
+  name: trait-insectblood-name
+  description: trait-insectblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Moth
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: InsectBlood
+    
+- type: trait
+  id: SlimeBlood
+  name: trait-slimeblood-name
+  description: trait-slimeblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: SlimePerson
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: Slime
+    
+- type: trait
+  id: SapBlood
+  name: trait-sapblood-name
+  description: trait-sapblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Diona
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: Sap 
+    
+- type: trait
+  id: BlueBlood
+  name: trait-blueblood-name
+  description: trait-blueblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Arachnid
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: CopperBlood
+    
+- type: trait
+  id: AmmoniaBlood
+  name: trait-ammoniablood-name
+  description: trait-ammoniablood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Vox
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Avali
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: AmmoniaBlood
+    
+- type: trait
+  id: ShimmeringBlood
+  name: trait-shimmeringblood-name
+  description: trait-shimmeringblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Thaven
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: ShimmeringBlood
+      
+- type: trait
+  id: MethylatedBlood
+  name: trait-methylatedblood-name
+  description: trait-methylatedblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Allulalo
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: BloodAllulalo
+    
+- type: trait
+  id: OilBlood
+  name: trait-oilblood-name
+  description: trait-oilblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: IPC
+    invert: true
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: IPCOil
+    

@@ -1,3 +1,4 @@
+
 using Content.Shared.Alert;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Events;
@@ -10,6 +11,7 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.EntityEffects.Effects.Solution;
 using Content.Shared.FixedPoint;
 using Content.Shared.Fluids;
+using Content.Shared.Forensics;
 using Content.Shared.Forensics.Components;
 using Content.Shared.Gibbing;
 using Content.Shared.HealthExaminable;
@@ -625,4 +627,15 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         bloodData.Add(dnaData);
         return bloodData;
     }
+
+    // Start Box Change: DNA change helper for blood swap traits
+    public void RegenerateDNA(EntityUid uid)
+    {
+        if (!TryComp<DnaComponent>(uid, out var dna) || dna.DNA == null)
+            return;
+
+        var ev = new GenerateDnaEvent { Owner = uid, DNA = dna.DNA };
+        RaiseLocalEvent(uid, ref ev);
+    }
+    // End Box Change
 }

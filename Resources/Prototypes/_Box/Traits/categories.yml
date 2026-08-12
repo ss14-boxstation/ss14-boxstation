@@ -4,3 +4,10 @@
   maxTraits: 1
   priority: 31 # Right after Accents
   accentColor: "#3872f8" 
+
+- type: traitCategory
+  id: Blood
+  name: trait-category-blood
+  maxTraits: 1
+  priority: 41 # Right after Medical
+  accentColor: "#800000" 
