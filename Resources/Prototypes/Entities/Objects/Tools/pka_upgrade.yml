@@ -82,4 +82,4 @@
     #tags: [ GunUpgradeReloadSpeed ] # DeltaV - allow multiple
     examineText: gun-upgrade-examine-text-reload
   - type: GunUpgradeFireRate
-    coefficient: 1.25 # DeltaV - was 1.5, SS13 parity (maths used is different but same result: 0.64s recharge time with 3 upgrades)
+    coefficient: 0.4 # Box Change - 1.5 > 0.4 - Modkit Coefficient Rewrite
