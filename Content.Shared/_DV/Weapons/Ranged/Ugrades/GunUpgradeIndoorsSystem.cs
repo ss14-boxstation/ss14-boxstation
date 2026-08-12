@@ -34,7 +34,6 @@ public sealed class GunUpgradeIndoorsSystem : EntitySystem
             _popup.PopupClient(Loc.GetString("upgradeable-gun-popup-too-many"), args.Gun, args.User);
             args.Cancelled = true;
             return;
-
         }
     }
 
