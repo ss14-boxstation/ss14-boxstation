@@ -156,6 +156,19 @@
   - type: Damageable
     damageContainer: HumanoidSilicon
     damageModifierSet: IPC
+  - type: DamageVisuals
+    thresholds: [ 10, 20, 30, 50, 70, 100 ]
+    targetLayers:
+      - "enum.HumanoidVisualLayers.Chest"
+      - "enum.HumanoidVisualLayers.Head"
+      - "enum.HumanoidVisualLayers.LArm"
+      - "enum.HumanoidVisualLayers.LLeg"
+      - "enum.HumanoidVisualLayers.RArm"
+      - "enum.HumanoidVisualLayers.RLeg"
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#DD8822"
   # - type: Deathgasp # Commented out in original, probably for a good reason?
   #   prototype: SiliconDeathgasp
   #   needsCritical: false
@@ -224,6 +237,17 @@
       reagents:
         - ReagentId: IPCOil # IPC blood effectively
           Quantity: 300
+    bleedReductionAmount: 0.25 # Less than an organic (no clotting), but still there
+    bleedPuddleThreshold: 3
+    bloodRefreshAmount: 0
+    bloodlossThreshold: 0.7 # IPCs bleed for longer and cannot restore blood naturally. Bleeding should punish them less.
+    bloodlossDamage:
+      types:
+        Blunt: 0.25
+        Heat: 0.25
+    bloodlossHealDamage:
+      types:
+        Burn: 0
   - type: TypingIndicator
     proto: ipc
   - type: Destructible
