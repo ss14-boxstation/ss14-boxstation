@@ -1,0 +1,122 @@
+# Basic PKA
+- type: entity
+  parent: [ WeaponSalvageAcceleratorWieldedBase, SalvageAcceleratorUpgradeable ]
+  id: WeaponProtoKineticAccelerator
+  name: proto-kinetic accelerator
+  description: Fires low-damage kinetic bolts at a short range.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    layers:
+    - state: icon
+    - state: animation-icon
+      visible: false
+      map: [ "empty-icon" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.AmmoVisuals.HasAmmo:
+        empty-icon:
+          True: { visible: False }
+          False: { visible: True }
+        # wizden: todo: add other 'empty' animations
+
+# Kinetic Pistols
+## Luxury Kinetic Revolver
+- type: entity
+  parent: WeaponSalvageAcceleratorSidearmBase
+  id: WeaponKineticSidearmLuxury
+  name: luxury kinetic revolver
+  description: A retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
+  components:
+  - type: Sprite
+    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+  - type: Item
+    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+  - type: Clothing
+    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+
+# Roundstart kinetic sidearm
+- type: entity
+  parent: [ WeaponSalvageAcceleratorSidearmBase, SalvageAcceleratorUpgradeable ]
+  id: WeaponSalvageAcceleratorSidearm
+  name: proto-kinetic sidearm
+  description: Fires low-damage kinetic bolts at a short range.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Battery/holoflare_pistol.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Battery/holoflare_pistol.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Battery/holoflare_pistol.rsi
+  - type: UpgradeableGunCost
+    maxCost: 200
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: Gun
+    fireRate: 0.8
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+
+# Wieldable Accelerators
+## Shotgun
+- type: entity
+  parent: [ WeaponSalvageAcceleratorWieldedBase, SalvageAcceleratorUpgradeable ]
+  id: WeaponSalvageAcceleratorShotgun
+  name: experimental kinetic shotgun
+  description: Fires a scattershot of low-damage kinetic bolts at short range.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticShotgun
+  - type: UpgradeableGunCost
+    maxCost: 60
+  - type: Gun
+    fireRate: 0.4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: GunRequiresWield # Inaccuracy doesn't apply to spread weapons.
+
+## Rifle
+- type: entity
+  parent: [ WeaponSalvageAcceleratorWieldedBase, SalvageAcceleratorUpgradeable ]
+  id: WeaponSalvageAcceleratorRifle
+  name: experimental kinetic rifle
+  description: Fires a single high-damage kinetic bolts at medium range.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    size: Huge
+    shape:
+    - 0,0,5,1
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticRifle
+  - type: UpgradeableGunCost
+    maxCost: 40
+  - type: Gun
+    fireRate: 0.35
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: GunRequiresWield # Big And Heavy

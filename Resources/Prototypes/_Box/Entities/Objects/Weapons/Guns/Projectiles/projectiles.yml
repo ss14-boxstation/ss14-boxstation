@@ -1,0 +1,95 @@
+# Expanded PKA Bullets
+
+## Parent Ammo
+- type: entity
+  abstract: true
+  parent: BaseBullet
+  id: BaseBulletKinetic
+  name: kinetic bolt
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Reflective
+    reflective:
+      - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: chronobolt
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+  - type: TimedDespawn
+    lifetime: 0.22 # roughly 5.5 tiles
+  - type: PressureProjectile
+
+- type: entity
+  abstract: true
+  parent: BaseBulletKinetic
+  id: BaseBulletKineticMining # Not all PKA's should be able to mine.
+  components:
+  - type: GatheringProjectile
+
+## Shuttle PKA Ammo
+- type: entity
+  parent: BaseBulletKineticMining
+  id: BulletKineticShuttle
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 30
+        Structural: 35
+  - type: Ammo
+    muzzleFlash: HitscanEffect
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 2.5
+    color: white
+    energy: 0.5
+
+## Basic PKA Ammo
+- type: entity
+  parent: BaseBulletKineticMining
+  id: BulletKineticPKA
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 25
+        Structural: 30
+
+## PKA Pistol Ammo
+- type: entity
+  parent: BaseBulletKinetic # The pistol cannot mine
+  id: BulletKineticSidearm
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+        Structural: 15
+
+## PKA Rifle Ammo
+- type: entity
+  parent: BaseBulletKineticMining
+  id: BulletKineticRifle
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 40
+        Structural: 60
+  - type: TimedDespawn
+    lifetime: 0.6
+
+## PKA Shotgun Ammo
+- type: entity
+  parent: BulletKineticSidearm
+  id: BulletKineticShotgun
+  components:
+  - type: ProjectileSpread
+    proto: BulletKineticSidearm
+    count: 5
+    spread: 30
