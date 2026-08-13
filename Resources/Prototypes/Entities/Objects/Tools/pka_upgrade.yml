@@ -63,7 +63,7 @@
     coefficient: 0.22 # Box Change - 1.5 > 0.22 - Modkit Coefficient Rework; Changed from multiplier to flat addition
 # Start harmony change - deltav PKA port
   - type: GunUpgradeCost # DeltaV
-    cost: 25
+    cost: 15 # Box Change - 25 > 15 - range is weakest upgrade
 # End harmony change
 
 - type: entity
