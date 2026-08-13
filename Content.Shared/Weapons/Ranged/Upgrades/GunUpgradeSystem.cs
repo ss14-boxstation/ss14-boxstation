@@ -59,6 +59,14 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         {
             RaiseLocalEvent(upgrade, ref args);
         }
+
+    // Box Change Start - Modkit Overhaul
+        foreach (var (ammo, _) in args.Ammo)
+        {
+            if (TryComp<ProjectileComponent>(ammo, out var proj))
+                proj.Damage *= args.DamageMult;
+        }
+    // Box Change End
     }
 
     private void RelayRefresh(Entity<UpgradeableGunComponent> ent, ref GunRefreshModifiersEvent args)
@@ -152,11 +160,14 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
 
     private void OnDamageGunShot(Entity<GunUpgradeDamageComponent> ent, ref GunShotEvent args)
     {
-        foreach (var (ammo, _) in args.Ammo)
-        {
-            if (TryComp<ProjectileComponent>(ammo, out var proj))
-                proj.Damage += ent.Comp.Damage;
-        }
+    // Box Change Start - Modkit Overhaul
+        args.DamageMult = args.DamageMult += ent.Comp.DamageCoefficient;
+        // foreach (var (ammo, _) in args.Ammo)
+        // {
+        //     if (TryComp<ProjectileComponent>(ammo, out var proj))
+        //         proj.Damage += ent.Comp.Damage;
+        // }
+    // Box Change End
     }
 
     /// <summary>

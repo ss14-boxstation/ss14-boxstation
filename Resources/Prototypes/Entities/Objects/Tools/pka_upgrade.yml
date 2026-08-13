@@ -35,10 +35,12 @@
     #tags: [ GunUpgradeDamage ] # DeltaV - allow multiple
     examineText: gun-upgrade-examine-text-damage
   - type: GunUpgradeDamage
-    damage:
-      types:
-        Blunt: 10
-        #Structural: 15 # DeltaV - SS13 parity, 10 blunt per shot only
+  # Box Change Start - Modkit Overhaul - moved to coefficient defined in component
+    # damage:
+    #   types:
+    #     Blunt: 10
+    #     #Structural: 15 # DeltaV - SS13 parity, 10 blunt per shot only
+  # Box Change End
 
 - type: entity
   id: PKAUpgradeRange
