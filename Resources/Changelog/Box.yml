@@ -1575,3 +1575,12 @@
   id: 171
   time: '2026-08-12T22:20:58.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/261
+- author: Dizzy-Eevee
+  changes:
+  - message: Added traits that change your character's blood type to that of another
+      species. This does not affect medical gameplay; Avali still require ammonia
+      instead of saline etc.
+    type: Add
+  id: 172
+  time: '2026-08-13T03:32:34.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/259
