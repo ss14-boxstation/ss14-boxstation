@@ -60,13 +60,11 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
             RaiseLocalEvent(upgrade, ref args);
         }
 
-    // Box Change Start - Modkit Overhaul
         foreach (var (ammo, _) in args.Ammo)
         {
             if (TryComp<ProjectileComponent>(ammo, out var proj))
                 proj.Damage *= args.DamageMult;
         }
-    // Box Change End
     }
 
     private void RelayRefresh(Entity<UpgradeableGunComponent> ent, ref GunRefreshModifiersEvent args)
