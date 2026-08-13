@@ -13,6 +13,7 @@ using Robust.Shared.Utility;
 // Start Box Change: Playtime requirements
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Client.Player;
+using Content.Client.Message;
 // End Box Change
 
 namespace Content.Client._DV.Traits.UI;
@@ -52,7 +53,7 @@ public sealed partial class TraitEntry : PanelContainer
         MouseFilter = MouseFilterMode.Pass;
 
         TraitNameLabel.Text = Loc.GetString(trait.Name);
-        TraitDescriptionLabel.SetMessage(Loc.GetString(trait.Description));
+        TraitDescriptionLabel.SetMarkup(Loc.GetString(trait.Description)); // Box Change: [SetMessage -> SetMarkup] Allow trait descriptions to use markup for color etc
 
         // Format cost display
         var costPrefix = trait.Cost > 0 ? "+" : "";
