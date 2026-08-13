@@ -71,13 +71,11 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
 
     private void RelayRefresh(Entity<UpgradeableGunComponent> ent, ref GunRefreshModifiersEvent args)
     {
-        var fireRate = args.FireRate;
-        args.FireRate = 1;
         foreach (var upgrade in GetCurrentUpgrades(ent))
         {
             RaiseLocalEvent(upgrade, ref args);
         }
-        args.FireRate *= fireRate;
+        args.FireRate *= args.RateMult;
     }
     // Box Change End
 
@@ -138,7 +136,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
 
     private void OnFireRateRefresh(Entity<GunUpgradeFireRateComponent> ent, ref GunRefreshModifiersEvent args)
     {
-        args.FireRate += ent.Comp.Coefficient; // Box Change - * > + - Modkit Coefficient Overhaul
+        args.RateMult += ent.Comp.Coefficient; // Box Change - args.FireRate > args.RateMult - * > + - Modkit Coefficient Overhaul
     }
 
     // Box Change Start - Modkit Coefficient Rework

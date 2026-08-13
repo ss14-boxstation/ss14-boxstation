@@ -19,5 +19,6 @@ public record struct GunRefreshModifiersEvent(
     Angle MinAngle,
     int ShotsPerBurst,
     float FireRate,
-    float ProjectileSpeed
+    float ProjectileSpeed,
+    float RateMult = 1f // Box Change - Modkit Overhaul
 );
