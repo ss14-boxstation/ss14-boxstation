@@ -58,7 +58,7 @@
     #tags: [ GunUpgradeRange ] # DeltaV - allow multiple
     examineText: gun-upgrade-examine-text-range
   - type: GunUpgradeSpeed
-    coefficient: 1.4 # Harmony - 1.5 > 1.4 - Prevents clipping at max stacks
+    coefficient: 0.22 # Box Change - 1.5 > 0.22 - Modkit Coefficient Rework; Changed from multiplier to flat addition
 # Start harmony change - deltav PKA port
   - type: GunUpgradeCost # DeltaV
     cost: 25

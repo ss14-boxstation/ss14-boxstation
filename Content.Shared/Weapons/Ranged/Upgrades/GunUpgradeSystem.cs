@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Shared._DV.Weapons.Ranged.Upgrades; // DeltaV
 using Content.Shared._Box.Weapons.Ranged.Upgrades; // Box Change - Modkit Coefficient Rework
+using Robust.Shared.Spawners;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Examine;
@@ -38,7 +39,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         SubscribeLocalEvent<UpgradeableGunComponent, GunShotEvent>(RelayShot); // Box Change - RelayEvent > RelayShot - Modkit Coefficient Rework
 
         SubscribeLocalEvent<GunUpgradeFireRateComponent, GunRefreshModifiersEvent>(OnFireRateRefresh);
-        SubscribeLocalEvent<GunUpgradeSpeedComponent, GunRefreshModifiersEvent>(OnSpeedRefresh);
+        SubscribeLocalEvent<GunUpgradeSpeedComponent, GunShotEvent>(OnSpeedRefresh); // Box Change - GunRefreshModifiersEvent > GunShotEvent - Modkit Coefficient Rework
         SubscribeLocalEvent<GunUpgradeDamageComponent, GunShotEvent>(OnDamageGunShot);
     }
 
@@ -132,10 +133,22 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         args.FireRate += ent.Comp.Coefficient; // Box Change - * > + - Modkit Coefficient Overhaul
     }
 
+    // Box Change Start - Modkit Coefficient Rework
+    /*
     private void OnSpeedRefresh(Entity<GunUpgradeSpeedComponent> ent, ref GunRefreshModifiersEvent args)
     {
         args.ProjectileSpeed *= ent.Comp.Coefficient;
     }
+    */
+    private void OnSpeedRefresh(Entity<GunUpgradeSpeedComponent> ent, ref GunShotEvent args)
+    {
+        foreach (var (ammo, _) in args.Ammo)
+        {
+            if (TryComp<TimedDespawnComponent>(ammo, out var proj))
+                proj.Lifetime += ent.Comp.Coefficient;
+        }
+    }
+    // Box Change End
 
     private void OnDamageGunShot(Entity<GunUpgradeDamageComponent> ent, ref GunShotEvent args)
     {
