@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/11/2026 00:18:41
+  time: 08/14/2026 14:44:51
   entityCount: 16446
 maps:
 - 1
@@ -5050,6 +5050,8 @@ entities:
     - type: BecomesStation
       id: Jellyfish
     - type: ExplosionAirtightGrid
+    - type: TileHistory
+      chunkHistory: {}
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 11871
@@ -79636,6 +79638,14 @@ entities:
     - type: Transform
       pos: -17.236504,28.646055
       parent: 2
+- proto: ImpCoffeeMachine
+  entities:
+  - uid: 395
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 6.5,-13.5
+      parent: 2
 - proto: InflatableDoor
   entities:
   - uid: 3842
@@ -86126,11 +86136,6 @@ entities:
       parent: 2
 - proto: RandomDrinkGlass
   entities:
-  - uid: 12290
-    components:
-    - type: Transform
-      pos: 6.5,-13.5
-      parent: 2
   - uid: 12291
     components:
     - type: Transform
@@ -92048,12 +92053,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,-14.5
       parent: 2
-  - uid: 395
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,-14.5
-      parent: 2
   - uid: 407
     components:
     - type: Transform
@@ -95904,6 +95903,13 @@ entities:
     - type: Transform
       pos: 30.5,-28.5
       parent: 2
+- proto: VendingMachineSalvDrobe
+  entities:
+  - uid: 12290
+    components:
+    - type: Transform
+      pos: 35.5,-29.5
+      parent: 2
 - proto: VendingMachineSciDrobe
   entities:
   - uid: 993
@@ -95961,7 +95967,7 @@ entities:
   - uid: 3037
     components:
     - type: Transform
-      pos: 35.5,-29.5
+      pos: 38.5,-29.5
       parent: 2
   - uid: 4510
     components:

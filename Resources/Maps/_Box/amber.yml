@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/11/2026 00:03:39
-  entityCount: 24986
+  time: 08/14/2026 14:24:23
+  entityCount: 24982
 maps:
 - 1
 grids:
@@ -16159,6 +16159,8 @@ entities:
     - type: NavMap
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: TileHistory
+      chunkHistory: {}
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 10313
@@ -78175,18 +78177,6 @@ entities:
     - type: Transform
       pos: -26.690321,-56.14434
       parent: 2
-- proto: DrinkGlass
-  entities:
-  - uid: 3700
-    components:
-    - type: Transform
-      pos: -4.404274,-44.40526
-      parent: 2
-  - uid: 3704
-    components:
-    - type: Transform
-      pos: -4.195836,-44.207207
-      parent: 2
 - proto: DrinkGoldenCup
   entities:
   - uid: 4738
@@ -78376,11 +78366,6 @@ entities:
       parent: 2
 - proto: DrinkShaker
   entities:
-  - uid: 3699
-    components:
-    - type: Transform
-      pos: -4.6439753,-44.21763
-      parent: 2
   - uid: 7371
     components:
     - type: Transform
@@ -80541,18 +80526,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FireExtinguisher
-  entities:
-  - uid: 868
-    components:
-    - type: Transform
-      pos: 11.606097,24.11854
-      parent: 2
-  - uid: 4820
-    components:
-    - type: Transform
-      pos: 11.376817,23.764128
-      parent: 2
 - proto: FirelockEdge
   entities:
   - uid: 2516
@@ -116828,6 +116801,13 @@ entities:
     - type: Transform
       pos: 10.56266,-14.37939
       parent: 2
+- proto: ImpCoffeeMachine
+  entities:
+  - uid: 868
+    components:
+    - type: Transform
+      pos: -4.5,-44.5
+      parent: 2
 - proto: InflatableWall
   entities:
   - uid: 24293
@@ -142520,11 +142500,6 @@ entities:
     - type: Transform
       pos: 22.5,-30.5
       parent: 2
-  - uid: 4461
-    components:
-    - type: Transform
-      pos: 11.5,23.5
-      parent: 2
   - uid: 4500
     components:
     - type: Transform
@@ -145905,6 +145880,13 @@ entities:
     components:
     - type: Transform
       pos: 14.5,28.5
+      parent: 2
+- proto: VendingMachineSalvDrobe
+  entities:
+  - uid: 3699
+    components:
+    - type: Transform
+      pos: 11.5,23.5
       parent: 2
 - proto: VendingMachineSciDrobe
   entities:

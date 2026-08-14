@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/11/2026 12:30:36
-  entityCount: 21619
+  time: 08/14/2026 14:40:54
+  entityCount: 21616
 maps:
 - 1
 grids:
@@ -48605,10 +48605,10 @@ entities:
     - type: Transform
       pos: 10.5,28.5
       parent: 2
-  - uid: 7867
+  - uid: 15619
     components:
     - type: Transform
-      pos: -32.5,-43.5
+      pos: -31.5,-47.5
       parent: 2
 - proto: ComputerResearchAndDevelopment
   entities:
@@ -48649,6 +48649,9 @@ entities:
     - type: Transform
       pos: -30.5,-36.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 7874
@@ -57537,12 +57540,12 @@ entities:
   - uid: 9363
     components:
     - type: Transform
-      pos: -0.5777317,3.7993228
+      pos: -0.6967156,1.9125564
       parent: 2
   - uid: 9364
     components:
     - type: Transform
-      pos: -0.30689836,3.663812
+      pos: -0.3842156,1.6625564
       parent: 2
 - proto: DrinkFlask
   entities:
@@ -57633,6 +57636,11 @@ entities:
     - type: Transform
       pos: 32.24032,10.7489195
       parent: 2
+  - uid: 18857
+    components:
+    - type: Transform
+      pos: -0.29002833,2.999037
+      parent: 2
 - proto: DrinkMugGreen
   entities:
   - uid: 9381
@@ -57675,6 +57683,11 @@ entities:
     components:
     - type: Transform
       pos: 45.241116,3.9145858
+      parent: 2
+  - uid: 18400
+    components:
+    - type: Transform
+      pos: -0.6546116,3.124037
       parent: 2
 - proto: DrinkMugRainbow
   entities:
@@ -57740,13 +57753,6 @@ entities:
     components:
     - type: Transform
       pos: -25.227322,-39.14312
-      parent: 2
-- proto: DrinkSingulo
-  entities:
-  - uid: 9397
-    components:
-    - type: Transform
-      pos: -0.47375846,1.6004695
       parent: 2
 - proto: DrinkSodaWaterBottleFull
   entities:
@@ -60293,18 +60299,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FireExtinguisher
-  entities:
-  - uid: 9692
-    components:
-    - type: Transform
-      pos: -32.609196,-41.10818
-      parent: 2
-  - uid: 9693
-    components:
-    - type: Transform
-      pos: -32.317528,-41.379204
-      parent: 2
 - proto: Firelock
   entities:
   - uid: 9694
@@ -96552,16 +96546,6 @@ entities:
     - type: Transform
       pos: -15.5,-20.5
       parent: 2
-  - uid: 14271
-    components:
-    - type: Transform
-      pos: -0.5,-24.5
-      parent: 2
-  - uid: 14272
-    components:
-    - type: Transform
-      pos: 0.5,-24.5
-      parent: 2
   - uid: 14273
     components:
     - type: Transform
@@ -101900,6 +101884,13 @@ entities:
     - type: Transform
       pos: -55.946415,-0.6137432
       parent: 2
+- proto: ImpCoffeeMachine
+  entities:
+  - uid: 9397
+    components:
+    - type: Transform
+      pos: -0.5,3.5
+      parent: 2
 - proto: InflatableDoorStack1
   entities:
   - uid: 15262
@@ -104842,11 +104833,6 @@ entities:
     - type: Transform
       pos: -5.3680906,-23.380053
       parent: 2
-  - uid: 15619
-    components:
-    - type: Transform
-      pos: -32.291718,-41.02023
-      parent: 2
   - uid: 15620
     components:
     - type: Transform
@@ -105848,7 +105834,7 @@ entities:
   - uid: 15752
     components:
     - type: Transform
-      pos: -31.45729,-47.54819
+      pos: -28.542007,-47.524124
       parent: 2
   - uid: 15753
     components:
@@ -107876,6 +107862,11 @@ entities:
       parent: 2
 - proto: PowerCellRecharger
   entities:
+  - uid: 14272
+    components:
+    - type: Transform
+      pos: -32.5,-41.5
+      parent: 2
   - uid: 16036
     components:
     - type: Transform
@@ -107929,11 +107920,6 @@ entities:
     components:
     - type: Transform
       pos: -31.5,-26.5
-      parent: 2
-  - uid: 16046
-    components:
-    - type: Transform
-      pos: -32.5,-40.5
       parent: 2
   - uid: 16047
     components:
@@ -111776,6 +111762,11 @@ entities:
     components:
     - type: Transform
       pos: -17.5,23.5
+      parent: 2
+  - uid: 18399
+    components:
+    - type: Transform
+      pos: 0.5,-24.5
       parent: 2
 - proto: RandomSoap
   entities:
@@ -122834,6 +122825,11 @@ entities:
       parent: 2
 - proto: Table
   entities:
+  - uid: 14271
+    components:
+    - type: Transform
+      pos: -32.5,-41.5
+      parent: 2
   - uid: 18350
     components:
     - type: Transform
@@ -123078,16 +123074,6 @@ entities:
     components:
     - type: Transform
       pos: -18.5,-37.5
-      parent: 2
-  - uid: 18399
-    components:
-    - type: Transform
-      pos: -32.5,-40.5
-      parent: 2
-  - uid: 18400
-    components:
-    - type: Transform
-      pos: -32.5,-41.5
       parent: 2
   - uid: 18401
     components:
@@ -125887,6 +125873,13 @@ entities:
     - type: Transform
       pos: -32.5,-36.5
       parent: 2
+- proto: VendingMachineSalvDrobe
+  entities:
+  - uid: 16046
+    components:
+    - type: Transform
+      pos: -32.5,-40.5
+      parent: 2
 - proto: VendingMachineSciDrobe
   entities:
   - uid: 18842
@@ -125969,6 +125962,11 @@ entities:
       parent: 2
 - proto: VendingMachineTankDispenserEVA
   entities:
+  - uid: 7867
+    components:
+    - type: Transform
+      pos: -32.5,-43.5
+      parent: 2
   - uid: 18854
     components:
     - type: Transform
@@ -125983,11 +125981,6 @@ entities:
     components:
     - type: Transform
       pos: 33.5,-7.5
-      parent: 2
-  - uid: 18857
-    components:
-    - type: Transform
-      pos: -31.5,-41.5
       parent: 2
   - uid: 18858
     components:
@@ -133206,6 +133199,16 @@ entities:
       parent: 2
 - proto: WallSolid
   entities:
+  - uid: 9692
+    components:
+    - type: Transform
+      pos: 0.5,-24.5
+      parent: 2
+  - uid: 9693
+    components:
+    - type: Transform
+      pos: -0.5,-24.5
+      parent: 2
   - uid: 20297
     components:
     - type: Transform
@@ -138579,13 +138582,6 @@ entities:
     - type: DeviceList
       devices:
       - 21350
-- proto: WeaponGrapplingGun
-  entities:
-  - uid: 21352
-    components:
-    - type: Transform
-      pos: -32.463364,-40.868435
-      parent: 2
 - proto: WeaponPistolMk58
   entities:
   - uid: 15135
@@ -139340,16 +139336,6 @@ entities:
     components:
     - type: Transform
       pos: 13.5,7.5
-      parent: 2
-  - uid: 21474
-    components:
-    - type: Transform
-      pos: -0.5,-24.5
-      parent: 2
-  - uid: 21475
-    components:
-    - type: Transform
-      pos: 0.5,-24.5
       parent: 2
   - uid: 21476
     components:
