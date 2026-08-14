@@ -19,7 +19,7 @@ using Content.Shared.UserInterface;
 using Content.Shared.Zombies;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-// Start Box Change: Additions for sspeech/emote checks
+// Start Box Change: Additions for speech/emote checks
 using Content.Shared.Speech.Muting;
 using Content.Shared.Abilities.Mime;
 // End Box Change
