@@ -12,6 +12,8 @@ Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://githu
 
 [Boxstation Wiki](https://wiki.boxstation.me/) | [Website (SS14)](https://spacestation14.io/) | [Steam (SS14)](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download (SS14)](https://spacestation14.io/about/nightlies/)
 
+</div>
+
 ## Documentation/Wiki
 
 SS14 [docs site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.
