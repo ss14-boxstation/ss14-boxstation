@@ -2,7 +2,7 @@
 <img alt="BoxStation" src="https://raw.githubusercontent.com/superjeepboy/ss14-boxstation/refs/heads/master/Resources/Textures/Logo/logo.png">
 </div>
 
-BoxStation is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), pulling content directly from [Harmony](https://github.com/ss14-harmony/ss14-harmony).
+BoxStation is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14).
 
 Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
 
@@ -10,9 +10,7 @@ Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://githu
 
 <div class="header" align="center">
 
-[Harmony Wiki](http://wiki.harmony14.com/) | [Website (SS14)](https://spacestation14.io/) | [Steam (SS14)](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download (SS14)](https://spacestation14.io/about/nightlies/) | [Builds (Harmony)](http://cdn.harmony14.com/fork/harmony/)
-
-</div>
+[Boxstation Wiki](https://wiki.boxstation.me/) | [Website (SS14)](https://spacestation14.io/) | [Steam (SS14)](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download (SS14)](https://spacestation14.io/about/nightlies/) | [Replays (Boxstation)](https://boxstation.me/replays/)
 
 ## Documentation/Wiki
 
