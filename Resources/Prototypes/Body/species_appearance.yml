@@ -70,9 +70,14 @@
       state: body-overlay-2
       visible: false
 
-    # Delta V - Harpy Wings
+    # Start Box Change: Harpy stuff
     - map: [ "enum.HumanoidVisualLayers.RArmExtension" ]
     - map: [ "enum.HumanoidVisualLayers.LArmExtension" ]
+    - map: [ enum.InstrumentVisuals.Layer ]
+      sprite: _DV/Effects/harpysinger.rsi
+      state: singing_music_notes
+      visible: false
+    # End Box Change
 
 - type: entity
   id: BaseSpeciesAppearance
