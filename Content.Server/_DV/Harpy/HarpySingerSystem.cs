@@ -19,10 +19,6 @@ using Content.Shared.UserInterface;
 using Content.Shared.Zombies;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-// Start Box Change: Additions for sspeech/emote checks
-using Content.Shared.Speech.Muting;
-using Content.Shared.Abilities.Mime;
-// End Box Change
 
 namespace Content.Server._DV.Harpy;
 
@@ -41,7 +37,7 @@ public sealed class HarpySingerSystem : SharedHarpySingerSystem
         SubscribeLocalEvent<InstrumentComponent, MobStateChangedEvent>(OnMobStateChangedEvent);
         SubscribeLocalEvent<GotEquippedEvent>(OnEquip);
         SubscribeLocalEvent<EntityZombifiedEvent>(OnZombified);
-        //SubscribeLocalEvent<InstrumentComponent, KnockedDownEvent>(OnKnockedDown); // Box Change: Disabled, see below
+        SubscribeLocalEvent<InstrumentComponent, KnockedDownEvent>(OnKnockedDown);
         SubscribeLocalEvent<InstrumentComponent, StunnedEvent>(OnStunned);
         SubscribeLocalEvent<InstrumentComponent, SleepStateChangedEvent>(OnSleep);
         SubscribeLocalEvent<InstrumentComponent, StatusEffectAddedEvent>(OnStatusEffect);
@@ -75,13 +71,10 @@ public sealed class HarpySingerSystem : SharedHarpySingerSystem
         CloseMidiUi(args.Target);
     }
 
-    // Box Change: Almost every instance of forced knockdown also comes with stun. All this really does is cause harpies to close their MIDI interface when voluntarily going prone.
-    // The only exception I can even find (something that knocks you down without stunning you) is slipping into the bingle pit.
-    //private void OnKnockedDown(EntityUid uid, InstrumentComponent component, ref KnockedDownEvent args)
-    //{
-    //    CloseMidiUi(uid);
-    //}
-    // End Box Change
+    private void OnKnockedDown(EntityUid uid, InstrumentComponent component, ref KnockedDownEvent args)
+    {
+        CloseMidiUi(uid);
+    }
 
     private void OnStunned(EntityUid uid, InstrumentComponent component, ref StunnedEvent args)
     {
@@ -141,8 +134,6 @@ public sealed class HarpySingerSystem : SharedHarpySingerSystem
         }
     }
 
-    // Box TODO: As it stands, this cancels the UI openinng in a kinda scuffed way that leaves the singing visuals stuck on your character permanently.
-    //           We should probably find a way to remove the action completely instead.
     /// <summary>
     /// Prevent the player from opening the MIDI UI under some circumstances.
     /// </summary>
@@ -150,10 +141,7 @@ public sealed class HarpySingerSystem : SharedHarpySingerSystem
     {
         // CanSpeak covers all reasons you can't talk, including being incapacitated
         // (crit/dead), asleep, or for any reason mute inclding glimmer or a mime's vow.
-        // Start Box Change: Check for Muted/MimePowers components instead of speech blocker. Cover other instances with CanEmote instead.
-        var canNotSpeak = HasComp<MutedComponent>(uid) || HasComp<MimePowersComponent>(uid);
-        var canNotEmote = !_blocker.CanEmote(uid);
-        // End Box Change
+        var canNotSpeak = !_blocker.CanSpeak(uid);
         var zombified = TryComp<ZombieComponent>(uid, out var _);
         var muzzled = _inventorySystem.TryGetSlotEntity(uid, "mask", out var maskUid) &&
             TryComp<AddAccentClothingComponent>(maskUid, out var accent) &&
@@ -161,7 +149,7 @@ public sealed class HarpySingerSystem : SharedHarpySingerSystem
 
         // Set this event as handled when the singer should be incapable of singing in order
         // to stop the ActivatableUISystem event from opening the MIDI UI.
-        args.Handled = canNotSpeak || muzzled || zombified || canNotEmote; // Box Change: Add canNotEmote
+        args.Handled = canNotSpeak || muzzled || zombified;
 
         // Tell the user that they can not sing.
         if (args.Handled)
