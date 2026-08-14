@@ -4,25 +4,25 @@
   onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 1  # DeltaV - Fixes hair not displaying
+      limit: 1
       onlyGroupWhitelisted: false
       required: false
     enum.HumanoidVisualLayers.FacialHair:
-      limit: 1  # DeltaV - Fixes hair not displaying
+      limit: 1
       onlyGroupWhitelisted: false
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadBase:
-      limit: 1
-      required: true
-      default: [MobIPCHeadDefault]
+      limit: 0
+      required: false
     enum.HumanoidVisualLayers.Head:
       limit: 1
-      required: false
+      required: true
+      default: [MobIPCMonitorDefault]
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 3
       required: false
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
@@ -47,11 +47,11 @@
       default: [MobIPCRArmDefault]
     enum.HumanoidVisualLayers.LHand:
       limit: 1
-      required: true
+      required: false
       default: [MobIPCLHandDefault]
     enum.HumanoidVisualLayers.RHand:
       limit: 1
-      required: true
+      required: false
       default: [MobIPCRHandDefault]
     enum.HumanoidVisualLayers.LLeg:
       limit: 1
@@ -69,7 +69,7 @@
       limit: 1
       required: true
       default: [MobIPCRFootDefault]
-    enum.HumanoidVisualLayers.Snout: # DeltaV: Add ability to use more marking types
+    enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
 
@@ -338,7 +338,8 @@
   components:
   - type: VisualOrgan
     data:
-      sprite: _DV/Mobs/Species/IPC/parts.rsi
+      sprite: null
+      state: null
   - type: VisualOrganMarkings
     markingData:
       group: IPC
@@ -360,24 +361,18 @@
     metabolizerTypes: [ Synthetic, IPC ]
 
 - type: entity
-  parent: [OrganBaseTorso, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseTorso ]
   id: OrganIPCTorso
   components:
   - type: Sprite
     state: torso_m
-  - type: VisualOrgan
-    data:
-      state: torso_m
 
 - type: entity
-  parent: [ OrganBaseHead, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseHead ]
   id: OrganIPCHead
   components:
   - type: Sprite
     state: head_m
-  - type: VisualOrgan
-    data:
-      state: head_m
   - type: VisualOrganMarkings
     hideableLayers: # Unless we can get equipment displacement based on what head/snout you pick as an IPC
     - enum.HumanoidVisualLayers.Snout
@@ -385,35 +380,35 @@
     - enum.HumanoidVisualLayers.HeadTop
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseArmLeft ]
   id: OrganIPCArmLeft
 
 - type: entity
-  parent: [OrganBaseArmRight, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseArmRight ]
   id: OrganIPCArmRight
 
 - type: entity
-  parent: [OrganBaseHandLeft, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseHandLeft ]
   id: OrganIPCHandLeft
 
 - type: entity
-  parent: [OrganBaseHandRight, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseHandRight ]
   id: OrganIPCHandRight
 
 - type: entity
-  parent: [OrganBaseLegLeft, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseLegLeft ]
   id: OrganIPCLegLeft
 
 - type: entity
-  parent: [OrganBaseLegRight, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseLegRight ]
   id: OrganIPCLegRight
 
 - type: entity
-  parent: [OrganBaseFootLeft, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseFootLeft ]
   id: OrganIPCFootLeft
 
 - type: entity
-  parent: [OrganBaseFootRight, OrganIPCExternal]
+  parent: [ OrganIPCExternal, OrganBaseFootRight ]
   id: OrganIPCFootRight
 
 - type: entity
