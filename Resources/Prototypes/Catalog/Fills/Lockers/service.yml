@@ -20,7 +20,6 @@
     - id: DrinkBeerBottleFull
       amount: !type:BinomialNumberSelector
         trials: 3
-    - id: SpacepressoFlatpack # Box Change: Spacepresso flatpack for bartender. TODO: Map these and remove the flatpack.
     - !type:AllSelector
       rolls: 2
       children:
