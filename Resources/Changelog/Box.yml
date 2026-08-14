@@ -1642,3 +1642,14 @@
   id: 178
   time: '2026-08-14T22:42:13.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/270
+- author: Dizzy-Eevee
+  changes:
+  - message: The bartender's locker no longer contains a spacepresso flatpack (a spacepresso
+      machine is now mapped on every map in rotation).
+    type: Remove
+  - message: The CargoDrobe no longer stocks the mining winter coat (they can now
+      be found in the SalvDrobe, instead).
+    type: Remove
+  id: 179
+  time: '2026-08-14T22:48:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/272
