@@ -1591,3 +1591,10 @@
   id: 173
   time: '2026-08-14T02:43:26.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/265
+- author: Dizzy-Eevee
+  changes:
+  - message: Hands will no longer sometimes display in the wrong order.
+    type: Fix
+  id: 174
+  time: '2026-08-14T02:56:50.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/264
