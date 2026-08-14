@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/11/2026 00:16:46
-  entityCount: 23233
+  time: 08/14/2026 14:31:01
+  entityCount: 23234
 maps:
 - 1
 grids:
@@ -19846,6 +19846,8 @@ entities:
     - type: NavMap
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: TileHistory
+      chunkHistory: {}
   - uid: 5
     mapInit: true
     paused: true
@@ -22875,7 +22877,7 @@ entities:
       pos: -80.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -141261.94
+      secondsUntilStateChange: -141482.34
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -63498,7 +63500,7 @@ entities:
   - uid: 8068
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
+      rot: 1.5707963267948966 rad
       pos: -38.487392,-10.457336
       parent: 2
   - uid: 8069
@@ -78174,10 +78176,11 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 10316
+  - uid: 23234
     components:
     - type: Transform
-      pos: -31.5,35.5
+      rot: 3.141592653589793 rad
+      pos: -32.5,35.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -119047,6 +119050,14 @@ entities:
     - type: Transform
       pos: -79.30174,40.6932
       parent: 2
+- proto: ImpCoffeeMachine
+  entities:
+  - uid: 16356
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -31.5,35.5
+      parent: 2
 - proto: InflatableDoor
   entities:
   - uid: 15875
@@ -119958,11 +119969,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -50.479828,-1.1178861
-      parent: 2
-  - uid: 16006
-    components:
-    - type: Transform
-      pos: -38.52308,-9.139799
       parent: 2
 - proto: LampBanana
   entities:
@@ -122490,15 +122496,16 @@ entities:
       parent: 2
 - proto: OreBox
   entities:
-  - uid: 16356
-    components:
-    - type: Transform
-      pos: -37.5,-12.5
-      parent: 2
   - uid: 16357
     components:
     - type: Transform
       pos: -49.5,-15.5
+      parent: 2
+  - uid: 18799
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -38.5,-9.5
       parent: 2
 - proto: OreProcessor
   entities:
@@ -124729,7 +124736,7 @@ entities:
   - uid: 16695
     components:
     - type: Transform
-      pos: -37.797993,-9.327299
+      pos: -37.311024,-9.150168
       parent: 2
   - uid: 16696
     components:
@@ -137223,12 +137230,6 @@ entities:
       parent: 2
 - proto: Sink
   entities:
-  - uid: 18799
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -31.5,35.5
-      parent: 2
   - uid: 18800
     components:
     - type: Transform
@@ -137286,6 +137287,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 6.5,25.5
+      parent: 2
+  - uid: 19772
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -32.5,35.5
       parent: 2
 - proto: SinkStemless
   entities:
@@ -142801,6 +142808,12 @@ entities:
       parent: 2
 - proto: TableWood
   entities:
+  - uid: 10316
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -31.5,35.5
+      parent: 2
   - uid: 19671
     components:
     - type: Transform
@@ -143328,11 +143341,6 @@ entities:
     components:
     - type: Transform
       pos: -8.5,56.5
-      parent: 2
-  - uid: 19772
-    components:
-    - type: Transform
-      pos: -38.5,-9.5
       parent: 2
   - uid: 19773
     components:
@@ -144587,6 +144595,13 @@ entities:
     components:
     - type: Transform
       pos: -37.5,-11.5
+      parent: 2
+- proto: VendingMachineSalvDrobe
+  entities:
+  - uid: 16006
+    components:
+    - type: Transform
+      pos: -37.5,-12.5
       parent: 2
 - proto: VendingMachineSciDrobe
   entities:

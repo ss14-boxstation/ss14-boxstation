@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/11/2026 01:46:16
-  entityCount: 16104
+  time: 08/14/2026 14:49:40
+  entityCount: 16101
 maps:
 - 1
 grids:
@@ -4623,6 +4623,8 @@ entities:
     - type: NavMap
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: TileHistory
+      chunkHistory: {}
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 3
@@ -10520,11 +10522,6 @@ entities:
     - type: Transform
       pos: 29.61573,-5.4393315
       parent: 2
-  - uid: 669
-    components:
-    - type: Transform
-      pos: 23.03569,17.459896
-      parent: 2
   - uid: 670
     components:
     - type: Transform
@@ -14745,11 +14742,6 @@ entities:
       parent: 2
 - proto: BoxFlare
   entities:
-  - uid: 1479
-    components:
-    - type: Transform
-      pos: 22.50444,17.647528
-      parent: 2
   - uid: 1480
     components:
     - type: Transform
@@ -39953,6 +39945,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 22.5,16.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
 - proto: ComputerSalvageJobBoard
   entities:
   - uid: 6326
@@ -75234,11 +75229,6 @@ entities:
     - type: Transform
       pos: -19.59618,17.55434
       parent: 2
-  - uid: 11248
-    components:
-    - type: Transform
-      pos: 23.53569,17.595407
-      parent: 2
 - proto: HandheldHealthAnalyzer
   entities:
   - uid: 11249
@@ -75995,6 +75985,13 @@ entities:
     - type: Transform
       pos: -16.4407,10.560499
       parent: 2
+- proto: ImpCoffeeMachine
+  entities:
+  - uid: 11248
+    components:
+    - type: Transform
+      pos: 1.5,9.5
+      parent: 2
 - proto: InflatableDoorStack
   entities:
   - uid: 11364
@@ -76673,11 +76670,6 @@ entities:
       parent: 2
 - proto: Lighter
   entities:
-  - uid: 11443
-    components:
-    - type: Transform
-      pos: 1.2657695,9.574495
-      parent: 2
   - uid: 11444
     components:
     - type: Transform
@@ -79817,6 +79809,11 @@ entities:
       parent: 2
 - proto: PowerCellRecharger
   entities:
+  - uid: 669
+    components:
+    - type: Transform
+      pos: 22.5,17.5
+      parent: 2
   - uid: 11878
     components:
     - type: Transform
@@ -89321,12 +89318,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,5.5
       parent: 2
-  - uid: 13442
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 0.5,9.5
-      parent: 2
   - uid: 13443
     components:
     - type: Transform
@@ -90863,6 +90854,11 @@ entities:
       parent: 2
 - proto: Table
   entities:
+  - uid: 1479
+    components:
+    - type: Transform
+      pos: 22.5,17.5
+      parent: 2
   - uid: 13604
     components:
     - type: Transform
@@ -91063,11 +91059,6 @@ entities:
     - type: Transform
       pos: -39.5,10.5
       parent: 2
-  - uid: 13644
-    components:
-    - type: Transform
-      pos: 23.5,17.5
-      parent: 2
   - uid: 13645
     components:
     - type: Transform
@@ -91167,11 +91158,6 @@ entities:
     components:
     - type: Transform
       pos: -22.5,28.5
-      parent: 2
-  - uid: 13665
-    components:
-    - type: Transform
-      pos: 22.5,17.5
       parent: 2
   - uid: 13666
     components:
@@ -93357,6 +93343,13 @@ entities:
     components:
     - type: Transform
       pos: 24.5,17.5
+      parent: 2
+- proto: VendingMachineSalvDrobe
+  entities:
+  - uid: 11443
+    components:
+    - type: Transform
+      pos: 23.5,17.5
       parent: 2
 - proto: VendingMachineSciDrobe
   entities:
