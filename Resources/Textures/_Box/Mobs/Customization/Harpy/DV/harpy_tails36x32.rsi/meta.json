@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Finch by @stillxicarus (discord?). Whitescaled by Dizzy-Eevee (github)",
+    "size": {
+        "x": 36,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "whitescale_finch_tail",
+            "directions": 4
+        }
+    ]
+}

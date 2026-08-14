@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Phoenix and Rooster by leonardo-dabepis (github). Whitescaled by Dizzy-Eevee (github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "whitescale_phoenix_tail",
+            "directions": 4
+        },
+        {
+            "name": "whitescale_rooster_tail",
+            "directions": 4
+        }
+    ]
+}

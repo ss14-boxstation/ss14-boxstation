@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "By leonardo-dabepis (github). Whitescaled by Dizzy-Eevee (github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "whitescale_harpy_ears_default",
+            "directions": 4
+        }
+    ]
+}
