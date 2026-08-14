@@ -14,6 +14,11 @@
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
+  # Box Change Start - Actual Cat Ears on Humans
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 2
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.LArm:
       limit: 3 # Box - 1 -> 3
       required: false

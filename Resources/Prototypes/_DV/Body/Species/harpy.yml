@@ -16,9 +16,9 @@
       required: true
       default: [ HarpyTailPhoenix ]
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
-      required: true
-      default: [ HarpyEarsDefault ]
+      limit: 2 # Box Change - 1 > 2 - Allow harpies to have tufts and funny ears
+      required: false # Box Change - true > false
+      # default: [ HarpyEarsDefault ] # Box Change - comment out default
       onlyGroupWhitelisted: false # Box Change: Other ears for harpies
     enum.HumanoidVisualLayers.Chest:
       limit: 2
