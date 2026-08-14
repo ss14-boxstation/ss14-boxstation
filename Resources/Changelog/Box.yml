@@ -1598,3 +1598,19 @@
   id: 174
   time: '2026-08-14T02:56:50.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/264
+- author: BlueMoon059
+  changes:
+  - message: Adds an expresso machine to Amber, Aspid, Barratry, Dove, Jellyfish,
+      Mira, Omega, Packed, and Prime.
+    type: Add
+  - message: Adds a Saldrobe clothing vendor to Amber, Aspid, Barratry, Dove, Jellyfish,
+      Mira, Omega, Packed, and Prime.
+    type: Add
+  - message: Replaces joint med-sci doors on Packed between Medical and Science with
+      appropriate departmental maints doors.
+    type: Tweak
+  - message: Adjusts the airlock on Prime to be one wide so it is less prone to spacing.
+    type: Tweak
+  id: 175
+  time: '2026-08-14T18:16:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/266
