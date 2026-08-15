@@ -13,6 +13,11 @@
       required: true
       onlyGroupWhitelisted: true
       default: [ RodentiaTailDefault ]
+  # Box Change Start - Add Head Layer Limits
+    enum.HumanoidVisualLayers.Head:
+      limit: 6
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.LLeg:
       limit: 6
       required: false
@@ -38,6 +43,27 @@
     enum.HumanoidVisualLayers.Chest:
       limit: 2
       required: false
+  # Box Change Start - Hands Limits
+    enum.HumanoidVisualLayers.LHand:
+      limit: 3
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 3
+      required: false
+  # Box Change End
+  # Box Change Start - Feet Limits
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 3
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 3
+      required: false
+  # Box Change End
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 4
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance

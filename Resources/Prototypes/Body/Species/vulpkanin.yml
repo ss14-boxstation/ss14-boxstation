@@ -9,6 +9,11 @@
       limit: 1
       onlyGroupWhitelisted: true
       required: false
+  # Box Change Start - Add Chest Limits
+    enum.HumanoidVisualLayers.Chest:
+      limit: 4
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.Head:
       limit: 3
       required: false
@@ -28,10 +33,10 @@
       required: true
       default: [ VulpTailVulp ]
     enum.HumanoidVisualLayers.LArm:
-      limit: 2
+      limit: 3 # Box - 2 -> 3
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 2
+      limit: 3 # Box - 2 -> 3
       required: false
     enum.HumanoidVisualLayers.LHand:
       limit: 2
@@ -59,6 +64,11 @@
       limit: 1
       required: false
       nudityDefault: [ UndergarmentBottomBoxersVulpkanin ]
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 4
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance

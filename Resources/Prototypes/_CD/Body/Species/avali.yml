@@ -13,6 +13,11 @@
       limit: 1
       required: true
       default: [ AvaliTailBase ]
+  # Box Change Start - Add Head Layer Limits
+    enum.HumanoidVisualLayers.Head:
+      limit: 1
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
@@ -50,6 +55,11 @@
     enum.HumanoidVisualLayers.RFoot:
       limit: 1
       required: false
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 1
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance

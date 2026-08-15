@@ -16,7 +16,7 @@
     enum.HumanoidVisualLayers.Chest:
       limit: 4 # Box - 2 > 4
       required: false
-  # Box Change Start - Add Head Layer
+  # Box Change Start - Add Head Layer Limits
     enum.HumanoidVisualLayers.Head:
       limit: 6
       required: false
@@ -31,7 +31,7 @@
     enum.HumanoidVisualLayers.RArm:
       limit: 3 # Box - 1 > 3
       required: false
-  # Box Change Start - Hands
+  # Box Change Start - Hands Limits
     enum.HumanoidVisualLayers.LHand:
       limit: 3
       required: false
@@ -45,7 +45,7 @@
     enum.HumanoidVisualLayers.RLeg:
       limit: 3 # Box - 1 > 3
       required: false
-  # Box Change Start - Feet
+  # Box Change Start - Feet Limits
     enum.HumanoidVisualLayers.LFoot:
       limit: 3
       required: false
@@ -53,10 +53,10 @@
       limit: 3
       required: false
   # Box Change End
-  # Box Change Start - Eyes
+  # Box Change Start - Eyes Limits
     enum.HumanoidVisualLayers.Eyes:
       limit: 0 # The markings assigned to them do not work for arachnid
-      required: True
+      required: false
   # Box Change End
 
 - type: entity

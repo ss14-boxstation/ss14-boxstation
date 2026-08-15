@@ -15,11 +15,21 @@
       limit: 1
       required: true
       default: [ HarpyTailPhoenix ]
+  # Box Change Start - Add Head Layer Limits
+    enum.HumanoidVisualLayers.Head:
+      limit: 6
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.HeadTop:
       limit: 2 # Box Change - 1 > 2 - Allow harpies to have tufts and funny ears
       required: false # Box Change - true > false
       # default: [ HarpyEarsDefault ] # Box Change - comment out default
       onlyGroupWhitelisted: false # Box Change: Other ears for harpies
+  # Box Change Start - Add Snout Layer Limits
+    enum.HumanoidVisualLayers.Snout:
+      limit: 1
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.Chest:
       limit: 2
       required: true
@@ -38,6 +48,27 @@
       limit: 1
       required: true
       default: [ HarpyWingDefaultHuescale ]
+  # Box Change Start - Hands Limits
+    enum.HumanoidVisualLayers.LHand:
+      limit: 3
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 3
+      required: false
+  # Box Change End
+  # Box Change Start - Feet Limits
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 3
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 3
+      required: false
+  # Box Change End
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 4
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance

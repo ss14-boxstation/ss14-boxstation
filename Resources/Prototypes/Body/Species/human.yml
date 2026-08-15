@@ -9,9 +9,9 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.Chest:
-      limit: 4 # Box - 4 -> 2
+      limit: 4
       required: false
-  # Box Change Start - Add Head Layer
+  # Box Change Start - Add Head Layer Limits
     enum.HumanoidVisualLayers.Head:
       limit: 6
       required: false
@@ -54,10 +54,10 @@
     enum.HumanoidVisualLayers.Special:
       limit: 1 # Box - Cat Ears on Humans
       required: false
-  # Box Change Start - Eyes
+  # Box Change Start - Eyes Limits
     enum.HumanoidVisualLayers.Eyes:
-      limit: 3
-      required: True
+      limit: 4
+      required: false
   # Box Change End
 
 - type: entity
