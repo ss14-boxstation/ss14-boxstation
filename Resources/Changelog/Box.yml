@@ -1667,3 +1667,18 @@
   id: 181
   time: '2026-08-14T23:22:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/277
+- author: CollectionOfBones128
+  changes:
+  - message: Fixes IPC default heads and torsos always displaying
+    type: Fix
+  - message: Removes any instance of infinite markings
+    type: Remove
+  - message: Tweaks marking limits across the board. Some have gone up and some have
+      gone down, report any character-breaking changes in the discord.
+    type: Tweak
+  - message: Removes Arachnid's ability to select eye markings pending actual eye
+      markings for Arachnids
+    type: Remove
+  id: 182
+  time: '2026-08-15T17:12:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/278
