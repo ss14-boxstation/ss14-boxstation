@@ -357,6 +357,16 @@
     state: l_arm-1
   - sprite: _DV/Mobs/Species/Cybernetics/xion/xion_main.rsi
     state: l_arm-2
+    
+- type: marking
+  id: CyberLimbsMarkingXionRArm
+  bodyPart: RArm
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/Cybernetics/xion/xion_main.rsi
+    state: r_arm-1
+  - sprite: _DV/Mobs/Species/Cybernetics/xion/xion_main.rsi
+    state: r_arm-2
 
 - type: marking
   id: CyberLimbsMarkingZenghuLArm

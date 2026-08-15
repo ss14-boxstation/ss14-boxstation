@@ -1598,3 +1598,72 @@
   id: 174
   time: '2026-08-14T02:56:50.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/264
+- author: BlueMoon059
+  changes:
+  - message: Adds an expresso machine to Amber, Aspid, Barratry, Dove, Jellyfish,
+      Mira, Omega, Packed, and Prime.
+    type: Add
+  - message: Adds a Saldrobe clothing vendor to Amber, Aspid, Barratry, Dove, Jellyfish,
+      Mira, Omega, Packed, and Prime.
+    type: Add
+  - message: Replaces joint med-sci doors on Packed between Medical and Science with
+      appropriate departmental maints doors.
+    type: Tweak
+  - message: Adjusts the airlock on Prime to be one wide so it is less prone to spacing.
+    type: Tweak
+  id: 175
+  time: '2026-08-14T18:16:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/266
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies will now have a musical note visual effect when their MIDI interface
+      is open, as originally intended.
+    type: Fix
+  id: 176
+  time: '2026-08-14T22:41:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/268
+- author: Dizzy-Eevee
+  changes:
+  - message: Fixed some Vox tail accessories causing their tail to disappear.
+    type: Fix
+  id: 177
+  time: '2026-08-14T22:40:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/267
+- author: BlueMoon059
+  changes:
+  - message: Elkridge's bar has had a minor redesign to open it up, and provide more
+      space for interaction.
+    type: Tweak
+  - message: Elkridge's salvage bay has had some minor tweaks made to fix z-fighting
+      textures and help improve the walkability.
+    type: Tweak
+  - message: Elkridge now has an espresso machine in the bar and a salvdrobe in salvage.
+    type: Add
+  id: 178
+  time: '2026-08-14T22:42:13.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/270
+- author: Dizzy-Eevee
+  changes:
+  - message: The bartender's locker no longer contains a spacepresso flatpack (a spacepresso
+      machine is now mapped on every map in rotation).
+    type: Remove
+  - message: The CargoDrobe no longer stocks the mining winter coat (they can now
+      be found in the SalvDrobe, instead).
+    type: Remove
+  id: 179
+  time: '2026-08-14T22:48:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/272
+- author: Dizzy-Eevee
+  changes:
+  - message: Slimepeople can change their eye color again.
+    type: Fix
+  id: 180
+  time: '2026-08-14T22:56:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/273
+- author: Dizzy-Eevee
+  changes:
+  - message: Arachnids have had their unique "blink" emote sound restored.
+    type: Fix
+  id: 181
+  time: '2026-08-14T23:22:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/277

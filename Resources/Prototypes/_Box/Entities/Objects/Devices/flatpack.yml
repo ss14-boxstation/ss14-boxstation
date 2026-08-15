@@ -11,18 +11,3 @@
     sprite: _Box/Objects/Devices/flatpack.rsi
     layers:
     - state: borgcharger
-
-- type: entity
-  parent: BaseFlatpack
-  id: SpacepressoFlatpack
-  name: spacepresso flatpack
-  description: A flatpack used for constructing a spacepresso machine.
-  components:
-  - type: Flatpack
-    entity: ImpCoffeeMachine
-  - type: Sprite
-    layers:
-    - state: base
-    - state: overlay
-      color: "#9FED58"
-    - state: icon-default

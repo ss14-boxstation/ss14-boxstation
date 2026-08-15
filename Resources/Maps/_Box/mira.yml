@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/10/2026 23:53:14
+  time: 08/14/2026 14:46:57
   entityCount: 14323
 maps:
 - 1
@@ -5895,6 +5895,8 @@ entities:
       id: Mira
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: TileHistory
+      chunkHistory: {}
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 4175
@@ -7003,7 +7005,7 @@ entities:
       pos: 12.5,-9.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -800266.1
+      secondsUntilStateChange: -800375.5
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7655,7 +7657,7 @@ entities:
       pos: 17.5,-39.5
       parent: 3
     - type: Door
-      secondsUntilStateChange: -598384.56
+      secondsUntilStateChange: -598493.94
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -65518,6 +65520,14 @@ entities:
     - type: Transform
       pos: 48.5,-30.5
       parent: 3
+- proto: ImpCoffeeMachine
+  entities:
+  - uid: 11700
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,-70.5
+      parent: 3
 - proto: IngotGold
   entities:
   - uid: 1086
@@ -67293,11 +67303,11 @@ entities:
       parent: 3
 - proto: OreBox
   entities:
-  - uid: 12587
+  - uid: 11699
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -16.5,-61.5
+      rot: 3.141592653589793 rad
+      pos: -11.5,-60.5
       parent: 3
 - proto: OreProcessor
   entities:
@@ -77162,11 +77172,6 @@ entities:
     - type: Transform
       pos: 4.5,-69.5
       parent: 3
-  - uid: 12724
-    components:
-    - type: Transform
-      pos: 4.5,-70.5
-      parent: 3
   - uid: 12820
     components:
     - type: Transform
@@ -77538,12 +77543,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,-68.5
-      parent: 3
-  - uid: 3741
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 4.5,-70.5
       parent: 3
   - uid: 7337
     components:
@@ -81538,6 +81537,13 @@ entities:
     components:
     - type: Transform
       pos: -14.5,-56.5
+      parent: 3
+- proto: VendingMachineSalvDrobe
+  entities:
+  - uid: 3741
+    components:
+    - type: Transform
+      pos: -16.5,-61.5
       parent: 3
 - proto: VendingMachineSciDrobe
   entities:

@@ -644,7 +644,7 @@
 
 - type: marking
   id: FriendsOfAFeather
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -654,7 +654,7 @@
 
 - type: marking
   id: SpotsTail
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -662,7 +662,7 @@
 
 - type: marking
   id: TailBloom
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -674,7 +674,7 @@
 
 - type: marking
   id: VoxChains
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -696,7 +696,7 @@
 
 - type: marking
   id: VoxFootSpines
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -726,7 +726,7 @@
 
 - type: marking
   id: VoxTailBell
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -736,7 +736,7 @@
 
 - type: marking
   id: VoxTailLantern
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -744,7 +744,7 @@
 
 - type: marking
   id: VoxTailSmallPlume
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -752,7 +752,7 @@
 
 - type: marking
   id: VoxTailSpines
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
@@ -760,7 +760,7 @@
 
 - type: marking
   id: VoxSunAndMoon
-  bodyPart: Tail
+  bodyPart: TailOverlay # Box Change: Tail -> TailOverlay
   groupWhitelist: [ Vox ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Vox/tail.rsi
