@@ -16,7 +16,7 @@
       required: True
       default: [ AllulaloEyesDefault ]
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 2 # Box Change - 1 > 2
       required: false
     enum.HumanoidVisualLayers.UndergarmentTop:
       limit: 1

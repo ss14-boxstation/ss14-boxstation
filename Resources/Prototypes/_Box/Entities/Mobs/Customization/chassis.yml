@@ -5,7 +5,15 @@
 
 - type: marking
   id: MobIPCHeadDefault
-  bodyPart: Headbase
+  bodyPart: HeadBase
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: head_m
+
+- type: marking
+  id: MobIPCMonitorDefault
+  bodyPart: Head
   groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/IPC/parts.rsi
@@ -686,7 +694,7 @@
   sprites:
   - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: l_foot
- 
+
 
 - type: marking
   id: MobIPCRFootDefault

@@ -11,7 +11,7 @@
       onlyGroupWhitelisted: true
       required: false
     enum.HumanoidVisualLayers.Head:
-      limit: 2 # Imp: 4 -> 2
+      limit: 6 # Box Change - 4 > 6
       required: false
     # Imp start
     enum.HumanoidVisualLayers.HeadSide:
@@ -34,11 +34,11 @@
       required: false
       # Imp: default: [ VoxRArmScales ]
     enum.HumanoidVisualLayers.LHand:
-      limit: 1
+      limit: 2 # Box - 1 -> 2
       required: true
       # Imp: default: [ VoxLHandScales ]
     enum.HumanoidVisualLayers.RHand:
-      limit: 1
+      limit: 2 # Box - 1 -> 2
       required: true
       # Imp: default: [ VoxRHandScales ]
     enum.HumanoidVisualLayers.LLeg:
@@ -58,7 +58,7 @@
       required: true
       # Imp: default: [ VoxRFootScales ]
     enum.HumanoidVisualLayers.Chest:
-      limit: 2
+      limit: 4 # Box Change - 2 > 4
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
@@ -80,6 +80,11 @@
       limit: 1
       required: false
     # Imp end
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 4
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance
