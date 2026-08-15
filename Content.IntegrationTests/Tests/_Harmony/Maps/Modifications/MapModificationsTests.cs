@@ -1,7 +1,6 @@
 ﻿using System.Numerics;
 using Content.Server._Harmony.Maps.Modifications;
 using Content.Server._Harmony.Maps.Modifications.Systems;
-using Content.Server.Station.Components;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Maths;
@@ -91,8 +90,6 @@ public sealed class MapModificationsTests
                 Assert.That(transform.LocalRotation, Is.EqualTo(new Angle(double.DegreesToRadians(90))), "Rotation was not set correctly!");
             });
         });
-
-        await pair.CleanReturnAsync();
     }
 
     /// <summary>
@@ -128,8 +125,6 @@ public sealed class MapModificationsTests
 
             Assert.That(foundEntity, Is.Null, "Entity was not deleted!");
         });
-
-        await pair.CleanReturnAsync();
     }
 
     /// <summary>
@@ -183,7 +178,5 @@ public sealed class MapModificationsTests
                 Assert.That(transform.LocalPosition, Is.EqualTo(new Vector2(0.5f, 0)), "Position was not set correctly!");
             });
         });
-
-        await pair.CleanReturnAsync();
     }
 }
