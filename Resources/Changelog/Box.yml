@@ -1653,3 +1653,17 @@
   id: 179
   time: '2026-08-14T22:48:38.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/272
+- author: Dizzy-Eevee
+  changes:
+  - message: Slimepeople can change their eye color again.
+    type: Fix
+  id: 180
+  time: '2026-08-14T22:56:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/273
+- author: Dizzy-Eevee
+  changes:
+  - message: Arachnids have had their unique "blink" emote sound restored.
+    type: Fix
+  id: 181
+  time: '2026-08-14T23:22:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/277
