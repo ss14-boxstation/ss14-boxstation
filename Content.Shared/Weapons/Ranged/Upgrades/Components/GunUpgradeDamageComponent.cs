@@ -9,9 +9,18 @@ namespace Content.Shared.Weapons.Ranged.Upgrades.Components;
 [RegisterComponent, NetworkedComponent, Access(typeof(GunUpgradeSystem))]
 public sealed partial class GunUpgradeDamageComponent : Component
 {
+// Box Change Start - Move to coefficient
+    // /// <summary>
+    // /// Additional damage added onto the projectile's base damage.
+    // /// </summary>
+    // [DataField]
+    // public DamageSpecifier Damage = new();
+
     /// <summary>
-    /// Additional damage added onto the projectile's base damage.
+    /// Additional damage added onto the projectile.
+    /// Each modkit adds to the total coefficient.
     /// </summary>
     [DataField]
-    public DamageSpecifier Damage = new();
+    public float DamageCoefficient = 0.5f; // Could this be replaced with a coefficient per damage type?
+// Box Change End
 }
