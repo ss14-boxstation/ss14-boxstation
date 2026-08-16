@@ -1682,3 +1682,10 @@
   id: 182
   time: '2026-08-15T17:12:05.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/278
+- author: Dizzy-Eevee
+  changes:
+  - message: The snoring trait has been restored.
+    type: Fix
+  id: 183
+  time: '2026-08-16T02:45:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/279
