@@ -78,6 +78,9 @@
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: Item
     sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
+    size: Large
+    shape:
+    - 0,0,2,1
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: BasicEntityAmmoProvider
@@ -107,11 +110,14 @@
       map: ["enum.GunVisualLayers.Base"]
   - type: Item
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
-    size: Huge
+    size: Large
     shape:
-    - 0,0,5,1
+    - 0,0,3,1
   - type: Clothing
     sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
   - type: BasicEntityAmmoProvider
     proto: BulletKineticRifle
   - type: UpgradeableGunCost
