@@ -127,6 +127,19 @@
   - type: Speech
     speechVerb: Parrot # RMC did it right.
     speechSounds: MaleAvali
+    allowedEmotes: ['Hiss']
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 95 #tiny
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
