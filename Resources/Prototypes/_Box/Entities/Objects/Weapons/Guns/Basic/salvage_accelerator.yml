@@ -117,7 +117,7 @@
   - type: UpgradeableGunCost
     maxCost: 40
   - type: Gun
-    fireRate: 0.35
+    fireRate: 0.3
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
