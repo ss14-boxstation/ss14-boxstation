@@ -34,6 +34,7 @@
 - type: entity
   parent: BaseBulletKineticMining
   id: BulletKineticShuttle
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -53,6 +54,7 @@
 - type: entity
   parent: BaseBulletKineticMining
   id: BulletKineticPKA
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -64,6 +66,7 @@
 - type: entity
   parent: BaseBulletKinetic # The pistol cannot mine
   id: BulletKineticSidearm
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -86,6 +89,7 @@
 - type: entity
   parent: BulletKineticRevolver
   id: BulletKineticLuxury
+  categories: [ HideSpawnMenu ]
   components:
   - type: StaminaDamageOnCollide # Replace with slowdown shot if thats ever implemented - we just want the owner to be able to escape melee.
     damage: 18
@@ -94,6 +98,7 @@
 - type: entity
   parent: BaseBulletKineticMining
   id: BulletKineticRifle
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
@@ -107,6 +112,7 @@
 - type: entity
   parent: BulletKineticSidearm
   id: BulletKineticShotgun
+  categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
     proto: BulletKineticSidearm
