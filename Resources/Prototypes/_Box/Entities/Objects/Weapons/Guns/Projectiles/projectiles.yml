@@ -71,6 +71,19 @@
         Blunt: 10
         Structural: 15
 
+## QM's Pistol Ammo
+- type: entity
+  parent: BaseBulletKineticMining # Utility!
+  id: BulletKineticRevolver
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 10
+        Structural: 45
+  - type: StaminaDamageOnCollide # Replace with slowdown shot if thats ever implemented - we just want the owner to be able to escape melee.
+    damage: 30 # While this looks equal to a disabler, a disabler has a fire rate of 2.
+
 ## PKA Rifle Ammo
 - type: entity
   parent: BaseBulletKineticMining

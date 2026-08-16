@@ -34,6 +34,10 @@
     sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
   - type: Clothing
     sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticRevolver
+    capacity: 1
+    count: 1
 
 # Roundstart kinetic sidearm
 - type: entity
