@@ -133,7 +133,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
 
     private void OnFireRateRefresh(Entity<GunUpgradeFireRateComponent> ent, ref GunRefreshModifiersEvent args)
     {
-        args.ModkitRateMult += ent.Comp.Coefficient; // Box Change - args.FireRate > args.RateMult - * > + - Modkit Coefficient Overhaul
+        args.ModkitRateMult += ent.Comp.Coefficient; // Box Change - args.FireRate > args.ModkitRateMult - * > + - Modkit Coefficient Overhaul
     }
 
     // Box Change Start - Modkit Coefficient Rework
