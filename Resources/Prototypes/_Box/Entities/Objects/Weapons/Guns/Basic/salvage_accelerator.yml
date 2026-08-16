@@ -43,11 +43,11 @@
   description: Fires low-damage kinetic bolts at a short range.
   components:
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Battery/holoflare_pistol.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
   - type: Item
-    sprite: _NF/Objects/Weapons/Guns/Battery/holoflare_pistol.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
   - type: Clothing
-    sprite: _NF/Objects/Weapons/Guns/Battery/holoflare_pistol.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
   - type: UpgradeableGunCost
     maxCost: 200
   - type: RechargeBasicEntityAmmo
