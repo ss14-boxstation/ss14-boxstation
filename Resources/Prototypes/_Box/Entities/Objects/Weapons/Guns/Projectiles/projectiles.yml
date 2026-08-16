@@ -117,4 +117,4 @@
   - type: ProjectileSpread
     proto: BulletKineticSidearm
     count: 5
-    spread: 30
+    spread: 20

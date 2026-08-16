@@ -69,7 +69,7 @@
 # Wieldable Accelerators
 ## Shotgun
 - type: entity
-  parent: [ WeaponSalvageAcceleratorWieldedBase, SalvageAcceleratorUpgradeable ]
+  parent: [ WeaponSalvageAcceleratorWieldedBase ] # , SalvageAcceleratorUpgradeable ] # Scattershot weapons currently cannot take modkits
   id: WeaponSalvageAcceleratorShotgun
   name: experimental kinetic shotgun
   description: Fires a scattershot of low-damage kinetic bolts at short range.
@@ -85,8 +85,8 @@
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: BasicEntityAmmoProvider
     proto: BulletKineticShotgun
-  - type: UpgradeableGunCost
-    maxCost: 60
+  # - type: UpgradeableGunCost # Scattershot weapons currently cannot take modkits
+  #   maxCost: 60
   - type: Gun
     fireRate: 0.4
     selectedMode: SemiAuto
