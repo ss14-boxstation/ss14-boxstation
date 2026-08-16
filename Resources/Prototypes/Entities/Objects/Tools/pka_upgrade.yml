@@ -35,7 +35,7 @@
     #tags: [ GunUpgradeDamage ] # DeltaV - allow multiple
     examineText: gun-upgrade-examine-text-damage
   - type: GunUpgradeDamage
-  # Box Change Start - Modkit Overhaul - moved to coefficient defined in component
+  # Box Change Start - Modkit Overhaul - moved to coefficient defined in component - adds +50% damage per
     # damage:
     #   types:
     #     Blunt: 10
@@ -60,7 +60,7 @@
     #tags: [ GunUpgradeRange ] # DeltaV - allow multiple
     examineText: gun-upgrade-examine-text-range
   - type: GunUpgradeSpeed
-    coefficient: 0.22 # Box Change - 1.5 > 0.22 - Modkit Coefficient Rework; Changed from multiplier to flat addition
+    coefficient: 0.22 # Box Change - 1.5 > 0.22 - Modkit Coefficient Rework; Changed from multiplier to flat addition - 0.22s is +5.5 tiles
 # Start harmony change - deltav PKA port
   - type: GunUpgradeCost # DeltaV
     cost: 15 # Box Change - 25 > 15 - range is weakest upgrade
