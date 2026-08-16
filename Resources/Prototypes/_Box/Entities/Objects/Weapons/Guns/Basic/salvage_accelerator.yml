@@ -29,13 +29,13 @@
   description: A retrofitted Pirate Revolver that fires low-damage kinetic bolts at a short range. Its internals are too compact, so it can't take any modkits.
   components:
   - type: Sprite
-    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_luxury.rsi
   - type: Item
-    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_luxury.rsi
   - type: Clothing
-    sprite: _Harmony/Objects/Weapons/Guns/Kinetic/kinetic_pistol.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_luxury.rsi
   - type: BasicEntityAmmoProvider
-    proto: BulletKineticRevolver
+    proto: BulletKineticLuxury
     capacity: 1
     count: 1
 
