@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Shared._DV.Weapons.Ranged.Upgrades; // DeltaV
-using Content.Shared._Box.Weapons.Ranged.Upgrades; // Box Change - Modkit Coefficient Rework
 using Robust.Shared.Spawners; // Box Change - Modkit Coefficient Rework
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
@@ -63,7 +62,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         foreach (var (ammo, _) in args.Ammo)
         {
             if (TryComp<ProjectileComponent>(ammo, out var proj))
-                proj.Damage *= args.DamageMult;
+                proj.Damage *= args.ModkitDamageMult;
         }
     }
 
@@ -73,7 +72,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         {
             RaiseLocalEvent(upgrade, ref args);
         }
-        args.FireRate *= args.RateMult;
+        args.FireRate *= args.ModkitRateMult;
     }
     // Box Change End
 
@@ -134,7 +133,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
 
     private void OnFireRateRefresh(Entity<GunUpgradeFireRateComponent> ent, ref GunRefreshModifiersEvent args)
     {
-        args.RateMult += ent.Comp.Coefficient; // Box Change - args.FireRate > args.RateMult - * > + - Modkit Coefficient Overhaul
+        args.ModkitRateMult += ent.Comp.Coefficient; // Box Change - args.FireRate > args.RateMult - * > + - Modkit Coefficient Overhaul
     }
 
     // Box Change Start - Modkit Coefficient Rework
@@ -157,7 +156,7 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
     private void OnDamageGunShot(Entity<GunUpgradeDamageComponent> ent, ref GunShotEvent args)
     {
     // Box Change Start - Modkit Overhaul
-        args.DamageMult = args.DamageMult += ent.Comp.DamageCoefficient;
+        args.ModkitDamageMult += ent.Comp.DamageCoefficient;
         // foreach (var (ammo, _) in args.Ammo)
         // {
         //     if (TryComp<ProjectileComponent>(ammo, out var proj))

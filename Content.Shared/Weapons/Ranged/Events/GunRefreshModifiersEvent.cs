@@ -20,5 +20,5 @@ public record struct GunRefreshModifiersEvent(
     int ShotsPerBurst,
     float FireRate,
     float ProjectileSpeed,
-    float RateMult = 1f // Box Change - Modkit Overhaul
+    float ModkitRateMult = 1f // Box Change - Modkit Overhaul - Stores the Modkit firerate multiplier
 );

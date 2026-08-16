@@ -22,4 +22,5 @@ public sealed partial class GunUpgradeDamageComponent : Component
     /// </summary>
     [DataField]
     public float DamageCoefficient = 0.5f; // Could this be replaced with a coefficient per damage type?
+// Box Change End
 }
