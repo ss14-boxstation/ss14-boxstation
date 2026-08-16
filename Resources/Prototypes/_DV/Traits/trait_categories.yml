@@ -1,7 +1,7 @@
 - type: traitCategory
   id: Disabilities
   name: trait-category-disabilities
-  priority: 0
+  priority: 10 # Box Change: 10 so other things can be put before it
   accentColor: "#64748b"  # Slate / muted gray
 
 - type: traitCategory

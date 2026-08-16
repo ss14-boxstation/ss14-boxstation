@@ -1,0 +1,9 @@
+- type: trait
+  id: Snoring
+  name: trait-snoring-name
+  description: trait-snoring-desc
+  category: Quirks
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: Snoring

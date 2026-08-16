@@ -11,3 +11,9 @@
   maxTraits: 1
   priority: 41 # Right after Medical
   accentColor: "#800000" 
+
+- type: traitCategory
+  id: Quirks
+  name: trait-category-quirks
+  priority: 9 # Right before Disabilities
+  accentColor: "#61FF73"
