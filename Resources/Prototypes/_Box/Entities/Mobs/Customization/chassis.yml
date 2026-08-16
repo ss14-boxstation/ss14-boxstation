@@ -5,7 +5,15 @@
 
 - type: marking
   id: MobIPCHeadDefault
-  bodyPart: Headbase
+  bodyPart: HeadBase
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/IPC/parts.rsi
+    state: head_m
+
+- type: marking
+  id: MobIPCMonitorDefault
+  bodyPart: Head
   groupWhitelist: [IPC]
   sprites:
   - sprite: _DV/Mobs/Species/IPC/parts.rsi
@@ -349,6 +357,16 @@
     state: l_arm-1
   - sprite: _DV/Mobs/Species/Cybernetics/xion/xion_main.rsi
     state: l_arm-2
+    
+- type: marking
+  id: CyberLimbsMarkingXionRArm
+  bodyPart: RArm
+  groupWhitelist: [IPC]
+  sprites:
+  - sprite: _DV/Mobs/Species/Cybernetics/xion/xion_main.rsi
+    state: r_arm-1
+  - sprite: _DV/Mobs/Species/Cybernetics/xion/xion_main.rsi
+    state: r_arm-2
 
 - type: marking
   id: CyberLimbsMarkingZenghuLArm
@@ -676,7 +694,7 @@
   sprites:
   - sprite: _DV/Mobs/Species/IPC/parts.rsi
     state: l_foot
- 
+
 
 - type: marking
   id: MobIPCRFootDefault

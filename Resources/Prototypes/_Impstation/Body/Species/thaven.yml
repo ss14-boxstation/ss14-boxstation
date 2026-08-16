@@ -6,7 +6,7 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 4
+      limit: 2 # Box Change - 4 > 2
       required: false
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
@@ -19,10 +19,10 @@
       limit: 4
       required: false
     enum.HumanoidVisualLayers.LArm:
-      limit: 2
+      limit: 3 # Box Change - 2 > 3
       required: false
     enum.HumanoidVisualLayers.RArm:
-      limit: 2
+      limit: 3 # Box Change - 2 > 3
       required: false
     enum.HumanoidVisualLayers.Overlay:
       limit: 6
@@ -30,6 +30,24 @@
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
+  # Box Change Start - Leg Limits
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 3
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 3
+      required: false
+  # Box Change End
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 4
+      required: false
+  # Box Change End
+  # Box Change Start - Tail Limits
+    enum.HumanoidVisualLayers.Tail:
+      limit: 2 # Change this to 1 after Eel Tail has been fixed
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance

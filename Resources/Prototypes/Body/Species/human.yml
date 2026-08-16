@@ -9,11 +9,21 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.Chest:
-      limit: 4 # Box - 4 -> 2
+      limit: 4
       required: false
+  # Box Change Start - Add Head Layer Limits
+    enum.HumanoidVisualLayers.Head:
+      limit: 6
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: false
+  # Box Change Start - Actual Cat Ears on Humans
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 2
+      required: false
+  # Box Change End
     enum.HumanoidVisualLayers.LArm:
       limit: 3 # Box - 1 -> 3
       required: false
@@ -21,10 +31,10 @@
       limit: 3 # Box - 1 -> 3
       required: false
     enum.HumanoidVisualLayers.LHand:
-      limit: 1
+      limit: 3 # Box - 1 -> 3
       required: false
     enum.HumanoidVisualLayers.RHand:
-      limit: 1
+      limit: 3 # Box - 1 -> 3
       required: false
     enum.HumanoidVisualLayers.LLeg:
       limit: 3 # Box - 1 -> 3
@@ -33,10 +43,10 @@
       limit: 3 # Box - 1 -> 3
       required: false
     enum.HumanoidVisualLayers.LFoot:
-      limit: 1
+      limit: 3 # Box - 1 -> 3
       required: false
     enum.HumanoidVisualLayers.RFoot:
-      limit: 1
+      limit: 3 # Box - 1 -> 3
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1 # Box - Cat Tails on Humans
@@ -44,6 +54,11 @@
     enum.HumanoidVisualLayers.Special:
       limit: 1 # Box - Cat Ears on Humans
       required: false
+  # Box Change Start - Eyes Limits
+    enum.HumanoidVisualLayers.Eyes:
+      limit: 4
+      required: false
+  # Box Change End
 
 - type: entity
   parent: BaseSpeciesAppearance

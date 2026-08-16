@@ -12,5 +12,5 @@ public sealed partial class GunUpgradeIndoorsComponent : Component
     /// Pressure modifier is multiplied by this by each upgrade.
     /// </summary>
     [DataField]
-    public float Multiplier = 2f;
+    public float Multiplier = 4f; // Box Change - 2f > 4f - One modkit should be enough.
 }

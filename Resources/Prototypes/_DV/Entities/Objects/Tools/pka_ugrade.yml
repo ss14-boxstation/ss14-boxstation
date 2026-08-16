@@ -18,7 +18,7 @@
   - type: GunUpgrade
     examineText: gun-upgrade-examine-text-indoors
   - type: GunUpgradeCost
-    cost: 35
+    cost: 10 # Box Change - 35 > 10 - More viable modkit
   - type: GunUpgradeIndoors
 # Start harmony change
 #  - type: MappingCategories # its evil

@@ -693,7 +693,7 @@ public record struct AttemptShootEvent(EntityUid User, string? Message, bool Can
 /// </summary>
 /// <param name="User">The user that fired this gun.</param>
 [ByRefEvent]
-public record struct GunShotEvent(EntityUid User, List<(EntityUid? Uid, IShootable Shootable)> Ammo);
+public record struct GunShotEvent(EntityUid User, List<(EntityUid? Uid, IShootable Shootable)> Ammo, float ModkitDamageMult = 1f); // Box Change - Add float ModkitDamageMult; stores the Modkit damage multiplier
 
 /// <summary>
 /// Raised on an entity after firing a gun to see if any components or systems would allow this entity to be pushed
