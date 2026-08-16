@@ -1689,3 +1689,12 @@
   id: 183
   time: '2026-08-16T02:45:12.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/279
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali can hiss again.
+    type: Fix
+  - message: Avali have had their weight reduced back to roughly half that of a human.
+    type: Fix
+  id: 184
+  time: '2026-08-16T21:40:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/283
