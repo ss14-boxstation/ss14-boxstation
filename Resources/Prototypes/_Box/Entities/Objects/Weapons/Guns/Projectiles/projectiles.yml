@@ -78,6 +78,7 @@
 - type: entity
   parent: BaseBulletKineticMining # Utility!
   id: BulletKineticRevolver
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
