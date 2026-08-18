@@ -88,7 +88,7 @@
   # - type: UpgradeableGunCost # Scattershot weapons currently cannot take modkits
   #   maxCost: 60
   - type: Gun
-    fireRate: 0.4
+    fireRate: 0.6 # 0.4 > 0.6 - Scattershot weapons currently cannot take modkits
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

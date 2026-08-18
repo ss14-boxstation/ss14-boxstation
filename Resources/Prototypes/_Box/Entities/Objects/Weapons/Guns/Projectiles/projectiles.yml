@@ -111,11 +111,24 @@
 
 ## PKA Shotgun Ammo
 - type: entity
-  parent: BulletKineticSidearm
+  parent: BulletKineticShotgunAmmo # Temp. because modkits don't play nice with shotguns
   id: BulletKineticShotgun
   categories: [ HideSpawnMenu ]
   components:
   - type: ProjectileSpread
-    proto: BulletKineticSidearm
+    proto: BulletKineticShotgunAmmo # BulletKineticSidearm > BulletKineticShotgunAmmo - Temp. because modkits don't play nice with shotguns
     count: 5
-    spread: 20
+    spread: 18
+
+### Temporary shotgun bullet prototype
+  # Because ProjectileSpread and Modkits don't play nice
+- type: entity
+  parent: BulletKineticSidearm
+  id: BulletKineticShotgunAmmo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 15
+        Structural: 20
