@@ -1,0 +1,36 @@
+- type: soundCollection
+  id: HarpyDeathGasp
+  files:
+    - /Audio/Effects/Gasp/deathgasp_1.ogg
+    - /Audio/Effects/Gasp/deathgasp_2.ogg
+    - /Audio/Effects/Gasp/female_deathgasp_1.ogg # Limiting human deathgasps to avoid bias
+    - /Audio/Effects/Gasp/male_deathgasp_1.ogg 
+    - /Audio/Effects/Gasp/moth_DeathGasp.ogg
+    - /Audio/Effects/Gasp/vox_DeathGasp.ogg
+    - /Audio/_Moffstation/Voice/Avali/avali_deathgasp.ogg
+    - /Audio/_MACRO/Voice/Allulalo/allulalo_deathgasp.ogg
+    
+- type: soundCollection
+  id: HarpyYawn
+  files:
+    - /Audio/Voice/Human/male_yawn_1.ogg
+    - /Audio/Voice/Human/female_yawn_1.ogg
+    - /Audio/Animals/wawa_yawn.ogg
+    - /Audio/_Moffstation/Voice/Avali/avali_yawn.ogg
+
+- type: soundCollection
+  id: HarpyCoughs
+  files:
+    - /Audio/Voice/Human/male_cough_1.ogg
+    - /Audio/Voice/Human/female_cough_1.ogg
+    - /Audio/Voice/Vox/vox_cough.ogg
+    - /Audio/_Moffstation/Voice/Avali/avali_cough.ogg
+    
+- type: soundCollection
+  id: HarpySigh
+  files:
+    - /Audio/Voice/Human/male_sigh.ogg
+    - /Audio/Voice/Human/female_sigh.ogg
+    - /Audio/Voice/Vox/vox_sigh.ogg
+    - /Audio/Animals/wawa_depression.ogg
+    - /Audio/_MACRO/Voice/Allulalo/allulalo_say.ogg

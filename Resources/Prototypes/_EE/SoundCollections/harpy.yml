@@ -7,15 +7,17 @@
     - /Audio/Animals/monkey_scream.ogg
     - /Audio/Voice/Human/malescream_1.ogg
     - /Audio/Voice/Human/malescream_2.ogg
-    - /Audio/Voice/Human/malescream_3.ogg
-    - /Audio/Voice/Human/malescream_4.ogg
-    - /Audio/Voice/Human/malescream_5.ogg
+    # Starrt Box Change: Cut the less funny human laughs so they don't bloat the sound pool
+    #- /Audio/Voice/Human/malescream_3.ogg
+    #- /Audio/Voice/Human/malescream_4.ogg
+    #- /Audio/Voice/Human/malescream_5.ogg
+    # End Box Change
     - /Audio/Voice/Human/malescream_6.ogg
-    - /Audio/Voice/Human/femalescream_1.ogg
+    #- /Audio/Voice/Human/femalescream_1.ogg # Box Change: See above
     - /Audio/Voice/Human/femalescream_2.ogg
     - /Audio/Voice/Human/femalescream_3.ogg
     - /Audio/Voice/Human/femalescream_4.ogg
-    - /Audio/Voice/Human/femalescream_5.ogg
+    #- /Audio/Voice/Human/femalescream_5.ogg # Box Change: See above
     - /Audio/Voice/Moth/moth_scream.ogg
     - /Audio/Voice/Skeleton/skeleton_scream.ogg
     - /Audio/Voice/Reptilian/reptilian_scream.ogg
@@ -29,6 +31,12 @@
     #- /Audio/_NF/Voice/Goblin/goblin_scream_2.ogg # Frontier
     #- /Audio/_NF/Voice/Goblin/goblin_scream_3.ogg # Frontier
     #- /Audio/_NF/Voice/Goblin/goblin_scream_4.ogg # Frontier
+    # Start Box Change: Harpy sound additions
+    - /Audio/_MACRO/Voice/Allulalo/allulalo_scream.ogg
+    - /Audio/_EE/Voice/IPC/robot-scream.ogg
+    - /Audio/_CD/Voice/Avali/avali_scream.ogg
+    - /Audio/Animals/wawa_protest.ogg
+    # End Box Change
 
 - type: soundCollection
   id: HarpyLaugh
@@ -37,8 +45,10 @@
     - /Audio/Voice/Human/manlaugh2.ogg
     - /Audio/Voice/Human/womanlaugh.ogg
     - /Audio/Voice/Diona/diona_rustle1.ogg
-    - /Audio/Voice/Diona/diona_rustle2.ogg
-    - /Audio/Voice/Diona/diona_rustle3.ogg
+    # Start Box Change: Diona laughs are similar enough; don't need to have 3 of them
+    #- /Audio/Voice/Diona/diona_rustle2.ogg
+    #- /Audio/Voice/Diona/diona_rustle3.ogg
+    # End Box Change
     - /Audio/Animals/lizard_happy.ogg
     - /Audio/Animals/ferret_happy.ogg
     - /Audio/Voice/Moth/moth_laugh.ogg
@@ -47,6 +57,12 @@
     #- /Audio/_NF/Voice/Sheleg/sheleg_laugh_2.ogg # Frontier
     #- /Audio/_NF/Voice/Goblin/goblin_cackle_1.ogg # Frontier
     #- /Audio/_NF/Voice/Goblin/goblin_cackle_2.ogg # Frontier
+    # Start Box Change: Harpy sound additions
+    - /Audio/Animals/wawa_mock.ogg
+    - /Audio/_CD/Voice/Avali/avali_laugh.ogg
+    - /Audio/_EE/Voice/IPC/robot-laugh_3.ogg
+    - /Audio/_MACRO/Voice/Allulalo/allulalo_laugh.ogg
+    # End Box Change
 
 - type: soundCollection
   id: HarpyHisses
@@ -68,6 +84,10 @@
     - /Audio/Machines/windoor_open.ogg
     - /Audio/Effects/spray.ogg
     - /Audio/Effects/spray2.ogg
+    # Start Box Change: Harpy sound additions
+    - /Audio/_Moffstation/Voice/Avali/avali_hiss.ogg
+    - /Audio/Animals/cat_hiss.ogg
+    # End Box Change
 
 - type: soundCollection
   id: HarpySigh
@@ -75,21 +95,32 @@
     - /Audio/Voice/Human/male_sigh.ogg
     - /Audio/Voice/Human/female_sigh.ogg
     #- /Audio/_NF/Voice/Sheleg/sheleg_sigh_1.ogg # Frontier
+    # Start Box Change: Harpy sound additions
+    - /Audio/Animals/wawa_depression.ogg
+    - /Audio/Voice/Vox/vox_sigh.ogg
+    # End Box Change
 
 - type: soundCollection
   id: HarpyCry
   files:
     - /Audio/Voice/Human/cry_male_1.ogg
-    - /Audio/Voice/Human/cry_male_2.ogg
+    #- /Audio/Voice/Human/cry_male_2.ogg # Box Change: Too similar to cry_male_1
     - /Audio/Voice/Human/cry_male_3.ogg
     - /Audio/Voice/Human/cry_male_4.ogg
     - /Audio/Voice/Human/cry_female_1.ogg
-    - /Audio/Voice/Human/cry_female_2.ogg
+    #- /Audio/Voice/Human/cry_female_2.ogg # Box Change: Too similar to cry_female_1
     - /Audio/Voice/Human/cry_female_3.ogg
     - /Audio/Voice/Human/cry_female_4.ogg
     #- /Audio/_NF/Voice/Sheleg/sheleg_cry_1.ogg # Frontier
     #- /Audio/_NF/Voice/Sheleg/sheleg_cry_2.ogg # Frontier
     #- /Audio/_NF/Voice/Sheleg/sheleg_cry_3.ogg # Frontier
+    # Start Box Change: Harpy sound additions
+    - /Audio/Animals/wawa_despair.ogg
+    - /Audio/_MACRO/Voice/Allulalo/allulalo_cry.ogg
+    - /Audio/_EE/Voice/IPC/cry_robot_1.ogg
+    - /Audio/_Moffstation/Voice/Avali/avali_cry.ogg
+    - /Audio/Voice/Vox/vox_cry.ogg
+    # End Box Change
 
 - type: soundCollection
   id: HarpyMeows
@@ -236,6 +267,10 @@
     - /Audio/Machines/id_swipe.ogg
     - /Audio/Machines/machine_switch.ogg
     - /Audio/Machines/screwdriveropen.ogg
+    # Starrt Box Change: Harpy sound additions
+    - /Audio/Voice/Vox/vox_click.ogg
+    - /Audio/Voice/Arachnid/arachnid_click.ogg
+    # End Box Change    
 
 - type: soundCollection
   id: HarpyChitter
@@ -245,6 +280,10 @@
     - /Audio/Machines/diagnoser_printing.ogg
     - /Audio/Machines/uniformprinter.ogg
     - /Audio/Machines/vaccinator_running.ogg
+    # Start Box Change: Harpy sound additions
+    - /Audio/_MACRO/Voice/Allulalo/allulalo_chitter.ogg
+    - /Audio/Voice/Vox/vox_chitter.ogg
+    # End Box Change
 
 - type: soundCollection
   id: HarpySqueak
