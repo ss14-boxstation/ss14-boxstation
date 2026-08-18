@@ -64,7 +64,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
 
 # Wieldable Accelerators
 ## Shotgun
@@ -93,7 +93,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
   - type: GunRequiresWield # Inaccuracy doesn't apply to spread weapons.
 
 ## Rifle
@@ -128,5 +128,5 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      path: /Audio/Weapons/Guns/Gunshots/ship_duster.ogg
   - type: GunRequiresWield # Big And Heavy
