@@ -104,17 +104,14 @@
   description: Fires a single high-damage kinetic bolts at medium range.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_rifle.rsi
   - type: Item
-    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_rifle.rsi
     size: Large
     shape:
     - 0,0,3,1
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_rifle.rsi
     quickEquip: false
     slots:
     - suitStorage
