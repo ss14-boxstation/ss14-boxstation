@@ -232,6 +232,7 @@
   - type: CombatMode # DeltaV - let IPCs disarm
     canDisarm: true
   - type: Bloodstream
+    damageBleedModifiers: BloodlossIPC
     bloodReferenceSolution:
       reagents:
         - ReagentId: IPCOil # IPC blood effectively
