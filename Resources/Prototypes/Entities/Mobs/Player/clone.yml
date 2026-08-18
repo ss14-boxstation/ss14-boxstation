@@ -69,6 +69,7 @@
   # Hamrony addons end
   - BloodDeficiency # Box Change - For blood deficiency traits
   - BlockWriting # Box Change: DV dysgraphia trait
+  - RoundRemoveConsent # Box Change - Best implementation I could find for PDox RR Consent
   eventComponents:
   - Vocal # voice sounds
 
