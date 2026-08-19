@@ -497,6 +497,12 @@
   - type: Organ
     category: Stomach
   - type: Stomach
+    specialDigestible:
+      tags:
+      - IPCFood
+      - ClothMade
+      - Trash
+    isSpecialDigestibleExclusive: false
   - type: SolutionContainerManager
     solutions:
       stomach:
