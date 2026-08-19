@@ -1698,3 +1698,33 @@
   id: 184
   time: '2026-08-16T21:40:43.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/283
+- author: CollectionOfBones128
+  changes:
+  - message: Players without Round Remove Consent will now always get Savior Clones
+      if a Paradox Clone rolls for them
+    type: Tweak
+  id: 185
+  time: '2026-08-19T00:43:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/288
+- author: Dinoguy12349
+  changes:
+  - message: IPCs can eat cloth and trash again
+    type: Fix
+  id: 186
+  time: '2026-08-19T00:43:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/284
+- author: Dizzy-Eevee
+  changes:
+  - message: The German accent has been readded (it got lost).
+    type: Fix
+  id: 187
+  time: '2026-08-19T00:40:54.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/290
+- author: Dizzy-Eevee
+  changes:
+  - message: Fixed IPCs having their wounds cauterized by heat damage, including the
+      overheating damage taken from bloodloss.
+    type: Fix
+  id: 188
+  time: '2026-08-19T00:41:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/289
