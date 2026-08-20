@@ -12,7 +12,7 @@
       - !type:SimpleColoring
         color: "#964b00"
   sprites:
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_ears.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_ears_a.rsi
     state: whitescale_harpy_ears_default
 
 - type: marking
@@ -27,7 +27,7 @@
       - !type:SimpleColoring
         color: "#964b00"
   sprites:
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_tails.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_tails.rsi
     state: whitescale_phoenix_tail
 
 - type: marking
@@ -41,7 +41,7 @@
       fallbackTypes:
       - !type:SimpleColoring
   sprites:
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_tails.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_tails.rsi
     state: whitescale_rooster_tail
 
 - type: marking
@@ -55,7 +55,7 @@
       fallbackTypes:
       - !type:SimpleColoring
   sprites:
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_tails36x32.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_tails36x32.rsi
     state: whitescale_finch_tail
 
 - type: marking
@@ -70,7 +70,7 @@
       - !type:SimpleColoring
         color: "#964b00"
   sprites:
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_legs.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_legs.rsi
     state: thighs
 
 - type: marking
@@ -83,9 +83,9 @@
       - !type:SimpleColoring
         color: "#964b00"
   sprites:
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_legs.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_legs.rsi
     state: feet
-  - sprite: _Box/Mobs/Customization/Harpy/DV/harpy_legs.rsi
+  - sprite: _Box/Mobs/Customization/Harpy/harpy_legs.rsi
     state: talons
 
 # Einstein Engines / SimpleStation
@@ -103,7 +103,7 @@
         - !type:SimpleColoring
           color: "#964b00"
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_classic_harpy
 
 - type: marking
@@ -119,7 +119,7 @@
         - !type:SimpleColoring
           color: "#964b00"
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_ears.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_ears_b.rsi
       state: whitescale_harpy_ears_large
 
 - type: marking
@@ -134,9 +134,9 @@
       fallbackTypes:
         - !type:SimpleColoring
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_tails48x48.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_tails48x48.rsi
       state: whitescale_peacock_tail_feathers
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_tails48x48.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_tails48x48.rsi
       state: whitescale_peacock_tail_eyes
 
 
@@ -145,9 +145,9 @@
   bodyPart: RArmExtension # Frontier: RArm<RArmExtension
   groupWhitelist: [Harpy]
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_2tone_1
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_2tone_2
 
 - type: marking
@@ -155,11 +155,11 @@
   bodyPart: RArmExtension # Frontier: RArm<RArmExtension
   groupWhitelist: [Harpy]
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_3tone_1
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_3tone_2
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_3tone_3
 
 - type: marking
@@ -167,9 +167,9 @@
   bodyPart: RArmExtension # Frontier: RArm<RArmExtension
   groupWhitelist: [Harpy]
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_speckled_1
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_speckled_2
 
 - type: marking
@@ -177,9 +177,9 @@
   bodyPart: RArmExtension # Frontier: RArm<RArmExtension
   groupWhitelist: [Harpy]
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_undertone_1
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_undertone_2
 
 - type: marking
@@ -187,7 +187,7 @@
   bodyPart: RArmExtension # Frontier: RArm<RArmExtension
   groupWhitelist: [Harpy]
   sprites:
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_wingtip_1
-    - sprite: _Box/Mobs/Customization/Harpy/EE/harpy_wings.rsi
+    - sprite: _Box/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_wingtip_2
