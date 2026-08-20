@@ -1728,3 +1728,26 @@
   id: 188
   time: '2026-08-19T00:41:15.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/289
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies will no longer stop singing when manually going prone.
+    type: Tweak
+  id: 189
+  time: '2026-08-20T03:13:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/269
+- author: Dizzy-Eevee
+  changes:
+  - message: Added buildable benches and sofas which span multiple tiles.
+    type: Add
+  id: 190
+  time: '2026-08-20T03:11:33.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/282
+- author: Dizzy-Eevee
+  changes:
+  - message: Ethyloxyephedrine and diphenylmethylamine will now metabolize in the
+      digestion stage with the same effects as in the bloodstream. In other words,
+      narcolepsy medicine will work properly when taken orally.
+    type: Tweak
+  id: 191
+  time: '2026-08-20T03:09:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/281
