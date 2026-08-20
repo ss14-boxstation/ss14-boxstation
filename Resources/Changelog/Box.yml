@@ -1751,3 +1751,15 @@
   id: 191
   time: '2026-08-20T03:09:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/281
+- author: Dizzy-Eevee
+  changes:
+  - message: Updated Harpies' sound collection with more sounds from Vox, Scurrets,
+      IPCs, Avali, and Allulalo.
+    type: Add
+  - message: Removed a few human sounds from Harpies' sound collection to create more
+      variety, so you're no longer rolling for 10 human scream sounds against the
+      other species' one each.
+    type: Remove
+  id: 192
+  time: '2026-08-20T04:22:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/287
