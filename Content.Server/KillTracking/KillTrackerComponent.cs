@@ -2,6 +2,7 @@
 using Content.Shared.Mobs;
 using Robust.Shared.Network;
 using Content.Server.GameTicking.Rules; // Box - imp - Deathmatch Death on Crit
+
 namespace Content.Server.KillTracking;
 
 /// <summary>

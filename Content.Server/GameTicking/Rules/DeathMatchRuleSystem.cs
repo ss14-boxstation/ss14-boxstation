@@ -33,7 +33,6 @@ public sealed class DeathMatchRuleSystem : GameRuleSystem<DeathMatchRuleComponen
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly MobThresholdSystem _mobThresholdSystem = default!; // Box - Imp - Deathmatch Death on Crit
 
-
     public override void Initialize()
     {
         base.Initialize();
@@ -69,6 +68,7 @@ public sealed class DeathMatchRuleSystem : GameRuleSystem<DeathMatchRuleComponen
             _respawn.AddToTracker(ev.Player.UserId, (uid, tracker));
 
             _point.EnsurePlayer(ev.Player.UserId, uid, point);
+
             //Box - imp edit start, make the Dead state count as the kill state instead of Critical, for instant deathmatch death
             if (dm.InstantDeath)
             {
