@@ -92,9 +92,9 @@
     Sneeze:
       collection: MaleSneezes
     Cough:
-      collection: MaleCoughs
+      collection: HarpyCoughs # Box Change: New harpy sounds
     Sigh:
-      collection: MaleSigh
+      collection: HarpySigh # Box Change: New harpy sounds
     Crying:
       collection: HarpyCry
     Whistle:
@@ -154,7 +154,7 @@
     Gasp:
       collection: HarpyGasp
     DefaultDeathgasp:
-      collection: DeathGasp
+      collection: HarpyDeathGasp # Box Change: New harpy sounds
     #Belch: # Frontier
     #  collection: Belch # Frontier
     Squish: # Frontier
@@ -165,3 +165,7 @@
     #  collection: Pops # Imp
     MonkeyScreeches: # Frontier
       collection: MonkeyScreeches # Frontier
+    # Start Box Change: Yawn
+    Yawn:
+      collection: HarpyYawn
+    # End Box Change
