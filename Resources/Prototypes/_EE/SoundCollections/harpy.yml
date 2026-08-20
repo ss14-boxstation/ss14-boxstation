@@ -7,7 +7,7 @@
     - /Audio/Animals/monkey_scream.ogg
     - /Audio/Voice/Human/malescream_1.ogg
     - /Audio/Voice/Human/malescream_2.ogg
-    # Starrt Box Change: Cut the less funny human laughs so they don't bloat the sound pool
+    # Start Box Change: Cut the less funny human laughs so they don't bloat the sound pool
     #- /Audio/Voice/Human/malescream_3.ogg
     #- /Audio/Voice/Human/malescream_4.ogg
     #- /Audio/Voice/Human/malescream_5.ogg
@@ -267,7 +267,7 @@
     - /Audio/Machines/id_swipe.ogg
     - /Audio/Machines/machine_switch.ogg
     - /Audio/Machines/screwdriveropen.ogg
-    # Starrt Box Change: Harpy sound additions
+    # Start Box Change: Harpy sound additions
     - /Audio/Voice/Vox/vox_click.ogg
     - /Audio/Voice/Arachnid/arachnid_click.ogg
     # End Box Change    
