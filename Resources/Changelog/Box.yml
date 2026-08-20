@@ -1763,3 +1763,13 @@
   id: 192
   time: '2026-08-20T04:22:11.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/287
+- author: BlueMoon059
+  changes:
+  - message: In deathmatch, instead of going into a critical state you will now instantly
+      die.
+    type: Tweak
+  - message: In deathmatch, points are now tallied on death and not on entering crit.
+    type: Tweak
+  id: 193
+  time: '2026-08-20T15:52:27.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/285
