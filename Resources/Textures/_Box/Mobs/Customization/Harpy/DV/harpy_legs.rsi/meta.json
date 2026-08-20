@@ -1,23 +1,23 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by @ps3moira. Edited by Dizzy-Eevee (github)",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "feet",
-      "directions": 4
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by @ps3moira @ https://github.com/DeltaV-Station/Delta-v/commit/1f3128c6ea0074f5cf3b8b2482612a1ccc609bdf. Edited by Dizzy-Eevee (github)",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "thighs",
-      "directions": 4
-    },
-    {
-      "name": "talons",
-      "directions": 4
-    }
-  ]
+    "states": [
+        {
+            "name": "feet",
+            "directions": 4
+        },
+        {
+            "name": "thighs",
+            "directions": 4
+        },
+        {
+            "name": "talons",
+            "directions": 4
+        }
+    ]
 }
