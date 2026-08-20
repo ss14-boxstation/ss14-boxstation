@@ -996,6 +996,28 @@
         messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
         type: Local
         probability: 0.1
+    # Start Box Change: Allow to process in stomach, to fix narcolepsy pills.
+    Digestion:
+      effects:
+      - !type:Jitter
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 10
+        type: Remove
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentCondition
+          reagent: Ethyloxyephedrine
+          min: 10
+      - !type:PopupMessage
+        visualType: Medium
+        messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
+        type: Local
+        probability: 0.1
+    # End Box Change
 
 - type: reagent
   id: Diphenylmethylamine
@@ -1022,6 +1044,24 @@
         messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
         type: Local
         probability: 0.1
+    # Start Box Change: Allow to process in stomach, to fix narcolepsy pills.
+    Digestion:
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectDrowsiness
+        time: 10
+        type: Remove
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentCondition
+          reagent: Diphenylmethylamine
+          min: 5
+      - !type:PopupMessage
+        visualType: Medium
+        messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
+        type: Local
+        probability: 0.1
+    # End Box Change
 
 - type: reagent
   id: WizDenSigynate # Box Change - Sigynate > WizDenSigynate - Hardfork AdmiralChem
