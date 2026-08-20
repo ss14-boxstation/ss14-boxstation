@@ -43,4 +43,12 @@ public sealed partial class DeathMatchRuleComponent : Component
     /// </summary>
     [DataField("gear", customTypeSerializer: typeof(PrototypeIdSerializer<StartingGearPrototype>)), ViewVariables(VVAccess.ReadWrite)]
     public string Gear = "DeathMatchGear";
+    /// Box Change Start - Imp - death on crit
+    /// <summary>
+    /// If true, lowers players' entities death thresholds to their critical thresholds because waiting to press
+    /// the succumb button sucks when you want to kill people. Imp addition.
+    /// </summary>
+    [DataField]
+    public bool InstantDeath = true;
+    /// Box Change End - Imp - death on crit
 }
