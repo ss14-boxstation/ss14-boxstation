@@ -31,5 +31,5 @@
     - type: DamagedSiliconAccent
       enableChargeCorruption: false
       damageAtMaxCorruption: 100
-    # - type: IonStormNotifier
+    - type: IonStormNotifier
     # - type: Synth
