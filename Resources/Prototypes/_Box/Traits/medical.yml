@@ -32,6 +32,6 @@
       enableChargeCorruption: false
       damageAtMaxCorruption: 100
     - type: IonStormNotifier
-    # - type: SpeciesPrefix # Currently hardcoded to say "Synthetic X", this should probably be fixed to allow a loc string to be fed by the component
+    - type: SpeciesPrefix # Currently hardcoded to say "Synthetic X", this should probably be fixed to allow a loc string to be fed by the component
     # - type: TypingIndicatorOverride
     #   proto: robot

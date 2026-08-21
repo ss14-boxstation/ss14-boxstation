@@ -12,6 +12,7 @@ using Content.Shared.StationRecords;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Shared._Box.Traits; // Box Change - Misfit - Add synthetic to search
 
 namespace Content.Server.StationRecords.Systems;
 
@@ -96,8 +97,9 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
 
         TryComp<FingerprintComponent>(player, out var fingerprintComponent);
         TryComp<DnaComponent>(player, out var dnaComponent);
+        var synthetic = HasComp<SpeciesPrefixComponent>(player); // Box Change - Misfit - Species Prefix (Synth Trait)
 
-        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, profile.Species, profile.Gender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, profile, records);
+        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, profile.Species, profile.Gender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, synthetic, profile, records); // Box Change - Misfit - Species Prefix (Synth Trait)
     }
 
 
@@ -138,6 +140,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         string jobId,
         string? mobFingerprint,
         string? dna,
+        bool synthetic, // Box Change - Misfit - Add synthetic to species record
         HumanoidCharacterProfile profile,
         StationRecordsComponent records)
     {
@@ -163,7 +166,8 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
             Gender = gender,
             DisplayPriority = jobPrototype.RealDisplayWeight,
             Fingerprint = mobFingerprint,
-            DNA = dna
+            DNA = dna,
+            Synthetic = synthetic // Box Change - Misfit - Add synthetic to species record
         };
 
         var key = AddRecordEntry(station, record);
@@ -341,7 +345,9 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
             StationRecordFilterType.Job =>
                 !someRecord.JobTitle.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Species =>
-                !someRecord.Species.ToLower().Contains(filterLowerCaseValue),
+                someRecord.Synthetic // Misfit - Add synthetic to species record searching
+                    ? !$"synthetic {someRecord.Species}".ToLower().Contains(filterLowerCaseValue)
+                    : !someRecord.Species.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Prints => someRecord.Fingerprint != null
                 && IsFilterWithSomeCodeValue(someRecord.Fingerprint, filterLowerCaseValue),
             StationRecordFilterType.DNA => someRecord.DNA != null

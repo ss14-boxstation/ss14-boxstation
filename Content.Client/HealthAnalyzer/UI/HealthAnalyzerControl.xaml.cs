@@ -18,6 +18,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._Box.Traits; // Box Change - Misfit - Add synth prefix to species
 namespace Content.Client.HealthAnalyzer.UI;
 
 // Health analyzer UI is split from its window because it's used by both the
@@ -78,11 +79,22 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
             : Loc.GetString("health-analyzer-window-entity-unknown-text"));
         NameLabel.SetMessage(name);
 
-        SpeciesLabel.Text =
+    // Box Change Start - Misfit - Synth prefix
+        // SpeciesLabel.Text =
+        var species =
+    // Box Change End
             _entityManager.TryGetComponent<HumanoidProfileComponent>(target.Value,
                 out var humanoidComponent)
                 ? Loc.GetString(_prototypes.Index(humanoidComponent.Species).Name)
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
+
+    // Box Change Start - Mistfit - Synth Prefix
+        var synthSpecies = _entityManager.HasComponent<SpeciesPrefixComponent>(target.Value)
+            ? Loc.GetString("synthetic-component-prefix", ("species", species))
+            : species;
+
+        SpeciesLabel.Text = synthSpecies;
+    // Box Change End
 
         // Basic Diagnostic
 
