@@ -7,8 +7,12 @@
   category: Mental
   cost: 1
   conditions:
-  - !type:IsSpeciesCondition
-    species: IPC
+  - !type:AnyOfCondition
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+    - !type:IsSpeciesCondition
+      species: Vox
   effects:
   - !type:AddCompsEffect
     components:

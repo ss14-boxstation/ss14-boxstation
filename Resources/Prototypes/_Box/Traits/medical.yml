@@ -10,6 +10,9 @@
   - !type:IsSpeciesCondition
     species: IPC
     invert: true
+  - !type:IsSpeciesCondition
+    species: Vox
+    invert: true
   - !type:TraitDependencyCondition
     conflicts:
     - RedBlood
