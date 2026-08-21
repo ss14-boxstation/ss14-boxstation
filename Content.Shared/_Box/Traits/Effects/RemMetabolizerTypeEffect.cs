@@ -27,7 +27,7 @@ public sealed partial class RemMetabolizerTypeEffect : BaseTraitEffect
     /// Use to, e.g., remove the metabolizer type only from the stomach by filtering for StomachComponent.
     /// </remarks>
     [DataField]
-    public EntityWhitelist OrganWhitelist;
+    public EntityWhitelist? OrganWhitelist;
 
     public override void Apply(TraitEffectContext ctx)
     {

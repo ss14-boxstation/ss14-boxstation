@@ -25,7 +25,7 @@ public sealed partial class RemMetabolismCategoryEffect : BaseTraitEffect
     /// Use to, e.g., apply the metabolism category only to the stomach by filtering for StomachComponent.
     /// </remarks>
     [DataField]
-    public EntityWhitelist OrganWhitelist;
+    public EntityWhitelist? OrganWhitelist;
 
     public override void Apply(TraitEffectContext ctx)
     {
