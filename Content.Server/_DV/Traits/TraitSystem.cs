@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Body.Systems; // Box Change: Blood change traits
 using Content.Shared._DV.CCVars;
 using Content.Shared._DV.Traits;
@@ -12,6 +13,7 @@ using Content.Shared.Players.PlayTimeTracking; // Box Change: Playtime requireme
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared.StatusEffectNew;
+using Content.Shared.Whitelist; // Box Change: Whitelist system
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -31,6 +33,7 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly ISharedPlaytimeManager _playtimeManager = default!; // Box Change: Playtime requirements
     [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!; // Box Change: Bloodstream system for use in blood swap traits
+    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!; // Box Change: Whitelist system
 
     // Start Box Change: Disable global limits
     //private int _maxTraitCount;
@@ -69,13 +72,15 @@ public sealed class TraitSystem : EntitySystem
         var validTraits = ValidateTraits(args.Mob, args.Profile.TraitPreferences, args.Player, args.JobId, speciesId, args.Profile, disabledTraits);
 
         // Apply valid traits
+        var validPrototypes = new List<TraitPrototype>();
         foreach (var traitId in validTraits)
         {
             if (!_prototype.TryIndex(traitId, out var trait))
                 continue;
-
-            ApplyTrait(args.Mob, trait);
+            validPrototypes.Add(trait);
         }
+        foreach (var trait in validPrototypes.OrderByDescending(a => a.Priority).ThenBy(a => a.Cost))
+            ApplyTrait(args.Mob, trait);
 
         // Send disabled traits notification to client if any were rejected
         if (disabledTraits.Count > 0)
@@ -288,7 +293,8 @@ public sealed class TraitSystem : EntitySystem
             LogMan = _log,
             Transform = transform,
             StatusEffects = _statusEffects,
-            Bloodstream = _bloodstream // Box Change: Bloodstream system for use in blood swap traits
+            Bloodstream = _bloodstream, // Box Change: Bloodstream system for use in blood swap traits
+            Whitelist = _whitelist // Box Change: Whitelist system
         };
 
         foreach (var effect in trait.Effects)

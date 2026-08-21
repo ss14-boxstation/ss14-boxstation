@@ -9,6 +9,7 @@ using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.StatusEffectNew;
+using Content.Shared.Whitelist; // Box Change: Whitelist system
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Log;
@@ -794,7 +795,8 @@ public sealed partial class TraitSystemTest
             LogMan = IoCManager.Resolve<ILogManager>(),
             Transform = entMan.GetComponent<TransformComponent>(player),
             StatusEffects = entMan.System<StatusEffectsSystem>(),
-            Bloodstream = entMan.System<SharedBloodstreamSystem>() // Box Change: Blood swap traits
+            Bloodstream = entMan.System<SharedBloodstreamSystem>(), // Box Change: Blood swap traits
+            Whitelist = entMan.System<EntityWhitelistSystem>() // Box Change: Whitelist system
         };
     }
 
