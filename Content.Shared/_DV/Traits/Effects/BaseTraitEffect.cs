@@ -1,5 +1,6 @@
 using Content.Shared.Body.Systems; // Box Change: Blood swap traits
 using Content.Shared.StatusEffectNew;
+using Content.Shared.Whitelist; // Box Change: Whitelist system
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 
@@ -32,4 +33,5 @@ public sealed class TraitEffectContext
     public required TransformComponent Transform { get; init; }
     public required StatusEffectsSystem StatusEffects { get; init; }
     public required SharedBloodstreamSystem Bloodstream { get; init; } // Box Change: Blood swap traits
+    public required EntityWhitelistSystem Whitelist { get; init; } // Box Change: Whitelist
 }
