@@ -155,9 +155,6 @@
   - !type:IsSpeciesCondition
     species: IPC
     invert: true
-  - !type:TraitDependencyCondition
-    conflicts:
-    - Synth # TODO: Make OilBlood compatible with Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: IPCOil

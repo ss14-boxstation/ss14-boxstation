@@ -6,6 +6,7 @@
   description: trait-synth-desc
   category: Medical
   cost: 1
+  priority: 1
   conditions:
   - !type:IsSpeciesCondition
     species: IPC
@@ -23,7 +24,6 @@
     - AmmoniaBlood
     - ShimmeringBlood
     - MethylatedBlood
-    - OilBlood # TODO: Make OilBlood compatible with Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: SynthBlood
@@ -36,5 +36,7 @@
       damageAtMaxCorruption: 100
     - type: IonStormNotifier
     - type: SpeciesPrefix # Currently hardcoded to say "Synthetic X", this should probably be fixed to allow a loc string to be fed by the component
-    # - type: TypingIndicatorOverride
-    #   proto: robot
+  - !type:OverrideCompsEffect
+    components:
+    - type: TypingIndicator
+      proto: robot

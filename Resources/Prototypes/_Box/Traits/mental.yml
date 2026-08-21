@@ -13,6 +13,11 @@
       species: IPC
     - !type:IsSpeciesCondition
       species: Vox
+    - !type:IsSpeciesCondition
+      species: Thaven
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:AddCompsEffect
     components:
