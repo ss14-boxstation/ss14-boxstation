@@ -1,3 +1,5 @@
+# Don't forget to make these largely incompatible with the "Synth" trait and vice versa
+
 - type: trait
   id: RedBlood
   name: trait-redblood-name
@@ -22,10 +24,13 @@
   - !type:IsSpeciesCondition
     species: Harpy
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: Blood
-    
+
 - type: trait
   id: InsectBlood
   name: trait-insectblood-name
@@ -35,10 +40,13 @@
   - !type:IsSpeciesCondition
     species: Moth
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: InsectBlood
-    
+
 - type: trait
   id: SlimeBlood
   name: trait-slimeblood-name
@@ -48,10 +56,13 @@
   - !type:IsSpeciesCondition
     species: SlimePerson
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: Slime
-    
+
 - type: trait
   id: SapBlood
   name: trait-sapblood-name
@@ -61,10 +72,13 @@
   - !type:IsSpeciesCondition
     species: Diona
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
-    reagent: Sap 
-    
+    reagent: Sap
+
 - type: trait
   id: BlueBlood
   name: trait-blueblood-name
@@ -74,10 +88,13 @@
   - !type:IsSpeciesCondition
     species: Arachnid
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: CopperBlood
-    
+
 - type: trait
   id: AmmoniaBlood
   name: trait-ammoniablood-name
@@ -90,10 +107,13 @@
   - !type:IsSpeciesCondition
     species: Avali
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: AmmoniaBlood
-    
+
 - type: trait
   id: ShimmeringBlood
   name: trait-shimmeringblood-name
@@ -103,10 +123,13 @@
   - !type:IsSpeciesCondition
     species: Thaven
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: ShimmeringBlood
-      
+
 - type: trait
   id: MethylatedBlood
   name: trait-methylatedblood-name
@@ -116,10 +139,13 @@
   - !type:IsSpeciesCondition
     species: Allulalo
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: BloodAllulalo
-    
+
 - type: trait
   id: OilBlood
   name: trait-oilblood-name
@@ -129,6 +155,9 @@
   - !type:IsSpeciesCondition
     species: IPC
     invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth # TODO: Make OilBlood compatible with Synth
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: IPCOil
