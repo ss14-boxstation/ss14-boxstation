@@ -23,7 +23,7 @@
     - OilBlood # TODO: Make OilBlood compatible with Synth
   effects:
   - !type:ChangeBloodReagentEffect
-    reagent: Slime
+    reagent: SynthBlood
   - !type:AddMetabolismCategoryEffect
     categories: [ Artificial ]
   - !type:AddCompsEffect
@@ -32,4 +32,6 @@
       enableChargeCorruption: false
       damageAtMaxCorruption: 100
     - type: IonStormNotifier
-    # - type: Synth
+    # - type: SpeciesPrefix # Currently hardcoded to say "Synthetic X", this should probably be fixed to allow a loc string to be fed by the component
+    # - type: TypingIndicatorOverride
+    #   proto: robot
