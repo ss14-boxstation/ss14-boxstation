@@ -27,7 +27,7 @@ public sealed partial class AddMetabolizerTypeEffect : BaseTraitEffect
     /// Use to, e.g., apply the metabolizer type only to the stomach by filtering for StomachComponent.
     /// </remarks>
     [DataField]
-    public EntityWhitelist OrganWhitelist;
+    public EntityWhitelist? OrganWhitelist;
 
     public override void Apply(TraitEffectContext ctx)
     {
