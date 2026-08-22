@@ -29,6 +29,8 @@
     reagent: SynthBlood
   - !type:AddMetabolismCategoryEffect
     categories: [ Artificial ]
+  - !type:AddMetabolizerTypeEffect
+    types: [ Synthetic, Synth ]
   - !type:AddCompsEffect
     components:
     - type: DamagedSiliconAccent
