@@ -16,25 +16,26 @@
             <BoxContainer Margin="5 0 0 0" Orientation="Vertical" VerticalAlignment="Top">
                 <RichTextLabel Name="NameLabel" SetWidth="150" />
                 <Label Name="SpeciesLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" />
-                <Label Name="OrganCategoryLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" /> <!--Box Change-->
+                <Label Name="OrganCategoryLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" />
+                <!--Box Change-->
             </BoxContainer>
             <Label Margin="0 0 5 0" HorizontalExpand="True" HorizontalAlignment="Right" VerticalExpand="True"
                    VerticalAlignment="Top" Name="ScanModeLabel"
                    Text="{Loc 'health-analyzer-window-entity-unknown-text'}" />
         </BoxContainer>
 
-        <PanelContainer StyleClasses="LowDivider" /> <!--Box Change Start-->
+        <PanelContainer Name ="MetabolismLowerDivider" StyleClasses="LowDivider" /> <!--Box Change Start-->
 
         <GridContainer Margin="0 5 0 0" Columns="2">
-            <Label Text="{Loc 'health-analyzer-window-metabolism-bloodstream'}" StyleClasses="LabelSubText" />
-            <Label Name="BloodstreamMetabolismLabel" StyleClasses="LabelSubText" />
-            <Label Text="{Loc 'health-analyzer-window-metabolism-metabolites'}" StyleClasses="LabelSubText" />
-            <Label Name="MetabolitesMetabolismLabel" StyleClasses="LabelSubText" />
-            <Label Text="{Loc 'health-analyzer-window-metabolism-digestion'}" StyleClasses="LabelSubText" />
-            <Label Name="DigestionMetabolismLabel" StyleClasses="LabelSubText" />
-            <Label Text="{Loc 'health-analyzer-window-metabolism-respiration'}" StyleClasses="LabelSubText" />
-            <Label Name="RespirationMetabolismLabel" StyleClasses="LabelSubText" />
-        </GridContainer>  <!--Box Change End-->
+            <Label Name="BloodstreamMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-bloodstream'}" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="BloodstreamMetabolismLabel" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="MetabolitesMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-metabolites'}" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="MetabolitesMetabolismLabel" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="DigestionMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-digestion'}" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="DigestionMetabolismLabel" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="RespirationMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-respiration'}" StyleClasses="LabelSubText" Visible="False" />
+            <Label Name="RespirationMetabolismLabel" StyleClasses="LabelSubText" Visible="False" />
+        </GridContainer>         <!--Box Change End-->
 
         <PanelContainer StyleClasses="LowDivider" />
 

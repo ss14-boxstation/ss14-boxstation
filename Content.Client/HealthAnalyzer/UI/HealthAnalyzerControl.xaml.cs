@@ -90,33 +90,58 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
         // Box Change Start - Check Metabolism Categories
-        OrganCategoryLabel.Text =
-            body.Organs != null
-                ? Loc.GetString("health-analyzer-window-metabolism")
-                : Loc.GetString("health-analyzer-window-entity-unknown-text");
-        // Box Change End
+        HashSet<ProtoId<MetabolismCategoryPrototype>> metabolismCategories = [];
+        if (body.Organs != null)
+        {
+            //Dictionary that stores info as [MetabolimStage, [MetabolizerType, MetabolizerType, ...]]
+            Dictionary<ProtoId<MetabolismStagePrototype>, HashSet<ProtoId<MetabolizerTypePrototype>>> metabDict = [];
 
-        // Box Change Start - List Metabolism Stages and their associated Metabolizer Types
-        // Metabolism Stages
-        BloodstreamMetabolismLabel.Text =
-            body.Organs != null
-                ? Loc.GetString("health-analyzer-window-metabolism")
-                : Loc.GetString("health-analyzer-window-entity-unknown-text");
+            //List of organs, filtered to only metabolizers.
+            var metabolizers = body.Organs.ContainedEntities.Where(x => _entityManager.HasComponent<MetabolizerComponent>(x));
 
-        MetabolitesMetabolismLabel.Text =
-            body.Organs != null
-                ? Loc.GetString("health-analyzer-window-metabolism")
-                : Loc.GetString("health-analyzer-window-entity-unknown-text");
+            foreach (var organ in metabolizers)
+            {
+                var metabComp = _entityManager.GetComponent<MetabolizerComponent>(organ);
 
-        DigestionMetabolismLabel.Text =
-            body.Organs != null
-                ? Loc.GetString("health-analyzer-window-metabolism")
-                : Loc.GetString("health-analyzer-window-entity-unknown-text");
+                foreach (var cat in metabComp.MetabolismCategories)
+                    metabolismCategories.Add(cat);
 
-        RespirationMetabolismLabel.Text =
-            body.Organs != null
-                ? Loc.GetString("health-analyzer-window-metabolism")
-                : Loc.GetString("health-analyzer-window-entity-unknown-text");
+                if (metabComp.MetabolizerTypes == null)
+                    continue; //No metabolizer types, abort.
+
+                foreach (var stage in metabComp.Stages)
+                {
+                    foreach (var type in metabComp.MetabolizerTypes)
+                    {
+                        metabDict.TryAdd(stage, []); //Ensure the stage exists in the dict, initializing it with an empty HashSet
+                        metabDict.TryGetValue(stage, out var types);
+                        types!.Add(type); //We don't need to null check this because we just made sure to initialize the HashSet
+                    }
+                }
+            }
+            var bloodstream = metabDict.TryGetValue("Bloodstream", out var bloodstreamList);
+            var metabolites = metabDict.TryGetValue("Metabolites", out var metabolitesList);
+            var digestion = metabDict.TryGetValue("Digestion", out var digestionList);
+            var respiration = metabDict.TryGetValue("Respiration", out var respirationList);
+
+            BloodstreamMetabolismTitle.Visible = BloodstreamMetabolismLabel.Visible = bloodstream;
+            MetabolitesMetabolismTitle.Visible = MetabolitesMetabolismLabel.Visible = metabolites;
+            DigestionMetabolismTitle.Visible = DigestionMetabolismLabel.Visible = digestion;
+            RespirationMetabolismTitle.Visible = RespirationMetabolismLabel.Visible = respiration;
+
+            if (bloodstreamList != null)
+                BloodstreamMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", bloodstreamList)));
+            if (metabolitesList != null)
+                MetabolitesMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", metabolitesList)));
+            if (digestionList != null)
+                DigestionMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", digestionList)));
+            if (respirationList != null)
+                RespirationMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", respirationList)));
+
+            MetabolismLowerDivider.Visible = bloodstream || metabolites || digestion || respiration;
+        }
+        OrganCategoryLabel.Visible = metabolismCategories.Any();
+        OrganCategoryLabel.Text = string.Join(", ", metabolismCategories);
         // Box Change End
 
         // Basic Diagnostic
