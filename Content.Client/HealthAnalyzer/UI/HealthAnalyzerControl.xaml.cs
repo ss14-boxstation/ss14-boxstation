@@ -89,7 +89,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
                 ? Loc.GetString(_prototypes.Index(humanoidComponent.Species).Name)
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
-        // Box Change Start - Check Metabolism Categories
+        // Box Change Start - Check Metabolism
         HashSet<ProtoId<MetabolismCategoryPrototype>> metabolismCategories = [];
         if (body.Organs != null)
         {
@@ -138,7 +138,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
             if (respirationList != null)
                 RespirationMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", respirationList)));
 
-            MetabolismLowerDivider.Visible = bloodstream || metabolites || digestion || respiration;
+            MetabolismLowDivider.Visible = bloodstream || metabolites || digestion || respiration;
         }
         OrganCategoryLabel.Visible = metabolismCategories.Any();
         OrganCategoryLabel.Text = string.Join(", ", metabolismCategories);

@@ -24,7 +24,7 @@
                    Text="{Loc 'health-analyzer-window-entity-unknown-text'}" />
         </BoxContainer>
 
-        <PanelContainer Name ="MetabolismLowerDivider" StyleClasses="LowDivider" /> <!--Box Change Start-->
+        <PanelContainer Name ="MetabolismLowDivider" StyleClasses="LowDivider" /> <!--Box Change Start-->
 
         <GridContainer Margin="0 5 0 0" Columns="2">
             <Label Name="BloodstreamMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-bloodstream'}" StyleClasses="LabelSubText" Visible="False" />
