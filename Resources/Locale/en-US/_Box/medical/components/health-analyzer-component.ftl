@@ -1,5 +1,4 @@
 health-analyzer-window-metabolism-bloodstream-categories = {$categories}
-health-analyzer-window-metabolism = Organs
 
 health-analyzer-window-metabolism-bloodstream = Bloodstream:
 health-analyzer-window-metabolism-metabolites = Metabolites:
