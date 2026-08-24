@@ -16,15 +16,14 @@
             <BoxContainer Margin="5 0 0 0" Orientation="Vertical" VerticalAlignment="Top">
                 <RichTextLabel Name="NameLabel" SetWidth="150" />
                 <Label Name="SpeciesLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" />
-                <Label Name="OrganCategoryLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" />
-                <!--Box Change-->
+                <Label Name="OrganCategoryLabel" VerticalAlignment="Top" StyleClasses="LabelSubText" /> <!--Box Change, Metabolism in Health Analyzer-->
             </BoxContainer>
             <Label Margin="0 0 5 0" HorizontalExpand="True" HorizontalAlignment="Right" VerticalExpand="True"
                    VerticalAlignment="Top" Name="ScanModeLabel"
                    Text="{Loc 'health-analyzer-window-entity-unknown-text'}" />
         </BoxContainer>
 
-        <PanelContainer Name ="MetabolismLowDivider" StyleClasses="LowDivider" /> <!--Box Change Start-->
+        <PanelContainer Name ="MetabolismLowDivider" StyleClasses="LowDivider" /> <!--Box Change Start, Metabolism in Health Analyzer-->
 
         <GridContainer Margin="0 5 0 0" Columns="2">
             <Label Name="BloodstreamMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-bloodstream'}" StyleClasses="LabelSubText" Visible="False" />
@@ -35,7 +34,7 @@
             <Label Name="DigestionMetabolismLabel" StyleClasses="LabelSubText" Visible="False" />
             <Label Name="RespirationMetabolismTitle" Text="{Loc 'health-analyzer-window-metabolism-respiration'}" StyleClasses="LabelSubText" Visible="False" />
             <Label Name="RespirationMetabolismLabel" StyleClasses="LabelSubText" Visible="False" />
-        </GridContainer>         <!--Box Change End-->
+        </GridContainer> <!--Box Change End-->
 
         <PanelContainer StyleClasses="LowDivider" />
 
