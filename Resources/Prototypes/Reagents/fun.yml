@@ -180,7 +180,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Shock: 0.1

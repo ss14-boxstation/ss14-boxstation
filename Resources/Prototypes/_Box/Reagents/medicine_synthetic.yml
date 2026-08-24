@@ -65,12 +65,12 @@
       - !type:ModifyBleed
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic ]
         amount: -1.5
       - !type:AdjustTemperature
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic ]
         - !type:TemperatureCondition
           max: 423.15
         - !type:ReagentCondition
@@ -80,7 +80,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic ]
           inverted: true
         damage:
           types:
@@ -88,14 +88,14 @@
       - !type:Vomit
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic ]
           inverted: true
         probability: 0.02
       - !type:SatiateThirst
         factor: 1
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Vox ]
 
 # Overclocker
 - type: reagent
@@ -313,7 +313,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Slash: -2
@@ -323,8 +323,6 @@
         - !type:ReagentCondition
           reagent: Nanoweldite
           min: 11.5
-        - !type:MetabolizerTypeCondition
-          type: [Synthetic]
         damage:
           types:
             Heat: 1
@@ -332,11 +330,11 @@
         factor: 0.5
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Vox]
+          type: [ Vox ]
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Vox, Synth ]
           inverted: true
         damage:
           types:
@@ -344,7 +342,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
           inverted: true
         damage:
           types:
@@ -352,7 +350,7 @@
       - !type:Flammable
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [IPC]
+          type: [ Robotic ]
           inverted: true
         multiplier: 0.4
 
@@ -372,7 +370,7 @@
       - !type:GenericStatusEffect
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         key: RadiationProtection
         component: RadiationProtection
         time: 2
@@ -383,14 +381,14 @@
           reagent: SOISapphire
           min: 20
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Shock: 1
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [IPC]
+          type: [ Robotic ]
           inverted: true
         damage:
           types:
@@ -432,7 +430,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Cold: -0.5
@@ -442,19 +440,19 @@
         - !type:TemperatureCondition
           max: 293.15
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         amount: 100000 # thermal energy, not temperature!
       - !type:AdjustTemperature
         conditions:
         - !type:TemperatureCondition
           min: 293.15
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         amount: -10000
       - !type:PopupMessage
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         type: Local
         visualType: Medium
         messages: [ "leporazine-effect-temperature-adjusting" ]
@@ -462,7 +460,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Vox]
+          type: [ Robotic, Vox ]
           inverted: true
         damage:
           types:
@@ -470,7 +468,7 @@
       - !type:Vomit
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Vox, IPC]
+          type: [ Robotic, Vox ]
           inverted: true
         probability: 0.02
       - !type:SatiateHunger

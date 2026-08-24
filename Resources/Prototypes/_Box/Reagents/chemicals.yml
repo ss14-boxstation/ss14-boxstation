@@ -55,7 +55,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Synth, Vox ]
           inverted: true
         damage:
           types:
@@ -107,7 +107,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Shock: 0.1

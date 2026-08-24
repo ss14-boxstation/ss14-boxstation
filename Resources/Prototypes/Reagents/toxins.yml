@@ -756,7 +756,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Shock: 1
@@ -848,7 +848,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Vox ]
         probability: 0.5
         damage:
           groups:
@@ -856,7 +856,7 @@
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Vox]
+          type: [ Vox ]
         amount: 0.25 # 1/4 of Protein
       # Box Change End
 
