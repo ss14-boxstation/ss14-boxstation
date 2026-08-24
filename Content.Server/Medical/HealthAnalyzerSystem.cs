@@ -251,7 +251,6 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         Dictionary<ProtoId<MetabolismStagePrototype>, HashSet<ProtoId<MetabolizerTypePrototype>>> metabolismTypes = [];
         if (_bodyQuery.TryComp(entity, out var body) && body.Organs != null)
         {
-
             //List of organs, filtered to only metabolizers.
             var metabolizers = body.Organs.ContainedEntities.Where(x => _metabolizerQuery.HasComp(x));
 
