@@ -1,4 +1,6 @@
 using Content.Server.Medical.Components;
+using Content.Shared._Box.Metabolism; // Box Change: Metabolism info
+using Content.Shared.Body; // Box Change: Metabolism info
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage.Components;
@@ -9,6 +11,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.MedicalScanner;
+using Content.Shared.Metabolism; // Box Change: Metabolism info
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
 using Content.Shared.PowerCell;
@@ -17,8 +20,10 @@ using Content.Shared.Traits.Assorted;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Prototypes; // Box Change: Metabolism info
 using Robust.Shared.Timing;
 using Content.Server.Body.Systems;
+using System.Linq; // Box Change: Metabolism info
 
 namespace Content.Server.Medical;
 
@@ -34,6 +39,10 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
+    // Start Box Change: Entityqueries for metabolism info
+    private EntityQuery<BodyComponent> _bodyQuery;
+    private EntityQuery<MetabolizerComponent> _metabolizerQuery;
+    // End Box Change
 
     public override void Initialize()
     {
@@ -42,6 +51,10 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         SubscribeLocalEvent<HealthAnalyzerComponent, EntGotInsertedIntoContainerMessage>(OnInsertedIntoContainer);
         SubscribeLocalEvent<HealthAnalyzerComponent, ItemToggledEvent>(OnToggled);
         SubscribeLocalEvent<HealthAnalyzerComponent, DroppedEvent>(OnDropped);
+        // Start Box Change: Entityqueries for metabolism info
+        _bodyQuery = GetEntityQuery<BodyComponent>();
+        _metabolizerQuery = GetEntityQuery<MetabolizerComponent>();
+        // End Box Change
     }
 
     public override void Update(float frameTime)
@@ -232,13 +245,49 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         if (TryComp<UnrevivableComponent>(entity, out var unrevivableComp) && unrevivableComp.Analyzable)
             unrevivable = true;
 
+        // Start Box Change: Check for metabolism info
+        HashSet<ProtoId<MetabolismCategoryPrototype>> metabolismCategories = [];
+        //Dictionary that stores info as [MetabolimStage, [MetabolizerType, MetabolizerType, ...]]
+        Dictionary<ProtoId<MetabolismStagePrototype>, HashSet<ProtoId<MetabolizerTypePrototype>>> metabolismTypes = [];
+        if (_bodyQuery.TryComp(entity, out var body) && body.Organs != null)
+        {
+            //List of organs, filtered to only metabolizers.
+            var metabolizers = body.Organs.ContainedEntities.Where(x => _metabolizerQuery.HasComp(x));
+
+            foreach (var organ in metabolizers)
+            {
+                var metabComp = _metabolizerQuery.GetComponent(organ);
+
+                foreach (var cat in metabComp.MetabolismCategories)
+                    metabolismCategories.Add(cat);
+
+                if (metabComp.MetabolizerTypes == null)
+                    continue; //No metabolizer types, abort.
+
+                foreach (var stage in metabComp.Stages)
+                {
+                    foreach (var type in metabComp.MetabolizerTypes)
+                    {
+                        metabolismTypes.TryAdd(stage, []); //Ensure the stage exists in the dict, initializing it with an empty HashSet
+                        metabolismTypes.TryGetValue(stage, out var types);
+                        types!.Add(type); //We don't need to null check this because we just made sure to initialize the HashSet
+                    }
+                }
+            }
+        }
+        // End Box Change
+
         return new HealthAnalyzerUiState(
             GetNetEntity(entity),
             bodyTemperature,
             bloodAmount,
             null,
             bleeding,
-            unrevivable
+            unrevivable,
+            // Start Box Change: Send metabolism info
+            metabolismCategories,
+            metabolismTypes
+            // End Box Change
         );
     }
 }
