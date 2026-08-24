@@ -97,7 +97,7 @@ public sealed partial class MetabolizerComponent : Component
     /// <summary>
     ///     List of metabolizer types that this organ is. ex. Human, Slime, Felinid, w/e.
     /// </summary>
-    [DataField, AutoNetworkedField]
+    [DataField, AutoNetworkedField] // Box Change: Autonetwork to fix mispredicts
     [Access(typeof(MetabolizerSystem), Other = AccessPermissions.ReadExecute)] // FIXME Friends
     public HashSet<ProtoId<MetabolizerTypePrototype>>? MetabolizerTypes;
 
