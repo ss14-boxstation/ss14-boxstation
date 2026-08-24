@@ -1,3 +1,6 @@
+using Content.Shared._Box.Metabolism; // Box Change: Metabolism info
+using Content.Shared.Metabolism; // Box Change: Metabolism info
+using Robust.Shared.Prototypes; // Box Change: Metabolism info
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.MedicalScanner;
@@ -28,10 +31,14 @@ public struct HealthAnalyzerUiState
     public bool? ScanMode;
     public bool? Bleeding;
     public bool? Unrevivable;
+    // Start Box Change: Metabolism info
+    public HashSet<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories = [];
+    public Dictionary<ProtoId<MetabolismStagePrototype>, HashSet<ProtoId<MetabolizerTypePrototype>>> MetabolismTypes = [];
+    // End Box Change
 
     public HealthAnalyzerUiState() {}
 
-    public HealthAnalyzerUiState(NetEntity? targetEntity, float temperature, float bloodLevel, bool? scanMode, bool? bleeding, bool? unrevivable)
+    public HealthAnalyzerUiState(NetEntity? targetEntity, float temperature, float bloodLevel, bool? scanMode, bool? bleeding, bool? unrevivable, HashSet<ProtoId<MetabolismCategoryPrototype>> metabolismCategories, Dictionary<ProtoId<MetabolismStagePrototype>, HashSet<ProtoId<MetabolizerTypePrototype>>> metabolismTypes) // Box Change: Metabolism info
     {
         TargetEntity = targetEntity;
         Temperature = temperature;
@@ -39,5 +46,9 @@ public struct HealthAnalyzerUiState
         ScanMode = scanMode;
         Bleeding = bleeding;
         Unrevivable = unrevivable;
+        // Start Box Change: Metabolism info
+        MetabolismCategories = metabolismCategories;
+        MetabolismTypes = metabolismTypes;
+        // End Box Change
     }
 }
