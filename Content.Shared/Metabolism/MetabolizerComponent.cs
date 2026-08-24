@@ -89,7 +89,7 @@ public sealed partial class MetabolizerComponent : Component
     ///    List of Metabolizer Categories that this organ can process (ex. Organic, Artificial)
     ///    Defaults to Organic
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     [Access(typeof(MetabolizerSystem), typeof(AddMetabolismCategoryEffect), typeof(RemMetabolismCategoryEffect))]
     public HashSet<ProtoId<MetabolismCategoryPrototype>> MetabolismCategories = ["Organic"];
     // Box Change End
@@ -97,7 +97,7 @@ public sealed partial class MetabolizerComponent : Component
     /// <summary>
     ///     List of metabolizer types that this organ is. ex. Human, Slime, Felinid, w/e.
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     [Access(typeof(MetabolizerSystem), Other = AccessPermissions.ReadExecute)] // FIXME Friends
     public HashSet<ProtoId<MetabolizerTypePrototype>>? MetabolizerTypes;
 
