@@ -141,7 +141,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
             MetabolismLowDivider.Visible = bloodstream || metabolites || digestion || respiration;
         }
         OrganCategoryLabel.Visible = metabolismCategories.Any();
-        OrganCategoryLabel.Text = string.Join(", ", metabolismCategories);
+        OrganCategoryLabel.Text = Loc.GetString("health-analyzer-window-metabolism-categories", ("categories", string.Join(", ", metabolismCategories)));
         // Box Change End
 
         // Basic Diagnostic
