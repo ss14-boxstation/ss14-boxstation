@@ -1787,3 +1787,27 @@
   id: 195
   time: '2026-08-24T04:25:04.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/296
+- author: CollectionOfBones128
+  changes:
+  - message: Vox organs are now "Vox, Bionic"
+    type: Tweak
+  - message: IPC organs are now "IPC, Robotic"
+    type: Tweak
+  - message: the Synthetic metabolizer type has been removed
+    type: Remove
+  - message: The "Robotic" and "Bionic" metabolizer types have been added
+    type: Add
+  - message: certain artificial-capable reagents have had their metabolizer type conditions
+      adjusted
+    type: Tweak
+  id: 196
+  time: '2026-08-25T04:31:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/300
+- author: Dizzy-Eevee
+  changes:
+  - message: Added whitescale variants of every harpy marking that did not previously
+      have one.
+    type: Add
+  id: 197
+  time: '2026-08-25T04:34:47.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/271
