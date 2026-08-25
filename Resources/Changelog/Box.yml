@@ -1811,3 +1811,10 @@
   id: 197
   time: '2026-08-25T04:34:47.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/271
+- author: CollectionOfBones128
+  changes:
+  - message: Hitman was renamed into Contract Killer
+    type: Tweak
+  id: 198
+  time: '2026-08-25T08:01:13.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/301
