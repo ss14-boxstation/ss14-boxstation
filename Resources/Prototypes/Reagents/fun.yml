@@ -101,7 +101,7 @@
           tag: Bee
         # Box Change Start - IPCs
         - !type:MetabolizerTypeCondition
-          type: [IPC]
+          type: [Robotic]
           inverted: true
         # Box Change End
       - !type:PopupMessage
@@ -210,7 +210,7 @@
         # Box Change Start - IPCs
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [IPC]
+          type: [Robotic]
           inverted: true
         # Box Change End
         emote: Scream
