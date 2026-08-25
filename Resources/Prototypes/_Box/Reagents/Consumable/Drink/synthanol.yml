@@ -43,19 +43,19 @@
           reagent: Synthanol
           min: 15
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         damage:
           types:
             Shock: 0.1
       - !type:Drunk
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
         boozePower: 2 # TODO: Unique IPC slurred speech. Figure that out. Probably reuse Borg Damage accent?
       - !type:PopupMessage # no sanity/mood
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Synthetic]
+          type: [ Robotic, Bionic ]
           inverted: true # For organics only
         - !type:ReagentCondition
           reagent: Synthanol

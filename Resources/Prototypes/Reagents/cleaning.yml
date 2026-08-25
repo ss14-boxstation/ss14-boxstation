@@ -28,7 +28,7 @@
         # Box Change Start - IPCs
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [IPC]
+          type: [Robotic]
           inverted: true
         # Box Change End
         emote: Scream
