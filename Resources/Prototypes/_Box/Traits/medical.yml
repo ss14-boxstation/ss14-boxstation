@@ -30,7 +30,7 @@
   - !type:AddMetabolismCategoryEffect
     categories: [ Artificial ]
   - !type:AddMetabolizerTypeEffect
-    types: [ Synthetic, Synth ]
+    types: [ Bionic, Synth ]
   - !type:AddCompsEffect
     components:
     - type: DamagedSiliconAccent

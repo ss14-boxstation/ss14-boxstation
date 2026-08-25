@@ -14,10 +14,10 @@
       - !type:Vomit
         probability: 0.1
       - !type:HealthChange
-      # Box Change Start - Vox and Synths shouldn't be hurt by the coolant
+      # Box Change Start - Vox and Synths shouldn't be hurt by the coolant, But Cybernetically Augmented individuals should
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Synthetic ]
+          type: [ Robotic, Synth, Vox ]
           inverted: true
       # Box Change End
         damage:
