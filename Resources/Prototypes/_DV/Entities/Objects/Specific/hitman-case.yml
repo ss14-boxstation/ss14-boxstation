@@ -1,7 +1,7 @@
 - type: entity
   id: HitmanCase
-  name: Hitman case
-  description: A case containing the tools of the trade of a hitman.
+  name: contract killer case # Box Change - Hitman > Contract Killer
+  description: A case containing the tools of the trade of a contract killer. # Box Change - Hitman > Contract Killer
   parent: ToolboxThief
   components:
   - type: Sprite
