@@ -1,4 +1,5 @@
 - type: entity
+  # parent: [SolutionDrain, SolutionGinormous] # Box Change - No Solution Refactor
   id: BinglePit
   name: bingle pit
   description: The core of all bingles. Looks hungry.
@@ -36,14 +37,18 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Damageable
+    damageModifierSet: Slime
+  - type: Injurable
     damageContainer: Inorganic
-    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
         damage: 256
       behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
@@ -55,10 +60,18 @@
     sound:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
   - type: RequireProjectileTarget
-  - type: SolutionContainerManager
-    solutions:
-      drainBuffer:
-        maxVol: 1000
+  # Box Change Start - No Solution Refactor
+    - type: SolutionContainerManager
+      solutions:
+        drainBuffer:
+          maxVol: 1000
+  # Box Change End
   - type: Drain
     unitsPerSecond: 10
     unitsDestroyedPerSecond: 10
+  - type: AmbientSound
+    enabled: false
+    volume: -8
+    range: 8
+    sound:
+      path: /Audio/Ambience/Objects/drain.ogg
