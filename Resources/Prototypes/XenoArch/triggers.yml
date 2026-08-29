@@ -253,6 +253,7 @@
     - IPCOil #Box Change - IPC blood can be used for artifacts
     - ShimmeringBlood #Box Change - imp - thaven blood compatibility
     - BloodAllulalo # Box Change
+    - SynthBlood # Box Change
 
 - type: xenoArchTrigger
   id: TriggerThrow

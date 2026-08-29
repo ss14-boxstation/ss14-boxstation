@@ -1,0 +1,24 @@
+# If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
+
+- type: trait
+  id: IonSensitive
+  name: trait-ion-sensitive-name
+  description: trait-ion-sensitive-desc
+  category: Mental
+  cost: 1
+  conditions:
+  - !type:AnyOfCondition
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+    - !type:IsSpeciesCondition
+      species: Vox
+    - !type:IsSpeciesCondition
+      species: Thaven
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: IonStormNotifier

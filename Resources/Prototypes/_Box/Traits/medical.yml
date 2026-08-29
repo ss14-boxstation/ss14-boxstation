@@ -1,0 +1,44 @@
+# If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
+
+- type: trait
+  id: Synth
+  name: trait-synth-name
+  description: trait-synth-desc
+  category: Medical
+  cost: 1
+  priority: 1
+  conditions:
+  - !type:IsSpeciesCondition
+    species: IPC
+    invert: true
+  - !type:IsSpeciesCondition
+    species: Vox
+    invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - RedBlood
+    - InsectBlood
+    - SlimeBlood
+    - SapBlood
+    - BlueBlood
+    - AmmoniaBlood
+    - ShimmeringBlood
+    - MethylatedBlood
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: SynthBlood
+  - !type:AddMetabolismCategoryEffect
+    categories: [ Artificial ]
+  - !type:AddMetabolizerTypeEffect
+    types: [ Bionic, Synth ]
+  - !type:AddCompsEffect
+    components:
+    - type: DamagedSiliconAccent
+      enableChargeCorruption: false
+      damageAtMaxCorruption: 100
+    - type: IonStormNotifier
+    - type: SpeciesPrefix # Currently hardcoded to say "Synthetic X", this should probably be fixed to allow a loc string to be fed by the component
+  - !type:OverrideCompsEffect
+    components:
+    - type: TypingIndicator
+      proto: robot
