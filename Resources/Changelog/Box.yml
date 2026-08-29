@@ -1818,3 +1818,24 @@
   id: 198
   time: '2026-08-25T08:01:13.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/301
+- author: CollectionOfBones128
+  changes:
+  - message: Added the Synthetic trait, turning any organic into a biomechanical construct.
+    type: Add
+  - message: Added the Ion Sensitive trait available to IPCs, Vox, and Thaven
+    type: Add
+  id: 199
+  time: '2026-08-29T01:34:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/294
+- author: CollectionOfBones128
+  changes:
+  - message: Nukies can no longer roll without admin intervention as they are still
+      in balance testing
+    type: Remove
+  - message: Fixed secret nukies not checking for minimum players
+    type: Fix
+  - message: Survival should feel more balance for our round lengths
+    type: Tweak
+  id: 200
+  time: '2026-08-29T01:34:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/302
