@@ -5,13 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change: Upates Sprite Pathing
-#    sprite: Structures/Windows/reinforced_uranium_window.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_uranium_window.rsi
+    sprite: _Impstation/Structures/Windows/reinforced_uranium_window.rsi # Impstation
   - type: Icon
-#    sprite: Structures/Windows/reinforced_uranium_window.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_uranium_window.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/reinforced_uranium_window.rsi # Impstation
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -130,10 +126,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_uranium_diagonal.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/reinforced_uranium_diagonal.rsi # Impstation
     state: state0
   - type: Tag
     tags:
@@ -147,10 +140,7 @@
 # End of Harmony Change
     base: state
   - type: Icon
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/reinforced_uranium_diagonal.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_uranium_diagonal.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/reinforced_uranium_diagonal.rsi # Impstation
     state: state0
   - type: Fixtures
     fixtures:
