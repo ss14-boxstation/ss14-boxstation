@@ -5,7 +5,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobBoxer
-        time: 72000 # 20hr
+        time: 10h # Box Change: 20h -> 10h
   storage:
     back:
       - PlushieLizardJobBoxer
@@ -17,7 +17,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobZookeeper
-      time: 72000 # 20hr
+      time: 10h # Box Change: 20h -> 10h
   storage:
     back:
     - PlushieLizardJobZookeeper
