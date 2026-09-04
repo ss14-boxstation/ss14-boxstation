@@ -166,7 +166,7 @@ public sealed partial class SleepingSystem : EntitySystem
         // TODO reduce duplication of this behavior with MobStateSystem somehow
         if (HasComp<AllowNextCritSpeechComponent>(ent))
         {
-            RemCompDeferred<AllowNextCritSpeechComponent>(ent);
+            //RemCompDeferred<AllowNextCritSpeechComponent>(ent); // Box Change: Narcolepsy speech fix - Comp is removed elsewhere to avoid duplicated requests
             return;
         }
 
