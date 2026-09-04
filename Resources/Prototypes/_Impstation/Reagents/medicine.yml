@@ -7,7 +7,7 @@
   color: "#bdfff3"
   recognizable: true
   metabolisms:
-    Bloodstream:
+    Bloodstream: # Box Change: Move from digestion to bloodstream; this way it can actually purge the theobromine metabolized from hot cocoa, coffee, &c.
       metabolismRate: 0.1 #this should metabolise in the same amount of time as a drink in a 5:1 mix
       effects:
       - !type:AdjustReagent
