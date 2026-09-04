@@ -13,10 +13,12 @@
     energyPerUse: 50
   - type: ItemToggle
     predictable: false
-    soundActivate:
-      collection: sparks
-      params:
-        variation: 0.250
+    # Box Change: Remove soundActivate in favour of ES sparks
+    #soundActivate:
+    #  collection: sparks
+    #  params:
+    #    variation: 0.250
+    # End Box Change
     soundDeactivate:
       collection: sparks
       params:
@@ -40,6 +42,10 @@
     bluntStaminaDamageFactor: 2.0
     angle: 60
     animation: WeaponArcThrust
+  # Box Change Start: ES Sparks on baton toggle, for aura
+  - type: ESSparkOnItemToggle
+    count: 1
+  # Box Change End
   - type: StaminaDamageOnHit
     damage: 35
     sound: /Audio/Weapons/egloves.ogg
