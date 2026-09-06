@@ -122,7 +122,7 @@ public sealed class TraitSystem : EntitySystem
             Profile = profile,
             StatusEffects = _statusEffects,
             SelectedTraits = selectedTraits,
-            PlayTimes = playtimes,
+            PlayTimes = playtimes
         }; // Box Change: Playtime requirements
 
         foreach (var traitId in selectedTraits)
