@@ -416,6 +416,9 @@ namespace Content.Client.Lobby.UI
                 }
             }
 
+            Traits.ForcePassAllConditions(); // Box Change: Force all traits to be selectable before setting them, to avoid weirdness with outdated restrictions.
+                                             // e.g. when switching from a human to a non-human with the red blood trait, the red blood trait would be de-selected since it's still considered locked.
+                                             // Traits that are actually invalid after setup is done will be disabled by UpdateConditions().
             Traits.SetSelectedTraits(selectedTraits);
             Traits.UpdateConditions(Profile);
         }

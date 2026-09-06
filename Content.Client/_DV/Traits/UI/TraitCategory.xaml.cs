@@ -231,6 +231,17 @@ public sealed partial class TraitCategory : BoxContainer
         Visible = hasVisibleTraits;
     }
 
+    // Start Box Change: Force all traits to be unlocked so we can set them properly when switching profiles
+    public void ForcePassAllConditions()
+    {
+        foreach (var (_, entry) in _traitEntries)
+        {
+            entry.ForceConditionPass();
+        }
+
+    }
+    // End Box Change
+
     /// <summary>
     /// Updates condition states for all trait entries based on current job/species.
     /// Traits that don't meet conditions are disabled but still visible.

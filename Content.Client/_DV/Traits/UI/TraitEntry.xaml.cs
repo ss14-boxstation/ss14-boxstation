@@ -110,6 +110,13 @@ public sealed partial class TraitEntry : PanelContainer
         return tooltip;
     }
 
+    // Start Box Change: Force traits to be unlocked so we can set them properly when switching profiles
+    public void ForceConditionPass()
+    {
+        MeetsConditions = true;
+    }
+    // End Box Change
+
     /// <summary>
     /// Updates whether conditions are met based on current job/species.
     /// </summary>
