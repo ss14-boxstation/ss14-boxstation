@@ -4,7 +4,11 @@
   description: cd-trait-very-lightweight-desc
   category: DrinkingSkill
   cost: 1
-  components:
+  # Start Box Change: Update for DV trait system
+  effects:
+  - !type:AddCompsEffect
+    components:
+  # End Box Change
     - type: LightweightDrunk
       boozeStrengthMultiplier: 4
 
@@ -14,6 +18,10 @@
   description: cd-trait-heavyweight-desc
   category: DrinkingSkill
   cost: 1
-  components:
+  # Start Box Change: Update for DV trait system
+  effects:
+  - !type:AddCompsEffect
+    components:
+  # End Box Change
     - type: LightweightDrunk
       boozeStrengthMultiplier: 0.5

@@ -8,8 +8,9 @@
   flavor: bitter
   flavorMinimum: 0.05
   color: "#30FB3E"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:ModifyStatusEffect
         effectProto: StatusEffectSeeingRainbow
@@ -25,8 +26,9 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#115D33"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -87,8 +89,9 @@
   physicalDesc: reagent-physical-desc-metallic
   flavor: shocking
   color: "#6DD16D"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -118,8 +121,9 @@
   physicalDesc: reagent-physical-desc-energizing
   flavor: shocking
   color: "#C7BC1C"
+  metabolismCategories: [ Artificial ]
   metabolisms:
-    Malware:
+    Bloodstream:
       effects:
       - !type:HealthChange
         conditions:
@@ -143,9 +147,6 @@
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDesoxyStamina # You are on meth. You keep going.
         time: 3
-    Software:
-      metabolismRate: 1.0
-      effects:
       - !type:ResetNarcolepsy
       - !type:HealthChange
         conditions:

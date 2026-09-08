@@ -11,7 +11,7 @@
     Telecrystal: 2
   cost:
     Telecrystal: 4 # same price as Hyperzine for parity
-  categories: 
+  categories:
   - UplinkChemicals
 
 # Pointless
@@ -26,7 +26,7 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
-    
+
 - type: listing
   id: UplinkInterdyneNotebook
   name: uplink-interdyne-notebook-name

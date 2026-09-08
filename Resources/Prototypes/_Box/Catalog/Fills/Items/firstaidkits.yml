@@ -21,6 +21,6 @@
     contents:
     - id: IPCOilPack
     - id: Silipen
-      amount: 2 
+      amount: 2
     - id: RobotBurnPatch
     - id: RobotTraumaPatch

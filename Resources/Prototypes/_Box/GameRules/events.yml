@@ -5,9 +5,38 @@
     - id: AnomalySpawn
     - id: BluespaceArtifact
     - id: BluespaceLocker
-    # - id: CockroachMigration
+    - id: CockroachMigration
     - id: MassHallucinations
-    # - id: MouseMigration
+    - id: MouseMigration
     - id: RandomSentience
     - id: SolarFlare
-    # - id: ClosetSkeleton
+
+- type: entityTable
+  id: RedShiftEventsTable # Redshift events should be interesting
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector
+      tableId: BasicChillEventsTable # No need to duplicate events
+    - id: BreakerFlip
+    - id: GasLeak
+    - id: IonStorm
+    - id: PowerGridCheck
+    - id: VentClog
+
+- type: entityTable
+  id: RedShiftAntagTable # Redshift Antags should be interesting but limited. Dangerous antags should be limited to "Survival" and "Extended"
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector # DeltaV
+      tableId: BasicAntagEventsTableDeltaV
+    - !type:NestedSelector
+      tableId: DerelictBorgEventTable
+    - id: NinjaSpawn
+    - id: RevenantSpawn
+    - id: SlimesSpawn
+    - id: SnakeSpawn
+    - id: SpiderClownSpawn
+    - id: SpiderSpawn
+    - id: CarpMigration
+    - id: BingleSpawn
+    - id: SyndicateDeadDrop

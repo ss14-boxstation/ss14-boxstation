@@ -1,0 +1,75 @@
+# Hardforked from: WizDen
+  # Originally from ss13's /vg/
+# Original Map:
+  # PR https://github.com/space-wizards/space-station-14/pull/5282
+  # Commit https://github.com/space-wizards/space-station-14/commit/c2dbc770a837f63d7877ee8a807198920a869728
+# Hardfork Point:
+  # PR https://github.com/space-wizards/space-station-14/pull/42202
+  # Commit https://github.com/space-wizards/space-station-14/commit/6de41e8051e0d31a1e6653368ee7c3bc606828e5
+# License Forked From: MIT
+
+- type: gameMap
+  id: Packed
+  mapName: 'Packed'
+  mapPath: /Maps/_Box/packed.yml
+  minPlayers: 0
+  maxPlayers: 35
+  stations:
+    Packed:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Packed {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: 'VG'
+      - type: StationEmergencyShuttle
+        emergencyShuttlePath: /Maps/Shuttles/emergency_crimson.yml
+      - type: StationJobs
+        availableJobs: # 41 jobs, 51 w/ Intern
+        #command (7)
+          Captain: [ 1, 1 ]
+          HeadOfPersonnel: [ 1, 1 ]
+          HeadOfSecurity: [ 1, 1 ]
+          ChiefMedicalOfficer: [ 1, 1 ]
+          ChiefEngineer: [ 1, 1 ]
+          ResearchDirector: [ 1, 1 ]
+          Quartermaster: [ 1, 1 ]
+        #service (8)
+          Bartender: [ 1, 1 ]
+          Botanist: [ 1, 1 ]
+          Chef: [ 1, 1 ]
+          Janitor: [ 1, 1 ]
+          Chaplain: [ 1, 1 ]
+          Librarian: [ 1, 1 ]
+          ServiceWorker: [ 2, 2 ]
+        #engineering (4)
+          AtmosphericTechnician: [ 2, 2 ]
+          StationEngineer: [ 2, 2 ]
+          TechnicalAssistant: [ 2, 2 ] # Intern Role
+        #medical (5)
+          Chemist: [ 2, 2 ]
+          MedicalDoctor: [ 2, 2 ]
+          MedicalIntern: [ 2, 2 ] # Intern Role
+          Paramedic: [ 1, 1 ]
+        #science (2)
+          Scientist: [ 2, 2 ]
+          ResearchAssistant: [ 2, 2 ] # Intern Role
+        #security (5)
+          Warden: [ 1, 1 ]
+          SecurityOfficer: [ 2, 2 ]
+          Detective: [ 1, 1 ]
+          SecurityCadet: [ 2, 2 ] # Intern Role
+          Lawyer: [ 1, 1 ]
+        #supply (4)
+          SalvageSpecialist: [ 2, 2 ]
+          CargoTechnician: [ 2, 2 ]
+          SupplyAssistant: [ 2, 2 ] # Intern Role
+        #civilian (3)
+          Passenger: [ -1, -1 ] #infinite, not counted
+          Clown: [ 1, 1 ]
+          Mime: [ 1, 1 ]
+          Musician: [ 1, 1 ]
+        #silicon (3)
+          StationAi: [ 1, 1 ]
+          Borg: [ 2, 2 ]

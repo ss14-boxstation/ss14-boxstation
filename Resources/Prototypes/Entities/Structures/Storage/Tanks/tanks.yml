@@ -33,6 +33,7 @@
   - type: Explosive
     explosionType: Default
     totalIntensity: 60 # Mediocre explosion. Not enough to do any meaningful structural damage to anything other then windows, provided you're only using one tank.
+    canCreateVacuum: false # Box Change: Welderbombs don't space
 
 - type: entity
   id: WeldingFuelTankFull

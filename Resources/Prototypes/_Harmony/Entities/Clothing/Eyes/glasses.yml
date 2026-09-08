@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband]
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband, BaseLensSlot] # Box Change: BaseLensSlot from imp
   id: ClothingEyesGlassesBrigmedicHarmony
   name: brigmedic visor
   description: A unique pair of visors made by the Cybersun branch of the Syndicate, then stolen and upgraded by Nanotrasen for their brigmedics.
@@ -18,7 +18,7 @@
     coverage: EYES
 
 - type: entity
-  parent: [ClothingEyesBase, ShowMedicalIcons]
+  parent: [ClothingEyesBase, ShowMedicalIcons, BaseLensSlot] # Box Change: BaseLensSlot from imp
   id: ClothingEyesGlassesMedical
   name: medical analysis goggles
   description: Goggles that can scan the chemical composition of a solution and have the health scanning capabilities of a medical hud.
@@ -34,7 +34,7 @@
       stealGroup: ClothingEyesGlassesMedical
 
 - type: entity
-  parent: [ClothingEyesBase, BaseCargoContraband]
+  parent: [ClothingEyesBase, BaseCargoContraband, BaseLensSlot] # Box Change: BaseLensSlot from imp
   id: ClothingEyesGlassesSalvage
   name: salvage goggles
   suffix: Harmony

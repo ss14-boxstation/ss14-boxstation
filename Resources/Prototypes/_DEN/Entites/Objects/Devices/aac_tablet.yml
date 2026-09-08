@@ -1,0 +1,8 @@
+- type: entity
+  parent: AACTablet
+  id: AACTabletSAS
+  name: S&S AAC tablet
+  description: An "augmentative and alternative communication" device that allows speech-impaired individuals to communicate. This one seems to sound like an old learning aid.
+  components:
+  - type: Speech
+    speechSounds: AACTabletSAS

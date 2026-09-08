@@ -9,3 +9,4 @@
   storage:
     back:
     - AACTablet
+  groupBy: "AAC" # Box Change: Group with S&S tablet

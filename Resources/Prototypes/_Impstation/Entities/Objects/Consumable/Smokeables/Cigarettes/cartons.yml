@@ -1,0 +1,23 @@
+﻿- type: entity
+  id: CigCartonMixedRejects
+  parent: [CigCartonGreen] # Box Change: Remove Tier2Contraband
+  name: Dan's soaked smokes rejects carton
+  description: A carton containing 6 packets of Dan's Soaked Smokes Rejects, plus an exclusive Interdyne-branded flippo. # Box Change: Change to Interdyne flippo
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Consumable/Smokeables/Cartons/mixedrejectscarton.rsi # Box Change: Namespace texture to fix missing icon state
+  - type: Item
+    sprite: _Box/Objects/Consumable/Smokeables/Cartons/mixedrejectscarton.rsi # Box Change: Namespace texture to fix missing icon state
+  # Start Box Change: Change to EntityTableContainerFill to overwrite parent
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: CigPackMixedRejects
+          amount: 6
+        - id: InterdyneFlippo # Box Change: Change to Interdyne flippo
+  # End Box Change
+  - type: Storage
+    grid:
+    - 0,0,5,1
+    - 6,1,6,1

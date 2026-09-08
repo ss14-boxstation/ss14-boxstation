@@ -520,7 +520,6 @@
     whitelist:
       components:
       - Battery
-      - PredictedBattery
 
 - type: cargoBounty
   id: BountyLaserGun

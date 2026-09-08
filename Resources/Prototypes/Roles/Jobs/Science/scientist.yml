@@ -7,16 +7,16 @@
     - !type:DepartmentTimeRequirement
       department: Science
       time: 5h # 2.5h -> 0 # Box Change - 0h > 5h
-  # startingGear: ScientistGear # Box Change: Prototype removed since it was null
+  startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd
   access:
   - Research
   - Maintenance
 
-# Start Box Change: Headset moved to loadout option. There's nothing left, so the entire thing needs to be commented out.
-#- type: startingGear
-#  id: ScientistGear
+- type: startingGear
+  id: ScientistGear
+# Start Box Change - Null startingGear for Scientist - Wrist Comms
 #  equipment:
     # ears: ClothingHeadsetScience
   #storage:

@@ -73,14 +73,17 @@
       storagebase: !type:AllSelector
         children:
         - id: ClothingHeadHatBeretHoS
-        - id: ClothingHeadHatHoshat
-        - id: ClothingMaskNeckGaiter
+# Box Start - Comments out some items to make room for the bomber jacket
+#       - id: ClothingHeadHatHoshat
+#       - id: ClothingMaskNeckGaiter
+# Box End - Comments out some items to make room for the bomber jacket
         - id: ClothingUniformJumpskirtHoSAlt
         - id: ClothingUniformJumpsuitHoSAlt
         - id: ClothingUniformJumpskirtHosFormal
         - id: ClothingUniformJumpsuitHosFormal
         - id: ClothingOuterWinterHoS
         - id: ClothingNeckCloakHos
+        - id: ClothingOuterCoatHosBomber #Box - Imp Bomber Jackets
 
 - type: entity
   id: DresserQuarterMasterFilled
@@ -128,3 +131,4 @@
         - id: ClothingHeadHatBeretWarden
         - id: ClothingUniformJumpskirtWarden
         - id: ClothingUniformJumpsuitWarden
+        - id: ClothingOuterCoatWardenBomber # Box Change - Imp Bomber Jacket

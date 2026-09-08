@@ -13,8 +13,9 @@
   boilingPoint: 300 # Oil, Close Enough
   meltingPoint: -16 # Oil, Close Enough
   friction: 0.4
+  metabolismCategories: [ Organic, Artificial ]
   metabolisms:
-    Drink:
+    Bloodstream:
       effects:
       - !type:SatiateThirst
         conditions:
@@ -47,8 +48,9 @@
   boilingPoint: 100 # Water, Close enough
   meltingPoint: -30 # Freezing point of some Glycol-Water Compter Coolants
   friction: 0.4
+  metabolismCategories: [ Organic, Artificial ]
   metabolisms:
-    Drink:
+    Bloodstream:
       effects:
       - !type:HealthChange
         conditions:
@@ -81,7 +83,7 @@
   meltingPoint: -12.9 # Accurate melting point
   friction: 0.4
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -96,16 +98,16 @@
   physicalDesc: reagent-physical-desc-electric
   flavor: shocking
   color: "#FDD023"
+  metabolismCategories: [ Organic, Artificial ]
   metabolisms:
-    Poison:
-      effects:
-      - !type:Electrocute
-        probability: 0.10
-    Industrial:
+    Bloodstream:
       effects:
       - !type:Electrocute
         probability: 0.10
       - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Synthetic]
         damage:
           types:
             Shock: 0.1

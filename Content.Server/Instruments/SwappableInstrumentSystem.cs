@@ -25,6 +25,11 @@ public sealed class SwappableInstrumentSystem : EntitySystem
         if (!TryComp<InstrumentComponent>(uid, out var instrument))
             return;
 
+        // Start Box Change: Disallows other entities from changing a harpy's instrument
+        if (component.OnlySetBySelf && uid != args.User) // Frontier: restrict instrument changes
+            return; // Frontier: restrict instrument changes
+        // End Box Change
+
         var priority = 0;
         foreach (var entry in component.InstrumentList)
         {

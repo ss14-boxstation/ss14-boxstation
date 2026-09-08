@@ -139,7 +139,7 @@
     - NamesOperationSuffix
     nameFormat: name-format-nuclear-operation
   - type: NukeopsRule
-    warDeclarationMinOps: 3 # Harmony addition
+    warDeclarationMinOps: 1 # Harmony addition # Box Change - 3 > 1
   - type: RuleGrids
   - type: AntagSelection
   - type: AntagLoadProfileRule
@@ -155,7 +155,7 @@
   id: Nukeops
   components:
   - type: GameRule
-    minPlayers: 20
+    # minPlayers: 20 # Box Station - Enable Nukies
   - type: LoadMapRule
     mapPath: /Maps/Nonstations/nukieplanet.yml
   - type: AntagSelection
@@ -198,8 +198,9 @@
     - prefRoles: [ Nukeops ]
       fallbackRoles: [ NukeopsCommander, NukeopsMedic ]
       spawnerPrototype: SpawnPointNukeopsOperative
-      max: 2
-      playerRatio: 10
+      min: 0 # Box Change
+      # max: 2 # Box Change - Reset to default (1)
+      playerRatio: 20 # Box Change - 10 > 20
       startingGear: SyndicateOperativeGearFull
       roleLoadout:
       - RoleSurvivalNukie

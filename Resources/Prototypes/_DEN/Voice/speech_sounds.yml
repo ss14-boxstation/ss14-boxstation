@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2025 MajorMoth
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: speechSounds
+  id: AACTabletSAS
+  saySound:
+    path: /Audio/_DEN/Voice/Tablet/aac_tablet_sas_say.ogg  # Box Change: Namespace
+  askSound:
+    path: /Audio/_DEN/Voice/Tablet/aac_tablet_sas_ask.ogg # Box Change: Namespace
+  exclaimSound:
+    path: /Audio/_DEN/Voice/Tablet/aac_tablet_sas_exclaim.ogg # Box Change: Namespace

@@ -17,7 +17,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false
-    emptySpriteName: silipen_empty 
+    emptySpriteName: silipen_empty
   - type: SolutionContainerManager
     solutions:
       pen:

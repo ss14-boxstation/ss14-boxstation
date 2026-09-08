@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Shared._DV.Weapons.Ranged.Upgrades; // DeltaV
+using Robust.Shared.Spawners; // Box Change - Modkit Coefficient Rework
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Examine;
@@ -33,14 +34,16 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
         SubscribeLocalEvent<UpgradeableGunComponent, AfterInteractUsingEvent>(OnAfterInteractUsing);
         SubscribeLocalEvent<UpgradeableGunComponent, ExaminedEvent>(OnExamine);
 
-        SubscribeLocalEvent<UpgradeableGunComponent, GunRefreshModifiersEvent>(RelayEvent);
-        SubscribeLocalEvent<UpgradeableGunComponent, GunShotEvent>(RelayEvent);
+        SubscribeLocalEvent<UpgradeableGunComponent, GunRefreshModifiersEvent>(RelayRefresh); // Box Change - RelayEvent > RelayRefresh - Modkit Coefficient Rework
+        SubscribeLocalEvent<UpgradeableGunComponent, GunShotEvent>(RelayShot); // Box Change - RelayEvent > RelayShot - Modkit Coefficient Rework
 
         SubscribeLocalEvent<GunUpgradeFireRateComponent, GunRefreshModifiersEvent>(OnFireRateRefresh);
-        SubscribeLocalEvent<GunUpgradeSpeedComponent, GunRefreshModifiersEvent>(OnSpeedRefresh);
+        SubscribeLocalEvent<GunUpgradeSpeedComponent, GunShotEvent>(OnSpeedRefresh); // Box Change - GunRefreshModifiersEvent > GunShotEvent - Modkit Coefficient Rework
         SubscribeLocalEvent<GunUpgradeDamageComponent, GunShotEvent>(OnDamageGunShot);
     }
 
+    // Box Change Start - Modkit Coefficient Overhaul
+    /*
     private void RelayEvent<T>(Entity<UpgradeableGunComponent> ent, ref T args) where T : notnull
     {
         foreach (var upgrade in GetCurrentUpgrades(ent))
@@ -48,6 +51,30 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
             RaiseLocalEvent(upgrade, ref args);
         }
     }
+    */
+    private void RelayShot(Entity<UpgradeableGunComponent> ent, ref GunShotEvent args)
+    {
+        foreach (var upgrade in GetCurrentUpgrades(ent))
+        {
+            RaiseLocalEvent(upgrade, ref args);
+        }
+
+        foreach (var (ammo, _) in args.Ammo)
+        {
+            if (TryComp<ProjectileComponent>(ammo, out var proj))
+                proj.Damage *= args.ModkitDamageMult;
+        }
+    }
+
+    private void RelayRefresh(Entity<UpgradeableGunComponent> ent, ref GunRefreshModifiersEvent args)
+    {
+        foreach (var upgrade in GetCurrentUpgrades(ent))
+        {
+            RaiseLocalEvent(upgrade, ref args);
+        }
+        args.FireRate *= args.ModkitRateMult;
+    }
+    // Box Change End
 
     private void OnExamine(Entity<UpgradeableGunComponent> ent, ref ExaminedEvent args)
     {
@@ -106,21 +133,36 @@ public sealed partial class GunUpgradeSystem : EntitySystem // DeltaV - made par
 
     private void OnFireRateRefresh(Entity<GunUpgradeFireRateComponent> ent, ref GunRefreshModifiersEvent args)
     {
-        args.FireRate *= ent.Comp.Coefficient;
+        args.ModkitRateMult += ent.Comp.Coefficient; // Box Change - args.FireRate > args.ModkitRateMult - * > + - Modkit Coefficient Overhaul
     }
 
+    // Box Change Start - Modkit Coefficient Rework
+    /*
     private void OnSpeedRefresh(Entity<GunUpgradeSpeedComponent> ent, ref GunRefreshModifiersEvent args)
     {
         args.ProjectileSpeed *= ent.Comp.Coefficient;
     }
-
-    private void OnDamageGunShot(Entity<GunUpgradeDamageComponent> ent, ref GunShotEvent args)
+    */
+    private void OnSpeedRefresh(Entity<GunUpgradeSpeedComponent> ent, ref GunShotEvent args)
     {
         foreach (var (ammo, _) in args.Ammo)
         {
-            if (TryComp<ProjectileComponent>(ammo, out var proj))
-                proj.Damage += ent.Comp.Damage;
+            if (TryComp<TimedDespawnComponent>(ammo, out var proj))
+                proj.Lifetime += ent.Comp.Coefficient;
         }
+    }
+    // Box Change End
+
+    private void OnDamageGunShot(Entity<GunUpgradeDamageComponent> ent, ref GunShotEvent args)
+    {
+    // Box Change Start - Modkit Overhaul
+        args.ModkitDamageMult += ent.Comp.DamageCoefficient;
+        // foreach (var (ammo, _) in args.Ammo)
+        // {
+        //     if (TryComp<ProjectileComponent>(ammo, out var proj))
+        //         proj.Damage += ent.Comp.Damage;
+        // }
+    // Box Change End
     }
 
     /// <summary>

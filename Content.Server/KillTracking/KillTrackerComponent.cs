@@ -1,13 +1,16 @@
 ﻿using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
 using Robust.Shared.Network;
+using Content.Server.GameTicking.Rules; // Box - imp - Deathmatch Death on Crit
 
 namespace Content.Server.KillTracking;
 
 /// <summary>
 /// This is used for entities that track player damage sources and killers.
 /// </summary>
-[RegisterComponent, Access(typeof(KillTrackingSystem))]
+
+/// [RegisterComponent, Access(typeof(KillTrackingSystem))] // Box Change - Comments out to replace for Death on Crit system
+[RegisterComponent, Access(typeof(KillTrackingSystem), typeof(DeathMatchRuleSystem))] //Box - imp edit, add ", typeof(DeathMatchRuleSystem)"
 public sealed partial class KillTrackerComponent : Component
 {
     /// <summary>

@@ -29,10 +29,10 @@ public sealed class PolyOthersArtifactSystem : EntitySystem
     private void OnActivate(Entity<PolyOthersArtifactComponent> ent, ref ArtifactActivatedEvent args)
     {
         var xform = Transform(ent);
-        var humanoids = new HashSet<Entity<HumanoidAppearanceComponent>>();
+        var humanoids = new HashSet<Entity<HumanoidProfileComponent>>();
         _lookup.GetEntitiesInRange(xform.Coordinates, ent.Comp.Range, humanoids);
-        if (args.Activator is not null && HasComp<HumanoidAppearanceComponent>(args.Activator.Value))
-            humanoids.Add((Entity<HumanoidAppearanceComponent>)args.Activator.Value!);
+        if (args.Activator is not null && HasComp<HumanoidProfileComponent>(args.Activator.Value))
+            humanoids.Add((Entity<HumanoidProfileComponent>)args.Activator.Value!);
         foreach (var comp in humanoids)
         {
             var target = comp.Owner;

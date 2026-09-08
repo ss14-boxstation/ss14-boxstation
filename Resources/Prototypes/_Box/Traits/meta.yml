@@ -1,0 +1,22 @@
+- type: trait
+  id: MarkedForRemoval
+  name: trait-removal-name
+  description: trait-removal-desc
+  category: Meta
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: RoundRemoveConsent
+    
+- type: trait
+  id: DAGDConsent
+  name: trait-dagd-name
+  description: trait-dagd-desc
+  category: Meta
+  conditions:
+  - !type:PlaytimeCondition
+    time: 600 # 10 hours
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: DAGDConsent

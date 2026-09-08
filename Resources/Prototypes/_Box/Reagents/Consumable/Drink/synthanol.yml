@@ -7,14 +7,14 @@
   slipData:
     requiredSlipSpeed: 3.5
   friction: 0.4
+  metabolismCategories: [ Organic, Artificial ]
   metabolisms:
-    Drink:
+    Digestion:
+      metabolites:
+        Synthanol: 0.12
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Synthanol
-        amount: 0.06
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
@@ -32,8 +32,9 @@
   physicalDesc: reagent-physical-desc-strong-smelling # Needs a custom one
   flavor: alcohol # Needs a custom one
   color: "#59768c"
+  metabolismCategories: [ Organic, Artificial ]
   metabolisms:
-    Alcohol:
+    Metabolites:
       metabolismRate: 0.05
       effects:
       - !type:HealthChange
@@ -185,10 +186,6 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Synthanol
-        amount: 0.2
+    Digestion:
+      metabolites:
+        Synthanol: 0.4

@@ -1,0 +1,77 @@
+# Hardforked from: Harmony
+  # Originally from Sector Umbra as "Cluster Prime", which was originally "Cluster" from WizDen, apparently.
+    # Its a ship of theseus if you ask me.
+# Original Map:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/637
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/08c72f36043d26a81b78780797c43b1d0aa9ead5
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1211
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/6eb7de9be35ba70307d02d3f4b7c5b61c2cc4b5d
+# License Forked From:
+
+- type: gameMap
+  id: Prime
+  mapName: Prime
+  mapPath: /Maps/_Box/prime.yml
+  minPlayers: 15
+  maxPlayers: 45
+  stations:
+    Prime:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_Harmony/Shuttles/emergency_jeremiah.yml
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Orbital Prime {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: # 53 jobs, 63 w/ Intern
+          #service (14)
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 3, 3 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            Lawyer: [ 1, 1]
+            ServiceWorker: [ 2, 2 ]
+          #engineering (6)
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ] # Intern Role
+          #medical (8)
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
+            Paramedic: [ 1, 1 ]
+            MedicalDoctor: [ 3, 3 ]
+            MedicalIntern: [ 2, 2 ] # Intern Role
+            Psychologist: [ 1, 1 ]
+          #science (4)
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 2 ] # Intern Role
+          #security (6)
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            Detective: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 2, 2 ] # Intern Role
+          #supply (8)
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 4, 4 ]
+            CargoTechnician: [ 3, 3 ]
+            SupplyAssistant: [ 2, 2 ] # Intern Role
+          #civillian (4)
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Reporter: [ 1, 1]
+          #silicon (3)
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]

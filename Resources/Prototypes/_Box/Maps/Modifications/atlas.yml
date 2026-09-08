@@ -1,7 +1,0 @@
-- type: mapModification
-  id: AtlasSupplyAssistant
-  applyOn:
-  - Atlas
-  additions:
-  - prototype: SpawnPointSupplyAssistant
-    position: -25.5, 16.5

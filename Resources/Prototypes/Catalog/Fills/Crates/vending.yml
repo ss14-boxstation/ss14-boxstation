@@ -24,7 +24,7 @@
   parent: CratePlastic
   id: CrateVendingMachineRestockClothesFilled
   name: clothing restock crate
-  description: Contains a restock box for the clothes vending machines.
+  description: Contains a restock box for most clothes vending machines. # Box Change: "the" -> "most", winterdrobe's bloated inventory requires its own restock to prevent arbitrage without making everything else infinity more expensive
   components:
   - type: EntityTableContainerFill
     containers:

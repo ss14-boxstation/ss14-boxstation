@@ -8,11 +8,11 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
-# Box Change Start, IPCs can't be infected so can't be II
-  - !type:SpeciesRequirement
-    inverted: true
-    species:
-    - IPC
+# Box Change Start, IPCs can't be infected so can't be II # Box - Readd after Nubody fixes
+  # - !type:SpeciesRequirement
+  #   inverted: true
+  #   species:
+  #   - IPC
 # Box Change End
 
 - type: antag
@@ -21,11 +21,11 @@
   antagonist: true
   setPreference: false
   objective: roles-antag-zombie-objective
-# Box Change Start, IPCs can't be infected so can't be zombies (See if this can be changed?) (The idea of IPC zombies seems unpopular)
-  requirements:
-  - !type:SpeciesRequirement
-    inverted: true
-    species:
-    - IPC
+# Box Change Start, IPCs can't be infected so can't be zombies (See if this can be changed?) (The idea of IPC zombies seems unpopular) # Box - Readd after Nubody fixes
+  # requirements:
+  # - !type:SpeciesRequirement
+  #   inverted: true
+  #   species:
+  #   - IPC
 # Box Change End
   guides: [ Zombies ]

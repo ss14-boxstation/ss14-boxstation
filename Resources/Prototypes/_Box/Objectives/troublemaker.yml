@@ -9,7 +9,7 @@
   - type: RoleRequirement
     roles:
     - TroublemakerRole
-  - type: NoCompletionObjective
+  - type: FreeObjective
 
 # Departmental Grudges
 - type: entity

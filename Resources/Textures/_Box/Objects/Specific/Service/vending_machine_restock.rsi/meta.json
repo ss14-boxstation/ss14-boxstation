@@ -1,0 +1,28 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Original source: https://github.com/tgstation/tgstation/commit/df9bc262bfe928fda7ad0a81a78e6681358955e#diff-4c0a2f255d501df414f9aaa8cd2d68fe1f42bb8f1826569da17726c049d1d6f8 - Additions and cleanup by @Vordenburg. Refill_winter made by Dizzy-Eevee (github) for ss14.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "green_bit"
+        },
+        {
+            "name": "refill_winter"
+        }
+    ]
+}

@@ -18,3 +18,4 @@
   - !type:BuyerJobCondition
     whitelist:
     - SalvageSpecialist
+    - Scientist # Box Change - Allow Sci to get it as well

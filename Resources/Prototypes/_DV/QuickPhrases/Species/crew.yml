@@ -27,7 +27,7 @@
 - type: quickPhrase
   id: SpeciesReptilianPhrase
   parent: BaseCrewSpeciesPhrase
-  text: species-name-reptilian
+  text: species-name-reptilian # starcup: rename reptilians to unathi
 
 - type: quickPhrase
   id: SpeciesSlimePersonPhrase
@@ -39,16 +39,24 @@
   parent: BaseCrewSpeciesPhrase
   text: species-name-vulpkanin
 
-# Box change - we dont have resomi yet so commenting it out
-# - type: quickPhrase
-#   id: SpeciesResomiPhrase
-#   parent: BaseCrewSpeciesPhrase
-#   text: species-name-resomi
+# Start Box Change: No.
+#- type: quickPhrase
+#  id: SpeciesFelinidPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-felinid
+# End Box Change
 
-- type: quickPhrase
-  id: SpeciesAvaliPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-avali
+# Start Box Change: We don't have these at the moment
+#- type: quickPhrase
+#  id: SpeciesHarpyPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-harpy
+#
+#- type: quickPhrase
+#  id: SpeciesOniPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-oni
+# End Box Change
 
 - type: quickPhrase
   id: SpeciesSkeletonPhrase
@@ -61,6 +69,6 @@
   text: species-name-vox
 
 - type: quickPhrase
-  id: SpeciesIPCPhrase
+  id: SpeciesRodentiaPhrase
   parent: BaseCrewSpeciesPhrase
-  text: species-name-ipc
+  text: species-name-rodentia

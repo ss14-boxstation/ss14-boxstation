@@ -40,7 +40,7 @@
     - !type:PlantAdjustHealth
       amount: -1
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -58,7 +58,7 @@
   boilingPoint: 2595.0
   meltingPoint: 1083.0
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate: 0.1
       effects:
       - !type:HealthChange
@@ -69,8 +69,6 @@
         damage:
           types:
             Poison: 0.1
-    Medicine:
-      effects:
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
@@ -87,6 +85,7 @@
   color: "#ba85cc"
   boilingPoint: -188.11
   meltingPoint: -219.67
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   plantMetabolism:
     - !type:PlantAdjustWater
       amount: -0.5
@@ -97,21 +96,14 @@
     - !type:PlantAdjustHealth
       amount: -2
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           types:
             Caustic: 0.5
             Poison: 0.5
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 0.5
-    # Box Change End
+
 - type: reagent
   id: Gold
   name: reagent-name-gold
@@ -156,7 +148,7 @@
   boilingPoint: 2862.0
   meltingPoint: 1538.0
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate: 0.1
       effects:
       - !type:HealthChange
@@ -166,8 +158,6 @@
         damage:
           types:
             Poison: 0.1
-    Medicine:
-      effects:
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
@@ -186,7 +176,7 @@
   meltingPoint: 180.5
   boilingPoint: 1330.0
   metabolisms:
-    Poison:
+    Bloodstream:
       metabolismRate: 0.1
       effects:
       - !type:HealthChange
@@ -213,7 +203,7 @@
   meltingPoint: -38.83
   boilingPoint: 356.73
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -275,7 +265,7 @@
   boilingPoint: 3265.0
   meltingPoint: 1414.0
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -303,21 +293,14 @@
   color: "#fff385"
   boilingPoint: 445.0
   meltingPoint: 120.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           types:
             Caustic: 0.1
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Caustic: 0.1
-    # Box Change End
 
 - type: reagent
   id: Sodium
@@ -340,6 +323,7 @@
   color: "#8fa191"
   meltingPoint: 1133.0
   boilingPoint: 4131.0
+  metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   plantMetabolism:
   - !type:PlantAdjustMutationLevel
     amount: 0.6
@@ -351,20 +335,12 @@
     probability: 0.2
     amount: 0.1
   metabolisms:
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
           types:
             Radiation: 2
-    # Box Change Start - IPC Chem
-    Industrial:
-      effects:
-      - !type:HealthChange
-        damage:
-          types:
-            Radiation: 2
-    # Box Change End
 
 - type: reagent
   id: Zinc

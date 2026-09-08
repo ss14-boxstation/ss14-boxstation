@@ -1,0 +1,19 @@
+- type: entity
+  id: OrganSharkminnow
+  abstract: true
+  suffix: bloodsucker, Box
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Bloodsucker, Animal, Thaven ]
+
+- type: entity
+  id: OrganSharkminnowStomach
+  parent: [ OrganSharkminnow, OrganCarpStomach ]
+
+- type: entity
+  id: OrganSharkminnowLiver
+  parent: [ OrganSharkminnow, OrganCarpLiver ]
+
+- type: entity
+  id: OrganSharkminnowHeart
+  parent: [ OrganSharkminnow, OrganCarpHeart ]

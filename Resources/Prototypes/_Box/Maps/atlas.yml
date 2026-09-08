@@ -1,0 +1,74 @@
+# Hardforked from: Harmony
+  # Originally from WizDen, who based it on ss13's goonstation map called Atlas
+# Original Map (WizDen):
+  # PR https://github.com/space-wizards/space-station-14/pull/7676
+  # Commit https://github.com/space-wizards/space-station-14/commit/34aded2c194063ebb2ed21b359273d62ce7a1c55
+# Original Map (Harmony):
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/266
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/f38c39e7b87dbb44cb7132cfb8fd152bd16b3fbb
+# Hardfork Point:
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/6b4fd64e87c099171362b9890489f9ac1558672c
+# License Forked From: AGPL-3.0
+
+- type: gameMap
+  id: Atlas
+  mapName: Atlas
+  mapPath: /Maps/_Box/atlas.yml
+  minPlayers: 5
+  maxPlayers: 20
+  stations:
+    Atlas:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Atlas {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'R4' # R4407/Goon. GS isn't as cool sounding.
+        - type: StationJobs
+          availableJobs: # X jobs, Y w/ Intern
+          #service ()
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            ServiceWorker: [ 1, 1 ]
+          #engineering ()
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 2, 2 ]
+            TechnicalAssistant: [ 1, 3 ] # Intern Role
+          #medical ()
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 1, 1 ]
+            MedicalDoctor: [ 2, 2 ]
+            Paramedic: [ 1, 1 ]
+            MedicalIntern: [ 1, 3 ] # Intern Role
+          #science ()
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 2, 2 ]
+            ResearchAssistant: [ 1, 3 ] # Intern Role
+          #security ()
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
+            SecurityCadet: [ 1, 3 ] # Intern Role
+            Detective: [ 1, 1 ]
+          #supply ()
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 2, 2 ]
+            # SupplyAssistant: [ 1, 3 ] # Intern Role
+          #civillian ()
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Reporter: [ 1, 1 ]
+          #silicon ()
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]

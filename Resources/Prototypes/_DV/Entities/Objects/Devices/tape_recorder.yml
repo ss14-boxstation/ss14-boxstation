@@ -16,6 +16,10 @@
   - type: TapeRecorder
   - type: ActiveListener
     range: 4
+  - type: ChangeVoiceInContainer
+    whitelist:
+      components:
+      - SecretStash
   - type: UseDelay
     delay: 1
   - type: Speech
@@ -50,6 +54,17 @@
     interfaces:
       enum.TapeRecorderUIKey.Key:
         type: TapeRecorderBoundUserInterface
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Pause
+    - Record
+    - Playback
+    - Rewind
 
 - type: entity
   parent: TapeRecorder

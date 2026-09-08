@@ -4,20 +4,35 @@
   id: BloodDeficiency
   name: trait-blood-deficiency-name
   description: trait-blood-deficiency-desc
-  category: BloodDeficiency
+  category: Medical
   cost: 1
-  components:
+  conditions:
+  - !type:TraitDependencyCondition
+    conflicts:
+    - BloodDeficiencyMinor
+  effects:
+  - !type:AddCompsEffect
+    components:
     - type: BloodDeficiency
       bloodRefreshAmount: 0.08
-      bloodReferenceFactor: 0
+      bloodReferenceFactor: 0 
       
 - type: trait
   id: BloodDeficiencyMinor
   name: trait-blood-deficiency-minor-name
   description: trait-blood-deficiency-minor-desc
-  category: BloodDeficiency
-  cost: 1
-  components:
+  category: Medical
+  cost: 1  
+  conditions:
+  - !type:TraitDependencyCondition
+    conflicts:
+    - BloodDeficiency
+  - !type:IsSpeciesCondition
+    species: IPC
+    invert: true
+  effects:
+  - !type:AddCompsEffect
+    components:
     - type: BloodDeficiency
       bloodRefreshAmount: 0
       bloodReferenceFactor: 1

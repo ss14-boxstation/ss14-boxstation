@@ -1,0 +1,82 @@
+# Hardforked from: Harmony
+  # Originally from WizDen
+# Original WizDen Map:
+  # PR https://github.com/space-wizards/space-station-14/pull/34085
+  # Commit https://github.com/space-wizards/space-station-14/commit/03b34f06cca32c66949c5cea525bd8b63e6d67f2
+# Original Harmony Version:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1194
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/73f8a6898f917753fbe8f2e957808a4e3197894a
+# Hardfork Point:
+  # PR https://github.com/ss14-harmony/ss14-harmony/pull/1239
+  # Commit https://github.com/ss14-harmony/ss14-harmony/commit/8815807cb3b3efad24a62d0fcee0bc0bca307f8f
+# License Forked From: MIT
+
+- type: gameMap
+  id: Elkridge
+  mapName: 'Elkridge Depot'
+  mapPath: /Maps/_Box/elkridge.yml
+  minPlayers: 0
+  maxPlayers: 30
+  stations:
+    Elkridge:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Elkridge Depot {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'DS'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_Harmony/Shuttles/emergency_elkridge.yml
+        - type: StationCargoShuttle
+          path: /Maps/_Harmony/Shuttles/cargo_elkridge.yml
+        - type: StationJobs
+          availableJobs: # 47 jobs, 57 w/ Interns
+          #command (7)
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            Quartermaster: [ 1, 1 ]
+          #service (9)
+            Bartender: [ 1, 1 ]
+            Botanist: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            Reporter: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+          #engineering (5)
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ] # Intern Role
+          #medical (6)
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 2, 2 ]
+            MedicalIntern: [ 2, 2 ] # Intern Role
+            Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
+          #science (3)
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 2 ] # Intern Role
+          #security (6)
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
+            Detective: [ 1, 1 ]
+            SecurityCadet: [ 2, 2 ] # Intern Role
+            Lawyer: [ 1, 1 ]
+          #supply (5)
+            SalvageSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 3, 3 ]
+            SupplyAssistant: [ 2, 2 ] # Intern Role
+          #civilian (3)
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+          #silicon (3)
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]

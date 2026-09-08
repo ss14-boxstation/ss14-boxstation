@@ -489,7 +489,7 @@
 
 - type: entity
   name: mothroach
-  parent: MobCockroach
+  parent: [ BaseMobMothroach, MobCockroach ]
   id: MobMothroach
   description: This is the adorable by-product of multiple attempts at genetically mixing mothpeople with cockroaches.
   components:
@@ -604,8 +604,6 @@
   - type: NpcFactionMember
     factions:
     - Mouse
-  - type: Body
-    prototype: Mothroach
   - type: TypingIndicator
     proto: moth
   - type: Destructible
@@ -870,7 +868,7 @@
 
 - type: entity
   name: cow
-  parent: SimpleMobBase
+  parent: [ SimpleMobBase, BaseMobRuminant ]
   id: MobCow
   description: Moo.
   components:
@@ -943,8 +941,6 @@
   - type: NpcFactionMember
     factions:
     - Passive
-  - type: Body
-    prototype: AnimalRuminant
   - type: HTN
     rootTask:
       task: RuminantCompound
@@ -955,7 +951,7 @@
 
 - type: entity
   name: crab
-  parent: SimpleMobBase
+  parent: [ SimpleMobBase, BaseMobHemocyanin ]
   id: MobCrab
   description: A folk legend goes around that his claw snaps spacemen out of existence over distasteful remarks. Be polite and tolerant for your own safety.
   components:
@@ -1020,12 +1016,10 @@
   - type: HTN
     rootTask:
       task: RuminantCompound
-  - type: Body
-    prototype: AnimalHemocyanin
 
 - type: entity
   name: goat
-  parent: SimpleMobBase
+  parent: [ SimpleMobBase, BaseMobRuminant ]
   id: MobGoat
   description: Her spine consists of long sharp segments, no wonder she is so grumpy.
   components:
@@ -1117,8 +1111,6 @@
   - type: NpcFactionMember
     factions:
     - Passive
-  - type: Body
-    prototype: AnimalRuminant
   - type: NPCRetaliation
     attackMemoryLength: 5
   - type: FactionException
@@ -1356,7 +1348,7 @@
 - type: entity
   name: genetic ancestor
   id: MobBaseAncestor
-  parent: [SimpleMobBase, StripableInventoryBase]
+  parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase]
   description: The genetic bipedal ancestor of... Uh... Something. Yeah, there's definitely something on the station that descended from whatever this is.
   abstract: true
   components:
@@ -1401,22 +1393,16 @@
     - map: [ "outerClothing" ]
     - map: [ "mask" ]
     - map: [ "head" ]
-    - map: [ "clownedon" ]
-      sprite: "Effects/creampie.rsi"
-      state: "creampie_human"
-      visible: false
   - type: Hands
+    activeHandId: Hand
+    hands:
+      Hand:
+        location: Left
   - type: ComplexInteraction
-  - type: GenericVisualizer
-    visuals:
-      enum.CreamPiedVisuals.Creamed:
-        clownedon:
-          True: {visible: true}
-          False: {visible: false}
-  - type: Body
-    prototype: Primate
-    requiredLegs: 1 # TODO: More than 1 leg
   - type: CreamPied
+    sprite:
+      sprite: Effects/creampie.rsi
+      state: creampie_monkey
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Monkey_burning
@@ -1513,7 +1499,7 @@
 - type: entity
   name: monkey
   id: MobBaseSyndicateMonkey
-  parent: MobBaseAncestor
+  parent: MobBaseAncestor # TODO: fix copy paste from MobMonkey
   description: New church of neo-darwinists actually believe that EVERY animal evolved from a monkey. Tastes like pork, and killing them is both fun and relaxing.
   suffix: syndicate base
   components:
@@ -1611,10 +1597,11 @@
         Slash: 5
         Piercing: 4
   - type: Temperature
-    heatDamageThreshold: 360
-    coldDamageThreshold: 285
     currentTemperature: 310.15
     specificHeat: 42
+  - type: TemperatureDamage
+    heatDamageThreshold: 360
+    coldDamageThreshold: 285
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -1636,10 +1623,6 @@
     - map: [ "id" ]
     - map: [ "mask" ]
     - map: [ "head" ]
-    - map: [ "clownedon" ]
-      sprite: "Effects/creampie.rsi"
-      state: "creampie_human"
-      visible: false
   - type: RandomSprite
     getAllGroups: true
     available:
@@ -1733,12 +1716,12 @@
 
 - type: entity
   name: mouse
-  parent: SimpleMobBase
+  parent:
+  - SimpleMobBase
+  - BaseMobAnimal
   id: MobMouse
   description: Squeak!
   components:
-  - type: Body
-    prototype: Mouse
   - type: GhostRole
     makeSentient: true
     allowSpeech: true
@@ -2383,10 +2366,11 @@
     factions:
     - Passive
   - type: Temperature
-    heatDamageThreshold: 335
-    coldDamageThreshold: 230
     currentTemperature: 310.15
     specificHeat: 46
+  - type: TemperatureDamage
+    heatDamageThreshold: 335
+    coldDamageThreshold: 230
     coldDamage:
       types:
         Cold : 0.05 #per second, scales with temperature & other constants
@@ -2524,7 +2508,7 @@
 # Code unique spider prototypes or combine them all into one spider and get a
 # random sprite state when you spawn it.
 - type: entity
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, BaseMobHemocyanin, MobCombat ]
   id: MobSpiderBase
   abstract: true
   components:
@@ -2545,8 +2529,6 @@
     - id: FoodMeatSpider
       amount: 2
   - type: CombatMode
-  - type: Body
-    prototype: AnimalHemocyanin
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -2996,6 +2978,11 @@
   - type: MobPrice
     price: 200
   - type: MessyDrinker
+  # TODO: Fix the sprite offset
+  #- type: CreamPied
+  #  sprite:
+  #    sprite: Effects/creampie.rsi
+  #    state: creampie_corgi
 
 - type: entity
   parent: MobCorgiBase
@@ -3072,13 +3059,14 @@
     damageContainer: BiologicalMetaphysical
     damageModifierSet: Infernal
   - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TemperatureDamage
     heatDamageThreshold: 4000 #They come from hell, so..
     coldDamageThreshold: 260
-    currentTemperature: 310.15
     coldDamage:
       types:
         Cold : 1 #per second, scales with temperature & other constants
-    specificHeat: 42
     heatDamage:
       types:
         Heat : 1 #per second, scales with temperature & other constants
@@ -3273,6 +3261,7 @@
       Dead:
         Base: spacecat_dead
   - type: Temperature
+  - type: TemperatureDamage
     heatDamageThreshold: 423
     coldDamageThreshold: 0
   - type: Tag
@@ -3684,7 +3673,7 @@
 
 - type: entity
   name: diona nymph
-  parent: [SimpleMobBase, StripableInventoryBase]
+  parent: [BaseMobAnimal, SimpleMobBase, StripableInventoryBase]
   id: MobDionaNymph
   description: It's like a cat, only.... branch-ier.
   components:
@@ -3913,14 +3902,18 @@
             sprite: Mobs/Pets/displacements.rsi
             state: corgi_head_displacement
   - type: Hands # HANDS!
+    activeHandId: Right
+    hands:
+      Right:
+        location: Right
+      Left:
+        location: Left
   - type: Puller
   - type: Cuffable # bad dog!
   - type: BlockWriting # dogs can't write, paws unwieldy; mouth-writing is a myth
   - type: Stripping
   - type: ComplexInteraction
   # Implement custom borgi body type
-  - type: Body
-    prototype: SmartCorgi
   - type: RotationVisuals
     defaultRotation: 90
     horizontalRotation: 180

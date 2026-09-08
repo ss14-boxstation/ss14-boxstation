@@ -1,0 +1,7 @@
+# Static
+- type: latheRecipePack
+  id: ImpMedStatic
+  recipes:
+  - PrescriptionLens
+  - PrescriptionLensStrong
+  - BlindingLens

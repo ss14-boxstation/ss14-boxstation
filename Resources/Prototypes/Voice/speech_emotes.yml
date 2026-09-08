@@ -63,10 +63,13 @@
   category: Vocal
   icon: Interface/Emotes/honk.png
   whitelist:
-    requireAll: true
-    components:
-    - Vocal
+    # Start Box Change: Remove vocal requirement (anything with SiliconEmotes should also have the vocal component) so we can remove requiresAll and add the emote to harpy whitelist
+    #requireAll: true
+    #components:
+    #- Vocal
     tags:
+    - HarpyEmotes
+    # End Box Change
     - SiliconEmotes
   chatMessages: ["chat-emote-msg-honk"]
   chatTriggers:
@@ -502,10 +505,13 @@
   category: Vocal
   icon: Interface/Emotes/beep.png
   whitelist:
-    requireAll: true
-    components:
-    - Vocal
+    # Start Box Change: Remove vocal requirement (anything with SiliconEmotes should also have the vocal component) so we can remove requiresAll and add the emote to harpy whitelist
+    #requireAll: true
+    #components:
+    #- Vocal
     tags:
+    - HarpyEmotes
+    # End Box Change
     - SiliconEmotes
   chatMessages: ["chat-emote-msg-beep"]
   chatTriggers:

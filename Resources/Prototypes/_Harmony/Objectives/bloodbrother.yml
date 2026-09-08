@@ -91,9 +91,11 @@
   parent: [BaseBloodBrotherObjective, CMOHyposprayStealObjective]
   id: BloodBrotherCMOHyposprayStealObjective
 
-- type: entity
-  parent: [BaseBloodBrotherObjective, CMOCrewMonitorStealObjective]
-  id: BloodBrotherCMOCrewMonitorStealObjective
+# Box Change Start - Removes crew monitor objective
+# - type: entity
+#   parent: [BaseBloodBrotherObjective, CMOCrewMonitorStealObjective]
+#   id: BloodBrotherCMOCrewMonitorStealObjective
+# Box Change End - Removes crew monitor objective
 
 ## rd
 

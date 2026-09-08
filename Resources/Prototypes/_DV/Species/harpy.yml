@@ -1,0 +1,11 @@
+- type: species
+  id: Harpy
+  name: species-name-harpy
+  roundStart: true
+  prototype: MobHarpy
+  dollPrototype: AppearanceHarpy
+  skinColoration: HumanToned
+  # Start Box Change: Make them normal height, and we don't have height sliders
+  #baseScale: "0.9, 0.9"
+  #minHeight: 0.90
+  # End Box Change

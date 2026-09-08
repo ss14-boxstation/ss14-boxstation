@@ -27,6 +27,7 @@
 
 - type: tile
   id: FloorBingle
+  parent: BaseStationTile # Box Change: Parent to upstream base floor tile
   name: tiles-bingle-floor
   sprite: /Textures/_Harmony/Tiles/binglefloortile.png
   variants: 4
@@ -35,12 +36,13 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
+  #baseTurf: Plating
+  #isSubfloor: false
+  #deconstructTools: [ Prying ]
+  # End Box Change
   footstepSounds:
     collection: FootstepBlood
   itemDrop: FloorTileItemBingle
   friction: 0.05 #slippy
-  heatCapacity: 10000
+  #heatCapacity: 10000 # Box Change: Remove redundant info
 

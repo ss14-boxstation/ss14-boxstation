@@ -6,6 +6,7 @@
     OreBag: 4
     Flare: 4
     FlashlightLantern: 2
+    NFWeaponHoloflareGun: 2 # Box Change: Add holoflare pistols
     HandheldGPSBasic: 2
     RadioHandheldMining: 2 # Harmony Change - RadioHandheld -> RadioHandheldMining
     WeaponGrapplingGun: 4

@@ -31,6 +31,10 @@
       components:
       - SurviveCondition
       - KeepAliveCondition
+  - type: ObjectiveComponentWhitelist # Box Change - PDox RR Consent toggle
+    whitelist:
+      components:
+      - RoundRemoveConsent
 
 - type: entity
   parent: [BaseParadoxCloneObjective, BaseKillObjective]
@@ -48,4 +52,8 @@
       components:
       - SurviveCondition
       - KeepAliveCondition
+  - type: ObjectiveComponentWhitelist # Box Change - PDox RR Consent toggle
+    whitelist:
+      components:
+      - RoundRemoveConsent
 

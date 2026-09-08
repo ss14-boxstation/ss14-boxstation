@@ -1,4 +1,7 @@
 marking-MobIPCHeadDefault = Standard Operational Monitor
+# Box change start - hacky, but it works
+marking-MobIPCMonitorDefault = Standard Operational Monitor
+# Box Change End
 marking-MobIPCTorsoDefault = Standard Robotic Chassis
 marking-MobIPCTorsoFemaleDefault = Standard Robotic Chassis
 marking-MobIPCLArmDefault = Standard Left Robotic Arm

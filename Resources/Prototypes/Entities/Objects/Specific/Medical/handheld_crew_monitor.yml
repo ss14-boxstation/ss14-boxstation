@@ -1,7 +1,8 @@
 - type: entity
   name: handheld crew monitor
   categories: [ DoNotMap ]
-  parent: [ BaseHandheldComputer, BaseGrandTheftContraband ]
+#  parent: [ BaseHandheldComputer, BaseGrandTheftContraband ] # Box Change - comments out to remove grand theft parent
+  parent: [ BaseHandheldComputer] #Box Change - New Parent list
   # CMO-only bud, don't add more.
   id: HandheldCrewMonitor
   description: A hand-held crew monitor displaying the status of suit sensors.
@@ -26,11 +27,13 @@
   - type: StationLimitedNetwork
   - type: StaticPrice
     price: 500
-  - type: Tag
-    tags:
-    - HighRiskItem
-  - type: StealTarget
-    stealGroup: HandheldCrewMonitor
+# Box Change Start - removes antag objective and high risk tag
+#  - type: Tag
+#    tags:
+#    - HighRiskItem
+#  - type: StealTarget
+#    stealGroup: HandheldCrewMonitor
+# Box Change End - removes antag objective and high risk tag
 
 - type: entity
   id: HandheldCrewMonitorEmpty

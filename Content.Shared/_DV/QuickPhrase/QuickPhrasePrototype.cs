@@ -3,7 +3,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 
 namespace Content.Shared._DV.QuickPhrase;
 
-[Prototype("quickPhrase")]
+[Prototype]
 public sealed partial class QuickPhrasePrototype : IPrototype, IInheritingPrototype
 {
     /// <summary>

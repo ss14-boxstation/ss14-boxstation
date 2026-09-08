@@ -4,8 +4,8 @@
     children:
     - !type:NestedSelector
       tableId: BasicChillEventsTable
-    # - !type:NestedSelector
-    #   tableId: CalmPestEventsTable
+    - !type:NestedSelector
+      tableId: CalmPestEventsTable
     - !type:NestedSelector
       tableId: CargoGiftsTable
 
@@ -16,3 +16,31 @@
   - type: BasicStationEventScheduler
     scheduledGameRules: !type:NestedSelector
       tableId: ChillGameRulesTable
+
+- type: entityTable
+  id: RedShiftGameRulesTable
+  table: !type:AllSelector
+    children:
+    - !type:NestedSelector
+      tableId: RedShiftEventsTable
+    - !type:NestedSelector
+      tableId: RedShiftAntagTable
+    - !type:NestedSelector
+      tableId: CargoGiftsTable
+    - !type:NestedSelector
+      tableId: CalmPestEventsTable
+
+- type: entity
+  id: RedShiftEventsScheduler
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: RedShiftGameRulesTable
+
+- type: entity
+  parent: Nukeops
+  id: NukeopsRandom
+  components:
+  - type: GameRule
+    minPlayers: 15

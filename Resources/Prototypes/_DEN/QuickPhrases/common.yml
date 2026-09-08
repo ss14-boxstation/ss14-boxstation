@@ -1,0 +1,4 @@
+- type: quickPhrase
+  id: QuestionMarkPhrase
+  parent: BaseQuestionPhrase
+  text: phrase-question-mark

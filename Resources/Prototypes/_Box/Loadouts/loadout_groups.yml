@@ -34,6 +34,7 @@
   maxLimit: 4 # This should be adjusted as needed so players with multiple disability traits aren't forced to pick.
   loadouts:
   - AACTablet
+  - AACTabletSAS
   - HandheldStationMap
   - OffsetCane
   - OffsetCaneWood

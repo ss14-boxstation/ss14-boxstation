@@ -28,7 +28,7 @@ public sealed class GunUpgradeIndoorsSystem : EntitySystem
         foreach (var upgrade in _upgrade.GetCurrentUpgrades(args.Gun))
         {
             // only allow 2 of them to be installed max to prevent doing double damage
-            if (!HasComp<GunUpgradeIndoorsComponent>(ent) || ++count < 2)
+            if (!HasComp<GunUpgradeIndoorsComponent>(ent)) // || ++count < 2) // Box Change start - Only 1 is needed
                 continue;
 
             _popup.PopupClient(Loc.GetString("upgradeable-gun-popup-too-many"), args.Gun, args.User);

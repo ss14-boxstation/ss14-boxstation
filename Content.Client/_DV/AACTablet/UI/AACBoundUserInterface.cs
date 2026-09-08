@@ -1,14 +1,20 @@
+using Content.Client.Chat.TypingIndicator;
 using Content.Shared._DV.AACTablet;
+using Content.Shared._DV.QuickPhrase;
+using Content.Shared.Chat.TypingIndicator;
+using Robust.Client.UserInterface;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client._DV.AACTablet.UI;
 
 public sealed class AACBoundUserInterface : BoundUserInterface
 {
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-
     [ViewVariables]
     private AACWindow? _window;
+
+    private static readonly ProtoId<TypingIndicatorPrototype> AACTypingIndicator = "aac";
+
+    private TypingIndicatorSystem? _typing;
 
     public AACBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
     {
@@ -17,22 +23,41 @@ public sealed class AACBoundUserInterface : BoundUserInterface
     protected override void Open()
     {
         base.Open();
-        _window?.Close();
-        _window = new AACWindow(this, _prototypeManager);
-        _window.OpenCentered();
 
-        _window.PhraseButtonPressed += OnPhraseButtonPressed;
+        if (_window is { Disposed: false })
+            _window.Close();
+
+        _window = this.CreateWindow<AACWindow>();
         _window.OnClose += Close;
+        _window.PhraseButtonPressed += OnPhraseButtonPressed;
+        _window.Typing += OnTyping;
+        _window.SubmitPressed += OnSubmit;
     }
 
-    private void OnPhraseButtonPressed(string phraseId)
+    private void OnPhraseButtonPressed(List<ProtoId<QuickPhrasePrototype>> phraseId, string prefix)
     {
-        SendMessage(new AACTabletSendPhraseMessage(phraseId));
+        SendMessage(new AACTabletSendPhraseMessage(phraseId, prefix));
     }
 
-    protected override void Dispose(bool disposing)
+    private void OnTyping()
     {
-        base.Dispose(disposing);
-        _window?.Dispose();
+        _typing ??= EntMan.System<TypingIndicatorSystem>();
+        _typing?.ClientAlternateTyping(AACTypingIndicator);
+    }
+
+    private void OnSubmit()
+    {
+        _typing ??= EntMan.System<TypingIndicatorSystem>();
+        _typing?.ClientSubmittedChatText();
+    }
+
+    protected override void UpdateState(BoundUserInterfaceState state)
+    {
+        base.UpdateState(state);
+
+        if (state is not AACTabletBuiState msg)
+            return;
+
+        _window?.Update(msg);
     }
 }
