@@ -121,7 +121,8 @@ public sealed class TraitSystem : EntitySystem
             SpeciesId = speciesId,
             Profile = profile,
             StatusEffects = _statusEffects,
-            PlayTimes = playtimes,
+            SelectedTraits = selectedTraits,
+            PlayTimes = playtimes
         }; // Box Change: Playtime requirements
 
         foreach (var traitId in selectedTraits)

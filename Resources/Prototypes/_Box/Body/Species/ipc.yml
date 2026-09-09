@@ -359,7 +359,7 @@
   components:
   - type: Metabolizer
     metabolismCategories: [ Artificial ]
-    metabolizerTypes: [ Synthetic, IPC ]
+    metabolizerTypes: [ Robotic, IPC ]
 
 - type: entity
   parent: [ OrganIPCExternal, OrganBaseTorso ]

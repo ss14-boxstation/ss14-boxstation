@@ -1,1 +1,2 @@
-role-subtype-hitman = Hitman
+# Box Change - Hitman > Contract Killer
+role-subtype-hitman = Contract Killer

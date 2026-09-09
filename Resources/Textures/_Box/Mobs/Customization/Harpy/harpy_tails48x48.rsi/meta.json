@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Peacock by stillxicarus (Discord) @ https://github.com/Simple-Station/Einstein-Engines/commit/f149d46b3d4d903972ffa2db2d110fb5af36026f. Whitescaled by Dizzy-Eevee (github)",
+    "size": {
+        "x": 48,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "whitescale_peacock_tail_feathers",
+            "directions": 4
+        },
+        {
+            "name": "whitescale_peacock_tail_eyes",
+            "directions": 4
+        }
+    ]
+}

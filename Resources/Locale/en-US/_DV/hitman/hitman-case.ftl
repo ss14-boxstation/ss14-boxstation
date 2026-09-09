@@ -46,5 +46,6 @@ hitman-tracker-kit-description =
     Provides a station master encryption key, universal pinpointer,
     And a camera bug.
 
-hitman-briefcase-window-title = hitman briefcase
+# Box Change - Hitman > Contract Killer
+hitman-briefcase-window-title = contract killer briefcase
 hitman-briefcase-window-description = what did you bring?

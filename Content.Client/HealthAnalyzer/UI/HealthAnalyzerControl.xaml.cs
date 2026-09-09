@@ -18,6 +18,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._Box.Traits; // Box Change - Misfit - Add synth prefix to species
 namespace Content.Client.HealthAnalyzer.UI;
 
 // Health analyzer UI is split from its window because it's used by both the
@@ -46,8 +47,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
     {
         var target = _entityManager.GetEntity(state.TargetEntity);
 
-        if (target == null
-            || !_entityManager.TryGetComponent<DamageableComponent>(target, out var damageable))
+        if (target == null || !_entityManager.TryGetComponent<DamageableComponent>(target, out var damageable))
         {
             NoPatientDataText.Visible = true;
             return;
@@ -78,11 +78,48 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
             : Loc.GetString("health-analyzer-window-entity-unknown-text"));
         NameLabel.SetMessage(name);
 
-        SpeciesLabel.Text =
+    // Box Change Start - Misfit - Synth prefix
+        // SpeciesLabel.Text =
+        var species =
+    // Box Change End
             _entityManager.TryGetComponent<HumanoidProfileComponent>(target.Value,
                 out var humanoidComponent)
                 ? Loc.GetString(_prototypes.Index(humanoidComponent.Species).Name)
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
+
+    // Box Change Start - Mistfit - Synth Prefix
+        var synthSpecies = _entityManager.HasComponent<SpeciesPrefixComponent>(target.Value)
+            ? Loc.GetString("synthetic-component-prefix", ("species", species))
+            : species;
+
+        SpeciesLabel.Text = synthSpecies;
+    // Box Change End
+
+        // Box Change Start - Check Metabolism
+        var bloodstream = state.MetabolismTypes.TryGetValue("Bloodstream", out var bloodstreamList);
+        var metabolites = state.MetabolismTypes.TryGetValue("Metabolites", out var metabolitesList);
+        var digestion = state.MetabolismTypes.TryGetValue("Digestion", out var digestionList);
+        var respiration = state.MetabolismTypes.TryGetValue("Respiration", out var respirationList);
+
+        BloodstreamMetabolismTitle.Visible = BloodstreamMetabolismLabel.Visible = bloodstream;
+        MetabolitesMetabolismTitle.Visible = MetabolitesMetabolismLabel.Visible = metabolites;
+        DigestionMetabolismTitle.Visible = DigestionMetabolismLabel.Visible = digestion;
+        RespirationMetabolismTitle.Visible = RespirationMetabolismLabel.Visible = respiration;
+
+        if (bloodstreamList != null)
+            BloodstreamMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", bloodstreamList)));
+        if (metabolitesList != null)
+            MetabolitesMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", metabolitesList)));
+        if (digestionList != null)
+            DigestionMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", digestionList)));
+        if (respirationList != null)
+            RespirationMetabolismLabel.Text = Loc.GetString("health-analyzer-window-metabolism-types", ("types", string.Join(", ", respirationList)));
+
+        MetabolismLowDivider.Visible = bloodstream || metabolites || digestion || respiration;
+
+        OrganCategoryLabel.Visible = state.MetabolismCategories.Count > 0;
+        OrganCategoryLabel.Text = Loc.GetString("health-analyzer-window-metabolism-categories", ("categories", string.Join(", ", state.MetabolismCategories)));
+        // Box Change End
 
         // Basic Diagnostic
 

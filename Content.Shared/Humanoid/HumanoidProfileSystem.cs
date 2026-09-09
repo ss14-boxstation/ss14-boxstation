@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Humanoid;
 
-public sealed class HumanoidProfileSystem : EntitySystem
+public sealed partial class HumanoidProfileSystem : EntitySystem // Box Change - Made Partial
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly GrammarSystem _grammar = default!;
@@ -44,8 +44,9 @@ public sealed class HumanoidProfileSystem : EntitySystem
         var identity = Identity.Entity(ent, EntityManager);
         var species = GetSpeciesRepresentation(ent.Comp.Species).ToLower();
         var age = GetAgeRepresentation(ent.Comp.Species, ent.Comp.Age);
+        var syntheticSpecies = GetSyntheticRepresentation(ent, species); // Box Change - Misfit - Species Prefix (Synths)
 
-        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
+        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", syntheticSpecies))); // Misfit - Species Prefix (Synths)
     }
 
     /// <summary>

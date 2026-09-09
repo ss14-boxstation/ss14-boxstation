@@ -35,7 +35,7 @@
   description: nukeops-description
   showInVote: false
   rules:
-  - Nukeops
+  - NukeopsRandom
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler

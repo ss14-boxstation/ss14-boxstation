@@ -1,5 +1,6 @@
 # Overarching
-metabolizer-type-synthetic = Synthetic
+metabolizer-type-robotic = Robotic
+metabolizer-type-bionic = Bionic
 metabolizer-type-cyber = Cybernetic
 
 # Species

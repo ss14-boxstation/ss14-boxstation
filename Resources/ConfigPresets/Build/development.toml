@@ -17,7 +17,7 @@ quick_lottery = true
 generator_enabled = false
 
 [movement]
-mob_pushing = true
+mob_pushing = false # Box Change: True -> False; We do not and may never have this enabled on the live server so I don't see why we should have to deal with it in dev.
 
 [physics]
 # Makes mapping annoying

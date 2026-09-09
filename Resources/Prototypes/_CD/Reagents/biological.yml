@@ -1,0 +1,29 @@
+- type: reagent
+  id: SynthBlood
+  name: reagent-name-synth-blood
+  group: Biological
+  desc: reagent-desc-synth-blood
+  flavor: metallic
+  color: "#00b8f5"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-reflective
+  metabolisms:
+    Digestion:
+      effects:
+      # Misfit - Change to give same effects as uncooked proteins
+      - !type:Vomit
+        probability: 0.1
+      - !type:HealthChange
+      # Box Change Start - Vox and Synths shouldn't be hurt by the coolant, But Cybernetically Augmented individuals should
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Robotic, Synth, Vox ]
+          inverted: true
+      # Box Change End
+        damage:
+          types:
+            Poison: 1
+  footstepSound:
+    collection: FootstepBlood
+    params:
+      volume: 6

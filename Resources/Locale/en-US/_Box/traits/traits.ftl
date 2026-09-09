@@ -14,4 +14,10 @@ trait-removal-name = Marked for Removal
 trait-removal-desc = Someone wants you gone. You will be a valid target for round-removal objectives.
 
 trait-dagd-name = DAGD Consent
-trait-dagd-desc = Opt-in for the "Die a Glorious Death" objective. 
+trait-dagd-desc = Opt-in for the "Die a Glorious Death" objective.
+
+trait-synth-name = Synthetic
+trait-synth-desc = You are a biomechanical construct made to resemble an organic. You bleed synth blood, are notified of Ion Storms, and can use Artificial reagents.
+
+trait-ion-sensitive-name = Ion Sensitive
+trait-ion-sensitive-desc = You are notified of Ion Storms. [color=yellow]NOTE: Ion Storms have no mechanical effect on you.[/color]

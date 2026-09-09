@@ -1,10 +1,14 @@
 # Overarching
 - type: metabolizerType
-  id: Synthetic
-  name: metabolizer-type-synthetic
+  id: Robotic
+  name: metabolizer-type-robotic
 
 - type: metabolizerType
-  id: Cyber
+  id: Bionic
+  name: metabolizer-type-bionic
+
+- type: metabolizerType
+  id: Cybernetic
   name: metabolizer-type-cyber
 
 # Species
