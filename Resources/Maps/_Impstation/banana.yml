@@ -23280,12 +23280,6 @@ entities:
     - type: Transform
       pos: -39.5369,-32.92192
       parent: 2
-    - type: PluralName
-      nameSomeOf: glass
-      overrideName: glass
-    - type: Grammar
-      attributes:
-        indefinite: some sheets of
   - uid: 3575
     components:
     - type: Transform
