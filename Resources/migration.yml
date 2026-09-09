@@ -825,24 +825,24 @@ ComputerServiceJobBoard: ComputerBroken
 ComputerShipyard: ComputerBroken
 ComputerTabletopMassMedia: ComputerMassMedia # Port these
 ComputerTabletopRadar: ComputerRadar # ^
-Decalamp: Lamp
+Decalamp: null
 DefaultStationBeaconMailroomCourier: null
 DefaultStationBeaconSolarsNorthEast: DefaultStationBeaconSolarsNE
-DrinkCottonBoolGlass: PlushieRatvar # Port this?
-DrinkGreenAsteradeBottleFull: PlushieRatvar
-DrinkRaktaccinoGlass: PlushieRatvar
+DrinkCottonBoolGlass: DrinkWineGlass # Port this?
+DrinkGreenAsteradeBottleFull: DrinkWineGlass
+DrinkRaktaccinoGlass: DrinkWineGlass
 FoodBoxDonkpocketCloth: FoodBoxDonkpocketMoth
-FoodMealBigLollipop: PlushieRatvar # not porting these actually
-FoodMealClothLollipop: PlushieRatvar 
-FoodMealFruitLollipop: PlushieRatvar 
-FoodMealMeatLollipop: PlushieRatvar 
+FoodMealBigLollipop: null # not porting these actually
+FoodMealClothLollipop: null 
+FoodMealFruitLollipop: null 
+FoodMealMeatLollipop: null 
 GasFilterEnabled: GasFilter # We should add thesse too
 GasPressurePumpEnabled: GasPressurePump
 GasVentScrubberAlt1: null # Wizden feature, port this
 GasVentScrubberAlt2: null #
 GasVentScrubberDecapoid: GasVentScrubber
 GasVentPumpDecapoid: GasVentPumpVox
-GlassBoxNukeDiskFilled: PlushieRatvar
+GlassBoxNukeDiskFilled: NukeDisk
 GreatWrench: Wrench # Big wrench is cool but maybe not port-worthy
 HoSGunSpawner: WeaponEnergyMagnum  # HoS gets a mapped emagnum here instead of a WT/etc
 KitchenAssembler: KitchenElectricGrill # I don't actually know how this is different than a normal microwave aside from visuals
@@ -850,7 +850,7 @@ KitchenElectricRange: KitchenMicrowave # Port this
 LockerCourierFilled: WardrobeCargoFilled
 LockerHospitalityDirectorFilled: WardrobeMixedFilled # Oh god I forgot about HD how are we gonna handle that
 LockerJanitorFilled: ClosetJanitor
-MedicalAssembler: PlushieRatvar # This is basically a super-microwave for medical from frontier idk if we'd want this
+MedicalAssembler: null # This is basically a super-microwave for medical from frontier idk if we'd want this
 MirrorApid: Mirror
 PlushieAlienGerm: PlushieSharkPink
 PlushieApid: PlushieSharkPink
@@ -862,11 +862,11 @@ PlushieKodepiia: PlushieSharkPink
 PlushieOdds: PlushieSharkPink
 PlushieTeddyBearRecolorableRandom: PlushieSharkPink # This one doesn't immediately jump out as imp content / an imp meme so look into it
 PoweredlightUV: PoweredlightExterior
-PoweredSmallFloorLightRed: PlushieNar # Port floor lights pleaaase
-ReagentContainerHoney: PlushieNar # Port bees actually yeah why not
-RubberStampHatePaperwork: PlushieNar # maybe for the funny
+PoweredSmallFloorLightRed: null # Port floor lights pleaaase
+ReagentContainerHoney: null  # Port bees actually yeah why not
+RubberStampHatePaperwork: null # maybe for the funny
 ServiceTechFab: PlushieSharkGrey # we will have these at some point
-SignApid: PlushieSharkGrey
+SignApid: null
 SignMaterialsService: SignMaterials
 SpawnMobChemDog: SpawnMobWalter
 SpawnMobPenguinOswald: null # HD pet
@@ -874,22 +874,22 @@ SpawnPointCourier: SpawnPointCargoTechnician
 SpawnPointLocationMidRoundAntag: null
 SqueakySmileyBall: PlushieSharkPink
 SteelLunchboxApidFilled: null
-SurveillanceWirelessCameraPocket: PlushieSharkBlue # what the fuck even is this
+SurveillanceWirelessCameraPocket: null # what the fuck even is this
 TableUraniumGlass: TableGlass # port this, why isn't this just upstream
 TableWoodReinforced: TableWood
-TrashNapkin: PlushieSharkGrey # port this, i want like ALL of imp's service goodies
+TrashNapkin: null # port this, i want like ALL of imp's service goodies
 VendingMachineCourierDrobe: null
 VendingMachineDanShrimp: VendingMachineDiscount
 WallmountTelevisionMini: WallmountTelevision
 WallpaperStarsBig: null # Port these 
 WallpaperStarsMoon: null # ^
 WallpaperStarsSmall: null # ^
-WarningWaterVapor: PlushieSharkGrey
+WarningWaterVapor: null
 WeaponPocketDisabler: WeaponDisabler
 WindoorSecureCourierLocked: WindoorSecureCargoLocked
 YarnNoodles: FoodNoodles # port this we need more moth food desperately
 # Round 2...
-AtmosFixDecapoidMarker: PlushieSharkGrey
+AtmosFixDecapoidMarker: null
 AtmosFixWaterVaporMarker: AtmosFixBlockerMarker
 CrateEngineeringShittle: CrateMaterialBasicResource 
 CrateServiceJanitorialHardsuit: CrateJanitorBiosuit
