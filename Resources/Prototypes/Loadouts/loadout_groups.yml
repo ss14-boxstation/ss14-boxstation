@@ -140,7 +140,6 @@
   - TowelColorMime
   - TowelColorSilver
   - TowelColorGold
-  - TowelStripedOrange # Harmony
   - SilverRing # Harmony
   - GoldRing # Harmony
   - TapeRecorder # DeltaV / Harmony
@@ -250,6 +249,7 @@
   id: CaptainJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieCaptain
 
@@ -301,6 +301,7 @@
   id: HoPJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieHeadOfPersonnel
 
@@ -371,6 +372,7 @@
   id: PassengerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushiePassenger
 
@@ -403,6 +405,7 @@
   id: BartenderJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieBartender
   - BartenderGoldenShaker
@@ -411,6 +414,7 @@
   id: ServiceWorkerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieServiceWorker
 
@@ -448,6 +452,7 @@
   id: ChefJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieChef
 
@@ -464,6 +469,7 @@
   id: LibrarianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieLibrarian
 
@@ -493,6 +499,7 @@
   id: LawyerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieLawyer
 
@@ -544,6 +551,7 @@
   id: ChaplainJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieChaplain
 
@@ -593,6 +601,7 @@
   id: JanitorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieJanitor
   - JanitorGoldenPlunger
@@ -633,6 +642,7 @@
   id: BotanistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieBotanist
 
@@ -691,6 +701,7 @@
   id: ClownJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieClown
   - FlowerWaterClown
@@ -757,6 +768,7 @@
   id: MimeJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieMime
 
@@ -813,6 +825,7 @@
   id: MusicianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieMusician
 
@@ -863,6 +876,7 @@
   id: QuartermasterJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieQuartermaster
 
@@ -925,6 +939,7 @@
   id: CargoTechnicianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieCargoTechnician
 
@@ -954,6 +969,7 @@
   id: SalvageSpecialistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieSalvageSpecialist
 
@@ -1003,6 +1019,7 @@
   id: ChiefEngineerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieChiefEngineer
 
@@ -1019,6 +1036,7 @@
   id: TechnicalAssistantJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieTechnicalAssistant
 
@@ -1077,6 +1095,7 @@
   id: StationEngineerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieStationEngineer
 
@@ -1118,6 +1137,7 @@
   id: AtmosphericTechnicianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieAtmosphericTechnician
 
@@ -1176,6 +1196,7 @@
   id: ResearchDirectorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieResearchDirector
 
@@ -1255,6 +1276,7 @@
   id: ScientistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieScientist
 
@@ -1269,6 +1291,7 @@
   id: ResearchAssistantJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieResearchAssistant
 
@@ -1321,6 +1344,7 @@
   id: HeadofSecurityJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieHeadofSecurity
   - SecStar
@@ -1354,6 +1378,7 @@
   id: WardenJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieWarden
   - SecStar
@@ -1428,6 +1453,7 @@
   id: SecurityJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieSecurity
   - SecStar
@@ -1474,6 +1500,7 @@
   id: DetectiveJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieDetective
   - SecStar
@@ -1489,6 +1516,7 @@
   id: SecurityCadetJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieSecurityCadet
 
@@ -1550,6 +1578,7 @@
   id: ChiefMedicalOfficerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieChiefMedicalOfficer
 
@@ -1631,6 +1660,7 @@
   id: MedicalDoctorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieMedicalDoctor
 
@@ -1645,6 +1675,7 @@
   id: MedicalInternJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieMedicalIntern
 
@@ -1676,6 +1707,7 @@
   id: ChemistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieChemist
 
@@ -1714,6 +1746,7 @@
   id: ParamedicJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieParamedic
 
@@ -1751,6 +1784,7 @@
   id: ReporterJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieReporter
 
@@ -1765,6 +1799,7 @@
   id: PsychologistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushiePsychologist
 
