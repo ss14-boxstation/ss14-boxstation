@@ -1,23 +1,27 @@
 - type: loadout
   id: LizardPlushieBoxer
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:RoleTimeRequirement
-        role: JobBoxer
-        time: 10h # Box Change: 20h -> 10h
+  # Start Box Change: Remove unlock timer
+  # effects:
+    # - !type:JobRequirementLoadoutEffect
+      # requirement:
+        # !type:RoleTimeRequirement
+        # role: JobBoxer
+        # time: 72000 # 20hr
+  # End Box Change
   storage:
     back:
       - PlushieLizardJobBoxer
 
 - type: loadout
   id: LizardPlushieZookeeper
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobZookeeper
-      time: 10h # Box Change: 20h -> 10h
+  # Start Box Change: Remove unlock timer
+  # effects:
+  # - !type:JobRequirementLoadoutEffect
+    # requirement:
+      # !type:RoleTimeRequirement
+      # role: JobZookeeper
+      # time: 72000 # 20hr
+  # End Box Change
   storage:
     back:
     - PlushieLizardJobZookeeper
