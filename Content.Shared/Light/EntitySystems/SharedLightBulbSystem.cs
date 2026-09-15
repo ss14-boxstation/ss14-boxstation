@@ -14,6 +14,7 @@ public abstract class SharedLightBulbSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     // Start Box Change: prevent imp floorlights from infinitely recycling broken lights
     [Dependency] private readonly TagSystem _tags = default!;
+	private ProtoId<TagPrototype> _brokenTag = "Broken";
     private HashSet<ProtoId<TagPrototype>> _tagsToRemove = [ // I fucjing hate this
         "LightBlue",
         "LightBlack",
@@ -118,6 +119,7 @@ public abstract class SharedLightBulbSystem : EntitySystem
         if (!TryComp<TagComponent>(uid, out var tags))
             return;
         _tags.RemoveTags(uid, _tagsToRemove);
+        _tags.AddTag(uid, _brokenTag);
     }
     //End Box Change
 }
