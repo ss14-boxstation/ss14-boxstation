@@ -35,7 +35,7 @@
   - type: Clothing
     sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_luxury.rsi
   - type: BasicEntityAmmoProvider
-    proto: BulletKineticLuxury
+    proto: BulletKineticPKA # TO-DO: See about making this QM only
     capacity: 1
     count: 1
 
