@@ -1839,3 +1839,20 @@
   id: 200
   time: '2026-08-29T01:34:58.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/302
+- author: Dizzy-Eevee
+  changes:
+  - message: The "job trinket" loadout category is no longer restricted to one item.
+    type: Tweak
+  - message: The lizard plushie job trinkets have had their unlock timers removed.
+    type: Tweak
+  - message: The job-and-department-themed towel trinkets have had their unlock timers
+      reduced to 10 hours.
+    type: Tweak
+  - message: The silver and gold towel trinkets have had their unlock timers reduced
+      to 50 hours and 100 hours respectively.
+    type: Tweak
+  - message: The unobtainable prisoner towel trinket has been removed.
+    type: Remove
+  id: 201
+  time: '2026-09-26T19:11:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/303
