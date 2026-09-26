@@ -18,5 +18,5 @@ trait-methylatedblood-name = Methylated Blood
 trait-methylatedblood-desc = You have thin, highly alcoholic blood like that found in allulalo. [color=yellow]NOTE: This is primarily cosmetic.[/color] [color=red]Methylated blood evaporates naturally over time.[/color]
 trait-oilblood-name = Oil Blood
 trait-oilblood-desc = You have oil instead of blood, like IPCs. [color=yellow]NOTE: This is primarily cosmetic.[/color]
-trait-avaliblood-name = Dilluted Ammonia Blood
+trait-avaliblood-name = Diluted Ammonia Blood
 trait-avaliblood-desc = You have purple, ammonia-based blood, like that found in avali. [color=yellow]NOTE: This is primarily cosmetic.[/color]
