@@ -22,7 +22,7 @@ public sealed class StationPowerTests
 
     private static readonly string[] GameMaps =
     [
-    // Box Change Start - Mapping Hardfork
+    // Box Change Start - Mapping Hardfork & Wagoogus
         // "Bagel",
         // "Box",
         // "Elkridge",
@@ -35,16 +35,16 @@ public sealed class StationPowerTests
         // "Snowball",
         // "Reach",
         // "Exo",
-        "Amber",
-        "Aspid",
+        "Wagamber",
+        "Wagaspid",
         // "Altas",
-        "Barratray",
-        "Elkridge",
-        "Jellyfish",
-        "Mira",
+        "Barroogus",
+        "Wagoogus",
+        "Wagoogusfish",
+        "Miroogus",
         "Omega",
-        "Packed",
-        "Prime",
+        "PackedWAGOOGUS",
+        "PrimeWAGOOGUS",
     ];
 
     [Explicit]

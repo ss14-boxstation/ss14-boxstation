@@ -9,8 +9,8 @@
 # License Forked From: AGPL-3.0
 
 - type: gameMap
-  id: Aspid
-  mapName: 'NCS Aspid'
+  id: Wagaspid # Wagoogus Change: Wagoogus
+  mapName: 'WAGOOGUS Aspid'
   mapPath: /Maps/_Box/aspid.yml
   minPlayers: 20
   maxPlayers: 45

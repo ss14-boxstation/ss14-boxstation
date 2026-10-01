@@ -11,8 +11,8 @@
 # License Forked From: AGPL-3.0
 
 - type: gameMap
-  id: Atlas
-  mapName: Atlas
+  id: Watlas # Wagoogus Change: Wagoogus
+  mapName: Watlas
   mapPath: /Maps/_Box/atlas.yml
   minPlayers: 5
   maxPlayers: 20

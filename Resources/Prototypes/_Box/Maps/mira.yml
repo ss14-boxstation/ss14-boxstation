@@ -8,8 +8,8 @@
 # License Forked From: AGPL-3.0
 
 - type: gameMap
-  id: Mira
-  mapName: 'Mira'
+  id: Miroogus # Wagoogus Change: Wagoogus
+  mapName: 'Miroogus'
   mapPath: /Maps/_Box/mira.yml
   minPlayers: 0
   maxPlayers: 20

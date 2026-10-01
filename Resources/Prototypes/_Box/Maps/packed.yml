@@ -9,8 +9,8 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Packed
-  mapName: 'Packed'
+  id: PackedWAGOOGUS # Wagoogus Change: Wagoogus
+  mapName: 'Packed WAGOOGUS'
   mapPath: /Maps/_Box/packed.yml
   minPlayers: 0
   maxPlayers: 35

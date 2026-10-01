@@ -12,8 +12,8 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Barratry
-  mapName: 'Barratry'
+  id: Barroogus # Wagoogus Change: Wagoogus
+  mapName: 'Barroogus'
   mapPath: /Maps/_Box/barratry.yml
   minPlayers: 15
   maxPlayers: 40

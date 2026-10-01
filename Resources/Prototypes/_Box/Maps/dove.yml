@@ -3,8 +3,8 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Dove
-  mapName: 'Dove'
+  id: Dogoogus # Wagoogus Change: Wagoogus
+  mapName: 'Dogoogus'
   mapPath: /Maps/_Box/dove.yml
   minPlayers: 0
   maxPlayers: 35

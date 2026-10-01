@@ -12,8 +12,8 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Elkridge
-  mapName: 'Elkridge Depot'
+  id: Wagoogus # Wagoogus Change: Wagoogus
+  mapName: 'Wagoous Depot'
   mapPath: /Maps/_Box/elkridge.yml
   minPlayers: 0
   maxPlayers: 30

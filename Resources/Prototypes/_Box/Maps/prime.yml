@@ -10,8 +10,8 @@
 # License Forked From:
 
 - type: gameMap
-  id: Prime
-  mapName: Prime
+  id: PrimeWAGOOGUS
+  mapName: Prime WAGOOGUS # Wagoogus Change: Wagoogus
   mapPath: /Maps/_Box/prime.yml
   minPlayers: 15
   maxPlayers: 45

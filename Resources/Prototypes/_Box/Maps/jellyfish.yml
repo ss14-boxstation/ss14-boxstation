@@ -8,8 +8,8 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Jellyfish
-  mapName: 'Jellyfish'
+  id: Wagoogusfish # Wagoogus Change: Wagoogus
+  mapName: 'Wagoogusfish'
   mapPath: /Maps/_Box/jellyfish.yml
   minPlayers: 0
   maxPlayers: 30

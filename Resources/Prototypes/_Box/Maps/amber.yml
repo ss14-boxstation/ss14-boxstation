@@ -9,8 +9,8 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Amber
-  mapName: 'Amber'
+  id: Wagamber # Wagoogus Change: Wagoogus
+  mapName: 'Wagamber'
   mapPath: /Maps/_Box/amber.yml
   minPlayers: 10
   maxPlayers: 40

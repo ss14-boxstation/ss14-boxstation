@@ -12,7 +12,7 @@
 # License Forked From: MIT
 
 - type: gameMap
-  id: Omega
+  id: Omega # Wagoogus Change: fuck you omega
   mapName: 'Omega'
   mapPath: /Maps/_Box/omega.yml
   minPlayers: 0
