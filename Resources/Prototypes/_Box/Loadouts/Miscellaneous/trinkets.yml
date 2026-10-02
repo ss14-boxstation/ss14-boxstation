@@ -240,7 +240,7 @@
   id: PlushieTeddyBear
   storage:
     back:
-    - PlushieTeddyBear
+    - PlushieTeddyBearSafe
   groupBy: "Plushie"
 
 - type: loadout
@@ -248,7 +248,7 @@
   dummyEntity: PlushieTeddyBearRecolorableRandomLoadout
   storage:
     back:
-    - PlushieTeddyBearRecolorableRandom
+    - PlushieTeddyBearRecolorableRandomSafe
   groupBy: "Plushie"
   
 - type: loadout
