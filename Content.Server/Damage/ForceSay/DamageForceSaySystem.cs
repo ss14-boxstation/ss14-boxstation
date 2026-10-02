@@ -6,6 +6,7 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.Speech; // Box Change: Narcolepsy speech fix
 using Content.Shared.Stunnable;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -33,6 +34,7 @@ public sealed class DamageForceSaySystem : EntitySystem
         // (this won't double raise, because of the cooldown)
         SubscribeLocalEvent<DamageForceSayComponent, DamageChangedEvent>(OnDamageChanged, after: new []{ typeof(MobThresholdSystem)} );
         SubscribeLocalEvent<DamageForceSayComponent, SleepStateChangedEvent>(OnSleep);
+        SubscribeLocalEvent<AllowNextCritSpeechComponent, SpeakAttemptEvent>(OnSpeakAttempt); // Box Change: Narcolepsy speech fix
     }
 
     public override void Update(float frameTime)
@@ -130,4 +132,13 @@ public sealed class DamageForceSaySystem : EntitySystem
         TryForceSay(uid, component, false);
         AllowNextSpeech(uid);
     }
+    // Start Box Change: Narcolepsy speech fix
+    private void OnSpeakAttempt(EntityUid uid, AllowNextCritSpeechComponent component, SpeakAttemptEvent args)
+    {
+        if (HasComp<AllowNextCritSpeechComponent>(uid))
+        {
+            RemCompDeferred<AllowNextCritSpeechComponent>(uid);
+        }
+    }
+    // End Box Change
 }
