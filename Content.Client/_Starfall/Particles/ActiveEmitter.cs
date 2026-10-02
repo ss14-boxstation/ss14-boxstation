@@ -11,7 +11,7 @@ namespace Content.Client._Starfall.Particles;
 /// </summary>
 public sealed class ActiveEmitter
 {
-    public ParticleEffectPrototype Proto = default!;
+    public ParticleEffectPrototype Proto = null!;
 
     /// <summary>
     /// How many sub-emitter links deep this emitter is. Root emitters are 0.
@@ -19,12 +19,15 @@ public sealed class ActiveEmitter
     /// </summary>
     public int SubEmitterDepth;
 
-    /// <summary>Current world-space origin of the emitter.</summary>
+    /// <summary>Current map-space origin of the emitter, refreshed from <see cref="Coordinates"/> each frame.</summary>
     public MapCoordinates MapCoords;
 
+    /// <summary>Grid-relative origin, so the effect follows moving and rotating grids.</summary>
+    public EntityCoordinates Coordinates;
+
     /// <summary>
-    /// Additional world-space offset from <see cref="MapCoords"/> applied to the spawn origin.
-    /// Useful for nudging effects away from entity anchor points.
+    /// Spawn offset copied from the prototype. Directional emitters interpret this in the
+    /// attached entity's local space; other emitters interpret it in map space.
     /// </summary>
     public Vector2 SpawnOffset;
 
@@ -34,8 +37,11 @@ public sealed class ActiveEmitter
     /// <summary>Time elapsed since this emitter was created.</summary>
     public TimeSpan Age;
 
-    /// <summary>Eemission accumulator for sub-tick emission rates.</summary>
+    /// <summary>Emission accumulator for sub-tick emission rates.</summary>
     public float EmitAccum;
+
+    /// <summary>Time accumulated between quality-scaled simulation steps.</summary>
+    public float SimulationAccumulator;
 
     /// <summary>True once the emitter stops producing new particles. Existing particles live out their lifetimes.</summary>
     public bool Exhausted;
@@ -57,6 +63,12 @@ public sealed class ActiveEmitter
     /// Non-null values take priority, null falls back to the prototype.
     /// </summary>
     public ParticleRuntimeOverrides? Overrides;
+
+    /// <summary>Pre-sampled prototype curves shared by emitters of the same effect.</summary>
+    internal ParticleCurveCache Curves = null!;
+
+    /// <summary>Explicit prototype max or the automatically calculated fallback.</summary>
+    internal int ResolvedPrototypeMaxCount;
 
     // =^..^= Velocity tracking =^..^=
 
@@ -90,36 +102,26 @@ public sealed class ActiveEmitter
 
     /// <summary>Resolved RSI frames. Populated on creation.
     /// Single-frame sprites have one entry and empty Delays.</summary>
-    public Texture[] Frames = Array.Empty<Texture>();
+    public Texture[] Frames = [];
 
     /// <summary>frame delays when an RSI defines animation.</summary>
-    public float[] Delays = Array.Empty<float>();
+    public float[] Delays = [];
 
     public int AnimFrame;
     public float AnimTimer;
 
     // =^..^= Particles =^..^=
 
-    // ParticleData objects are never removed from Particles once added.
-    // When a particle dies it's marked Alive = false and pushed onto FreePool.
+    // LiveParticles stays dense: dead entries are removed immediately and pushed into FreePool.
     // The next emission pops from FreePool and resets the object rather than allocating a new one.
-    // This avoids GC pressure from short lived allocations during heavy emission.
-    // The simulation loop still iterates the full Particles list each frame, so a very large
-    // list with mostly dead slots can waste time, <b>emitters should keep MaxCount reasonable.</b>
+    // This avoids GC pressure from short lived allocations without making simulation/rendering
+    // walk a graveyard of dead slots every frame. MaxCount should still be kept reasonable.
 
-    /// <summary>All particle slots, including dead ones held for pooling.</summary>
-    public readonly List<ParticleData> Particles = new();
+    /// <summary>Particles currently being simulated and rendered.</summary>
+    public readonly List<ParticleData> LiveParticles = new();
 
     /// <summary>Dead particles available for reuse.</summary>
     public readonly Queue<ParticleData> FreePool = new();
 
-    public bool HasLiveParticles()
-    {
-        foreach (var p in Particles)
-        {
-            if (p.Alive)
-                return true;
-        }
-        return false;
-    }
+    public int LiveCount => LiveParticles.Count;
 }

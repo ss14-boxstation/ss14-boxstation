@@ -4,7 +4,7 @@ using Content.Shared.Atmos.Components;
 using Robust.Client.GameObjects;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._Starfall.Particles;
+namespace Content.Client._Starfall.Particles.Visuals;
 
 /// <summary>
 /// Particles when entities are on fire.
@@ -57,8 +57,10 @@ public sealed class FlammableParticleSystem : EntitySystem
             state.SmokeEmitter = _particles.SpawnEffect(SmokeEffect, coords, ent.Owner);
             state.FireEmitter  = _particles.SpawnEffect(FireEffect,  coords, ent.Owner);
 
-            if (state.SmokeEmitter != null) state.SmokeEmitter.Intensity = 1f;
-            if (state.FireEmitter != null)  state.FireEmitter.Intensity  = 1f;
+            if (state.SmokeEmitter != null)
+                state.SmokeEmitter.Intensity = 1f;
+            if (state.FireEmitter != null)
+                state.FireEmitter.Intensity  = 1f;
 
             state.OnFire = true;
         }
@@ -70,7 +72,7 @@ public sealed class FlammableParticleSystem : EntitySystem
         }
 
         // Update intensity on live emitters
-        if (state.OnFire && state.FireEmitter != null)
+        if (state is { OnFire: true, FireEmitter: not null })
         {
             var intensity = Math.Clamp(stacks / MaxStacks * 2f, 1f, 2f);
             if (state.FireEmitter != null)
