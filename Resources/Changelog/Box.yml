@@ -1930,3 +1930,18 @@
   id: 207
   time: '2026-10-02T01:37:48.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/322
+- author: Dizzy-Eevee
+  changes:
+  - message: Added uranium glass tables.
+    type: Add
+  id: 208
+  time: '2026-10-02T16:38:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/316
+- author: Dizzy-Eevee
+  changes:
+  - message: "Added tabletop computers\u2014Computers that fit on tables. These can\
+      \ be built from the construction menu, and support all standard console boards."
+    type: Add
+  id: 209
+  time: '2026-10-02T16:37:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/308
