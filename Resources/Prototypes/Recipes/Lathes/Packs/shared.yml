@@ -69,6 +69,7 @@
   id: SalvageSecurityWeapons
   recipes:
   - WeaponProtoKineticAccelerator
+  - WeaponSalvageAcceleratorSidearm # Box Change - PKA Expansion
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate

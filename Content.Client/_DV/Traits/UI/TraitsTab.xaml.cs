@@ -284,6 +284,16 @@ public sealed partial class TraitsTab : BoxContainer
         }
     }
 
+    // Start Box Change: Force all traits to be unlocked so we can set them properly when switching profiles
+    public void ForcePassAllConditions()
+    {
+        foreach (var (_, categoryUi) in _categoryUis)
+        {
+            categoryUi.ForcePassAllConditions();
+        }
+    }
+    // End Box Change
+
     /// <summary>
     /// Updates all trait conditions based on current job and species.
     /// Call this when job or species changes in the character creator.

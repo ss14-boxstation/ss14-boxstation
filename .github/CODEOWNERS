@@ -1,32 +1,32 @@
 # Last match in file takes precedence.
 
 # Everything
-*                                                   @superjeepboy @CollectionOfBones128
+*                                                   @CollectionOfBones128
 
 # C# code
-/Content.*/                                         @superjeepboy
+/Content.*/                                         @CollectionOfBones128
 
 # YML files
-/Resources/*.yml                                    @superjeepboy @CollectionOfBones128
-/Resources/**/*.yml                                 @superjeepboy @CollectionOfBones128
+/Resources/*.yml                                    @CollectionOfBones128
+/Resources/**/*.yml                                 @CollectionOfBones128
 
 # FTL files
-/Resources/Locale                                   @superjeepboy @CollectionOfBones128
+/Resources/Locale                                   @CollectionOfBones128
 
 # Server info and rules
-/Resources/ServerInfo                               @superjeepboy
+/Resources/ServerInfo                               @CollectionOfBones128
 
 # Sprites
 /Resources/Textures/                                @CollectionOfBones128
 
 # Lobby art and music
-/Resources/Audio/Lobby/                             @superjeepboy @CollectionOfBones128
-/Resources/Audio/_Box/Lobby/                    	@superjeepboy @CollectionOfBones128
-/Resources/Textures/LobbyScreens/                   @superjeepboy @CollectionOfBones128
-/Resources/Textures/_Box/LobbyScreens/          	@superjeepboy @CollectionOfBones128
+/Resources/Audio/Lobby/                             @CollectionOfBones128
+/Resources/Audio/_Box/Lobby/                    	@CollectionOfBones128
+/Resources/Textures/LobbyScreens/                   @CollectionOfBones128
+/Resources/Textures/_Box/LobbyScreens/          	@CollectionOfBones128
 
 # Maps
-/Resources/Maps/                                    @CollectionOfBones128
-/Resources/Prototypes/Maps/                         @CollectionOfBones128
-/Resources/Prototypes/_Harmony/Maps/                @CollectionOfBones128
-/Content.IntegrationTests/Tests/PostMapInitTest.cs  @CollectionOfBones128
+/Resources/Maps/                                    @CollectionOfBones128 @BlueMoon059
+/Resources/Prototypes/Maps/                         @CollectionOfBones128 @BlueMoon059
+/Resources/Prototypes/_Box/Maps/                    @CollectionOfBones128 @BlueMoon059
+/Content.IntegrationTests/Tests/PostMapInitTest.cs  @CollectionOfBones128 @BlueMoon059

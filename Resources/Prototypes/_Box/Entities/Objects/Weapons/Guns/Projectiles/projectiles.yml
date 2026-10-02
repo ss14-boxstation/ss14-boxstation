@@ -1,0 +1,135 @@
+# Expanded PKA Bullets
+
+## Parent Ammo
+- type: entity
+  abstract: true
+  parent: BaseBullet
+  id: BaseBulletKinetic
+  name: kinetic bolt
+  description: Not too bad, but you still don't want to get hit by it.
+  components:
+  - type: Reflective
+    reflective:
+      - NonEnergy
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: chronobolt
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+  - type: TimedDespawn
+    lifetime: 0.22 # roughly 5.5 tiles
+  - type: PressureProjectile
+
+- type: entity
+  abstract: true
+  parent: BaseBulletKinetic
+  id: BaseBulletKineticMining # Not all PKA's should be able to mine.
+  components:
+  - type: GatheringProjectile
+
+## Shuttle PKA Ammo
+- type: entity
+  parent: BaseBulletKineticMining
+  id: BulletKineticShuttle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 30
+        Structural: 35
+  - type: Ammo
+    muzzleFlash: HitscanEffect
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 2.5
+    color: white
+    energy: 0.5
+
+## Basic PKA Ammo
+- type: entity
+  parent: BaseBulletKineticMining
+  id: BulletKineticPKA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 25
+        Structural: 30
+
+## PKA Pistol Ammo
+- type: entity
+  parent: BaseBulletKinetic # The pistol cannot mine
+  id: BulletKineticSidearm
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+        Structural: 15
+
+## Revolver PKA Ammo
+- type: entity
+  parent: BaseBulletKineticMining # Utility!
+  id: BulletKineticRevolver
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 10
+        Structural: 45
+
+### QM's PKA Ammo
+- type: entity
+  parent: BulletKineticRevolver
+  id: BulletKineticLuxury
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnCollide # Replace with slowdown shot if thats ever implemented - we just want the owner to be able to escape melee.
+    damage: 18
+
+## PKA Rifle Ammo
+- type: entity
+  parent: BaseBulletKineticMining
+  id: BulletKineticRifle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 30
+        Slash: 30
+        Structural: 60
+  - type: TimedDespawn
+    lifetime: 0.6
+
+## PKA Shotgun Ammo
+- type: entity
+  parent: BulletKineticShotgunAmmo # Temp. because modkits don't play nice with shotguns
+  id: BulletKineticShotgun
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: BulletKineticShotgunAmmo # BulletKineticSidearm > BulletKineticShotgunAmmo - Temp. because modkits don't play nice with shotguns
+    count: 5
+    spread: 18
+
+### Temporary shotgun bullet prototype
+  # Because ProjectileSpread and Modkits don't play nice
+- type: entity
+  parent: BulletKineticSidearm
+  id: BulletKineticShotgunAmmo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 15
+        Structural: 20
