@@ -1,3 +1,4 @@
+using Content.Shared._NF.Construction.Components; // Frontier
 using Content.Shared.Construction.Components;
 using JetBrains.Annotations;
 using Robust.Shared.Containers;
@@ -15,6 +16,11 @@ public sealed partial class BoardNodeEntity : IGraphNodeEntity
     [DataField]
     public string Container { get; private set; } = string.Empty;
 
+    // Start Box Change: Frontier tabletop computers
+    [DataField] // Frontier
+    public ComputerType Computer { get; private set; } = ComputerType.Default; // Frontier
+    // End Box Change
+
     public string? GetId(EntityUid? uid, EntityUid? userUid, GraphNodeEntityArgs args)
     {
         if (uid == null)
@@ -28,6 +34,19 @@ public sealed partial class BoardNodeEntity : IGraphNodeEntity
 
         var board = container.ContainedEntities[0];
 
+        // Start Box Change: Frontier - alternative computer variants
+        switch (Computer)
+        {
+            case ComputerType.Tabletop:
+                if (args.EntityManager.TryGetComponent(board, out ComputerTabletopBoardComponent? tabletopComputer))
+                    return tabletopComputer.Prototype;
+                break;
+            case ComputerType.Default:
+            default:
+                break;
+        }
+        // End Box Change
+
         // There should not be a case where more than one of these components exist on the same entity
         if (args.EntityManager.TryGetComponent(board, out MachineBoardComponent? machine))
             return machine.Prototype;
@@ -40,4 +59,12 @@ public sealed partial class BoardNodeEntity : IGraphNodeEntity
 
         return null;
     }
+
+    // Start Box Change: Frontier: support for multiple computer types
+    public enum ComputerType : byte
+    {
+        Default, // Default machines
+        Tabletop
+    }
+    // End Box Change
 }

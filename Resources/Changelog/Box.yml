@@ -1839,3 +1839,109 @@
   id: 200
   time: '2026-08-29T01:34:58.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/302
+- author: Dizzy-Eevee
+  changes:
+  - message: The "job trinket" loadout category is no longer restricted to one item.
+    type: Tweak
+  - message: The lizard plushie job trinkets have had their unlock timers removed.
+    type: Tweak
+  - message: The job-and-department-themed towel trinkets have had their unlock timers
+      reduced to 10 hours.
+    type: Tweak
+  - message: The silver and gold towel trinkets have had their unlock timers reduced
+      to 50 hours and 100 hours respectively.
+    type: Tweak
+  - message: The unobtainable prisoner towel trinket has been removed.
+    type: Remove
+  id: 201
+  time: '2026-09-26T19:11:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/303
+- author: CollectionOfBones128
+  changes:
+  - message: 'Added three new salvage weapons: The Proto-Kinetic Sidearm, the Experimental
+      Kinetic Shotgun, and the Experimental Kinetic Rifle!'
+    type: Add
+  - message: the luxury kinetic revolver has been resprited
+    type: Tweak
+  id: 202
+  time: '2026-10-01T16:18:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/317
+- author: Dizzy-Eevee
+  changes:
+  - message: Switching between characters will no longer cause certain traits to become
+      deselected.
+    type: Fix
+  id: 203
+  time: '2026-10-02T01:27:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/306
+- author: Dizzy-Eevee
+  changes:
+  - message: Added wallpapers, banners, and glow-in-the-dark star decorations. Go
+      decorate those walls!
+    type: Add
+  id: 204
+  time: '2026-10-02T01:32:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/309
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Jet Injectors, an hypodermic alternative to Syringes!
+    type: Add
+  - message: Jet Injectors now spawn in Medical Doctor Lockers, as well as being stocked
+      in the NanoMed Plus!
+    type: Add
+  - message: Added Advanced Jet Injectors, with a bigger storage and faster injection
+      times than the base one!
+    type: Add
+  - message: Medical Cyborg Hyposprays now finally have a fillsprite!
+    type: Add
+  - message: Hyposprays and Hypopens now start in their dynamic mode. It functions
+      exactly as the previous Inject/Draw mode.
+    type: Tweak
+  - message: Injectors now inject twice as quick into targets that are lying down
+      for any reason, most notably being buckled on a medical bed or being critical.
+      Before, only critical patients had this luxury.
+    type: Tweak
+  - message: Clumsy now affects syringes when you're self-injecting.
+    type: Tweak
+  - message: Bluespace syringes are now slightly faster when injecting large amounts,
+      usually twice as fast as normal syringes.
+    type: Tweak
+  - message: You can now spill the contents out of hyposprays and jet injectors
+    type: Tweak
+  - message: Fixed Gorlex Hyposprays not showing their fill sprites!
+    type: Fix
+  id: 205
+  time: '2026-10-02T01:31:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/263
+- author: Dizzy-Eevee
+  changes:
+  - message: Added a colorful variety of wooden floors, in several new patterns.
+    type: Add
+  id: 206
+  time: '2026-10-02T01:41:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/312
+- author: Dizzy-Eevee
+  changes:
+  - message: Added a colour picker and colour palette selector to the Spraypainter's
+      decal menu.
+    type: Add
+  - message: Made a few other tweaks to the Spraypainter's UI as well.
+    type: Tweak
+  id: 207
+  time: '2026-10-02T01:37:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/322
+- author: Dizzy-Eevee
+  changes:
+  - message: Added uranium glass tables.
+    type: Add
+  id: 208
+  time: '2026-10-02T16:38:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/316
+- author: Dizzy-Eevee
+  changes:
+  - message: "Added tabletop computers\u2014Computers that fit on tables. These can\
+      \ be built from the construction menu, and support all standard console boards."
+    type: Add
+  id: 209
+  time: '2026-10-02T16:37:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/308

@@ -19,3 +19,14 @@
     Plastic: 200
     Plasma: 200
     Diamond: 100
+
+- type: latheRecipe
+  id: WeaponSalvageAcceleratorSidearm
+  result: WeaponSalvageAcceleratorSidearm
+  categories:
+  - Weapons
+  completetime: 4
+  materials:
+    Steel: 500
+    Glass: 250
+    Silver: 50
