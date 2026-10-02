@@ -1,0 +1,9 @@
+# Zero Cost Admeme Indoor Modkit (For testing)
+- type: entity
+  parent: PKAUpgradeIndoors
+  id: PKAUpgradeIndoorsAdmeme
+  categories: [ DoNotMap ]
+  suffix: Admeme
+  components:
+  - type: GunUpgradeCost
+    cost: 0

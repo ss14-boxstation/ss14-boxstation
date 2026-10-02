@@ -532,7 +532,8 @@
     heat: -50000
 
 - type: entity
-  id: BulletKinetic
+  abstract: true # Box Change - PKA Expansion
+  id: WizDenBulletKinetic # Box Change - BulletKinetic > WizDenBulletKinetic - PKA Expansion
   name: kinetic bolt
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -560,7 +561,8 @@
   - type: PressureProjectile # Harmony change - DeltaV PKA Rework
 
 - type: entity
-  id: BulletKineticShuttle
+  abstract: true # Box Change - PKA Expansion
+  id: WizDenBulletKineticShuttle # Box Change - BulletKineticShuttle > WizDenBulletKineticShuttle - PKA Expansion
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
