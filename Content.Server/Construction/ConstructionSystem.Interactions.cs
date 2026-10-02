@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Construction.Components;
 using Content.Server.Temperature.Components;
+using Content.Shared._Impstation.Construction.Steps; // Box Change: Imp floor lights
 using Content.Shared.Construction;
 using Content.Shared.Construction.Components;
 using Content.Shared.Construction.EntitySystems;
@@ -44,6 +45,7 @@ namespace Content.Server.Construction
                 new []{typeof(EncryptionKeySystem)});
             SubscribeLocalEvent<ConstructionComponent, OnTemperatureChangeEvent>(EnqueueEvent);
             SubscribeLocalEvent<ConstructionComponent, PartAssemblyPartInsertedEvent>(EnqueueEvent);
+            SubscribeLocalEvent<ConstructionComponent, EntRemovedFromContainerMessage>(EnqueueEvent); // Box Change: imp floor lights
         }
 
         /// <summary>
@@ -425,6 +427,22 @@ namespace Content.Server.Construction
                         return HandleResult.True;
                     return HandleResult.False;
                 }
+
+                // Start Box Change: Imp floor lights
+                case EntityRemoveConstructionGraphStep removeStep: //imp
+                {
+                    if (ev is not EntRemovedFromContainerMessage entRemoved)
+                        break;
+
+                    var container = entRemoved.Container;
+                    var removed = entRemoved.Entity;
+
+                    if (!removeStep.EntityValid(removed, container, EntityManager)) // Does the removed entity have the desired tag?
+                        return HandleResult.False;
+
+                    return validation ? HandleResult.Validated : HandleResult.True;
+                }
+                // End Box Change
 
                 #endregion
                 // --- CONSTRUCTION STEP EVENT HANDLING FINISH ---
