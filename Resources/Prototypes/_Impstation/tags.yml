@@ -3,4 +3,7 @@
   id: Glowstick
   
 - type: Tag
+  id: Guidebook
+  
+- type: Tag
   id: Lens
