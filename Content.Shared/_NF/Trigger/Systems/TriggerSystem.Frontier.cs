@@ -1,0 +1,73 @@
+using Content.Shared.Implants;
+using Content.Shared.Body.Components;
+using Content.Shared._NF.Interaction.Events;
+using Content.Shared.Projectiles;
+using Content.Shared._NF.Trigger.Components;
+using Robust.Shared.Containers;
+
+namespace Content.Shared.Trigger.Systems;
+
+public sealed partial class TriggerSystem
+{
+
+    [Dependency] private readonly SharedContainerSystem _container = default!;
+    private void NFInitialize()
+    {
+        // Start Box Change: Comment out unused triggers
+        //SubscribeLocalEvent<TriggerOnBeingGibbedComponent, BeforeGibbedEvent>(OnBeingGibbed);
+        //SubscribeLocalEvent<TriggerOnBeingGibbedComponent, ImplantRelayEvent<BeforeGibbedEvent>>(OnBeingGibbedRelay);
+        // End Box Change
+        SubscribeLocalEvent<TriggerOnInteractionPopupUseComponent, InteractionPopupOnUseFailureEvent>(OnPopupInteractionFailure);
+        SubscribeLocalEvent<TriggerOnInteractionPopupUseComponent, InteractionPopupOnUseSuccessEvent>(OnPopupInteractionSuccess);
+
+        SubscribeLocalEvent<ReplaceOnTriggerComponent, TriggerEvent>(OnReplaceTrigger);
+        //SubscribeLocalEvent<TriggerOnProjectileHitComponent, ProjectileHitEvent>(OnProjectileHitEvent); // Box Change: Comment out unused triggers
+    }
+
+    // Start Box Change: Comment out unused triggers
+    //private void OnBeingGibbed(EntityUid uid, TriggerOnBeingGibbedComponent component, BeforeGibbedEvent args)
+    //{
+    //    Trigger(uid);
+    //}
+
+    //private void OnBeingGibbedRelay(EntityUid uid, TriggerOnBeingGibbedComponent component, ImplantRelayEvent<BeforeGibbedEvent> args)
+    //{
+    //    Trigger(uid);
+    //}
+    // End Box Change
+
+    private void OnPopupInteractionFailure(EntityUid uid, TriggerOnInteractionPopupUseComponent component, InteractionPopupOnUseFailureEvent args)
+    {
+        if (component.TriggerOnFailure)
+            Trigger(uid);
+    }
+
+    private void OnPopupInteractionSuccess(EntityUid uid, TriggerOnInteractionPopupUseComponent component, InteractionPopupOnUseSuccessEvent args)
+    {
+        if (component.TriggerOnSuccess)
+            Trigger(uid);
+    }
+
+    private void OnReplaceTrigger(Entity<ReplaceOnTriggerComponent> ent, ref TriggerEvent args)
+    {
+        var xform = Transform(ent);
+
+        if (_container.TryGetContainingContainer((ent, xform), out var container))
+        {
+            _container.Remove(ent.Owner, container, force: true);
+            PredictedSpawnInContainerOrDrop(ent.Comp.Proto, container.Owner, container.ID);
+        }
+        else
+        {
+            PredictedSpawnAtPosition(ent.Comp.Proto, xform.Coordinates);
+        }
+        PredictedQueueDel(ent);
+    }
+
+    // Start Box Change: Comment out unused triggers
+    //private void OnProjectileHitEvent(EntityUid uid, TriggerOnProjectileHitComponent component, ref ProjectileHitEvent args)
+    //{
+    //    Trigger(uid, args.Target);
+    //}
+    // End Box Change
+}
