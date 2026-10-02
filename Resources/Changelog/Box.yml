@@ -1954,3 +1954,11 @@
   id: 210
   time: '2026-10-02T16:44:12.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/314
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the guidebookshelf, a bookshelf full of guidebooks (from impstation).
+      For future use in mapping.
+    type: Add
+  id: 211
+  time: '2026-10-02T17:15:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/313
