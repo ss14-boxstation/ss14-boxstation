@@ -1945,3 +1945,12 @@
   id: 209
   time: '2026-10-02T16:37:58.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/308
+- author: Dizzy-Eevee
+  changes:
+  - message: Atmos pipes now have their own construction menu category
+    type: Tweak
+  - message: More atmos devices can now be built directly on alt layers
+    type: Tweak
+  id: 210
+  time: '2026-10-02T16:44:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/314
