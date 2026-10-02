@@ -156,6 +156,10 @@
     - WeaponWaterPistol
     - WhoopieCushion
     - Whistle
+    # Start Box Change: Den teddy bears
+    - PlushieTeddyBear
+    - PlushieTeddyBearRecolorableRandom
+    # End Box Change
   - type: WiresPanel
   - type: Wires
     layoutId: Arcade
