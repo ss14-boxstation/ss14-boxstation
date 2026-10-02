@@ -1913,3 +1913,20 @@
   id: 205
   time: '2026-10-02T01:31:42.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/263
+- author: Dizzy-Eevee
+  changes:
+  - message: Added a colorful variety of wooden floors, in several new patterns.
+    type: Add
+  id: 206
+  time: '2026-10-02T01:41:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/312
+- author: Dizzy-Eevee
+  changes:
+  - message: Added a colour picker and colour palette selector to the Spraypainter's
+      decal menu.
+    type: Add
+  - message: Made a few other tweaks to the Spraypainter's UI as well.
+    type: Tweak
+  id: 207
+  time: '2026-10-02T01:37:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/322
