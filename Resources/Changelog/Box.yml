@@ -1866,3 +1866,50 @@
   id: 202
   time: '2026-10-01T16:18:35.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/317
+- author: Dizzy-Eevee
+  changes:
+  - message: Switching between characters will no longer cause certain traits to become
+      deselected.
+    type: Fix
+  id: 203
+  time: '2026-10-02T01:27:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/306
+- author: Dizzy-Eevee
+  changes:
+  - message: Added wallpapers, banners, and glow-in-the-dark star decorations. Go
+      decorate those walls!
+    type: Add
+  id: 204
+  time: '2026-10-02T01:32:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/309
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Jet Injectors, an hypodermic alternative to Syringes!
+    type: Add
+  - message: Jet Injectors now spawn in Medical Doctor Lockers, as well as being stocked
+      in the NanoMed Plus!
+    type: Add
+  - message: Added Advanced Jet Injectors, with a bigger storage and faster injection
+      times than the base one!
+    type: Add
+  - message: Medical Cyborg Hyposprays now finally have a fillsprite!
+    type: Add
+  - message: Hyposprays and Hypopens now start in their dynamic mode. It functions
+      exactly as the previous Inject/Draw mode.
+    type: Tweak
+  - message: Injectors now inject twice as quick into targets that are lying down
+      for any reason, most notably being buckled on a medical bed or being critical.
+      Before, only critical patients had this luxury.
+    type: Tweak
+  - message: Clumsy now affects syringes when you're self-injecting.
+    type: Tweak
+  - message: Bluespace syringes are now slightly faster when injecting large amounts,
+      usually twice as fast as normal syringes.
+    type: Tweak
+  - message: You can now spill the contents out of hyposprays and jet injectors
+    type: Tweak
+  - message: Fixed Gorlex Hyposprays not showing their fill sprites!
+    type: Fix
+  id: 205
+  time: '2026-10-02T01:31:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/263
