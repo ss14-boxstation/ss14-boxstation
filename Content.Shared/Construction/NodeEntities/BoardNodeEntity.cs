@@ -34,7 +34,7 @@ public sealed partial class BoardNodeEntity : IGraphNodeEntity
 
         var board = container.ContainedEntities[0];
 
-        // Start Box Fhange: Frontier - alternative computer variants
+        // Start Box Change: Frontier - alternative computer variants
         switch (Computer)
         {
             case ComputerType.Tabletop:
