@@ -34,6 +34,7 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
             SubscribeLocalEvent<GasVolumePumpComponent, AtmosDeviceDisabledEvent>(OnVolumePumpLeaveAtmosphere);
 
             SubscribeLocalEvent<GasVolumePumpComponent, DeviceNetworkPacketEvent>(OnPacketRecv);
+            SubscribeLocalEvent<GasVolumePumpComponent, MapInitEvent>(OnMapInit); // Box Change: Pre-enabled atmos devices
         }
 
         private void OnVolumePumpUpdated(EntityUid uid, GasVolumePumpComponent pump, ref AtmosDeviceUpdateEvent args)
@@ -118,5 +119,16 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
                     return;
             }
         }
+
+        // Start Box Change: Frontier - Enable on map init
+        private void OnMapInit(EntityUid uid, GasVolumePumpComponent pump, MapInitEvent args)
+        {
+            if (!pump.StartEnabled)
+                return;
+            pump.Enabled = true;
+            UpdateAppearance(uid, pump);
+            _userInterfaceSystem.CloseUi(uid, GasVolumePumpUiKey.Key);
+        }
+        // End Box Change
     }
 }
