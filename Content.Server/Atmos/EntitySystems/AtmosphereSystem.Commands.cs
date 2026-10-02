@@ -73,7 +73,7 @@ public sealed partial class AtmosphereSystem
        mixtures[8].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesGasMiner);
 
        // Start Box Change: Imp water vapor fix marker
-       // 8: Water Vapor (GM)
+       // 9: Water Vapor (GM)
        mixtures[9].AdjustMoles(Gas.WaterVapor, Atmospherics.MolesCellGasMiner);
        // End Box Change
 
