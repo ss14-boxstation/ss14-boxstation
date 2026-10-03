@@ -142,6 +142,11 @@
       - id: FoodCherry
         amount: !type:RangeNumberSelector
           range: 1, 5
+      # Start Box Change: Frontier honeycombs
+      - id: FoodHoneyComb # Frontier
+        amount: !type:RangeNumberSelector # Frontier
+          range: 1, 5 # Frontier
+      # End Box Change
     #rare
     - !type:GroupSelector
       children:
