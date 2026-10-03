@@ -1,0 +1,24 @@
+- type: entity
+  parent: BaseObjective
+  abstract: true
+  id: BaseAcolyteObjective
+  components:
+  - type: Objective
+    issuer: objective-issuer-acolyte
+    difficulty: 1 #Acolytes will likely have the same set of objectives every time, with who and where being different
+  - type: RoleRequirement
+    roles:
+    - AcolyteRole
+
+- type: entity
+  parent: [BaseAcolyteObjective, BaseLivingObjective]
+  id: EscapeShuttleObjectiveAcolyte
+  name: Escape to centcomm alive and unrestrained.
+  description: You want your materials to make it back home safe. Avoid being arrested.
+  components:
+  - type: Objective
+    icon:
+      sprite: Structures/Furniture/chairs.rsi
+      state: shuttle
+    unique: true
+  - type: EscapeShuttleCondition
