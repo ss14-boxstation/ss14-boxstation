@@ -158,7 +158,7 @@
   - type: GameRule
     # minPlayers: 20 # Box Station - Enable Nukies
   - type: LoadMapRule
-    mapPath: /Maps/Nonstations/nukieplanet.yml
+    mapPath: /Maps/_Box/Nonstations/nukieplanet.yml
   - type: AntagSelection
     selectionTime: PrePlayerSpawn
     definitions:
