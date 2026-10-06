@@ -1962,3 +1962,29 @@
   id: 211
   time: '2026-10-02T17:15:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/313
+- author: Dizzy-Eevee
+  changes:
+  - message: Added teddy bears, soft and fluffy friends from The Den.
+    type: Add
+  id: 212
+  time: '2026-10-06T01:35:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/310
+- author: Dizzy-Eevee
+  changes:
+  - message: When editing loadout item text, you can now choose to copy the text changes
+      (or the entire item) to other roles. Hover over the checkboxes to learn more!
+    type: Add
+  id: 213
+  time: '2026-10-06T01:32:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/241
+- author: Dizzy-Eevee
+  changes:
+  - message: Caramexinin now processes in the bloodstream, rather than during digestion,
+      which should make it much more effective at preventing theobromine poisoning.
+    type: Tweak
+  - message: Caramexinin now bypasses the normal 50% volume loss when chemicals transfer
+      from the stomach to the bloodstream.
+    type: Tweak
+  id: 214
+  time: '2026-10-06T01:33:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/305
