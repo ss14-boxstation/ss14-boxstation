@@ -62,7 +62,7 @@
   - type: Tag
     tags:
     - Trash
-    - LightBulb #imp
+    - LightBulb #imp # Box Change: Tags for imp floor light construction
   - type: PhysicalComposition
     materialComposition:
       Glass: 25
@@ -111,9 +111,11 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag # imp
     tags:
     - LightTube
+  # End Box Change
 
 # Lighting color values gathered from
 # https://andi-siess.de/rgb-to-color-temperature/
@@ -134,7 +136,7 @@
     tags:
     - LightBulb
     - Trash
-    - LightNormal #imp
+    - LightNormal #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   parent: BaseLightbulb
@@ -154,7 +156,7 @@
     tags:
     - LightBulb
     - Trash
-    - LightLed #imp
+    - LightLed #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   parent: BaseLightbulb
@@ -172,7 +174,7 @@
     tags:
     - LightBulb
     - Trash
-    - LightDim #imp
+    - LightDim #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   parent: BaseLightbulb
@@ -190,7 +192,7 @@
     tags:
     - LightBulb
     - Trash
-    - LightWarm #imp
+    - LightWarm #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   parent: LightBulb
@@ -208,7 +210,7 @@
     tags:
     - LightBulb
     - Trash
-    - LightOld #imp
+    - LightOld #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   suffix: Broken
@@ -224,7 +226,7 @@
     tags:
     - LightBulb
     - Trash
-    - Broken #imp
+    - Broken #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   parent: BaseLightbulb
@@ -242,7 +244,7 @@
     tags:
     - LightBulb
     - Trash
-    - LightService #imp
+    - LightService #imp # Box Change: Tags for imp floor light construction
 
 - type: entity
   parent: BaseLightTube
@@ -256,10 +258,12 @@
     lightRadius: 10
     lightSoftness: 1
     PowerUse: 25
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightNormal
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: LightTube
@@ -273,10 +277,12 @@
     lightRadius: 10
     lightSoftness: 1
     PowerUse: 10
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightOld
       - LightTube
+  # End Box Change
 
 - type: entity
   suffix: Broken
@@ -287,11 +293,13 @@
   components:
   - type: LightBulb
     startingState: Broken
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - Broken
       - Trash
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTube
@@ -306,10 +314,12 @@
     lightSoftness: 0.9
     BurningTemperature: 350
     PowerUse: 12
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightLed
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTube
@@ -324,10 +334,12 @@
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 100
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightExterior
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTube
@@ -342,10 +354,12 @@
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 100
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightSodium
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTube
@@ -375,10 +389,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightCyan
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTubeCrystal
@@ -394,10 +410,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightBlue
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTubeCrystal
@@ -413,10 +431,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalYellow
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightYellow
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTubeCrystal
@@ -432,10 +452,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightPink
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTubeCrystal
@@ -451,10 +473,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightOrange
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTubeCrystal
@@ -473,10 +497,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlack
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightBlack
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: BaseLightTubeCrystal
@@ -492,10 +518,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightRed
       - LightTube
+  # End Box Change
 
 - type: entity
   parent: LightTubeCrystalCyan
@@ -511,10 +539,12 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
       - LightGreen
       - LightTube
+  # End Box Change
 
 
 - type: entity
@@ -547,11 +577,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightCyan
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -567,11 +599,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightBlue
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -587,11 +621,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalYellow
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightYellow
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -607,11 +643,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightPink
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -627,11 +665,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightOrange
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -650,11 +690,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlack
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightBlack
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -670,11 +712,13 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightRed
+  # End Box Change
 
 - type: entity
   parent: BaseLightbulbCrystal
@@ -690,8 +734,10 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen
+  # Start Box Change: Tags for imp floor light construction
   - type: Tag #imp
     tags:
     - LightBulb
     - Trash
     - LightGreen
+  # End Box Change
