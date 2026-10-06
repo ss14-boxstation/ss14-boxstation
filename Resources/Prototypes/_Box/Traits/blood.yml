@@ -104,9 +104,6 @@
   - !type:IsSpeciesCondition
     species: Vox
     invert: true
-  - !type:IsSpeciesCondition
-    species: Avali
-    invert: true
   - !type:TraitDependencyCondition
     conflicts:
     - Synth
@@ -158,3 +155,19 @@
   effects:
   - !type:ChangeBloodReagentEffect
     reagent: IPCOil
+
+- type: trait
+  id: AvaliBlood
+  name: trait-avaliblood-name
+  description: trait-avaliblood-desc
+  category: Blood
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Avali
+    invert: true
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: AvaliBlood

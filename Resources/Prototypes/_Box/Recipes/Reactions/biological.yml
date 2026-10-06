@@ -1,0 +1,17 @@
+- type: reaction
+  id: AvaliBloodBreakdown
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    AvaliBlood:
+      amount: 20
+  products:
+    # Avali blood is canonically a mix of water and ammonia (https://avali.nexus/lorebook.pdf, page 14)
+    # However a 50/50 water/ammonia mix would result in the centrifuged solution instantly reacting into space cleaner
+    # So for the purposes of gameplay, it's just ammonia.
+    Ammonia: 10
+    Copper: 1
+    Sugar: 2
+    CarbonDioxide: 3
+    Protein: 4
