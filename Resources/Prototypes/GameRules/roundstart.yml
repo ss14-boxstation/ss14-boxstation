@@ -140,6 +140,7 @@
     nameFormat: name-format-nuclear-operation
   - type: NukeopsRule
     warDeclarationMinOps: 1 # Harmony addition # Box Change - 3 > 1
+    warTcAmountPerNukie: 10 # Box Change Start - 40 > 10 - Lowpop NukeOps tweaks
   - type: RuleGrids
   - type: AntagSelection
   - type: AntagLoadProfileRule
