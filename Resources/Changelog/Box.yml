@@ -1988,3 +1988,16 @@
   id: 214
   time: '2026-10-06T01:33:49.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/305
+- author: CollectionOfBones128
+  changes:
+  - message: The Infiltrator jetpack locker now correctly has stealth jetpacks
+    type: Fix
+  - message: WarOps TC bonus has been lowered to 10 TC per Nukie
+    type: Tweak
+  - message: The Nukie Planet Chem Vendor now comes with 10u of Activated Silicon
+    type: Add
+  - message: The Infiltrator now has a Syndicate Communications Console
+    type: Add
+  id: 215
+  time: '2026-10-10T01:32:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/326
