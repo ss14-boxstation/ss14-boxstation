@@ -34,7 +34,7 @@ This just saves them the trouble. Note that AGPL or MIT licensing is only applic
 
 ## Breaking changes
 <!-- List any breaking changes, including namespaces, public class/method/field changes, prototype renames; and provide instructions for fixing them. -->
-<!-- This is mainly for downstreams and maintenance PRs>
+<!-- This is mainly for downstreams and maintenance PRs -->
 
 **Changelog**
 <!-- Add a Changelog entry to make players aware of new features or changes that could affect gameplay.
