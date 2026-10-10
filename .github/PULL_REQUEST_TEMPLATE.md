@@ -1,4 +1,4 @@
-<!-- If you are new to the BoxStation repository, please read the [Contributing Guidelines](https://github.com/ss14-harmony/ss14-harmony/blob/master/CONTRIBUTING.md). We follow Harmony guidelines, so please keep your comments tidy! -->
+<!-- If you are new to the BoxStation repository, please read the [Contributing Guidelines](https://github.com/ss14-boxstation/ss14-boxstation/blob/master/CONTRIBUTING.md). We follow BoxStation guidelines, so please keep your comments tidy! -->
 ## About the PR
 <!-- What did you change? -->
 
@@ -34,6 +34,7 @@ This just saves them the trouble. Note that AGPL or MIT licensing is only applic
 
 ## Breaking changes
 <!-- List any breaking changes, including namespaces, public class/method/field changes, prototype renames; and provide instructions for fixing them. -->
+<!-- This is mainly for downstreams and maintenance PRs>
 
 **Changelog**
 <!-- Add a Changelog entry to make players aware of new features or changes that could affect gameplay.
