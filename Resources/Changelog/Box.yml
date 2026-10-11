@@ -2001,3 +2001,10 @@
   id: 215
   time: '2026-10-10T01:32:05.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/326
+- author: DrWhoFan13
+  changes:
+  - message: Opening the slime inventory no longer bugs your inventory
+    type: Fix
+  id: 216
+  time: '2026-10-11T17:01:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/329
