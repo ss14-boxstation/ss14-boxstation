@@ -1449,6 +1449,8 @@
           max: 213.0
         - !type:MobStateCondition
           mobstate: Dead
+        - !type:TotalDamageCondition
+          min: 200
         damage:
           Burn: -2
       - !type:EvenHealthChange
