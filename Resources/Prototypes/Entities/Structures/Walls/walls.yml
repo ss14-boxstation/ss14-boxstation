@@ -75,10 +75,7 @@
     - Diagonal
   - type: IconSmooth
     mode: Diagonal
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: state
   - type: Airtight
     noAirWhenFullyAirBlocked: false
@@ -126,10 +123,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: brick
 
 - type: entity
@@ -158,10 +152,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: clockwork
-# End of Harmony Change
+    key: walls
     base: clock
 
 - type: entity
@@ -194,10 +185,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: clown
   - type: Fixtures
     fixtures:
@@ -242,10 +230,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: meat
-# End of Harmony Change
+    key: walls
     base: meat
 
 - type: entity
@@ -271,10 +256,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: cult
-# End of Harmony Change
+    key: walls
     base: cult
 
 - type: entity
@@ -304,10 +286,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: debug
 
 - type: entity
@@ -337,10 +316,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: diamond
 
 - type: entity
@@ -393,10 +369,7 @@
         - WallLayer
         density: 4000
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: gold
 
 - type: entity
@@ -422,10 +395,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: ice
 
 - type: entity
@@ -467,10 +437,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: plasma
   - type: RadiationBlocker
     resistance: 5
@@ -514,10 +481,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: plastic
 
 - type: entity
@@ -531,10 +495,7 @@
     - type: Icon
       sprite: _Impstation/Structures/Walls/plastitanium.rsi # Impstation
     - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#      key: walls
-      key: station
-# End of Harmony Change
+      key: walls
       base: plastitanium
     - type: Fixtures
       fixtures:
@@ -661,10 +622,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: reinf_over
   - type: Appearance
   - type: GenericVisualizer
@@ -709,10 +667,7 @@
     graph: Girder
     node: reinforcedWallRust
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: reinf_over
   - type: Destructible
     thresholds:
@@ -804,10 +759,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: riveted
   - type: StaticPrice
     price: 150
@@ -839,10 +791,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: sandstone
 
 - type: entity
@@ -884,10 +833,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: silver
 
 #shuttle walls
@@ -957,11 +903,6 @@
     resistance: 5
   - type: StaticPrice
     price: 200
-# Start of Harmony Change: Adds IconSmooth key
-  - type: IconSmooth
-    key: shuttle
-    base: state
-# End of Harmony Change
 
 - type: entity
   parent: BaseWall
@@ -1006,10 +947,7 @@
     graph: Girder
     node: shuttleWall
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: shuttle
-# End of Harmony Change
+    key: walls
     base: state
   - type: Appearance
   - type: GenericVisualizer
@@ -1077,10 +1015,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: solid
 
 - type: entity
@@ -1132,10 +1067,7 @@
     graph: Girder
     node: wallrust
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: station
-# End of Harmony Change
+    key: walls
     base: solid
   - type: Destructible
     thresholds:
@@ -1340,10 +1272,7 @@
         - WallLayer
         density: 6000
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: material
-# End of Harmony Change
+    key: walls
     base: uranium
   - type: RadiationBlocker
     resistance: 6
@@ -1384,10 +1313,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: woods
-    key: material
-# End of Harmony Change
+    key: woods
     base: wood
 
 - type: entity
@@ -1460,10 +1386,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: necropolis
-# End of Harmony Change
+    key: walls
     base: necropolis
 
 - type: entity
@@ -1484,10 +1407,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: walls
-    key: mining
-# End of Harmony Change
+    key: walls
     base: mining
   - type: RandomIconSmooth
     randomStates:
@@ -1535,11 +1455,6 @@
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
-# Start of Harmony Change: Adds IconSmoothing
-  - type: IconSmooth
-    key: mining
-    base: state
-# End of Harmony Change
 
 
 # Vault Walls

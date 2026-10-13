@@ -40,7 +40,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: shuttle # Harmony Change: Adds IconSmoothing Key
     base: swindow
   - type: Construction
     graph: Window

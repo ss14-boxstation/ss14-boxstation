@@ -40,7 +40,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: mining # Harmony Change: Adds a Key to IconSmoothing
     base: mwindow
   - type: Appearance
   - type: DamageVisuals

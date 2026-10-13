@@ -134,10 +134,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-# Start of Harmony Change: Updates IconSmooth key
-#    key: windows
-    key: station
-# End of Harmony Change
+    key: windows
     base: state
   - type: Icon
     sprite: _Impstation/Structures/Windows/reinforced_uranium_diagonal.rsi # Impstation
