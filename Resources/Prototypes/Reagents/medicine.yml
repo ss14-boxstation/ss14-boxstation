@@ -1441,7 +1441,7 @@
         - !type:TemperatureCondition
           max: 213.0
         damage:
-          Burn: -4.5
+          Burn: -2 # Box Change - -4.5 > -2 - Nerf Aloxa when patient is not dead and not very injured
   # Box Change Start - Kill Arcryox, Buff Aloxa in respone
       - !type:EvenHealthChange
         conditions:
@@ -1450,9 +1450,9 @@
         - !type:MobStateCondition
           mobstate: Dead
         - !type:TotalDamageCondition
-          min: 200
+          min: 195
         damage:
-          Burn: -2
+          Burn: -3
       - !type:EvenHealthChange
         conditions:
         - !type:TemperatureCondition
@@ -1462,7 +1462,7 @@
         - !type:TotalDamageCondition
           min: 500
         damage:
-          Burn: -4
+          Burn: -4.5
   # Box Change End
 
 - type: reagent
