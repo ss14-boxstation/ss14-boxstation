@@ -299,4 +299,20 @@
         - !type:TotalDamageCondition
           min: 500
         damage:
-          Toxin: -2.5
+          Toxin: -5
+    # Side Effects, like Arith!
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        damage:
+          groups:
+            Brute: 0.3
+            Airloss: 3
+      - !type:ModifyBleed
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        - !type:TotalDamageCondition
+          max: 500
+        amount: 0.1
