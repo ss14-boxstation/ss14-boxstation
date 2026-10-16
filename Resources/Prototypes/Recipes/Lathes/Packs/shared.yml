@@ -25,6 +25,7 @@
   - LedLightBulb
   - DimLightBulb
   - WarmLightBulb
+  - UvLightTube # Box Change: Imp UV lights
 
 - type: latheRecipePack
   id: PowerCellsStatic
