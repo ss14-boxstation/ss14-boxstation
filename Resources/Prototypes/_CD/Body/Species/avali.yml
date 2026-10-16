@@ -143,7 +143,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: AmmoniaBlood
+      - ReagentId: AvaliBlood # Box Change: Starlight avali blood
         Quantity: 300
   - type: DamageVisuals
     damageOverlayGroups:
@@ -214,7 +214,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/organs.rsi
+    sprite: _Starlight/Mobs/Species/Avali/organs.rsi # Box Change: Starlight avali organs
 
 - type: entity
   id: OrganAvaliVisual
@@ -276,16 +276,26 @@
   id: OrganAvaliFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganAvaliInternal ]
+  parent: [ OrganBaseBrain, OrganAvaliInternal ] # Box Change: Remove OrganSpriteHumanInternal
   id: OrganAvaliBrain
 
 - type: entity
   parent: [ OrganAvaliVisual, OrganBaseEyes, OrganAvaliInternal ]
   id: OrganAvaliEyes
+  # Start Box Change: Use human sprites for these organs
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+  # End Box Change
 
 - type: entity
   parent: [ OrganBaseTongue, OrganAvaliInternal ]
   id: OrganAvaliTongue
+  # Start Box Change: Use human sprites for these organs
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+  # End Box Change
 
 - type: entity
   parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganAvaliInternal ]
@@ -311,9 +321,9 @@
   id: OrganAvaliStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganAvaliInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseLiver, OrganAvaliInternal, OrganHumanMetabolizer ] # Box Change: Remove OrganSpriteHumanInternal
   id: OrganAvaliLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganAvaliInternal, OrganHumanMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganAvaliInternal, OrganHumanMetabolizer ] # Box Change: Remove OrganSpriteHumanInternal
   id: OrganAvaliKidneys

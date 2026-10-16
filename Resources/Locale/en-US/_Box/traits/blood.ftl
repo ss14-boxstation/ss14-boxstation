@@ -9,10 +9,14 @@ trait-sapblood-desc = You have sap instead of blood, like dionae. [color=yellow]
 trait-blueblood-name = Blue Blood
 trait-blueblood-desc = You have blue blood, like that found in arachnids. Does not convey royalty. [color=yellow]NOTE: This is primarily cosmetic.[/color]
 trait-ammoniablood-name = Anaerobic Blood
-trait-ammoniablood-desc = You have blue, ammonia-based blood like that found in vox and avali. [color=yellow]NOTE: This is primarily cosmetic.[/color]
+# Note: The mention of vox blood being ammonia-based has been removed.
+# If we make vox require ammonia instead of saline like Avali, then re-add it.
+trait-ammoniablood-desc = You have pale blue blood like that found in vox. [color=yellow]NOTE: This is primarily cosmetic.[/color]
 trait-shimmeringblood-name = Shimmering Blood
 trait-shimmeringblood-desc = You have orange, psychoactive blood like that found in thaven. [color=yellow]NOTE: This is primarily cosmetic.[/color] 
 trait-methylatedblood-name = Methylated Blood
 trait-methylatedblood-desc = You have thin, highly alcoholic blood like that found in allulalo. [color=yellow]NOTE: This is primarily cosmetic.[/color] [color=red]Methylated blood evaporates naturally over time.[/color]
 trait-oilblood-name = Oil Blood
 trait-oilblood-desc = You have oil instead of blood, like IPCs. [color=yellow]NOTE: This is primarily cosmetic.[/color]
+trait-avaliblood-name = Diluted Ammonia Blood
+trait-avaliblood-desc = You have purple, ammonia-based blood, like that found in avali. [color=yellow]NOTE: This is primarily cosmetic.[/color]
