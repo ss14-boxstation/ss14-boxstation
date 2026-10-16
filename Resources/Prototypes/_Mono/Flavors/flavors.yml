@@ -4,12 +4,6 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-# MARK: Poor Resomi
-- type: flavor 
-  id: resomi
-  flavorType: Complex
-  description: flavor-complex-resomi
-
 # MARK: Teas
 - type: flavor
   id: teaGreen

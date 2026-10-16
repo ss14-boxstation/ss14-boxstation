@@ -1,5 +1,3 @@
-flavor-complex-resomi = like chicken, but more exotic
-
 # MOTD: Teas
 
 flavor-complex-tea-black = rich, malty, and robust
