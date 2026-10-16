@@ -4,7 +4,7 @@
 
 - type: entity
   id: CrateVendingMachineRestockBaristaFilled
-  parent: CratePlasticBiodegradable
+  parent: CratePlastic # Box Change: CratePlasticBiodegradable -> CratePlastic
   name: BaristaVend Restock Crate
   description: Contains a restock box for the BaristaVend.
   components:

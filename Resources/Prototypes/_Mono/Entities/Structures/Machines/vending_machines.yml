@@ -28,7 +28,7 @@
   #- type: MarketModifier
   #  mod: 8
   # End Box Change
-  - type: Advertise
+  - type: DatasetVocalizer # Box Change: Advertise -> DatasetVocalizer
     pack: BaristaAds
   - type: SpeakOnUIClosed
     pack: BaristaGoodbyes

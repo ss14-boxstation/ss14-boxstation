@@ -74,14 +74,22 @@
     price: 1
 
 - type: entity
-  parent: DrinkGlassBase
+  parent: DrinkTeapot # Box Change: DrinkGlassBase -> DrinkTeapot
   id: DrinkTeapotEmpty
-  name: teapot
-  description: An elegant teapot. It simply oozes class.
+  # Start Box Change: Don't redefine name now that we're parenting from the normal teapot
+  #name: teapot
+  #description: An elegant teapot. It simply oozes class.
+  # End Box Change
   suffix: Empty
   components:
-  - type: Sprite
-    sprite: Objects/Consumable/Drinks/teapot.rsi
+  # Start Box Change: Remove sprite definition, override solutions
+  #- type: Sprite
+  #  sprite: Objects/Consumable/Drinks/teapot.rsi
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+  # End Box Change
 
 - type: entity
   parent: DrinkGlass

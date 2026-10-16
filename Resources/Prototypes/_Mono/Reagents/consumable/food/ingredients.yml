@@ -12,13 +12,14 @@
   color: "#6B8E23"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: ChamomileTeaPowder
@@ -29,13 +30,14 @@
   color: "#EEDC82"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: BerryTeaPowder
@@ -46,13 +48,14 @@
   color: "#A23E48"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: FruitTeaPowder
@@ -63,13 +66,14 @@
   color: "#FFB347"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: YorkshireTeaPowder
@@ -80,13 +84,15 @@
   color: "#4B3621"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
+        Theobromine: 0.1 # Box Change - Add theobromine
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: DecafBlackTeaPowder
@@ -97,13 +103,14 @@
   color: "#4A3B2F"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: SyndicateTeaPowder
@@ -114,13 +121,15 @@
   color: "#FF0000"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
+        Theobromine: 0.2 # Box Change - Add theobromine
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change
 
 - type: reagent
   id: DecafCoffeePowder
@@ -131,10 +140,11 @@
   color: "#4A3B2F"
   group: Foods
   metabolisms:
-    Food:
+    # Start Box Change: Numetab
+    Digestion:
+      metabolites:
+        Nutriment: 0.1
       effects:
       - !type:SatiateThirst
         factor: -0.2
-      - !type:AdjustReagent
-        reagent: Nutriment
-        amount: 0.1
+    # End Box Change

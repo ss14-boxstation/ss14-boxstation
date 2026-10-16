@@ -62,6 +62,19 @@
   metamorphicMaxFillLevels: 2
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+  # Start Box Change: consistency with black tea
+  metabolisms:
+    Digestion:
+      metabolites:
+        Theobromine: 0.1
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 1.0
+        type: Remove
+  # End Box Change
 
 - type: reagent
   id: DecafBlackTea
@@ -89,9 +102,22 @@
   metamorphicSprite:
     sprite: _Mono/Objects/Consumable/Drinks/syndieteaglass.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 4
+  metamorphicMaxFillLevels: 2 # Box Change: 4 -> 2 because it only has 2 sprites...
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+  # Start Box Change: Add caffiene effect and theobromine metabolite. same effects as red bool, just better thirst satiation
+  metabolisms:
+    Digestion:
+      metabolites:
+        Theobromine: 0.2
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+  # End Box Change
 
 - type: reagent
   id: DecafCoffee
