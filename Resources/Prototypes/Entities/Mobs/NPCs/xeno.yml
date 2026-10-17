@@ -320,7 +320,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: _RMC14/Xenonids/spitter/spitter.rsi # Box Change: RMC Xeno sprites
+    sprite: _RMC14/Xenonids/Spitter/spitter.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.3
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
