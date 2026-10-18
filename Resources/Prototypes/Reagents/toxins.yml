@@ -220,7 +220,8 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   contrabandSeverity: Minor
   flavor: acid
-  color: "#5050ff"
+  color: "#b3c22a" # Box Change: 5050ff -> d9f500 for RMC xenos
+  standsout: true # Box Change: Makes it opaque
   boilingPoint: 165
   meltingPoint: -87
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
