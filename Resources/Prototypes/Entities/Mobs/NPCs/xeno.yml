@@ -536,11 +536,11 @@
     speechVerb: LargeMob
   - type: Sprite
     drawdepth: Mobs
-    sprite: _RMC14/Xenonids/Praetorian/praetorian.rsi # Box Change: RMC Xeno sprites
+    sprite: Mobs/Aliens/Xenos/praetorian.rsi
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: alive # Box Channge: RMC Xeno sprites
+      state: running
   - type: MobThresholds
     thresholds:
       0: Alive
