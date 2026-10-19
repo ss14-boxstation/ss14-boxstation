@@ -1,7 +1,7 @@
-/// TODO: Figure out a way to make the ammo slowly recharge over the delay
-/// TODO: Figure out a way to decouple the gun's usedelay and recharge delay, while keeping the visual delay wheel
-/// TODO: Different noises for when the recharge starts and when the recharge ends
-/// TODO: is it possible to make this work the moment the gun is empty, instead of when an empty gun tries to be shot?
+// TODO: Figure out a way to use the visual delay wheel
+// TODO: is it possible to make this work the moment the gun is empty, instead of when an empty gun tries to be shot?
+// TODO: There's probably a way to get the "finish recharging" logic and sound to go here instead, and to make them not delayed from when they happen.
+
 using Content.Shared.Timing;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -10,15 +10,10 @@ using Robust.Shared.Network;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
-/// <summary>
-/// Recharges ammo to full over time whenever the gun is fired while empty
-/// </summary>
 public sealed class RechargeEmptyAmmoSystem : EntitySystem
 {
-    [Dependency] private readonly SharedGunSystem _gun = default!;
     [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly UseDelaySystem _delay = default!;
 
     public override void Initialize()
     {
@@ -29,32 +24,28 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
 
     private void OnEmptyGunshot(Entity<RechargeEmptyAmmoComponent> ent, ref OnEmptyGunShotEvent args)
     {
-        // Check if the gun even has ammo
-        if (!TryComp<BasicEntityAmmoProviderComponent>(ent, out var basic))
+        // Check if the gun even has ammo and can reload
+        if (!TryComp<BasicEntityAmmoProviderComponent>(ent, out var basic) || !HasComp<RechargeBasicEntityAmmoComponent>(ent))
             return;
 
         if (basic.Count != 0 || basic.Count == null || basic.Capacity == null)
             return;
 
-        // Force the UseDelay
-        if (TryComp<UseDelayComponent>(ent, out var delay) && ent.Comp.ForceUseDelay)
-            _delay.TryResetDelay((ent, delay));
+        // Check if the gun is already reloadoing
+        if (ent.Comp.IsRecharging)
+            return;
 
-        // We don't predict this because occasionally on client it may not play.
-        // PlayPredicted will still be predicted on the client.
+        // Start Reloading
+        ent.Comp.IsRecharging = true;
+        Dirty(ent, ent.Comp);
         if (_netManager.IsServer)
-            _audio.PlayPvs(ent.Comp.RechargeSound, ent);
-
-        // Fully Reload the gun
-        _gun.UpdateBasicEntityAmmoCount((ent, basic), basic.Count.Value + basic.Capacity.Value);
-        Dirty(ent, basic);
+            _audio.PlayPvs(ent.Comp.RechargeStartSound, ent);
     }
 
-    // This feels scuffed as fuck, but I can't think of a better way right now
-    private void OnShotAttempted (Entity<RechargeEmptyAmmoComponent> ent, ref ShotAttemptedEvent args)
+    private void OnShotAttempted(Entity<RechargeEmptyAmmoComponent> ent, ref ShotAttemptedEvent args)
     {
-        // If the gun has UseDelay, don't let it shoot (Why don't all guns do this?)
-        if (_delay.IsDelayed(ent.Owner) && ent.Comp.ForceUseDelay)
+        // If the gun is recharging, don't let it shoot
+        if (ent.Comp.IsRecharging)
             args.Cancel();
     }
 }

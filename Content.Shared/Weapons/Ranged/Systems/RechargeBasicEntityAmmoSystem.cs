@@ -29,6 +29,11 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
 
         while (query.MoveNext(out var uid, out var recharge, out var ammo))
         {
+            // Box Change Start - Empty Ammo Recharging System
+            if (TryComp<RechargeEmptyAmmoComponent>(uid, out var emptyCharge) && emptyCharge.IsRecharging == false)
+                continue;
+            // Box Change End
+
             if (ammo.Count is null || ammo.Count == ammo.Capacity || recharge.NextCharge == null)
                 continue;
 
@@ -46,6 +51,17 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
             if (ammo.Count == ammo.Capacity)
             {
                 recharge.NextCharge = null;
+                // Box Change Start - If it has RechargeEmptyAmmo, we need to tell it that reloading is finished
+                if (TryComp<RechargeEmptyAmmoComponent>(uid, out var emptyReload))
+                {
+                    emptyReload.IsRecharging = false;
+
+                    if (_netManager.IsServer)
+                        _audio.PlayPvs(emptyReload.RechargeEndSound, uid);
+
+                    Dirty(uid, emptyReload);
+                }
+                // Box Change End
                 Dirty(uid, recharge);
                 continue;
             }
