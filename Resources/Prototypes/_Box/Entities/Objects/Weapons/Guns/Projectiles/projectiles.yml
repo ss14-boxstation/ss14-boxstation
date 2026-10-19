@@ -133,3 +133,14 @@
       types:
         Blunt: 15
         Structural: 20
+
+## Xeno Shards
+- type: entity
+  parent: BulletKineticSidearm
+  id: BulletKineticXenoShard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 2

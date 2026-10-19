@@ -1,8 +1,8 @@
 # Base PKA
 - type: entity
   abstract: true
-  id: WeaponSalvageAcceleratorBase
   parent: [ BaseItem, BaseCargoContraband ]
+  id: SalvageAcceleratorBase
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
@@ -19,10 +19,6 @@
     projectileSpeed: 25
   - type: AmmoCounter
   - type: Appearance
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.75
-    rechargeSound:
-      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: BulletKineticPKA
     capacity: 1
@@ -35,6 +31,16 @@
     - Belt
   - type: UseDelay
     delay: 1
+
+- type: entity
+  abstract: true
+  parent: SalvageAcceleratorBase
+  id: WeaponSalvageAcceleratorBase
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.75
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
 
 # PKA Upgrade System
 - type: entity
@@ -72,7 +78,7 @@
     capacity: 1
     count: 1
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
     quickEquip: false
     slots:
     - suitStorage

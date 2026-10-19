@@ -39,7 +39,7 @@
     capacity: 1
     count: 1
 
-# Roundstart kinetic sidearm
+## Roundstart kinetic sidearm
 - type: entity
   parent: [ WeaponSalvageAcceleratorSidearmBase, SalvageAcceleratorUpgradeable ]
   id: WeaponSalvageAcceleratorSidearm
@@ -49,8 +49,6 @@
   - type: Sprite
     sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
   - type: Item
-    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
-  - type: Clothing
     sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
   - type: UpgradeableGunCost
     maxCost: 200
@@ -129,3 +127,54 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_duster.ogg
   - type: GunRequiresWield # Big And Heavy
+
+# Strange PKAs
+## Xeno Shard Accelerator
+- type: entity
+  parent: [ SalvageAcceleratorBase, SalvageAcceleratorUpgradeable ]
+  id: WeaponSalvageAcceleratorXenoShard
+  name: xeno shard accelerator
+  description: a strange and otherworldly pistol that fires sharp blade-like bolts at close range.
+  components:
+  - type: Sprite
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
+  - type: Item
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Clothing
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+    - Pocket
+  - type: UpgradeableGunCost
+    maxCost: 100
+  - type: RechargeEmptyAmmo
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: Gun
+    minAngle: 2
+    maxAngle: 16
+    fireRate: 8
+    angleIncrease: 3
+    angleDecay: 16
+    selectedMode: FullAuto
+    availableModes:
+    - Burst
+    - FullAuto
+    burstFireRate: 16
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticXenoShard
+    capacity: 60
+    count: 60
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: UseDelay
+    delay: 3
