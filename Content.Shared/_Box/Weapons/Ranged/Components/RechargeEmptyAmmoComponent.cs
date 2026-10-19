@@ -12,7 +12,7 @@ public sealed partial class RechargeEmptyAmmoComponent : Component
 {
 
     /// <summary>
-    /// The audio that plays when the gun is done recharging
+    /// The audio that plays when the gun is recharging
     /// </summary>
     [DataField]
     [AutoNetworkedField]
