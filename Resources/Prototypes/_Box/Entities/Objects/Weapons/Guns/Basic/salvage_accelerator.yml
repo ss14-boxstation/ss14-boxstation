@@ -131,30 +131,17 @@
 # Strange PKAs
 ## Xeno Shard Accelerator
 - type: entity
-  parent: [ SalvageAcceleratorBase, SalvageAcceleratorUpgradeable ]
+  parent: [ WeaponSalvageAcceleratorSidearm ]
   id: WeaponSalvageAcceleratorXenoShard
   name: xeno shard accelerator
   description: a strange and otherworldly pistol that fires sharp blade-like bolts at close range.
   components:
-  - type: Sprite
-    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
-  - type: Item
-    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
-    size: Small
-    shape:
-    - 0,0,1,0
-    - 0,1,0,1
-  - type: Clothing
-    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
-    quickEquip: false
-    slots:
-    - suitStorage
-    - Belt
-    - Pocket
   - type: UpgradeableGunCost
     maxCost: 100
   - type: RechargeEmptyAmmo
-    rechargeSound:
+    rechargeStartSound:
+      path: /Audio/Effects/lightburn.ogg
+    rechargeEndSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: Gun
     minAngle: 2
@@ -168,13 +155,11 @@
     - FullAuto
     burstFireRate: 16
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
+      path: /Audio/Weapons/Guns/Gunshots/energycrossbow_shoot.ogg
   - type: BasicEntityAmmoProvider
     proto: BulletKineticXenoShard
     capacity: 60
     count: 60
-  - type: Tag
-    tags:
-    - Sidearm
-  - type: UseDelay
-    delay: 3
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.05
+    rechargeSound: null
