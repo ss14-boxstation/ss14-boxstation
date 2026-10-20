@@ -42,6 +42,7 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         // Start Reloading
         ent.Comp.IsRecharging = true;
 
+        // Calculate how long the delay should be
         double delaySeconds = (double)(ammo.Capacity * recharge.RechargeCooldown);
         var delay = TimeSpan.FromSeconds(delaySeconds);
 

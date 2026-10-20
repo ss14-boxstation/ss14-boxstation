@@ -142,11 +142,6 @@
     - 0,0,1,1
   - type: UpgradeableGunCost
     maxCost: 85
-  - type: RechargeEmptyAmmo
-    rechargeStartSound:
-      path: /Audio/Effects/lightburn.ogg
-    rechargeEndSound:
-      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: Gun
     minAngle: 2
     maxAngle: 24
@@ -164,9 +159,12 @@
     proto: BulletKineticXenoShard
     capacity: 60
     count: 60
+  - type: RechargeEmptyAmmo
+    rechargeStartSound:
+      path: /Audio/Effects/lightburn.ogg
+    rechargeEndSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.05
     rechargeSound: null
     showExamineText: false
-  - type: UseDelay
-    delay: 1 # 0.05 bullets per second, 60 bullets, 3 seconds until full charge - formula is cooldown = delay/capacity
