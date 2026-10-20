@@ -14,6 +14,7 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
 {
     [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly UseDelaySystem _delay = default!;
 
     public override void Initialize()
     {
@@ -38,9 +39,14 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
 
         // Start Reloading
         ent.Comp.IsRecharging = true;
+
+        // Visually show a delay, this implementation requires that the YAML is tuned perfectly however.
+        if (TryComp<UseDelayComponent>(ent, out var delay))
+            _delay.TryResetDelay((ent, delay));
+
         Dirty(ent, ent.Comp);
-        if (_netManager.IsServer)
-            _audio.PlayPvs(ent.Comp.RechargeStartSound, ent);
+        if (!_netManager.IsServer)
+            _audio.PlayPredicted(ent.Comp.RechargeStartSound, ent, ent.Owner);
     }
 
     private void OnRechargeFinish(Entity<RechargeEmptyAmmoComponent> ent, ref BasicAmmoFullEvent args)
@@ -48,6 +54,9 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         ent.Comp.IsRecharging = false;
         if (!_netManager.IsServer)
             _audio.PlayPredicted(ent.Comp.RechargeEndSound, ent, ent.Owner);
+        // Cancel the delay if its still going
+        if (TryComp<UseDelayComponent>(ent, out var delay))
+            _delay.CancelDelay((ent, delay));
         Dirty(ent, ent.Comp);
     }
 

@@ -136,8 +136,12 @@
   name: xeno shard accelerator
   description: a strange and otherworldly pistol that fires sharp blade-like bolts at close range.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
   - type: UpgradeableGunCost
-    maxCost: 100
+    maxCost: 85
   - type: RechargeEmptyAmmo
     rechargeStartSound:
       path: /Audio/Effects/lightburn.ogg
@@ -145,7 +149,7 @@
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: Gun
     minAngle: 2
-    maxAngle: 16
+    maxAngle: 24
     fireRate: 8
     angleIncrease: 3
     angleDecay: 16
@@ -164,3 +168,5 @@
     rechargeCooldown: 0.05
     rechargeSound: null
     showExamineText: false
+  - type: UseDelay
+    delay: 3 # 0.05 bullets per second, 60 bullets, 3 seconds until full charge - formula is cooldown = delay/capacity
