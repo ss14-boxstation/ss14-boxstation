@@ -41,11 +41,10 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         ent.Comp.IsRecharging = true;
 
         // Visually show a delay, this implementation requires that the YAML is tuned perfectly however.
-        if (TryComp<UseDelayComponent>(ent, out var delay))
-            _delay.TryResetDelay((ent, delay));
+        _delay.TryResetDelay(ent);
 
         Dirty(ent, ent.Comp);
-        if (!_netManager.IsServer)
+        if (_netManager.IsServer)
             _audio.PlayPredicted(ent.Comp.RechargeStartSound, ent, ent.Owner);
     }
 
@@ -54,9 +53,6 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         ent.Comp.IsRecharging = false;
         if (!_netManager.IsServer)
             _audio.PlayPredicted(ent.Comp.RechargeEndSound, ent, ent.Owner);
-        // Cancel the delay if its still going
-        if (TryComp<UseDelayComponent>(ent, out var delay))
-            _delay.CancelDelay((ent, delay));
         Dirty(ent, ent.Comp);
     }
 
