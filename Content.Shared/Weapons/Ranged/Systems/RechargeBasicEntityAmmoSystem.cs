@@ -52,7 +52,7 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
             if (ammo.Count == ammo.Capacity)
             {
                 recharge.NextCharge = null;
-                // Box Change Start - If it has RechargeEmptyAmmo, we need to tell it that reloading is finished
+                // Box Change Start - Xeno Shard Accelerator Reload on empty - We need to know when reloading is finished
                 var ammoFullEvent = new BasicAmmoFullEvent(uid);
                 RaiseLocalEvent(uid, ref ammoFullEvent);
                 // Box Change End
