@@ -165,6 +165,6 @@
     rechargeEndSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.05
+    rechargeCooldown: 0.07 # This should result in a 4.2s recharge time
     rechargeSound: null
     showExamineText: false

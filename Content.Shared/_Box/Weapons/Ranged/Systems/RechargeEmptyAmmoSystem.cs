@@ -1,14 +1,10 @@
-// TODO: Figure out a way to use the visual delay wheel
-// TODO: is it possible to make this work the moment the gun is empty, instead of when an empty gun tries to be shot?
-// TODO: There's probably a way to get the "finish recharging" logic and sound to go here instead, and to make them not delayed from when they happen.
+// TODO: Make this work the moment the gun runs out of ammo. There is a bug where sitting at 0 ammo means the gun rapidly reloads when you fire. Not fully an issue, but makes the delay not line up.
 
-using System;
 using Content.Shared.Timing;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
-using Robust.Shared.Serialization.TypeSerializers.Implementations;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
