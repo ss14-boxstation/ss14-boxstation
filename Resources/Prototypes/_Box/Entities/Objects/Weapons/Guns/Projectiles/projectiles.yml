@@ -143,4 +143,6 @@
   - type: Projectile
     damage:
       types:
-        Slash: 2
+        Slash: 4
+  - type: TimedDespawn
+    lifetime: 0.16 # roughly 4 tiles
