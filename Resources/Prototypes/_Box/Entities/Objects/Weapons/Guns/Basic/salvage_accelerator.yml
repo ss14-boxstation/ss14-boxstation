@@ -163,3 +163,4 @@
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.05
     rechargeSound: null
+    showExamineText: false

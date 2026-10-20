@@ -20,6 +20,7 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<RechargeEmptyAmmoComponent, OnEmptyGunShotEvent>(OnEmptyGunshot);
         SubscribeLocalEvent<RechargeEmptyAmmoComponent, ShotAttemptedEvent>(OnShotAttempted);
+        SubscribeLocalEvent<RechargeEmptyAmmoComponent, BasicAmmoFullEvent>(OnRechargeFinish);
     }
 
     private void OnEmptyGunshot(Entity<RechargeEmptyAmmoComponent> ent, ref OnEmptyGunShotEvent args)
@@ -40,6 +41,14 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         Dirty(ent, ent.Comp);
         if (_netManager.IsServer)
             _audio.PlayPvs(ent.Comp.RechargeStartSound, ent);
+    }
+
+    private void OnRechargeFinish(Entity<RechargeEmptyAmmoComponent> ent, ref BasicAmmoFullEvent args)
+    {
+        ent.Comp.IsRecharging = false;
+        if (!_netManager.IsServer)
+            _audio.PlayPredicted(ent.Comp.RechargeEndSound, ent, ent.Owner);
+        Dirty(ent, ent.Comp);
     }
 
     private void OnShotAttempted(Entity<RechargeEmptyAmmoComponent> ent, ref ShotAttemptedEvent args)

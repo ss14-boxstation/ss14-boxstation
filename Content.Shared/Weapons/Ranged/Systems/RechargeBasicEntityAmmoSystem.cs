@@ -1,5 +1,6 @@
 using Content.Shared.Examine;
 using Content.Shared.Weapons.Ranged.Components;
+using Content.Shared.Weapons.Ranged.Events; // Box Change
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
@@ -52,15 +53,8 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
             {
                 recharge.NextCharge = null;
                 // Box Change Start - If it has RechargeEmptyAmmo, we need to tell it that reloading is finished
-                if (TryComp<RechargeEmptyAmmoComponent>(uid, out var emptyReload))
-                {
-                    emptyReload.IsRecharging = false;
-
-                    if (_netManager.IsServer)
-                        _audio.PlayPvs(emptyReload.RechargeEndSound, uid);
-
-                    Dirty(uid, emptyReload);
-                }
+                var ammoFullEvent = new BasicAmmoFullEvent(uid);
+                RaiseLocalEvent(uid, ref ammoFullEvent);
                 // Box Change End
                 Dirty(uid, recharge);
                 continue;
