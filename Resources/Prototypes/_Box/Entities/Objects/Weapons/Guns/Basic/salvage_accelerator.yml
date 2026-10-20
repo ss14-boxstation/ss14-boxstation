@@ -169,4 +169,4 @@
     rechargeSound: null
     showExamineText: false
   - type: UseDelay
-    delay: 3 # 0.05 bullets per second, 60 bullets, 3 seconds until full charge - formula is cooldown = delay/capacity
+    delay: 1 # 0.05 bullets per second, 60 bullets, 3 seconds until full charge - formula is cooldown = delay/capacity
