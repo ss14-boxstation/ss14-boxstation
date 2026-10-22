@@ -14,6 +14,96 @@
     - type: TypingIndicator
       proto: moth
 
+- type: trait
+  id: RaisedByAllulalo
+  name: trait-raisedbyallulalo-name
+  description: trait-raisedbyallulalo-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Allulalo
+      speechSounds: Allulalo
+    - type: TypingIndicator
+      proto: allulalo
+
+- type: trait
+  id: RaisedByHarpies
+  name: trait-raisedbyharpies-name
+  description: trait-raisedbyharpies-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Harpy
+      speechSounds: Harpy
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: RaisedByAvali
+  name: trait-raisedbyavali-name
+  description: trait-raisedbyavali-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Parrot
+      speechSounds: MaleAvali
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: RaisedByRodentia
+  name: trait-raisedbyrodentia-name
+  description: trait-raisedbyrodentia-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Rodentia
+      speechSounds: Squeak
+    - type: TypingIndicator
+      proto: rodentia
+
+- type: trait
+  id: RaisedByThaven
+  name: trait-raisedbythaven-name
+  description: trait-raisedbythaven-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Default
+      speechSounds: Alto
+    - type: TypingIndicator
+      proto: thaven
+
+- type: trait
+  id: RaisedByVulpkanin
+  name: trait-raisedbyvulpkanin-name
+  description: trait-raisedbyvulpkanin-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Vulpkanin
+      speechSounds: Vulpkanin
+    - type: TypingIndicator
+      proto: default
+
 # Full speech and vocal replacement traits
 - type: trait
   id: BoxScurretVocals

@@ -7,6 +7,24 @@ trait-blood-deficiency-minor-desc = Your body does not naturally restore its own
 trait-raisedbyscurrets-name = Raised by Scurrets
 trait-raisedbyscurrets-desc = You've lived with Scurrets for so long that you sound like them. (Replace speech sounds and verbs)
 
+trait-raisedbyallulalo-name = Raised by Allulalo
+trait-raisedbyallulalo-desc = You've lived with Allulalo for so long that you sound like them. (Replace speech sounds and verbs)
+
+trait-raisedbyharpies-name = Raised by Harpies
+trait-raisedbyharpies-desc = You've lived with Harpies for so long that you sound like them. (Replace speech sounds and verbs)
+
+trait-raisedbyavali-name = Raised by Avali
+trait-raisedbyavali-desc = You've lived with Avali for so long that you sound like them. (Replace speech sounds and verbs)
+
+trait-raisedbyrodentia-name = Raised by Rodentia
+trait-raisedbyrodentia-desc = You've lived with Rodentia for so long that you sound like them. (Replace speech sounds and verbs)
+
+trait-raisedbythaven-name = Raised by Thaven
+trait-raisedbythaven-desc = You've lived with Thaven for so long that you sound like them. (Replace speech sounds and verbs)
+
+trait-raisedbyvulpkanin-name = Raised by Vulpkanin
+trait-raisedbyvulpkanin-desc = You've lived with Vulpkanin for so long that you sound like them. (Replace speech sounds and verbs)
+
 trait-scurretvocals-name = Voice of Scurret
 trait-scurretvocals-desc = You are somehow able to fully mimic Scurret speech. (Replace speech sounds, verbs, and emote sounds)
 
