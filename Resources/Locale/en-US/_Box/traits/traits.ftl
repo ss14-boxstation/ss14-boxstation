@@ -28,6 +28,24 @@ trait-raisedbyvulpkanin-desc = You've lived with Vulpkanin for so long that you 
 trait-scurretvocals-name = Voice of Scurret
 trait-scurretvocals-desc = You are somehow able to fully mimic Scurret speech. (Replace speech sounds, verbs, and emote sounds)
 
+trait-allulalovocals-name = Voice of Allulalo
+trait-allulalovocals-desc = You are somehow able to fully mimic Allulalo speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-harpyvocals-name = Voice of Harpy
+trait-harpyvocals-desc = You are somehow able to fully mimic Harpy speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-avalivocals-name = Voice of Avali
+trait-avalivocals-desc = You are somehow able to fully mimic Avali speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-rodentiavocals-name = Voice of Rodentia
+trait-rodentiavocals-desc = You are somehow able to fully mimic Rodentia speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-thavenvocals-name = Voice of Thaven
+trait-thavenvocals-desc = You are somehow able to fully mimic Thaven speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-vulpkaninvocals-name = Voice of Vulpkanin
+trait-vulpkaninvocals-desc = You are somehow able to fully mimic Vulpkanin speech. (Replace speech sounds, verbs, and emote sounds)
+
 trait-removal-name = Marked for Removal
 trait-removal-desc = Someone wants you gone. You will be a valid target for round-removal objectives.
 
