@@ -30,3 +30,26 @@
         Male: Scurret
         Female: Scurret
         Unsexed: Scurret
+
+# Damaged Borg Accent
+# - type: trait
+#   id: DamagedSiliconAccentTrait
+#   name: trait-damagedsiliconaccent-name
+#   description: trati-damagedsiliconaccent-desc
+#   cost: 0
+#   category: Vocal
+#   effects:
+#   - !type:AnyOfCondition # Add Voice of/Raised by IPCs to this too
+#     conditions:
+#     - !type:IsSpeciesCondition
+#       species: IPC
+#     - !type:IsSpeciesCondition
+#       species: Vox
+#   - !type:TraitDependencyCondition
+#     conflicts:
+#     - Synth
+#   - !type:AddCompsEffect
+#     components:
+#     - type: DamagedSiliconAccent
+#       enableChargeCorruption: false
+#       damageAtMaxCorruption: 100
