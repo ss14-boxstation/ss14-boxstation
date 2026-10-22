@@ -161,7 +161,7 @@ public partial class MobStateSystem
     {
         if (HasComp<AllowNextCritSpeechComponent>(uid))
         {
-            RemCompDeferred<AllowNextCritSpeechComponent>(uid);
+            //RemCompDeferred<AllowNextCritSpeechComponent>(uid); // Box Change: Narcolepsy speech fix - Comp is removed elsewhere to avoid duplicated requests
             return;
         }
 
