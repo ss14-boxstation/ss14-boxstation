@@ -1,2 +1,2 @@
-strange-prefix-examine = gay { $species }
-strange-species-prefix = Queer { $species }
+strange-prefix-examine = strange { $species }
+strange-species-prefix = Strange { $species }
