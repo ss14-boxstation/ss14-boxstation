@@ -3,15 +3,15 @@ using Robust.Shared.GameStates;
 namespace Content.Shared._Box.Traits;
 
 /// <summary>
-/// Set a prefix to all instances of the players original species
-/// i.e. "Vulpkanin" > "Synthetic Vulpkanin"
+/// Set an affix to all instances of the players original species
+/// i.e. "Vulpkanin" > "Synthetic Vulpkanin" or "Vox" > "Vox Automata"
 /// </summary>
 /// <remark>
 /// based heavily on the Cosmatic Drift synth trait
-/// Box - Added support for custom strings
+/// Box - Added support for custom strings and generalizes it to any affix
 /// </remark>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-public sealed partial class SpeciesPrefixComponent : Component
+public sealed partial class SpeciesAffixComponent : Component
 {
 
     /// <summary>
@@ -19,13 +19,13 @@ public sealed partial class SpeciesPrefixComponent : Component
     /// The string must always take a "species" arguement
     /// </summary>
     [DataField, AutoNetworkedField]
-    public string ExaminePrefix { get; set; } = "strange-prefix-examine";
+    public string ExamineAffix { get; set; } = "strange-affix-examine";
 
     /// <summary>
     /// The Loc String to pull in all other circumstances
     /// The string must always take a "species" arguement
     /// </summary>
     [DataField, AutoNetworkedField]
-    public string Prefix { get; set; } = "strange-species-prefix";
+    public string Affix { get; set; } = "strange-species-affix";
 
 }

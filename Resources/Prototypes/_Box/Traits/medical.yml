@@ -37,9 +37,9 @@
       enableChargeCorruption: false
       damageAtMaxCorruption: 100
     - type: IonStormNotifier
-    - type: SpeciesPrefix
-      examinePrefix: synthetic-component-examine
-      prefix: synthetic-component-prefix
+    - type: SpeciesAffix
+      # examineAffix: synthetic-component-examine
+      # affix: synthetic-component-prefix
   - !type:OverrideCompsEffect
     components:
     - type: TypingIndicator

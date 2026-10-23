@@ -6,5 +6,5 @@ public sealed partial record GeneralStationRecord
     /// Does the species have a prefix, and if so what is it?
     /// </summary>
     [DataField]
-    public string? SpeciesPrefix;
+    public string? SpeciesAffix;
 }

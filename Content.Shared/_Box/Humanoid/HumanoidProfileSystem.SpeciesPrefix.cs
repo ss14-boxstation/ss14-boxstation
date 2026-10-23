@@ -1,15 +1,15 @@
 // Ported from _Misfit, renamespaced to _Box
-// Box Change - Refactored to allow custom Species Prefixes
+// Box Change - Refactored to allow custom Species Affixes
 using Content.Shared._Box.Traits;
 
 namespace Content.Shared.Humanoid;
 
 public sealed partial class HumanoidProfileSystem
 {
-    public string GetPrefixRepresentation(EntityUid uid, string speciesText)
+    public string GetAffixRepresentation(EntityUid uid, string speciesText)
     {
-        return TryComp<SpeciesPrefixComponent>(uid, out var prefix)
-            ? Loc.GetString(prefix.ExaminePrefix, ("species", speciesText))
+        return TryComp<SpeciesAffixComponent>(uid, out var affix)
+            ? Loc.GetString(affix.ExamineAffix, ("species", speciesText))
             : speciesText;
     }
 }

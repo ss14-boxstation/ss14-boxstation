@@ -97,9 +97,9 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
 
         TryComp<FingerprintComponent>(player, out var fingerprintComponent);
         TryComp<DnaComponent>(player, out var dnaComponent);
-        TryComp<SpeciesPrefixComponent>(player, out var prefixComponent); // Box Change - Misfit - Species Prefix (Synth Trait) // Box Change - Custom Species Prefixes
+        TryComp<SpeciesAffixComponent>(player, out var affixComponent); // Box Change - Misfit - Species Prefix (Synth Trait) // Box Change - Custom Species Affixes
 
-        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, profile.Species, profile.Gender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, prefixComponent?.Prefix, profile, records); // Box Change - Misfit - Species Prefix (Synth Trait) // Box Change - Custom Species Prefixes
+        CreateGeneralRecord(station, idUid.Value, profile.Name, profile.Age, profile.Species, profile.Gender, jobId, fingerprintComponent?.Fingerprint, dnaComponent?.DNA, affixComponent?.Affix, profile, records); // Box Change - Misfit - Species Prefix (Synth Trait) // Box Change - Custom Species Affixes
     }
 
 
@@ -140,7 +140,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
         string jobId,
         string? mobFingerprint,
         string? dna,
-        string? speciesPrefix, // Box Change - Misfit - Add synthetic to species record // Box Change - Custom Species Prefixes
+        string? speciesAffix, // Box Change - Misfit - Add synthetic to species record // Box Change - Custom Species Affixes
         HumanoidCharacterProfile profile,
         StationRecordsComponent records)
     {
@@ -167,7 +167,7 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
             DisplayPriority = jobPrototype.RealDisplayWeight,
             Fingerprint = mobFingerprint,
             DNA = dna,
-            SpeciesPrefix = speciesPrefix, // Box Change - Misfit - Add synthetic to species record // Box Change - Custom Species Prefixes
+            SpeciesAffix = speciesAffix, // Box Change - Misfit - Add synthetic to species record // Box Change - Custom Species Affixes
         };
 
         var key = AddRecordEntry(station, record);
@@ -345,8 +345,8 @@ public sealed class StationRecordsSystem : SharedStationRecordsSystem
             StationRecordFilterType.Job =>
                 !someRecord.JobTitle.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Species =>
-                someRecord.SpeciesPrefix != null // Misfit - Add synthetic to species record searching  // Box Change - Custom Species Prefixes
-                    ? !Loc.GetString(someRecord.SpeciesPrefix, ("species", someRecord.Species)).ToLower().Contains(filterLowerCaseValue)
+                someRecord.SpeciesAffix != null // Misfit - Add synthetic to species record searching // Box Change - Custom Species Affixes
+                    ? !Loc.GetString(someRecord.SpeciesAffix, ("species", someRecord.Species)).ToLower().Contains(filterLowerCaseValue)
                     : !someRecord.Species.ToLower().Contains(filterLowerCaseValue),
             StationRecordFilterType.Prints => someRecord.Fingerprint != null
                 && IsFilterWithSomeCodeValue(someRecord.Fingerprint, filterLowerCaseValue),
