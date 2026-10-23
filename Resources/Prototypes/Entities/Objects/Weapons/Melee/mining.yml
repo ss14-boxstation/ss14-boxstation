@@ -57,6 +57,7 @@
   - type: MeleeWeapon
     autoAttack: true
     angle: 0
+    wideAnimation: WeaponArcThrust # Box Change: Make wideswing use new melee animations
     wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
