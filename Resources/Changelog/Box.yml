@@ -2064,3 +2064,23 @@
   id: 223
   time: '2026-10-18T06:54:00.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/335
+- author: CollectionOfBones128
+  changes:
+  - message: The "Raised By" and "Voice Of" traits now set the appropriate typing
+      indicator
+    type: Tweak
+  - message: Added missing "Raised By" and "Voice Of" traits for Allulalo, Avali,
+      Harpies, Rodentia, Thaven, and Vulpkanin
+    type: Add
+  id: 224
+  time: '2026-10-23T02:53:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/337
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali have had their natural body temperature reduced, and temperature
+      tolerances adjusted slightly. This should have little to no bearing on normal
+      gameplay.
+    type: Tweak
+  id: 225
+  time: '2026-10-23T02:49:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/320
