@@ -38,8 +38,8 @@
       damageAtMaxCorruption: 100
     - type: IonStormNotifier
     - type: SpeciesAffix
-      # examineAffix: synthetic-component-examine
-      # affix: synthetic-component-prefix
+      examineAffix: synthetic-component-examine
+      affix: synthetic-component-prefix
   - !type:OverrideCompsEffect
     components:
     - type: TypingIndicator
