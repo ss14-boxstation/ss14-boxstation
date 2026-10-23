@@ -1,0 +1,27 @@
+# Lots of misc stuff in here, hard to parent it.
+
+# Powder (For when you throw stuff like flour and it explodes)
+
+# Reagent Containers
+
+- type: entity
+  parent: [ReagentPacketBase, ItemHeftyBase]
+  id: ReagentContainerHoney
+  name: honey bottle
+  description: A big squeeze bottle of honey. Great for sweetening up your day!
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Consumable/Food/ingredients.rsi
+    state: honeybottle
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Honey
+          Quantity: 30
+  - type: Edible
+    edible: Drink
+    solution: food
+    destroyOnEmpty: false
+    utensil: None

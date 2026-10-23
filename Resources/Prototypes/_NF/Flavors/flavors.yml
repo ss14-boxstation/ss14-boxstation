@@ -1,0 +1,4 @@
+- type: flavor
+  id: honeycomb
+  flavorType: Complex
+  description: flavor-complex-honeycomb
