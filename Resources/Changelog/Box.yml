@@ -2084,3 +2084,10 @@
   id: 225
   time: '2026-10-23T02:49:08.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/320
+- author: Dizzy-Eevee
+  changes:
+  - message: Thaven can view their moods again.
+    type: Fix
+  id: 226
+  time: '2026-10-23T10:03:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/340
