@@ -20,10 +20,10 @@ public sealed partial class GeneralRecord : Control
             ("job", Loc.GetString(record.JobTitle)));
         var species = Loc.GetString(prototypeManager.Index<SpeciesPrototype>(record.Species).Name);
         // Start Misfit - Add synthetic to synths on records console
-        var synthSpecies = record.Synthetic
-            ? Loc.GetString("synthetic-component-prefix", ("species", species))
+        var speciesPrefix = record.SpeciesPrefix != null
+            ? Loc.GetString(record.SpeciesPrefix, ("species", species))
             : species;
-        Species.Text = Loc.GetString("general-station-record-console-record-species", ("species", synthSpecies));
+        Species.Text = Loc.GetString("general-station-record-console-record-species", ("species", speciesPrefix));
         // End Misfit
         Gender.Text = Loc.GetString("general-station-record-console-record-gender",
             ("gender", record.Gender.ToString()));

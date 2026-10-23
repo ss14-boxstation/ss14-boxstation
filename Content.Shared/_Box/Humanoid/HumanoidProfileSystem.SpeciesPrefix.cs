@@ -6,10 +6,10 @@ namespace Content.Shared.Humanoid;
 
 public sealed partial class HumanoidProfileSystem
 {
-    public string GetSyntheticRepresentation(EntityUid uid, string speciesText)
+    public string GetPrefixRepresentation(EntityUid uid, string speciesText)
     {
-        return HasComp<SpeciesPrefixComponent>(uid)
-            ? Loc.GetString("synthetic-component-examine", ("species", speciesText))
+        return TryComp<SpeciesPrefixComponent>(uid, out var prefix)
+            ? Loc.GetString(prefix.ExaminePrefix, ("species", speciesText))
             : speciesText;
     }
 }

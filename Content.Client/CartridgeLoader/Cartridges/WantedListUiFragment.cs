@@ -103,8 +103,8 @@ public sealed partial class WantedListUiFragment : BoxContainer
             ("job", record.TargetInfo.JobTitle.ToLower())
         ));
         // Box Change Start - Misfit - Synth Prefix
-        var species = record.TargetInfo.Synthetic // Misfit - Add synthetic prefix to wanted list cart
-            ? Loc.GetString("synthetic-component-prefix", ("species", record.TargetInfo.Species)).ToLower()
+        var species = record.TargetInfo.SpeciesPrefix != null // Misfit - Add synthetic prefix to wanted list cart
+            ? Loc.GetString(record.TargetInfo.SpeciesPrefix, ("species", record.TargetInfo.Species)).ToLower()
             : record.TargetInfo.Species.ToLower();
         // Box Change End
         TargetSpecies.SetMessage(GetLoc(

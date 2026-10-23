@@ -3,8 +3,8 @@ namespace Content.Shared.StationRecords;
 public sealed partial record GeneralStationRecord
 {
     /// <summary>
-    ///     Misfit - Synthetic trait for searching support
+    /// Does the species have a prefix, and if so what is it?
     /// </summary>
     [DataField]
-    public bool Synthetic;
+    public string? SpeciesPrefix;
 }
