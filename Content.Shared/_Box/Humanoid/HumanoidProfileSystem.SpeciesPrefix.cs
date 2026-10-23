@@ -1,5 +1,5 @@
 // Ported from _Misfit, renamespaced to _Box
-// TODO: make this take a loc string from the component
+// Box Change - Refactored to allow custom Species Prefixes
 using Content.Shared._Box.Traits;
 
 namespace Content.Shared.Humanoid;
