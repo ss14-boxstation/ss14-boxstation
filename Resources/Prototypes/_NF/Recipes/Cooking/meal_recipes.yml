@@ -1,0 +1,76 @@
+- type: microwaveMealRecipe
+  id: RecipeHoneyBun
+  name: honey bun recipe
+  result: FoodBakedBunHoney
+  time: 5
+  solids:
+    FoodBreadBun: 1
+  reagents:
+    Honey: 5
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
+
+- type: microwaveMealRecipe
+  id: RecipeHoneyChallah
+  name: honey challah recipe
+  result: FoodBreadChallah
+  time: 15
+  solids:
+    FoodDoughRope: 3
+    PoppySeeds: 1
+  reagents:
+    Honey: 10
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
+
+- type: microwaveMealRecipe
+  id: RecipeGlazedHam
+  name: honey glazed ham recipe
+  result: FoodMeatGlazedHam
+  time: 15
+  solids:
+    FoodMeat: 2
+  reagents:
+    Honey: 10
+    TableSalt: 5
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
+
+- type: microwaveMealRecipe
+  id: RecipeAppleHoneyDutchBaby
+  name: honey apple streusel pie
+  result: FoodPieAppleHoney
+  time: 15
+  solids:
+    FoodPlateTin: 1
+    FoodDoughPie: 1
+    FoodApple: 2
+  reagents:
+    Honey: 10
+    Oats: 10
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change
+
+- type: microwaveMealRecipe
+  id: RecipeAppleStrudelBite
+  name: apple strudel bite
+  result: FoodBakedAppleStrudelBite
+  time: 5
+  solids:
+    FoodCroissantRaw: 1
+    FoodApple: 1
+    FoodButterSlice: 1
+  reagents:
+    Honey: 5
+  # Start Box Change: Remove Frontier recipeType field
+  #recipeType:
+  #- Oven
+  # End Box Change

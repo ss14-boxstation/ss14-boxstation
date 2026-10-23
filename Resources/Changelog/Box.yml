@@ -2031,3 +2031,87 @@
   id: 219
   time: '2026-10-16T22:09:31.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/334
+- author: Dizzy-Eevee
+  changes:
+  - message: Added floor-mounted lights, which have unique sprites for each light
+      tube variant.
+    type: Add
+  - message: Added violently purple ultraviolet light tubes.
+    type: Add
+  id: 220
+  time: '2026-10-22T12:45:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/311
+- author: Dizzy-Eevee
+  changes:
+  - message: Added napkins, and a container to hold them. These can be printed from
+      an autolathe.
+    type: Add
+  id: 221
+  time: '2026-10-22T12:47:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/318
+- author: Dizzy-Eevee
+  changes:
+  - message: Narcoleptic characters will no longer find their messages being lost
+      to the Great Abyss when falling asleep mid-sentence.
+    type: Fix
+  id: 222
+  time: '2026-10-22T12:48:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/258
+- author: Dizzy-Eevee
+  changes:
+  - message: Replaced all xeno sprites with RMC's.
+    type: Tweak
+  id: 223
+  time: '2026-10-18T06:54:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/335
+- author: CollectionOfBones128
+  changes:
+  - message: The "Raised By" and "Voice Of" traits now set the appropriate typing
+      indicator
+    type: Tweak
+  - message: Added missing "Raised By" and "Voice Of" traits for Allulalo, Avali,
+      Harpies, Rodentia, Thaven, and Vulpkanin
+    type: Add
+  id: 224
+  time: '2026-10-23T02:53:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/337
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali have had their natural body temperature reduced, and temperature
+      tolerances adjusted slightly. This should have little to no bearing on normal
+      gameplay.
+    type: Tweak
+  id: 225
+  time: '2026-10-23T02:49:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/320
+- author: Dizzy-Eevee
+  changes:
+  - message: Thaven can view their moods again.
+    type: Fix
+  id: 226
+  time: '2026-10-23T10:03:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/340
+- author: CollectionOfBones128
+  changes:
+  - message: Arcryox has been removed.
+    type: Remove
+  - message: Cryoxadone has been tweaked, it no longer primarily functions as a discount
+      omnizine
+    type: Tweak
+  - message: Aloxadone has been tweaked, it now functions similarly to how Arcryox
+      did
+    type: Tweak
+  - message: Two new cryo chems, Traumoxadone and Stelloxadone, have been added to
+      replace Arcryox.
+    type: Add
+  id: 227
+  time: '2026-10-23T11:17:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/331
+- author: Dizzy-Eevee
+  changes:
+  - message: Added honey, a few foods cooked with it, and the ability to cultivate
+      beehives in hydroponics trays.
+    type: Add
+  id: 228
+  time: '2026-10-23T11:19:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/315

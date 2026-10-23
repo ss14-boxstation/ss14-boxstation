@@ -101,6 +101,14 @@ public partial class SeedData
     [DataField("noun")]
     public string Noun { get; private set; } = "";
 
+    // Start Box Change: Make seed packet localizable so bees can work properly
+    /// <summary>
+    ///     Frontier: The localized string used for a set of seeds (or equivalent)
+    /// </summary>
+    [DataField("packetName")]
+    public string PacketName { get; private set; } = "botany-seed-packet-name";
+    // End Box Change
+
     /// <summary>
     ///     Name displayed when examining the hydroponics tray. Describes the actual plant, not the seed itself.
     /// </summary>
