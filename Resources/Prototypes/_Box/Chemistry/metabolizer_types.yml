@@ -19,3 +19,7 @@
 - type: metabolizerType
   id: Synth
   name: metabolizer-type-synth
+
+- type: metabolizerType
+  id: Automata
+  name: metabolizer-type-automata

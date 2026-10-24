@@ -35,7 +35,7 @@
     components:
     - type: DamagedSiliconAccent
       enableChargeCorruption: false
-      damageAtMaxCorruption: 100
+      damageAtMaxCorruption: 200
     - type: IonStormNotifier
     - type: SpeciesAffix
       examineAffix: synthetic-component-examine
@@ -44,3 +44,119 @@
     components:
     - type: TypingIndicator
       proto: robot
+
+# Vox Automata
+## This is the Vox Equivalent of Synths
+## Because Vox are *already* Bionic, this makes them fully Robotic instead.
+## To not lose "Vox-ness", Vox Automata are Nitrogen-powered and are prone to Oxidization.
+- type: trait
+  id: VoxAutomata
+  name: trait-automata-name
+  description: trait-automata-desc
+  category: Medical
+  cost: 1
+  priority: 1
+  conditions:
+  - !type:IsSpeciesCondition
+    species: Vox
+  - !type:TraitDependencyCondition
+    conflicts:
+    - RedBlood
+    - InsectBlood
+    - SlimeBlood
+    - SapBlood
+    - BlueBlood
+    - AmmoniaBlood
+    - ShimmeringBlood
+    - MethylatedBlood
+  effects:
+  - !type:ChangeBloodReagentEffect
+    reagent: SynthBlood
+  - !type:RemMetabolismCategoryEffect
+    categories: [ Organic ]
+  - !type:ReplaceMetabolizerTypeEffect
+    types: [ Robotic, Automata ] # They will be Nitrogen powered and take Caustic from Oxygen
+  - !type:AddCompsEffect
+    components:
+    - type: DamagedSiliconAccent
+      enableChargeCorruption: false
+      damageAtMaxCorruption: 200
+    - type: IonStormNotifier
+    - type: SpeciesAffix
+      examineAffix: vox-automata-examine
+      affix: vox-automata-suffix
+  - !type:OverrideCompsEffect # We need to tweak all the "Organic" parts of Vox
+    components:
+    - type: Damageable
+      damageContainer: HumanoidSilicon
+      damageModifierSet: Vox
+    - type: TypingIndicator
+      proto: robot
+    - type: Tag
+      tags:
+      - CanPilot
+      - FootstepSound
+      - DoorBumpOpener
+      - AnomalyHost
+      - SiliconEmotes
+    - type: Respirator
+      damage:
+        types:
+          Shock: 1.0
+      damageRecovery:
+        types:
+          Shock: 0
+    - type: PassiveDamage
+      # Augment normal health regen to be able to tank some Caustic damage
+      # This allows Automata to take their mask off temporarily to eat something without needing a trip to medbay afterwards.
+      allowedStates:
+      - Alive
+      damageCap: 20
+      damage:
+        types:
+          Heat: -0.07
+          Caustic: -0.2 # needs to be less than the PendingZombieComponent does or they never become zombies by the disease.
+        groups:
+          Brute: -0.07
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTypeTrigger
+            damageType: Blunt
+            damage: 400
+          behaviors:
+          - !type:GibBehavior { }
+        # mimics IPC gib
+        - trigger:
+            !type:DamageTypeTrigger
+            damageType: Heat
+            damage: 2000 # Metal is normally harder to melt than a person, so "ashing" threshold is higher
+          behaviors:
+          - !type:SpawnEntitiesBehavior
+            spawnInContainer: true
+            spawn:
+              MoltenIPCScrap:
+                min: 1
+                max: 1
+          - !type:BurnBodyBehavior { } # TODO: Wait for the upstream PR that makes it so a custom popup can be made
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MeatLaserImpact
+    - type: HealthExaminable
+      examinableTypes:
+        - Blunt
+        - Slash
+        - Piercing
+        - Heat
+        - Shock
+        - Cold
+        - Caustic
+        - Radiation
+      locPrefix: ipc # unique flavor text for ipc injuries
+    - type: Bloodstream
+      bloodlossDamage:
+        types:
+          Shock: 0.5
+      bloodlossHealDamage:
+        types:
+          Shock: 0
