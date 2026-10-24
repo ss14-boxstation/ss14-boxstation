@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from TauCetiStation at commit https://github.com/TauCetiStation/TauCetiClassic/commit/401d381d53ceb9a045bca9c0ae60eb52b5fab2c5, boxwide-nanotrasen and tea by Dizzy-Eevee (github).",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "boxwide-nanotrasen"
+        },
+        {
+            "name": "tea"
+        }
+    ]
+}
