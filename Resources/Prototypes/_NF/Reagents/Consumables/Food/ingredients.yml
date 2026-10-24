@@ -8,10 +8,15 @@
   physicalDesc: reagent-physical-desc-powdery
   recognizable: true # "Waiter, there seems to be grounds in my coffee."
   metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateHunger
-        factor: 0.1
+    Digestion: # Box Change: nubody beam Food -> Digestion
+      # Start Box Change: Metabolize into nutriment and theobromine
+      metabolites:
+        Nutriment: 0.2
+        Theobromine: 0.1
+      #effects:
+      #- !type:SatiateHunger
+      #  factor: 0.1
+      # End Box Change
       - !type:SatiateThirst
         factor: -0.25
         
