@@ -7,6 +7,8 @@
   components:
   - type: StorageFill
     contents:
+    - id: DrinkWaterJugBar
+    - id: DrinkCreamCarton
     - id: HotplateFlatpack
     - id: Kettle
     - id: DrinkTeapotEmpty
