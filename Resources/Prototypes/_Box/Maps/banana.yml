@@ -1,7 +1,7 @@
 - type: gameMap
   id: Banana
   mapName: 'Banana'
-  mapPath: /Maps/_Impstation/banana.yml
+  mapPath: /Maps/_Box/banana.yml
   minPlayers: 0
   maxPlayers: 7
   stations:
@@ -16,9 +16,9 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationCargoShuttle
-          path: /Maps/_Impstation/Shuttles/cargo_banana.yml
+          path: /Maps/_Box/Shuttles/cargo_banana.yml
         - type: StationJobs
-          availableJobs: # Total of 25 jobs roundstart, max of 29 inc. latejoins and trainees.
+          availableJobs: # Total of 26 jobs roundstart, max of 30 inc. latejoins and trainees. # Box: 25, 29 -> 26, 30
             # command - 8
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -38,6 +38,7 @@
             Musician: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Reporter: [ 1, 1 ]
+            Librarian: [ 1, 1 ] # Box Change: Add librarian
             # engineering - 2-3
             AtmosphericTechnician: [ 1, 1 ]
             StationEngineer: [ 1, 1 ]

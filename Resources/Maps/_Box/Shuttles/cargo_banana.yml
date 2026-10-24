@@ -419,7 +419,7 @@ entities:
       currentLabel: Cargo Shuttle
     - type: NameModifier
       baseName: long-range holopad
-- proto: MiniGyroscope
+- proto: Gyroscope
   entities:
   - uid: 55
     components:
