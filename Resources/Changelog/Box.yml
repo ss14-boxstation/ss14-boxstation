@@ -2115,3 +2115,34 @@
   id: 228
   time: '2026-10-23T11:19:44.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/315
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali now have their own blood reagent, rather than reusing Vox blood.
+    type: Add
+  - message: Most Avali organs now have unique sprites.
+    type: Add
+  id: 229
+  time: '2026-10-24T05:28:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/319
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies now breathe twice as fast as humans, as originally intended.
+    type: Fix
+  - message: Harpies have had their air quality sensitivity tweaked. They should now
+      suffocate from poor air quality at significantly lower thresholds than other
+      species, without creating a situation where they are constantly taking and immediately
+      healing 1 asphyxiation damage from breathing in their own CO2.
+    type: Tweak
+  id: 230
+  time: '2026-10-24T05:30:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/343
+- author: CollectionOfBones128
+  changes:
+  - message: Added the "Artificial Voicebox" trait, giving you the pAI typing indicator
+    type: Add
+  - message: Added the "Damaged Silicon Accent" trait, which corrupts speech based
+      on damage taken
+    type: Add
+  id: 231
+  time: '2026-10-24T05:31:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/341
