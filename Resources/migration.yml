@@ -812,7 +812,6 @@ ApidCryopodEngineer: null
 ApidCryopodSalvageSpecialist: null
 BenchSofaCorpLeft: BenchSofaCorpLeftDV 
 BenchSofaCorpRight: BenchSofaCorpRightDV
-BookshelfGuidebooksFilled: BookshelfFilled
 BorgSpawnerTckTck: null
 ChairApid: ChairOfficeDark
 CigPackShrimp: CigPackMixed
@@ -846,15 +845,14 @@ LockerHospitalityDirectorFilled: WardrobeMixedFilled # Oh god I forgot about HD 
 LockerJanitorFilled: ClosetJanitor
 MedicalAssembler: null # This is basically a super-microwave for medical from frontier idk if we'd want this
 MirrorApid: Mirror
-PlushieAlienGerm: PlushieSharkPink
-PlushieApid: PlushieSharkPink
-PlushieCosmicCult: PlushieSharkPink
-PlushieDecapoid: PlushieSharkPink
-PlushieFinfin: PlushieSharkPink
-PlushieGray: PlushieSharkPink
-PlushieKodepiia: PlushieSharkPink
-PlushieOdds: PlushieSharkPink
-PlushieTeddyBearRecolorableRandom: PlushieSharkPink # This one doesn't immediately jump out as imp content / an imp meme so look into it
+PlushieAlienGerm: PlushieBee
+PlushieApid: null
+PlushieCosmicCult: PlushieNar
+PlushieDecapoid: PlushieLizard
+PlushieFinfin: PlushieExperiment
+PlushieGray: PlushieSpaceLizard
+PlushieKodepiia: PlushieRainbowCarp
+PlushieOdds: PlushieSlime
 RubberStampHatePaperwork: null # maybe for the funny
 ServiceTechFab: PlushieSharkGrey # we will have these at some point
 SignApid: null
