@@ -21402,18 +21402,8 @@ entities:
       pos: -41.350964,1.2295794
       parent: 2
     - type: Paper
-      stampState: paper_stamp-signature
+      stampState: paper_stamp-centcom
       stampedBy:
-      - hasIcon: False
-        stampFont: Default
-        stampLargeIcon: null
-        stampedColor: '#009100FF'
-        stampedName: Shun The Unworthy
-      - hasIcon: False
-        stampFont: Default
-        stampLargeIcon: null
-        stampedColor: '#009100FF'
-        stampedName: Odds-And-Ends
       - hasIcon: True
         stampFont: null
         stampLargeIcon: large_stamp-centcom
