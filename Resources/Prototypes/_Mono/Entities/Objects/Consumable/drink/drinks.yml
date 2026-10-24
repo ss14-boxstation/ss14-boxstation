@@ -82,7 +82,7 @@
         - ReagentId: DecafBlackTea
           Quantity: 30
   - type: Icon
-    sprite: _Box/Objects/Consumable/Drinks/Tea/decafteaglass.rsi # Box Change: Resprite
+    sprite: Objects/Consumable/Drinks/teaglass.rsi # Box Change: Use upstream sprite
     state: icon
 
 - type: entity
@@ -114,5 +114,5 @@
         - ReagentId: DecafCoffee
           Quantity: 30
   - type: Icon
-    sprite: Consumable/Drinks/coffeeglass.rsi # Box Change: Use upstream sprite
+    sprite: Objects/Consumable/Drinks/coffeeglass.rsi # Box Change: Use upstream sprite
     state: icon

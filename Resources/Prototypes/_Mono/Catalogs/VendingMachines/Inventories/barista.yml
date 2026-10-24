@@ -20,7 +20,7 @@
     Kettle: 3
     DrinkTeapotEmpty: 4
     DrinkGlass: 8 # Box Change: Just use normal metamorphic glass??
-    ChemistryHotplateFlatpack: 5
+    # ChemistryHotplateFlatpack: 5 # Box Change: Get one from sci instead if you need it
     FoodBoxBiscuitSimple: 2
     FoodBoxBiscuitOatmeal: 2
     FoodBoxBiscuitSugar: 2

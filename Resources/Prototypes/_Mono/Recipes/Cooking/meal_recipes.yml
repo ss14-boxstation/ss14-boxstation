@@ -8,12 +8,17 @@
   id: RecipeBiscuitSimple
   name: simple cookie recipe
   result: FoodBakedBiscuitSimple
-  resultCount: 4 # Frontier
-  time: 10 # Frontier - 5<10
+  #resultCount: 4 # Frontier # Box Change: Can only cook one at a time
+  time: 5 # Frontier - 5<10 # Box Change: 5s to account for lower yield
   group: BarsAndCookies
   reagents:
-    Flour: 10
-    Milk: 5
-  solids:
-    FoodButterSlice: 1
-  recipeType: Oven # Frontier
+    # Start Box Change: Redo recipe to account for lower yield
+    Flour: 2
+    Milk: 1
+    Butter: 1
+    #Flour: 10
+    #Milk: 5
+  #solids:
+    #FoodButterSlice: 1
+    # End Box Change
+  #recipeType: Oven # Frontier # Box Change: No frontier appliance split

@@ -29,7 +29,7 @@
   #  mod: 8
   # End Box Change
   - type: DatasetVocalizer # Box Change: Advertise -> DatasetVocalizer
-    pack: BaristaAds
+    dataset: BaristaAds # Box Change: pack -> dataset
   - type: SpeakOnUIClosed
     pack: BaristaGoodbyes
   - type: Sprite
