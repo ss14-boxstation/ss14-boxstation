@@ -2146,3 +2146,13 @@
   id: 231
   time: '2026-10-24T05:31:09.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/341
+- author: Dizzy-Eevee
+  changes:
+  - message: Packed now has a Pride-O-Mat.
+    type: Tweak
+  - message: The Spacebucks on Elkridge now has a spacepresso machine instead of a
+      soda dispenser.
+    type: Tweak
+  id: 232
+  time: '2026-10-24T05:40:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/345
