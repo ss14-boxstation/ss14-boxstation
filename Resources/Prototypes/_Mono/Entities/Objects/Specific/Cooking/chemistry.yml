@@ -19,7 +19,7 @@
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     fillBaseName: teaspoon
-    # inHandsMaxFillLevels: 1 # TODO: Add inHandsMaxFillLevels
+    inHandsMaxFillLevels: 0 # TODO: Add inHandsMaxFillLevels # Box Change: Uncomment and set to 0 to fix linter
     # inHandsFillBaseName: -fill-
   - type: SolutionContainerManager
     solutions:
