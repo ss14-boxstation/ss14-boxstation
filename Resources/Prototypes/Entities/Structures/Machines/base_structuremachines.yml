@@ -53,6 +53,11 @@
   - type: ExtensionCableReceiver
   - type: LightningTarget
     priority: 1
+# Start Box Change: ES sparks
+  - type: ESSparkOnHit
+    prob: 0.25
+    count: 2
+# End Box Change
   - type: TooShortForUiBlacklist # Box Change: Allulalo blacklist
 
 - type: entity
