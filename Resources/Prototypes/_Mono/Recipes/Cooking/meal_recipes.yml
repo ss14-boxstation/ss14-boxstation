@@ -15,10 +15,9 @@
     # Start Box Change: Redo recipe to account for lower yield
     Flour: 2
     Milk: 1
-    Butter: 1
     #Flour: 10
     #Milk: 5
-  #solids:
-    #FoodButterSlice: 1
     # End Box Change
+  solids:
+    FoodButterSlice: 1
   #recipeType: Oven # Frontier # Box Change: No frontier appliance split
