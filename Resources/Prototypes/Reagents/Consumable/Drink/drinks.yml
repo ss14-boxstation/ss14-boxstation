@@ -410,7 +410,7 @@
         type: Remove
       # End Box Change
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/teaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/teaglass.rsi # Box Change: Resprite to match mono color
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-

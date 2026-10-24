@@ -1,0 +1,19 @@
+- type: entity
+  parent: CratePlastic
+  id: CrateTeaParty
+  name: tea party kit
+  suffix: Box
+  description: Contains teaware, a hot plate flatpack, a variety pack of tea powder, and several boxes of biscuits. Everything you need for a tea party. Fanciness not guaranteed.
+  components:
+  - type: StorageFill
+    contents:
+    - id: HotplateFlatpack
+    - id: Kettle
+    - id: DrinkTeapotEmpty
+    - id: DrinkGlass
+      amount: 4
+    - id: Teaspoon
+    - id: BoxTeaPouches
+    - id: FoodBoxBiscuitSimple
+    - id: FoodBoxBiscuitOatmeal
+    - id: FoodBoxBiscuitSugar

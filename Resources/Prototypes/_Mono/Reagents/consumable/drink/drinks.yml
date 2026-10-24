@@ -12,9 +12,9 @@
   flavor: teaChamomile
   color: "#EEDC82"
   metamorphicSprite:
-    sprite: _Mono/Objects/Consumable/Drinks/chamomileteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/chamomileteaglass.rsi # Box Change: Resprite
     state: icon_empty
-  metamorphicMaxFillLevels: 2
+  metamorphicMaxFillLevels: 4 # Box Change: 2 -> 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -27,9 +27,9 @@
   flavor: teaBerry
   color: "#A23E48"
   metamorphicSprite:
-    sprite: _Mono/Objects/Consumable/Drinks/berryteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/berryteaglass.rsi # Box Change: Resprite
     state: icon_empty
-  metamorphicMaxFillLevels: 2
+  metamorphicMaxFillLevels: 4 # Box Change: 2 -> 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -42,9 +42,9 @@
   flavor: teaFruit
   color: "#FFB347"
   metamorphicSprite:
-    sprite: _Mono/Objects/Consumable/Drinks/fruitteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/fruitteaglass.rsi # Box Change: Resprite
     state: icon_empty
-  metamorphicMaxFillLevels: 2
+  metamorphicMaxFillLevels: 4 # Box Change: 2 -> 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -57,9 +57,9 @@
   flavor: teaYorkshire
   color: "#4B3621"
   metamorphicSprite:
-    sprite: _Mono/Objects/Consumable/Drinks/yorkshireteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/yorkshireteaglass.rsi # Box Change: Resprite
     state: icon_empty
-  metamorphicMaxFillLevels: 2
+  metamorphicMaxFillLevels: 4 # Box Change: 2 -> 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   # Start Box Change: consistency with black tea
@@ -85,9 +85,9 @@
   flavor: teaDecafBlack
   color: "#4A3B2F"
   metamorphicSprite:
-    sprite: _Mono/Objects/Consumable/Drinks/decafteaglass.rsi
+    sprite: Objects/Consumable/Drinks/teaglass.rsi # Box Change: Use upstream sprite
     state: icon_empty
-  metamorphicMaxFillLevels: 2
+  metamorphicMaxFillLevels: 4 # Box Change: 2 -> 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -100,9 +100,9 @@
   flavor: teaSyndie
   color: "#FF0000"
   metamorphicSprite:
-    sprite: _Mono/Objects/Consumable/Drinks/syndieteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/syndieteaglass.rsi # Box Change: Resprite
     state: icon_empty
-  metamorphicMaxFillLevels: 2 # Box Change: 4 -> 2 because it only has 2 sprites...
+  metamorphicMaxFillLevels: 4 # Box Change: 2 -> 4 # Box Change: 4 -> 2 because it only has 2 sprites...
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   # Start Box Change: Add caffiene effect and theobromine metabolite. same effects as red bool, just better thirst satiation

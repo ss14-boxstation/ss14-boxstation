@@ -18,7 +18,7 @@
         - ReagentId: ChamomileTea
           Quantity: 30
   - type: Icon
-    sprite: _Mono/Objects/Consumable/Drinks/chamomileteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/chamomileteaglass.rsi # Box Change: Resprite
     state: icon
 
 - type: entity
@@ -34,7 +34,7 @@
         - ReagentId: BerryTea
           Quantity: 30
   - type: Icon
-    sprite: _Mono/Objects/Consumable/Drinks/berryteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/berryteaglass.rsi # Box Change: Resprite
     state: icon
 
 - type: entity
@@ -50,7 +50,7 @@
         - ReagentId: FruitTea
           Quantity: 30
   - type: Icon
-    sprite: _Mono/Objects/Consumable/Drinks/fruitteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/fruitteaglass.rsi # Box Change: Resprite
     state: icon
 
 - type: entity
@@ -66,7 +66,7 @@
         - ReagentId: YorkshireTea
           Quantity: 30
   - type: Icon
-    sprite: _Mono/Objects/Consumable/Drinks/yorkshireteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/yorkshireteaglass.rsi # Box Change: Resprite
     state: icon
 
 - type: entity
@@ -82,7 +82,7 @@
         - ReagentId: DecafBlackTea
           Quantity: 30
   - type: Icon
-    sprite: _Mono/Objects/Consumable/Drinks/decafteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/decafteaglass.rsi # Box Change: Resprite
     state: icon
 
 - type: entity
@@ -98,7 +98,7 @@
         - ReagentId: SyndicateTea
           Quantity: 30
   - type: Icon
-    sprite: _Mono/Objects/Consumable/Drinks/syndieteaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/syndieteaglass.rsi # Box Change: Resprite
     state: icon
 
 - type: entity
@@ -114,5 +114,5 @@
         - ReagentId: DecafCoffee
           Quantity: 30
   - type: Icon
-    sprite: Objects/Consumable/Drinks/coffeeglass.rsi
+    sprite: Consumable/Drinks/coffeeglass.rsi # Box Change: Use upstream sprite
     state: icon

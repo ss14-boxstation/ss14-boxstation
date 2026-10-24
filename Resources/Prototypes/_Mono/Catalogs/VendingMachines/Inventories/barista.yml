@@ -14,12 +14,12 @@
     ReagentContainerDecafBlackTeaPouch: 4
     ReagentContainerCoffeePouch: 4
     ReagentContainerDecafCoffeePouch: 4
-    PaperCup: 10
+    DrinkDisposableCup: 10 # Box Change: PaperCup -> DrinkDisposableCup, use imp cup instead
     Teaspoon: 5
     DrinkMug: 6
     Kettle: 3
     DrinkTeapotEmpty: 4
-    DrinkTeaGlassEmpty: 8
+    DrinkGlass: 8 # Box Change: Just use normal metamorphic glass??
     ChemistryHotplateFlatpack: 5
     FoodBoxBiscuitSimple: 2
     FoodBoxBiscuitOatmeal: 2
