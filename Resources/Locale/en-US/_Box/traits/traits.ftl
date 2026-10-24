@@ -61,5 +61,8 @@ trait-dagd-desc = Opt-in for the "Die a Glorious Death" objective.
 trait-synth-name = Synthetic
 trait-synth-desc = You are a biomechanical construct made to resemble an organic. You bleed synth blood, are notified of Ion Storms, and can use Artificial reagents.
 
+trait-automata-name = Vox Automata
+trait-automata-desc = You are a sapient machine constructed by and in the likeness of the Vox. You are nitrogen-powered, and Oxygen is highly corrosive to your inner workings.
+
 trait-ion-sensitive-name = Ion Sensitive
 trait-ion-sensitive-desc = You are notified of Ion Storms. [color=yellow]NOTE: Ion Storms have no mechanical effect on you.[/color]
