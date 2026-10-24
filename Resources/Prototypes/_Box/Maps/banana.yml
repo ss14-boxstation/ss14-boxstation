@@ -18,7 +18,7 @@
         - type: StationCargoShuttle
           path: /Maps/_Box/Shuttles/cargo_banana.yml
         - type: StationJobs
-          availableJobs: # Total of 26 jobs roundstart, max of 30 inc. latejoins and trainees. # Box: 25, 29 -> 26, 30
+          availableJobs: # Total of 25 jobs roundstart, max of 29 inc. latejoins and trainees.
             # command - 8
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -26,7 +26,7 @@
             ChiefMedicalOfficer: [ 1, 1 ]
             ResearchDirector: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
-            HospitalityDirector: [ 1, 1 ]
+            #HospitalityDirector: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
             # service - 8
             Bartender: [ 1, 1 ]
@@ -55,8 +55,8 @@
             SecurityCadet: [ 1, 1 ]
             SecurityOfficer: [ 1, 1 ]
             # cargo - 3-4
-            CargoTechnician: [ 1, 1 ]
-            Courier: [ 1, 1 ]
+            CargoTechnician: [ 2, 2 ] # 1 -> 2 to compensate for courier
+            #Courier: [ 1, 1 ]
             SalvageSpecialist: [ 1, 1 ]
             SupplyAssistant: [ 1, 1 ]
             # civilian
