@@ -13,7 +13,7 @@
       metabolites:
         Nutriment: 0.2
         Theobromine: 0.1
-      #effects:
+      effects:
       #- !type:SatiateHunger
       #  factor: 0.1
       # End Box Change
