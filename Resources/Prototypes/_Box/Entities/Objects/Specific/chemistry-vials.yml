@@ -1,0 +1,15 @@
+# Vial of Activated Silicon for Nukie Chem
+- type: entity
+  id: ActivatedSiliconChemistryVial
+  parent: BaseChemistryEmptyVial
+  suffix: activated silicon
+  components:
+  - type: Label
+    currentLabel: reagent-name-activated-silicon
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 10
+        reagents:
+          - ReagentId: ActivatedSilicon
+            Quantity: 10

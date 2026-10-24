@@ -24,4 +24,12 @@ public sealed partial class GasPressurePumpComponent : Component
     [DataField]
     [GuidebookData]
     public float MaxTargetPressure = Atmospherics.MaxOutputPressure;
+
+    // Start Box Change: Pre-enabled atmos devices
+    /// <summary>
+    /// Frontier - Enables the device on MapInit if set to true.
+    /// </summary>
+    [DataField]
+    public bool StartEnabled;
+    // End Box Change
 }

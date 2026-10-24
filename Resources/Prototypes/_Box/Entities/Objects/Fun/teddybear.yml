@@ -1,0 +1,34 @@
+# Dummy entity for loadout name
+- type: entity
+  parent: PlushieTeddyBearRecolorableRandom
+  id: PlushieTeddyBearRecolorableRandomLoadout
+  categories: [ HideSpawnMenu ]
+  name: teddy bear (random color)
+
+# "Safe" bears for loadouts (no chance of a real heart)
+- type: entity
+  parent: PlushieTeddyBear
+  id: PlushieTeddyBearSafe
+  suffix: Loadout
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      stash: !type:NestedSelector
+        tableId: SafePlushieHeart
+
+- type: entity
+  parent: PlushieTeddyBearRecolorableRandom
+  id: PlushieTeddyBearRecolorableRandomSafe
+  suffix: random appearance, Loadout
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      stash: !type:NestedSelector
+        tableId: SafePlushieHeart
+        
+- type: entityTable
+  id: SafePlushieHeart
+  table: !type:GroupSelector
+    children:
+    - id: PlushieHeartInsert
+      weight: 1

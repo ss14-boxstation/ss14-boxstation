@@ -229,7 +229,7 @@
     duration: null
     earliestStart: 30
     reoccurrenceDelay: 40 # Harmony 20 -> 40
-    minimumPlayers: 10 # Box 30 -> 10
+    minimumPlayers: 15 # Box 30 -> 15
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives

@@ -1839,3 +1839,279 @@
   id: 200
   time: '2026-08-29T01:34:58.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/302
+- author: Dizzy-Eevee
+  changes:
+  - message: The "job trinket" loadout category is no longer restricted to one item.
+    type: Tweak
+  - message: The lizard plushie job trinkets have had their unlock timers removed.
+    type: Tweak
+  - message: The job-and-department-themed towel trinkets have had their unlock timers
+      reduced to 10 hours.
+    type: Tweak
+  - message: The silver and gold towel trinkets have had their unlock timers reduced
+      to 50 hours and 100 hours respectively.
+    type: Tweak
+  - message: The unobtainable prisoner towel trinket has been removed.
+    type: Remove
+  id: 201
+  time: '2026-09-26T19:11:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/303
+- author: CollectionOfBones128
+  changes:
+  - message: 'Added three new salvage weapons: The Proto-Kinetic Sidearm, the Experimental
+      Kinetic Shotgun, and the Experimental Kinetic Rifle!'
+    type: Add
+  - message: the luxury kinetic revolver has been resprited
+    type: Tweak
+  id: 202
+  time: '2026-10-01T16:18:35.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/317
+- author: Dizzy-Eevee
+  changes:
+  - message: Switching between characters will no longer cause certain traits to become
+      deselected.
+    type: Fix
+  id: 203
+  time: '2026-10-02T01:27:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/306
+- author: Dizzy-Eevee
+  changes:
+  - message: Added wallpapers, banners, and glow-in-the-dark star decorations. Go
+      decorate those walls!
+    type: Add
+  id: 204
+  time: '2026-10-02T01:32:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/309
+- author: Dizzy-Eevee
+  changes:
+  - message: Added Jet Injectors, an hypodermic alternative to Syringes!
+    type: Add
+  - message: Jet Injectors now spawn in Medical Doctor Lockers, as well as being stocked
+      in the NanoMed Plus!
+    type: Add
+  - message: Added Advanced Jet Injectors, with a bigger storage and faster injection
+      times than the base one!
+    type: Add
+  - message: Medical Cyborg Hyposprays now finally have a fillsprite!
+    type: Add
+  - message: Hyposprays and Hypopens now start in their dynamic mode. It functions
+      exactly as the previous Inject/Draw mode.
+    type: Tweak
+  - message: Injectors now inject twice as quick into targets that are lying down
+      for any reason, most notably being buckled on a medical bed or being critical.
+      Before, only critical patients had this luxury.
+    type: Tweak
+  - message: Clumsy now affects syringes when you're self-injecting.
+    type: Tweak
+  - message: Bluespace syringes are now slightly faster when injecting large amounts,
+      usually twice as fast as normal syringes.
+    type: Tweak
+  - message: You can now spill the contents out of hyposprays and jet injectors
+    type: Tweak
+  - message: Fixed Gorlex Hyposprays not showing their fill sprites!
+    type: Fix
+  id: 205
+  time: '2026-10-02T01:31:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/263
+- author: Dizzy-Eevee
+  changes:
+  - message: Added a colorful variety of wooden floors, in several new patterns.
+    type: Add
+  id: 206
+  time: '2026-10-02T01:41:03.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/312
+- author: Dizzy-Eevee
+  changes:
+  - message: Added a colour picker and colour palette selector to the Spraypainter's
+      decal menu.
+    type: Add
+  - message: Made a few other tweaks to the Spraypainter's UI as well.
+    type: Tweak
+  id: 207
+  time: '2026-10-02T01:37:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/322
+- author: Dizzy-Eevee
+  changes:
+  - message: Added uranium glass tables.
+    type: Add
+  id: 208
+  time: '2026-10-02T16:38:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/316
+- author: Dizzy-Eevee
+  changes:
+  - message: "Added tabletop computers\u2014Computers that fit on tables. These can\
+      \ be built from the construction menu, and support all standard console boards."
+    type: Add
+  id: 209
+  time: '2026-10-02T16:37:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/308
+- author: Dizzy-Eevee
+  changes:
+  - message: Atmos pipes now have their own construction menu category
+    type: Tweak
+  - message: More atmos devices can now be built directly on alt layers
+    type: Tweak
+  id: 210
+  time: '2026-10-02T16:44:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/314
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the guidebookshelf, a bookshelf full of guidebooks (from impstation).
+      For future use in mapping.
+    type: Add
+  id: 211
+  time: '2026-10-02T17:15:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/313
+- author: Dizzy-Eevee
+  changes:
+  - message: Added teddy bears, soft and fluffy friends from The Den.
+    type: Add
+  id: 212
+  time: '2026-10-06T01:35:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/310
+- author: Dizzy-Eevee
+  changes:
+  - message: When editing loadout item text, you can now choose to copy the text changes
+      (or the entire item) to other roles. Hover over the checkboxes to learn more!
+    type: Add
+  id: 213
+  time: '2026-10-06T01:32:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/241
+- author: Dizzy-Eevee
+  changes:
+  - message: Caramexinin now processes in the bloodstream, rather than during digestion,
+      which should make it much more effective at preventing theobromine poisoning.
+    type: Tweak
+  - message: Caramexinin now bypasses the normal 50% volume loss when chemicals transfer
+      from the stomach to the bloodstream.
+    type: Tweak
+  id: 214
+  time: '2026-10-06T01:33:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/305
+- author: CollectionOfBones128
+  changes:
+  - message: The Infiltrator jetpack locker now correctly has stealth jetpacks
+    type: Fix
+  - message: WarOps TC bonus has been lowered to 10 TC per Nukie
+    type: Tweak
+  - message: The Nukie Planet Chem Vendor now comes with 10u of Activated Silicon
+    type: Add
+  - message: The Infiltrator now has a Syndicate Communications Console
+    type: Add
+  id: 215
+  time: '2026-10-10T01:32:05.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/326
+- author: DrWhoFan13
+  changes:
+  - message: Opening the slime inventory no longer bugs your inventory
+    type: Fix
+  id: 216
+  time: '2026-10-11T17:01:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/329
+- author: SomegnihT
+  changes:
+  - message: IPCs once again have a unique unrevivable text when scanned with a medical
+      scanner.
+    type: Fix
+  id: 217
+  time: '2026-10-15T02:05:01.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/333
+- author: CollectionOfBones128
+  changes:
+  - message: Ninja spawn conditions have been tweaked to be more appropriate and balanced
+    type: Tweak
+  id: 218
+  time: '2026-10-15T02:04:20.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/330
+- author: fossa1212
+  changes:
+  - message: The Quartermaster now spawns with a cargo utility belt instead of a clipboard
+      in their belt slot.
+    type: Tweak
+  id: 219
+  time: '2026-10-16T22:09:31.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/334
+- author: Dizzy-Eevee
+  changes:
+  - message: Added floor-mounted lights, which have unique sprites for each light
+      tube variant.
+    type: Add
+  - message: Added violently purple ultraviolet light tubes.
+    type: Add
+  id: 220
+  time: '2026-10-22T12:45:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/311
+- author: Dizzy-Eevee
+  changes:
+  - message: Added napkins, and a container to hold them. These can be printed from
+      an autolathe.
+    type: Add
+  id: 221
+  time: '2026-10-22T12:47:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/318
+- author: Dizzy-Eevee
+  changes:
+  - message: Narcoleptic characters will no longer find their messages being lost
+      to the Great Abyss when falling asleep mid-sentence.
+    type: Fix
+  id: 222
+  time: '2026-10-22T12:48:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/258
+- author: Dizzy-Eevee
+  changes:
+  - message: Replaced all xeno sprites with RMC's.
+    type: Tweak
+  id: 223
+  time: '2026-10-18T06:54:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/335
+- author: CollectionOfBones128
+  changes:
+  - message: The "Raised By" and "Voice Of" traits now set the appropriate typing
+      indicator
+    type: Tweak
+  - message: Added missing "Raised By" and "Voice Of" traits for Allulalo, Avali,
+      Harpies, Rodentia, Thaven, and Vulpkanin
+    type: Add
+  id: 224
+  time: '2026-10-23T02:53:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/337
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali have had their natural body temperature reduced, and temperature
+      tolerances adjusted slightly. This should have little to no bearing on normal
+      gameplay.
+    type: Tweak
+  id: 225
+  time: '2026-10-23T02:49:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/320
+- author: Dizzy-Eevee
+  changes:
+  - message: Thaven can view their moods again.
+    type: Fix
+  id: 226
+  time: '2026-10-23T10:03:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/340
+- author: CollectionOfBones128
+  changes:
+  - message: Arcryox has been removed.
+    type: Remove
+  - message: Cryoxadone has been tweaked, it no longer primarily functions as a discount
+      omnizine
+    type: Tweak
+  - message: Aloxadone has been tweaked, it now functions similarly to how Arcryox
+      did
+    type: Tweak
+  - message: Two new cryo chems, Traumoxadone and Stelloxadone, have been added to
+      replace Arcryox.
+    type: Add
+  id: 227
+  time: '2026-10-23T11:17:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/331
+- author: Dizzy-Eevee
+  changes:
+  - message: Added honey, a few foods cooked with it, and the ability to cultivate
+      beehives in hydroponics trays.
+    type: Add
+  id: 228
+  time: '2026-10-23T11:19:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/315

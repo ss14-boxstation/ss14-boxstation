@@ -56,6 +56,7 @@
   - type: Tag
     tags:
     - Book
+    - Guidebook #Box Change: imp guidebookshelf
   - type: GuideHelp
     openOnActivation: true
     guides:
@@ -456,6 +457,12 @@
       color: gold
   - type: Paper
     content: book-text-atmos-distro
+  # Start Box Change: imp guidebookshelf
+  - type: Tag #imp
+    tags:
+    - Book
+    - Guidebook
+  # End Box Change
 
 - type: entity
   parent: BookBase
@@ -475,6 +482,12 @@
       color: gold
   - type: Paper
     content: book-text-atmos-waste
+  # Start Box Change: imp guidebookshelf
+  - type: Tag #imp
+    tags:
+    - Book
+    - Guidebook
+  # End Box Change
 
 - type: entity
   parent: BookBase
@@ -494,6 +507,12 @@
       color: gold
   - type: Paper
     content: book-text-atmos-alarms
+  # Start Box Change: imp guidebookshelf
+  - type: Tag #imp
+    tags:
+    - Book
+    - Guidebook
+  # End Box Change
 
 - type: entity
   parent: BookBase
@@ -513,3 +532,9 @@
       color: gold
   - type: Paper
     content: book-text-atmos-vents
+  # Start Box Change: imp guidebookshelf
+  - type: Tag #imp
+    tags:
+    - Book
+    - Guidebook
+  # End Box Change

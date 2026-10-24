@@ -42,4 +42,12 @@ public sealed partial class GasVolumePumpComponent : Component
 
     [DataField]
     public float LastMolesTransferred;
+
+    // Start Box Change: Pre-enabled atmos devices
+    /// <summary>
+    /// Frontier - Enables the device on MapInit if set to true.
+    /// </summary>
+    [DataField]
+    public bool StartEnabled;
+    // End Box Change
 }

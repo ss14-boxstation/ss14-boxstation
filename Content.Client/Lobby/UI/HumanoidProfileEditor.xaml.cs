@@ -416,6 +416,10 @@ namespace Content.Client.Lobby.UI
                 }
             }
 
+            Traits.ForcePassAllConditions(); // Box Change:
+            // Force all traits to be selectable before setting them, to avoid weirdness with outdated restrictions.
+            // e.g. when switching from a human to a non-human with the red blood trait, the red blood trait would be de-selected since it's still considered locked.
+            // Traits that are actually invalid after setup is done will be disabled by UpdateConditions().
             Traits.SetSelectedTraits(selectedTraits);
             Traits.UpdateConditions(Profile);
         }
@@ -1035,38 +1039,7 @@ namespace Content.Client.Lobby.UI
                 ReloadPreview();
             };
 
-            // Start Box Change: Floof item metadata
-            _loadoutWindow.OnRequestLoadoutMetadataEdit += (groupProto, loadoutProto) =>
-            {
-                _loadoutMetadataEditorDialog?.Dispose(); // Box Change: Close it before trying to make a new one
-                if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var group)
-                    || group.Find(it => it.Prototype == loadoutProto) is not { } loadout)
-                    return;
-                // Start Box Change: Replace "var dlg" with the singular window variable, get item name for use in window title
-                var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
-                string title = "";
-                if (_prototypeManager.Resolve(loadoutProto, out var loadoutResolved))
-                {
-                    title = loadoutSystem.GetName(loadoutResolved);
-                }
-                _loadoutMetadataEditorDialog = new LoadoutMetadataEditorDialog(loadout, loadoutProto, groupProto) { Title = title };
-                _loadoutMetadataEditorDialog.OnSave += (newLoadout) =>
-                // End Box Change
-                {
-                    // The role loadouts could have changed, we cant trust the old value
-                    if (!roleLoadout.SelectedLoadouts.TryGetValue(groupProto, out var newGroup))
-                        return;
-
-                    newGroup.RemoveAll(it => it.Prototype == loadoutProto);
-                    newGroup.Add(newLoadout);
-                    Profile = Profile?.WithLoadout(roleLoadout);
-                    _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
-                    SetDirty();
-                    ReloadPreview();
-                };
-                _loadoutMetadataEditorDialog.OpenCentered(); //Box Change: Replace "var dlg" with the singular window variable
-            };
-            // End Box Change
+            OpenLoadoutFloof(jobProto, roleLoadout, roleLoadoutProto, session, collection); // Box Change: Floofstation item metadata
 
             JobOverride = jobProto;
             ReloadPreview();

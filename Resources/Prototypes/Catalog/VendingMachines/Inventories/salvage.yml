@@ -11,6 +11,7 @@
     RadioHandheldMining: 2 # Harmony Change - RadioHandheld -> RadioHandheldMining
     WeaponGrapplingGun: 4
     WeaponProtoKineticAccelerator: 4
+    WeaponSalvageAcceleratorSidearm: 4 # Box Change - PKA Expansion
 # Harmony change - Readed Floodlights, seismic charges, fultons, and fulton beacons.
     Floodlight: 2
     SeismicCharge: 2

@@ -19,7 +19,7 @@ public sealed partial class LoadoutMetadataEditorDialog : FancyWindow
     [Dependency] private readonly IEntityManager _entMan = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
 
-    public event Action<Loadout>? OnSave;
+    public event Action<(Loadout loadout, bool copyMetadata, bool copyLoadout)>? OnSave;
 
     private readonly ProtoId<LoadoutPrototype> _loadoutProto;
     private readonly ProtoId<LoadoutGroupPrototype> _groupProto;
@@ -67,6 +67,14 @@ public sealed partial class LoadoutMetadataEditorDialog : FancyWindow
             Save();
             Close();
         };
+
+        CopyMetadataToAllCheckbox.OnToggled += args =>
+        {
+            // The "copy loadout to all" check does nothing if "copy metadata to all" is not checked
+            CopyLoadoutToAllCheckbox.Pressed = false;
+            CopyLoadoutToAllCheckbox.Disabled = !args.Pressed;
+            CopyLoadoutToAllCheckbox.Visible = args.Pressed; // Box Change: Toggle visibility of second button when disabled, for better UX
+        };
     }
 
     public void Load(Loadout currentState)
@@ -90,7 +98,11 @@ public sealed partial class LoadoutMetadataEditorDialog : FancyWindow
         _loadout.DescriptionOverride = customDesc;
 
         if (raiseEvent)
-            OnSave?.Invoke(_loadout);
+        {
+            var copyMetadata = CopyMetadataToAllCheckbox.Pressed;
+            var copyLoadout = copyMetadata && CopyLoadoutToAllCheckbox.Pressed;
+            OnSave?.Invoke((_loadout, copyMetadata, copyLoadout));
+        }
 
         Load(_loadout); // Just to update the fields with sanitized values
     }

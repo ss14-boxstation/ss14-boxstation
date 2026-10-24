@@ -66,6 +66,7 @@
   id: BoxerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieBoxer
 
@@ -73,5 +74,6 @@
   id: ZookeeperJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - LizardPlushieZookeeper

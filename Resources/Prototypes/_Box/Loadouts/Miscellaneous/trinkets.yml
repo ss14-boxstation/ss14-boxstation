@@ -237,6 +237,21 @@
   groupBy: "Plushie"
   
 - type: loadout
+  id: PlushieTeddyBear
+  storage:
+    back:
+    - PlushieTeddyBearSafe
+  groupBy: "Plushie"
+
+- type: loadout
+  id: PlushieTeddyBearRecolorableRandom
+  dummyEntity: PlushieTeddyBearRecolorableRandomLoadout
+  storage:
+    back:
+    - PlushieTeddyBearRecolorableRandomSafe
+  groupBy: "Plushie"
+  
+- type: loadout
   id: HandheldStationMap
   storage:
     back:

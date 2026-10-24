@@ -166,11 +166,14 @@
       types:
         Slash: 5
   - type: Temperature
-    currentTemperature: 296.15
+    currentTemperature: 266.15 # Box Change: -7c, was 296.15k/23c
     specificHeat: 48
   - type: TemperatureDamage
-    heatDamageThreshold: 310
-    coldDamageThreshold: 223
+    # Start Box Changes: Adjust avali temperature tolerances based off https://avali.nexus/lorebook.pdf, page 14
+    heatDamageThreshold: 300 # 27c, was 310. Should be 2c/275.15k, but this causes the too warm alert to flicker constantly and it's really annoying.
+    # Unfortunately with no universally available cooling clothing, and not wanting to condemn avali to hardsuits 24/7, there's no satisfying way of pulling this off right now.
+    coldDamageThreshold: 238.15 # -35c, was 223
+    # End Box Changes
     coldDamage: # same damage as moths
       types:
         Cold : 0.05 #per second, scales with temperature & other constants
@@ -179,17 +182,21 @@
         Heat : 3 #per second, scales with temperature & other constants
   - type: TemperatureSpeed
     thresholds: # all temps are 10K colder then moths, adjusted for current temp.
-      265: 0.8
-      251: 0.6
-      226: 0.4
+      # Start Box Changes: Lower cold slowdown thresholds by 30k each
+      235: 0.8 # 265
+      221: 0.6 # 251
+      196: 0.4 # 226
+      # End Box Change
   - type: ThermalRegulator
     metabolismHeat: 400 # icebirb go brrr
     radiatedHeat: 100
     implicitHeatRegulation: 500
     sweatHeatRegulation: 2000
     shiveringHeatRegulation: 2000
-    normalBodyTemperature: 296.15
-    thermalRegulationTemperatureThreshold: 10
+    # Start Box Changes: Adjust normal temp and reegulation threshold
+    normalBodyTemperature: 266.15 # -7c, was 296.15k/23c
+    thermalRegulationTemperatureThreshold: 2 # 10 -> 2, Why was this 10
+    # End Box Changes
   # Start Box Change: starcup footprints
   - type: FootprintOwner
     footprint: lizardFootprint

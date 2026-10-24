@@ -1,0 +1,99 @@
+# Base PKA
+- type: entity
+  abstract: true
+  id: WeaponSalvageAcceleratorBase
+  parent: [ BaseItem, BaseCargoContraband ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+    projectileSpeed: 25
+  - type: AmmoCounter
+  - type: Appearance
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.75
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticPKA
+    capacity: 1
+    count: 1
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: UseDelay
+    delay: 1
+
+# PKA Upgrade System
+- type: entity
+  abstract: true
+  id: SalvageAcceleratorUpgradeable # Easier than adding three components to every PKA
+  components:
+  - type: UpgradeableGun
+    maxUpgradeCount: 10 # Use cost for limiting modkits instead
+    whitelist:
+      tags:
+      - PKAUpgrade
+  - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
+  - type: UpgradeableGunCost
+    maxCost: 100
+
+# PKA Categories
+## Pistols
+- type: entity
+  abstract: true
+  parent: WeaponSalvageAcceleratorBase
+  id: WeaponSalvageAcceleratorSidearmBase
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticSidearm
+    capacity: 1
+    count: 1
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+    - Pocket
+
+## Wielded
+- type: entity
+  abstract: true
+  parent: WeaponSalvageAcceleratorBase
+  id: WeaponSalvageAcceleratorWieldedBase
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: GunWieldBonus
+    minAngle: -43
+    maxAngle: -43
+  - type: Wieldable
+  - type: Gun
+    angleDecay: 45
+    minAngle: 44
+    maxAngle: 45

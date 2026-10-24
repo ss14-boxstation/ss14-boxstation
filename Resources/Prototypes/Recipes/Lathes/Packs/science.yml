@@ -50,6 +50,7 @@
   - WeaponPistolCHIMP
   - WeaponForceGun
   - WeaponProtoKineticAccelerator
+  - WeaponSalvageAcceleratorSidearm # Box Change - PKA Expansion
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate

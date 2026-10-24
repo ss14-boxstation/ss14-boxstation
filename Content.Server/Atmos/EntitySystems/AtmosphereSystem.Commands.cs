@@ -36,7 +36,7 @@ public sealed partial class AtmosphereSystem
            return;
        }
 
-       var mixtures = new GasMixture[9];
+       var mixtures = new GasMixture[10]; // Box Change: Increase by one for water vapor fix marker
        for (var i = 0; i < mixtures.Length; i++)
            mixtures[i] = new GasMixture(Atmospherics.CellVolume) { Temperature = Atmospherics.T20C };
 
@@ -71,6 +71,11 @@ public sealed partial class AtmosphereSystem
        // 8: Air (GM)
        mixtures[8].AdjustMoles(Gas.Oxygen, Atmospherics.OxygenMolesGasMiner);
        mixtures[8].AdjustMoles(Gas.Nitrogen, Atmospherics.NitrogenMolesGasMiner);
+
+       // Start Box Change: Imp water vapor fix marker
+       // 9: Water Vapor (GM)
+       mixtures[9].AdjustMoles(Gas.WaterVapor, Atmospherics.MolesCellGasMiner);
+       // End Box Change
 
        foreach (var arg in args)
        {

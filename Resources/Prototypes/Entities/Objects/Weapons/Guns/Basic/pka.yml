@@ -1,6 +1,7 @@
 - type: entity
+  abstract: true # Box Change - PKA Expansion
   name: proto-kinetic accelerator
-  id: WeaponProtoKineticAccelerator
+  id: WizDenWeaponProtoKineticAccelerator # Box Change - WeaponProtoKineticAccelerator > WizDenWeaponProtoKineticAccelerator - ID Snipe for PKA Expansion
   parent: [WeaponProtoKineticAcceleratorBase, BaseCargoContraband]
   description: Fires low-damage kinetic bolts at a short range.
   components:

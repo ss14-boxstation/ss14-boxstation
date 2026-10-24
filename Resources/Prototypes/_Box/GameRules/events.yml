@@ -31,7 +31,6 @@
       tableId: BasicAntagEventsTableDeltaV
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
-    - id: NinjaSpawn
     - id: RevenantSpawn
     - id: SlimesSpawn
     - id: SnakeSpawn
