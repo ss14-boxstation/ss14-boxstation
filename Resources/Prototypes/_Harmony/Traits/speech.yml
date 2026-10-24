@@ -13,6 +13,8 @@
     - type: Speech
       speechVerb: Arachnid
       speechSounds: Arachnid
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: spider
 
 - type: trait
   id: HarmonyRaisedByDiona
@@ -28,6 +30,8 @@
     - type: Speech
       speechSounds: Alto
       speechVerb: Plant
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: diona
 
 - type: trait
   id: HarmonyRaisedByDwarfs
@@ -43,6 +47,8 @@
     - type: Speech
       speechSounds: Bass
       speechVerb: Default
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: default
 
 - type: trait
   id: HarmonyRaisedByHumans
@@ -58,6 +64,8 @@
     - type: Speech
       speechSounds: Alto
       speechVerb: Default
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: default
 
 - type: trait
   id: HarmonyRaisedByMoths
@@ -73,6 +81,8 @@
     - type: Speech
       speechSounds: Alto
       speechVerb: Moth
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: moth
 
 - type: trait
   id: HarmonyRaisedByReptilians
@@ -88,6 +98,8 @@
     - type: Speech
       speechSounds: Lizard
       speechVerb: Reptilian
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: lizard
 
 - type: trait
   id: HarmonyRaisedBySlimes
@@ -103,6 +115,8 @@
     - type: Speech
       speechVerb: Slime
       speechSounds: Slime
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: slime
 
 - type: trait
   id: HarmonyRaisedByVox
@@ -118,6 +132,8 @@
     - type: Speech
       speechVerb: Vox
       speechSounds: Vox
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: vox
 
 - type: trait
   id: HarmonyIlleism
@@ -153,6 +169,8 @@
         Male: UnisexArachnid
         Female: UnisexArachnid
         Unsexed: UnisexArachnid
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: spider
 
 - type: trait
   id: HarmonyDionaVocals
@@ -173,6 +191,8 @@
         Male: UnisexDiona
         Female: UnisexDiona
         Unsexed: UnisexDiona
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: diona
 
 - type: trait
   id: HarmonyDwarfVocals
@@ -195,6 +215,8 @@
         Male: UnisexDwarf
         Female: FemaleDwarf
         Unsexed: UnisexDwarf
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: default
 
 - type: trait
   id: HarmonyHumanVocals
@@ -215,6 +237,8 @@
         Male: MaleHuman
         Female: FemaleHuman
         Unsexed: MaleHuman
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: default
 
 - type: trait
   id: HarmonyMothsVocals
@@ -237,6 +261,8 @@
         Male: UnisexMoth
         Female: UnisexMoth
         Unsexed: UnisexMoth
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: moth
 
 - type: trait
   id: HarmonyReptilianVocals
@@ -258,6 +284,8 @@
         Male: MaleReptilian
         Female: FemaleReptilian
         Unsexed: MaleReptilian
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: lizard
 
 - type: trait
   id: HarmonySlimeVocals
@@ -279,6 +307,8 @@
         Male: MaleSlime
         Female: FemaleSlime
         Unsexed: MaleSlime
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: slime
 
 - type: trait
   id: HarmonyVoxVocals
@@ -299,6 +329,8 @@
         Male: UnisexVox
         Female: UnisexVox
         Unsexed: UnisexVox
+    - type: TypingIndicator # Box Change - Typing Indicator on vocal traits
+      proto: vox
 
 - type: trait
   id: IrishAccent

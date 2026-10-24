@@ -1,0 +1,10 @@
+- type: reagent
+  parent: Blood
+  id: AvaliBlood
+  name: reagent-name-avali-blood
+  group: Biological
+  desc: reagent-desc-avali-blood
+  flavor: bitter # Box Change: beer -> bitter
+  color: "#6C3BAA"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-pungent # Box Change: Original description was "non-ferrous". This is the same description as pure ammonia.

@@ -38,10 +38,10 @@
   - type: ComplexInteraction
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/burrower.rsi
+    sprite: _RMC14/Xenonids/Burrower/burrower.rsi # Box Change: RMC Xeno sprites
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: Fixtures
     fixtures:
       fix1:
@@ -129,11 +129,11 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/praetorian.rsi
+    sprite: _RMC14/Xenonids/Praetorian/praetorian.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -162,11 +162,11 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/drone.rsi
+    sprite: _RMC14/Xenonids/Drone/drone.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.2
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -199,11 +199,11 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/queen.rsi
+    sprite: _RMC14/Xenonids/Queen/queen.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.4
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -238,11 +238,11 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/ravager.rsi
+    sprite: _RMC14/Xenonids/Ravager/ravager.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.5
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -275,11 +275,11 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/runner.rsi
+    sprite: _RMC14/Xenonids/Runner/runner.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.6
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: MovementSpeedModifier
     baseSprintSpeed: 6.0
   - type: MeleeWeapon
@@ -305,7 +305,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/rouny.rsi
+    sprite: _RMC14/Xenonids/Rouny/rouny.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.6
   - type: Butcherable
     butcheringType: Spike
@@ -320,11 +320,11 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/spitter.rsi
+    sprite: _RMC14/Xenonids/Spitter/spitter.rsi # Box Change: RMC Xeno sprites
     offset: 0,0.3
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+      state: alive # Box Channge: RMC Xeno sprites
   - type: MobThresholds
     thresholds:
       0: Alive
