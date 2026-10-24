@@ -823,8 +823,6 @@ ColdPack1: Ointment1
 ComputerFundingAllocationBroken: ComputerFundingAllocation
 ComputerServiceJobBoard: ComputerBroken
 ComputerShipyard: ComputerBroken
-ComputerTabletopMassMedia: ComputerMassMedia # Port these
-ComputerTabletopRadar: ComputerRadar # ^
 Decalamp: null
 DefaultStationBeaconMailroomCourier: null
 DefaultStationBeaconSolarsNorthEast: DefaultStationBeaconSolarsNE
@@ -836,10 +834,6 @@ FoodMealBigLollipop: null # not porting these actually
 FoodMealClothLollipop: null 
 FoodMealFruitLollipop: null 
 FoodMealMeatLollipop: null 
-GasFilterEnabled: GasFilter # We should add thesse too
-GasPressurePumpEnabled: GasPressurePump
-GasVentScrubberAlt1: null # Wizden feature, port this
-GasVentScrubberAlt2: null #
 GasVentScrubberDecapoid: GasVentScrubber
 GasVentPumpDecapoid: GasVentPumpVox
 GlassBoxNukeDiskFilled: NukeDisk
@@ -861,9 +855,6 @@ PlushieGray: PlushieSharkPink
 PlushieKodepiia: PlushieSharkPink
 PlushieOdds: PlushieSharkPink
 PlushieTeddyBearRecolorableRandom: PlushieSharkPink # This one doesn't immediately jump out as imp content / an imp meme so look into it
-PoweredlightUV: PoweredlightExterior
-PoweredSmallFloorLightRed: null # Port floor lights pleaaase
-ReagentContainerHoney: null  # Port bees actually yeah why not
 RubberStampHatePaperwork: null # maybe for the funny
 ServiceTechFab: PlushieSharkGrey # we will have these at some point
 SignApid: null
@@ -875,22 +866,15 @@ SpawnPointLocationMidRoundAntag: null
 SqueakySmileyBall: PlushieSharkPink
 SteelLunchboxApidFilled: null
 SurveillanceWirelessCameraPocket: null # what the fuck even is this
-TableUraniumGlass: TableGlass # port this, why isn't this just upstream
 TableWoodReinforced: TableWood
-TrashNapkin: null # port this, i want like ALL of imp's service goodies
 VendingMachineCourierDrobe: null
 VendingMachineDanShrimp: VendingMachineDiscount
 WallmountTelevisionMini: WallmountTelevision
-WallpaperStarsBig: null # Port these 
-WallpaperStarsMoon: null # ^
-WallpaperStarsSmall: null # ^
-WarningWaterVapor: null
 WeaponPocketDisabler: WeaponDisabler
 WindoorSecureCourierLocked: WindoorSecureCargoLocked
 YarnNoodles: FoodNoodles # port this we need more moth food desperately
 # Round 2...
 AtmosFixDecapoidMarker: null
-AtmosFixWaterVaporMarker: AtmosFixBlockerMarker
 CrateEngineeringShittle: CrateMaterialBasicResource 
 CrateServiceJanitorialHardsuit: CrateJanitorBiosuit
 CrateServiceMaintBarKit: CrateMaterialRandom

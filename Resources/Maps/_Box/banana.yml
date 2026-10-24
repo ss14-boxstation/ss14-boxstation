@@ -28,11 +28,11 @@ tilemap:
   13: FloorTechMaint2
   14: FloorTechMaintDark
   15: FloorWhite
-  16: FloorWood #FloorWoodChess
-  10: FloorWood #FloorWoodChessRed
+  16: FloorWoodChess
+  10: FloorWoodChessRed
   8: FloorWoodLarge
-  5: FloorWood #FloorWoodLargeRed
-  9: FloorWood #FloorWoodRed
+  5: FloorWoodLargeRed
+  9: FloorWoodRed
   3: Lattice
   2: Plating
 entities:
