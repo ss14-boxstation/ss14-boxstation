@@ -30,3 +30,32 @@
         sound: /Audio/_Box/Ambience/Antag/Troublemaker_Briefing.ogg
       mindRoles:
       - MindRoleTroublemaker
+
+- type: entity
+  parent: BaseGameRule
+  id: Acolyte
+  components:
+  - type: GameRule
+    minPlayers: 10
+    cancelPresetOnTooFewPlayers: false
+  - type: AcolyteRule
+  - type: AntagObjectives
+    objectives:
+    - EscapeShuttleObjectiveAcolyte
+    maxDifficulty: 500
+  - type: AntagSelection
+    agentName: acolyte-round-end-agent-name
+    selectionTime: IntraPlayerSpawn
+    definitions:
+    - prefRoles: [ Acolyte ]
+      max: 1
+      playerRatio: 15
+      lateJoinAdditional: true
+      briefing:
+        text: acolyte-role-greeting-human
+        color: purple
+        sound: /Audio/_Box/Ambience/Antag/Troublemaker_Briefing.ogg
+      components:
+      - type: Acolyte
+      mindRoles:
+      - MindRoleAcolyte
