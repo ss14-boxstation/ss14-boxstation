@@ -1,7 +1,7 @@
 - type: entity
-  name: NTea variety pack
   parent: BoxCardboard
   id: BoxTeaPouches
+  name: NTea variety pack
   description: A colorful variety of tea (and coffee) to serve the bar's more pompous patrons.
   components:
   - type: Item

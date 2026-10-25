@@ -36,7 +36,7 @@
   parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
   id: DrinkWaterJugBar
   name: water jug
-  suffix: Full, BoxStation
+  suffix: Full
   description: Literally just water.
   components:
   - type: SolutionContainerManager
