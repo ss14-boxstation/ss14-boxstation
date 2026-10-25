@@ -2156,3 +2156,11 @@
   id: 232
   time: '2026-10-24T05:40:08.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/345
+- author: CollectionOfBones128
+  changes:
+  - message: Fixed Thaven's breathing metabolism. Thaven should now safely be able
+      to breathe Plasma again.
+    type: Fix
+  id: 233
+  time: '2026-10-25T13:39:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/348
