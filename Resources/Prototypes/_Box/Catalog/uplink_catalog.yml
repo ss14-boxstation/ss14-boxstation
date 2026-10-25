@@ -37,3 +37,13 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
+
+- type: listing
+  id: UplinkSyndicateTeaPowder
+  name: uplink-tea-powder-name
+  description: uplink-tea-powder-desc
+  productEntity: ReagentContainerSyndicateTeaPouch
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkPointless

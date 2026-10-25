@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: TeaPartyKit
+  icon:
+    sprite: Objects/Consumable/Drinks/teapot.rsi
+    state: icon
+  product: CrateTeaParty
+  cost: 800
+  category: cargoproduct-category-name-service
+  group: market
