@@ -2164,3 +2164,12 @@
   id: 233
   time: '2026-10-25T13:39:11.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/348
+- author: Dizzy-Eevee
+  changes:
+  - message: Added several new varieties of tea, courtesy of Monolith. Bartenders
+      can find a variety pack in their locker (along with teaware in the Booze-O-Mat),
+      and a tea party kit can be ordered from cargo.
+    type: Add
+  id: 234
+  time: '2026-10-25T14:45:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/346
