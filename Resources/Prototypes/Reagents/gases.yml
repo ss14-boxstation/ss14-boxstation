@@ -16,7 +16,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Harpy ] # DeltaV
+          type: [ Human, Animal, Rat, Plant, Harpy, Thaven ] # Box Change - Add Thaven and Harpy metabs
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -110,6 +110,10 @@
         - !type:MetabolizerTypeCondition
           type: [Thaven ]
           inverted: true
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
 #Box Change End - Thaven Metab
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
@@ -168,7 +172,11 @@
         - !type:MetabolizerTypeCondition
           type: [Thaven ]
           inverted: true
-#Box Change Start - Thaven Metab
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
+#Box Change End - Thaven Metab
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins

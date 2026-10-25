@@ -93,11 +93,11 @@
       Eyes: OrganThavenEyes
       Ears: OrganHumanEars
       Appendix: OrganHumanAppendix
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganHumanStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Lungs: OrganThavenLungs
+      Heart: OrganThavenHeart
+      Stomach: OrganThavenStomach
+      Liver: OrganThavenLiver
+      Kidneys: OrganThavenKidneys
   - type: HumanoidProfile
     species: Thaven
 
