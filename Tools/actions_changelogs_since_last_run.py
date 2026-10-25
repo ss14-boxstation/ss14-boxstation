@@ -151,7 +151,6 @@ def get_discord_body(content: str):
         "content": content,
         "allowed_mentions": allowed_mentions,
         # SUPPRESS_EMBEDS
-        # SUPPRESS_EMBEDS
         "flags": 1 << 2,
     }
 
