@@ -18,4 +18,17 @@ public abstract class SharedInstrumentSystem : EntitySystem
         component.InstrumentProgram = program;
         Dirty(uid, component);
     }
+    // Start Box Change: Harpy DAW implant
+    public void SetProgramChange(EntityUid uid, SharedInstrumentComponent component, bool state)
+    {
+        component.AllowPercussion = state;
+        component.AllowProgramChange = state;
+    }
+    public void ToggleProgramChange(EntityUid uid, SharedInstrumentComponent component, out bool state)
+    {
+        component.AllowPercussion = !component.AllowPercussion;
+        component.AllowProgramChange = !component.AllowProgramChange;
+        state = component.AllowProgramChange;
+    }
+    // End Box Change
 }

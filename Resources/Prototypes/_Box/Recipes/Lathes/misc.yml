@@ -5,3 +5,15 @@
   materials:
     Steel: 1000
     Plastic: 200
+    
+- type: latheRecipe
+  id: LyrebirdImplanter
+  result: LyrebirdImplanter
+  completetime: 10
+  materials:
+    # Roughly the price of an empty implanter + DAW flatpack, and some gold as a tax.
+    Glass: 800
+    Steel: 1500
+    Gold: 2
+  categories:
+  - Service

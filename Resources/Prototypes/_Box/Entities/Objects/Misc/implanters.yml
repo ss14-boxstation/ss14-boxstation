@@ -1,0 +1,35 @@
+- type: entity
+  parent: BaseImplantOnlyImplanter
+  id: WehpetImplanter
+  name: weh-pet implanter
+  components:
+  - type: Implanter
+    implant: WehpetImplant
+    whitelist: # Need to restate the whole thing from Implanter
+      requireAll: true
+      components:
+      - MobState # no chair microbomb
+      - SwappableInstrument
+    blacklist:
+      components:
+      - Guardian # no holoparasite macrobomb wombo combo
+      tags:
+      - Unimplantable
+      
+- type: entity
+  parent: BaseImplantOnlyImplanter
+  id: LyrebirdImplanter
+  name: lyrebird implanter
+  components:
+  - type: Implanter
+    implant: LyrebirdImplant
+    whitelist: # Need to restate the whole thing from Implanter
+      requireAll: true
+      components:
+      - MobState # no chair microbomb
+      - Instrument
+    blacklist:
+      components:
+      - Guardian # no holoparasite macrobomb wombo combo
+      tags:
+      - Unimplantable
