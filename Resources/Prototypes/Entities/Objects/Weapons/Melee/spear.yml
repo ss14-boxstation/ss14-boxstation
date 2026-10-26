@@ -42,6 +42,7 @@
         Piercing: 12
     angle: 0
     animation: WeaponArcThrust
+    wideAnimation: WeaponArcThrust # Box Change: Make wideswing use new melee animations
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: DamageOtherOnHit
