@@ -1,3 +1,6 @@
+trait-damagedsiliconaccent-name = Damaged Silicon Accent
+trait-damagedsiliconaccent-desc = Your robotic speech corrupts as you get damaged
+
 trait-blood-deficiency-name = Blood Deficiency
 trait-blood-deficiency-desc = Your body loses more blood than it can produce. After about 18 minutes you will start taking damage from bloodloss, and will eventually die without medical intervention.
 
@@ -45,6 +48,9 @@ trait-thavenvocals-desc = You are somehow able to fully mimic Thaven speech. (Re
 
 trait-vulpkaninvocals-name = Voice of Vulpkanin
 trait-vulpkaninvocals-desc = You are somehow able to fully mimic Vulpkanin speech. (Replace speech sounds, verbs, and emote sounds)
+
+trait-synthvocals-name = Artificial Voicebox
+trait-synthvocals-desc = Your voicebox is artifical, and you speak through a vocal synthesizer.
 
 trait-removal-name = Marked for Removal
 trait-removal-desc = Someone wants you gone. You will be a valid target for round-removal objectives.

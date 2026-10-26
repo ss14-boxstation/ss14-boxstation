@@ -265,6 +265,7 @@
     Digestion:
       metabolites:
         Nutriment: 0.2
+        Theobromine: 0.1 # Box Change: Add theobromine (from mono)
       effects:
       - !type:SatiateThirst
         factor: -0.2

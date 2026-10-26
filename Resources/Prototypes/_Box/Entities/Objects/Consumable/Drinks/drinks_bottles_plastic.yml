@@ -31,3 +31,20 @@
           Quantity: 150
   - type: Label
     currentLabel: reagent-name-synthignon
+
+- type: entity
+  parent: [DrinkVisualsOpenable, DrinkBottlePlasticBaseFull]
+  id: DrinkWaterJugBar
+  name: water jug
+  suffix: Full
+  description: Literally just water.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 150
+        reagents:
+        - ReagentId: Water
+          Quantity: 150
+  - type: Label
+    currentLabel: reagent-name-water

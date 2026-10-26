@@ -251,3 +251,58 @@
         Unsexed: MaleVulpkanin
     - type: TypingIndicator
       proto: default
+
+- type: trait
+  id: SynthVocals
+  name: trait-synthvocals-name
+  description: trait-synthvocals-desc
+  cost: 0
+  category: Quirks # Vocal traits lock to 1
+  conditions:
+  - !type:AnyOfCondition
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+    - !type:IsSpeciesCondition
+      species: Vox
+    - !type:TraitDependencyCondition
+      requires:
+      - HarmonyVoxVocals
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: TypingIndicator
+      proto: robot
+
+# Damaged Borg Accent
+- type: trait
+  id: DamagedSiliconAccentTrait
+  name: trait-damagedsiliconaccent-name
+  description: trait-damagedsiliconaccent-desc
+  cost: 0
+  category: Accents
+  conditions:
+  - !type:AnyOfCondition # Add Voice of/Raised by IPCs to this too
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+    - !type:IsSpeciesCondition
+      species: Vox
+    - !type:TraitDependencyCondition
+      requires:
+      - HarmonyVoxVocals
+    - !type:TraitDependencyCondition
+      requires:
+      - SynthVocals
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: DamagedSiliconAccent
+      enableChargeCorruption: false
+      damageAtMaxCorruption: 200

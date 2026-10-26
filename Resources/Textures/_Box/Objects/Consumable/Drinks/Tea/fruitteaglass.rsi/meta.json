@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by RumiTiger for wizard's den at https://github.com/space-wizards/space-station-14/commit/f5b8b5fbdcb4675cd29d15e2cd4112e587b03034. Edited by Dizzy-Eevee (github)",
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "icon_empty"
+        },
+        {
+            "name": "fill-1"
+        },
+        {
+            "name": "fill-2"
+        },
+        {
+            "name": "fill-3"
+        },
+        {
+            "name": "fill-4"
+        }
+    ]
+}

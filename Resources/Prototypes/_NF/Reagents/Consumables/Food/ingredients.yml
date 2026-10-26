@@ -1,0 +1,46 @@
+- type: reagent
+  id: CoffeeGrounds
+  name: reagent-name-coffeegrounds
+  group: Foods
+  desc: reagent-desc-coffeegrounds
+  flavor: bitter
+  color: "#4B382A"
+  physicalDesc: reagent-physical-desc-powdery
+  recognizable: true # "Waiter, there seems to be grounds in my coffee."
+  metabolisms:
+    Digestion: # Box Change: nubody beam Food -> Digestion
+      # Start Box Change: Metabolize into nutriment and theobromine
+      metabolites:
+        Nutriment: 0.2
+        Theobromine: 0.1
+      effects:
+      #- !type:SatiateHunger
+      #  factor: 0.1
+      # End Box Change
+      - !type:SatiateThirst
+        factor: -0.25
+        
+- type: reagent
+  id: Honey
+  name: reagent-name-honey
+  group: Foods
+  desc: reagent-desc-honey
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: honey
+  flavorMinimum: 0.05
+  color: "#E79A3F"
+  viscosity: 0.5
+  recognizable: true
+  metabolisms:
+    Digestion: # Box Change: nubody fix Food -> Digestion
+      effects:
+      - !type:SatiateHunger
+        conditions:
+        - !type:ReagentCondition # Box Change: ReagentThreshold -> ReagentCondition
+          reagent: Nutriment
+          min: 0.1
+        factor: 1
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 6
