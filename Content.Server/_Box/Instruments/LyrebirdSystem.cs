@@ -35,7 +35,7 @@ public sealed class LyrebirdSystem : EntitySystem
         {
             Text = "Toggle DAW mode",
             //Category = VerbCategory.InstrumentStyle,
-            Priority = 0,
+            Priority = 1,
             Act = () =>
             {
                 _sharedInstrument.ToggleProgramChange(ent.Owner, instrument, out var state);
