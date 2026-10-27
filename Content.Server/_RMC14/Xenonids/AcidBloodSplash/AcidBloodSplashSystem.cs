@@ -1,5 +1,5 @@
 using System.Collections.Immutable;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems; // Box Change: Update namespace
 using Content.Shared.Damage.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -7,16 +7,19 @@ using Content.Shared.Mobs.Systems;
 using Robust.Shared.Random;
 using Content.Shared.Coordinates;
 using Content.Shared.Chat.Prototypes;
-using Content.Shared._RMC14.Emote;
+//using Content.Shared._RMC14.Emote; // Box Change: Unused
 using Content.Shared.Popups;
 using Robust.Shared.Player;
-using Content.Shared._RMC14.Xenonids;
+//using Content.Shared._RMC14.Xenonids; // Box Change: Unused
 using Robust.Shared.Audio.Systems;
 using System.Linq;
 using Content.Server._RMC14.Decals;
 using Content.Server.Spawners.Components;
 using Content.Shared.Body.Events;
 using Content.Shared.Effects;
+using Content.Shared.Chat; // Box Change
+using Content.Shared.Mobs; // Box Change
+using Content.Shared.Mobs.Components; // Box Change
 
 namespace Content.Server._RMC14.Xenonids.AcidBloodSplash;
 
@@ -25,7 +28,7 @@ public sealed class AcidBloodSplashSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly IComponentFactory _compFactory = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedRMCEmoteSystem _emote = default!;
+    [Dependency] private readonly SharedChatSystem _emote = default!; // Box Change: SharedRMCEmoteSystem -> SharedChatSystem
     [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
@@ -34,7 +37,7 @@ public sealed class AcidBloodSplashSystem : EntitySystem
     [Dependency] private readonly RMCDecalSystem _rmcDecal = default!;
     [Dependency] private readonly SharedColorFlashEffectSystem _colorFlash = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly XenoSystem _xeno = default!;
+    //[Dependency] private readonly XenoSystem _xeno = default!; // Box Change: Unused
 
     private static readonly ProtoId<EmotePrototype> ScreamProto = "Scream";
     private static readonly ProtoId<DamageGroupPrototype> BruteGroup = "Brute";
@@ -74,8 +77,10 @@ public sealed class AcidBloodSplashSystem : EntitySystem
         _random.Shuffle(targetsList);
         foreach (var target in targetsList)
         {
-            if (!_xeno.CanAbilityAttackTarget(uid, target))
-                continue;
+            // Box Change: Replace with custom logic
+            //if (!_xeno.CanAbilityAttackTarget(uid, target))
+            //    continue;
+            // End Box Change
 
             var hitProbability = comp.BaseHitProbability - i * 5;
 
@@ -88,7 +93,10 @@ public sealed class AcidBloodSplashSystem : EntitySystem
                 continue;
 
             comp.NextSplashAvailable = _timing.CurTime + comp.SplashCooldown;
-            _damageable.TryChangeDamage(target, _xeno.TryApplyXenoAcidDamageMultiplier(target, comp.Damage));
+            // Start Box Change: Remove RMC mechanic
+            //_damageable.TryChangeDamage(target, _xeno.TryApplyXenoAcidDamageMultiplier(target, comp.Damage));
+            _damageable.TryChangeDamage(target, comp.Damage);
+            // End Box Change
             i++;
 
             _audio.PlayPvs(comp.AcidSplashSound, target);
