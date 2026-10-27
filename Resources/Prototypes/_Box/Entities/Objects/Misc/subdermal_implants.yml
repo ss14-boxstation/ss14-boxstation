@@ -6,6 +6,9 @@
   description: An implant that expands the natural musical abilities of a Harpy. This one allows one to imitate a Weh-pet.
   components:
   - type: SubdermalImplant
+    whitelist:
+      components:
+      - SwappableInstrument
   - type: InstrumentImplant
     instrumentList:
       "Weh-pet": {5: 1}
@@ -20,4 +23,7 @@
   description: An implant that greatly expands the natural musical abilities of a Harpy.
   components:
   - type: SubdermalImplant
+    whitelist:
+      components:
+      - Instrument
   - type: LyrebirdImplant
