@@ -1127,7 +1127,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/xeno.rsi # Impstation
   - type: IconSmooth
-    key: chitin
+    key: walls # Box Chnage - Iconsmooth update - chitin > walls
     base: solid
   - type: Construction
     graph: Girder
@@ -1189,7 +1189,7 @@
   - type: RadiationBlocker
     resistance: 5
   - type: IconSmooth
-    key: chitin
+    key: walls # Box Chnage - Iconsmooth update - chitin > walls
     base: reinf_over
   - type: Construction
     graph: Girder
@@ -1313,7 +1313,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: woods
+    key: walls # Box Chnage - Iconsmooth update - woods > walls
     base: wood
 
 - type: entity
@@ -1359,7 +1359,7 @@
         sound:
           collection: WoodDestroy
   - type: IconSmooth
-    key: webs
+    key: walls # Box Chnage - Iconsmooth update - webs > walls
     base: wall
   - type: Construction
     graph: WebStructures
@@ -1479,6 +1479,11 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  # Box Change Start - Iconsmooth update
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  # Box Change End
 
 - type: entity
   parent: WallVaultAlien
@@ -1491,6 +1496,11 @@
   - type: Icon
     sprite: Structures/Walls/vault.rsi
     state: rockvault
+  # Box Change Start - Iconsmooth update
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  # Box Change End
 
 - type: entity
   parent: WallVaultAlien
@@ -1503,6 +1513,11 @@
   - type: Icon
     sprite: Structures/Walls/vault.rsi
     state: sandstonevault
+  # Box Change Start - Iconsmooth update
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  # Box Change End
 
 # Mime
 
