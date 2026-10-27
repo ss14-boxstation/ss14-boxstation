@@ -83,7 +83,7 @@
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: running
+        Base: alive # Box Channge: RMC Xeno sprites
       Critical:
         Base: crit
       Dead:
