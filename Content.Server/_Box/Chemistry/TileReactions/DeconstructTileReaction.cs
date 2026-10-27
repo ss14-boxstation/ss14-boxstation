@@ -21,7 +21,7 @@ public sealed partial class DeconstructTileReaction : ITileReaction
         List<ReagentData>? data)
     {
         var sys = entityManager.System<TileSystem>();
-        sys.DeconstructTile(tile, false);
+        sys.DeconstructTileSafe(tile, false);
         return reactVolume;
     }
 }
