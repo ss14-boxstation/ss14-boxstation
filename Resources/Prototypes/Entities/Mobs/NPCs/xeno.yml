@@ -121,6 +121,12 @@
     molsPerSecondPerUnitMass: 0.0005
   - type: Speech
     speechVerb: LargeMob
+  # Start Box Change: RMC acid blood splash 
+  - type: AcidBloodSplash
+    damage:
+      types:
+        Heat: 25
+  # End Box Change
 
 - type: entity
   name: praetorian
