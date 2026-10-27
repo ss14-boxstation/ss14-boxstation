@@ -800,7 +800,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: IconSmooth
-    key: walls
+    key: asteroid # Box Change - Iconsmooth changes - walls > asteroid
     mode: NoSprite
   - type: Icon
     sprite: Structures/Walls/rock.rsi

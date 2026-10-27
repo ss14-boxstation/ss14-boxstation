@@ -132,7 +132,7 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-    key: windows
+    key: walls # Box Chnage - Iconsmooth update - windows > walls
     base: state
   - type: Icon
     sprite: _Impstation/Structures/Windows/plasma_diagonal.rsi # Impstation
