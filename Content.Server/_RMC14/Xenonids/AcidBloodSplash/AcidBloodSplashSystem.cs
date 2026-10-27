@@ -19,8 +19,7 @@ using Content.Shared.Decals;
 using Content.Shared.Body.Events;
 using Content.Shared.Effects;
 using Content.Shared.Chat; // Box Change
-using Content.Shared.Mobs; // Box Change
-using Content.Shared.Mobs.Components; // Box Change
+using Content.Shared.Gibbing; // Box Change
 
 namespace Content.Server._RMC14.Xenonids.AcidBloodSplash;
 
