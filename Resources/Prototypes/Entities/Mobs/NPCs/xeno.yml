@@ -123,9 +123,10 @@
     speechVerb: LargeMob
   # Start Box Change: RMC acid blood splash 
   - type: AcidBloodSplash
+    minimalTriggerDamage: 8 # Down from the default of 12, which excluded things like 4g buckshot.
     damage:
       types:
-        Heat: 25
+        Caustic: 25
   # End Box Change
 
 - type: entity

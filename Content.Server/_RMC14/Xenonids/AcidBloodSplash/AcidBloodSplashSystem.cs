@@ -20,6 +20,7 @@ using Content.Shared.Body.Events;
 using Content.Shared.Effects;
 using Content.Shared.Chat; // Box Change
 using Content.Shared.Gibbing; // Box Change
+using Content.Shared.Mobs.Components; // Box Change
 
 namespace Content.Server._RMC14.Xenonids.AcidBloodSplash;
 
@@ -79,7 +80,9 @@ public sealed class AcidBloodSplashSystem : EntitySystem
         {
             // Box Change: Replace with custom logic
             //if (!_xeno.CanAbilityAttackTarget(uid, target))
-            //    continue;
+            // Prevent if the target is self, another xeno, not a mob, or is dead.
+            if (uid == target || HasComp<AcidBloodSplashComponent>(target) || !TryComp<MobStateComponent>(target, out var mobState) || _mobState.IsDead(target, mobState))
+                continue;
             // End Box Change
 
             var hitProbability = comp.BaseHitProbability - i * 5;

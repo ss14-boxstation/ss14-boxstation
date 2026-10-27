@@ -34,5 +34,5 @@
   components:
   - type: RandomDecalSpawner
     radius: 0.7
-    prob: 0.5
+    prob: 1 # Box Change: 0.5 -> 1
     maxDecalsPerTile: 4

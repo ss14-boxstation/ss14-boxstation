@@ -10,7 +10,7 @@
         Quantity: 650
 
 - type: entity
-  parent: [ MobXeno, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXeno ]
   id: MobXenoWeak
   
 - type: entity
@@ -18,26 +18,26 @@
   id: MobXenoPraetorianWeak
   
 - type: entity
-  parent: [ MobXenoDrone, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXenoDrone ]
   id: MobXenoDroneWeak
   
 - type: entity
-  parent: [ MobXenoQueen, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXenoQueen ]
   id: MobXenoQueenWeak
   
 - type: entity
-  parent: [ MobXenoRavager, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXenoRavager ]
   id: MobXenoRavagerWeak
   
 - type: entity
-  parent: [ MobXenoRunner, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXenoRunner ]
   id: MobXenoRunnerWeak
   
 - type: entity
-  parent: [ MobXenoRouny, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXenoRouny ]
   id: MobXenoRounyWeak
   
 - type: entity
-  parent: [ MobXenoSpitter, BaseWeakBloodXenonid ]
+  parent: [ BaseWeakBloodXenonid, MobXenoSpitter ]
   id: MobXenoSpitterWeak
   
