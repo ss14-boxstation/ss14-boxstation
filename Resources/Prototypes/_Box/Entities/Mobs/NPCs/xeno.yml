@@ -1,0 +1,43 @@
+- type: entity
+  abstract: true
+  id: BaseWeakBloodXenonid
+  suffix: AI, Weak blood
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: XenonidBloodWeak
+        Quantity: 650
+
+- type: entity
+  parent: [ MobXeno, BaseWeakBloodXenonid ]
+  id: MobXenoWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoPraetorian ]
+  id: MobXenoPraetorianWeak
+  
+- type: entity
+  parent: [ MobXenoDrone, BaseWeakBloodXenonid ]
+  id: MobXenoDroneWeak
+  
+- type: entity
+  parent: [ MobXenoQueen, BaseWeakBloodXenonid ]
+  id: MobXenoQueenWeak
+  
+- type: entity
+  parent: [ MobXenoRavager, BaseWeakBloodXenonid ]
+  id: MobXenoRavagerWeak
+  
+- type: entity
+  parent: [ MobXenoRunner, BaseWeakBloodXenonid ]
+  id: MobXenoRunnerWeak
+  
+- type: entity
+  parent: [ MobXenoRouny, BaseWeakBloodXenonid ]
+  id: MobXenoRounyWeak
+  
+- type: entity
+  parent: [ MobXenoSpitter, BaseWeakBloodXenonid ]
+  id: MobXenoSpitterWeak
+  

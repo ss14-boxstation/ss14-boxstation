@@ -69,7 +69,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: FluorosulfuricAcid
+      - ReagentId: XenonidBlood # Box Change: FluorosulfuricAcid -> XenonidBlood
         Quantity: 650
   - type: MeleeWeapon
     altDisarm: false
@@ -497,7 +497,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: FluorosulfuricAcid
+      - ReagentId: XenonidBloodWeak # Box Change: FluorosulfuricAcid -> XenonidBloodWeak
         Quantity: 300
   - type: MeleeWeapon
     altDisarm: false
