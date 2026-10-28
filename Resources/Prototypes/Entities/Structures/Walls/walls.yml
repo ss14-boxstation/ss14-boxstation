@@ -220,7 +220,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300 # weak # Box Change: 100 -> 300 due to anomaly wall conversion. Not weak.
+        damage: 100 # weak
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
