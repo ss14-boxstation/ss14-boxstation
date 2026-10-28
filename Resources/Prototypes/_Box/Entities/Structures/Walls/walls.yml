@@ -1,0 +1,8 @@
+- type: entity
+  parent: WallMeat
+  id: WallMeatAnomaly
+  suffix: Meat anomaly
+  components:
+  - type: Construction
+    graph: Girder
+    node: meatWallAnomaly

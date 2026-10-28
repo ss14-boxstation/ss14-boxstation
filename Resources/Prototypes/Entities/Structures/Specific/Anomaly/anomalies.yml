@@ -283,6 +283,24 @@
       - MobFleshClamp
       - MobFleshLover
       - FleshKudzu
+  # Start Box Change: Anomaly wall conversion
+  - type: WallSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        spawnOnSeverityChanged: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 4
+      wall: WallMeatAnomaly
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 10
+      wall: WallMeatAnomaly
+  # End Box Change
 
 - type: entity
   id: AnomalyBluespace
@@ -388,6 +406,24 @@
     damage:
       types:
         Cold: 10
+  # Start Box Change: Anomaly wall conversion
+  - type: WallSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        spawnOnSeverityChanged: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 4
+      wall: WallIce
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 10
+      wall: WallIce
+  # End Box Change
 
 - type: entity
   id: AnomalyRockBase
@@ -428,6 +464,24 @@
         maxAmount: 50
         maxRange: 12
       floor: FloorAsteroidTile
+  # Start Box Change: Anomaly wall conversion
+  - type: WallSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        spawnOnSeverityChanged: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 4
+      wall: WallAsteroidCobblebrick # AsteroidRock -> WallAsteroidCobblebrick
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 10
+      wall: WallAsteroidCobblebrick # AsteroidRock -> WallAsteroidCobblebrick
+  # End Box Change
 
 - type: entity
   id: AnomalyRockUranium
@@ -528,6 +582,25 @@
         maxRange: 5
       spawns:
       - MobSpawnCrabBananium
+  # Start Box Change: Anomaly wall conversion
+  # Bananium anomalies spawn bananium walls. Because funny.
+  - type: WallSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        spawnOnSeverityChanged: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 4
+      wall: WallClown
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 10
+      wall: WallClown
+  # End Box Change
 
 - type: entity
   id: AnomalyRockQuartz
@@ -1063,6 +1136,38 @@
     damage:
       types:
         Cold: 10
+  - type: TileSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 5
+      floor: FloorChromite
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 15
+      floor: FloorChromite
+  # Start Box Change: Anomaly wall conversion
+  - type: WallSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        spawnOnSeverityChanged: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 4
+      wall: WallChromiteCobblebrick # WallRockChromite -> WallChromiteCobblebrick
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 10
+      wall: WallChromiteCobblebrick # WallRockChromite -> WallChromiteCobblebrick
+  # End Box Change
 
 - type: entity
   id: AnomalyTech
