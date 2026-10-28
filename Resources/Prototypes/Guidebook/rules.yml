@@ -11,50 +11,51 @@
   children:
   - CommunityRules
   - GameRules
-  - RoleplayRules
-  - SecCommandRules
-  - AntagRules
-  - SiliconRules
 
 - type: guideEntry
   id: CommunityRules
   name: guide-entry-rules-community
-  ruleEntry: true
+  ruleEntry: false
   priority: 30
   text: "/ServerInfo/_Box/Guidebook/ServerRules/communityrules.xml"
 
 - type: guideEntry
   id: GameRules
   name: guide-entry-rules-game
-  ruleEntry: true
+  ruleEntry: false
   priority: 40
   text: "/ServerInfo/_Box/Guidebook/ServerRules/gamerules.xml"
+  children:
+  - RoleplayRules
+  - SecCommandRules
+  - AntagRules
+  - SiliconRules
 
 - type: guideEntry
   id: RoleplayRules
   name: guide-entry-rules-roleplay
-  ruleEntry: true
+  ruleEntry: false
   priority: 50
   text: "/ServerInfo/_Box/Guidebook/ServerRules/roleplayrules.xml"
 
 - type: guideEntry
   id: SecCommandRules
   name: guide-entry-rules-sec-command
-  ruleEntry: true
+  ruleEntry: false
   priority: 60
   text: "/ServerInfo/_Box/Guidebook/ServerRules/seccommandrules.xml"
 
 - type: guideEntry
   id: AntagRules
   name: guide-entry-rules-antag
-  ruleEntry: true
+  ruleEntry: false
   priority: 70
   text: "/ServerInfo/_Box/Guidebook/ServerRules/antagrules.xml"
 
 - type: guideEntry
   id: SiliconRules
   name: guide-entry-rules-silicon
-  ruleEntry: true
+  ruleEntry: false
   priority: 80
   text: "/ServerInfo/_Box/Guidebook/ServerRules/siliconrules.xml"
 # Box Change End

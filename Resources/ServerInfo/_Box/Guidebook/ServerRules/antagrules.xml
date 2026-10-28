@@ -1,2 +1,235 @@
 <Document>
+  # AR.0 - Antagonist Activations
+  The round's admin directly decides the types and amount of player character antagonists in a round, but assigns these impartially and fairly and does not curate their objectives.
+
+  Admins directly take the amount of Security presence into account when assigning Antags. If there are no members of Security or no eligible Antags during a designated antagonist shift, Admins may substitute with other dangers or narrative elements.
+
+    Learner Roles, Command Roles, and Security Roles are incapable of becoming antagonists
+    - Non-antags whose jobs are IC reassigned to antag-locked roles forfeit their eligibility to become antagonists
+    - Non-antags whose jobs are IC reassigned away from antag-locked roles gain eligibility to become antagonists, within reason.
+    - You are allowed to, as an antagonist, be IC reassigned into an antag-locked role and stay an antagonist.
+
+    Only Non-Learner Roles with Round Removal Consent are valid targets for RR Objectives
+
+    Kit-based antagonists must be informed of their impending activation so they may ensure viable space in their inventory to hold the kit
+    - Admins are discouraged from warning for activations otherwise, unless they have reason to believe it is in the benefit of the round or community.
+    - Antagonists with unique, round-defining effects such as a Thief's Pacifism, can only be activated within the first 15 minutes of a round
+
+  Antag Selection is aimed to be completed within the first 20 minutes of a shift.
+
+  You may, over the course of the round “Finish” with your antagonistic duties, either by completing all objectives, a gimmick, or via RP. If you believe you have Finished you must inform an Admin, so that another antagonist can be activated if deemed necessary.
+
+  ## Objective Rerolls
+  As an antagonist, you are allowed to request one reroll, either of all your objectives or a specific objective, with no questions asked.
+
+  You are allowed to reroll further objectives within reason.
+
+    [bold][color=#A4CABF]EXAMPLE:[/color][/bold] You roll a Teach a Lesson objective, but do not feel like doing said objective. You are allowed to replace it with another objective, and you are allowed to reroll the target.
+    - Good reasons include a target being the only security on the round, interfering with character events that were pre-planned, the target has been rolled too often, and asking for a greater challenge (adding more objectives).
+
+    [bold][color=#A4CABF]EXAMPLE:[/color][/bold] You roll a Steal an Item Objective from a role that is not currently filled. You are allowed to request it be replaced with another Steal or replaced with another Antag Objective
+
+  # AR.1 - General Antagonist Expectations
+  The purpose of an Antagonist is to add a narrative force to a current round, not disrupt the round flow to a halt. You should see the objectives given to you as a way to build an interesting layer to their story.
+
+  In most circumstances, you are free to ignore certain objectives if they are infeasible.
+
+  Antagonistic actions should reflect your antagonistic role, and be proportionate to your objectives.
+
+  Under AR.1, unless stated otherwise you may not:
+  - Loose the Tesla, TEG, or Singularity
+  - Sabotage Distro
+  - Interfere with the Station Anchor
+  - Intentionally damage the hull to the point of Evacuation
+  - Destroy the Evac Shuttle or Dock
+  - Canister Bomb
+  - Pre-emptively kill Security, Cyborgs, or the Station AI
+  - Commit Mass Murder (“Murderboning”)
+  - Render Arrivals uninhabitable
+
+  ## Round Removal
+  [color=#A4CABF](FOLLOWS GR0)[/color]
+
+  You may only round remove someone if you have the following Objectives:
+  - Kill and Maroon
+  - Prevent from reaching CentComm
+  - Kill the real one
+
+  # AR.2 - Antag Escalations
+  Common escalation categories have been set up in this way to allow admins a quick shorthand for custom event antagonists.
+
+  ## Expedited Escalation
+  This is the standard antagonist escalation granted to antagonists unless stated otherwise.
+  - You may crit non-targets with sufficient but expedited roleplay. You must still follow the expectations of your role, but only require a single clear understandable warning.
+  - You may kill non-targets following the rules of Reasonable Escalation.
+  - A violent encounter ends when both parties leave the area, and cannot be picked back up.
+  - You must aim for anyone injured to be easily and readily recoverable by medical personnel unless you are expected to Round Remove them.
+
+  ### Witness Escalation
+  - You may kill witnesses to your crimes, but should first endeavour to roleplay with them if possible. Try to aim to silence them in other manners first.
+  - You may kill anyone actively and intentionally interfering with your objectives, such as a paramedic attempting to save your target from dying.
+
+  ## Target Escalation
+  If you have a Teach A Lesson objective, Prevent from reaching CentComm objective, or a Kill and Maroon objective, you may kill that target with impunity. You should endeavour to refrain from wordlessly killing where possible.
+
+  If you have a Steal objective, you are allowed to kill to obtain that item. You should endeavour to refrain from wordlessly killing where possible.
+
+  ## Defence Escalation
+  You can only attack reactively, and not proactively, based on the following conditions:
+  - You may kill anyone who has attacked you directly.
+  - You may attack someone who interferes with your objectives.
+  - You may attack someone who tries to steal from you or steals from you successfully.
+
+  ## Aggressive Escalation
+  Kill At Will. Round Removal restrictions still apply.
+
+  You require little to no roleplay or warning to kill someone. You must still follow AR.1 and the AR.4 of your respective antag.
+
+  # AR.3 - Team Antagonist Rules
+  As a Team Antagonist, any major deviation from your objectives or expectations needs consensus.
+
+  # AR.4 - Specific Antagonist Expectations & Limits
+  ## Syndicate Agents
+  Syndicate Agents are corporate spies sent to kneecap the profits of NanoTrasen through theft, intimidation, violence, espionage, and sabotage. They are not terrorists or soldiers, despite the array of weaponry in their Uplink.
+
+  Syndicate Agents are considered a violent and stealthy antagonist, however they are still bound by AR.1.
+
+  Syndicate Agents have Expedited Escalation.
+
+  ### Sleeper Agents
+  Sometimes the round is too slow or the assigned antagonists cease being able to perform the role of an antag. In this circumstance Admins may activate a Sleeper Syndicate Agent, utilizing the Sleeper Antag preference. Sleeper Agents have the same expectations as a normal syndicate agent.
+
+  ### Die A Glorious Death
+  Die A Glorious Death allows you to ignore AR.1 and Syndicate Agent Expectations & Limits, and instead follow DAGD Expectations & Limits.
+
+  If you have DAGD, you should endeavour to die through your antagonistic actions or as a consequence of them.
+
+  While you have the greatest degree of disruptive freedom, you should still remember that the primary objective of an antagonist is to drive the narrative. Sudden or unseen mass death might not leave a lot of room for the other players to engage with the narrative.
+  - [bold][color=#A4CABF]GOOD EXAMPLE:[/color][/bold] Slowly picking off members of the crew in maintenance, generating a station-wide air of fear and paranoia.
+  - [bold][color=#A4CABF]GOOD EXAMPLE:[/color][/bold] Taunting the station and threatening to set off a MaxCap in the department that displeased you most in the round, creating opportunities for the other players to curry favor in fear of their life or to try and thwart your scheme.
+  - [bold][color=#A4CABF]GOOD EXAMPLE:[/color][/bold] Loosing Containment, causing the station to scramble to evacuate as the crew face the slow moving but loud and inevitable death coming for them.
+  - [bold][color=#ffb74d]BAD EXAMPLE:[/color][/bold] Remaining silent all round before proceeding to gun down all of security and every crew member in the blink of an eye while full of Omnizine and stimulants.
+  - [bold][color=#ffb74d]BAD EXAMPLE:[/color][/bold] Wordlessly setting off a MaxCap in Atmos, forcing the crew to evacuate with no forewarning.
+  - [bold][color=#ffb74d]BAD EXAMPLE:[/color][/bold] Putting yourself in an Artifact Crusher.
+
+  ## Blood Bound
+  An Initial Blood Bound is someone who has the ability to use a blood-carved rune to twist someone's will to aid them in their tasks of minor sabotage and murder.
+
+  As the Blood Bound objective pool is near-identical to that of a Syndicate Agent, you have similar expectations and limits to Syndicate Agents.
+
+  Admins will activate someone as an initial Blood Bound with the knowledge that enough non-mindshielded crew are able to be converted for the initial Blood Bound.
+
+  Do not convert the only member of the Security Department in a round.
+
+  ## Troublemaker
+  A Troublemaker is a regular NanoTrasen employee seeking to vent their frustrations physically and violently.
+
+  You are an Antagonist but still ultimately desire to keep your job once all is said and done. You only have the standard antagonist Expedited Escalation.
+
+  The Troublemaker antagonist is not a corporate saboteur, and not a hired killer. They should not aim to engage in behaviour more expected from a Syndicate Agent.
+
+  Troublemaker Objectives are largely freeform and serve as a starting point for your creativity and the rounds narrative. Grudge objectives do not necessarily mean to kill your grudge target, there is more than one way to settle a score.
+
+  ## Contract Killer
+  Contract Killers are assassins-for-hire tasked with killing one specific person in a very specific manner.
+
+  As a Contract Killer, you [bold]Must[/bold] follow your objectives to the best of your ability. You only have Target Escalation.
+
+  If you have completed your objectives you may continue to act as an antagonist, which includes aiding other antagonists and otherwise committing minor antagonisms.
+
+  ## Thief
+  Whether it's to line your pockets, settle debts, grow a collection, or to pull the greatest heist this galaxy has seen, Thieves are a non-violent antagonist centered around stealing interesting or valuable objects and items.
+
+  You should refrain from killing, as this is the intended purpose of the Forced Pacifism mechanic. For any and all non-violent actions you have Aggressive Escalation, and otherwise have Standard Escalation.
+
+  You may only steal critical or major infrastructure if you have an active Objective for them, such as the TEG or Nuke Disk.
+
+  ## Nuclear Operatives
+  A team of Elite Operatives sent by the Gorlex Marauders and tasked by the wider Syndicate with the destruction of NanoTrasen stations. You have Aggressive Escalation and may ignore AR.1 in pursuit of your objectives.
+
+  Nuclear Operative rounds should still be able to be engaged with by the crew. As such, the strategy commonly known as “BlitzOps” where Nukies strike the station quickly, without warning, and lethally is not allowed.
+
+  If you are not engaging in some form of Gimmick Ops, such as using disguises or engaging in parley, you are expected to inform the crew of your oncoming arrival via the War Declarator and/or the Syndicate Communications computer.
+
+  Nuclear Operatives are exempt from EORG rules, but may be considered “kill on sight” by CentComm personnel.
+
+  The Lone Operative ghost role and any reinforcement purchased by a Nuclear Operative or Lone Operative have the same expectations and limits as standard Nuclear Operatives.
+
+  ## Ghost Role Antagonists
+  Ghost Roles are randomly generated, and thus are not curated by Admins. Unless stated otherwise, Ghost Role Antagonists should aim to add spice to the round but are not expected to carry the narrative like crew-made antagonists are.
+
+  ### Paradox Clones
+  A freak accident of space-time has left the Paradox Clone stranded from their original reality and into this one where they come face to face with the realization that they have an alternate self, and only one of them is guaranteed to make it out of the shift alive.
+
+  If your original is an Antagonist, you inherit their status and rules.
+
+  [color=#a4885c]Usurper Clone[/color]
+
+  You are an antagonist who only has Target Escalation.
+
+  If you have completed your objective to replace your Original, you may continue to act as an antagonist, which includes aiding other antagonists and otherwise committing minor antagonisms.
+
+  [color=#a4885c]Saviour Clone[/color]
+
+  You are not an Antagonist. You have Defence Escalation concerning your Original on top of Standard Escalation. You can only Critical someone, not kill.
+
+  You may kill someone if they Round Remove your Original.
+
+  If you have the “Keep The Original Alive” objective for an antagonist and have the same objectives you are allowed to help your original in completing their objectives, however your first priority should always be protecting the original. Players should decide on who should keep objective items between each other.
+
+  ### Dragon
+  An oversized space fauna capable of speech and the pinnacle of space carp. Dragons seek to aggressively claim territory and empower themselves with otherworldly rifts from which loyal space carp flow ever forward.
+
+  You have Aggressive Escalation. Avoid Arrivals if possible. You may kill and eat anyone. You can let people rot but do not go out of your way to RR people.
+
+  Dragons and their carp mobs are exempt from EORG rules, but may also be considered “kill on sight” to all CentComm staff.
+
+  [color=#a4885c]Rift Carp[/color]
+
+  You are a Hostile Critter, but you are first and foremost loyal to the Space Dragon that summoned you. You can follow the commands of your Dragon no matter how complicated.
+
+  Follow the expectations of Hostile Critters and of Dragons. Wherever there is a conflict, the rules for Dragons wins out.
+
+  ### Ninja
+  A stealth operative sent by the Spider Clan to raid and sabotage NanoTrasen's research, the Ninja is expected to return unseen and with a blade clear of blood.
+
+  You have Defence Escalation instead of Expedited Escalation. You cannot RR someone, but are allowed to kill. You should aim to only kill as a last resort.
+
+  You are allowed to Roleplay and be friendly, but you should try to achieve your objectives.
+
+  ### Bingles
+  A strange and otherworldly creature whose entire existence is tied to their Pit. Feed the pit, grow the horde, Bingle.
+
+  Bingles have Aggressive Escalation. Protecting and feeding the pit should be the first priority to anything you do.
+
+  Do not intentionally space Arrivals. You can bring anyone or anything into the pit, as long as you are following AR.1.
+
+  ### Revenant
+  A malevolent supernatural manifestation that feeds on the essence of the dying. You have Aggressive Escalation.
+
+  You cannot turn anyone into an antagonist [bold][color=#A4CABF](GR0, Requires Admin Permission.)[/color][/bold]
+
+  Do not harvest souls from SSD players
+
+  ### Wizard
+  A powerful sorcerer with untold power at their fingertips who desires to demonstrate their arcane prowess, through violence if necessary or fun.
+
+  You have Aggressive Escalation. You are fully exempt from AR.1 and may ignore standard Ghost Role Antagonist expectations.
+
+  Be narrative in your destruction, and try not to die.
+
+  ### Hostile Critters
+  Hostile Critters are territorial, aggressive, deadly animals.
+
+  If you have not been affected by Cognizine, you have Aggressive Escalation.
+
+  You cannot be friendly unless cogni'd. You must act aggressive, hostile, territorial, and like the animal you are unless you're cogni'd. That means no aiming to sabo distro or power.
+
+  ### Free Agents
+  As a Free Agent, you do not have Expedited Escalation unless you declare your intent to behave as an antagonist. All Free Agents can aid antags unless they are under the effect of the command and security free agent clause.
+
+  [color=#a4885c]Security And Command Free Agent Clause[/color]
+
+  Free Agents who do not declare their intent to behave antagonistically in AHelp and who assume, adopt, or are otherwise assigned a role in Security or Command, are expected to follow the standards of and behave like a crew-aligned member of said role.
+
 </Document>
