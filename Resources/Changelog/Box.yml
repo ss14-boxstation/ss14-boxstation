@@ -2212,3 +2212,16 @@
   id: 239
   time: '2026-10-28T06:51:06.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/351
+- author: Dizzy-Eevee
+  changes:
+  - message: Grappling hooks have been reworked. They are now physics-driven, meaning
+      that they use actual physical forces to retract.
+    type: Tweak
+  - message: The majority of known exploits of grappling hooks have been fixed as
+      a result. You can no longer clip into walls via grappling hook, and you can
+      no longer teleport your friends across the station by having them hook onto
+      an object and stay still.
+    type: Fix
+  id: 240
+  time: '2026-10-28T10:40:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/359
