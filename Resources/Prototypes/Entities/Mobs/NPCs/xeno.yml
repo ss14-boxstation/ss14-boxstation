@@ -47,7 +47,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.25
+          radius: 0.35 # Box Change: Larger base fixture to account for RMC sprites
         density: 1000
         mask:
         - MobMask
@@ -130,7 +130,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Praetorian/praetorian.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.4
+    offset: 0,0 # Box Change: Remove offset
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive # Box Channge: RMC Xeno sprites
@@ -163,7 +163,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Drone/drone.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.2
+    offset: 0,0 # Box Change: Remove offset
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive # Box Channge: RMC Xeno sprites
@@ -200,7 +200,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Queen/queen.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.4
+    offset: 0,0 # Box Change: Remove offset
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive # Box Channge: RMC Xeno sprites
@@ -221,7 +221,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.52 # Box Change: 0.45 -> 0.52
         density: 15500
         mask:
         - MobMask
@@ -239,7 +239,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Ravager/ravager.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.5
+    offset: 0,0 # Box Change: Remove offset
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive # Box Channge: RMC Xeno sprites
@@ -261,7 +261,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
+          radius: 0.50 # Box Change: 0.45 -> 0.50
         density: 1350
         mask:
         - MobMask
@@ -276,7 +276,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Runner/runner.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.6
+    offset: 0,0 # Box Change: Remove offset
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive # Box Channge: RMC Xeno sprites
@@ -291,7 +291,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
+          radius: 0.40 # Box Change: 0.35 -> 0.40
         density: 235
         mask:
         - MobMask
@@ -306,7 +306,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Rouny/rouny.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.6
+    offset: 0,0 # Box Change: Remove offset
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -321,7 +321,7 @@
   - type: Sprite
     drawdepth: Mobs
     sprite: _RMC14/Xenonids/Spitter/spitter.rsi # Box Change: RMC Xeno sprites
-    offset: 0,0.3
+    offset: 0,0 # Box Change: Remove offset
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: alive # Box Channge: RMC Xeno sprites
