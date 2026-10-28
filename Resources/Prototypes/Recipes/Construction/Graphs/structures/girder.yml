@@ -263,6 +263,28 @@
           steps:
             - tool: Prying
               doAfter: 5
+              
+    # Start Box Change: Anomaly meat wall (requires more effort to deconstruct)
+    - node: meatWallAnomaly
+      entity: WallMeatAnomaly
+      edges:
+        - to: girder
+          completed:
+            - !type:GivePrototype
+              prototype: MaterialSheetMeat1
+              amount: 2
+          steps:
+            - tool: Slicing
+              doAfter: 5
+              completed:
+                - !type:SpawnPrototype
+                  prototype: PuddleBlood
+                  amount: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 5
+    # End Box Change
 
     - node: reinforcedGirder
       entity: ReinforcedGirder
