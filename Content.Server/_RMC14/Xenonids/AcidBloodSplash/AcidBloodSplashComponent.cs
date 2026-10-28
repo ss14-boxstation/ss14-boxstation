@@ -14,7 +14,7 @@ public sealed partial class AcidBloodSplashComponent : Component
     public DamageSpecifier Damage = new();
 
     [DataField]
-    public FixedPoint2 MinimalTriggerDamage = 12;
+    public FixedPoint2 MinimalTriggerDamage = 8; // Box Change: 12 -> 8 to accomodate for weapon balance differences. 12 would exclude things like 4g buckshot, which should obviously be able to trigger the splash.
 
     [DataField]
     public bool WorksWhileDead = true;
