@@ -44,7 +44,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
     [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] protected readonly SharedStunSystem StunSystem = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movement = default!; // EE - Harpy Flight
+    [Dependency] private readonly MovementSpeedModifierSystem _movement = default!; // Box Change: EE - Harpy Flight
 
     /// <summary>
     /// How much of a buffer is there between the stun duration and when stuns can be re-applied.
@@ -264,7 +264,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
 
     public void TakeStaminaDamage(EntityUid uid, float value, StaminaComponent? component = null,
         EntityUid? source = null, EntityUid? with = null, bool visual = true, SoundSpecifier? sound = null, bool ignoreResist = false,
-        bool? allowsSlowdown = true) // EE - Harpy Flight
+        bool? allowsSlowdown = true) // Box Change: EE - Harpy Flight
     {
         if (!Resolve(uid, ref component, false))
             return;
@@ -282,8 +282,10 @@ public abstract partial class SharedStaminaSystem : EntitySystem
 
         value = UniversalStaminaDamageModifier * value;
 
-        if (allowsSlowdown == true) // EE - Harpy Flight
+        // Start Box Change: EE - Harpy Flight
+        if (allowsSlowdown == true) 
             _movement.RefreshMovementSpeedModifiers(uid);
+        // End Box Change
 
         // Have we already reached the point of max stamina damage?
         if (component.Critical)

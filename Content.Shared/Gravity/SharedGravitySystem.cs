@@ -1,4 +1,4 @@
-using Content.Shared._EE.Flight; // DeltaV - Harpy Flight
+using Content.Shared._EE.Flight; // Box Change: DeltaV - Harpy Flight
 using Content.Shared.Alert;
 using Content.Shared.Inventory;
 using Content.Shared.Throwing;
@@ -17,7 +17,7 @@ public abstract partial class SharedGravitySystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming Timing = default!;
     [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly SharedFlightSystem _flight = default!; // DeltaV - Harpy Flight
+    [Dependency] private readonly SharedFlightSystem _flight = default!; // Box Change: DeltaV - Harpy Flight
 
     public static readonly ProtoId<AlertPrototype> WeightlessAlert = "Weightless";
 
@@ -71,8 +71,10 @@ public abstract partial class SharedGravitySystem : EntitySystem
         if (entity.Comp2.BodyType is BodyType.Static or BodyType.Kinematic)
             return false;
 
-        if (_flight.IsFlying(entity.Owner)) // DeltaV - Harpy Flight
+        // Start Box Change:DeltaV - Harpy Flight
+        if (_flight.IsFlying(entity.Owner))
             return true;
+        // End Box Change
 
         // Check if something other than the grid or map is overriding our gravity
         var ev = new IsWeightlessEvent();
