@@ -55,7 +55,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      100: Dead # Actually higher than base drone, but it's roughly in line with other vent critters.
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
