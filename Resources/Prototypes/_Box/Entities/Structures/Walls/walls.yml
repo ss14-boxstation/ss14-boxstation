@@ -1,0 +1,28 @@
+# Asteroid rock brick walls, spawned by rock anomalies.
+- type: entity
+  parent: WallAsteroidCobblebrick
+  id: WallAsteroidCobblebrickAnomaly
+  suffix: Rock anomaly
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300 # Match basic walls
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+        
+- type: entity
+  parent: WallChromiteCobblebrick
+  id: WallChromiteCobblebrickAnomaly
+  suffix: Shadow anomaly
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300 # Match basic walls
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

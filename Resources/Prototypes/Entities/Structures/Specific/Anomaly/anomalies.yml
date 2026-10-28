@@ -474,13 +474,13 @@
         minAmount: 3
         maxAmount: 7
         maxRange: 4
-      wall: AsteroidRock
+      wall: WallAsteroidCobblebrickAnomaly # AsteroidRock -> WallAsteroidCobblebrickAnomaly
     - settings:
         spawnOnSuperCritical: true
         minAmount: 10
         maxAmount: 30
         maxRange: 10
-      wall: AsteroidRock
+      wall: WallAsteroidCobblebrickAnomaly # AsteroidRock -> WallAsteroidCobblebrickAnomaly
   # End Box Change
 
 - type: entity
@@ -582,6 +582,25 @@
         maxRange: 5
       spawns:
       - MobSpawnCrabBananium
+  # Start Box Change: Anomaly wall conversion
+  # Bananium anomalies spawn bananium walls. Because funny.
+  - type: WallSpawnAnomaly #imp
+    entries:
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        spawnOnSeverityChanged: true
+        minAmount: 3
+        maxAmount: 7
+        maxRange: 4
+      wall: WallClown
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 10
+        maxAmount: 30
+        maxRange: 10
+      wall: WallClown
+  # End Box Change
 
 - type: entity
   id: AnomalyRockQuartz
@@ -1141,13 +1160,13 @@
         minAmount: 3
         maxAmount: 7
         maxRange: 4
-      wall: WallRockChromite
+      wall: WallChromiteCobblebrickAnomaly # WallRockChromite -> WallChromiteCobblebrickAnomaly
     - settings:
         spawnOnSuperCritical: true
         minAmount: 10
         maxAmount: 30
         maxRange: 10
-      wall: WallRockChromite
+      wall: WallChromiteCobblebrickAnomaly # WallRockChromite -> WallChromiteCobblebrickAnomaly
   # End Box Change
 
 - type: entity
