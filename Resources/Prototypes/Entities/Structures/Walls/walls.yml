@@ -220,7 +220,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100 # weak
+        damage: 300 # weak # Box Change: not weak 100 -> 300
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -1591,7 +1591,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 300 # Box Change: 100 -> 300 to match basic steel walls
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

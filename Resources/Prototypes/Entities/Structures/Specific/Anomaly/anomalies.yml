@@ -293,13 +293,13 @@
         minAmount: 3
         maxAmount: 7
         maxRange: 4
-      wall: WallMeat
+      wall: WallMeatAnomaly
     - settings:
         spawnOnSuperCritical: true
         minAmount: 10
         maxAmount: 30
         maxRange: 10
-      wall: WallMeat
+      wall: WallMeatAnomaly
   # End Box Change
 
 - type: entity
@@ -474,13 +474,13 @@
         minAmount: 3
         maxAmount: 7
         maxRange: 4
-      wall: WallAsteroidCobblebrickAnomaly # AsteroidRock -> WallAsteroidCobblebrickAnomaly
+      wall: WallAsteroidCobblebrick # AsteroidRock -> WallAsteroidCobblebrick
     - settings:
         spawnOnSuperCritical: true
         minAmount: 10
         maxAmount: 30
         maxRange: 10
-      wall: WallAsteroidCobblebrickAnomaly # AsteroidRock -> WallAsteroidCobblebrickAnomaly
+      wall: WallAsteroidCobblebrick # AsteroidRock -> WallAsteroidCobblebrick
   # End Box Change
 
 - type: entity
@@ -1160,13 +1160,13 @@
         minAmount: 3
         maxAmount: 7
         maxRange: 4
-      wall: WallChromiteCobblebrickAnomaly # WallRockChromite -> WallChromiteCobblebrickAnomaly
+      wall: WallChromiteCobblebrick # WallRockChromite -> WallChromiteCobblebrick
     - settings:
         spawnOnSuperCritical: true
         minAmount: 10
         maxAmount: 30
         maxRange: 10
-      wall: WallChromiteCobblebrickAnomaly # WallRockChromite -> WallChromiteCobblebrickAnomaly
+      wall: WallChromiteCobblebrick # WallRockChromite -> WallChromiteCobblebrick
   # End Box Change
 
 - type: entity
