@@ -2194,3 +2194,10 @@
   id: 237
   time: '2026-10-26T04:39:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/332
+- author: Dizzy-Eevee
+  changes:
+  - message: Anomalies which convert nearby tiles will now also convert nearby walls.
+    type: Add
+  id: 238
+  time: '2026-10-28T06:30:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/355
