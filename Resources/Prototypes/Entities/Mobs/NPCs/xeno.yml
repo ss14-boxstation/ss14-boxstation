@@ -69,7 +69,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: FluorosulfuricAcid
+      - ReagentId: XenonidBlood # Box Change: FluorosulfuricAcid -> XenonidBlood
         Quantity: 650
   - type: MeleeWeapon
     altDisarm: false
@@ -121,6 +121,12 @@
     molsPerSecondPerUnitMass: 0.0005
   - type: Speech
     speechVerb: LargeMob
+  # Start Box Change: RMC acid blood splash 
+  - type: AcidBloodSplash
+    damage:
+      types:
+        Caustic: 25
+  # End Box Change
 
 - type: entity
   name: praetorian
@@ -497,7 +503,7 @@
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
-      - ReagentId: FluorosulfuricAcid
+      - ReagentId: XenonidBloodWeak # Box Change: FluorosulfuricAcid -> XenonidBloodWeak
         Quantity: 300
   - type: MeleeWeapon
     altDisarm: false
