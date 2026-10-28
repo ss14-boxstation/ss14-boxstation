@@ -2201,3 +2201,14 @@
   id: 238
   time: '2026-10-28T06:30:56.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/355
+- author: Dizzy-Eevee
+  changes:
+  - message: Xenonid blood is now its own reagent, which destroys floor tiles it interacts
+      with and causes spacing.
+    type: Add
+  - message: Xenonids now have a chance to splash nearby mobs with acid when damaged,
+      dealing caustic damage.
+    type: Add
+  id: 239
+  time: '2026-10-28T06:51:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/351
