@@ -241,7 +241,7 @@ public abstract class SharedFlightSystem : EntitySystem
             new FlightDoAfterEvent(), uid, target: uid)
             {
                 BlockDuplicate = true,
-                BreakOnMove = true,
+                BreakOnMove = false, // Box Change: Allow movement during flight-start doAfter
                 BreakOnDamage = true,
                 NeedHand = true
             };
