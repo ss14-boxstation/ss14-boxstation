@@ -18,7 +18,7 @@ namespace Content.Shared.Maps;
 /// <summary>
 ///     Handles server-side tile manipulation like prying/deconstructing tiles.
 /// </summary>
-public sealed partial class TileSystem : EntitySystem // Box Change: Partial
+public sealed partial class TileSystem : EntitySystem // Box Change: Partial - Xenoblood tile decon
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IMapManager _mapManager = default!;
