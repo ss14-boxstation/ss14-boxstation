@@ -1479,11 +1479,6 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  # Box Change Start - Iconsmooth update
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
-  # Box Change End
 
 - type: entity
   parent: WallVaultAlien
@@ -1496,11 +1491,6 @@
   - type: Icon
     sprite: Structures/Walls/vault.rsi
     state: rockvault
-  # Box Change Start - Iconsmooth update
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
-  # Box Change End
 
 - type: entity
   parent: WallVaultAlien
@@ -1513,11 +1503,6 @@
   - type: Icon
     sprite: Structures/Walls/vault.rsi
     state: sandstonevault
-  # Box Change Start - Iconsmooth update
-  - type: IconSmooth
-    key: walls
-    mode: NoSprite
-  # Box Change End
 
 # Mime
 
@@ -1596,7 +1581,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 - type: entity
@@ -1609,7 +1594,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/cobblebrick_basalt.rsi # Impstation
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 - type: entity
@@ -1623,7 +1608,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/cobblebrick_snow.rsi # Impstation
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 - type: entity
@@ -1636,7 +1621,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/cobblebrick_asteroid.rsi # Impstation
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 - type: entity
@@ -1649,7 +1634,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/cobblebrick_sand.rsi # Impstation
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 - type: entity
@@ -1662,7 +1647,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/cobblebrick_chromite.rsi # Impstation
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 - type: entity
@@ -1675,7 +1660,7 @@
   - type: Icon
     sprite: _Impstation/Structures/Walls/cobblebrick_andesite.rsi # Impstation
   - type: IconSmooth
-    key: cobblebricks
+    key: walls # Box Chnage - Iconsmooth update - cobblebricks > walls
     base: cobblebrick
 
 # Cardboard
