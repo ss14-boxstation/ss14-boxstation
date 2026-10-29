@@ -149,7 +149,7 @@
     damageOverlayGroups:
       Brute:
         sprite: Mobs/Effects/brute_damage.rsi
-        color: "#808A51"
+        color: "#6C3BAA" # Box Change: Update to match blood color (why was this green???)
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
   - type: Vocal
