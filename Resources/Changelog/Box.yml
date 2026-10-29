@@ -2232,3 +2232,11 @@
   id: 241
   time: '2026-10-28T10:50:57.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/360
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali damage visuals now match their blood color. No, we do not know
+      why they were green before.
+    type: Tweak
+  id: 242
+  time: '2026-10-29T08:02:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/362
