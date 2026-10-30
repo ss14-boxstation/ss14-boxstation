@@ -17,12 +17,12 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<RechargeEmptyAmmoComponent, OnEmptyGunShotEvent>(OnEmptyGunshot);
+        SubscribeLocalEvent<RechargeEmptyAmmoComponent, BasicAmmoEmptyEvent>(OnBasicAmmoEmpty);
         SubscribeLocalEvent<RechargeEmptyAmmoComponent, ShotAttemptedEvent>(OnShotAttempted);
         SubscribeLocalEvent<RechargeEmptyAmmoComponent, BasicAmmoFullEvent>(OnRechargeFinish);
     }
 
-    private void OnEmptyGunshot(Entity<RechargeEmptyAmmoComponent> ent, ref OnEmptyGunShotEvent args)
+    private void OnBasicAmmoEmpty(Entity<RechargeEmptyAmmoComponent> ent, ref BasicAmmoEmptyEvent args)
     {
         // Check if the gun even has ammo and can reload
         if (!TryComp<BasicEntityAmmoProviderComponent>(ent, out var ammo) || !TryComp<RechargeBasicEntityAmmoComponent>(ent, out var recharge))
@@ -31,7 +31,7 @@ public sealed class RechargeEmptyAmmoSystem : EntitySystem
         if (ammo.Count != 0 || ammo.Count == null || ammo.Capacity == null)
             return;
 
-        // Check if the gun is already reloadoing
+        // Check if the gun is already reloading
         if (ent.Comp.IsRecharging)
             return;
 
