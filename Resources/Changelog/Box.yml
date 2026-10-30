@@ -2031,3 +2031,219 @@
   id: 219
   time: '2026-10-16T22:09:31.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/334
+- author: Dizzy-Eevee
+  changes:
+  - message: Added floor-mounted lights, which have unique sprites for each light
+      tube variant.
+    type: Add
+  - message: Added violently purple ultraviolet light tubes.
+    type: Add
+  id: 220
+  time: '2026-10-22T12:45:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/311
+- author: Dizzy-Eevee
+  changes:
+  - message: Added napkins, and a container to hold them. These can be printed from
+      an autolathe.
+    type: Add
+  id: 221
+  time: '2026-10-22T12:47:43.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/318
+- author: Dizzy-Eevee
+  changes:
+  - message: Narcoleptic characters will no longer find their messages being lost
+      to the Great Abyss when falling asleep mid-sentence.
+    type: Fix
+  id: 222
+  time: '2026-10-22T12:48:46.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/258
+- author: Dizzy-Eevee
+  changes:
+  - message: Replaced all xeno sprites with RMC's.
+    type: Tweak
+  id: 223
+  time: '2026-10-18T06:54:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/335
+- author: CollectionOfBones128
+  changes:
+  - message: The "Raised By" and "Voice Of" traits now set the appropriate typing
+      indicator
+    type: Tweak
+  - message: Added missing "Raised By" and "Voice Of" traits for Allulalo, Avali,
+      Harpies, Rodentia, Thaven, and Vulpkanin
+    type: Add
+  id: 224
+  time: '2026-10-23T02:53:48.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/337
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali have had their natural body temperature reduced, and temperature
+      tolerances adjusted slightly. This should have little to no bearing on normal
+      gameplay.
+    type: Tweak
+  id: 225
+  time: '2026-10-23T02:49:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/320
+- author: Dizzy-Eevee
+  changes:
+  - message: Thaven can view their moods again.
+    type: Fix
+  id: 226
+  time: '2026-10-23T10:03:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/340
+- author: CollectionOfBones128
+  changes:
+  - message: Arcryox has been removed.
+    type: Remove
+  - message: Cryoxadone has been tweaked, it no longer primarily functions as a discount
+      omnizine
+    type: Tweak
+  - message: Aloxadone has been tweaked, it now functions similarly to how Arcryox
+      did
+    type: Tweak
+  - message: Two new cryo chems, Traumoxadone and Stelloxadone, have been added to
+      replace Arcryox.
+    type: Add
+  id: 227
+  time: '2026-10-23T11:17:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/331
+- author: Dizzy-Eevee
+  changes:
+  - message: Added honey, a few foods cooked with it, and the ability to cultivate
+      beehives in hydroponics trays.
+    type: Add
+  id: 228
+  time: '2026-10-23T11:19:44.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/315
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali now have their own blood reagent, rather than reusing Vox blood.
+    type: Add
+  - message: Most Avali organs now have unique sprites.
+    type: Add
+  id: 229
+  time: '2026-10-24T05:28:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/319
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies now breathe twice as fast as humans, as originally intended.
+    type: Fix
+  - message: Harpies have had their air quality sensitivity tweaked. They should now
+      suffocate from poor air quality at significantly lower thresholds than other
+      species, without creating a situation where they are constantly taking and immediately
+      healing 1 asphyxiation damage from breathing in their own CO2.
+    type: Tweak
+  id: 230
+  time: '2026-10-24T05:30:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/343
+- author: CollectionOfBones128
+  changes:
+  - message: Added the "Artificial Voicebox" trait, giving you the pAI typing indicator
+    type: Add
+  - message: Added the "Damaged Silicon Accent" trait, which corrupts speech based
+      on damage taken
+    type: Add
+  id: 231
+  time: '2026-10-24T05:31:09.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/341
+- author: Dizzy-Eevee
+  changes:
+  - message: Packed now has a Pride-O-Mat.
+    type: Tweak
+  - message: The Spacebucks on Elkridge now has a spacepresso machine instead of a
+      soda dispenser.
+    type: Tweak
+  id: 232
+  time: '2026-10-24T05:40:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/345
+- author: CollectionOfBones128
+  changes:
+  - message: Fixed Thaven's breathing metabolism. Thaven should now safely be able
+      to breathe Plasma again.
+    type: Fix
+  id: 233
+  time: '2026-10-25T13:39:11.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/348
+- author: Dizzy-Eevee
+  changes:
+  - message: Added several new varieties of tea, courtesy of Monolith. Bartenders
+      can find a variety pack in their locker (along with teaware in the Booze-O-Mat),
+      and a tea party kit can be ordered from cargo.
+    type: Add
+  id: 234
+  time: '2026-10-25T14:45:02.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/346
+- author: Dizzy-Eevee
+  changes:
+  - message: Melee animations have been overhauled.
+    type: Tweak
+  id: 235
+  time: '2026-10-26T04:40:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/338
+- author: CollectionOfBones128
+  changes:
+  - message: Walls and windows now connect more seamlessly
+    type: Tweak
+  id: 236
+  time: '2026-10-27T17:01:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/353
+- author: CollectionOfBones128, FancyPlanks
+  changes:
+  - message: Walls and Windows have been resprited, ported from ImpStation
+    type: Tweak
+  id: 237
+  time: '2026-10-26T04:39:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/332
+- author: Dizzy-Eevee
+  changes:
+  - message: Anomalies which convert nearby tiles will now also convert nearby walls.
+    type: Add
+  id: 238
+  time: '2026-10-28T06:30:56.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/355
+- author: Dizzy-Eevee
+  changes:
+  - message: Xenonid blood is now its own reagent, which destroys floor tiles it interacts
+      with and causes spacing.
+    type: Add
+  - message: Xenonids now have a chance to splash nearby mobs with acid when damaged,
+      dealing caustic damage.
+    type: Add
+  id: 239
+  time: '2026-10-28T06:51:06.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/351
+- author: Dizzy-Eevee
+  changes:
+  - message: Grappling hooks have been reworked. They are now physics-driven, meaning
+      that they use actual physical forces to retract.
+    type: Tweak
+  - message: The majority of known exploits of grappling hooks have been fixed as
+      a result. You can no longer clip into walls via grappling hook, and you can
+      no longer teleport your friends across the station by having them hook onto
+      an object and stay still.
+    type: Fix
+  id: 240
+  time: '2026-10-28T10:40:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/359
+- author: CollectionOfBones128
+  changes:
+  - message: The rules have been updated! Please take the time to read through them.
+    type: Add
+  id: 241
+  time: '2026-10-28T10:50:57.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/360
+- author: Dizzy-Eevee
+  changes:
+  - message: Avali damage visuals now match their blood color. No, we do not know
+      why they were green before.
+    type: Tweak
+  id: 242
+  time: '2026-10-29T08:02:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/362
+- author: Dizzy-Eevee
+  changes:
+  - message: Most Harmony-specific branding has been removed.
+    type: Remove
+  id: 243
+  time: '2026-10-29T09:20:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/363

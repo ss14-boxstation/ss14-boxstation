@@ -11,3 +11,19 @@
     sprite: _Box/Objects/Devices/flatpack.rsi
     layers:
     - state: borgcharger
+
+- type: entity
+  parent: BaseFlatpack
+  id: HotplateFlatpack
+  suffix: Box
+  name: hotplate flatpack
+  description: A flatpack used for constructing a hotplate.
+  components:
+  - type: Flatpack
+    entity: ChemistryHotplate
+  - type: Sprite
+    layers:
+    - state: base
+    - state: overlay
+      color: "#52B4E9"
+    - state: icon-default
