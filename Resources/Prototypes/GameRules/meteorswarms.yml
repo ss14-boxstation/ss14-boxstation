@@ -101,7 +101,7 @@
   - type: StationEvent
     reoccurrenceDelay: 1
     earliestStart: 12
-    minimumPlayers: 15 # Box Change: 25 -> 15
+    minimumPlayers: 20 # Box Change: 25 -> 20
   - type: MeteorSwarm
 
 - type: entity
@@ -151,7 +151,7 @@
   components:
   - type: StationEvent
     weight: 18
-    minimumPlayers: 10 # Box Change: 15 -> 10
+    minimumPlayers: 15
   - type: MeteorSwarm
     meteors:
       MeteorSmall: 7
@@ -211,7 +211,7 @@
     reoccurrenceDelay: 1
     duration: 1
     earliestStart: 30
-    minimumPlayers: 20 # Box Change: 25 -> 20
+    minimumPlayers: 25
   - type: ImmovableRodRule
     rodPrototypes:
     - id: ImmovableRodKeepTilesStill
