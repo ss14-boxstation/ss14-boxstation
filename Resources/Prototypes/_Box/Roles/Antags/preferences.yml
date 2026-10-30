@@ -98,6 +98,17 @@
   - !type:OverallPlaytimeRequirement
     time: 3600 # 1h
 
+- type: antag
+  id: DummyAcolyte
+  name: roles-antag-acolyte-name
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+  objective: roles-antag-acolyte-objective
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 3600 # 1h
+
 # Other Fork Antags
 ## Hitman (DV)
 - type: antag
