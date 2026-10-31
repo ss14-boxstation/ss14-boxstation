@@ -1,4 +1,8 @@
 namespace Content.Server._Box.Instruments;
 
 [RegisterComponent]
-public sealed partial class LyrebirdComponent : Component { }
+[Access(typeof(LyrebirdSystem))]
+public sealed partial class LyrebirdComponent : Component
+{
+    public bool DefaultPercussion = false;
+}

@@ -24,7 +24,7 @@ public sealed class LyrebirdSystem : EntitySystem
         if (!args.CanInteract || !args.CanAccess)
             return;
 
-        if (!TryComp<InstrumentComponent>(ent.Owner, out var instrument))
+        if (!TryComp<InstrumentComponent>(ent.Owner, out var instrument) || !TryComp<LyrebirdComponent>(ent, out var lyrebird))
             return;
 
         if (ent.Owner != args.User)
@@ -35,10 +35,20 @@ public sealed class LyrebirdSystem : EntitySystem
         {
             Text = "Toggle DAW mode",
             //Category = VerbCategory.InstrumentStyle,
-            Priority = 1,
+            Priority = -1,
             Act = () =>
             {
-                _sharedInstrument.ToggleProgramChange(ent.Owner, instrument, out var state);
+                bool state = false;
+                if (!instrument.AllowProgramChange)
+                {
+                    state = true;
+                    _sharedInstrument.SetProgramChange(ent, instrument, true, true);
+                }
+                else
+                {
+                    state = false;
+                    _sharedInstrument.SetProgramChange(ent, instrument, false, lyrebird.DefaultPercussion);
+                }
                 CloseUi(ent, instrument);
                 _popup.PopupEntity(Loc.GetString("lyrebird-toggle", ("state", state ? "Enabled" : "Disabled")), user, user);
             }
@@ -47,17 +57,18 @@ public sealed class LyrebirdSystem : EntitySystem
     }
     public void AddImplant(EntityUid ent)
     {
-        if (!TryComp<InstrumentComponent>(ent, out var instrument))
+        if (!TryComp<InstrumentComponent>(ent, out var instrument) || !TryComp<LyrebirdComponent>(ent, out var lyrebird))
             return;
-        _sharedInstrument.SetProgramChange(ent, instrument, true);
+        lyrebird.DefaultPercussion = instrument.AllowPercussion;
+        _sharedInstrument.SetProgramChange(ent, instrument, true, true);
         CloseUi(ent, instrument);
     }
 
     public void RemoveImplant(EntityUid ent)
     {
-        if (!TryComp<InstrumentComponent>(ent, out var instrument))
+        if (!TryComp<InstrumentComponent>(ent, out var instrument) || !TryComp<LyrebirdComponent>(ent, out var lyrebird))
             return;
-        _sharedInstrument.SetProgramChange(ent, instrument, false);
+        _sharedInstrument.SetProgramChange(ent, instrument, false, lyrebird.DefaultPercussion);
         CloseUi(ent, instrument);
     }
 
