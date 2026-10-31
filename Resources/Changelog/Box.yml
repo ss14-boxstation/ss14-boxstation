@@ -2247,3 +2247,10 @@
   id: 243
   time: '2026-10-29T09:20:15.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/363
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies no longer have human feet.
+    type: Tweak
+  id: 244
+  time: '2026-10-31T19:55:50.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/366
