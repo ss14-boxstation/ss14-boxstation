@@ -106,7 +106,7 @@ public sealed class PullingSystem : EntitySystem
             if (HasComp<MouseRotatorComponent>(uid))
                 continue;
 
-            if (puller.Pulling == null || !puller.NeedsHands) // Don't rotate lizards since they pull with their tail
+            if (puller.Pulling == null)
                 continue;
 
             var pulling = puller.Pulling.Value;
@@ -121,6 +121,9 @@ public sealed class PullingSystem : EntitySystem
             var pullerCoords = _transform.GetMapCoordinates(uid, xform).Position;
 
             var angle = (pulledCoords - pullerCoords).ToWorldAngle().GetCardinalDir().ToAngle();
+            if (!puller.NeedsHands)
+                angle = angle.Opposite(); // Lizards et al. should rotate away from what they're pulling
+
             _rotate.TryFaceAngle(uid, angle, xform);
         }
     }
