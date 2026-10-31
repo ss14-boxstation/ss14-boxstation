@@ -14,7 +14,15 @@ public sealed class LyrebirdSystem : EntitySystem
     {
         base.Initialize();
 
+        SubscribeLocalEvent<LyrebirdComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<LyrebirdComponent, GetVerbsEvent<AlternativeVerb>>(AddVerb);
+    }
+
+    private void OnMapInit(Entity<LyrebirdComponent> ent, ref MapInitEvent args)
+    {
+        if (!TryComp<InstrumentComponent>(ent.Owner, out var instrument))
+            return;
+        ent.Comp.DefaultPercussion = instrument.AllowPercussion; // Store the user's pre-implanting percussive ability, so they don't lose it when the implant is toggled or removed.
     }
 
     private void AddVerb(Entity<LyrebirdComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
@@ -56,7 +64,6 @@ public sealed class LyrebirdSystem : EntitySystem
     {
         if (!TryComp<InstrumentComponent>(ent, out var instrument) || !TryComp<LyrebirdComponent>(ent, out var lyrebird))
             return;
-        lyrebird.DefaultPercussion = instrument.AllowPercussion; // Store the user's pre-implanting percussive ability, so they don't lose it when the implant is toggled or removed.
         _sharedInstrument.SetProgramChange(ent, instrument, true, true);
         CloseUi(ent, instrument);
     }

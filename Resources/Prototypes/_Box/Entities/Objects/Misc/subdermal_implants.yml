@@ -26,4 +26,7 @@
     whitelist:
       components:
       - Instrument
+    blacklist:
+      components:
+      - Lyrebird
   - type: LyrebirdImplant
