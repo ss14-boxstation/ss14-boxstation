@@ -72,7 +72,7 @@
     capacity: 1
     count: 1
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_sidearm.rsi
     quickEquip: false
     slots:
     - suitStorage

@@ -37,6 +37,13 @@ public abstract partial class SharedGunSystem
             args.Ammo.Add((ammoEnt, EnsureShootable(ammoEnt)));
         }
 
+        // Box Change Start
+        if (ent.Comp.Count == 0 && HasComp<RechargeBasicEntityAmmoComponent>(ent))
+        {
+            var ammoEmptyEvent = new BasicAmmoEmptyEvent(ent);
+            RaiseLocalEvent(ent, ref ammoEmptyEvent);
+        }
+        // Box Change End
         _recharge.Reset(ent.Owner);
         UpdateBasicEntityAppearance(ent);
         Dirty(ent);
