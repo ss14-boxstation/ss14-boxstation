@@ -15,6 +15,8 @@ using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Item;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.MouseRotator; // Box Change: Rotate to face pulled entities
+using Content.Shared.Movement.Components; // Box Change: Rotate to face pulled entities
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Events;
@@ -53,6 +55,10 @@ public sealed class PullingSystem : EntitySystem
     [Dependency] private readonly HeldSpeedModifierSystem _clothingMoveSpeed = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedVirtualItemSystem _virtual = default!;
+    // Start Box Change: Rotate to face pulled entities
+    [Dependency] private readonly RotateToFaceSystem _rotate = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    // End Box Change
 
     public override void Initialize()
     {
@@ -90,6 +96,38 @@ public sealed class PullingSystem : EntitySystem
             .Bind(ContentKeyFunctions.ReleasePulledObject, InputCmdHandler.FromDelegate(OnReleasePulledObject, handle: false))
             .Register<PullingSystem>();
     }
+
+    // Start Box Change: Rotate to face pulled entities
+    public override void Update(float frameTime)
+    {
+        var pullingQuery = EntityQueryEnumerator<PullerComponent, ActivePullerComponent>();
+        while (pullingQuery.MoveNext(out var uid, out var puller, out _))
+        {
+            if (HasComp<MouseRotatorComponent>(uid))
+                continue;
+
+            if (puller.Pulling == null)
+                continue;
+
+            var pulling = puller.Pulling.Value;
+
+            if (!TryComp(uid, out TransformComponent? xform) || !TryComp(pulling, out TransformComponent? pullingXform))
+                continue; // How did we get here?
+
+            if (!_timing.ApplyingState)
+                EnsureComp<NoRotateOnMoveComponent>(uid);
+
+            var pulledCoords = _transform.GetMapCoordinates(pulling, pullingXform).Position;
+            var pullerCoords = _transform.GetMapCoordinates(uid, xform).Position;
+
+            var angle = (pulledCoords - pullerCoords).ToWorldAngle().GetCardinalDir().ToAngle();
+            if (!puller.NeedsHands)
+                angle = angle.Opposite(); // Lizards et al. should rotate away from what they're pulling
+
+            _rotate.TryFaceAngle(uid, angle, xform);
+        }
+    }
+    // End Box Change
 
     private void OnTargetHandcuffed(Entity<ActivePullerComponent> ent, ref TargetHandcuffedEvent args)
     {
@@ -137,6 +175,11 @@ public sealed class PullingSystem : EntitySystem
             _handsSystem.TryDrop((args.PullerUid, component), held);
             break;
         }
+
+        // Start Box Change: Rotate towards pulled entities
+        if (!_timing.ApplyingState && !HasComp<MouseRotatorComponent>(uid))
+            RemCompDeferred<NoRotateOnMoveComponent>(uid);
+        // End Box Change
     }
 
     private void OnStateChanged(EntityUid uid, PullerComponent component, ref MobStateChangedEvent args)
