@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseImplantOnlyImplanter
+  id: WehpetImplanter
+  name: weh-pet implanter
+  components:
+  - type: Implanter
+    implant: WehpetImplant
+      
+- type: entity
+  parent: BaseImplantOnlyImplanter
+  id: LyrebirdImplanter
+  name: lyrebird implanter
+  components:
+  - type: Implanter
+    implant: LyrebirdImplant

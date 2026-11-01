@@ -61,6 +61,7 @@
   id: Instruments
   recipes:
   - SynthesizerInstrument
+  - LyrebirdImplanter # Box Change: Harpy DAW implant
   - PushHorn
 
 - type: latheRecipePack
