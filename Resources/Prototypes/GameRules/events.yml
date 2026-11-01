@@ -24,6 +24,7 @@
     - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: CarpMigration # Harmony Change
+    - id: LesserDroneSpawn # Box Change: Lesser drones
     - id: VentClog
 
 - type: entityTable

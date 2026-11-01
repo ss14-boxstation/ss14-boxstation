@@ -38,4 +38,24 @@
     - id: SpiderSpawn
     - id: CarpMigration
     - id: BingleSpawn
+    - id: LesserDroneSpawn
     - id: SyndicateDeadDrop
+
+- type: entity
+  id: LesserDroneSpawn
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    earliestStart: 20
+    minimumPlayers: 10
+    weight: 1.5
+    duration: 30
+  - type: VentCrittersRule
+    min: 5 
+    max: 10
+    playerRatio: 10 # Lessers only have 30 HP, but spawn in much bigger groups
+    table:
+      id: MobXenoLesserDrone
