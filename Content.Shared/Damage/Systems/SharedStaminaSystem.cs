@@ -44,6 +44,7 @@ public abstract partial class SharedStaminaSystem : EntitySystem
     [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
     [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] protected readonly SharedStunSystem StunSystem = default!;
+    [Dependency] private readonly MovementSpeedModifierSystem _movement = default!; // Box Change: EE - Harpy Flight
 
     /// <summary>
     /// How much of a buffer is there between the stun duration and when stuns can be re-applied.
@@ -262,7 +263,8 @@ public abstract partial class SharedStaminaSystem : EntitySystem
     }
 
     public void TakeStaminaDamage(EntityUid uid, float value, StaminaComponent? component = null,
-        EntityUid? source = null, EntityUid? with = null, bool visual = true, SoundSpecifier? sound = null, bool ignoreResist = false)
+        EntityUid? source = null, EntityUid? with = null, bool visual = true, SoundSpecifier? sound = null, bool ignoreResist = false,
+        bool? allowsSlowdown = true) // Box Change: EE - Harpy Flight
     {
         if (!Resolve(uid, ref component, false))
             return;
@@ -279,6 +281,11 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         }
 
         value = UniversalStaminaDamageModifier * value;
+
+        // Start Box Change: EE - Harpy Flight
+        if (allowsSlowdown == true) 
+            _movement.RefreshMovementSpeedModifiers(uid);
+        // End Box Change
 
         // Have we already reached the point of max stamina damage?
         if (component.Critical)
@@ -359,11 +366,22 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         {
             // Just in case we have active but not stamina we'll check and account for it.
             if (!stamQuery.TryGetComponent(uid, out var comp) ||
-                comp.StaminaDamage <= 0f && !comp.Critical)
+                comp.StaminaDamage <= 0f && !comp.Critical && comp.ActiveDrains.Count == 0) // EE - Harpy Flight
             {
                 RemComp<ActiveStaminaComponent>(uid);
                 continue;
             }
+
+            // EE - Harpy Flight
+            if (comp.ActiveDrains.Count > 0)
+                foreach (var (source, (drainRate, modifiesSpeed)) in comp.ActiveDrains)
+                    TakeStaminaDamage(uid,
+                    drainRate * frameTime,
+                    comp,
+                    source: source,
+                    visual: false,
+                    allowsSlowdown: modifiesSpeed);
+            // End EE
 
             // Shouldn't need to consider paused time as we're only iterating non-paused stamina components.
             var nextUpdate = comp.NextUpdate;
@@ -377,10 +395,11 @@ public abstract partial class SharedStaminaSystem : EntitySystem
 
             comp.NextUpdate += TimeSpan.FromSeconds(1f);
 
-            TakeStaminaDamage(
-                uid,
-                comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier : -comp.Decay, // Recover faster after crit
-                comp);
+            if (comp.ActiveDrains.Count == 0) // EE - Harpy Flight
+                TakeStaminaDamage(
+                    uid,
+                    comp.AfterCritical ? -comp.Decay * comp.AfterCritDecayMultiplier : -comp.Decay, // Recover faster after crit
+                    comp);
 
             Dirty(uid, comp);
         }
