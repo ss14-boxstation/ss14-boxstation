@@ -1,4 +1,17 @@
 - type: reaction
+  id: Coffee
+  minTemp: 353 # ~80 deg C
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Water:
+      amount: 3
+    CoffeeGrounds:
+      amount: 1
+  products:
+    Coffee: 4
+    
+- type: reaction
   id: HoneyIcedTea
   reactants:
     Honey:

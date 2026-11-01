@@ -147,7 +147,7 @@
   - type: StationEvent
     weight: 7
     duration: 1
-    minimumPlayers: 15
+    minimumPlayers: 10 # Box Change: 15 -> 10
   - type: BreakerFlipRule
 
 - type: entity
@@ -395,7 +395,7 @@
   components:
   - type: StationEvent
     earliestStart: 15
-    minimumPlayers: 15
+    minimumPlayers: 10 # Box Change: 15 -> 10
     weight: 7
     duration: 240
   - type: KudzuGrowthRule
@@ -453,7 +453,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 15
-    minimumPlayers: 15
+    minimumPlayers: 10 # Box Change: 15 -> 10
     weight: 5
     duration: 50 # Delta V Change
   - type: VentClogRule
@@ -467,7 +467,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 10 # Box Change: 15 -> 10
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
@@ -505,7 +505,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 10 # Box Change: 15 -> 10
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule

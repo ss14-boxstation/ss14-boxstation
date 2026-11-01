@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/14/2026 14:54:34
-  entityCount: 15967
+  time: 10/24/2026 04:35:22
+  entityCount: 15968
 maps:
 - 126
 grids:
@@ -90489,6 +90489,13 @@ entities:
     components:
     - type: Transform
       pos: 44.5,-4.5
+      parent: 2
+- proto: VendingMachinePride
+  entities:
+  - uid: 15121
+    components:
+    - type: Transform
+      pos: 18.5,5.5
       parent: 2
 - proto: VendingMachineRoboDrobe
   entities:
