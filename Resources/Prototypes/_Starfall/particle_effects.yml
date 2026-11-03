@@ -179,8 +179,10 @@
 - type: particleEffect
   id: SfFireSmoke
   sprite:
-    sprite: Effects/chemsmoke.rsi
-    state: chemsmoke
+    # Start Box Change: Moff smoke particles
+    sprite: _Moffstation/Particles/pixel.rsi
+    state: smoke_puff
+    # End Box Change
   startColor: "#555555AA"
   endColor: "#33333300"
   sizeOverLifetime:
