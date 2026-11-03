@@ -2262,3 +2262,29 @@
   id: 245
   time: '2026-11-01T11:20:59.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/364
+- author: Dizzy-Eevee
+  changes:
+  - message: The "random color" teddy bear trinket has been replaced with a handful
+      of preset color options.
+    type: Tweak
+  id: 246
+  time: '2026-11-03T11:51:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/367
+- author: Dizzy-Eevee
+  changes:
+  - message: Added lesser drones.
+    type: Add
+  - message: Groups of lesser drones can now spawn from vents.
+    type: Add
+  id: 247
+  time: '2026-11-03T11:51:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/361
+- author: Dizzy-Eevee
+  changes:
+  - message: Mobs will now rotate towards the object they're pulling. Mobs that do
+      not use their hands to pull things (like lizards and scurrets) will rotate away,
+      instead.
+    type: Tweak
+  id: 248
+  time: '2026-11-03T11:52:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/365
