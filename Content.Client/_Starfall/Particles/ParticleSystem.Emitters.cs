@@ -61,6 +61,7 @@ public sealed partial class ParticleSystem
                     // so this code was causing persistent emitters to be Deleted Forever once they went off-screen.
                     //emitter.Exhausted = true;
                     //emitter.AttachedEntity = null;
+                    // End Box Change
                     return;
                 }
 
