@@ -56,8 +56,11 @@ public sealed partial class ParticleSystem
                 var attachedCoords = _transform.GetMapCoordinates(attachedEnt);
                 if (attachedCoords.MapId == MapId.Nullspace)
                 {
-                    emitter.Exhausted = true;
-                    emitter.AttachedEntity = null;
+                    // Start Box Change: Do not exhaust nullspace emitters
+                    // Entities outside of PVS range get sent to nullspace,
+                    // so this code was causing persistent emitters to be Deleted Forever once they went off-screen.
+                    //emitter.Exhausted = true;
+                    //emitter.AttachedEntity = null;
                     return;
                 }
 
