@@ -66,7 +66,10 @@ public sealed class ParticleRuntimeOverrides
     #endregion
     #region =^..^= Spawn position =^..^=
 
-    /// <summary>World-space offset from the emitter origin where particles are spawned.</summary>
+    /// <summary>
+    /// Offset from the emitter origin. Directional emitters interpret this in attached-entity-local space;
+    /// other emitters interpret it in map space.
+    /// </summary>
     public Vector2? SpawnOffset;
 
     #endregion
