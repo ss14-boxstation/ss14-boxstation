@@ -48,6 +48,10 @@
     - RadioImplant
     - ChameleonControllerImplant
     - VoiceMaskImplant
+    # Start Box Change: Instrument implants
+    - WehpetImplant
+    - LyrebirdImplant
+    # End Box Change
     deimplantFailureDamage:
       types:
         Cellular: 50

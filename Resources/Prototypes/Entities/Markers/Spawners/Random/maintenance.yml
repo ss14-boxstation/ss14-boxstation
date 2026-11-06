@@ -303,6 +303,7 @@
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
       - id: WehpetInstrument  # Harmony change to add weh-pet to rare maints loot
+      - id: WehpetImplanter # Box Change: Add wehpet harpy implanter
       # Start Box Change: Remove Salami Lid
       #- id: LidSalami
       #  weight: 0.05
