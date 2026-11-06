@@ -10,3 +10,16 @@
   - type: InstantAction
     event: !type:OpenUiActionEvent
       key: enum.InstrumentUiKey.Key
+
+- type: entity
+  id: ActionToggleFlight
+  name: Fly
+  description: Make use of your wings to fly. Beat the flightless allegations. # Box Change: Remove "flightless bird" since moths get the ability, too.
+  components:
+  - type: Action
+    itemIconStyle: BigAction
+    icon: { sprite: _EE/Interface/Actions/flight.rsi, state: flight_off }
+    iconOn: { sprite : _EE/Interface/Actions/flight.rsi, state: flight_on }
+    checkCanInteract: false
+  - type: InstantAction
+    event: !type:ToggleFlightEvent

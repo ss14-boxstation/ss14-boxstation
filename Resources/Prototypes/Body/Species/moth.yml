@@ -206,6 +206,13 @@
       289: 0.9
       275: 0.8
       250: 0.7
+  # Start Box Change: Flight ability
+  - type: Flight # EE - Flight 
+    staminaDrainRate: 8.0 # Moths fly slower than harpies, so they use less stamina doing so.
+    speedModifier: 1
+    accelerationModifer: 1 # Not a typo on my end, DV called it "modifer"
+    frictionModifier: 1
+  # End Box Change
 
 - type: entity
   parent: OrganBaseOrganic
