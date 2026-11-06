@@ -1,0 +1,42 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "back, hand, head, jumpsuit, shoes by Zeyria at https://github.com/ss14Starlight/space-station-14/commit/416a169e65de184bb1b00b464968e23c8c79da6e. outerclothing by Zeyria at https://github.com/ss14Starlight/space-station-14/commit/10492ef3e6d2c882bc508f69c609f69ca48871c9. gloves by Zeyria at https://github.com/ss14Starlight/space-station-14/commit/632d0a559cbdcb6e1e0976a3fa4dbf6d3b65fb10. Edited to fit Harmony avali sprites by Dizzy-Eevee.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "load": {
+        "srgb": false
+    },
+    "states": [
+        {
+            "name": "jumpsuit",
+            "directions": 4
+        },
+        {
+            "name": "head",
+            "directions": 4
+        },
+        {
+            "name": "hand",
+            "directions": 4
+        },
+        {
+            "name": "outerclothing",
+            "directions": 4
+        },
+        {
+            "name": "shoes",
+            "directions": 4
+        },
+        {
+            "name": "back",
+            "directions": 4
+        },
+        {
+            "name": "gloves",
+            "directions": 4
+        }
+    ]
+}
