@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.1
   forkId: ""
   forkVersion: ""
-  time: 08/14/2026 20:45:28
+  time: 10/24/2026 04:25:04
   entityCount: 18840
 maps:
 - 1
@@ -89858,6 +89858,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-7.5
       parent: 2
+  - uid: 5905
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -18.5,-14.5
+      parent: 2
 - proto: InflatableDoor
   entities:
   - uid: 1107
@@ -104278,12 +104284,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-7.5
-      parent: 2
-  - uid: 5905
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -18.5,-14.5
       parent: 2
 - proto: SolarPanel
   entities:

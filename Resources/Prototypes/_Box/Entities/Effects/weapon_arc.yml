@@ -1,0 +1,15 @@
+- type: entity
+  id: WeaponArcThrustFade
+  parent: WeaponArcStatic
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: WeaponArcVisuals
+      animation: Thrust
+
+- type: entity
+  id: WeaponArcSlashFade
+  parent: WeaponArcStatic
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: WeaponArcVisuals
+      animation: Slash

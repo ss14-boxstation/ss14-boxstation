@@ -155,7 +155,12 @@
     # End Box Change
     - id: WeaponSniperMosin
       weight: 2
-    - id: CigPackMixedRejects # Box Change: Impstation Soaked Smokes Rejects
+    # Start Box Change: More silly syndicate items, grouped for probability purposes
+    - !type:GroupSelector
+      children:
+        - id: CigPackMixedRejects # Box Change: Impstation Soaked Smokes Rejects
+        - id: ReagentContainerSyndicateTeaPouch # Syndicate tea powder
+    # End Box Change
     - id: ClothingHandsKnuckleDustersSyndicate
 
 - type: entityTable

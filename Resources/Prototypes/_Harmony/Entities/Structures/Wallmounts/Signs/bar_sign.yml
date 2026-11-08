@@ -1,8 +1,0 @@
-﻿- type: entity
-  parent: BaseBarSign
-  id: BarSignMcLiltens
-  name: McLiltens
-  description: Find harmony at the end of a rainbow.
-  components:
-  - type: BarSign
-    current: McLiltens

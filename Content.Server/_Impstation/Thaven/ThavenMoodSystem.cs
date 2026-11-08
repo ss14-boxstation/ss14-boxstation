@@ -379,6 +379,10 @@ public sealed partial class ThavenMoodsSystem : SharedThavenMoodSystem
         RefreshMoods(ent);
 
         ent.Comp.Action = _actions.AddAction(ent.Owner, ActionViewMoods);
+        // Start Box Change: Ensure mood ui exists, taken early from mood refactor (Thaven will be re-ported from scratch once Macrocosm merges them)
+        if (TryComp<UserInterfaceComponent>(ent, out var ui))
+            _bui.SetUi((ent, ui), ThavenMoodsUiKey.Key, new InterfaceData("ThavenMoodsBoundUserInterface", requireInputValidation: false));
+        // End Box Change
     }
 
     private void OnThavenMoodShutdown(Entity<ThavenMoodsComponent> ent, ref ComponentShutdown args)

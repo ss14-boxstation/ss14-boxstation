@@ -27,3 +27,64 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [Vox]
+
+# Based on Fluorosulfuric Acid
+# A version of xeno blood that does not space tiles.
+# Used when we want xenos, but don't want them to space the area by existing.     
+- type: reagent
+  id: XenonidBloodWeak
+  name: reagent-name-xenonid-blood-weak
+  group: Toxins
+  desc: reagent-desc-xenonid-blood-weak
+  physicalDesc: reagent-physical-desc-bubbling
+  flavor: acid
+  color: "#b3c22a"
+  standsout: true 
+  boilingPoint: 165
+  meltingPoint: -87
+  metabolismCategories: [ Organic, Artificial ]
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.3
+      - !type:Emote
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Robotic]
+          inverted: true
+        emote: Scream
+        probability: 0.2
+  metabolisms:
+    Bloodstream:
+      metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 8
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
+      - !type:Emote
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [Robotic]
+          inverted: true
+        emote: Scream
+        probability: 0.25
+       
+# Deconstructs tiles to lattice.
+- type: reagent
+  parent: XenonidBloodWeak
+  id: XenonidBlood
+  name: reagent-name-xenonid-blood
+  desc: reagent-desc-xenonid-blood
+  tileReactions:
+  - !type:DeconstructTileReaction

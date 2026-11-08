@@ -220,3 +220,99 @@
         visualType: Medium
         messages: [ "generic-reagent-effect-nauseous" ]
         probability: 0.2
+
+# Cryo Chems - Taken from the reverted WizDen PRs
+
+- type: reagent
+  id: Traumoxadone
+  name: reagent-name-traumoxadone
+  group: Medicine
+  desc: reagent-desc-traumoxadone
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#69304D"
+  worksOnTheDead: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        damage:
+          Brute: -2
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        - !type:MobStateCondition
+          mobstate: Dead
+        - !type:TotalDamageCondition
+          min: 195
+        damage:
+          Brute: -3
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 150.0
+        - !type:MobStateCondition
+          mobstate: Dead
+        - !type:TotalDamageCondition
+          min: 500
+        damage:
+          Brute: -4.5
+
+- type: reagent
+  id: Stelloxadone
+  name: reagent-name-stelloxadone
+  group: Medicine
+  desc: reagent-desc-stelloxadone
+  physicalDesc: reagent-physical-desc-murky
+  flavor: medicine
+  color: "#FFC683"
+  worksOnTheDead: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        damage:
+          Toxin: -1
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        - !type:MobStateCondition
+          mobstate: Dead
+        - !type:TotalDamageCondition
+          min: 195
+        damage:
+          Toxin: -2
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 150.0
+        - !type:MobStateCondition
+          mobstate: Dead
+        - !type:TotalDamageCondition
+          min: 500
+        damage:
+          Toxin: -5
+    # Side Effects, like Arith!
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        damage:
+          groups:
+            Brute: 0.3
+            Airloss: 3
+      - !type:ModifyBleed
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        - !type:TotalDamageCondition
+          max: 500
+        amount: 0.1

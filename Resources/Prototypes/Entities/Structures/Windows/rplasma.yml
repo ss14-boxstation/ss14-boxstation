@@ -5,13 +5,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/reinforced_plasma_window.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_plasma_window.rsi
+    sprite: _Impstation/Structures/Windows/reinforced_plasma_window.rsi # Impstation
   - type: Icon
-#    sprite: Structures/Windows/reinforced_plasma_window.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_plasma_window.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/reinforced_plasma_window.rsi # Impstation
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -133,10 +129,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/reinforced_plasma_diagonal.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_plasma_diagonal.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/reinforced_plasma_diagonal.rsi # Impstation
     state: state0
   - type: Tag
     tags:
@@ -144,16 +137,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-# Start of Harmony Change: Updates IconSmooth key
-#    key: windows
-    key: station
-# End of Harmony Change
+    key: walls # Box Chnage - Iconsmooth update - windows > walls
     base: state
   - type: Icon
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/reinforced_plasma_diagonal.rsi
-    sprite: _Harmony/Structures/Windows/reinforced_plasma_diagonal.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/reinforced_plasma_diagonal.rsi # Impstation
     state: state0
   - type: Fixtures
     fixtures:

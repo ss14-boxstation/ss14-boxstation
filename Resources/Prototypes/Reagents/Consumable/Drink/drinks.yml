@@ -196,6 +196,15 @@
     Digestion:
       metabolites:
         Theobromine: 0.1
+      # Start Box Change: Mono edit - tea reduces drowsiness
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 1.0
+        type: Remove
+      # End Box Change
 
 
 - type: reagent
@@ -385,14 +394,23 @@
   desc: reagent-desc-tea
   physicalDesc: reagent-physical-desc-aromatic
   flavor: tea
-  color: "#8a5a3a"
+  color: "#3B2F2F" # Box change: Mono edit, change tea color 
   recognizable: true
   metabolisms:
     Digestion:
       metabolites:
         Theobromine: 0.1
+      # Start Box Change: Mono edit - tea reduces drowsiness
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 1.0
+        type: Remove
+      # End Box Change
   metamorphicSprite:
-    sprite: Objects/Consumable/Drinks/teaglass.rsi
+    sprite: _Box/Objects/Consumable/Drinks/Tea/teaglass.rsi # Box Change: Resprite to match mono color
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-

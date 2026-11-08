@@ -158,6 +158,12 @@
   components:
   - type: Sprite
     state: bun-honey
+  # Start Box Change: Add frontier honey flavor profile
+  - type: FlavorProfile # Frontier
+    flavors: # Frontier
+      - honey # Frontier
+      - bread # Frontier
+  # End Box Change
 
 - type: entity
   name: hotcross bun

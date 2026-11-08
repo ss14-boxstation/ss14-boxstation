@@ -25,6 +25,7 @@
       children:
       - id: BoxBeanbag
       - id: RagItem
+    - id: BoxTeaPouches # Box Change: Add a box of tea pouches so we don't need to fit another full-tile machine into every bar
 
 #- type: entity
 #  id: LockerFormalFilled

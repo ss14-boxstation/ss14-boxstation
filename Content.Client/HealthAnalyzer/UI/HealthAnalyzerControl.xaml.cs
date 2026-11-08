@@ -92,11 +92,11 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
     // Box Change Start - Mistfit - Synth Prefix
-        var synthSpecies = _entityManager.HasComponent<SpeciesPrefixComponent>(target.Value)
-            ? Loc.GetString("synthetic-component-prefix", ("species", species))
+        var speciesText = _entityManager.TryGetComponent<SpeciesAffixComponent>(target.Value, out var speciesAffix) // Box Change - Refactor to take custom strings
+            ? Loc.GetString(speciesAffix.Affix, ("species", species))
             : species;
 
-        SpeciesLabel.Text = synthSpecies;
+        SpeciesLabel.Text = speciesText;
     // Box Change End
 
         // Box Change Start - Check Metabolism

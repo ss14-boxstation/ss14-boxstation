@@ -1,0 +1,87 @@
+- type: entity
+  abstract: true
+  id: BaseWeakBloodXenonid
+  suffix: AI, Weak blood
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: XenonidBloodWeak
+        Quantity: 650
+
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXeno ]
+  id: MobXenoWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoPraetorian ]
+  id: MobXenoPraetorianWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoDrone ]
+  id: MobXenoDroneWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoQueen ]
+  id: MobXenoQueenWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoRavager ]
+  id: MobXenoRavagerWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoRunner ]
+  id: MobXenoRunnerWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoRouny ]
+  id: MobXenoRounyWeak
+  
+- type: entity
+  parent: [ BaseWeakBloodXenonid, MobXenoSpitter ]
+  id: MobXenoSpitterWeak
+
+- type: entity
+  name: lesser drone
+  parent: MobXeno
+  id: MobXenoLesserDrone
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _RMC14/Xenonids/LesserDrone/lesser_drone.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      30: Dead # Very squishy, but spawn in much bigger groups than other vent critters.
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 6
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 150
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: XenonidBloodWeak # No spacing
+        Quantity: 300
+  - type: AcidBloodSplash
+    damage:
+      types:
+        Caustic: 10
