@@ -83,5 +83,13 @@ namespace Content.Shared.Atmos.Components
 
         [DataField]
         public ProtoId<AlertPrototype> FireAlert = "Fire";
+
+        // Start Box Change: Bool for disabling fire particles
+        /// <summary>
+        ///     Should this entity emit fire particles while burning?
+        /// </summary>
+        [DataField]
+        public bool FireParticles = true;
+        // End Box Change
     }
 }
