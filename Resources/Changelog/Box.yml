@@ -2304,3 +2304,10 @@
   id: 250
   time: '2026-11-06T18:04:28.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/373
+- author: Dizzy-Eevee
+  changes:
+  - message: Candles will no longer give off ill-fitting fire particles when lit.
+    type: Fix
+  id: 251
+  time: '2026-11-08T12:31:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/376
