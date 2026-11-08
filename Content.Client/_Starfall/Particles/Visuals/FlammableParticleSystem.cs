@@ -38,6 +38,11 @@ public sealed class FlammableParticleSystem : EntitySystem
 
     private void OnAppearanceChange(Entity<FlammableComponent> ent, ref AppearanceChangeEvent args)
     {
+        // Start Box Change: Stop candles from having fire particles
+        if (!ent.Comp.FireParticles)
+            return;
+        // End Box Change
+
         if (!_appearance.TryGetData(ent, FireVisuals.OnFire, out bool onFire))
             onFire = false;
 

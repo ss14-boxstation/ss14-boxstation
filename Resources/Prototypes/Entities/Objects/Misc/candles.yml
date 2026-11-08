@@ -38,6 +38,7 @@
       damage:
         types:
           Heat: 0.1
+      fireParticles: false # Box Change: Stop candles from having fire particles
     - type: FireVisuals
       sprite: Objects/Misc/candles.rsi
       normalState: fire-big
