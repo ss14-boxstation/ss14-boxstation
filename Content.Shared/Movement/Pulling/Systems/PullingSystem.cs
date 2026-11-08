@@ -76,6 +76,7 @@ public sealed class PullingSystem : EntitySystem
         SubscribeLocalEvent<PullableComponent, StopBeingPulledAlertEvent>(OnStopBeingPulledAlert);
         SubscribeLocalEvent<PullableComponent, GetInteractingEntitiesEvent>(OnGetInteractingEntities);
 
+        SubscribeLocalEvent<PullerComponent, PullStartedMessage>(OnStartPulling); // Box Change: Rotate to face pulled entities
         SubscribeLocalEvent<PullerComponent, MobStateChangedEvent>(OnStateChanged, after: [typeof(MobThresholdSystem)]);
         SubscribeLocalEvent<PullerComponent, AfterAutoHandleStateEvent>(OnAfterState);
         SubscribeLocalEvent<PullerComponent, EntGotInsertedIntoContainerMessage>(OnPullerContainerInsert);
@@ -106,6 +107,9 @@ public sealed class PullingSystem : EntitySystem
             if (HasComp<MouseRotatorComponent>(uid))
                 continue;
 
+            if (TryComp<InputMoverComponent>(uid, out var mover) && !mover.HasDirectionalMovement)
+                continue; // Only apply rotation if they're moving.
+
             if (puller.Pulling == null)
                 continue;
 
@@ -121,11 +125,19 @@ public sealed class PullingSystem : EntitySystem
             var pullerCoords = _transform.GetMapCoordinates(uid, xform).Position;
 
             var angle = (pulledCoords - pullerCoords).ToWorldAngle().GetCardinalDir().ToAngle();
-            if (!puller.NeedsHands)
-                angle = angle.Opposite(); // Lizards et al. should rotate away from what they're pulling
+            if (!puller.FaceTowards)
+                angle = angle.Opposite();
 
             _rotate.TryFaceAngle(uid, angle, xform);
         }
+    }
+    private void OnStartPulling(Entity<PullerComponent> ent, ref PullStartedMessage args)
+    {
+        if (!TryComp<PullableComponent>(ent.Comp.Pulling, out var pulling))
+            return; //How?
+
+        ent.Comp.FaceTowards = ent.Comp.NeedsHands ? pulling.FaceTowards : false; // Hands-free pulling (i.e. lizard/scurret tail pull) always faces away.
+
     }
     // End Box Change
 
