@@ -2311,3 +2311,14 @@
   id: 251
   time: '2026-11-08T12:31:28.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/376
+- author: Dizzy-Eevee
+  changes:
+  - message: When pulling, you will no longer be forced to face towards/away from
+      the pulled object while standing still.
+    type: Tweak
+  - message: When pulling mop buckets and the janitorial trolley, you will now face
+      away and pull them behind you.
+    type: Tweak
+  id: 252
+  time: '2026-11-08T17:54:29.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/375
