@@ -2330,3 +2330,11 @@
   id: 253
   time: '2026-11-09T15:35:52.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/377
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies will no longer make an infernal soul-shattering noise while trying
+      to gamble for the moth chitter sound.
+    type: Remove
+  id: 254
+  time: '2026-11-09T20:35:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/381
