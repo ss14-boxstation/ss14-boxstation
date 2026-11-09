@@ -115,10 +115,6 @@
         density: 60
         mask:
         - MachineMask
-  # Start Box Change: Pull mop bucket behind you instead of facing towards it
-  - type: Pullable
-    faceTowards: false
-  # End Box Change
 
 - type: entity
   name: mop bucket
@@ -379,7 +375,3 @@
       guides:
       - Janitorial
     - type: DnaSubstanceTrace
-    # Start Box Change: Pull trolley behind you instead of facing towards it
-    - type: Pullable
-      faceTowards: false
-    # End Box Change

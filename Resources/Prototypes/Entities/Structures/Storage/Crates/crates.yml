@@ -854,7 +854,7 @@
     group: null
 
 - type: entity
-  parent: CrateBaseSecure
+  parent: [CrateBaseSecure, StructureWheeled] #Box Change: Adds StructureWheeled parent to janitorial trash cart
   id: CrateTrashCartJani
   name: janitorial trash cart
   components:
