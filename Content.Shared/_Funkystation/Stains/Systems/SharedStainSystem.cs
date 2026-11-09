@@ -2,6 +2,7 @@
 using Content.Shared._Funkystation.Stains.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Clothing.Components;
 using Content.Shared.DoAfter;
 using Content.Shared.Fluids;
 using Content.Shared.Inventory;
@@ -30,6 +31,8 @@ public abstract class SharedStainSystem : EntitySystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = null!;
     [Dependency] private readonly SharedPuddleSystem _puddle = null!;
     [Dependency] private readonly SharedPopupSystem _popup = null!;
+
+    [Dependency] private EntityQuery<AttachedClothingComponent> _attachedClothingQuery; // Moff
 
     public override void Initialize()
     {
@@ -83,6 +86,11 @@ public abstract class SharedStainSystem : EntitySystem
 
     private bool IsStainBlocked(Entity<StainableComponent> ent)
     {
+        // Moff start - Any `AttachedClothing` can't be stained since it can't be cleaned.
+        if (_attachedClothingQuery.HasComp(ent))
+            return true;
+        // Moff end
+
         if (!_container.TryGetContainingContainer(ent.Owner, out var container) || !TryComp<InventoryComponent>(container.Owner, out var inv))
             return false;
 
