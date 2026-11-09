@@ -2322,3 +2322,11 @@
   id: 252
   time: '2026-11-08T17:54:29.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/375
+- author: Dizzy-Eevee
+  changes:
+  - message: The obsolete DAGD and RR consent preferences have been removed. These
+      have been handled via traits for a while now, and were only left in as a precaution.
+    type: Remove
+  id: 253
+  time: '2026-11-09T15:35:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/377
