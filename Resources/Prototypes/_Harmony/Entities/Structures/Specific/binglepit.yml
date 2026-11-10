@@ -37,9 +37,12 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Damageable
+    damageContainer: Biological # Box Change - Readd because we don't have that refactor
     damageModifierSet: Slime
-  - type: Injurable
-    damageContainer: Inorganic
+  # Box Change Start - Comment out refactor code
+  # - type: Injurable
+  #   damageContainer: Biological
+  # Box Change End
   - type: Destructible
     thresholds:
     - trigger:
@@ -61,10 +64,10 @@
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
   - type: RequireProjectileTarget
   # Box Change Start - No Solution Refactor
-    - type: SolutionContainerManager
-      solutions:
-        drainBuffer:
-          maxVol: 1000
+  - type: SolutionContainerManager
+    solutions:
+      drainBuffer:
+        maxVol: 1000
   # Box Change End
   - type: Drain
     unitsPerSecond: 10

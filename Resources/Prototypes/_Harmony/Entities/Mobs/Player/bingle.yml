@@ -146,8 +146,10 @@
     damageModifierSet: BingleUpgraded
   - type: Insulated
     coefficient: 0
-  - type: Injurable
-    damageContainer: Biological
+  # Box Change Start - Comment out refactor code
+  # - type: Injurable
+  #   damageContainer: Biological
+  # Box Change End
 
 - type: entity
   parent: MobBingleUpgraded
