@@ -2338,3 +2338,11 @@
   id: 254
   time: '2026-11-09T20:35:12.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/381
+- author: fossa1212
+  changes:
+  - message: When pulling most wheeled objects, you will now face away and pull them
+      behind you.
+    type: Tweak
+  id: 255
+  time: '2026-11-10T14:13:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/382
