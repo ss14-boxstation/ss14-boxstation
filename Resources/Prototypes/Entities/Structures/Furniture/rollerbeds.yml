@@ -1,6 +1,6 @@
 - type: entity
   id: RollerBed
-  parent: [BaseItem, BaseDeployFoldable]
+  parent: [BaseItem, BaseDeployFoldable, StructureWheeled] #Box Change: Adds StructureWheeled parent to rollerbeds
   name: rollerbed
   description: Used to carry patients around without damaging them.
   components:
