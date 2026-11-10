@@ -9,7 +9,7 @@
     stealGroup: DigiboardMassMedia
   - type: Objective
     difficulty: 0.8
-    
+
 - type: entity
   parent: BaseThiefStealObjective
   id: BriefcaseHoPStealObjective
@@ -43,3 +43,14 @@
     stealGroup: BriefcaseLawyer
   - type: Objective
     difficulty: 0.8
+
+- type: entity
+  parent: BaseThiefStealAnimalObjective
+  id: PoppyStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ StationEngineer, AtmosphericTechnician ]
+  - type: StealCondition
+    stealGroup: AnimalPoppy
+  - type: Objective
+    difficulty: 1

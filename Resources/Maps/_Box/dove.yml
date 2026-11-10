@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.1
+  engineVersion: 272.0.10
   forkId: ""
   forkVersion: ""
-  time: 08/14/2026 14:40:54
-  entityCount: 21616
+  time: 11/10/2026 19:46:17
+  entityCount: 21617
 maps:
 - 1
 grids:
@@ -106866,16 +106866,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: PosterHarmonyEnrico
-  entities:
-  - uid: 15905
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 57.5,-23.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: PosterHarmonyFaded
   entities:
   - uid: 15906
@@ -106889,22 +106879,6 @@ entities:
     components:
     - type: Transform
       pos: -30.5,-18.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: PosterHarmonyHarmony
-  entities:
-  - uid: 15908
-    components:
-    - type: Transform
-      pos: 42.5,-23.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 15909
-    components:
-    - type: Transform
-      pos: 42.5,-1.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -106944,15 +106918,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 20.5,-16.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: PosterHarmonyMoney
-  entities:
-  - uid: 15914
-    components:
-    - type: Transform
-      pos: -21.5,-34.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -111713,6 +111678,35 @@ entities:
       parent: 2
 - proto: RandomPosterLegit
   entities:
+  - uid: 15905
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 57.5,-23.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 15908
+    components:
+    - type: Transform
+      pos: 42.5,-23.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 15909
+    components:
+    - type: Transform
+      pos: 42.5,-1.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 15914
+    components:
+    - type: Transform
+      pos: -21.5,-34.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
   - uid: 16709
     components:
     - type: Transform
@@ -119523,6 +119517,13 @@ entities:
     components:
     - type: Transform
       pos: -12.5,-23.5
+      parent: 2
+- proto: SpawnMobPossumPoppy
+  entities:
+  - uid: 21352
+    components:
+    - type: Transform
+      pos: -38.5,-3.5
       parent: 2
 - proto: SpawnMobRaccoonMorticia
   entities:
