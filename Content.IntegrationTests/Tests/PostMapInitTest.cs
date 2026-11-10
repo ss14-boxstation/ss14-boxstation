@@ -135,6 +135,7 @@ namespace Content.IntegrationTests.Tests
 			"Elkridge", // Box - Map Hardforking - Harmony, Developed by deerstop, maintained by luckyshotpictures
             "Amber", // Box - Map Hardforking - Harmony, Developed by Southbridge, maintained by whythelettuce
             "Dove", // Box, Ported from Harmony, By TillsterRulz
+            "Banana", // Box - Ported from Impstation
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
