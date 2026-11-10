@@ -130,7 +130,7 @@
     ShivaStealObjective: 1
     TropicoStealObjective: 1
     GlorpStealObjective: 1 # Harmony Objective
-    PoppyStealObjective: 1 # Box Objective
+    PoppyStealObjective: 1 # Box Change: Poppy (Engineering Pet)
 
 - type: weightedRandom
   id: ThiefObjectiveGroupEscape
