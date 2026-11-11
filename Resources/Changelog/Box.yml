@@ -2338,3 +2338,21 @@
   id: 254
   time: '2026-11-09T20:35:12.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/381
+- author: fossa1212
+  changes:
+  - message: When pulling most wheeled objects, you will now face away and pull them
+      behind you.
+    type: Tweak
+  id: 255
+  time: '2026-11-10T14:13:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/382
+- author: Dizzy-Eevee
+  changes:
+  - message: Powernet consumers like lathes, computers, blenders, centrifuges, electrolyzers,
+      grinders, holopads, microwaves, etc. now have simple dynamic power consumption
+      behavior. When not in use, they will consume either little or no power, and
+      while in use, they will consume a sane amount of power.
+    type: Add
+  id: 256
+  time: '2026-11-11T02:23:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/389
