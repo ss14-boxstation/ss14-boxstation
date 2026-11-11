@@ -37,7 +37,7 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Damageable
-    damageContainer: Biological # Box Change - Readd because we don't have that refactor
+    damageContainer: Inorganic # Box Change - Readd because we don't have that refactor, also bring it back to Inorganic
     damageModifierSet: Slime
   # Box Change Start - Comment out refactor code
   # - type: Injurable
