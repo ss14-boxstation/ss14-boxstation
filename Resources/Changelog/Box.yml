@@ -2356,3 +2356,16 @@
   id: 256
   time: '2026-11-11T02:23:04.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/389
+- author: CollectionOfBones128
+  changes:
+  - message: '[Harmony] Bingles can now safely walk over broken glass! Bongle!'
+    type: Tweak
+  - message: '[Harmony] Gives Bingles levels of insulation based on upgrades.'
+    type: Tweak
+  - message: '[Harmony] Bingle pits now always work while weightless.'
+    type: Tweak
+  - message: '[Harmony] Bingle pits can no longer be attacked from the inside.'
+    type: Fix
+  id: 257
+  time: '2026-11-11T18:14:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/384
