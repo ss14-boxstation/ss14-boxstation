@@ -25,6 +25,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Content.Shared.Atmos;
 
 namespace Content.Server.Mech.Systems;
 
