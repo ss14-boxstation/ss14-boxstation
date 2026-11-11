@@ -16,7 +16,7 @@
       - !type:Oxygenate
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Human, Animal, Rat, Plant, Harpy ] # DeltaV
+          type: [ Human, Animal, Rat, Plant, Harpy, Thaven ] # Box Change - Add Thaven and Harpy metabs
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -110,6 +110,10 @@
         - !type:MetabolizerTypeCondition
           type: [Thaven ]
           inverted: true
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
 #Box Change End - Thaven Metab
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
@@ -122,7 +126,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Harpy ]
-        factor: -8
+        factor: -16 # -8 -> -16
       # End Box Change
   reactiveEffects:
     Flammable:
@@ -168,7 +172,11 @@
         - !type:MetabolizerTypeCondition
           type: [Thaven ]
           inverted: true
-#Box Change Start - Thaven Metab
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Thaven ]
+#Box Change End - Thaven Metab
       # We need a metabolism effect on reagent removal
       - !type:AdjustAlert
         alertType: Toxins
@@ -180,7 +188,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Harpy ]
-        factor: -8
+        factor: -16 # -8 -> -16
       # End Box Change
 
 - type: reagent
@@ -218,7 +226,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Harpy ]
-        factor: -12
+        factor: -24 # -12 -> -24
       # End Box Change
     Respiration:
       effects:
@@ -253,7 +261,7 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Harpy ]
-        factor: -12
+        factor: -24 # -12 -> -24
       # End Box Change
 
 - type: reagent
@@ -482,5 +490,5 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Harpy ]
-        factor: -4
+        factor: -8 # -4 -> -8
       # End Box Change

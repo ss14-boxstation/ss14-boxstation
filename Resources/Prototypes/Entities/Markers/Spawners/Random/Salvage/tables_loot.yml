@@ -233,6 +233,11 @@
         weight: 0.25
       - id: ClothingHeadHatWeldingMaskPainted
         weight: 0.1
+  # Box Change Start - PKA Expansion
+    # Roundstart PKAs
+    - id: WeaponSalvageAcceleratorSidearm
+      weight: 0.5
+  # Box Chanege End
 
 - type: entityTable
   id: SalvageEquipmentRare
@@ -261,6 +266,11 @@
     - id: PickaxeLight
       weight: 0.5
     # Box Change end - Adds light picks to the loot table
+  # Box Change Start - PKA Expansion
+    # Non-roundstart PKAs, that aren't exclusively legendary
+    - id: WeaponSalvageAcceleratorShotgun
+      weight: 0.5
+  # Box Change End
 
 - type: entityTable
   id: SalvageEquipmentLegendary
@@ -281,6 +291,11 @@
       - id: PKAUpgradeDamage
       - id: PKAUpgradeRange
       - id: PKAUpgradeFireRate
+  # Box Change Start - PKA Expansion
+    # This should be the cream of the crop, best of the best, coolest experimental PKAs
+    - id: WeaponSalvageAcceleratorRifle
+    - id: WeaponSalvageAcceleratorShotgun
+  # Box Change End
 
 
 - type: entityTable

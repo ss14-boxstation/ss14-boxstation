@@ -4,12 +4,18 @@
     DrinkGlass: 20 #Kept glasses at top for ease to differentiate from booze.
     DrinkShotGlass: 10
     DrinkGlassCoupeShaped: 10
+    DrinkMug: 10 # Box Change: Add mugs (for coffee/tea/etc)
     DrinkVacuumFlask: 5
     DrinkFlaskBar: 5
     DrinkShaker: 5
     DrinkJigger: 5
     DrinkIceBucket: 2
     BarSpoon: 3
+    # Start Box Change: Add tea brewing equipment
+    Teaspoon: 3
+    Kettle: 2
+    DrinkTeapotEmpty: 2
+    # End Box Change
     CustomDrinkJug: 2 #to allow for custom drinks in the soda/booze dispensers
     DrinkAbsintheBottleFull: 2
     DrinkAleBottleFull: 5

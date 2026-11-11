@@ -24,13 +24,9 @@
       - Window
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/window.rsi
-    sprite: _Harmony/Structures/Windows/window.rsi
+    sprite: _Impstation/Structures/Windows/window.rsi # Impstation
   - type: Icon
-#    sprite: Structures/Windows/window.rsi
-    sprite: _Harmony/Structures/Windows/window.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/window.rsi # Impstation
     state: full
   - type: Physics
     bodyType: Static
@@ -80,10 +76,7 @@
         acts: [ "Destruction" ]
   - type: Airtight
   - type: IconSmooth
-# Start of Harmony Change: Updates IconSmooth key
-#    key: windows
-    key: station
-# End of Harmony Change
+    key: walls # Impstation
     base: window
   - type: InteractionPopup
     interactSuccessString: comp-window-knock
@@ -111,13 +104,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change
-#    sprite: Structures/Windows/tinted_window.rsi
-    sprite: _Harmony/Structures/Windows/tinted_window.rsi
+    sprite: _Impstation/Structures/Windows/tinted_window.rsi # Impstation
   - type: Icon
-#    sprite: Structures/Windows/tinted_window.rsi
-    sprite: _Harmony/Structures/Windows/tinted_window.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/tinted_window.rsi # Impstation
   - type: IconSmooth
     base: twindow
   - type: Construction
@@ -275,10 +264,7 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/window_diagonal.rsi
-    sprite: _Harmony/Structures/Windows/window_diagonal.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/window_diagonal.rsi # Impstation
     state: state0
   - type: Tag
     tags:
@@ -286,16 +272,10 @@
     - Window
   - type: IconSmooth
     mode: Diagonal
-# Start of Harmony Change: Updates IconSmooth key
-#    key: windows
-    key: station
-# End of Harmony Change
+    key: walls # Impstation
     base: state
   - type: Icon
-# Start of Harmony Change: Updates Sprite Pathing
-#    sprite: Structures/Windows/window_diagonal.rsi
-    sprite: _Harmony/Structures/Windows/window_diagonal.rsi
-# End of Harmony Change
+    sprite: _Impstation/Structures/Windows/window_diagonal.rsi # Impstation
     state: state0
   - type: Fixtures
     fixtures:

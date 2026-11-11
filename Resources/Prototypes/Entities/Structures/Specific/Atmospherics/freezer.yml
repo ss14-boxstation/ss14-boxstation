@@ -14,10 +14,34 @@
 - type: entity
   parent: [AirSensorFreezerBase, GasVentPump]
   id: GasVentPumpFreezer
+  # Start Box Change: imp - align pipe layers, alt pipe layers
+  placement:
+    mode: AlignAtmosPipeLayers # imp edit
+  components:
+  # imp edit start
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasVentPumpFreezer
+      Secondary: GasVentPumpFreezerAlt1
+      Tertiary: GasVentPumpFreezerAlt2
+  # imp edit end
+  # End Box Change
 
 - type: entity
   parent: [AirSensorFreezerBase, GasVentScrubber]
   id: GasVentScrubberFreezer
+  # Start Box Change: imp - align pipe layers, alt pipe layers
+  placement:
+    mode: AlignAtmosPipeLayers # imp edit
+  components:
+  # imp edit start
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasVentScrubberFreezer
+      Secondary: GasVentScrubberFreezerAlt1
+      Tertiary: GasVentScrubberFreezerAlt2
+  # imp edit end
+  # End Box Change
 
 # air alarm proto with auto: false to prevent the automatic switching of modes overriding the default values
 - type: entity

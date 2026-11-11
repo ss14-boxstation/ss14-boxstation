@@ -12,6 +12,7 @@
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
+  - WeaponSalvageAcceleratorSidearm # Box Change - PKA Expansion
   # These are roundstart but not replenishable for salvage
 
 # Harmony change start - Remove special ammo types

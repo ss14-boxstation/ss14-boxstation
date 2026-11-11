@@ -78,8 +78,4 @@
         reagents:
         - ReagentId: Mechazine
           Quantity: 30
-  - type: Hypospray
-    solutionName: pen
-    transferAmount: 30
-    onlyAffectsMobs: false
-    injectOnly: true
+

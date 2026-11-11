@@ -26,7 +26,7 @@
   name: air vent
   description: Has a valve and a pump attached to it.
   placement:
-    mode: SnapgridCenter
+    mode: AlignAtmosPipeLayers #Box Change: imp - SnapgridCenter -> AlignAtmosPipeLayers
   components:
     - type: ApcPowerReceiver
     - type: ExtensionCableReceiver
@@ -77,6 +77,13 @@
       guides:
       - AirVent
       - DeviceMonitoringAndControl
+    # Start Box Change: imp - alt layers
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: GasVentPump
+        Secondary: GasVentPumpAlt1
+        Tertiary: GasVentPumpAlt2
+    # End Box Change
 
 - type: entity
   parent: GasUnaryBase
@@ -84,7 +91,7 @@
   name: passive vent
   description: It's an open vent.
   placement:
-    mode: SnapgridCenter
+    mode: AlignAtmosPipeLayers #Box Change: imp - SnapgridCenter -> AlignAtmosPipeLayers
   components:
     - type: SubFloorHide
       visibleLayers:
@@ -109,6 +116,13 @@
     - type: GuideHelp
       guides:
       - PassiveVent
+    # Start Box Change: imp - alt layers
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: GasPassiveVent
+        Secondary: GasPassiveVentAlt1
+        Tertiary: GasPassiveVentAlt2
+    # End Box Change
 
 - type: entity
   parent: [GasUnaryBase, AirSensorBase]
@@ -116,7 +130,7 @@
   name: air scrubber
   description: Has a valve and pump attached to it.
   placement:
-    mode: SnapgridCenter
+    mode: AlignAtmosPipeLayers #Box Change: imp - SnapgridCenter -> AlignAtmosPipeLayers
   components:
     - type: ApcPowerReceiver
     - type: ExtensionCableReceiver
@@ -167,6 +181,13 @@
       guides:
       - AirScrubber
       - DeviceMonitoringAndControl
+    # Start Box Change: imp - alt layers
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: GasVentScrubber
+        Secondary: GasVentScrubberAlt1
+        Tertiary: GasVentScrubberAlt2
+    # End Box Change
 
 - type: entity
   parent: GasUnaryBase
@@ -174,7 +195,7 @@
   name: air injector
   description: Has a valve and pump attached to it.
   placement:
-    mode: SnapgridCenter
+    mode: AlignAtmosPipeLayers #Box Change: imp - SnapgridCenter -> AlignAtmosPipeLayers
   components:
     - type: Sprite
       drawdepth: FloorObjects
@@ -211,6 +232,13 @@
     - type: GuideHelp
       guides:
       - AirInjector
+    # Start Box Change: imp - alt layers
+    - type: AtmosPipeLayers
+      alternativePrototypes:
+        Primary: GasOutletInjector
+        Secondary: GasOutletInjectorAlt1
+        Tertiary: GasOutletInjectorAlt2
+    # End Box Change
 
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]

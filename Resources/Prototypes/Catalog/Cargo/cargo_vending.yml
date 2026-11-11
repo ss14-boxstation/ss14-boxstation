@@ -172,7 +172,7 @@
     sprite: Objects/Specific/Service/vending_machine_restock.rsi
     state: base
   product: CrateVendingMachineRestockSeedsFilled
-  cost: 3600
+  cost: 3800 # Box Change: 3600 -> 3800 because of frontier bees
   category: cargoproduct-category-name-hydroponics
   group: market
 

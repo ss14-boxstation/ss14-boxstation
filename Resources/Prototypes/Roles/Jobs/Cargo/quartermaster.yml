@@ -47,8 +47,8 @@
   equipment:
     id: QuartermasterPDA
     # ears: ClothingHeadsetQM # Box Change: Headset moved to loadout option
-    belt: BoxFolderClipboardThreePapers
-    pocket1: AppraisalTool
+    belt: ClothingBeltUtilityCargo # Box Change: Belt slot changed from clipboard to cargo utility belt
+    # pocket1: AppraisalTool # Box Change: comments out appraisal tool and places it into the belt
   storage:
     back:
     - Flash

@@ -11,6 +11,98 @@
     - type: Speech
       speechVerb: Wawa
       speechSounds: Wawa
+    - type: TypingIndicator
+      proto: moth
+
+- type: trait
+  id: RaisedByAllulalo
+  name: trait-raisedbyallulalo-name
+  description: trait-raisedbyallulalo-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Allulalo
+      speechSounds: Allulalo
+    - type: TypingIndicator
+      proto: allulalo
+
+- type: trait
+  id: RaisedByHarpies
+  name: trait-raisedbyharpies-name
+  description: trait-raisedbyharpies-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Harpy
+      speechSounds: Harpy
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: RaisedByAvali
+  name: trait-raisedbyavali-name
+  description: trait-raisedbyavali-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Parrot
+      speechSounds: MaleAvali
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: RaisedByRodentia
+  name: trait-raisedbyrodentia-name
+  description: trait-raisedbyrodentia-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Rodentia
+      speechSounds: Squeak
+    - type: TypingIndicator
+      proto: rodentia
+
+- type: trait
+  id: RaisedByThaven
+  name: trait-raisedbythaven-name
+  description: trait-raisedbythaven-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Default
+      speechSounds: Alto
+    - type: TypingIndicator
+      proto: thaven
+
+- type: trait
+  id: RaisedByVulpkanin
+  name: trait-raisedbyvulpkanin-name
+  description: trait-raisedbyvulpkanin-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechVerb: Vulpkanin
+      speechSounds: Vulpkanin
+    - type: TypingIndicator
+      proto: default
 
 # Full speech and vocal replacement traits
 - type: trait
@@ -30,3 +122,187 @@
         Male: Scurret
         Female: Scurret
         Unsexed: Scurret
+    - type: TypingIndicator
+      proto: moth
+
+- type: trait
+  id: AllulaloVocals
+  name: trait-allulalovocals-name
+  description: trait-allulalovocals-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: AllulaloAccent
+    - type: Speech
+      speechSounds: Allulalo
+      speechVerb: Allulalo
+      allowedEmotes: ['Chitter', 'Hiss']
+    - type: Vocal
+      sounds:
+        Male: UnisexAllulalo
+        Female: UnisexAllulalo
+        Unsexed: UnisexAllulalo
+    - type: TypingIndicator
+      proto: allulalo
+
+- type: trait
+  id: HarpyVocals
+  name: trait-harpyvocals-name
+  description: trait-harpyvocals-desc
+  cost: 0
+  category: Vocal
+  effects: # Might need something to add the "HarpyEmotes" tag?
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechSounds: Harpy
+      speechVerb: Harpy
+      allowedEmotes: ['Meow', 'Hiss', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Squish']
+    - type: Vocal
+      sounds:
+        Male: SoundsHarpy
+        Female: SoundsHarpy
+        Unsexed: SoundsHarpy
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: AvaliVocals
+  name: trait-avalivocals-name
+  description: trait-avalivocals-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechSounds: MaleAvali
+      speechVerb: Parrot
+      allowedEmotes: ['Hiss']
+    - type: Vocal
+      sounds:
+        Male: MaleAvali
+        Female: FemaleAvali
+        Unsexed: MaleAvali
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: RodentiaVocals
+  name: trait-rodentiavocals-name
+  description: trait-rodentiavocals-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechSounds: Squeak
+      speechVerb: Rodentia
+      allowedEmotes: ['Squeak']
+    - type: Vocal
+      sounds:
+        Male: MaleRodentia
+        Female: FemaleRodentia
+        Unsexed: MaleRodentia
+    - type: TypingIndicator
+      proto: rodentia
+
+- type: trait
+  id: ThavenVocals
+  name: trait-thavenvocals-name
+  description: trait-thavenvocals-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: NoContractionsAccent
+    - type: Speech
+      speechSounds: Alto
+      speechVerb: Default
+    - type: Vocal
+      sounds:
+        Male: MaleThaven
+        Female: FemaleThaven
+        Unsexed: UnisexThaven
+    - type: TypingIndicator
+      proto: thaven
+
+- type: trait
+  id: VulpkaninVocals
+  name: trait-vulpkaninvocals-name
+  description: trait-vulpkaninvocals-desc
+  cost: 0
+  category: Vocal
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechSounds: Vulpkanin
+      speechVerb: Vulpkanin
+      allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Howl', 'Growl' ]
+    - type: Vocal
+      sounds:
+        Male: MaleVulpkanin
+        Female: FemaleVulpkanin
+        Unsexed: MaleVulpkanin
+    - type: TypingIndicator
+      proto: default
+
+- type: trait
+  id: SynthVocals
+  name: trait-synthvocals-name
+  description: trait-synthvocals-desc
+  cost: 0
+  category: Quirks # Vocal traits lock to 1
+  conditions:
+  - !type:AnyOfCondition
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+    - !type:IsSpeciesCondition
+      species: Vox
+    - !type:TraitDependencyCondition
+      requires:
+      - HarmonyVoxVocals
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: TypingIndicator
+      proto: robot
+
+# Damaged Borg Accent
+- type: trait
+  id: DamagedSiliconAccentTrait
+  name: trait-damagedsiliconaccent-name
+  description: trait-damagedsiliconaccent-desc
+  cost: 0
+  category: Accents
+  conditions:
+  - !type:AnyOfCondition # Add Voice of/Raised by IPCs to this too
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+    - !type:IsSpeciesCondition
+      species: Vox
+    - !type:TraitDependencyCondition
+      requires:
+      - HarmonyVoxVocals
+    - !type:TraitDependencyCondition
+      requires:
+      - SynthVocals
+  - !type:TraitDependencyCondition
+    conflicts:
+    - Synth
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: DamagedSiliconAccent
+      enableChargeCorruption: false
+      damageAtMaxCorruption: 200

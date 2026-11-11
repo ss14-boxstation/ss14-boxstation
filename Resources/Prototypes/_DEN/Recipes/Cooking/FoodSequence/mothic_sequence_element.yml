@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2025 Winter
+# SPDX-FileCopyrightText: 2025 leo
+# SPDX-FileCopyrightText: 2025 portfiend
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+# SPDX-FileCopyrightText: 2026 Eightballll
+# SPDX-FileCopyrightText: 2026 Kellaris
+# SPDX-FileCopyrightText: 2026 sheepie
+#
+# SPDX-License-Identifier: MIT
+
+# DEN Plushies
+
+- type: foodSequenceElement
+  id: HeartInsertPlushie
+  name: food-sequence-cotton-burger-content-plushie-heart-insert
+  sprites:
+    - sprite: _DEN/Objects/Fun/teddybear.rsi
+      state: plush_heart
+
+- type: foodSequenceElement
+  id: TeddyBearPlushie
+  scale: 0.8, 0.8
+  name: food-sequence-cotton-burger-content-plushie-teddy-bear
+  sprites:
+    - sprite: _DEN/Objects/Fun/teddybear.rsi
+      state: teddybear

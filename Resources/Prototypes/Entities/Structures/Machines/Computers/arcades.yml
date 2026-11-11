@@ -5,8 +5,6 @@
   name: arcade
   parent: BaseComputer
   components:
-  - type: ApcPowerReceiver
-    powerLoad: 350
   - type: ExtensionCableReceiver
   - type: PointLight
     radius: 1.8
@@ -156,6 +154,10 @@
     - WeaponWaterPistol
     - WhoopieCushion
     - Whistle
+    # Start Box Change: Den teddy bears
+    - PlushieTeddyBear
+    - PlushieTeddyBearRecolorableRandom
+    # End Box Change
   - type: WiresPanel
   - type: Wires
     layoutId: Arcade

@@ -23,10 +23,26 @@
 - type: entity
   parent: [AirSensorVoxBase, GasVentPump]
   id: GasVentPumpVox
+  # Start Box Change: imp - align pipe layers, alt pipe layers
+  placement:
+    mode: AlignAtmosPipeLayers # imp edit
+  components:
+  # imp edit start
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasVentPumpVox
+      Secondary: GasVentPumpVoxAlt1
+      Tertiary: GasVentPumpVoxAlt2
+  # imp edit end
+  # End Box Change
 
 - type: entity
   parent: [AirSensorVoxBase, GasVentScrubber]
   id: GasVentScrubberVox
+  # Start Box Change: imp - align pipe layers
+  placement:
+    mode: AlignAtmosPipeLayers # imp edit
+  # End Box Change
   components:
   - type: GasVentScrubber
     wideNet: true # Air alarm with auto mode overrides filters with hardcoded defaults so default to widenet
@@ -39,6 +55,13 @@
     - Ammonia
     - NitrousOxide
     - Frezon
+  # Start Box Change: imp - alt pipe layers
+  - type: AtmosPipeLayers
+    alternativePrototypes:
+      Primary: GasVentScrubberVox
+      Secondary: GasVentScrubberVoxAlt1
+      Tertiary: GasVentScrubberVoxAlt2
+  # End Box Change
 
 # use this to prevent overriding filters with hardcoded defaults
 - type: entity

@@ -38,6 +38,7 @@
   components:
     - type: WeaponArcVisuals
       animation: Thrust
+      fadeOut: false # Box Change: Remove fadeout for most melee weapon arcs; See _Box/Entities/Effects/weapon_arc.yml
 
 - type: entity
   id: WeaponArcSlash
@@ -46,6 +47,7 @@
   components:
     - type: WeaponArcVisuals
       animation: Slash
+      fadeOut: false # Box Change: Remove fadeout for most melee weapon arcs; See _Box/Entities/Effects/weapon_arc.yml
 
 
 - type: entity

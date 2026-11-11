@@ -19,6 +19,10 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared._Box.Traits; // Box Change - Misfit - Add synth prefix to species
+// Box Change Start for IPCs to display unquie Unrevivable text
+using Content.Shared._EE.Silicon.Components;
+using Content.Shared._Box.Silicons;
+// Box Change End
 namespace Content.Client.HealthAnalyzer.UI;
 
 // Health analyzer UI is split from its window because it's used by both the
@@ -88,11 +92,11 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
                 : Loc.GetString("health-analyzer-window-entity-unknown-species-text");
 
     // Box Change Start - Mistfit - Synth Prefix
-        var synthSpecies = _entityManager.HasComponent<SpeciesPrefixComponent>(target.Value)
-            ? Loc.GetString("synthetic-component-prefix", ("species", species))
+        var speciesText = _entityManager.TryGetComponent<SpeciesAffixComponent>(target.Value, out var speciesAffix) // Box Change - Refactor to take custom strings
+            ? Loc.GetString(speciesAffix.Affix, ("species", species))
             : species;
 
-        SpeciesLabel.Text = synthSpecies;
+        SpeciesLabel.Text = speciesText;
     // Box Change End
 
         // Box Change Start - Check Metabolism
@@ -150,7 +154,18 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         if (showAlerts)
             AlertsContainer.RemoveAllChildren();
 
-        if (state.Unrevivable == true)
+        // Start Box Change to give IPCs unique medical scanner text for unrevivable
+        // if (state.Unrevivable == true)
+        if (state.Unrevivable == true && _entityManager.HasComponent<SiliconComponent>(target))
+            AlertsContainer.AddChild(new RichTextLabel
+            {
+                Text = Loc.GetString("health-analyzer-window-entity-unrevivable-text-ipc"),
+                Margin = new Thickness(0, 4),
+                MaxWidth = 300
+            });
+
+        else if (state.Unrevivable == true)
+        // End Box Change
             AlertsContainer.AddChild(new RichTextLabel
             {
                 Text = Loc.GetString("health-analyzer-window-entity-unrevivable-text"),

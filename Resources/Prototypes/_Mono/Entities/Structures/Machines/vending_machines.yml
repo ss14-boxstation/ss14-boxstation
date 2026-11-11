@@ -1,0 +1,48 @@
+# SPDX-FileCopyrightText: 2025 Blu
+# SPDX-FileCopyrightText: 2025 BlueHNT
+# SPDX-FileCopyrightText: 2025 Redrover1760
+# SPDX-FileCopyrightText: 2025 gus
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineBarista
+  name: Barista Vendor
+  description: Sells a variety of coffees, teas, and pastries.
+  #suffix: POI # Box Change: Remove suffix
+  components:
+  - type: VendingMachine
+    pack: BaristaVendInventory
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    # ejectState: eject-unshaded
+    # denyState: deny-unshaded
+    ejectDelay: 1.9
+    initialStockQuality: 1
+  # Start Box Change: Remove frontier component
+  #- type: MarketModifier
+  #  mod: 8
+  # End Box Change
+  - type: DatasetVocalizer # Box Change: Advertise -> DatasetVocalizer
+    dataset: BaristaAds # Box Change: pack -> dataset
+  - type: SpeakOnUIClosed
+    pack: BaristaGoodbyes
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/VendingMachines/barista.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#D82929"

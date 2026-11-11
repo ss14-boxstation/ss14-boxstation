@@ -29,6 +29,10 @@
       state: cpu_engineering
     - type: ComputerBoard
       prototype: ComputerAlert
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopAlert # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -40,6 +44,10 @@
       state: cpu_engineering
     - type: ComputerBoard
       prototype: ComputerAtmosMonitoring
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopAtmosMonitoring
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -51,6 +59,10 @@
       state: cpu_engineering
     - type: ComputerBoard
       prototype: ComputerPowerMonitoring
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopPowerMonitoring # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -62,6 +74,10 @@
       state: cpu_medical
     - type: ComputerBoard
       prototype: ComputerMedicalRecords
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopMedicalRecords # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -73,6 +89,10 @@
       state: cpu_security
     - type: ComputerBoard
       prototype: ComputerCriminalRecords
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopCriminalRecords # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -84,6 +104,10 @@
       state: cpu_command
     - type: ComputerBoard
       prototype: ComputerStationRecords
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopStationRecords # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -97,6 +121,10 @@
       prototype: ComputerCargoOrders
     - type: StaticPrice
       price: 750
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopCargoOrders # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -110,6 +138,10 @@
     prototype: ComputerCargoOrdersEngineering
   - type: StaticPrice
     price: 750
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopCargoOrdersEngineering
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -123,6 +155,10 @@
     prototype: ComputerCargoOrdersMedical
   - type: StaticPrice
     price: 750
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopCargoOrdersMedical
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -136,6 +172,10 @@
     prototype: ComputerCargoOrdersScience
   - type: StaticPrice
     price: 750
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopCargoOrdersScience
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -149,6 +189,10 @@
     prototype: ComputerCargoOrdersSecurity
   - type: StaticPrice
     price: 750
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopCargoOrdersSecurity
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -162,6 +206,10 @@
     prototype: ComputerCargoOrdersService
   - type: StaticPrice
     price: 750
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopCargoOrdersService
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -175,6 +223,10 @@
     prototype: ComputerFundingAllocation
   - type: StaticPrice
     price: 750
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopFundingAllocation
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -186,6 +238,10 @@
       state: cpu_supply
     - type: ComputerBoard
       prototype: ComputerPalletConsole
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopPalletConsole
+    # End Box Change
 
 - type: entity
   id: CargoBountyComputerCircuitboard
@@ -198,6 +254,10 @@
   - type: ComputerBoard
     prototype: ComputerCargoBounty
   - type: StaticPrice
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopCargoBounty # Frontier
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -209,6 +269,10 @@
     state: cpu_supply
   - type: ComputerBoard
     prototype: ComputerSalvageJobBoard
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopSalvageJobBoard
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -222,6 +286,10 @@
       prototype: ComputerSalvageExpedition
     - type: StealTarget
       stealGroup: SalvageExpeditionsComputerCircuitboard
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopSalvageExpedition # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -235,6 +303,10 @@
     prototype: ComputerShuttleCargo
   - type: StealTarget
     stealGroup: CargoShuttleConsoleCircuitboard
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopShuttleCargo
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -249,6 +321,10 @@
   - type: Tag
     tags:
     - SurveillanceCameraMonitorCircuitboard
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopSurveillanceCameraMonitor # Frontier
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -260,6 +336,10 @@
     state: cpu_service
   - type: ComputerBoard
     prototype: ComputerSurveillanceWirelessCameraMonitor
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopSurveillanceWirelessCameraMonitor # Frontier
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -271,6 +351,10 @@
     state: cpu_science
   - type: ComputerBoard
     prototype: ComputerSurveillanceWirelessXenoborgCameraMonitor
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopSurveillanceWirelessXenoborgCameraMonitor
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -294,6 +378,10 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: ComputerResearchAndDevelopment
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopResearchAndDevelopment # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -305,6 +393,10 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: ComputerAnalysisConsole
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopAnalysisConsole # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -327,6 +419,10 @@
     state: cpu_medical
   - type: ComputerBoard
     prototype: ComputerCrewMonitoring
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopCrewMonitoring # Frontier
+  # End Box Change
 
 - type: entity
   parent: [BaseComputerCircuitboard, BaseCommandContraband]
@@ -343,6 +439,10 @@
     - type: Tag
       tags:
       - HighRiskItem
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopId # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -354,6 +454,10 @@
       state: cpu_medical
     - type: ComputerBoard
       prototype: computerBodyScanner
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopBodyScanner # Frontier
+    # End Box Change
 
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
@@ -365,6 +469,10 @@
       state: cpu_command
     - type: ComputerBoard
       prototype: ComputerComms
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopComms # Frontier
+    # End Box Change
 
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseSyndicateContraband ]
@@ -376,6 +484,10 @@
     state: cpu_syndicate
   - type: ComputerBoard
     prototype: SyndicateComputerComms
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: SyndicateComputerTabletopComms # Frontier
+  # End Box Change
 
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseSyndicateContraband ]
@@ -387,6 +499,10 @@
     state: cpu_wizard
   - type: ComputerBoard
     prototype: WizardComputerComms
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopWizardComms
+  # End Box Change
 
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseCentcommContraband ]
@@ -398,6 +514,10 @@
     state: cpu_centcomm
   - type: ComputerBoard
     prototype: CentcommComputerComms
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopCentcommComms
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -408,6 +528,10 @@
     state: cpu_supply
   - type: ComputerBoard
     prototype: ComputerRadar
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopRadar # Frontier
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -419,6 +543,10 @@
       state: cpu_engineering
     - type: ComputerBoard
       prototype: ComputerSolarControl
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopSolarControl # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -459,6 +587,10 @@
     state: cpu_supply
   - type: ComputerBoard
     prototype: ComputerShuttle
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopShuttle # Frontier
+  # End Box Change
 
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseSyndicateContraband ]
@@ -470,6 +602,11 @@
     state: cpu_syndicate
   - type: ComputerBoard
     prototype: ComputerShuttleSyndie
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard
+    prototype: ComputerTabletopShuttleAntag
+  # End Box Change
+
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -481,6 +618,10 @@
       state: cpu_medical
     - type: ComputerBoard
       prototype: ComputerCloningConsole
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopCloningConsole # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -492,6 +633,10 @@
       state: cpu_command
     - type: ComputerBoard
       prototype: ComputerIFF
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopIFF # Frontier
+    # End Box Change
 
 - type: entity
   parent: [ BaseComputerCircuitboard, BaseSyndicateContraband ]
@@ -503,6 +648,10 @@
     state: cpu_syndicate
   - type: ComputerBoard
     prototype: ComputerIFFSyndicate
+  # Start Box Change: Tabletop
+  - type: ComputerTabletopBoard # Frontier
+    prototype: ComputerTabletopIFFSyndicate # Frontier
+  # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -516,6 +665,10 @@
       price: 150
     - type: ComputerBoard
       prototype: ComputerMassMedia
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard # Frontier
+      prototype: ComputerTabletopMassMedia # Frontier
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -538,6 +691,10 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: ComputerRoboticsControl
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopRoboticsControl
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -549,6 +706,10 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: ComputerXenoborgsControl
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopXenoborgsControl
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -560,6 +721,10 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: StationAiUploadComputer
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopStationAiUpload
+    # End Box Change
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -571,3 +736,7 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: StationAiFixerComputer
+    # Start Box Change: Tabletop
+    - type: ComputerTabletopBoard
+      prototype: ComputerTabletopStationAiFixer
+    # End Box Change

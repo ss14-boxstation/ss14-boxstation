@@ -61,13 +61,12 @@ jobs:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
-    # Box Change Start - No discord changelog channel
-    # - name: Publish changelog (Discord)
-    #   run: Tools/actions_changelogs_since_last_run.py
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
-    # Box Change End
+    - name: Publish changelog (Discord)
+      run: Tools/actions_changelogs_since_last_run.py
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+        DISCORD_ROLE_ID: ${{ vars.DISCORD_ROLE_ID }}
 
 #    - name: Publish changelog (RSS)
 #      run: Tools/actions_changelog_rss.py

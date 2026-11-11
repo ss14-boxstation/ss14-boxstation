@@ -25,6 +25,7 @@
   - LedLightBulb
   - DimLightBulb
   - WarmLightBulb
+  - UvLightTube # Box Change: Imp UV lights
 
 - type: latheRecipePack
   id: PowerCellsStatic
@@ -69,6 +70,7 @@
   id: SalvageSecurityWeapons
   recipes:
   - WeaponProtoKineticAccelerator
+  - WeaponSalvageAcceleratorSidearm # Box Change - PKA Expansion
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate

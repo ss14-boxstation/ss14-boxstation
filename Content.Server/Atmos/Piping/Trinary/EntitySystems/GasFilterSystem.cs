@@ -1,11 +1,10 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Atmos.EntitySystems;
-using Content.Server.Atmos.Piping.Components;
 using Content.Server.Atmos.Piping.Trinary.Components;
-using Content.Server.NodeContainer;
 using Content.Server.NodeContainer.EntitySystems;
 using Content.Server.NodeContainer.Nodes;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Components;
 using Content.Shared.Atmos.Piping;
 using Content.Shared.Atmos.Piping.Components;
 using Content.Shared.Atmos.Piping.Trinary.Components;
@@ -43,6 +42,8 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
             SubscribeLocalEvent<GasFilterComponent, GasFilterChangeRateMessage>(OnTransferRateChangeMessage);
             SubscribeLocalEvent<GasFilterComponent, GasFilterSelectGasMessage>(OnSelectGasMessage);
             SubscribeLocalEvent<GasFilterComponent, GasFilterToggleStatusMessage>(OnToggleStatusMessage);
+
+            SubscribeLocalEvent<GasFilterComponent, MapInitEvent>(OnMapInit); // Box Change: Pre-enabled atmos devices
 
         }
 
@@ -211,5 +212,17 @@ namespace Content.Server.Atmos.Piping.Trinary.EntitySystems
 
             args.DeviceFlipped = inlet != null && filterNode != null && inlet.CurrentPipeDirection.ToDirection() == filterNode.CurrentPipeDirection.ToDirection().GetClockwise90Degrees();
         }
+
+        // Start Box Change: Frontier - Enable on map init
+        private void OnMapInit(EntityUid uid, GasFilterComponent filter, ref MapInitEvent args)
+        {
+            if (!filter.StartEnabled)
+                return;
+            filter.Enabled = true;
+            UpdateAppearance(uid, filter);
+            DirtyUI(uid, filter);
+            _userInterfaceSystem.CloseUi(uid, GasFilterUiKey.Key);
+        }
+        // End Box Change
     }
 }

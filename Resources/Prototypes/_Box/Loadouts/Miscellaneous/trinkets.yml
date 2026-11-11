@@ -275,3 +275,80 @@
     back:
     - AACTabletSAS
   groupBy: "AAC"
+  
+- type: loadout
+  id: PlushieTeddyBear
+  storage:
+    back:
+    - PlushieTeddyBearSafe
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearVanillaCream
+  storage:
+    back:
+    - PlushieTeddyBearSafeVanillaCream
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearBlack
+  storage:
+    back:
+    - PlushieTeddyBearSafeBlack
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearHickory
+  storage:
+    back:
+    - PlushieTeddyBearSafeHickory
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearSunnyDay
+  storage:
+    back:
+    - PlushieTeddyBearSafeSunnyDay
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearLawn
+  storage:
+    back:
+    - PlushieTeddyBearSafeLawn
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearTurf
+  storage:
+    back:
+    - PlushieTeddyBearSafeTurf
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearGreatReef
+  storage:
+    back:
+    - PlushieTeddyBearSafeGreatReef
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearTrueBlue
+  storage:
+    back:
+    - PlushieTeddyBearSafeTrueBlue
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearRoyalPurple
+  storage:
+    back:
+    - PlushieTeddyBearSafeRoyalPurple
+  groupBy: "Teddy"
+
+- type: loadout
+  id: PlushieTeddyBearSweetValley
+  storage:
+    back:
+    - PlushieTeddyBearSafeSweetValley
+  groupBy: "Teddy"

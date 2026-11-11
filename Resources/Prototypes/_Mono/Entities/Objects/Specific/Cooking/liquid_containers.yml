@@ -1,0 +1,56 @@
+# SPDX-FileCopyrightText: 2025 Blu
+# SPDX-FileCopyrightText: 2025 BlueHNT
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  name: kettle
+  parent: BaseBeaker
+  description: Used to boil water for tea.
+  id: Kettle
+  components:
+  - type: Spillable
+    solution: beaker
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/kettle.rsi
+    layers:
+      - state: icon
+      - state: fill-5
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    size: Normal
+    sprite: _Mono/Objects/Misc/kettle.rsi
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill-
+    # inHandsMaxFillLevels: 4 #TODO: no inhands at this time
+    # inHandsFillBaseName: -fill-
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 100
+  - type: StaticPrice
+    price: 25
+
+- type: entity
+  parent: DrinkTeapot # Box Change: DrinkGlassBase -> DrinkTeapot
+  id: DrinkTeapotEmpty
+  # Start Box Change: Don't redefine name now that we're parenting from the normal teapot
+  #name: teapot
+  #description: An elegant teapot. It simply oozes class.
+  # End Box Change
+  suffix: Empty
+  components:
+  # Start Box Change: Remove sprite definition, override solutions
+  #- type: Sprite
+  #  sprite: Objects/Consumable/Drinks/teapot.rsi
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+  # End Box Change

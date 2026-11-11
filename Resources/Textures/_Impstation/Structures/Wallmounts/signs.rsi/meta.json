@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "atmos_h2o made by DinnerCalzone (github) for impstation at https://github.com/impstation/imp-station-14/commit/d9c8e6448218c71a2e6c4236675437e06b3d24d5",
+    "states": [
+        {
+            "name": "atmos_h2o"
+        }
+    ]
+}

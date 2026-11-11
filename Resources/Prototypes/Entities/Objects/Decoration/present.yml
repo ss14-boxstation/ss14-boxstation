@@ -378,6 +378,12 @@
         orGroup: GiftPool
       - id: RGBStaff
         orGroup: GiftPool
+      # Start Box Change: Den teddy bears
+      - id: PlushieTeddyBear
+        orGroup: GiftPool
+      - id: PlushieTeddyBearRecolorableRandom
+        orGroup: GiftPool
+      # End Box Change
     sound:
       path: /Audio/Effects/unwrap.ogg
 

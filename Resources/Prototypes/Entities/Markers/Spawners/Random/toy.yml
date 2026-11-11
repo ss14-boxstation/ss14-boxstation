@@ -39,6 +39,10 @@
     - id: PlushieArachind
     - id: PlushiePenguin
     - id: PlushieVulp
+    # Start Box Change: Den teddy bears
+    - id: PlushieTeddyBear
+    - id: PlushieTeddyBearRecolorableRandom
+    # End Box Change
     - !type:GroupSelector
       children:
       - id: PlushieBee

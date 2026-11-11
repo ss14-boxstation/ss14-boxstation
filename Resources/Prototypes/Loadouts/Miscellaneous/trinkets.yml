@@ -343,7 +343,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobPassenger
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorGray
@@ -356,7 +356,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChaplain
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorBlack
@@ -369,7 +369,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Security
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorRed
@@ -382,7 +382,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Engineering
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorOrange
@@ -395,7 +395,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Cargo
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorLightBrown
@@ -408,7 +408,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobClown
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorYellow
@@ -421,7 +421,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobLibrarian
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorDarkGreen
@@ -434,7 +434,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Civilian
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorGreen
@@ -447,7 +447,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Medical
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorLightBlue
@@ -460,7 +460,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorDarkBlue
@@ -473,7 +473,7 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Science
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorPurple
@@ -486,7 +486,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobLawyer
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorMaroon
@@ -499,7 +499,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMime
-      time: 100h
+      time: 10h # Box Change: 100h -> 10h
   storage:
     back:
     - TowelColorMime
@@ -511,7 +511,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 500h
+      time: 50h # Box Chnage: 500h -> 50h
   storage:
     back:
     - TowelColorSilver
@@ -523,7 +523,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 1000h
+      time: 100h # Box Change:  1000h -> 100h
   storage:
     back:
     - TowelColorGold
