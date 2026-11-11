@@ -1,0 +1,49 @@
+- type: decal
+  abstract: true
+  #parent: CMDecalBase # Box Change: All this does is set an "isCM" var to true
+  id: RMCDecalBloodBase
+  tags: ["station", "markings"]
+
+# Xenonid Blood
+
+- type: decal
+  parent: RMCDecalBloodBase
+  id: RMCDecalBloodXenonidSplatter1
+  sprite:
+    sprite: _RMC14/Decals/blood.rsi
+    state: xsplatter1
+
+- type: decal
+  parent: RMCDecalBloodBase
+  id: RMCDecalBloodXenonidSplatter2
+  sprite:
+    sprite: _RMC14/Decals/blood.rsi
+    state: xsplatter2
+
+- type: decal
+  parent: RMCDecalBloodBase
+  id: RMCDecalBloodXenonidSplatter3
+  sprite:
+    sprite: _RMC14/Decals/blood.rsi
+    state: xsplatter3
+
+- type: decal
+  parent: RMCDecalBloodBase
+  id: RMCDecalBloodXenonidSplatter4
+  sprite:
+    sprite: _RMC14/Decals/blood.rsi
+    state: xsplatter4
+
+- type: decal
+  parent: RMCDecalBloodBase
+  id: RMCDecalBloodXenonidSplatter5
+  sprite:
+    sprite: _RMC14/Decals/blood.rsi
+    state: xsplatter5
+
+- type: decal
+  parent: RMCDecalBloodBase
+  id: RMCDecalBloodXenonidSplatter6
+  sprite:
+    sprite: _RMC14/Decals/blood.rsi
+    state: xsplatter6

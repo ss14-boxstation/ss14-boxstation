@@ -1,0 +1,98 @@
+# Particle effect reference/template.
+# Don't add to this file, copy this and remove what you aren't using.
+- type: particleEffect
+  id: SfParticleEffectTemplate
+  abstract: true # Remove this when making a new particle
+  # Accepts an RSI state as shown here or a supported texture sprite specifier.
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: dot
+  # =^..^= Visuals =^..^=
+  startColor: "#FFFFFFFF" # Birth color. Default: white. Ignored when colorOverLifetime is present.
+  endColor: "#FFFFFF00" # Death color. Default: transparent. Ignored when colorOverLifetime is present.
+  colorOverLifetime: # Full RGBA gradient. Times are normalized from birth (0) to death (1).
+    - time: 0
+      color: "#FFFFFFFF"
+    - time: 1
+      color: "#FFFFFF00"
+  alphaOverLifetime: # Multiplied with the alpha from the selected color/gradient. Times are normalized from birth (0) to death (1).
+    - time: 0
+      value: 1
+    - time: 1
+      value: 0
+  shader: unshaded # Optional shader prototype ID. Omit to use the normal world shader.
+  # =^..^= Size =^..^=
+  particleSize: 0.2 # Base width/height in world units. Default: 0.2.
+  sizeVariance: 0 # Random per-particle multiplier variance. 0.25 gives roughly 75%-125%.
+  sizeOverLifetime: # Multiplies particleSize over normalized lifetime.
+    - time: 0
+      value: 1
+    - time: 1
+      value: 1
+  stretchFactor: 0 # Elongates sprites along velocity.
+  # =^..^= Lifetime =^..^=
+  lifetime: 1 # Particle lifetime in seconds. Default: 1.
+  lifetimeVariance: 0.2 # Random lifetime variance in seconds. Default: 0.2.
+  # =^..^= Movement =^..^=
+  speed: 1 # Initial speed in world units per second. Default: 1.
+  speedVariance: 0.3 # Random initial-speed variance. Default: 0.3.
+  speedOverLifetime: # Multiplies the particle's original speed over normalized lifetime.
+    - time: 0
+      value: 1
+    - time: 1
+      value: 1
+  constantForce: 0, 0 # Force added to velocity every simulation step. X = right, Y = up.
+  forceOverLifetime: # Additional force added to velocity.
+    - time: 0
+      value: 0, 0
+    - time: 1
+      value: 0, 0
+  velocityOverLifetime: # Affects position without changing velocity.
+    - time: 0
+      value: 0, 0
+    - time: 1
+      value: 0, 0
+  gravity: 0 # Downward drift. Negative values float upward.
+  drag: 0 # Exponential velocity damping. 0 disables drag.
+  terminalSpeed: 0 # Maximum speed. 0 means unlimited.
+  noiseStrength: 0 # Turbulent positional movement. 0 disables noise and its simulation cost.
+  noiseFrequency: 1 # How quickly the noise field changes. Default: 1.
+  inheritVelocity: 0 # Fraction of emitter velocity inherited at spawn. Usually between 0 and 1.
+  # =^..^= Rotation =^..^=
+  startRotation: 0 # Initial sprite rotation in degrees.
+  startRotationVariance: 0 # Random initial-rotation variance in degrees.
+  rotationSpeed: 0 # Sprite spin in degrees per second.
+  rotationSpeedVariance: 0 # Random spin-speed variance in degrees per second.
+  alignToVelocity: false # Rotates the sprite toward its velocity; overrides normal rotation drawing.
+  # =^..^= Emission =^..^=
+  emissionRate: 20 # Particles per second for continuous emitters. Default: 20.
+  emissionOverTime: # Multiplies emissionRate over emitter age/duration.
+    - time: 0
+      value: 1
+    - time: 1
+      value: 1
+  maxCount: 20 # Maximum simultaneously live particles. Will automatically calculate maxCount when omitted up to 128 particles.
+  burst: false # If true, immediately emits maxCount particles and then stops.
+  bursts: # Optional timed bursts, these can be combined with continuous emission.
+    - time: 0.5
+      count: 5
+  duration: 0 # Seconds the emitter produces particles. 0 means it runs until manually stopped.
+  # =^..^= Simulation space =^..^=
+  # map: particles remain at absolute map positions when grids/emitters move.
+  # grid: particles remain on their spawn grid. This is the default and usually what you want.
+  # local: particles follow the emitter's current position.
+  simulationSpace: grid
+  rotateWithEmitter: false # Rotates directional emission/force with an attached entity.
+  spawnOffset: 0, 0 # Spawn-origin offset, entity-local when rotateWithEmitter is enabled.
+  # =^..^= Spawn shape =^..^=
+  shape:
+    type: Point # Point, CircleEdge, CircleFill, or Box.
+    radius: 0.5 # Used by CircleEdge and CircleFill.
+    boxExtents: 0.5, 0.5 # Half-width and half-height used by Box.
+  # =^..^= Emission angle =^..^=
+  spreadAngle: 360 # Cone width in degrees. 360 emits in every direction.
+  emitAngle: 0 # Base direction in degrees. 0 points screen-up before emitter rotation.
+  # =^..^= Sub-emitters =^..^=
+  # subEmitterOnDeath: SomeParticleEffect # Spawns this effect when each particle dies.
+  # subEmitterOnSpawn: SomeParticleEffect # Spawns this effect when each particle is created.
+  # Sub-emitter chains are depth-limited, but DO NOT create recursive chains please please please please.
