@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.1
+  engineVersion: 272.0.10
   forkId: ""
   forkVersion: ""
-  time: 10/24/2026 04:35:22
-  entityCount: 15968
+  time: 11/10/2026 19:56:25
+  entityCount: 15969
 maps:
 - 126
 grids:
@@ -43376,7 +43376,7 @@ entities:
       pos: 59.5,39.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -18125.676
+      secondsUntilStateChange: -18192.521
       state: Closing
 - proto: CurtainsWhiteOpen
   entities:
@@ -49232,7 +49232,7 @@ entities:
       pos: 26.5,37.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -65419.465
+      secondsUntilStateChange: -65486.312
       state: Closing
   - uid: 9362
     components:
@@ -72205,7 +72205,7 @@ entities:
       pos: 12.5,12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -3591.41
+      secondsUntilStateChange: -3658.256
       state: Closing
   - uid: 5750
     components:
@@ -85607,6 +85607,13 @@ entities:
     components:
     - type: Transform
       pos: 73.5,-1.5
+      parent: 2
+- proto: SpawnMobPossumPoppy
+  entities:
+  - uid: 15122
+    components:
+    - type: Transform
+      pos: 15.5,-24.5
       parent: 2
 - proto: SpawnMobRaccoonMorticia
   entities:

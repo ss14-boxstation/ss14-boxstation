@@ -534,6 +534,10 @@
         Base: poppy
       Dead:
         Base: poppy_dead
+  # Box Change Start, Make Poppy a steal target
+  - type: StealTarget
+    stealGroup: AnimalPoppy
+  # Box Change End
 
 - type: entity
   name: Morticia
