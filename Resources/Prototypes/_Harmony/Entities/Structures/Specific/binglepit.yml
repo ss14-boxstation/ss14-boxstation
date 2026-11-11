@@ -1,4 +1,5 @@
 - type: entity
+  # parent: [SolutionDrain, SolutionGinormous] # Box Change - No Solution Refactor
   id: BinglePit
   name: bingle pit
   description: The core of all bingles. Looks hungry.
@@ -14,6 +15,7 @@
   - type: ScaleVisuals
   - type: BinglePit
   - type: StepTrigger
+    ignoreWeightless: true
     requiredTriggeredSpeed: 0
     intersectRatio: 0.4
   - type: Transform
@@ -35,14 +37,21 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
+    damageContainer: Inorganic # Box Change - Readd because we don't have that refactor
+    damageModifierSet: Metallic # Box Change - Slime > Metallic - Revert accidental harmony balance change
+  # Box Change Start - Comment out refactor code
+  # - type: Injurable
+  #   damageContainer: Inorganic
+  # Box Change End
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
         damage: 256
       behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:SpawnEntitiesBehavior
@@ -54,10 +63,18 @@
     sound:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
   - type: RequireProjectileTarget
+  # Box Change Start - No Solution Refactor
   - type: SolutionContainerManager
     solutions:
       drainBuffer:
         maxVol: 1000
+  # Box Change End
   - type: Drain
     unitsPerSecond: 10
     unitsDestroyedPerSecond: 10
+  - type: AmbientSound
+    enabled: false
+    volume: -8
+    range: 8
+    sound:
+      path: /Audio/Ambience/Objects/drain.ogg
