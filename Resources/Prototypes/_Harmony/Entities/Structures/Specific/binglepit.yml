@@ -37,11 +37,11 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Damageable
-    damageContainer: Inorganic # Box Change - Readd because we don't have that refactor, also bring it back to Inorganic
-    damageModifierSet: Slime
+    damageContainer: Inorganic # Box Change - Readd because we don't have that refactor
+    damageModifierSet: Metallic # Box Change - Slime > Metallic - Revert accidental harmony balance change
   # Box Change Start - Comment out refactor code
   # - type: Injurable
-  #   damageContainer: Biological
+  #   damageContainer: Inorganic
   # Box Change End
   - type: Destructible
     thresholds:
