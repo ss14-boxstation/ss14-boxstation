@@ -2369,3 +2369,10 @@
   id: 257
   time: '2026-11-11T18:14:36.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/384
+- author: SomegnihT
+  changes:
+  - message: Poppy the Safety Possum, a new pet for Engineering
+    type: Add
+  id: 258
+  time: '2026-11-11T19:09:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/386
