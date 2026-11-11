@@ -133,7 +133,7 @@
       types:
         Blunt: 25 # yowch
   - type: IconSmooth
-    key: chitin
+    key: walls # Box Change - Iconsmooth update - chitin > walls
     mode: NoSprite
 
 - type: entity

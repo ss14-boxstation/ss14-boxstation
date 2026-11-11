@@ -22,7 +22,7 @@
 
 - type: guideEntry
   id: Allulalo
-  name: Allulalo
+  name: species-name-allulalo
   text: "/ServerInfo/_MACRO/Guidebook/Mobs/Allulalo.xml"
 
 #- type: guideEntry

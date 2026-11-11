@@ -54,6 +54,11 @@
   - type: IgnitionSource
     ignited: true
     temperature: 900
+  # Start Box Change: Fire particles
+  - type: FireParticles
+    fireIntensity: 1.5
+    smokeIntensity: 1.5
+  # End Box Change
 
 - type: entity
   id: LegionnaireBonfire

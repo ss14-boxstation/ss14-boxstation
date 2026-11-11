@@ -4,7 +4,7 @@
   components:
   - type: StationEvent
     earliestStart: 30
-    minimumPlayers: 15
+    minimumPlayers: 10 # Box Change: 15 -> 10
     weight: 2
   - type: MeteorSwarm
     announcement: station-event-carp-migration-start-announcement
@@ -23,6 +23,6 @@
     duration: null
     earliestStart: 30
     reoccurrenceDelay: 90 # 1h30 between each bingle
-    minimumPlayers: 20
+    minimumPlayers: 15 # Box Change: 20 -> 15
   - type: RandomSpawnRule
     prototype: SpawnPointGhostBinglePrime
