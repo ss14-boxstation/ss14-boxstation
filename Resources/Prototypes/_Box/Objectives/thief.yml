@@ -49,7 +49,7 @@
   id: PoppyStealObjective
   components:
   - type: NotJobRequirement
-    jobs: [ StationEngineer, AtmosphericTechnician ]
+    jobs: [ StationEngineer, AtmosphericTechnician, ChiefEngineer, TechnicalAssistant ]
   - type: StealCondition
     stealGroup: AnimalPoppy
   - type: Objective
