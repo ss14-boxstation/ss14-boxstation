@@ -861,9 +861,10 @@
             Bloodloss: 3
 
 - type: reagent
-  id: Tricordrazine
+  id: WizDenTricordrazine # Box Change: Tricordrazine -> WizDenTricordrazine - Fork after damageable refactor
   name: reagent-name-tricordrazine
   group: Medicine
+  abstract: true # Box Change: Fork after damageable refactor
   desc: reagent-desc-tricordrazine
   physicalDesc: reagent-physical-desc-opaque
   flavor: medicine

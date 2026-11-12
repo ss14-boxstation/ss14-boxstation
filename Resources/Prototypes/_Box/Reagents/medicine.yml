@@ -221,6 +221,30 @@
         messages: [ "generic-reagent-effect-nauseous" ]
         probability: 0.2
 
+- type: reagent
+  id: Tricordrazine
+  name: reagent-name-tricordrazine
+  group: Medicine
+  desc: reagent-desc-tricordrazine
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#00e5ff"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TotalDamageCondition
+          max: 50
+        damage:
+          groups:
+            Brute: -1
+          types:
+            Poison: -0.5 ##Should be about what it was when it healed the toxin group
+            Heat: -0.33
+            Shock: -0.33
+            Cold: -0.33
+
 # Cryo Chems - Taken from the reverted WizDen PRs
 
 - type: reagent
