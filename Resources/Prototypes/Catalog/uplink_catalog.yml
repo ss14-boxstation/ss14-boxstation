@@ -956,19 +956,18 @@
     Telecrystal: 4
   categories:
   - UplinkDeception
-  #Start of Harmony change
-  conditions:
-  - !type:BuyerWhitelistCondition
-    blacklist:
-      components:
-      - SurplusBundle
-  #End of Harmony change
   restockTime: 1800
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
       - NukeOpsUplink
+  #Start of Harmony change
+  - !type:BuyerWhitelistCondition
+    blacklist:
+      components:
+      - SurplusBundle
+  #End of Harmony change
 
 - type: listing
   id: UplinkSyndicateBombFakeNukie
@@ -1252,8 +1251,6 @@
   categories:
   - UplinkObjective #Box Change - Changed from UplinkDisruption to UplinkObjective
   #Start of Harmony change
-  conditions:
-    - UplinkDisruption
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
