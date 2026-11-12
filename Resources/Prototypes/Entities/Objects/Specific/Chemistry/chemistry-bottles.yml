@@ -1239,12 +1239,13 @@
     children:
     - id: ChemistryBottleBicaridine
     - id: ChemistryBottleKelotane
+    - id: ChemistryBottleDermaline
     - id: ChemistryBottleDylovene
     - id: ChemistryBottleInaprovaline
     - id: ChemistryBottleDexalin
+    - id: ChemistryBottleDexalinPlus
     - id: ChemistryBottleSaline
     - id: ChemistryBottleTricordrazine
-    - id: ChemistryBottleHyronalin
 
 - type: entityTable
   id: SpecialtyMedicineReagentBottleTable
@@ -1258,8 +1259,6 @@
     - id: ChemistryBottleTricordrazine
     - id: ChemistryBottleTranexamicAcid
     - id: ChemistryBottleOculine
-    - id: ChemistryBottleCharcoal
-    - id: ChemistryBottleLaughter
 
 - type: entityTable
   id: AllMedicineReagentBottlesTable
@@ -1314,5 +1313,3 @@
     - id: ChemistryBottleTranexamicAcid
     - id: ChemistryBottleTricordrazine
     - id: ChemistryBottleUltravasculine
-    - id: ChemistryBottleCharcoal
-    - id: ChemistryBottleLaughter

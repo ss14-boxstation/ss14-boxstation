@@ -52,6 +52,7 @@
   equipment:
     id: CMOPDA
     # ears: ClothingHeadsetCMO # Box Change: Headset moved to loadout option
+    belt: ClothingBeltMedicalFilled
   storage:
     back:
     - Flash

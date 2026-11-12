@@ -21,7 +21,11 @@
     shoes: ClothingShoesColorWhite
     id: MedicalInternPDA
     # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
+    belt: ClothingBeltMedicalFilled
     pocket2: BookMedicalReferenceBook
+  #storage:
+    #back:
+    #- Stuff
 
 - type: chameleonOutfit
   id: MedicalInternChameleonOutfit

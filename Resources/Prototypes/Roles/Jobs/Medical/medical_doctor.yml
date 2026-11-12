@@ -24,6 +24,10 @@
   id: DoctorGear
   equipment:
     # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
+    belt: ClothingBeltMedicalFilled
+  #storage:
+    #back:
+    #- Stuff
 
 - type: chameleonOutfit
   id: MedicalDoctorChameleonOutfit
