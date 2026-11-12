@@ -52,7 +52,12 @@
     neck: ClothingNeckMantleCMO
   effects:
   - !type:GroupLoadoutEffect
-    proto: CMOJourneymanTimer
+    proto: MasterCMO
+
+- type: startingGear
+  id: ChiefMedicalOfficerMantle
+  equipment:
+    neck: ClothingNeckMantleCMO
 
 - type: startingGear
   id: ChiefMedicalOfficerMantle
