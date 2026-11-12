@@ -414,6 +414,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - BartenderGoldenShaker
+  - LizardPlushieBartender # Box Change: Re-add job lizard plushies
 
 #- type: loadoutGroup
 #  id: ServiceWorkerJobTrinkets
@@ -599,6 +600,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - JanitorGoldenPlunger
+  - LizardPlushieJanitor # Box Change: Re-add job lizard plushies
 
 - type: loadoutGroup
   id: BotanistHead
@@ -697,6 +699,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - FlowerWaterClown
+  - LizardPlushieClown # Box Change: Re-add job lizard plushies
 
 - type: loadoutGroup
   id: MimeHead
@@ -1315,6 +1318,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - SecStar
+  - LizardPlushieHeadofSecurity # Box Change: Re-add job lizard plushies
 
 - type: loadoutGroup
   id: WardenHead
@@ -1348,6 +1352,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - SecStar
+  - LizardPlushieWarden # Box Change: Re-add job lizard plushies
 
 - type: loadoutGroup
   id: SecurityHead
@@ -1422,6 +1427,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - SecStar
+  - LizardPlushieSecurityOfficer # Box Change: Re-add job lizard plushies
 
 - type: loadoutGroup
   id: DetectiveHead
@@ -1469,6 +1475,7 @@
   maxLimit: 0 # Box Change: Remove upper limit for job trinkets
   loadouts:
   - SecStar
+  - LizardPlushieDetective # Box Change: Re-add job lizard plushies
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
@@ -1519,6 +1526,8 @@
   loadouts:
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerWintercoat
+  - ChiefMedicalOfficerArashiLongcoat # Box
+  - ChiefMedicalOfficerLongcoat # Box
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
@@ -1535,12 +1544,11 @@
   - BrownShoes
   - MedicalWinterBoots
 
-- type: loadoutGroup
-  id: ChiefMedicalOfficerJobTrinkets
-  name: loadout-group-jobtrinkets
-  minLimit: 0
-  loadouts:
-  - LizardPlushieChiefMedicalOfficer
+#- type: loadoutGroup
+#  id: ChiefMedicalOfficerJobTrinkets
+#  name: loadout-group-jobtrinkets
+#  minLimit: 0
+#  loadouts:
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1561,6 +1569,7 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
+  - WorkadaySuit # Harmony
   - SeniorPhysicianJumpsuit
   - SeniorPhysicianJumpskirt
   - MedicalBlueScrubs
@@ -1575,6 +1584,7 @@
   - RegularLabCoat
   - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
+  - BomberMedical # Box - Adds Imp Bomber Jackets
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1589,6 +1599,7 @@
   name: loadout-group-medical-doctor-shoes
   loadouts:
   - WhiteShoes
+  - BlackShoes # Harmony
   - MedicalWinterBoots
 
 - type: loadoutGroup
@@ -1613,12 +1624,11 @@
   loadouts:
   - SterileMask
 
-- type: loadoutGroup
-  id: MedicalDoctorJobTrinkets
-  name: loadout-group-jobtrinkets
-  minLimit: 0
-  loadouts:
-  - LizardPlushieMedicalDoctor
+#- type: loadoutGroup
+#  id: MedicalDoctorJobTrinkets
+#  name: loadout-group-jobtrinkets
+#  minLimit: 0
+#  loadouts:
 
 - type: loadoutGroup
   id: MedicalInternJumpsuit
@@ -1627,12 +1637,11 @@
   - WhiteJumpsuit
   - WhiteJumpskirt
 
-- type: loadoutGroup
-  id: MedicalInternJobTrinkets
-  name: loadout-group-jobtrinkets
-  minLimit: 0
-  loadouts:
-  - LizardPlushieMedicalIntern
+#- type: loadoutGroup
+#  id: MedicalInternJobTrinkets
+#  name: loadout-group-jobtrinkets
+#  minLimit: 0
+#  loadouts:
 
 - type: loadoutGroup
   id: ChemistJumpsuit
@@ -1658,12 +1667,11 @@
   - ChemistSatchel
   - ChemistDuffel
 
-- type: loadoutGroup
-  id: ChemistJobTrinkets
-  name: loadout-group-jobtrinkets
-  minLimit: 0
-  loadouts:
-  - LizardPlushieChemist
+#- type: loadoutGroup
+#  id: ChemistJobTrinkets
+#  name: loadout-group-jobtrinkets
+#  minLimit: 0
+#  loadouts:
 
 - type: loadoutGroup
   id: ParamedicHead
@@ -1686,6 +1694,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  - ParamedicsLongcoat # Box
 
 - type: loadoutGroup
   id: ParamedicShoes
@@ -1695,12 +1704,11 @@
   - WhiteShoes
   - MedicalWinterBoots
 
-- type: loadoutGroup
-  id: ParamedicJobTrinkets
-  name: loadout-group-jobtrinkets
-  minLimit: 0
-  loadouts:
-  - LizardPlushieParamedic
+#- type: loadoutGroup
+#  id: ParamedicJobTrinkets
+#  name: loadout-group-jobtrinkets
+#  minLimit: 0
+#  loadouts:
 
 - type: loadoutGroup
   id: MedicalEyewear
@@ -1722,6 +1730,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # Box Change, Port DeltaV IPCs
 
 # Wildcards
 - type: loadoutGroup
@@ -1737,14 +1746,7 @@
   minLimit: 0
   loadouts:
   - ReporterPressFedora
-
-- type: loadoutGroup
-  id: ReporterOuterClothing
-  name: loadout-group-reporter-outerclothing
-  minLimit: 0
-  loadouts:
-  - ReporterPressVest
-
+  
 #- type: loadoutGroup
 #  id: ReporterJobTrinkets
 #  name: loadout-group-jobtrinkets

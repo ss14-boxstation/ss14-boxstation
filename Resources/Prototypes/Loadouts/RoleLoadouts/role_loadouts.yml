@@ -11,7 +11,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- CaptainJobTrinkets
+  - CaptainJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -29,7 +29,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- HoPJobTrinkets
+  - HoPJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 # Silicons
@@ -60,7 +60,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- PassengerJobTrinkets
+  - PassengerJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -90,7 +90,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ServiceWorkerJobTrinkets
+  - ServiceWorkerJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -107,7 +107,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ChefJobTrinkets
+  - ChefJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -123,7 +123,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- LibrarianJobTrinkets
+  - LibrarianJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -138,7 +138,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- LawyerJobTrinkets
+  - LawyerJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -158,7 +158,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ChaplainJobTrinkets
+  - ChaplainJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -191,7 +191,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- BotanistJobTrinkets
+  - BotanistJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -227,7 +227,7 @@
   - SurvivalMime
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- MimeJobTrinkets
+  - MimeJobTrinkets # Box Change: Restore job trinkets
 
 - type: roleLoadout
   id: JobMusician
@@ -242,7 +242,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- MusicianJobTrinkets
+  - MusicianJobTrinkets # Box Change: Restore job trinkets
   - Instruments
   - GroupSpeciesBreathTool
 
@@ -262,7 +262,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- QuartermasterJobTrinkets
+  - QuartermasterJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -280,7 +280,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- CargoTechnicianJobTrinkets
+  - CargoTechnicianJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -297,7 +297,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- SalvageSpecialistJobTrinkets
+  - SalvageSpecialistJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 # Engineering
@@ -315,7 +315,7 @@
   - SurvivalExtended
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ChiefEngineerJobTrinkets
+  - ChiefEngineerJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -328,7 +328,7 @@
   - SurvivalExtended
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- TechnicalAssistantJobTrinkets
+  - TechnicalAssistantJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -345,7 +345,7 @@
   - SurvivalExtended
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- StationEngineerJobTrinkets
+  - StationEngineerJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -360,7 +360,7 @@
   - SurvivalExtended
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- AtmosphericTechnicianJobTrinkets
+  - AtmosphericTechnicianJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 # Science
@@ -380,7 +380,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ResearchDirectorJobTrinkets
+  - ResearchDirectorJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -400,7 +400,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ScientistJobTrinkets
+  - ScientistJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -414,7 +414,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ResearchAssistantJobTrinkets
+  - ResearchAssistantJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 # Security
@@ -493,8 +493,89 @@
   - SurvivalSecurity
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- SecurityCadetJobTrinkets
+  - SecurityCadetJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathToolSecurity
+
+# Medical
+- type: roleLoadout
+  id: JobChiefMedicalOfficer
+  groups:
+  - GroupTankHarness
+  - ChiefMedicalOfficerHead
+  - MedicalMask
+  - ChiefMedicalOfficerJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - ChiefMedicalOfficerOuterClothing
+  - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerShoes
+  - MedicalEyewear
+  - SurvivalMedical
+  - Trinkets
+  - ChiefMedicalOfficerJobTrinkets # Box Change: Restore job trinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobMedicalDoctor
+  groups:
+  - GroupTankHarness
+  - MedicalDoctorHead
+  - MedicalMask
+  - MedicalDoctorJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - MedicalDoctorOuterClothing
+  - MedicalShoes
+  - MedicalDoctorPDA
+  - MedicalEyewear
+  - SurvivalMedical
+  - Trinkets
+  - MedicalDoctorJobTrinkets # Box Change: Restore job trinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobMedicalIntern
+  groups:
+  - GroupTankHarness
+  - MedicalInternJumpsuit
+  - MedicalBackpack
+  - MedicalEyewear
+  - SurvivalMedical
+  - Trinkets
+  - MedicalInternJobTrinkets # Box Change: Restore job trinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobChemist
+  groups:
+  - GroupTankHarness
+  - MedicalMask
+  - ChemistJumpsuit
+  - MedicalGloves
+  - ChemistBackpack
+  - ChemistOuterClothing
+  - MedicalShoes
+  - SurvivalMedical
+  - Trinkets
+  - ChemistJobTrinkets # Box Change: Restore job trinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobParamedic
+  groups:
+  - GroupTankHarness
+  - ParamedicHead
+  - MedicalMask
+  - ParamedicJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - ParamedicOuterClothing
+  - ParamedicShoes
+  - MedicalEyewear
+  - SurvivalMedical
+  - Trinkets
+  - ParamedicJobTrinkets # Box Change: Restore job trinkets
+  - GroupSpeciesBreathToolMedical
 
 # Wildcards
 - type: roleLoadout
@@ -510,7 +591,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  #- ReporterJobTrinkets
+  - ReporterJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -524,8 +605,7 @@
   - Survival
   - Trinkets
   - Accessibility # Box Change - Add accessibility tab
-  - PsychologistJobTrinkets
-  #- PsychologistJobTrinkets
+  - PsychologistJobTrinkets # Box Change: Restore job trinkets
   - GroupSpeciesBreathTool
 
 # These loadouts are used for non-crew spawns, like off-station antags and event mobs

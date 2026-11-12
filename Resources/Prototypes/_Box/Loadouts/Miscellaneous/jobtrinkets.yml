@@ -1,0 +1,217 @@
+# Job lizard plushies, restored from wizden
+
+- type: loadout
+  id: LizardPlushieCaptain
+  storage:
+    back:
+    - PlushieLizardJobCaptain
+
+- type: loadout
+  id: LizardPlushieHeadOfPersonnel
+  storage:
+    back:
+      - PlushieLizardJobHeadofpersonnel
+
+- type: loadout
+  id: LizardPlushiePassenger
+  storage:
+    back:
+      - PlushieLizardJobPassenger
+
+- type: loadout
+  id: LizardPlushieBartender
+  storage:
+    back:
+    - PlushieLizardJobBartender
+
+- type: loadout
+  id: LizardPlushieServiceWorker
+  storage:
+    back:
+    - PlushieLizardJobServiceworker
+
+- type: loadout
+  id: LizardPlushieChef
+  storage:
+    back:
+    - PlushieLizardJobChef
+
+- type: loadout
+  id: LizardPlushieLibrarian
+  storage:
+    back:
+    - PlushieLizardJobLibrarian
+
+- type: loadout
+  id: LizardPlushieLawyer
+  storage:
+    back:
+    - PlushieLizardJobLawyer
+
+- type: loadout
+  id: LizardPlushieChaplain
+  storage:
+    back:
+    - PlushieLizardJobChaplain
+
+- type: loadout
+  id: LizardPlushieJanitor
+  storage:
+    back:
+    - PlushieLizardJobJanitor
+
+- type: loadout
+  id: LizardPlushieBotanist
+  storage:
+    back:
+    - PlushieLizardJobBotanist
+
+- type: loadout
+  id: LizardPlushieClown
+  storage:
+    back:
+    - PlushieLizardJobClown
+
+- type: loadout
+  id: LizardPlushieMime
+  storage:
+    back:
+    - PlushieLizardJobMime
+
+- type: loadout
+  id: LizardPlushieMusician
+  storage:
+    back:
+    - PlushieLizardJobMusician
+
+- type: loadout
+  id: LizardPlushieQuartermaster
+  storage:
+    back:
+    - PlushieLizardJobQuartermaster
+
+- type: loadout
+  id: LizardPlushieCargoTechnician
+  storage:
+    back:
+    - PlushieLizardJobCargotechnician
+
+- type: loadout
+  id: LizardPlushieSalvageSpecialist
+  storage:
+    back:
+    - PlushieLizardJobSalvagespecialist
+
+- type: loadout
+  id: LizardPlushieChiefEngineer
+  storage:
+    back:
+    - PlushieLizardJobChiefengineer
+
+- type: loadout
+  id: LizardPlushieTechnicalAssistant
+  storage:
+    back:
+    - PlushieLizardJobTechnicalassistant
+
+- type: loadout
+  id: LizardPlushieStationEngineer
+  storage:
+    back:
+    - PlushieLizardJobStationengineer
+
+- type: loadout
+  id: LizardPlushieAtmosphericTechnician
+  storage:
+    back:
+    - PlushieLizardJobAtmospherictechnician
+
+- type: loadout
+  id: LizardPlushieResearchDirector
+  storage:
+    back:
+    - PlushieLizardJobResearchdirector
+
+- type: loadout
+  id: LizardPlushieScientist
+  storage:
+    back:
+    - PlushieLizardJobScientist
+
+- type: loadout
+  id: LizardPlushieResearchAssistant
+  storage:
+    back:
+    - PlushieLizardJobResearchassistant
+
+- type: loadout
+  id: LizardPlushieHeadofSecurity
+  storage:
+    back:
+    - PlushieLizardJobHeadofsecurity
+
+- type: loadout
+  id: LizardPlushieWarden
+  storage:
+    back:
+    - PlushieLizardJobWarden
+
+- type: loadout
+  id: LizardPlushieDetective
+  storage:
+    back:
+    - PlushieLizardJobDetective
+
+- type: loadout
+  id: LizardPlushieSecurity
+  storage:
+    back:
+    - PlushieLizardJobSecurityofficer
+
+- type: loadout
+  id: LizardPlushieSecurityCadet
+  storage:
+    back:
+    - PlushieLizardJobSecuritycadet
+
+- type: loadout
+  id: LizardPlushieChiefMedicalOfficer
+  storage:
+    back:
+    - PlushieLizardJobChiefmedicalofficer
+
+- type: loadout
+  id: LizardPlushieMedicalDoctor
+  storage:
+    back:
+    - PlushieLizardJobMedicaldoctor
+
+- type: loadout
+  id: LizardPlushieMedicalIntern
+  storage:
+    back:
+    - PlushieLizardJobMedicalintern
+
+- type: loadout
+  id: LizardPlushieChemist
+  storage:
+    back:
+    - PlushieLizardJobChemist
+
+- type: loadout
+  id: LizardPlushieParamedic
+  storage:
+    back:
+    - PlushieLizardJobParamedic
+
+- type: loadout
+  id: LizardPlushieReporter
+  storage:
+    back:
+    - PlushieLizardJobReporter
+
+- type: loadout
+  id: LizardPlushiePsychologist
+  storage:
+    back:
+    - PlushieLizardJobPsychologist
