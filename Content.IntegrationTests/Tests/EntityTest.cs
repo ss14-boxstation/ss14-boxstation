@@ -20,18 +20,7 @@ namespace Content.IntegrationTests.Tests
     [TestOf(typeof(EntityUid))]
     public sealed class EntityTest : GameTest
     {
-        private static readonly HashSet<ProtoId<EntityCategoryPrototype>> IgnoredCategories = ["Spawner", "Debug"];
-
-        public override PoolSettings PoolSettings => new()
-        {
-            Connected = true,
-            Dirty = true
-        };
-
-        public static PoolSettings Disconnected => new()
-        {
-            Dirty = true,
-        };
+        private static readonly ProtoId<EntityCategoryPrototype> SpawnerCategory = "Spawner";
 
         public override PoolSettings PoolSettings => new()
         {
@@ -266,7 +255,7 @@ namespace Content.IntegrationTests.Tests
                 .Where(p => !p.Abstract)
                 .Where(p => !pair.IsTestPrototype(p))
                 .Where(p => !excluded.Any(p.Components.ContainsKey))
-                .Where(p => p.Categories.All(x => !IgnoredCategories.Contains(x.ID)))
+                .Where(p => p.Categories.All(x => x.ID != SpawnerCategory))
                 .Select(p => p.ID)
                 .ToList();
 
@@ -444,9 +433,9 @@ namespace Content.IntegrationTests.Tests
                         logmill.Debug($"Adding component: {name}");
 
                         Assert.DoesNotThrow(() =>
-                            {
-                                entityManager.AddComponent(entity, component);
-                            }, "Component '{0}' threw an exception.",
+                        {
+                            entityManager.AddComponent(entity, component);
+                        }, "Component '{0}' threw an exception.",
                             name);
 
                         entityManager.DeleteEntity(entity);
