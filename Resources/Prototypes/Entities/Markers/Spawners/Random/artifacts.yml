@@ -1,27 +1,32 @@
-﻿- type: entity
+﻿- type: entityTable
+  id: RandomArtifactTable
+  table: !type:GroupSelector
+    children:
+    # Box Change Start - Imp Duo Xenoarch
+    # - id: ComplexXenoArtifact
+    #   weight: 2
+    # - id: ComplexXenoArtifactItem
+    - id: ComplexXAEXenoArtifact
+      weight: 2
+    - id: ComplexXAEXenoArtifactItem
+    # Box Change End
+
+- type: entity
+  parent: MarkerBase
   # Box Change Start - Imp Duo XenoAch
   id: RandomXAEArtifactSpawner #IMP XAE in name
   name: random reticulated artifact spawner # add "reticulated" to name
   suffix: Imp
   # Box Change End
-  parent: MarkerBase
   components:
-    - type: Sprite
-      layers:
-        - state: red
-        - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
-          state: ano01
-    - type: RandomSpawner
-      prototypes:
-      # Box Change Start - Imp Duo Xenoarch
-        # - ComplexXenoArtifact
-        # - ComplexXenoArtifact
-        # - ComplexXenoArtifactItem
-        - ComplexXAEXenoArtifact
-        - ComplexXAEXenoArtifact
-        - ComplexXAEXenoArtifactItem
-      # Box Change End
-      chance: 1
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+      state: ano01
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomArtifactTable
 
 - type: entity
   # Box Change Start - Imp Duo XenoArch
@@ -30,5 +35,7 @@
   parent: RandomXAEArtifactSpawner # RandomArtifact > RandomXAEArtifact
   # Box Change End
   components:
-    - type: RandomSpawner
-      chance: 0.2
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomArtifactTable
+      prob: 0.2

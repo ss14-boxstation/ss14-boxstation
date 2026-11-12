@@ -254,6 +254,7 @@
     - ShimmeringBlood #Box Change - imp - thaven blood compatibility
     - BloodAllulalo # Box Change
     - SynthBlood # Box Change
+    - SulfurBlood
 
 - type: xenoArchTrigger
   id: TriggerThrow

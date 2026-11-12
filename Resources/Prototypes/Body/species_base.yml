@@ -27,6 +27,7 @@
         sprite: Mobs/Effects/burn_damage.rsi
   - type: StatusIcon
     bounds: -0.5,-0.5,0.5,0.5
+  - type: JobStatus
   - type: RotationVisuals
     defaultRotation: 90
     horizontalRotation: 90
@@ -74,10 +75,8 @@
     - RatvarianLanguage
     - PressureImmunity
     - Muted
-    - TemporaryBlindness
     - Pacified
     - Flashed
-    - RadiationProtection
     - Adrenaline
   - type: Identity
   - type: IdExaminable
@@ -107,7 +106,7 @@
   - type: Crawler
   - type: Dna
   - type: MindContainer
-    showExamineInfo: true
+  - type: MindExaminable
   - type: CanEnterCryostorage
   - type: InteractionPopup
     successChance: 1
@@ -157,6 +156,8 @@
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
   - type: CanEscapeInventory # Box Change - Carrying system from nyanotrasen.
   - type: Carriable # Box Change - Carrying system from nyanotrasen.
+  - type: RandomPrice
+    maxRandomPrice: 20000
   - type: Tag
     tags:
     - CanPilot
@@ -189,12 +190,12 @@
   - type: PassiveDamage
     allowedStates:
     - Alive
-    damageCap: 20
     damage:
       types:
         Heat: -0.07
-      groups:
-        Brute: -0.07
+        Blunt: -0.05
+        Piercing: -0.05
+        Slash: -0.05
   - type: Fingerprint
   - type: Blindable
   - type: Temperature

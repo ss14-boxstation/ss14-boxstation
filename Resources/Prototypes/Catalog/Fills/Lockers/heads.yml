@@ -16,6 +16,8 @@
     - id: BoxEncryptionKeySalvage
     - id: RadioHandheldMining
     # Harmony Change End
+    - id: PlushieLizardJobQuartermaster
+      prob: 0.02
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -62,6 +64,8 @@
       - !type:PlayerCountCondition
         max: 15
     - id: HandheldComms # Box Change - Add CO's Handheld Comms
+    - id: PlushieLizardJobCaptain
+      prob: 0.02
 
 # No laser table + Laser table
 - type: entityTable
@@ -146,6 +150,8 @@
     - id: BookSOP # Harmony Change
     - id: BoxTapeRecorder # Box Change - HoP can use these for recording interviews etc to cut down on paperwork
     - id: BriefcaseHoP # Box Change - Add HoP's briefcase to their locker
+    - id: PlushieLizardJobHeadofpersonnel
+      prob: 0.02
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -177,6 +183,8 @@
     - id: RPD # Harmony Change: Add RPD to locker before upstream implimentation
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    - id: PlushieLizardJobChiefengineer
+      prob: 0.02
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -234,6 +242,8 @@
     - id: RubberStampCMO
     - id: MedTekCartridge
     - id: MedkitIPCAdvancedFilled # Box Change - Roundstart IPC Topicals
+    - id: PlushieLizardJobChiefmedicalofficer
+      prob: 0.02
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -283,6 +293,8 @@
     - id: DoorRemoteResearch
     - id: HandTeleporter
     - id: RubberStampRd
+    - id: PlushieLizardJobResearchdirector
+      prob: 0.02
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -344,6 +356,8 @@
     - id: WantedListCartridge
     - id: DrinkHosFlask
     - id: BorgChargerFlatpack #Box Change - Adds recharger for IPC prisoners
+    - id: PlushieLizardJobHeadofsecurity
+      prob: 0.02
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

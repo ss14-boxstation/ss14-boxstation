@@ -22,17 +22,17 @@ using Content.Shared._EE.Silicon.Components; // Box Change - EE - IPCs
 
 namespace Content.Server.Chat;
 
-public sealed class SuicideSystem : EntitySystem
+public sealed partial class SuicideSystem : EntitySystem
 {
-    [Dependency] private readonly EntityLookupSystem _entityLookupSystem = default!;
-    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly HandsSystem _hands = default!;
-    [Dependency] private readonly TagSystem _tagSystem = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly GhostSystem _ghostSystem = default!;
-    [Dependency] private readonly SharedSuicideSystem _suicide = default!;
-    [Dependency] private readonly IConfigurationManager _configuration = default!; // Harmony
+    [Dependency] private EntityLookupSystem _entityLookupSystem = default!;
+    [Dependency] private ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private HandsSystem _hands = default!;
+    [Dependency] private TagSystem _tagSystem = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private GhostSystem _ghostSystem = default!;
+    [Dependency] private SharedSuicideSystem _suicide = default!;
+    [Dependency] private IConfigurationManager _configuration = default!; // Harmony
 
     private bool _disable_suicide; // Harmony
 

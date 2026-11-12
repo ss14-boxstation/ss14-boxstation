@@ -16,7 +16,8 @@
   - Syringe
   - PillCanister
   - HandLabeler
-  - BaseChemistryEmptyVial
+  - ChemistryEmptyVial
+  - ChemistryEmptyVialSmall
   - Dropper
 
 - type: latheRecipePack
@@ -26,7 +27,7 @@
   - Jug
   - ChemistryEmptyBottle01
   - ClothingEyesGlassesChemical
-  - BaseChemistryEmptyVial # Harmony
+  - ChemistryEmptyVial # Harmony
 
 - type: latheRecipePack
   id: SurgeryStatic

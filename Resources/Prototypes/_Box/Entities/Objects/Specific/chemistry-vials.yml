@@ -1,7 +1,7 @@
 # Vial of Activated Silicon for Nukie Chem
 - type: entity
   id: ActivatedSiliconChemistryVial
-  parent: BaseChemistryEmptyVial
+  parent: ChemistryEmptyVial
   suffix: activated silicon
   components:
   - type: Label

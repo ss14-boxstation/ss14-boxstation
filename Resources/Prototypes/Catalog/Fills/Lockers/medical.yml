@@ -65,6 +65,12 @@
         weight: 0.05
     - id: ClothingMaskSterile
     - id: JetInjector
+    - id: PlushieLizardJobMedicaldoctor
+      prob: 0.02
+    - id: PlushieLizardJobMedicalintern
+      prob: 0.02
+    - id: PlushieLizardJobPsychologist
+      prob: 0.02
 
 - type: entity
   parent: LockerMedical
@@ -105,6 +111,8 @@
     - id: ClothingMaskSterile
     - id: HandLabeler
       prob: 0.5
+    - id: PlushieLizardJobChemist
+      prob: 0.02
 
 - type: entity
   parent: LockerChemistry
@@ -135,6 +143,8 @@
     - id: MedkitFilled
       prob: 0.3
     - id: JetInjector
+    - id: PlushieLizardJobParamedic
+      prob: 0.02
 
 - type: entity
   parent: LockerParamedic

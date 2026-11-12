@@ -89,6 +89,7 @@
 - type: entity
   parent: BaseSpeciesAppearance
   id: AppearanceVox
+  categories: [ HideSpawnMenu ]
   name: vox appearance
   components:
   - type: Inventory
@@ -175,7 +176,7 @@
   - AppearanceVox
   - BaseSpeciesMobOrganic
   id: MobVox
-  name: Uristititi McVox
+  name: Urist McVox
   components:
   - type: Damageable
     damageModifierSet: Vox
@@ -218,7 +219,8 @@
           FoodMeatChickenFriedVox:
             min: 3
             max: 5
-      - !type:BurnBodyBehavior { }
+      - !type:BurnBodyBehavior
+        popupMessage: bodyburn-vox-text-others
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
@@ -242,13 +244,13 @@
     # This allows Vox to take their mask off temporarily to eat something without needing a trip to medbay afterwards.
     allowedStates:
     - Alive
-    damageCap: 20
     damage:
       types:
         Heat: -0.07
+        Blunt: -0.05
+        Piercing: -0.05
+        Slash: -0.05
         Poison: -0.2 # needs to be less than the PendingZombieComponent does or they never become zombies by the disease.
-      groups:
-        Brute: -0.07
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -260,7 +262,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: AmmoniaBlood
-        Quantity: 300
+        Quantity: 600
   - type: MeleeWeapon
     soundHit:
       collection: AlienClaw
@@ -273,9 +275,10 @@
   - type: FootprintOwner
     footprint: lizardFootprint
   # End Box Change
+  - type: Wagging
 
 - type: entity
-  parent: OrganBaseOrganic
+  parent: OrganBase
   id: OrganVox
   abstract: true
   suffix: Vox

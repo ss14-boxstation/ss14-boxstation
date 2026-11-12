@@ -48,6 +48,8 @@
     - id: Binoculars
     - id: ClothingHeadsetAltWarden # Harmony Change: Adds Warden over-ear headset
     - id: BorgChargerFlatpack #Box Change - recharger for ipc prisoners
+    - id: PlushieLizardJobWarden
+      prob: 0.02
 
 - type: entityTable
   id: FillLockerWardenHarduit
@@ -92,6 +94,10 @@
       prob: 0.6
     - id: BookSpaceLaw
       prob: 0.5
+    - id: PlushieLizardJobSecuritycadet
+      prob: 0.02
+    - id: PlushieLizardJobSecurityofficer
+      prob: 0.02
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -170,6 +176,8 @@
     - id: HandLabeler
     - id: BoxTapeRecorder # DeltaV
     - id: BriefcaseDetective # Box Change - Add detective's briefcase to their locker
+    - id: PlushieLizardJobDetective
+      prob: 0.02
 
 - type: entity
   id: ClosetBombFilled
