@@ -1,4 +1,11 @@
 ﻿- type: soundCollection
+  id: XenoFootstepLarge
+  files:
+  - /Audio/_RMC14/Xeno/alien_footstep_large1.ogg
+  - /Audio/_RMC14/Xeno/alien_footstep_large2.ogg
+  - /Audio/_RMC14/Xeno/alien_footstep_large3.ogg
+
+- type: soundCollection
   id: XenoAcidSizzle
   files:
   - /Audio/_RMC14/Xeno/acid_sizzle1.ogg

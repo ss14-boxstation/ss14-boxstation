@@ -80,6 +80,10 @@
     damage:
       groups:
         Brute: 6
+      # Start Box Change: Add structural damage
+      types:
+        Structural: 20
+      # End Box Change
   - type: DamageStateVisuals
     states:
       Alive:
@@ -89,6 +93,7 @@
       Dead:
         Base: dead
   - type: Puller
+    needsHands: false # Box Change: Let xenos pull (they don't have hands)
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -121,6 +126,7 @@
     molsPerSecondPerUnitMass: 0.0005
   - type: Speech
     speechVerb: LargeMob
+  - type: ProtectedFromStepTriggers # Box Change: Don't get damaged by walking over glass shards
   # Start Box Change: RMC acid blood splash 
   - type: AcidBloodSplash
     damage:
@@ -184,6 +190,10 @@
     damage:
       groups:
         Brute: 6
+      # Start Box Change: Add structural damage
+      types:
+        Structural: 5
+      # End Box Change
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: Fixtures
@@ -222,20 +232,33 @@
     damage:
      groups:
        Brute: 12
+     # Start Box Change: Add structural damage
+     types:
+       Structural: 30
+     # End Box Change
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.52 # Box Change: 0.45 -> 0.52
+          radius: 0.45
         density: 15500
         mask:
         - MobMask
         layer:
         - MobLayer
-  - type: Tag
-    tags:
-    - CannotSuicide
+  # Start Box Change: Don't override tags
+  #- type: Tag
+  #  tags:
+  #  - CannotSuicide
+  # End Box Change
+  # Start Box Change: Queen Footsteps
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: XenoFootstepLarge
+      params:
+        volume: 0
+  # End Box Change
 
 - type: entity
   name: ravager
@@ -259,6 +282,10 @@
     damage:
      groups:
        Brute: 10
+     # Start Box Change: Add structural damage
+     types:
+       Structural: 30
+     # End Box Change
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -267,7 +294,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.50 # Box Change: 0.45 -> 0.50
+          radius: 0.45
         density: 1350
         mask:
         - MobMask
@@ -292,6 +319,10 @@
     damage:
      groups:
        Brute: 5
+     # Start Box Change: Add structural damage
+     types:
+       Structural: 20
+     # End Box Change
   - type: Fixtures
     fixtures:
       fix1:
@@ -523,6 +554,7 @@
       Dead:
         Base: dead
   - type: Puller
+    needsHands: false # Box Change: Let xenos pull (they don't have hands)
   - type: Butcherable
     butcheringType: Spike
     spawned:
