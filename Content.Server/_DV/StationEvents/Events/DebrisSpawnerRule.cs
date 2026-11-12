@@ -36,8 +36,8 @@ public sealed class DebrisSpawnerRule : StationEventSystem<DebrisSpawnerRuleComp
 
     private void OnLoadedGrids(Entity<DebrisSpawnerRuleComponent> ent, ref RuleLoadedGridsEvent args)
     {
-        if (_config.GetCVar<bool>(CCVars.WorldgenEnabled))
-            return;
+        //if (_config.GetCVar<bool>(CCVars.WorldgenEnabled)) // Box TODO: Fix this
+        //    return;
 
         // get world AABBs of every grid that was loaded, probably just 1 anyway
         var boxes = new List<Box2>(args.Grids.Count);
