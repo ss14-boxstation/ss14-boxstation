@@ -2376,3 +2376,18 @@
   id: 258
   time: '2026-11-11T19:09:58.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/386
+- author: Dizzy-Eevee
+  changes:
+  - message: Xeno queens now have loud, heavy footsteps.
+    type: Add
+  - message: Xenos now deal structural damage (lesser drones do not deal enough to
+      damage reinforced windows)
+    type: Tweak
+  - message: Xenos will no longer be affected when stepping on things like glass shards
+      or banana peels.
+    type: Tweak
+  - message: Xeno queens are no longer too big to fit through doors.
+    type: Tweak
+  id: 259
+  time: '2026-11-12T22:39:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/395
