@@ -54,16 +54,6 @@
   - !type:GroupLoadoutEffect
     proto: MasterCMO
 
-- type: startingGear
-  id: ChiefMedicalOfficerMantle
-  equipment:
-    neck: ClothingNeckMantleCMO
-
-- type: startingGear
-  id: ChiefMedicalOfficerMantle
-  equipment:
-    neck: ClothingNeckMantleCMO
-
 # Outer clothing
 - type: loadout
   id: ChiefMedicalOfficerLabCoat
