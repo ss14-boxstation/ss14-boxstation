@@ -2,6 +2,7 @@
 using Content.Shared.Mobs;
 using Content.Shared.Power.EntitySystems;
 using Content.Shared.PowerCell;
+using Content.Shared.PowerCell.Components;
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;

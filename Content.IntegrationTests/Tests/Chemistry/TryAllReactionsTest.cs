@@ -20,11 +20,12 @@ namespace Content.IntegrationTests.Tests.Chemistry
 - type: entity
   id: TestSolutionContainer
   components:
-  - type: SolutionContainerManager
-    solutions:
-      beaker:
-        maxVol: 50
-        canMix: true";
+  - type: Solution
+    id: beaker
+    solution:
+      maxVol: 120";
+
+        private static string[] _reactions = GameDataScrounger.PrototypesOfKind<ReactionPrototype>();
 
         private static string[] _reactions = GameDataScrounger.PrototypesOfKind<ReactionPrototype>();
 

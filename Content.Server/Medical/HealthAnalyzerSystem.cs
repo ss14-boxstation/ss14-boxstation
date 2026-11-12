@@ -27,21 +27,21 @@ using System.Linq; // Box Change: Metabolism info
 
 namespace Content.Server.Medical;
 
-public sealed class HealthAnalyzerSystem : EntitySystem
+public sealed partial class HealthAnalyzerSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly PowerCellSystem _cell = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
-    [Dependency] private readonly ItemToggleSystem _toggle = default!;
-    [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
-    [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
-    [Dependency] private readonly TransformSystem _transformSystem = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-    [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private PowerCellSystem _cell = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private SharedDoAfterSystem _doAfterSystem = default!;
+    [Dependency] private ItemToggleSystem _toggle = default!;
+    [Dependency] private SharedSolutionContainerSystem _solutionContainerSystem = default!;
+    [Dependency] private UserInterfaceSystem _uiSystem = default!;
+    [Dependency] private TransformSystem _transformSystem = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
+    [Dependency] private BloodstreamSystem _bloodstreamSystem = default!;
     // Start Box Change: Entityqueries for metabolism info
-    private EntityQuery<BodyComponent> _bodyQuery;
-    private EntityQuery<MetabolizerComponent> _metabolizerQuery;
+    [Dependency] private EntityQuery<BodyComponent> _bodyQuery = default!;
+    [Dependency] private EntityQuery<MetabolizerComponent> _metabolizerQuery = default!;
     // End Box Change
 
     public override void Initialize()
@@ -51,10 +51,6 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         SubscribeLocalEvent<HealthAnalyzerComponent, EntGotInsertedIntoContainerMessage>(OnInsertedIntoContainer);
         SubscribeLocalEvent<HealthAnalyzerComponent, ItemToggledEvent>(OnToggled);
         SubscribeLocalEvent<HealthAnalyzerComponent, DroppedEvent>(OnDropped);
-        // Start Box Change: Entityqueries for metabolism info
-        _bodyQuery = GetEntityQuery<BodyComponent>();
-        _metabolizerQuery = GetEntityQuery<MetabolizerComponent>();
-        // End Box Change
     }
 
     public override void Update(float frameTime)
@@ -82,11 +78,12 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             var patientCoordinates = Transform(patient).Coordinates;
             if (component.MaxScanRange != null && !_transformSystem.InRange(patientCoordinates, transform.Coordinates, component.MaxScanRange.Value))
             {
-                //Range too far, disable updates
-                StopAnalyzingEntity((uid, component), patient);
+                //Range too far, disable updates until they are back in range
+                PauseAnalyzingEntity((uid, component), patient);
                 continue;
             }
 
+            component.IsAnalyzerActive = true;
             UpdateScannedUser(uid, patient, true);
         }
     }
@@ -190,6 +187,21 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         _toggle.TryDeactivate(healthAnalyzer.Owner);
 
         UpdateScannedUser(healthAnalyzer, target, false);
+    }
+
+
+    /// <summary>
+    /// If the scanner is active, sends one last update and sets it to inactive.
+    /// </summary>
+    /// <param name="healthAnalyzer">The health analyzer that's receiving the updates</param>
+    /// <param name="target">The entity to analyze</param>
+    private void PauseAnalyzingEntity(Entity<HealthAnalyzerComponent> healthAnalyzer, EntityUid target)
+    {
+        if (!healthAnalyzer.Comp.IsAnalyzerActive)
+            return;
+
+        UpdateScannedUser(healthAnalyzer, target, false);
+        healthAnalyzer.Comp.IsAnalyzerActive = false;
     }
 
     /// <summary>

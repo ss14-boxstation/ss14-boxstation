@@ -1,0 +1,611 @@
+# Command
+- type: roleLoadout
+  id: JobCaptain
+  groups:
+  - CaptainHead
+  - HeadsetsCaptain # Box Change - Headsets
+  - CaptainNeck
+  - CaptainJumpsuit
+  - CaptainBackpack
+  - CaptainOuterClothing
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- CaptainJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobHeadOfPersonnel
+  groups:
+  - GroupTankHarness
+  - HoPHead
+  - HeadsetsHoP # Box Change - Headsets
+  - HoPNeck
+  - HoPJumpsuit
+  - HoPBackpack
+  - HoPOuterClothing
+  - HoPShoesHarmony # Harmony
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- HoPJobTrinkets
+  - GroupSpeciesBreathTool
+
+# Silicons
+- type: roleLoadout
+  id: JobBorg
+  nameDataset: NamesBorg
+  canCustomizeName: true
+
+- type: roleLoadout
+  id: JobStationAi
+  nameDataset: NamesAI
+  canCustomizeName: true
+
+# Civilian
+- type: roleLoadout
+  id: JobPassenger
+  groups:
+  - GroupTankHarness
+  - HeadsetsPassenger # Box Change - Headsets
+  - PassengerJumpsuit
+  - CommonBackpack
+  - PassengerNeck
+  - PassengerFace
+  - PassengerGloves
+  - PassengerOuterClothing
+  - PassengerShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- PassengerJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobBartender
+  groups:
+  - GroupTankHarness
+  - BartenderHead
+  - HeadsetsService # Box Change - Headsets
+  - BartenderJumpsuit
+  - CommonBackpack
+  - BartenderOuterClothing
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - BartenderJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobServiceWorker
+  groups:
+  - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
+  - BartenderJumpsuit
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ServiceWorkerJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobChef
+  groups:
+  - GroupTankHarness
+  - ChefHead
+  - HeadsetsService # Box Change - Headsets
+  - ChefMask
+  - ChefJumpsuit
+  - CommonBackpack
+  - ChefOuterClothing
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ChefJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobLibrarian
+  groups:
+  - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
+  - LibrarianJumpsuit
+  - LibrarianOuterClothingHarmony #Harmony Change: Librarian clothing addition -- Curator Coat
+  - LibrarianNeckHarmony #Harmony Change: Librarian clothing addition -- Curator Mantle
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- LibrarianJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobLawyer
+  groups:
+  - GroupTankHarness
+  - HeadsetsSecurity # Box Change - Headsets
+  - LawyerNeck
+  - LawyerJumpsuit
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- LawyerJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobChaplain
+  canCustomizeName: true
+  groups:
+  - GroupTankHarness
+  - ChaplainHead
+  - HeadsetsService # Box Change - Headsets
+  - ChaplainMask
+  - ChaplainNeck
+  - ChaplainJumpsuit
+  - CommonBackpack
+  - ChaplainOuterClothing
+  - ChaplainBible
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ChaplainJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobJanitor
+  groups:
+  - GroupTankHarness
+  - JanitorHead
+  - HeadsetsJanitor # Box Change - Headsets
+  - JanitorJumpsuit
+  - JanitorGloves
+  - CommonBackpack
+  - JanitorOuterClothing
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - JanitorJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobBotanist
+  groups:
+  - GroupTankHarness
+  - BotanistHead
+  - HeadsetsBotanist # Box Change - Headsets
+  - BotanistJumpsuit
+  - BotanistBackpack
+  - BotanistOuterClothing
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- BotanistJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobClown
+  canCustomizeName: true
+  groups:
+  - GroupTankHarness
+  - ClownHead
+  - HeadsetsClown # Box Change - Headsets
+  - ClownJumpsuit
+  - ClownBackpack
+  - ClownOuterClothing
+  - ClownShoes
+  - Glasses
+  - SurvivalClown
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - ClownJobTrinkets
+
+- type: roleLoadout
+  id: JobMime
+  canCustomizeName: true
+  groups:
+  - GroupTankHarness
+  - MimeHead
+  - MimeMask
+  - HeadsetsMime # Box Change - Headsets
+  - MimeJumpsuit
+  - MimeBackpack
+  - MimeOuterClothing
+  - MimeBelt
+  - Glasses
+  - SurvivalMime
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- MimeJobTrinkets
+
+- type: roleLoadout
+  id: JobMusician
+  canCustomizeName: true
+  groups:
+  - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
+  - MusicianJumpsuit
+  - CommonBackpack
+  - MusicianOuterClothing
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- MusicianJobTrinkets
+  - Instruments
+  - GroupSpeciesBreathTool
+
+# Cargo
+- type: roleLoadout
+  id: JobQuartermaster
+  groups:
+  - GroupTankHarness
+  - QuartermasterHead
+  - HeadsetsQM # Box Change - Headsets
+  - QuartermasterNeck
+  - QuartermasterJumpsuit
+  - CargoTechnicianBackpack
+  - QuartermasterOuterClothing
+  - QuartermasterShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- QuartermasterJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobCargoTechnician
+  groups:
+  - GroupTankHarness
+  - CargoTechnicianHead
+  - HeadsetsCargo # Box Change - Headsets
+  - CargoTechnicianJumpsuit
+  - CargoTechnicianBackpack
+  - CargoTechnicianOuterClothing
+  - CargoTechnicianShoes
+  - CargoTechnicianID
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- CargoTechnicianJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobSalvageSpecialist
+  groups:
+  - GroupTankHarness
+  - HeadsetsSalvage # Box Change - Headsets
+  - SalvageSpecialistNeck # Harmony Change
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - SalvageSpecialistID # Harmony Change
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- SalvageSpecialistJobTrinkets
+  - GroupSpeciesBreathTool
+
+# Engineering
+- type: roleLoadout
+  id: JobChiefEngineer
+  groups:
+  - GroupTankHarness
+  - ChiefEngineerHead
+  - HeadsetsCE # Box Change - Headsets
+  - ChiefEngineerJumpsuit
+  - StationEngineerBackpack
+  - ChiefEngineerNeck
+  - ChiefEngineerOuterClothing
+  - ChiefEngineerShoes
+  - SurvivalExtended
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ChiefEngineerJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobTechnicalAssistant
+  groups:
+  - GroupTankHarness
+  - HeadsetsEngineering # Box Change - Headsets
+  - TechnicalAssistantJumpsuit
+  - StationEngineerBackpack
+  - SurvivalExtended
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- TechnicalAssistantJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobStationEngineer
+  groups:
+  - GroupTankHarness
+  - StationEngineerHead
+  - HeadsetsEngineering # Box Change - Headsets
+  - StationEngineerJumpsuit
+  - StationEngineerBackpack
+  - StationEngineerOuterClothing
+  - StationEngineerShoes
+  - StationEngineerID
+  - SurvivalExtended
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- StationEngineerJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobAtmosphericTechnician
+  groups:
+  - GroupTankHarness
+  - HeadsetsAtmos # Box Change - Headsets
+  - AtmosphericTechnicianJumpsuit
+  - AtmosphericTechnicianBackpack
+  - AtmosphericTechnicianOuterClothing
+  - AtmosphericTechnicianShoes
+  - SurvivalExtended
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- AtmosphericTechnicianJobTrinkets
+  - GroupSpeciesBreathTool
+
+# Science
+- type: roleLoadout
+  id: JobResearchDirector
+  groups:
+  - GroupTankHarness
+  - ResearchDirectorHead
+  - HeadsetsRD # Box Change - Headsets
+  - ResearchDirectorNeck
+  - ResearchDirectorJumpsuit
+  - ScientistBackpack
+  - ResearchDirectorOuterClothing
+  - ScientistGloves
+  - ResearchDirectorShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ResearchDirectorJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobScientist
+  groups:
+  - GroupTankHarness
+  - ScientistHead
+  - HeadsetsScience # Box Change - Headsets
+  - ScientistNeck
+  - ScientistJumpsuit
+  - ScientistBackpack
+  - ScientistOuterClothing
+  - ScientistGloves
+  - ScientistShoes
+  - ScientistPDA
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ScientistJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobResearchAssistant
+  groups:
+  - GroupTankHarness
+  - HeadsetsScience # Box Change - Headsets
+  - ResearchAssistantJumpsuit
+  - ScientistBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ResearchAssistantJobTrinkets
+  - GroupSpeciesBreathTool
+
+# Security
+- type: roleLoadout
+  id: JobHeadOfSecurity
+  groups:
+  - HeadofSecurityHead
+  - HeadsetsHoS # Box Change - Headsets
+  - HeadofSecurityNeck
+  - HeadofSecurityJumpsuit
+  - SecurityBackpack
+  - SecurityBelt
+  - HeadofSecurityOuterClothing
+  - SecurityShoes
+  - SurvivalSecurity
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - HeadofSecurityJobTrinkets
+  - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
+  id: JobWarden
+  groups:
+  - WardenHead
+  - HeadsetsWarden # Box Change - Headsets
+  - WardenJumpsuit
+  - SecurityBackpack
+  - SecurityBelt
+  - WardenOuterClothing
+  - SecurityShoes
+  - SurvivalSecurity
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - WardenJobTrinkets
+  - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
+  id: JobSecurityOfficer
+  groups:
+  - SecurityHead
+  - HeadsetsSecurity # Box Change - Headsets
+  - SecurityJumpsuit
+  - SecurityBackpack
+  - SecurityOuterClothing
+  - SecurityShoes
+  - SecurityPDA
+  - SecurityBelt
+  - SurvivalSecurity
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - SecurityJobTrinkets
+  - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
+  id: JobDetective
+  groups:
+  - DetectiveHead
+  - HeadsetsSecurity # Box Change - Headsets
+  - DetectiveNeck
+  - DetectiveJumpsuit
+  - SecurityBackpack
+  - DetectiveOuterClothing
+  - SecurityShoes
+  - SurvivalSecurity
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - DetectiveJobTrinkets
+  - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
+  id: JobSecurityCadet
+  groups:
+  - HeadsetsSecurity # Box Change - Headsets
+  - SecurityCadetJumpsuit
+  - SecurityBackpack
+  - SurvivalSecurity
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- SecurityCadetJobTrinkets
+  - GroupSpeciesBreathToolSecurity
+
+# Wildcards
+- type: roleLoadout
+  id: JobReporter
+  groups:
+  - GroupTankHarness
+  - HeadsetsService # Box Change - Headsets
+  - ReporterJumpsuit
+  - ReporterHead
+  - ReporterOuterClothing
+  - CommonBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  #- ReporterJobTrinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
+  id: JobPsychologist
+  groups:
+  - GroupTankHarness
+  - HeadsetsDoctor # Box Change - Headsets
+  - PsychologistJumpsuit
+  - MedicalBackpack
+  - Glasses
+  - Survival
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+  - PsychologistJobTrinkets
+  #- PsychologistJobTrinkets
+  - GroupSpeciesBreathTool
+
+# These loadouts are used for non-crew spawns, like off-station antags and event mobs
+# They will be used without player configuration, thus they will only ever apply what is forced by MinLimit
+
+# gives vox a harness and breathing mask
+# nitrogen tank not included
+- type: roleLoadout
+  id: RoleSurvivalVoxSupport
+  groups:
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+# gives vox a nitrogen breathing tank
+# other species get nothing
+- type: roleLoadout
+  id: RoleSurvivalVoxTank
+  groups:
+  - GroupEVATankVox
+
+- type: roleLoadout
+  id: RoleSurvivalStandard
+  groups:
+  - Survival
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalClown
+  groups:
+  - SurvivalClown
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalExtended
+  groups:
+  - SurvivalExtended
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalMedical
+  groups:
+  - SurvivalMedical
+  - GroupSpeciesBreathToolMedical
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalSecurity
+  groups:
+  - SurvivalSecurity
+  - GroupSpeciesBreathToolSecurity
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalSyndicate
+  groups:
+  - SurvivalSyndicate
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: RoleSurvivalMilitaryDouble
+  groups:
+  - SurvivalMilitaryDouble
+
+- type: roleLoadout
+  id: RoleSurvivalNukie
+  groups:
+  - SurvivalSyndicate
+  - GroupSpeciesBreathTool
+  - GroupPocketTankDouble
+
+- type: roleLoadout
+  id: RoleSurvivalEVA
+  groups:
+  - GroupEVATank
+  - SurvivalExtended
+
+- type: roleLoadout
+  id: RoleSurvivalSpaceNinja
+  groups:
+  - GroupEVATank

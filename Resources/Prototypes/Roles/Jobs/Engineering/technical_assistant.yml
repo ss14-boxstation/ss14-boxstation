@@ -8,12 +8,11 @@
       time: 0 # 0 hr
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 10h # Box Change - 5h > 10h
+      time: 10h
       inverted: true # stop playing intern if you're good at engineering!
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering
-  canBeAntag: false
   access:
   - Maintenance
   - Engineering

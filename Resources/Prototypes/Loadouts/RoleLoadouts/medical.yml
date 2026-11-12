@@ -1,0 +1,88 @@
+## Role Loadouts
+
+- type: roleLoadout
+  id: JobChiefMedicalOfficer
+  groups:
+  - GroupTankHarness
+  - ChiefMedicalOfficerHead
+  - MedicalMask
+  - HeadsetsCMO # Box Change - Headsets
+  - ChiefMedicalOfficerJumpsuit
+  - MedicalBackpack
+  - ChiefMedicalOfficerOuterClothing
+  - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerShoes
+  - Glasses
+  - SurvivalMedical
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+#  - ChiefMedicalOfficerJobTrinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobMedicalDoctor
+  groups:
+  - GroupTankHarness
+  - MedicalDoctorHead
+  - MedicalMask
+  - HeadsetsDoctor # Box Change - Headsets
+  - MedicalDoctorJumpsuit
+  - MedicalBackpack
+  - MedicalDoctorOuterClothing
+  - MedicalShoes
+  - MedicalDoctorPDA
+  - Glasses
+  - SurvivalMedical
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+#  - MedicalDoctorJobTrinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobMedicalIntern
+  groups:
+  - GroupTankHarness
+  - HeadsetsDoctor # Box Change - Headsets
+  - MedicalInternJumpsuit
+  - MedicalBackpack
+  - Glasses
+  - SurvivalMedical
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+#  - MedicalInternJobTrinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobChemist
+  groups:
+  - GroupTankHarness
+  - MedicalMask
+  - HeadsetsChemist # Box Change - Headsets
+  - ChemistJumpsuit
+  - ChemistBackpack
+  - ChemistOuterClothing
+  - MedicalShoes
+  - Glasses
+  - SurvivalMedical
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+#  - ChemistJobTrinkets
+  - GroupSpeciesBreathToolMedical
+
+- type: roleLoadout
+  id: JobParamedic
+  groups:
+  - GroupTankHarness
+  - ParamedicHead
+  - MedicalMask
+  - HeadsetsParamedic # Box Change - Headsets
+  - ParamedicJumpsuit
+  - MedicalBackpack
+  - ParamedicOuterClothing
+  - ParamedicShoes
+  - Glasses
+  - SurvivalMedical
+  - Trinkets
+  - Accessibility # Box Change - Add accessibility tab
+#  - ParamedicJobTrinkets
+  - GroupSpeciesBreathToolMedical

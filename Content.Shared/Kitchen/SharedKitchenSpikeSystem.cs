@@ -31,21 +31,21 @@ namespace Content.Shared.Kitchen;
 /// <summary>
 /// Used to butcher some entities like monkeys.
 /// </summary>
-public sealed class SharedKitchenSpikeSystem : EntitySystem
+public sealed partial class SharedKitchenSpikeSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly ISharedAdminLogManager _logger = default!;
-    [Dependency] private readonly DamageableSystem _damageableSystem = default!;
-    [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
-    [Dependency] private readonly MetaDataSystem _metaDataSystem = default!;
-    [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
-    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
-    [Dependency] private readonly GibbingSystem _gibbing = default!;
-    [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
-    [Dependency] private readonly SharedInteractionSystem _interaction = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
+    [Dependency] private ISharedAdminLogManager _logger = default!;
+    [Dependency] private DamageableSystem _damageableSystem = default!;
+    [Dependency] private ExamineSystemShared _examineSystem = default!;
+    [Dependency] private MetaDataSystem _metaDataSystem = default!;
+    [Dependency] private MobStateSystem _mobStateSystem = default!;
+    [Dependency] private SharedAppearanceSystem _appearanceSystem = default!;
+    [Dependency] private SharedAudioSystem _audioSystem = default!;
+    [Dependency] private GibbingSystem _gibbing = default!;
+    [Dependency] private SharedContainerSystem _containerSystem = default!;
+    [Dependency] private SharedDoAfterSystem _doAfterSystem = default!;
+    [Dependency] private SharedInteractionSystem _interaction = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
 
     public override void Initialize()
     {
@@ -70,7 +70,6 @@ public sealed class SharedKitchenSpikeSystem : EntitySystem
 
         // Prevent the victim from doing anything while on the spike.
         SubscribeLocalEvent<KitchenSpikeHookedComponent, ChangeDirectionAttemptEvent>(OnAttempt);
-        SubscribeLocalEvent<KitchenSpikeHookedComponent, UpdateCanMoveEvent>(OnAttempt);
         SubscribeLocalEvent<KitchenSpikeHookedComponent, UseAttemptEvent>(OnAttempt);
         SubscribeLocalEvent<KitchenSpikeHookedComponent, ThrowAttemptEvent>(OnAttempt);
         SubscribeLocalEvent<KitchenSpikeHookedComponent, DropAttemptEvent>(OnAttempt);

@@ -6,12 +6,12 @@ using Content.Shared.Gibbing;
 using Robust.Shared.Random; // Box Change: For paraclone RNG
 
 namespace Content.Server.Gibbing.Systems;
-public sealed class GibOnRoundEndSystem : EntitySystem
+public sealed partial class GibOnRoundEndSystem : EntitySystem
 {
-    [Dependency] private readonly GibbingSystem _gibbing = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!;
-    [Dependency] private readonly SharedObjectivesSystem _objectives = default!;
-    [Dependency] private readonly IRobustRandom _random = default!; // Box Change: For paraclone RNG
+    [Dependency] private GibbingSystem _gibbing = default!;
+    [Dependency] private SharedMindSystem _mind = default!;
+    [Dependency] private SharedObjectivesSystem _objectives = default!;
+    [Dependency] private IRobustRandom _random = default!; // Box Change: For paraclone RNG
 
     public override void Initialize()
     {

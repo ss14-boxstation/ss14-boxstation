@@ -5,6 +5,7 @@ using Content.Shared.Damage.ForceSay;
 using Content.Shared.Damage.Systems;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Speech; // Box Change: Narcolepsy speech fix
 using Content.Shared.Stunnable;
@@ -16,11 +17,11 @@ using Robust.Shared.Timing;
 namespace Content.Server.Damage.ForceSay;
 
 /// <inheritdoc cref="DamageForceSayComponent"/>
-public sealed class DamageForceSaySystem : EntitySystem
+public sealed partial class DamageForceSaySystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     public override void Initialize()
     {
@@ -88,6 +89,9 @@ public sealed class DamageForceSaySystem : EntitySystem
     private void OnSleep(EntityUid uid, DamageForceSayComponent component, SleepStateChangedEvent args)
     {
         if (!args.FellAsleep)
+            return;
+
+        if (Comp<MobStateComponent>(uid).CurrentState != MobState.Alive)
             return;
 
         TryForceSay(uid, component);

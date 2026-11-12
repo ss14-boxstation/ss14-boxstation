@@ -8,13 +8,13 @@ using Robust.Shared.Prototypes; // Box Change: imp floorlights
 
 namespace Content.Shared.Light.EntitySystems;
 
-public abstract class SharedLightBulbSystem : EntitySystem
+public abstract partial class SharedLightBulbSystem : EntitySystem
 {
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
     // Start Box Change: prevent imp floorlights from infinitely recycling broken lights
-    [Dependency] private readonly TagSystem _tags = default!;
-	private ProtoId<TagPrototype> _brokenTag = "Broken";
+    [Dependency] private TagSystem _tags = default!;
+    private ProtoId<TagPrototype> _brokenTag = "Broken";
     private HashSet<ProtoId<TagPrototype>> _tagsToRemove = [ // I fucjing hate this
         "LightBlue",
         "LightBlack",

@@ -24,10 +24,6 @@
   equipment:
     id: ParamedicPDA
     # ears: ClothingHeadsetMedical # Box Change: Headset moved to loadout option
-    belt: ClothingBeltMedicalEMTFilled
-  storage:
-    back:
-    - EmergencyRollerBedSpawnFolded
 
 - type: chameleonOutfit
   id: ParamedicChameleonOutfit

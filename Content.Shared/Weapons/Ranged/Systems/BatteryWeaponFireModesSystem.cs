@@ -9,13 +9,13 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
-public sealed class BatteryWeaponFireModesSystem : EntitySystem
+public sealed partial class BatteryWeaponFireModesSystem : EntitySystem
 {
-    [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
-    [Dependency] private readonly SharedGunSystem _gun = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
+    [Dependency] private AccessReaderSystem _accessReaderSystem = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
+    [Dependency] private SharedAppearanceSystem _appearanceSystem = default!;
+    [Dependency] private SharedGunSystem _gun = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
 
     public override void Initialize()
     {
@@ -37,7 +37,6 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
             return;
 
         args.PushMarkup(Loc.GetString("gun-set-fire-mode-examine", ("mode", proto.Name)));
-
     }
 
     private BatteryWeaponFireMode GetMode(BatteryWeaponFireModesComponent component)
