@@ -39,3 +39,100 @@
     - id: BlackQueen
       amount: 2
     - id: BlackKing
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateGlowsticks
+  name: glowstick crate
+  description: Eight glowsticks of varying colors. Useful for raves and emergencies.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children: 
+        - !type:NestedSelector 
+          tableId: GlowsticksTable
+          rolls: 8
+            
+- type: entityTable
+  id: GlowsticksTable
+  table: !type:GroupSelector
+    children:
+      - id: GlowstickGreen
+      - id: GlowstickBlue
+      - id: GlowstickYellow
+      - id: GlowstickPurple
+      - id: GlowstickRed
+
+- type: entity
+  parent: CratePlastic
+  id: CrateTowels
+  name: towels crate
+  description: A dozen towels of varying colors. For all your cleaning, bathing, or sauna-building needs.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:GroupSelector
+        children: 
+        - !type:NestedSelector 
+          rolls: 12
+          tableId: RandomTowelsTable
+        - !type:NestedSelector 
+          weight: 0.1
+          rolls: 12
+          tableId: SyndicateTowelsTable
+        - !type:NestedSelector 
+          weight: 0.1
+          rolls: 12
+          tableId: CentCommTowelsTable
+            
+- type: entityTable
+  id: RandomTowelsTable # Random set of normal towels
+  table: !type:GroupSelector
+    children:
+    - id: TowelColorWhite
+    - id: TowelColorPurple
+    - id: TowelColorRed
+    - id: TowelColorBlue
+    - id: TowelColorDarkBlue
+    - id: TowelColorLightBlue
+    - id: TowelColorTeal
+    - id: TowelColorBrown
+    - id: TowelColorLightBrown
+    - id: TowelColorGray
+    - id: TowelColorGreen
+    - id: TowelColorDarkGreen
+    - id: TowelColorOrange
+    - id: TowelColorBlack
+    - id: TowelColorPink
+    - id: TowelColorYellow
+    - id: TowelColorMaroon
+    - id: TowelColorNT
+    - !type:GroupSelector
+      weight: 0.5 # Uncommon
+      children:
+      - id: TowelColorSilver
+      - id: TowelColorGold
+    - !type:GroupSelector
+      weight: 0.1 # Rare
+      children:
+      - id: TowelColorCentcom
+      - id: TowelColorSyndicate
+          
+- type: entityTable
+  id: SyndicateTowelsTable # Misplaced Syndicate towel shipment
+  table: !type:GroupSelector
+    children:
+    - id: TowelColorRed
+    - id: TowelColorBlack
+    - id: TowelColorMaroon
+    - id: TowelColorSyndicate
+    
+- type: entityTable
+  id: CentCommTowelsTable # Misplaced CentComm towel shipment
+  table: !type:GroupSelector
+    children:
+    - id: TowelColorGreen
+    - id: TowelColorDarkGreen
+    - id: TowelColorGold
+    - id: TowelColorCentcom
