@@ -1,5 +1,6 @@
 using Content.Shared.Examine;
 using Content.Shared.Weapons.Ranged.Components;
+using Content.Shared.Weapons.Ranged.Events; // Box Change
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
@@ -29,6 +30,11 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
 
         while (query.MoveNext(out var uid, out var recharge, out var ammo))
         {
+            // Box Change Start - Empty Ammo Recharging System
+            if (TryComp<RechargeEmptyAmmoComponent>(uid, out var emptyCharge) && emptyCharge.IsRecharging == false)
+                continue;
+            // Box Change End
+
             if (ammo.Count is null || ammo.Count == ammo.Capacity || recharge.NextCharge == null)
                 continue;
 
@@ -46,6 +52,10 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
             if (ammo.Count == ammo.Capacity)
             {
                 recharge.NextCharge = null;
+                // Box Change Start - Xeno Shard Accelerator Reload on empty - We need to know when reloading is finished
+                var ammoFullEvent = new BasicAmmoFullEvent(uid);
+                RaiseLocalEvent(uid, ref ammoFullEvent);
+                // Box Change End
                 Dirty(uid, recharge);
                 continue;
             }
