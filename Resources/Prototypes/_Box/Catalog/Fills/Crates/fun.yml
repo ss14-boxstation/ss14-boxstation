@@ -39,3 +39,37 @@
     - id: BlackQueen
       amount: 2
     - id: BlackKing
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateGlowsticks
+  name: glowstick crate
+  description: A set of 8 glowsticks of random colors.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children: 
+          - !type:GroupSelector
+            children: &glowsticks
+            - id: GlowstickGreen
+            - id: GlowstickBlue
+            - id: GlowstickYellow
+            - id: GlowstickPurple
+            - id: GlowstickRed
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
+          - !type:GroupSelector
+            children: *glowsticks
