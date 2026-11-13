@@ -27,3 +27,13 @@
   cost: 500
   category: cargoproduct-category-name-fun
   group: market
+  
+- type: cargoProduct
+  id: TowelsCrate
+  icon:
+    sprite: Clothing/Multiple/towel.rsi
+    state: icon
+  product: CrateTowels
+  cost: 500
+  category: cargoproduct-category-name-fun
+  group: market
