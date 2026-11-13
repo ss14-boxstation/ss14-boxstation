@@ -2391,3 +2391,16 @@
   id: 259
   time: '2026-11-12T22:39:51.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/395
+- author: SomegnihT
+  changes:
+  - message: The main room in Packed Atmos now requires Atmos Technicians to make
+      their own distro, waste, and burn mix pipes.
+    type: Tweak
+  - message: The TEG burn chamber is no longer directly connected to the station and
+      now by default has a way to flush gas from the burn chamber.
+    type: Tweak
+  - message: Atmos now has 2 stacks of steel that can be used.
+    type: Add
+  id: 260
+  time: '2026-11-13T01:08:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/393
