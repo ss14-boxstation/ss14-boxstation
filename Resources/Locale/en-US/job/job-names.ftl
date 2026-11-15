@@ -67,7 +67,8 @@ job-name-zookeeper = Zookeeper
 job-name-ninja = Ninja
 job-name-syndicate = Syndicate
 job-name-syndicate-commander = Syndicate Commander
-job-name-syndicate-corpsman = Syndicate Corpsman
+# Box Change: Corpsman -> Medic
+job-name-syndicate-corpsman = Syndicate Medic
 job-name-syndicate-operative = Syndicate Operative
 job-name-pirate = Pirate
 job-name-wizard = Wizard
