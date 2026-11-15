@@ -279,7 +279,7 @@
     - /Audio/Machines/circuitprinter.ogg
     - /Audio/Machines/diagnoser_printing.ogg
     - /Audio/Machines/uniformprinter.ogg
-    - /Audio/Machines/vaccinator_running.ogg
+    #- /Audio/Machines/vaccinator_running.ogg # Box Change: Kill the loud-as-fuck vaccinator sound
     # Start Box Change: Harpy sound additions
     - /Audio/_MACRO/Voice/Allulalo/allulalo_chitter.ogg
     - /Audio/Voice/Vox/vox_chitter.ogg

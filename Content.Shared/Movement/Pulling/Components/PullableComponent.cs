@@ -41,6 +41,14 @@ public sealed partial class PullableComponent : Component
 
     [DataField]
     public ProtoId<AlertPrototype> PulledAlert = "Pulled";
+
+    // Start Box Change: Face towards/away from pulled entity
+    /// <summary>
+    /// If the puller should face towards this entity while pulling it. If false, they will face away instead.
+    /// </summary>
+    [AutoNetworkedField, DataField]
+    public bool FaceTowards = true;
+    // End Box Change
 }
 
 public sealed partial class StopBeingPulledAlertEvent : BaseAlertEvent;

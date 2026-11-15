@@ -129,7 +129,7 @@
     bodyType: Dynamic
 
 - type: entity
-  parent: StorageTank
+  parent: [StorageTank, StructureWheeled] #Box Change: Adds StructureWheeled parent to nuke keg
   id: NuclearBombKeg
   name: nuclear fission explosive
   suffix: keg

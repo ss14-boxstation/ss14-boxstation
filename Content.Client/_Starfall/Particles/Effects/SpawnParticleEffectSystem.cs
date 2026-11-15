@@ -21,7 +21,7 @@ public sealed partial class SpawnParticleEffectSystem : EntityEffectSystem<Trans
         }
 
         // Infinite-duration effects (Duration == 0, not burst, no timed bursts) can never be stopped and are not appropriate for this use case, which is meant for short-lived effects like hit sparks or explosion flashes.
-        if (proto.Duration == TimeSpan.Zero && !proto.Burst && proto.Bursts.Count == 0)
+        if (proto.Duration == TimeSpan.Zero && proto is { Burst: false, Bursts.Count: 0 })
         {
             Log.Error($"SpawnParticleEffect tried to spawn '{args.Effect.Effect}' which has infinite duration (Duration=0, Burst=false). " +
                       $"Set a finite Duration or use Burst mode.");

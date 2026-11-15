@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.1
+  engineVersion: 272.0.10
   forkId: ""
   forkVersion: ""
-  time: 10/24/2026 04:25:04
-  entityCount: 18840
+  time: 11/10/2026 19:47:34
+  entityCount: 18841
 maps:
 - 1
 grids:
@@ -105160,6 +105160,13 @@ entities:
     components:
     - type: Transform
       pos: 41.5,13.5
+      parent: 2
+- proto: SpawnMobPossumPoppy
+  entities:
+  - uid: 12851
+    components:
+    - type: Transform
+      pos: 32.5,-10.5
       parent: 2
 - proto: SpawnMobRaccoonMorticia
   entities:

@@ -1,7 +1,7 @@
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Starfall.Particles;
+namespace Content.Shared._Starfall.Particles.Visuals;
 
 /// <summary>
 /// Sent from the server to nearby clients when an entity is gibbed,

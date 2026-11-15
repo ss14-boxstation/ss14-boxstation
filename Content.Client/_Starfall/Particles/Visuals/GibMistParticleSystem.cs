@@ -1,7 +1,8 @@
 using Content.Shared._Starfall.Particles;
+using Content.Shared._Starfall.Particles.Visuals;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._Starfall.Particles;
+namespace Content.Client._Starfall.Particles.Visuals;
 
 /// <summary>
 /// Receives <see cref="GibMistParticleEvent"/> from the server and spawns

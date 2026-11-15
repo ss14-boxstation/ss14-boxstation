@@ -2,7 +2,7 @@
   name: food cart
   id: FoodCartBase
   abstract: true
-  parent: BaseStructureDynamic
+  parent: [BaseStructureDynamic, StructureWheeled] #Box Change: Adds StructureWheeled parent to food carts
   description: A cart for food.
   components:
     - type: Sprite
