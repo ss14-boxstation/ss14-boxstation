@@ -1,6 +1,6 @@
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
-  id: ChameleonProjectorNoBattery
+  id: ChameleonProjector # Box Change: ChameleonProjectorNoBattery -> ChameleonProjector - Keep uplink/thief chameleon projector as batteryless
   name: chameleon projector
   description: Holoparasite technology used to create a hard-light replica of any object around you. Disguise is destroyed when picked up or deactivated.
   components:
@@ -36,8 +36,8 @@
     price: 5000
 
 - type: entity
-  parent: ChameleonProjectorNoBattery
-  id: ChameleonProjector
+  parent: ChameleonProjector # Box Change: ChameleonProjectorNoBattery -> ChameleonProjector
+  id: ChameleonProjectorBattery # Box Change: ChameleonProjector -> ChameleonProjectorBattery
   name: chameleon projector
   description: Holoparasite technology used to create a hard-light replica of any object around you. Disguise is destroyed when picked up or deactivated.
   suffix: Battery

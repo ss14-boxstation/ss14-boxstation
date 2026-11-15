@@ -1654,7 +1654,7 @@
     - state: icon-xenoborg-projector
   - type: ItemBorgModule
     hands:
-    - item: ChameleonProjectorNoBattery
+    - item: ChameleonProjector # Box Change: ChameleonProjectorNoBattery -> ChameleonProjector
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-projector-module }
 
