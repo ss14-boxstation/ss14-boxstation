@@ -12,7 +12,8 @@ public sealed class GibMistParticleSystem : EntitySystem
 {
     [Dependency] private readonly ParticleSystem _particles = default!;
 
-    private static readonly ProtoId<ParticleEffectPrototype> MistEffect = "SfGibMist";
+    private static readonly ProtoId<ParticleEffectPrototype> MistEffect = "MoffGibMist"; // Box Change: Moff effects
+    private static readonly ProtoId<ParticleEffectPrototype> SpeckEffect = "MoffGibSpecks"; // Box Change: Moff effects
 
     public override void Initialize()
     {
@@ -23,10 +24,14 @@ public sealed class GibMistParticleSystem : EntitySystem
     private void OnGibMist(GibMistParticleEvent ev)
     {
         var emitter = _particles.SpawnEffect(MistEffect, ev.Coords);
-        if (emitter == null)
+        // Start Box Change: Moff effects
+        var emitter2 = _particles.SpawnEffect(SpeckEffect, ev.Coords);
+        if (emitter == null || emitter2 == null)
             return;
 
         emitter.ColorOverride = ev.BloodColor;
+        emitter2.ColorOverride = ev.BloodColor;
+        //End Box Change
     }
 }
 
