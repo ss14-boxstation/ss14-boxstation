@@ -423,7 +423,7 @@
     sprite: *icon-rsi
     state: Prisoner
   jobName: job-name-prisoner
-  isCrewJob: false
+  #isCrewJob: false # Box Change: Prisoners are still crew.
 
 - type: jobIcon
   parent: JobIcon
