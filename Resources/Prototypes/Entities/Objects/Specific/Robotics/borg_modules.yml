@@ -938,6 +938,7 @@
     - state: icon-chemist
   - type: ItemBorgModule
     hands:
+    - item: HandheldHealthAnalyzer # Box Change: Give the chemical module a health analyzer for consistency and qol
     - item: HandLabeler 
     - item: AdvancedJetInjector # Box Change: Move advanced jet injector from topicals module
     - item: Syringe
