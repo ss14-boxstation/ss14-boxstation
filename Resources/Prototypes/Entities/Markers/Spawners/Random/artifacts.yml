@@ -1,5 +1,5 @@
 ﻿- type: entityTable
-  id: RandomArtifactTable
+  id: RandomXAEArtifactTable # Box Change: XAE in name
   table: !type:GroupSelector
     children:
     # Box Change Start - Imp Duo Xenoarch
@@ -26,7 +26,7 @@
       state: ano01
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: RandomArtifactTable
+      tableId: RandomXAEArtifactTable # Box Change: XAE in name
 
 - type: entity
   # Box Change Start - Imp Duo XenoArch
@@ -37,5 +37,5 @@
   components:
   - type: EntityTableSpawner
     table: !type:NestedSelector
-      tableId: RandomArtifactTable
+      tableId: RandomXAEArtifactTable # Box Change: XAE in name
       prob: 0.2
