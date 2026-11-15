@@ -59,5 +59,7 @@ privacy_policy_link = "https://spacestation14.com/about/privacy/#game-server-pri
 privacy_policy_identifier = "wizden"
 privacy_policy_version = "2025-01-19"
 
-[feedback]
-valid_origins = "wizden"
+# Start Box Change: No feedback.
+#[feedback]
+#valid_origins = "wizden"
+# End Box Change
