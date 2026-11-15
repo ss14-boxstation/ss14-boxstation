@@ -83,7 +83,7 @@
   - type: XenoborgsRule
   - type: RuleGrids
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 40 # Box Change: 30 -> 40 so they can never roll
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/mothership.yml
   - type: AntagMultipleRoleSpawner
