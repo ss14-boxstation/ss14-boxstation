@@ -31,7 +31,6 @@
   components:
   - type: Item
     sprite: Objects/Specific/Chemistry/vial.rsi
->>>>>>> fdeb5a736d0c (Rebase vials to DrinkBase, closeable vials, mini vials (#36132))
   - type: Sprite
     sprite: Objects/Specific/Chemistry/vial.rsi
   - type: SolutionContainerVisuals

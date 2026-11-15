@@ -8,7 +8,7 @@
     # - id: ComplexXenoArtifactItem
     - id: ComplexXAEXenoArtifact
       weight: 2
-    - ComplexXAEXenoArtifactItem
+    - id: ComplexXAEXenoArtifactItem
     # Box Change End
 
 - type: entity
