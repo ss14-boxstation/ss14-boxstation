@@ -806,6 +806,10 @@ RightLegHuman: OrganHumanLegRight
 TorsoSkeleton: OrganSkeletonPersonTorso
 RightArmSkeleton: OrganSkeletonPersonArmRight
 
+# 2026-01-31 Harmony?
+RandomHumanoidSpawnerERTLeaderEVALecter: RandomHumanoidSpawnerERTLeaderArmed
+RandomHumanoidSpawnerERTSecurityEVALecter: RandomHumanoidSpawnerERTSecurityArmedRifle
+
 # 2026-02-23 Harmony
 LeftFootHuman: OrganHumanFootLeft
 TorsoHuman: OrganHumanTorso
