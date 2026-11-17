@@ -20,7 +20,8 @@ public sealed class InstrumentImplantSystem : EntitySystem
     }
 
     /// <summary>
-    /// If implanted with a radio implant, installs the necessary intrinsic radio components
+    /// When implanted, attempts to ads the specified instrument(s) to the target, and to a list of instruments to remove when de-implanted.
+    /// If the target already has a given instrument, it is not added to the removal list to avoid loss of natural instruments.
     /// </summary>
     private void OnImplantImplanted(Entity<InstrumentImplantComponent> ent, ref ImplantImplantedEvent args)
     {
@@ -39,7 +40,7 @@ public sealed class InstrumentImplantSystem : EntitySystem
     }
 
     /// <summary>
-    /// Removes intrinsic radio components once the Radio Implant is removed
+    /// Removes instruments that were successfully added by the implanter.
     /// </summary>
     private void OnImplantRemoved(Entity<InstrumentImplantComponent> ent, ref ImplantRemovedEvent args)
     {
