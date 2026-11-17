@@ -2404,3 +2404,47 @@
   id: 260
   time: '2026-11-13T01:08:32.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/393
+- author: Dizzy-Eevee
+  changes:
+  - message: Wizden content has been merged up to end of January 2026. New content
+      includes handheld reagent grinder equivalents, a paper centrifuge, a map of
+      the target station for nukies, an overhaul of camera UI, and a bonfire with
+      a stake to buckle mobs to. Please do not burn Pun-Pun.
+    type: Add
+  - message: 'Upstream divergence: Tritium energy production remains unchanged'
+    type: Tweak
+  - message: 'Upstream divergence: Towel and job lizard plushie trinkets have not
+      been removeed'
+    type: Tweak
+  - message: 'Upstream divergence: Roundstart medical equipment has not been changed.'
+    type: Tweak
+  - message: 'Upstream divergence: The uplink remains largely unchanged, pending a
+      potential Box-specific overhaul. Weapon bundles retain their ammo, the Python
+      has not been removed, etc.'
+    type: Tweak
+  - message: 'Upstream divergence: The medical cyborg''s modules remain mostly unchanged,
+      beyond the addition of an advanced jet injector to the chemical module, and
+      replacing its vials with beakers.'
+    type: Tweak
+  - message: 'Upstream divergence: The chameleon projectors purchasable from the uplink
+      or from thief satchels are not battery-powered.'
+    type: Tweak
+  - message: 'Upstream divergence: LOOC chat is still called LOOC.'
+    type: Tweak
+  - message: 'Upstream divergence: Mimes still have the NanoTask and Notekeeper apps
+      on their PDAs.'
+    type: Tweak
+  - message: 'Upstream divergence: Visitor shuttles have not been removed.'
+    type: Tweak
+  - message: The borg chemical module now has a health analyzer.
+    type: Add
+  id: 261
+  time: '2026-11-17T17:32:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/397
+- author: Dizzy-Eevee
+  changes:
+  - message: Added string lights, which take light bulbs and can be built on walls.
+    type: Add
+  id: 262
+  time: '2026-11-17T23:38:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/399
