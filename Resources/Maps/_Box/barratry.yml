@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.1
+  engineVersion: 272.0.10
   forkId: ""
   forkVersion: ""
-  time: 08/14/2026 14:31:01
-  entityCount: 23234
+  time: 11/10/2026 19:44:42
+  entityCount: 23235
 maps:
 - 1
 grids:
@@ -22877,7 +22877,7 @@ entities:
       pos: -80.5,5.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -141482.34
+      secondsUntilStateChange: -141559.83
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -138231,6 +138231,13 @@ entities:
     components:
     - type: Transform
       pos: 2.5,25.5
+      parent: 2
+- proto: SpawnMobPossumPoppy
+  entities:
+  - uid: 23235
+    components:
+    - type: Transform
+      pos: -66.5,31.5
       parent: 2
 - proto: SpawnMobRaccoonMorticia
   entities:
