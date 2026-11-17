@@ -68,7 +68,6 @@
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
     - JukeboxCircuitBoard
-    - LyrebirdImplanter # Box Change: Harpy DAW implant
 
 - type: technology
   id: MeatManipulation

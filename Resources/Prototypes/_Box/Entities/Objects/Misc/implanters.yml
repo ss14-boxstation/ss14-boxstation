@@ -13,3 +13,6 @@
   components:
   - type: Implanter
     implant: LyrebirdImplant
+  - type: Construction
+    graph: LyrebirdImplanter
+    node: implanter
