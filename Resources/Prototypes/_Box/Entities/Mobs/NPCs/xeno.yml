@@ -63,6 +63,8 @@
     damage:
       groups:
         Brute: 6
+      types:
+        Structural: 10
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: Fixtures

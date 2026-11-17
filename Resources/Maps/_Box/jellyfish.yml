@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.1
+  engineVersion: 272.0.10
   forkId: ""
   forkVersion: ""
-  time: 08/14/2026 14:44:51
-  entityCount: 16446
+  time: 11/10/2026 19:52:23
+  entityCount: 16447
 maps:
 - 1
 grids:
@@ -83063,15 +83063,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: PosterHarmonyMoney
-  entities:
-  - uid: 11996
-    components:
-    - type: Transform
-      pos: 31.5,-16.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: PosterHarmonyMuhrinePropaganda
   entities:
   - uid: 12002
@@ -86252,6 +86243,13 @@ entities:
       parent: 2
 - proto: RandomPosterLegit
   entities:
+  - uid: 11996
+    components:
+    - type: Transform
+      pos: 31.5,-16.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
   - uid: 12289
     components:
     - type: Transform
@@ -91353,6 +91351,13 @@ entities:
     components:
     - type: Transform
       pos: -8.5,19.5
+      parent: 2
+- proto: SpawnMobPossumPoppy
+  entities:
+  - uid: 16447
+    components:
+    - type: Transform
+      pos: -25.5,-16.5
       parent: 2
 - proto: SpawnMobRaccoonMorticia
   entities:
