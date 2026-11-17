@@ -82640,8 +82640,6 @@ entities:
     - type: Transform
       pos: 18.5,22.5
       parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 12352
     components:
     - type: Transform
