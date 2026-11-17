@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 272.0.10
+  engineVersion: 276.0.6
   forkId: ""
   forkVersion: ""
-  time: 11/10/2026 19:47:34
+  time: 11/15/2026 10:59:31
   entityCount: 18841
 maps:
 - 1
@@ -22101,28 +22101,6 @@ entities:
     components:
     - type: Transform
       pos: 49.556282,3.5894375
-      parent: 2
-- proto: BaseChemistryEmptyVial
-  entities:
-  - uid: 4094
-    components:
-    - type: Transform
-      pos: 19.960098,21.84556
-      parent: 2
-  - uid: 4095
-    components:
-    - type: Transform
-      pos: 20.116348,21.62681
-      parent: 2
-  - uid: 8822
-    components:
-    - type: Transform
-      pos: 24.581747,10.684262
-      parent: 2
-  - uid: 15849
-    components:
-    - type: Transform
-      pos: 27.824532,35.632626
       parent: 2
 - proto: BaseGasCondenser
   entities:
@@ -51218,6 +51196,28 @@ entities:
     components:
     - type: Transform
       pos: 26.385427,37.27761
+      parent: 2
+- proto: ChemistryEmptyVial
+  entities:
+  - uid: 4094
+    components:
+    - type: Transform
+      pos: 19.960098,21.84556
+      parent: 2
+  - uid: 4095
+    components:
+    - type: Transform
+      pos: 20.116348,21.62681
+      parent: 2
+  - uid: 8822
+    components:
+    - type: Transform
+      pos: 24.581747,10.684262
+      parent: 2
+  - uid: 15849
+    components:
+    - type: Transform
+      pos: 27.824532,35.632626
       parent: 2
 - proto: ChemistryHotplate
   entities:

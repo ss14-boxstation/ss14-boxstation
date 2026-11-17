@@ -88,13 +88,13 @@ namespace Content.IntegrationTests.Tests
             testSystem.Enabled = false;
         }
 
-        private new const string TestMap = "Maps/_Box/elkridge.yml"; // Box Change - bagel > Elkridge - Hardfork Maps
+        private new const string TestMap = "Maps/_Box/omega.yml"; // Box Change - bagel > Omega - Hardfork Maps
 
         /// <summary>
         ///     Loads the default map, runs it for 5 ticks, then assert that it did not change.
         /// </summary>
         [Test]
-        public async Task LoadSaveTicksSaveElkridge() // Box Change - bagel > Elkridge - Hardfork Maps
+        public async Task LoadSaveTicksSaveOmega() // Box Change - bagel > Omega - Hardfork Maps
         {
             var pair = Pair;
             var server = pair.Server;
@@ -110,7 +110,7 @@ namespace Content.IntegrationTests.Tests
             var cfg = server.ResolveDependency<IConfigurationManager>();
             Assert.That(cfg.GetCVar(CCVars.GridFill), Is.False);
 
-            // Load elkridge.yml as uninitialized map, and save it to ensure it's up to date. // Box Change - bagel > Elkridge - Hardfork Maps
+            // Load omega.yml as uninitialized map, and save it to ensure it's up to date. // Box Change - bagel > Omega - Hardfork Maps
             server.Post(() =>
             {
                 var path = new ResPath(TestMap);
@@ -176,11 +176,11 @@ namespace Content.IntegrationTests.Tests
         /// <remarks>
         ///     Should ensure that entities do not perform randomization prior to initialization and should prevents
         ///     bugs like the one discussed in github.com/space-wizards/RobustToolbox/issues/3870. This test is somewhat
-        ///     similar to <see cref="LoadSaveTicksSaveElkridge"/> and <see cref="SaveLoadSave"/>, but neither of these
+        ///     similar to <see cref="LoadSaveTicksSaveOmega"/> and <see cref="SaveLoadSave"/>, but neither of these
         ///     caught the mentioned bug.
         /// </remarks>
         [Test]
-        public async Task LoadTickLoadElkridge() // Box Change - bagel > Elkridge - Hardfork Maps
+        public async Task LoadTickLoadOmega() // Box Change - bagel > Omega - Hardfork Maps
         {
             var pair = Pair;
             var server = pair.Server;

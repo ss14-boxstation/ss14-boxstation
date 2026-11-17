@@ -49,14 +49,14 @@ namespace Content.IntegrationTests.Tests.Chemistry
             Solution solution = null;
             Entity<SolutionComponent>? solutionEnt = default!;
 
-                await server.WaitAssertion(() =>
+            await server.WaitAssertion(() =>
+            {
+                beaker = entityManager.SpawnEntity("TestSolutionContainer", coordinates);
+                Assert.That(solutionContainerSystem
+                    .TryGetSolution(beaker, "beaker", out solutionEnt, out solution));
+                solutionContainerSystem.SetCanReact(solutionEnt!.Value, false);
+                foreach (var (id, reactant) in reactionPrototype.Reactants)
                 {
-                    beaker = entityManager.SpawnEntity("TestSolutionContainer", coordinates);
-                    Assert.That(solutionContainerSystem
-                        .TryGetSolution(beaker, "beaker", out solutionEnt, out solution));
-                    solutionContainerSystem.SetCanReact(solutionEnt!.Value, false);
-                    foreach (var (id, reactant) in reactionPrototype.Reactants)
-                    {
 #pragma warning disable NUnit2045
                     Assert.That(solutionContainerSystem
                         .TryAddReagent(solutionEnt.Value,
@@ -97,9 +97,9 @@ namespace Content.IntegrationTests.Tests.Chemistry
                     }
                 }
 
-                    //Now safe set the temperature and mix the reagents
-                    solutionContainerSystem.SetTemperature(solutionEnt.Value, reactionPrototype.MinimumTemperature);
-                    solutionContainerSystem.SetCanReact(solutionEnt.Value, true);
+                //Now safe set the temperature and mix the reagents
+                solutionContainerSystem.SetTemperature(solutionEnt.Value, reactionPrototype.MinimumTemperature);
+                solutionContainerSystem.SetCanReact(solutionEnt.Value, true);
 
                 if (reactionPrototype.MixingCategories != null)
                 {
