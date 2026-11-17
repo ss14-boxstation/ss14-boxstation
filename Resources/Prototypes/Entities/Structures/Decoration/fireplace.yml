@@ -51,3 +51,6 @@
     effect: SfFireContinuousFireplace
     spawnOffset: 0, -0.03
   # End Box Change
+  - type: IgnitionSource
+    temperature: 700
+    ignited: true

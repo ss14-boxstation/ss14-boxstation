@@ -96,6 +96,12 @@
   priority: 11
 # Box Change End - Early Merge of WizDen code
 
+#nukie delivery
+
+- type: storeCategory
+  id: NukieDelivery
+  name: store-category-nukie-delivery
+
 #revenant
 - type: storeCategory
   id: RevenantAbilities

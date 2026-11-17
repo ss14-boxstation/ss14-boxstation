@@ -1,0 +1,70 @@
+- type: entityTable
+  id: RandomOldArtifactTable
+  table: !type:GroupSelector
+    children:
+      - id: SimpleOldXenoArtifact
+      - id: MediumOldXenoArtifact
+        weight: 4
+      - id: ComplexOldXenoArtifact
+        weight: 3
+      - id: SimpleOldXenoArtifactItem
+      - id: MediumOldXenoArtifactItem
+      - id: ComplexOldXenoArtifactItem
+      
+- type: entityTable
+  id: RandomArtifactTable
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        tableId: RandomOldArtifactTable
+      - !type:NestedSelector
+        tableId: RandomXAEArtifactTable
+
+- type: entity
+  id: RandomOldArtifactSpawner # Natural (old) artifacts
+  name: random natural artifact spawner
+  suffix: Imp
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+          state: ano01
+    - type: EntityTableSpawner
+      table: !type:NestedSelector
+        tableId: RandomOldArtifactTable 
+
+- type: entity
+  id: RandomOldArtifactSpawner20
+  name: random natural artifact spawner [20]
+  parent: RandomOldArtifactSpawner
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomXAEArtifactTable 
+      prob: 0.2
+
+- type: entity
+  id: RandomArtifactSpawner # 50/50 split between reticulated (new) and natural (old) artifacts.
+  name: random artifact spawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
+          state: ano01
+    - type: EntityTableSpawner
+      table: !type:NestedSelector
+        tableId: RandomArtifactTable 
+
+- type: entity
+  id: RandomArtifactSpawner20 
+  name: random artifact spawner [20]
+  parent: RandomArtifactSpawner
+  components:
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomArtifactTable 
+      prob: 0.2
