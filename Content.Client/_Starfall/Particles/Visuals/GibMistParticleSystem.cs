@@ -27,11 +27,11 @@ public sealed class GibMistParticleSystem : EntitySystem
         // Start Box Change: Moff effects
         var emitter2 = _particles.SpawnEffect(SpeckEffect, ev.Coords);
         if (emitter == null || emitter2 == null)
+        // End Box Change
             return;
 
         emitter.ColorOverride = ev.BloodColor;
-        emitter2.ColorOverride = ev.BloodColor;
-        //End Box Change
+        emitter2.ColorOverride = ev.BloodColor; // Box Change: Moff Effects
     }
 }
 
