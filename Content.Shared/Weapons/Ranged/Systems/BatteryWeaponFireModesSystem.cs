@@ -37,7 +37,6 @@ public sealed class BatteryWeaponFireModesSystem : EntitySystem
             return;
 
         args.PushMarkup(Loc.GetString("gun-set-fire-mode-examine", ("mode", proto.Name)));
-
     }
 
     private BatteryWeaponFireMode GetMode(BatteryWeaponFireModesComponent component)
