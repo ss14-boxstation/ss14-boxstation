@@ -1,0 +1,28 @@
+- type: particleEffect
+  parent: SfFireContinuous
+  id: SfFireContinuousConcentrated
+  shape:
+    type: CircleFill
+    radius: 0
+    
+- type: particleEffect
+  parent: SfFireContinuous
+  id: SfFireContinuousFireplace
+  emissionRate: 5
+  shape:
+    type: CircleFill
+    radius: 0
+    
+- type: particleEffect
+  parent: SfFireContinuous
+  id: SfFireContinuousRapid
+  emissionRate: 50
+  maxCount: 1000
+  lifetime: 0.4
+
+- type: particleEffect
+  parent: SfFireSmoke
+  id: SfFireSmokeConcentrated
+  shape:
+    type: CircleFill
+    radius: 0

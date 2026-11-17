@@ -24,6 +24,7 @@
     - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: CarpMigration # Harmony Change
+    - id: LesserDroneSpawn # Box Change: Lesser drones
     - id: VentClog
 
 - type: entityTable
@@ -249,7 +250,7 @@
       pickPlayer: false
       startingGear: SpaceNinjaGear
       roleLoadout:
-      - RoleSurvivalEVA
+      - RoleSurvivalSpaceNinja
       briefing:
         text: ninja-role-greeting
         color: Green

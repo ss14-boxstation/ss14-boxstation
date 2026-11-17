@@ -34,3 +34,10 @@
   sprite:
     sprite: _Box/Objects/Storage/Briefcases/briefcase_lawyer.rsi
     state: icon
+
+- type: stealTargetGroup
+  id: AnimalPoppy
+  name: steal-target-groups-animal-poppy
+  sprite:
+    sprite: Mobs/Animals/possum.rsi
+    state: poppy

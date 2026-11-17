@@ -49,7 +49,7 @@
     #- /Audio/Voice/Diona/diona_rustle2.ogg
     #- /Audio/Voice/Diona/diona_rustle3.ogg
     # End Box Change
-    - /Audio/Animals/lizard_happy.ogg
+    #- /Audio/Animals/lizard_happy.ogg # Box Change: I miss you lizard_happy.ogg...
     - /Audio/Animals/ferret_happy.ogg
     - /Audio/Voice/Moth/moth_laugh.ogg
     - /Audio/Voice/Vox/vox_laugh.ogg # Frontier
@@ -279,7 +279,7 @@
     - /Audio/Machines/circuitprinter.ogg
     - /Audio/Machines/diagnoser_printing.ogg
     - /Audio/Machines/uniformprinter.ogg
-    - /Audio/Machines/vaccinator_running.ogg
+    #- /Audio/Machines/vaccinator_running.ogg # Box Change: Kill the loud-as-fuck vaccinator sound
     # Start Box Change: Harpy sound additions
     - /Audio/_MACRO/Voice/Allulalo/allulalo_chitter.ogg
     - /Audio/Voice/Vox/vox_chitter.ogg
