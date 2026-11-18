@@ -55,7 +55,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead # Very squishy, but spawn in much bigger groups than other vent critters.
+      20: Dead # Very squishy, but spawn in much bigger groups than other vent critters.
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
