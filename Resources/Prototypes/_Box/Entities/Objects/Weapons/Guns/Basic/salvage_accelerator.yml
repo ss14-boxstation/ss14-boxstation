@@ -137,6 +137,7 @@
   description: a strange and otherworldly pistol that fires sharp blade-like bolts at close range.
   components:
   - type: Item
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_xeno_shard.rsi
     size: Normal
     shape:
     - 0,0,1,1
@@ -168,3 +169,7 @@
     rechargeCooldown: 0.07 # This should result in a 4.2s recharge time
     rechargeSound: null
     showExamineText: false
+  - type: Clothing
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_xeno_shard.rsi
+  - type: Sprite
+    sprite: _Box/Objects/Weapons/Guns/Kinetic/accelerator_xeno_shard.rsi
