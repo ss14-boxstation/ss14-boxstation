@@ -2467,3 +2467,11 @@
   id: 264
   time: '2026-11-18T00:21:36.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/398
+- author: Dizzy-Eevee
+  changes:
+  - message: Lesser drones now have less health, and will spawn in slightly smaller
+      packs.
+    type: Tweak
+  id: 265
+  time: '2026-11-18T01:08:38.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/400
