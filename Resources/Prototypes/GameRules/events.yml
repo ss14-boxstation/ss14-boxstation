@@ -472,6 +472,7 @@
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
+    playerRatio: 15 # Box Change: Reduce to 15 from default of 25.
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobAdultSlimesBlueAngry
@@ -510,6 +511,7 @@
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
+    playerRatio: 15 # Box Change: Reduce to 15 from default of 25.
     table: # DeltaV: EntityTable instead of spawn entries
       id: MobGiantSpiderAngry
 
