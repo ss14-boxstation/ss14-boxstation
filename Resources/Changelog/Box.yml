@@ -2448,3 +2448,22 @@
   id: 262
   time: '2026-11-17T23:38:10.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/399
+- author: Dizzy-Eevee
+  changes:
+  - message: Added the lyrebird implanter, which allows harpies to use DAW sounds.
+      It can be crafted using a DAW circuit board and the instruments that would be
+      required to build one.
+    type: Add
+  - message: Added an implanter that allows harpies to use the weh-pet instrument.
+      It can be found as extremely rare maintenance loot.
+    type: Add
+  id: 263
+  time: '2026-11-18T00:21:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/350
+- author: Dizzy-Eevee
+  changes:
+  - message: Gibbed mobs will now spray a shower of blood particles.
+    type: Add
+  id: 264
+  time: '2026-11-18T00:21:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/398
