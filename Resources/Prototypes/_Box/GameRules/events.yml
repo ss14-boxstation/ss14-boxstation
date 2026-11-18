@@ -55,7 +55,7 @@
     duration: 30
   - type: VentCrittersRule
     min: 5 
-    max: 10
-    playerRatio: 10 # Lessers only have 30 HP, but spawn in much bigger groups
+    max: 8
+    playerRatio: 15 # Lessers only have 20 HP, but spawn in much bigger groups. ~3-5 at 10 players, 5-8 at 15, ~7-11 at 20
     table:
       id: MobXenoLesserDrone
