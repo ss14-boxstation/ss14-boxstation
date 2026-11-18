@@ -1,0 +1,57 @@
+- type: particleEffect
+  id: MoffGibMist
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: cross
+  startColor: "#FFFFFFFF" #Gets changed by GibParticleSystem's ColorOverride to match the victim's blood color.
+  endColor: "#FFFFFFFF"
+  lifetime: 0.6
+  lifetimeVariance: 0.2
+  speed: 3.0
+  speedVariance: 2.0
+  particleSize: 1.1
+  sizeVariance: 0.3
+  stretchFactor: 0.4
+  emissionRate: 0
+  maxCount: 80
+  burst: true
+  gravity: 0.4
+  drag: 4.0
+  noiseStrength: 0.5
+  noiseFrequency: 0.9
+  spreadAngle: 220
+  emitAngle: 0
+  startRotation: 0
+  startRotationVariance: 60
+  rotationSpeed: 1
+  rotationSpeedVariance: 45
+  shape:
+    type: CircleFill
+    radius: 0.2
+
+- type: particleEffect
+  id: MoffGibSpecks
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: dot
+  startColor: "#FFFFFFFF" #Gets changed by GibParticleSystem's ColorOverride to match the victim's blood color.
+  endColor: "#FFFFFFFF"
+  lifetime: 0.6
+  lifetimeVariance: 0.2
+  speed: 4.0
+  speedVariance: 2.5
+  particleSize: 2.5
+  sizeVariance: 0.3
+  stretchFactor: 0.25
+  emissionRate: 0
+  maxCount: 40
+  burst: true
+  gravity: 0.4
+  drag: 3.5
+  noiseStrength: 0.5
+  noiseFrequency: 0.9
+  spreadAngle: 200
+  emitAngle: 0
+  shape:
+    type: CircleFill
+    radius: 0.2
