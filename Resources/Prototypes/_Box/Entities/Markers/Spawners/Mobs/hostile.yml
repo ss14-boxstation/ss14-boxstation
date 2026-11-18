@@ -1,0 +1,13 @@
+- type: entity
+  parent: MarkerBase
+  id: SpawnLesserDrone
+  name: lesser drone spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: alive
+      sprite: _RMC14/Xenonids/LesserDrone/lesser_drone.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobXenoLesserDrone

@@ -1,0 +1,45 @@
+- type: constructionGraph
+  id: LyrebirdImplanter
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: implanter
+          steps:
+            - tag: DawCircuitBoard
+              name: construction-graph-tag-daw-board
+              icon:
+                sprite: Objects/Misc/module.rsi
+                state: service
+            - tag: KeyedInstrument
+              name: construction-graph-tag-instrument-keyed
+              icon:
+                sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+                state: icon
+            - tag: StringInstrument
+              name: construction-graph-tag-instrument-string
+              icon:
+                sprite: Objects/Fun/Instruments/guitar.rsi
+                state: icon
+            - tag: PercussionInstrument
+              name: construction-graph-tag-instrument-percussion
+              icon:
+                sprite: Objects/Fun/Instruments/glockenspiel.rsi
+                state: icon
+            - tag: BrassInstrument
+              name: construction-graph-tag-instrument-brass
+              icon:
+                sprite: Objects/Fun/Instruments/trumpet.rsi
+                state: icon
+            - tag: WoodwindInstrument
+              name: construction-graph-tag-instrument-woodwind
+              icon:
+                sprite: Objects/Fun/Instruments/saxophone.rsi
+                state: icon
+            - material: Steel
+              amount: 5
+            - material: Glass
+              amount: 5
+              doAfter: 10
+    - node: implanter
+      entity: LyrebirdImplanter

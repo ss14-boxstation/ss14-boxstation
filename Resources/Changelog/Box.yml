@@ -2247,3 +2247,204 @@
   id: 243
   time: '2026-10-29T09:20:15.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/363
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies no longer have human feet.
+    type: Tweak
+  id: 244
+  time: '2026-10-31T19:55:50.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/366
+- author: Dizzy-Eevee
+  changes:
+  - message: The minimum player counts for many events has been lowered to better
+      accommodate Box's typical round size.
+    type: Tweak
+  id: 245
+  time: '2026-11-01T11:20:59.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/364
+- author: Dizzy-Eevee
+  changes:
+  - message: The "random color" teddy bear trinket has been replaced with a handful
+      of preset color options.
+    type: Tweak
+  id: 246
+  time: '2026-11-03T11:51:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/367
+- author: Dizzy-Eevee
+  changes:
+  - message: Added lesser drones.
+    type: Add
+  - message: Groups of lesser drones can now spawn from vents.
+    type: Add
+  id: 247
+  time: '2026-11-03T11:51:42.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/361
+- author: Dizzy-Eevee
+  changes:
+  - message: Mobs will now rotate towards the object they're pulling. Mobs that do
+      not use their hands to pull things (like lizards and scurrets) will rotate away,
+      instead.
+    type: Tweak
+  id: 248
+  time: '2026-11-03T11:52:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/365
+- author: Dizzy-Eevee
+  changes:
+  - message: Burning entities, bonfires, fireplaces, and fireballs will now emit fancy
+      fire and smoke particle effects.
+    type: Add
+  id: 249
+  time: '2026-11-04T23:10:25.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/368
+- author: Dizzy-Eevee
+  changes:
+  - message: Bonfires will no longer stop emitting particles after going off-screen
+      once.
+    type: Fix
+  id: 250
+  time: '2026-11-06T18:04:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/373
+- author: Dizzy-Eevee
+  changes:
+  - message: Candles will no longer give off ill-fitting fire particles when lit.
+    type: Fix
+  id: 251
+  time: '2026-11-08T12:31:28.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/376
+- author: Dizzy-Eevee
+  changes:
+  - message: When pulling, you will no longer be forced to face towards/away from
+      the pulled object while standing still.
+    type: Tweak
+  - message: When pulling mop buckets and the janitorial trolley, you will now face
+      away and pull them behind you.
+    type: Tweak
+  id: 252
+  time: '2026-11-08T17:54:29.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/375
+- author: Dizzy-Eevee
+  changes:
+  - message: The obsolete DAGD and RR consent preferences have been removed. These
+      have been handled via traits for a while now, and were only left in as a precaution.
+    type: Remove
+  id: 253
+  time: '2026-11-09T15:35:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/377
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies will no longer make an infernal soul-shattering noise while trying
+      to gamble for the moth chitter sound.
+    type: Remove
+  id: 254
+  time: '2026-11-09T20:35:12.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/381
+- author: fossa1212
+  changes:
+  - message: When pulling most wheeled objects, you will now face away and pull them
+      behind you.
+    type: Tweak
+  id: 255
+  time: '2026-11-10T14:13:00.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/382
+- author: Dizzy-Eevee
+  changes:
+  - message: Powernet consumers like lathes, computers, blenders, centrifuges, electrolyzers,
+      grinders, holopads, microwaves, etc. now have simple dynamic power consumption
+      behavior. When not in use, they will consume either little or no power, and
+      while in use, they will consume a sane amount of power.
+    type: Add
+  id: 256
+  time: '2026-11-11T02:23:04.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/389
+- author: CollectionOfBones128
+  changes:
+  - message: '[Harmony] Bingles can now safely walk over broken glass! Bongle!'
+    type: Tweak
+  - message: '[Harmony] Gives Bingles levels of insulation based on upgrades.'
+    type: Tweak
+  - message: '[Harmony] Bingle pits now always work while weightless.'
+    type: Tweak
+  - message: '[Harmony] Bingle pits can no longer be attacked from the inside.'
+    type: Fix
+  id: 257
+  time: '2026-11-11T18:14:36.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/384
+- author: SomegnihT
+  changes:
+  - message: Poppy the Safety Possum, a new pet for Engineering
+    type: Add
+  id: 258
+  time: '2026-11-11T19:09:58.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/386
+- author: Dizzy-Eevee
+  changes:
+  - message: Xeno queens now have loud, heavy footsteps.
+    type: Add
+  - message: Xenos now deal structural damage (lesser drones do not deal enough to
+      damage reinforced windows)
+    type: Tweak
+  - message: Xenos will no longer be affected when stepping on things like glass shards
+      or banana peels.
+    type: Tweak
+  - message: Xeno queens are no longer too big to fit through doors.
+    type: Tweak
+  id: 259
+  time: '2026-11-12T22:39:51.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/395
+- author: SomegnihT
+  changes:
+  - message: The main room in Packed Atmos now requires Atmos Technicians to make
+      their own distro, waste, and burn mix pipes.
+    type: Tweak
+  - message: The TEG burn chamber is no longer directly connected to the station and
+      now by default has a way to flush gas from the burn chamber.
+    type: Tweak
+  - message: Atmos now has 2 stacks of steel that can be used.
+    type: Add
+  id: 260
+  time: '2026-11-13T01:08:32.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/393
+- author: Dizzy-Eevee
+  changes:
+  - message: Wizden content has been merged up to end of January 2026. New content
+      includes handheld reagent grinder equivalents, a paper centrifuge, a map of
+      the target station for nukies, an overhaul of camera UI, and a bonfire with
+      a stake to buckle mobs to. Please do not burn Pun-Pun.
+    type: Add
+  - message: 'Upstream divergence: Tritium energy production remains unchanged'
+    type: Tweak
+  - message: 'Upstream divergence: Towel and job lizard plushie trinkets have not
+      been removeed'
+    type: Tweak
+  - message: 'Upstream divergence: Roundstart medical equipment has not been changed.'
+    type: Tweak
+  - message: 'Upstream divergence: The uplink remains largely unchanged, pending a
+      potential Box-specific overhaul. Weapon bundles retain their ammo, the Python
+      has not been removed, etc.'
+    type: Tweak
+  - message: 'Upstream divergence: The medical cyborg''s modules remain mostly unchanged,
+      beyond the addition of an advanced jet injector to the chemical module, and
+      replacing its vials with beakers.'
+    type: Tweak
+  - message: 'Upstream divergence: The chameleon projectors purchasable from the uplink
+      or from thief satchels are not battery-powered.'
+    type: Tweak
+  - message: 'Upstream divergence: LOOC chat is still called LOOC.'
+    type: Tweak
+  - message: 'Upstream divergence: Mimes still have the NanoTask and Notekeeper apps
+      on their PDAs.'
+    type: Tweak
+  - message: 'Upstream divergence: Visitor shuttles have not been removed.'
+    type: Tweak
+  - message: The borg chemical module now has a health analyzer.
+    type: Add
+  id: 261
+  time: '2026-11-17T17:32:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/397
+- author: Dizzy-Eevee
+  changes:
+  - message: Added string lights, which take light bulbs and can be built on walls.
+    type: Add
+  id: 262
+  time: '2026-11-17T23:38:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/399

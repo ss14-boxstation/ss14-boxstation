@@ -33,6 +33,10 @@
             - MachineMask
           layer:
             - MachineLayer
+    # Start Box Change: Face toward generators when pulled (overrides StructureWheeled)
+    - type: Pullable
+      faceTowards: true
+    # End Box Change
 
     # Visuals
     - type: Appearance

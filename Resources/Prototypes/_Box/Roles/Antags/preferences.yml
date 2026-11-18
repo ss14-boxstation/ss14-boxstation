@@ -63,28 +63,6 @@
   - !type:OverallPlaytimeRequirement
     time: 3600 # 1h
 
-## DAGD Consent
-- type: antag
-  id: ConsentDAGD
-  name: consent-dagd
-  antagonist: true
-  setPreference: true
-  visiblePreference: true
-  objective: consent-dagd-desc
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 18000 # 5h
-
-# Objective Consent
-## RR
-- type: antag
-  id: ConsentBeRRTarget
-  name: consent-be-rr-target
-  antagonist: true
-  setPreference: true
-  visiblePreference: true
-  objective: consent-be-rr-target-desc
-
 # Box Antags
 - type: antag
   id: DummyTroublemaker

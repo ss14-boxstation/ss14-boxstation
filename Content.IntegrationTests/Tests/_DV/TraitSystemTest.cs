@@ -1,5 +1,5 @@
-using System.Collections.Generic;
-using System.Reflection;
+#nullable enable
+using Content.IntegrationTests.Fixtures;
 using Content.Server._DV.Traits;
 using Content.Shared._DV.Traits;
 using Content.Shared._DV.Traits.Conditions;
@@ -15,6 +15,8 @@ using Robust.Shared.IoC;
 using Robust.Shared.Log;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace Content.IntegrationTests.Tests._DV;
 
@@ -24,7 +26,7 @@ namespace Content.IntegrationTests.Tests._DV;
 /// </summary>
 [TestFixture]
 [TestOf(typeof(TraitSystemTest))]
-public sealed partial class TraitSystemTest
+public sealed partial class TraitSystemTest : GameTest
 {
     [TestPrototypes]
     private const string Prototypes = @"
@@ -170,7 +172,7 @@ public sealed partial class TraitSystemTest
     [Test]
     public async Task HasCompCondition_WithComponent_ReturnsTrue()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -189,13 +191,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task HasCompCondition_WithoutComponent_ReturnsFalse()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -215,13 +216,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task HasCompCondition_Inverted_ReturnsOpposite()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -242,13 +242,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task HasJobCondition_MatchingJob_ReturnsTrue()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -266,13 +265,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task HasJobCondition_DifferentJob_ReturnsFalse()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -290,13 +288,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task InDepartmentCondition_JobInDepartment_ReturnsTrue()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -316,13 +313,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task InDepartmentCondition_JobNotInDepartment_ReturnsFalse()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -342,13 +338,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task IsSpeciesCondition_MatchingSpecies_ReturnsTrue()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -366,13 +361,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task IsSpeciesCondition_DifferentSpecies_ReturnsFalse()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -392,7 +386,6 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     #endregion
@@ -402,7 +395,7 @@ public sealed partial class TraitSystemTest
     [Test]
     public async Task AddCompsEffect_AddsComponents()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -430,13 +423,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task AddCompsEffect_DoesNotOverwrite()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -463,13 +455,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task OverrideCompsEffect_OverwritesComponent()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -496,13 +487,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task RemCompsEffect_RemovesComponents()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -539,13 +529,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task SpawnItemInHandEffect_SpawnsItem()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var protoMan = server.ResolveDependency<IPrototypeManager>();
@@ -572,7 +561,6 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     #endregion
@@ -582,7 +570,7 @@ public sealed partial class TraitSystemTest
     [Test]
     public async Task RespectsConflicts()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
 
@@ -600,8 +588,9 @@ public sealed partial class TraitSystemTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()]) ?? new HashSet<ProtoId<TraitPrototype>>());
+            Assert.That(validTraits, Is.Not.Null, "Should not be null");
 
             Assert.Multiple(() =>
             {
@@ -615,13 +604,12 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task RespectsCategoryLimits()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
 
@@ -641,21 +629,20 @@ public sealed partial class TraitSystemTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()});
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()]) ?? new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Count, Is.EqualTo(2), "Should respect category maxTraits limit");
 
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task RespectsCategoryPointLimits()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
 
@@ -675,21 +662,20 @@ public sealed partial class TraitSystemTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()]) ?? new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Count, Is.EqualTo(2), "Should respect category maxPoints limit");
 
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task ChecksConditionsOnSpawn()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
 
@@ -708,21 +694,20 @@ public sealed partial class TraitSystemTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()]) ?? new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Contains("TestTraitHasComp"), Is.True, "Trait with met condition should be valid");
 
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task RejectsTraitsWithUnmetConditions()
     {
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Dirty = true });
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
 
@@ -741,8 +726,8 @@ public sealed partial class TraitSystemTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()]) ?? new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Contains("TestTraitHasComp"),
                 Is.False,
@@ -751,7 +736,6 @@ public sealed partial class TraitSystemTest
             entMan.DeleteEntity(player);
         });
 
-        await pair.CleanReturnAsync();
     }
 
     #endregion

@@ -46,3 +46,11 @@
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
   - type: AlwaysHot
+  # Start Box Change: Fire particles
+  - type: ParticleEmitter
+    effect: SfFireContinuousFireplace
+    spawnOffset: 0, -0.03
+  # End Box Change
+  - type: IgnitionSource
+    temperature: 700
+    ignited: true

@@ -29,6 +29,11 @@
     ignited: true
   - type: IgniteOnCollide
     fireStacks: 0.35
+  # Start Box Change: Fire particles
+  - type: ParticleEmitter
+    effect: SfFireContinuousRapid
+    intensity: 2
+  # End Box Change
 
 - type: entity
   categories: [ HideSpawnMenu ]

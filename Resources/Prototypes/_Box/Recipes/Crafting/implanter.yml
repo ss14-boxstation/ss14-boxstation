@@ -1,0 +1,7 @@
+- type: construction
+  id: LyrebirdImplanter
+  graph: LyrebirdImplanter
+  startNode: start
+  targetNode: implanter
+  category: construction-category-misc
+  objectType: Item

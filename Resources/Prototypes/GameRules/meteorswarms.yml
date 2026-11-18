@@ -101,7 +101,7 @@
   - type: StationEvent
     reoccurrenceDelay: 1
     earliestStart: 12
-    minimumPlayers: 25
+    minimumPlayers: 20 # Box Change: 25 -> 20
   - type: MeteorSwarm
 
 - type: entity
