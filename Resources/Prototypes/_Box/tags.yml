@@ -34,3 +34,7 @@
 # IPC Mask Tag for smoking
 - type: Tag
   id: IPCMaskWearable
+  
+# DAW circuit board tag for lyrebird implanter craft
+- type: Tag
+  id: DawCircuitBoard

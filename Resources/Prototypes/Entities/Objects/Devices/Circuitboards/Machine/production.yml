@@ -809,6 +809,11 @@
           amount: 1
           defaultPrototype: SaxophoneInstrument
           examineName: construction-insert-info-examine-name-instrument-woodwind
+  # Start Box Change: Tag for lyrebird implanter craft
+  - type: Tag
+    tags:
+    - DawCircuitBoard
+  # End Box Change
 
 - type: entity
   id: PortableGeneratorPacmanMachineCircuitboard
