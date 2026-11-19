@@ -1,0 +1,14 @@
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobPossumPoppy
+  name: Possum Poppy Spawner
+  suffix: Engi Pet
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: poppy
+      sprite: Mobs/Animals/possum.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobPossumPoppy

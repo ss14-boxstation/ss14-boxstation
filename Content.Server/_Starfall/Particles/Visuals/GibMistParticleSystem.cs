@@ -23,7 +23,7 @@ public sealed partial class GibMistParticleSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        // SubscribeLocalEvent<BloodstreamComponent, BeingGibbedEvent>(OnBeingGibbed); // Box Change: Disable gib mist effect
+        SubscribeLocalEvent<BloodstreamComponent, BeingGibbedEvent>(OnBeingGibbed);
     }
 
     private void OnBeingGibbed(Entity<BloodstreamComponent> ent, ref BeingGibbedEvent args)

@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.IntegrationTests.Fixtures;
 using Content.Shared.Xenoarchaeology.Artifact;
 using Content.Shared.Xenoarchaeology.Artifact.Components;
 using Robust.Shared.GameObjects;
@@ -6,7 +7,7 @@ using Robust.Shared.GameObjects;
 namespace Content.IntegrationTests.Tests;
 
 [TestFixture]
-public sealed class XenoArtifactTest
+public sealed class XenoArtifactTest : GameTest
 {
     [TestPrototypes]
 // Box Change - BaseXenoArtifact > BaseXAEXenoArtifact
@@ -91,7 +92,7 @@ public sealed class XenoArtifactTest
     [Test]
     public async Task XenoArtifactAddNodeTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
 
         var entManager = server.ResolveDependency<IEntityManager>();
@@ -134,9 +135,6 @@ public sealed class XenoArtifactTest
             Assert.That(artifactSystem.GetDirectPredecessorNodes(artifactEnt, node3!.Value), Has.Count.EqualTo(1));
             Assert.That(artifactSystem.GetPredecessorNodes(artifactEnt, node3!.Value), Has.Count.EqualTo(2));
         });
-        await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 
     /// <summary>
@@ -145,7 +143,7 @@ public sealed class XenoArtifactTest
     [Test]
     public async Task XenoArtifactRemoveNodeTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
 
         var entManager = server.ResolveDependency<IEntityManager>();
@@ -183,9 +181,6 @@ public sealed class XenoArtifactTest
             Assert.That(artifactSystem.GetSuccessorNodes(artifactEnt, node2!.Value), Is.Empty);
             Assert.That(artifactSystem.GetPredecessorNodes(artifactEnt, node4!.Value), Is.Empty);
         });
-        await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 
     /// <summary>
@@ -194,7 +189,7 @@ public sealed class XenoArtifactTest
     [Test]
     public async Task XenoArtifactResizeTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
 
         var entManager = server.ResolveDependency<IEntityManager>();
@@ -246,9 +241,6 @@ public sealed class XenoArtifactTest
             Assert.That(artifactSystem.GetPredecessorNodes(artifactEnt, node4!.Value), Is.Empty);
             Assert.That(artifactSystem.GetSuccessorNodes(artifactEnt, node4!.Value), Is.Empty);
         });
-        await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 
     /// <summary>
@@ -257,7 +249,7 @@ public sealed class XenoArtifactTest
     [Test]
     public async Task XenoArtifactReplaceTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
 
         var entManager = server.ResolveDependency<IEntityManager>();
@@ -305,9 +297,6 @@ public sealed class XenoArtifactTest
             Assert.That(artifactSystem.GetPredecessorNodes(artifactEnt, node4!.Value), Is.Empty);
 
         });
-        await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 
     /// <summary>
@@ -316,7 +305,7 @@ public sealed class XenoArtifactTest
     [Test]
     public async Task XenoArtifactBuildActiveNodesTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
 
         var entManager = server.ResolveDependency<IEntityManager>();
@@ -368,15 +357,12 @@ public sealed class XenoArtifactTest
             Assert.That(artifactEnt.Comp.CachedActiveNodes, Has.Count.EqualTo(expectedActiveNodes.Length));
 
         });
-        await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 
     [Test]
     public async Task XenoArtifactGenerateSegmentsTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
 
         var entManager = server.ResolveDependency<IEntityManager>();
@@ -413,8 +399,5 @@ public sealed class XenoArtifactTest
             Assert.That(grouped[2].Count(), Is.LessThanOrEqualTo(2)); // maintain same width or, if we used 3 nodes on previous layer - we only have 1 left!
 
         });
-        await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 }
