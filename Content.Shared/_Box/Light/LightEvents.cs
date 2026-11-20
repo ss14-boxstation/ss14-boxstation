@@ -1,4 +1,3 @@
-using Content.Shared.Light.Components;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Box.Light;

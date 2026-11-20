@@ -1,6 +1,5 @@
 using Content.Client._Starfall.Particles;
 using Content.Shared._Box.Particles;
-using Content.Shared.Damage.Systems;
 
 namespace Content.Client._Box.Particles;
 
