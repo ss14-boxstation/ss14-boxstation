@@ -114,6 +114,15 @@
   - type: Construction
     graph: FloorLightFixture
     node: metamorphicLightHole
+  # Start Box Change: Emit particles on light break
+  - type: ParticleOnLightBreak
+    effects:
+    - BoxSparksShowerCenter
+    - BoxSparksShowerCenter2
+    - BoxSparksShowerCenter3
+    - BoxSparksShowerCenter4
+    - BoxSparksShowerCenter5
+  # End Box Change
 
 - type: entity
   id: PoweredFloorLight

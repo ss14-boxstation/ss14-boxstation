@@ -1,3 +1,4 @@
+using Content.Shared._Box.Light; // Box Change: Event for broken light particles
 using Content.Shared.Audio;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
@@ -17,6 +18,7 @@ using Content.Shared.Power.EntitySystems;
 using Content.Shared.Storage.EntitySystems;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Network; // Box Change: Event for broken light particles
 using Robust.Shared.Timing;
 
 namespace Content.Shared.Light.EntitySystems;
@@ -36,6 +38,7 @@ public abstract class SharedPoweredLightSystem : EntitySystem
     [Dependency] private readonly SharedPointLightSystem _pointLight = default!;
     [Dependency] private readonly SharedStorageSystem _storage = default!;
     [Dependency] private readonly SharedDeviceLinkSystem _deviceLink = default!;
+    [Dependency] private readonly INetManager _net = default!; // Box Change: Netmanager for particle prediction
 
     private static readonly TimeSpan ThunkDelay = TimeSpan.FromSeconds(2);
     public const string LightBulbContainer = "light_bulb";
@@ -248,6 +251,19 @@ public abstract class SharedPoweredLightSystem : EntitySystem
             return false;
 
         // break it
+        // Start Box Change: Raise event on light break
+        if (_net.IsClient)
+        {
+            var ev = new PredictedLightBreakEvent();
+            RaiseLocalEvent(uid, ref ev);
+        }
+        else
+        {
+            var net = GetNetEntity(uid);
+            var ev = new LightBreakEvent(net);
+            RaiseNetworkEvent(ev);
+        }
+        // End Box Change
         _bulbSystem.SetState(bulbUid.Value, LightBulbState.Broken, lightBulb);
         _bulbSystem.PlayBreakSound(bulbUid.Value, lightBulb, user);
         UpdateLight(uid, light);
