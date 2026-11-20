@@ -72,24 +72,10 @@
     type: CircleFill
     radius: 0.1
   spreadAngle: 270
-
+  
 - type: particleEffect
-  id: BoxBloodSpray
-  sprite:
-    sprite: _Starfall/Particles/generic.rsi
-    state: dot
-  burst: true
-  particleSize: 2
-  lifetime: 0.3
-  speed: 2.5
-  speedVariance: 2.5
-  gravity: 5.0
-  drag: 0.02
-  emissionRate: 10
-  maxCount: 30
-  simulationSpace: grid
-  shape:
-    type: CircleFill
-    radius: 0.1
-  spreadAngle: 120
-  stretchFactor: 0
+  parent: BoxSparks
+  id: BoxSparksOffset
+  rotateWithEmitter: true
+  spawnOffset: 0, -0.2
+  

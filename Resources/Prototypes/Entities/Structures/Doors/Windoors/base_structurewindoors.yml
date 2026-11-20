@@ -178,6 +178,14 @@
   - type: StaticPrice
     price: 150
   - type: PryUnpowered
+  # Start Box Change: Machine hit sparks
+  - type: ParticleOnHit
+    effect: BoxSparksOffset
+    minDamage: 4
+    chance: 75
+    sound:
+      collection: sparks
+  # End Box Change
 
 - type: entity
   id: BaseSecureWindoor

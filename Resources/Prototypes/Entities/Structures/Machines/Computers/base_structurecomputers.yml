@@ -85,6 +85,14 @@
   - type: Wires
     boardName: wires-board-name-computer
     layoutId: Computer
+  # Start Box Change: Machine hit sparks
+  - type: ParticleOnHit
+    effect: BoxSparks
+    minDamage: 4
+    chance: 75
+    sound:
+      collection: sparks
+  # End Box Change
 #
 #     This is overwritten by children, so needs to be defined there
 #  - type: UserInterface

@@ -3,6 +3,7 @@ using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage.Systems;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -14,6 +15,7 @@ public sealed class ParticleOnHitSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
 
     public override void Initialize()
@@ -56,6 +58,7 @@ public sealed class ParticleOnHitSystem : EntitySystem
                     colorOverride = reagentProto.SubstanceColor;
             }
         }
+        _audio.PlayPvs(ent.Comp.Sound, ent.Owner);
         var ev = new ParticleOnHitEvent(ent.Comp.Effect, coords, GetNetEntity(ent), colorOverride, ent.Comp.SpawnOffset);
         RaiseNetworkEvent(ev);
     }

@@ -312,9 +312,9 @@
     guides:
       - IPC
   - type: ParticleOnHit
-    effect: SfSparks
+    effect: BoxSparks
     minDamage: 4
-    chance: 40
+    chance: 60
     damageTypes:
       - Blunt
       - Slash
