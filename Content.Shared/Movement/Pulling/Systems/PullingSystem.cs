@@ -229,7 +229,8 @@ public sealed class PullingSystem : EntitySystem
         // Start Box Change: Ensure NoRotateOnMove is removed as well
         {
             RemComp<ActivePullerComponent>(ent.Owner);
-            RemComp<NoRotateOnMoveComponent>(ent.Owner); // The bingle pit causes bingles to be stuck in NoRotate
+            if (!HasComp<MouseRotatorComponent>(ent.Owner))
+                RemComp<NoRotateOnMoveComponent>(ent.Owner); // The bingle pit causes bingles to be stuck in NoRotate
         }
         // End Box Change
         else
