@@ -311,6 +311,17 @@
   - type: GuideHelp
     guides:
       - IPC
+  - type: ParticleOnHit
+    effect: BoxSparks
+    minDamage: 4
+    chance: 60
+    damageTypes:
+      - Blunt
+      - Slash
+      - Piercing
+      - Heat
+      - Cold
+      - Shock
 
 - type: entity
   parent: OrganBase

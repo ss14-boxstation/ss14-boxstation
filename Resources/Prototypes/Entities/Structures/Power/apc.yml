@@ -160,6 +160,14 @@
     - VoltageNetworks
     - Power
   - type: TooShortForUiBlacklist # Box Change: Allulalo blacklist
+  # Start Box Change: Machine hit sparks
+  - type: ParticleOnHit
+    effect: BoxSparksOffset
+    minDamage: 4
+    chance: 75
+    sound:
+      collection: sparks
+  # End Box Change
 
 # APC under construction
 - type: entity

@@ -68,6 +68,14 @@
     volume: -5
     sound:
       path: /Audio/Ambience/Objects/buzzing.ogg
+  # Start Box Change: Machine hit sparks
+  - type: ParticleOnHit
+    effect: BoxSparks
+    minDamage: 4
+    chance: 75
+    sound:
+      collection: sparks
+  # End Box Change
 
 # Base substation
 - type: entity

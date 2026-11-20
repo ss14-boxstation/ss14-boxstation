@@ -131,3 +131,11 @@
     tags:
       - HighSecDoor
       # This tag is used to nagivate the Airlock construction graph. It's needed because this construction graph is shared between Airlock, AirlockGlass, and HighSecDoor
+  # Start Box Change: Machine hit sparks
+  - type: ParticleOnHit
+    effect: BoxSparks
+    minDamage: 4
+    chance: 75
+    sound:
+      collection: sparks
+  # End Box Change

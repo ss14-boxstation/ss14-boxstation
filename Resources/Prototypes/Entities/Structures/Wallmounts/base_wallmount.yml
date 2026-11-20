@@ -56,3 +56,11 @@
   - type: LightningTarget
     priority: 1
   - type: TooShortForUiBlacklist # Box Change: Allulalo blacklist
+  # Start Box Change: Machine hit sparks
+  - type: ParticleOnHit
+    effect: BoxSparks
+    minDamage: 4
+    chance: 75
+    sound:
+      collection: sparks
+  # End Box Change

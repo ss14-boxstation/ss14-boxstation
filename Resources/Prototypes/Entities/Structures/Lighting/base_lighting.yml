@@ -85,6 +85,15 @@
           collection: GlassBreak
   - type: PlacementReplacement
     key: lights
+  # Start Box Change: Emit particles on light break
+  - type: ParticleOnLightBreak
+    effects:
+    - BoxSparksShower
+    - BoxSparksShower2
+    - BoxSparksShower3
+    - BoxSparksShower4
+    - BoxSparksShower5
+  # End Box Change
   placement:
     mode: SnapgridCenter
     snap:
