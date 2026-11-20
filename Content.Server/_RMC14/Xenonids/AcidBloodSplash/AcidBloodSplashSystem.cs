@@ -21,6 +21,9 @@ using Content.Shared.Effects;
 using Content.Shared.Chat; // Box Change
 using Content.Shared.Gibbing; // Box Change
 using Content.Shared.Mobs.Components; // Box Change
+using Content.Shared.Body.Components; // Box Change
+using Content.Shared.Chemistry.Reagent; // Box Change
+using Content.Shared._Box.Particles; // Box Change
 
 namespace Content.Server._RMC14.Xenonids.AcidBloodSplash;
 
@@ -63,13 +66,29 @@ public sealed class AcidBloodSplashSystem : EntitySystem
 
     private void ActivateSplash(EntityUid uid, AcidBloodSplashComponent comp, float splashRadius)
     {
-        if (!_prototypes.TryIndex(comp.BloodDecalSpawnerPrototype, out var prototype) ||
-            !prototype.TryGetComponent(out RandomDecalSpawnerComponent? spawner, _compFactory) ||
-            _rmcDecal.GetDecalsInTile(uid, spawner.Decals) < spawner.MaxDecalsPerTile)
+        // Start Box Change: Replace decal spawn with particle effect
+        //if (!_prototypes.TryIndex(comp.BloodDecalSpawnerPrototype, out var prototype) ||
+        //    !prototype.TryGetComponent(out RandomDecalSpawnerComponent? spawner, _compFactory) ||
+        //    _rmcDecal.GetDecalsInTile(uid, spawner.Decals) < spawner.MaxDecalsPerTile)
+        //{
+        //    // create decal, probability inside prototype
+        //    Spawn(comp.BloodDecalSpawnerPrototype, uid.ToCoordinates());
+        //}
+        var color = Color.FromHex("#b3c22a"); // Default xeno blood color
+        if (TryComp<BloodstreamComponent>(uid, out var bloodstream))
         {
-            // create decal, probability inside prototype
-            Spawn(comp.BloodDecalSpawnerPrototype, uid.ToCoordinates());
+            var contents = bloodstream.BloodReferenceSolution.Contents;
+            if (contents.Count > 0 && _prototypes.TryIndex(contents[0].Reagent.Prototype, out ReagentPrototype? reagentProto))
+                color = reagentProto.SubstanceColor;
         }
+        var ev = new AcidSprayParticleEvent
+        {
+            Entity = GetNetEntity(uid),
+            Effect = comp.Effect,
+            Color = color
+        };
+        RaiseNetworkEvent(ev);
+        // End Box Change
 
         var i = 0; // parity moment, I would prefer a for loop if I knew how to do it in not ugly way.
         var targetsSet = _entityLookup.GetEntitiesInRange(uid.ToCoordinates(), splashRadius);
