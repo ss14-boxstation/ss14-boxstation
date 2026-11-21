@@ -67,9 +67,11 @@
   - IlleismAccent
   - Speech # For raisedBy traits
   # Hamrony addons end
-  - BloodDeficiency # Box Change - For blood deficiency traits
-  - BlockWriting # Box Change: DV dysgraphia trait
-  - RoundRemoveConsent # Box Change - Best implementation I could find for PDox RR Consent
+  # Box Change Start
+  - BloodDeficiency
+  - BlockWriting # DV dysgraphia trait
+  - RoundRemoveConsent # Best implementation I could find for PDox RR Consent
+  # Box Change End
   eventComponents:
   - Vocal # voice sounds
 
@@ -83,6 +85,7 @@
   - MimePowers
   - SpaceNinja
   - Thieving
+  - NoAntagTarget # Box Change - Learner Roles
 
 # antag roles
 - type: cloningSettings

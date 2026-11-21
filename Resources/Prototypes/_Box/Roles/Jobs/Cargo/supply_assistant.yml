@@ -23,7 +23,7 @@
     prototype: BoxCardboard
   - !type:AddComponentSpecial
     components:
-      - type: LearnerStaff
+      - type: NoAntagTarget
 
 - type: startingGear
   id: SupplyAssistantGear

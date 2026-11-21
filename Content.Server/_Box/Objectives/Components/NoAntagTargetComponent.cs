@@ -1,10 +1,10 @@
 namespace Content.Server._Box.Objectives.Components;
 
 /// <summary>
-/// Given to Learner Roles at round start. Used to prevent objective assignments.
+/// Used to prevent objective assignments. Given to Learner Roles at round start.
 /// </summary>
 [RegisterComponent]
-public sealed partial class LearnerStaffComponent : Component
+public sealed partial class NoAntagTargetComponent : Component
 {
 
 }

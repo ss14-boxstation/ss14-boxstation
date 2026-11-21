@@ -117,6 +117,12 @@
       blacklist:
         components:
         - KillPersonCondition
+    # Box Change Start - No Target System
+    - !type:BodyMindBlacklistFilter
+      blacklist:
+        components:
+        - NoAntagTarget
+    # Box Change End
   - type: KillPersonCondition
     requireMaroon: true
 
@@ -139,7 +145,7 @@
         components:
         - CommandStaff
         # Start Box Change: Marked for Removal/Automatic RR consent check
-        - RoundRemoveConsent 
+        - RoundRemoveConsent
         requireAll: true
         # End Box Change
     # Can't have multiple objectives to kill the same person.
@@ -147,6 +153,12 @@
       blacklist:
         components:
         - KillPersonCondition
+    # Box Change Start - No Target System
+    - !type:BodyMindBlacklistFilter
+      blacklist:
+        components:
+        - NoAntagTarget
+    # Box Change End
   - type: KillPersonCondition
     # don't count missing evac as killing as heads are higher profile, so you really need to do the dirty work
     # if ce flies a shittle to centcom you better find a way onto it

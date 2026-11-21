@@ -21,7 +21,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-      - type: LearnerStaff
+      - type: NoAntagTarget
   # Box Change End
 
 - type: startingGear
