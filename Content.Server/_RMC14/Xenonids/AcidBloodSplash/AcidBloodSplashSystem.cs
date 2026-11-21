@@ -66,14 +66,14 @@ public sealed class AcidBloodSplashSystem : EntitySystem
 
     private void ActivateSplash(EntityUid uid, AcidBloodSplashComponent comp, float splashRadius)
     {
-        // Start Box Change: Replace decal spawn with particle effect
-        //if (!_prototypes.TryIndex(comp.BloodDecalSpawnerPrototype, out var prototype) ||
-        //    !prototype.TryGetComponent(out RandomDecalSpawnerComponent? spawner, _compFactory) ||
-        //    _rmcDecal.GetDecalsInTile(uid, spawner.Decals) < spawner.MaxDecalsPerTile)
-        //{
-        //    // create decal, probability inside prototype
-        //    Spawn(comp.BloodDecalSpawnerPrototype, uid.ToCoordinates());
-        //}
+        if (!_prototypes.TryIndex(comp.BloodDecalSpawnerPrototype, out var prototype) ||
+            !prototype.TryGetComponent(out RandomDecalSpawnerComponent? spawner, _compFactory) ||
+            _rmcDecal.GetDecalsInTile(uid, spawner.Decals) < spawner.MaxDecalsPerTile)
+        {
+            // create decal, probability inside prototype
+            Spawn(comp.BloodDecalSpawnerPrototype, uid.ToCoordinates());
+        }
+        // Start Box Change: Spawn particle effect
         var color = Color.FromHex("#b3c22a"); // Default xeno blood color
         if (TryComp<BloodstreamComponent>(uid, out var bloodstream))
         {

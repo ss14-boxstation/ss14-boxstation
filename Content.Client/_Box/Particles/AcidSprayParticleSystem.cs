@@ -11,8 +11,6 @@ public sealed class AcidSprayParticleSystem : EntitySystem
 {
     [Dependency] private readonly ParticleSystem _particles = default!;
 
-
-
     public override void Initialize()
     {
         base.Initialize();
