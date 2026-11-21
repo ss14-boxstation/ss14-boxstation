@@ -36,3 +36,16 @@
   - !type:AddCompsEffect
     components:
     - type: DAGDConsent
+
+- type: trait
+  id: LethalIntent
+  name: trait-lethal-intent-name
+  description: trait-lethal-intent-description
+  category: Meta
+  conditions:
+  - !type:PlaytimeCondition # Antag trait, so locked behind antag time
+    time: 60 # 1 hour - Unlocks with Tot
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: LethalRemovalObjectiveConsent
