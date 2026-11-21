@@ -31,7 +31,6 @@
       components:
       - SurviveCondition
       - KeepAliveCondition
-      - NoAntagTarget # Box Change - No Target System
   - type: ObjectiveComponentWhitelist # Box Change - PDox RR Consent toggle
     whitelist:
       components:
@@ -53,7 +52,6 @@
       components:
       - SurviveCondition
       - KeepAliveCondition
-      - NoAntagTarget # Box Change - No Target System
   - type: ObjectiveComponentWhitelist # Box Change - PDox RR Consent toggle
     whitelist:
       components:
