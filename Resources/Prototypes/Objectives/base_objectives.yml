@@ -52,6 +52,12 @@
       components:
       - SocialObjective
   - type: KillPersonCondition
+  # Box Change Start - Antag RR Objective Opt-In
+  - type: ObjectiveComponentWhitelist
+    whitelist:
+      components:
+      - LethalRemovalObjectiveConsent
+  # Box Change End
 
 # requires that the player interact socially with someone
 # disables kill objectives and is disabled by kill objectives
