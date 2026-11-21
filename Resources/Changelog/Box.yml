@@ -2498,3 +2498,11 @@
   id: 268
   time: '2026-11-21T04:28:23.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/404
+- author: CollectionOfBones128
+  changes:
+  - message: Added the "Lethal Intent" trait, an opt-in for rolling Round Removal
+      objectives as an Antagonist
+    type: Add
+  id: 269
+  time: '2026-11-21T04:41:24.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/406
