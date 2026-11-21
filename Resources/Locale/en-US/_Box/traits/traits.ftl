@@ -59,7 +59,7 @@ trait-dagd-name = DAGD Consent
 trait-dagd-desc = Opt-in for the "Die a Glorious Death" objective.
 
 trait-lethal-intent-name = Lethal Intent
-trait-lethal-intent-description = You are comfortable taking jobs your targets won't come back from. You can roll Round Removal Objective as an Antagonist.
+trait-lethal-intent-description = You are comfortable taking jobs your targets won't come back from. [color=yellow]You can roll Round Removal objectives as an Antagonist.[/color]
 
 trait-synth-name = Synthetic
 trait-synth-desc = You are a biomechanical construct made to resemble an organic. You bleed synth blood, are notified of Ion Storms, and can use Artificial reagents.
