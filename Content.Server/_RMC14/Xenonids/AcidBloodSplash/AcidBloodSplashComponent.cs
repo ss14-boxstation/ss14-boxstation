@@ -3,6 +3,7 @@ using Content.Shared.FixedPoint;
 using Content.Shared.Damage;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Audio;
+using Content.Shared._Starfall.Particles; // Box Change: Spawn particles when acid spray triggers
 
 namespace Content.Server._RMC14.Xenonids.AcidBloodSplash;
 
@@ -75,4 +76,8 @@ public sealed partial class AcidBloodSplashComponent : Component
 
     [DataField]
     public SoundSpecifier AcidSplashSound = new SoundCollectionSpecifier("XenoAcidSizzle");
+    // Start Box Change: Particle effect to spawn when acid spray triggers
+    [DataField]
+    public ProtoId<ParticleEffectPrototype> Effect = "BoxAcidSpray";
+    // End Box Change
 }
