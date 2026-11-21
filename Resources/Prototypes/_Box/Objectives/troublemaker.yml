@@ -90,6 +90,11 @@
   - type: TargetObjective
     title: troublemaker-objective-grudge-individual-title
   - type: PickRandomPerson
+    filters:
+    - !type:BodyMindBlacklistFilter
+      blacklist:
+        components:
+        - NoAntagTarget
 
 #Random Filler Objectives
 

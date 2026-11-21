@@ -15,10 +15,15 @@
   access:
   - Cargo
   - Maintenance
+  extendedAccess:
+  - Salvage
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: BoxingDay
     prototype: BoxCardboard
+  - !type:AddComponentSpecial
+    components:
+      - type: NoAntagTarget
 
 - type: startingGear
   id: SupplyAssistantGear
