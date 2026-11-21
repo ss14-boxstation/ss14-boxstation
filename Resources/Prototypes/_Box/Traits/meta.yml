@@ -3,11 +3,27 @@
   name: trait-removal-name
   description: trait-removal-desc
   category: Meta
+  conditions:
+  - !type:HasJobCondition
+    job: TechnicalAssistant
+    invert: true
+  - !type:HasJobCondition
+    job: MedicalIntern
+    invert: true
+  - !type:HasJobCondition
+    job: ResearchAssistant
+    invert: true
+  - !type:HasJobCondition
+    job: SecurityCadet
+    invert: true
+  - !type:HasJobCondition
+    job: SupplyAssistant
+    invert: true
   effects:
   - !type:AddCompsEffect
     components:
     - type: RoundRemoveConsent
-    
+
 - type: trait
   id: DAGDConsent
   name: trait-dagd-name
