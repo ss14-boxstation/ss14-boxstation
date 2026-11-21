@@ -2482,3 +2482,12 @@
   id: 266
   time: '2026-11-18T21:20:22.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/401
+- author: CollectionOfBones128
+  changes:
+  - message: Learner Roles can no longer be the target of antag objectives (Technical
+      Assistant, Supply Assistant, Research Assistant, Medical Intern, and Security
+      Cadet)
+    type: Tweak
+  id: 267
+  time: '2026-11-21T02:45:07.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/405
