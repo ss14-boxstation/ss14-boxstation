@@ -17,7 +17,14 @@
   access:
   - Maintenance
   - Engineering
+  - Atmospherics # Box Change - Add Atmos access to TA's - Engi is barely two departments, TA's should be able to learn it all.
   - External
+  # Box Change Start - Learner Role Tweaks
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: LearnerStaff
+  # Box Change End
 
 - type: startingGear
   id: TechnicalAssistantGear

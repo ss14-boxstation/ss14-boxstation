@@ -15,6 +15,14 @@
   access:
   - Medical
   - Maintenance
+  # Box Change Start - Learner Role Tweaks
+  extendedAccess:
+  - Chemistry
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: LearnerStaff
+  # Box Change End
 
 - type: startingGear
   id: MedicalInternGear

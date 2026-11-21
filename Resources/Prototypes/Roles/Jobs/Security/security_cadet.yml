@@ -23,6 +23,11 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  # Box Change Start - Learner Role Tweaks
+  - !type:AddComponentSpecial
+    components:
+      - type: LearnerStaff # Cadets are probably gonna get shot anyway, no need for them to also be Targeted
+  # Box Change End
 
 - type: startingGear
   id: SecurityCadetGear
