@@ -1,5 +1,3 @@
-// TODO: Make this work the moment the gun runs out of ammo. There is a bug where sitting at 0 ammo means the gun rapidly reloads when you fire. Not fully an issue, but makes the delay not line up.
-
 using Content.Shared.Timing;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
