@@ -62,9 +62,14 @@
         endValue: 10.0
       - !type:RandomizeBehaviour # weaker flicker as it fades out
         id: fade_out
-        interpolate: Nearest
-        minDuration: 0.001
-        maxDuration: 0.001
+        # Start Box Change: Tone down flare flicker to reduce eye strain
+        # interpolate: Nearest
+        # minDuration: 0.001
+        # maxDuration: 0.001
+        interpolate: Linear
+        minDuration: 0.2
+        maxDuration: 0.2
+        # End Box Change
         startValue: 4.0
         endValue: 8.0
         property: Energy
