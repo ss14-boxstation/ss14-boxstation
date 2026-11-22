@@ -28,6 +28,12 @@
       blacklist:
         components:
         - KillPersonCondition
+    # Box Change Start - No Target System
+    - !type:BodyMindBlacklistFilter
+      blacklist:
+        components:
+        - NoAntagTarget
+    # Box Change End
 
 - type: entity
   parent: [BaseHitmanObjective, HitmanTeachLessonRandomPersonObjective]
@@ -43,6 +49,12 @@
       whitelist:
         components:
         - CommandStaff
+    # Box Change Start - No Target System
+    - !type:BodyMindBlacklistFilter
+      blacklist:
+        components:
+        - NoAntagTarget
+    # Box Change End
     # Can't have multiple objectives to kill the same person.
     - !type:TargetObjectiveMindFilter
       blacklist:

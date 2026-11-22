@@ -15,6 +15,12 @@
   access:
   - Research
   - Maintenance
+  # Box Change Start - Learner Role Tweaks
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NoAntagTarget
+  # Box Change End
 
 - type: startingGear
   id: ResearchAssistantGear

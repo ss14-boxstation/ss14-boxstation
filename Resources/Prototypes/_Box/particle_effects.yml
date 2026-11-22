@@ -78,4 +78,33 @@
   id: BoxSparksOffset
   rotateWithEmitter: true
   spawnOffset: 0, -0.2
-  
+
+- type: particleEffect
+  id: BoxAcidSpray
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: dot
+  startColor: "#FFFFFFFF"
+  endColor: "#FFFFFFFF"
+  lifetime: 0.4
+  lifetimeVariance: 0.2
+  speed: 50
+  speedVariance: 2.5
+  particleSize: 4
+  sizeVariance: 0.3  
+  sizeOverLifetime:
+    - time: 0
+      value: 1
+    - time: 1
+      value: 0
+  noiseStrength: 0.5
+  noiseFrequency: 1
+  startRotationVariance: 90
+  maxCount: 150
+  burst: true
+  gravity: 0
+  drag: 25
+  spreadAngle: 360
+  shape:
+    type: CircleFill
+    radius: 0.2

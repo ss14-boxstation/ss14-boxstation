@@ -2482,3 +2482,27 @@
   id: 266
   time: '2026-11-18T21:20:22.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/401
+- author: CollectionOfBones128
+  changes:
+  - message: Learner Roles can no longer be the target of antag objectives (Technical
+      Assistant, Supply Assistant, Research Assistant, Medical Intern, and Security
+      Cadet)
+    type: Tweak
+  id: 267
+  time: '2026-11-21T02:45:07.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/405
+- author: Dizzy-Eevee
+  changes:
+  - message: Xeno acid sprays now have a visual effect.
+    type: Tweak
+  id: 268
+  time: '2026-11-21T04:28:23.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/404
+- author: CollectionOfBones128
+  changes:
+  - message: Added the "Lethal Intent" trait, an opt-in for rolling Round Removal
+      objectives as an Antagonist
+    type: Add
+  id: 269
+  time: '2026-11-21T04:41:24.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/406
