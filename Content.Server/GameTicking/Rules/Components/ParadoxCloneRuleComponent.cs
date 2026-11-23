@@ -1,6 +1,10 @@
 using Content.Shared.Cloning;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
+// Box Change Start
+using Content.Server.Objectives.Systems;
+using Content.Shared.Mind.Filters;
+// Box Change End
 
 namespace Content.Server.GameTicking.Rules.Components;
 
@@ -47,4 +51,15 @@ public sealed partial class ParadoxCloneRuleComponent : Component
     /// </summary>
     [DataField]
     public EntityWhitelist? ObjectiveBlacklist;
+
+// Box Change Start - Add support to filter out people who can't be targets, like Learners and Nukies
+
+    /// <summary>
+    /// Filters to apply to <see cref="Pool"/>.
+    /// </summary>
+    [DataField]
+    public List<MindFilter> Filters = new();
+
+// Box Change End
+
 }

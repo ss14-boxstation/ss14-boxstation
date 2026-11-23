@@ -288,6 +288,13 @@
     objectiveBlacklist:
       tags:
       - ParadoxCloneObjectiveBlacklist
+  # Box Change Start - Add support to filter out people who can't be targets, like Learners and Nukies
+    filters:
+    - !type:BodyMindBlacklistFilter
+      blacklist:
+        components:
+        - NoAntagTarget
+  # Box Change End
 # Box Change Start - Imp - Saviour PDox
   # - type: AntagObjectives
   #   objectives:
