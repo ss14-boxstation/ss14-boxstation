@@ -306,3 +306,24 @@
     - type: DamagedSiliconAccent
       enableChargeCorruption: false
       damageAtMaxCorruption: 200
+
+- type: trait
+  id: BoxXenoborgVocals
+  name: trait-xenoborgvocals-name
+  description: trait-xenoborgvocals-desc
+  replaceComponents: true
+  cost: 2
+  category: Vocal
+  conditions:
+   - !type:AnyOfCondition
+    conditions:
+    - !type:IsSpeciesCondition
+      species: IPC
+  effects:
+  - !type:OverrideCompsEffect
+    components:
+    - type: Speech
+      speechSounds: Xenoborg
+    - type: Vocal
+      sounds:
+        Unsexed: UnisexSiliconXenoborg

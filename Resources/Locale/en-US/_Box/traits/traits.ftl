@@ -66,3 +66,6 @@ trait-synth-desc = You are a biomechanical construct made to resemble an organic
 
 trait-ion-sensitive-name = Ion Sensitive
 trait-ion-sensitive-desc = You are notified of Ion Storms. [color=yellow]NOTE: Ion Storms have no mechanical effect on you.[/color]
+
+trait-xenoborgvocals-name = Xenotech Voicebox
+trait-xenoborgvocals-desc = Through some means, your vocal synthesizer is of alien design. (Replaces your voice and emotes with xenoborg ones).
