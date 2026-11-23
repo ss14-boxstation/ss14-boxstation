@@ -2506,3 +2506,11 @@
   id: 269
   time: '2026-11-21T04:41:24.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/406
+- author: Dizzy-Eevee
+  changes:
+  - message: Emergency flares will no longer flicker violently when fading out, because
+      eye strain is bad.
+    type: Tweak
+  id: 270
+  time: '2026-11-23T21:19:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/407
