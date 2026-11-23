@@ -7,7 +7,6 @@ using Content.Shared.GameTicking.Components;
 using Content.Shared.Gibbing.Components;
 using Content.Shared.Medical.SuitSensor;
 using Content.Shared.Mind;
-using Content.Shared.Mind.Filters; // Box Change
 using Robust.Shared.Random;
 
 namespace Content.Server.GameTicking.Rules;
