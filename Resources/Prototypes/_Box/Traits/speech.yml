@@ -311,7 +311,6 @@
   id: BoxXenoborgVocals
   name: trait-xenoborgvocals-name
   description: trait-xenoborgvocals-desc
-  replaceComponents: true
   cost: 2
   category: Vocal
   conditions:
