@@ -73,6 +73,7 @@
         - NamesWizardFirst
         - NamesWizardLast
         nameFormat: name-format-wizard
+      - type: NoAntagTarget # Box Change - Wizards can't be targets
       mindRoles:
       - MindRoleWizard
 

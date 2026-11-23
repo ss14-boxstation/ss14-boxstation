@@ -177,6 +177,7 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: NoAntagTarget # Box Change - Nukies can't be targets
       mindRoles:
       - MindRoleNukeopsCommander
     - prefRoles: [ NukeopsMedic ]
@@ -194,6 +195,7 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: NoAntagTarget # Box Change - Nukies can't be targets
       mindRoles:
       - MindRoleNukeopsMedic
     - prefRoles: [ Nukeops ]
@@ -214,6 +216,7 @@
       - type: NpcFactionMember
         factions:
         - Syndicate
+      - type: NoAntagTarget # Box Change - Nukies can't be targets
       mindRoles:
       - MindRoleNukeops
   - type: DynamicRuleCost
@@ -402,6 +405,7 @@
         - NamesWizardFirst
         - NamesWizardLast
         nameFormat: name-format-wizard
+      - type: NoAntagTarget # Box Change - Wizards can't be targets
       mindRoles:
       - MindRoleWizard
   - type: DynamicRuleCost
