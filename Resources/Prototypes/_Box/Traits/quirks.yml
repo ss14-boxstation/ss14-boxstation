@@ -1,0 +1,11 @@
+- type: trait
+  id: MessyDrinker
+  name: trait-messydrinker-name
+  description: trait-messydrinker-desc
+  cost: 0
+  category: Quirks
+  effects:
+  - !type:AddCompsEffect
+    components:  
+    - type: MessyDrinker
+      spillChance: 0.33
