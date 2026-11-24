@@ -77,7 +77,6 @@
       maxGroupSize: 7
     - &defaultBananium
       !type:OreDunGen
-      id: OreBananium
       replacement: AsteroidRock
       entity: AsteroidRockBananium
       count: 2
@@ -85,7 +84,6 @@
       maxGroupSize: 6
     - &defaultArtifact
       !type:OreDunGen
-      id: OreArtifactFragment
       replacement: AsteroidRock
       entity: AsteroidRockArtifactFragment
       count: 4
