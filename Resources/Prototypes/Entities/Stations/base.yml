@@ -71,7 +71,7 @@
           - /Maps/Ruins/atmos_interchange.yml
 #         - /Maps/Ruins/chunked_tcomms.yml # Box Change - replaced by chunked_relay
           - /Maps/Ruins/biodome_satellite.yml
-          - /Maps/Ruins/derelict.yml
+#         - /Maps/Ruins/derelict.yml # Box Change: Kill derelict Relic
           - /Maps/Ruins/djstation.yml
 #         - /Maps/Ruins/empty_flagship.yml # Harmony change - removes flagship wreck
           - /Maps/Ruins/hydro_outpost.yml
