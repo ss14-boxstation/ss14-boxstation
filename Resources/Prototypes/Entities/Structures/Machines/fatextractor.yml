@@ -1,4 +1,5 @@
 ﻿- type: entity
+  abstract: true # Box Change: Kill lipid extractor
   id: FatExtractor
   parent: BaseLatheLube
   name: lipid extractor

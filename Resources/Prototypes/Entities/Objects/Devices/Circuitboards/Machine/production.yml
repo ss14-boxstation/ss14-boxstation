@@ -1068,6 +1068,7 @@
         Cable: 2
 
 - type: entity
+  abstract: true # Box Change: Kill lipid extractor
   id: FatExtractorMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: lipid extractor machine board
