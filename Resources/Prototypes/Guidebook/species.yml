@@ -62,4 +62,4 @@
 - type: guideEntry
   id: Vulpkanin
   name: species-name-vulpkanin
-  text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"
+  text: "/ServerInfo/_Box/Guidebook/Mobs/Vulpkanin.xml" # Box Change: Move Vulp guidebook to _Box
