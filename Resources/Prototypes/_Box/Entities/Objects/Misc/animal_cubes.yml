@@ -1,0 +1,93 @@
+- type: entity
+  parent: BaseWrappedCube
+  name: cow cube
+  id: CowCubeWrapped
+  description: Unwrap this to get a cow cube.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: CowCube
+  - type: Sprite
+    state: wrapper_kobold
+    
+- type: entity
+  parent: BaseWrappedCube
+  name: goat cube
+  id: GoatCubeWrapped
+  description: Unwrap this to get a goat cube.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: GoatCube
+  - type: Sprite
+    state: wrapper_kobold
+
+- type: entity
+  parent: BaseWrappedCube
+  name: chicken cube
+  id: ChickenCubeWrapped
+  description: Unwrap this to get a chicken cube.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: ChickenCube
+  - type: Sprite
+    state: wrapper
+    
+- type: entity
+  parent: RehydratableAnimalCube
+  id: ChickenCube
+  name: chicken cube
+  description: Just add water!
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobChicken
+    - MobChicken1
+    - MobChicken2
+
+- type: entity
+  parent: BaseWrappedCube
+  name: duck cube
+  id: DuckCubeWrapped
+  description: Unwrap this to get a duck cube.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: DuckCube
+  - type: Sprite
+    state: wrapper
+    
+- type: entity
+  parent: RehydratableAnimalCube
+  id: DuckCube
+  name: duck cube
+  description: Just add water!
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobDuckMalllard
+    - MobDuckBrown
+    - MobDuckWhite
+
+- type: entity
+  parent: BaseWrappedCube
+  name: pig cube
+  id: PigCubeWrapped
+  description: Unwrap this to get a pig cube.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PigCube
+  - type: Sprite
+    state: wrapper
+    
+- type: entity
+  parent: RehydratableAnimalCube
+  id: PigCube
+  name: pig cube
+  description: Just add water!
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobPig

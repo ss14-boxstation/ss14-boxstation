@@ -10,29 +10,38 @@
 # Recipes
 
 # recipes should generally cost 1.5x to 2x of the biomass output of their mob
+# Box Note: We do not follow the above. Cows were reduced to 80 (their biomass output), and other meat-yielding mobs have been rebalanced to match the resulting 16 biomass to 1 meat ratio.
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: MonkeyCube
   result: MonkeyCube
+  # Start Box Change: Increase prices to discourage culinary use
+  materials:
+    Biomass: 72 # 1.5x as expensive per meat as other animals
+  # End Box Change
 
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: KoboldCube
   result: KoboldCube
+  # Start Box Change: Increase prices to discourage culinary use
+  materials:
+    Biomass: 48 # 1.5x as expensive per meat as other animals
+  # End Box Change
 
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: CowCube
   result: CowCube
   materials:
-    Biomass: 120
+    Biomass: 80 # Box Change: 120 -> 80 | 16 per slice of meat
 
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: GoatCube
   result: GoatCube
   materials:
-    Biomass: 35
+    Biomass: 64 # Box Change: 35 -> 64
 
 - type: latheRecipe
   parent: BaseCubeRecipe

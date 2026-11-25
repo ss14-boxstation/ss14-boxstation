@@ -67,7 +67,7 @@
   id: ServiceBoards
   recipes:
   - BiofabricatorMachineCircuitboard
-  - FatExtractorMachineCircuitboard
+  #- FatExtractorMachineCircuitboard # Box Change: Kill lipid extractor
   - HydroponicsTrayMachineCircuitboard # roundstart gear being unlocked roundstart when
   - SeedExtractorMachineCircuitboard # ^
   - MassMediaCircuitboard

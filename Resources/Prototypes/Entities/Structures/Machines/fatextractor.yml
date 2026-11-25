@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: FatExtractor
-  parent: BaseMachinePowered
+  parent: BaseLatheLube
   name: lipid extractor
   description: Safely and efficiently extracts excess fat from a subject.
   components:

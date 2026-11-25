@@ -13,7 +13,10 @@
     FoodCondimentBottleVinegar: 2
     ReagentContainerOliveoil: 2
     ReagentContainerMayo: 1
-    VariantCubeBox: 1
+    # Start Box Change: Replace monkey cubes with something more normal
+    #VariantCubeBox: 1
+    ChefCubeBox: 1
+    # End Box Change
     FoodContainerEgg: 1
     DrinkMilkCarton: 2
     DrinkSoyMilkCarton: 1

@@ -1,0 +1,16 @@
+- type: latheRecipe
+  parent: BaseCubeRecipe
+  id: PigCube
+  result: PigCube
+  materials:
+    Biomass: 48 # Bacon is cheaper than steak
+
+- type: latheRecipe
+  parent: BaseCubeRecipe
+  id: ChickenCube
+  result: ChickenCube
+
+- type: latheRecipe
+  parent: BaseCubeRecipe
+  id: DuckCube
+  result: DuckCube

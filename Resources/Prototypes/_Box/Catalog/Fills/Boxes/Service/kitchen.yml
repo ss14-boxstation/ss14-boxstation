@@ -1,0 +1,35 @@
+- type: entity
+  parent: MonkeyCubeBox
+  name: chef cube box
+  id: ChefCubeBox
+  description: A variety of livestock cubes for the chef. Just add water!
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: RuminantCubeTable
+          rolls: 4
+        - id: PigCubeWrapped
+          amount: 2
+        - !type:NestedSelector
+          tableId: PoultryCubeTable
+          rolls: 2
+  - type: Sprite
+    sprite: _Impstation/Objects/Misc/chefcubes.rsi
+    state: box
+    
+- type: entityTable
+  id: RuminantCubeTable
+  table: !type:GroupSelector
+    children:
+      - id: CowCubeWrapped
+      - id: GoatCubeWrapped
+
+- type: entityTable
+  id: PoultryCubeTable
+  table: !type:GroupSelector
+    children:
+    - id: ChickenCubeWrapped
+    - id: DuckCubeWrapped
