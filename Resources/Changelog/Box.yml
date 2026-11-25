@@ -2514,3 +2514,28 @@
   id: 270
   time: '2026-11-23T21:19:30.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/407
+- author: Dizzy-Eevee
+  changes:
+  - message: The giant yellow wreck with no enemies and minimal worthwhile loot will
+      no longer spawn.
+    type: Remove
+  id: 271
+  time: '2026-11-25T01:49:14.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/411
+- author: Dizzy-Eevee
+  changes:
+  - message: Moths and harpies now have the ability to fly, at the cost of stamina
+      and the inability to use their hands.
+    type: Add
+  id: 272
+  time: '2026-11-25T01:51:16.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/356
+- author: Dizzy-Eevee
+  changes:
+  - message: Vulpkanin will no longer randomly spill their drinks.
+    type: Remove
+  - message: Added the "Messy Drinker" trait, available for all species.
+    type: Add
+  id: 273
+  time: '2026-11-25T01:50:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/413
