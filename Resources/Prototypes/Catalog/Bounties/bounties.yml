@@ -200,6 +200,11 @@
     whitelist:
       components:
       - Instrument
+    # Start Box Change: Blacklist mobstate to prevent selling harpies
+    blacklist:
+      components:
+      - MobState
+    # End Box Change
 
 - type: cargoBounty
   id: BountyKnife
