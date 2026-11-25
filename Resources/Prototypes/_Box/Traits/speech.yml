@@ -311,7 +311,7 @@
   id: BoxXenoborgVocals
   name: trait-xenoborgvocals-name
   description: trait-xenoborgvocals-desc
-  cost: 2
+  cost: 0
   category: Vocal
   conditions:
    - !type:AnyOfCondition
