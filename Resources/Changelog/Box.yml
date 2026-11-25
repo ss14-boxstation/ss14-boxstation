@@ -2539,3 +2539,13 @@
   id: 273
   time: '2026-11-25T01:50:08.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/413
+- author: Dizzy-Eevee
+  changes:
+  - message: The "steal LAMPs" thief objective will no longer roll.
+    type: Remove
+  - message: The "steal the prime cut corgi meat" syndicate agent/blood bound objective
+      will no longer roll.
+    type: Remove
+  id: 274
+  time: '2026-11-25T02:17:39.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/412
