@@ -2524,7 +2524,7 @@
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/411
 - author: Dizzy-Eevee
   changes:
-  - message: Moths and harpies now have the ability to fly, at the cost of stamina
+  - message: Harpies now have the ability to fly, at the cost of stamina
       and the inability to use their hands.
     type: Add
   id: 272
