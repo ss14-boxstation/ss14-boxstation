@@ -23,6 +23,7 @@
       - BaseballBat
 
 - type: cargoBounty
+  abstract: true # Box Change: Salvagers shouldn't be encouraged to gib random corpses
   id: BountyBrain
   reward: 12500
   description: bounty-description-brain
@@ -71,6 +72,7 @@
       - CarrotFries
 
 - type: cargoBounty
+  abstract: true # Box Change: Things like this should be on the salvage job board, not cargo bounties.
   id: BountyCarp
   reward: 12500
   description: bounty-description-carp
@@ -83,6 +85,7 @@
       - Carp
 
 - type: cargoBounty
+  abstract: true # Box Change: Only available if a spare is mapped, already removed upstream.
   id: BountyClownCostume
   reward: 1700
   description: bounty-description-clown-costume
@@ -238,6 +241,7 @@
       - Lime
 
 - type: cargoBounty
+  abstract: true # Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
   id: BountyLung
   reward: 2000
   description: bounty-description-lung
@@ -470,6 +474,7 @@
       - ArtifactFragment
 
 - type: cargoBounty
+  abstract: true # Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
   id: BountyOrgans
   reward: 2000
   description: bounty-description-organs
