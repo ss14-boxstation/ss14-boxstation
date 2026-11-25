@@ -22,17 +22,18 @@
       tags:
       - BaseballBat
 
-- type: cargoBounty
-  abstract: true # Box Change: Salvagers shouldn't be encouraged to gib random corpses
-  id: BountyBrain
-  reward: 12500
-  description: bounty-description-brain
-  entries:
-  - name: bounty-item-brain
-    amount: 1
-    whitelist:
-      components:
-      - Brain
+# Start Box Change: Salvagers shouldn't be encouraged to gib random corpses
+# - type: cargoBounty
+  # id: BountyBrain
+  # reward: 12500
+  # description: bounty-description-brain
+  # entries:
+  # - name: bounty-item-brain
+    # amount: 1
+    # whitelist:
+      # components:
+      # - Brain
+# End Box Change
 
 - type: cargoBounty
   id: BountyBread
@@ -71,35 +72,37 @@
       tags:
       - CarrotFries
 
-- type: cargoBounty
-  abstract: true # Box Change: Things like this should be on the salvage job board, not cargo bounties.
-  id: BountyCarp
-  reward: 12500
-  description: bounty-description-carp
-  idPrefix: CC
-  entries:
-  - name: bounty-item-carp
-    amount: 1
-    whitelist:
-      tags:
-      - Carp
+# Start Box Change: Things like this should be on the salvage job board, not cargo bounties.
+# - type: cargoBounty
+  # id: BountyCarp
+  # reward: 12500
+  # description: bounty-description-carp
+  # idPrefix: CC
+  # entries:
+  # - name: bounty-item-carp
+    # amount: 1
+    # whitelist:
+      # tags:
+      # - Carp
+# End Box Change
 
-- type: cargoBounty
-  abstract: true # Box Change: Only available if a spare is mapped, already removed upstream.
-  id: BountyClownCostume
-  reward: 1700
-  description: bounty-description-clown-costume
-  entries:
-  - name: bounty-item-clown-mask
-    amount: 1
-    whitelist:
-      tags:
-      - ClownMask
-  - name: bounty-item-clown-shoes
-    amount: 1
-    whitelist:
-      tags:
-      - ClownShoes
+# Start Box Change: Only available if a spare is mapped, already removed upstream.
+# - type: cargoBounty
+  # id: BountyClownCostume
+  # reward: 1700
+  # description: bounty-description-clown-costume
+  # entries:
+  # - name: bounty-item-clown-mask
+    # amount: 1
+    # whitelist:
+      # tags:
+      # - ClownMask
+  # - name: bounty-item-clown-shoes
+    # amount: 1
+    # whitelist:
+      # tags:
+      # - ClownShoes
+# End Box Change
 
 - type: cargoBounty
   id: BountyCorn
@@ -240,17 +243,18 @@
       tags:
       - Lime
 
-- type: cargoBounty
-  abstract: true # Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
-  id: BountyLung
-  reward: 2000
-  description: bounty-description-lung
-  entries:
-  - name: bounty-item-lung
-    amount: 3
-    whitelist:
-      components:
-      - Lung
+# Start Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
+# - type: cargoBounty
+  # id: BountyLung
+  # reward: 2000
+  # description: bounty-description-lung
+  # entries:
+  # - name: bounty-item-lung
+    # amount: 3
+    # whitelist:
+      # components:
+      # - Lung
+# End Box Change
 
 - type: cargoBounty
   id: BountyMonkeyCube
@@ -473,18 +477,19 @@
       tags:
       - ArtifactFragment
 
-- type: cargoBounty
-  abstract: true # Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
-  id: BountyOrgans
-  reward: 2000
-  description: bounty-description-organs
-  idPrefix: UNTH
-  entries:
-  - name: bounty-item-organs
-    amount: 8
-    whitelist:
-      components:
-      - Organ
+# Start Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
+# - type: cargoBounty
+  # id: BountyOrgans
+  # reward: 2000
+  # description: bounty-description-organs
+  # idPrefix: UNTH
+  # entries:
+  # - name: bounty-item-organs
+    # amount: 8
+    # whitelist:
+      # components:
+      # - Organ
+# End Box Change
 
 - type: cargoBounty
   id: BountyLabeler
