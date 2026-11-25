@@ -20,7 +20,6 @@ bounty-description-mouse = As part of the Clean Station Initiative, NanoTrasen i
 bounty-description-research-disk = The Spider Clan has raided a nearby station. Send them some research disks to help them get back on their feet.
 bounty-description-soup = Our kitchen staff are sick, and the marines are getting hungry. We need a large shipment of soup! OORAH!!
 bounty-description-syringe = A material shortage has hit a nearby hospital, and they require a shipment of sterile syringes.
-bounty-description-tech-disk = The new research assistant on Station 13 spilled a soda on the RND server. Send them some technology disks so they can build up their recipes.
 bounty-description-trash = As part of the Clean Station Initiative, NanoTrasen is offering a monetary reward for garbage disposal.
 bounty-description-labeler = Due to a bureaucratic error, our sorting center almost sent hundreds of crates of carrots to an Unathi settlement. We urgently need additional labelers to restore order in the warehouse as a matter of urgency.
 bounty-description-warm-cloth = NanoTrasen is preparing a landing mission to an unexplored ice moon, and requires warm clothing for the expedition team.
