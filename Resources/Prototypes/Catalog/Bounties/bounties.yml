@@ -162,7 +162,7 @@
 - type: cargoBounty
   id: BountyFlower
   reward: 2000
-  description: bounty-description-flowe-box # Box Change: Bounty flavor text rewriter
+  description: bounty-description-flower-box # Box Change: Bounty flavor text rewriter
   idPrefix: CC
   entries:
   - name: bounty-item-flower
@@ -490,9 +490,9 @@
 - type: cargoBounty
   id: BountyLabeler
   reward: 6660
-  description: bounty-description-labeler
+  description: bounty-description-labeler-box # Box Change: Bounty flavor text rewrite
   entries:
-  - name: bounty-item-labeler-box # Box Change: Bounty flavor text rewrite
+  - name: bounty-item-labeler
     amount: 5
     whitelist:
       components:
