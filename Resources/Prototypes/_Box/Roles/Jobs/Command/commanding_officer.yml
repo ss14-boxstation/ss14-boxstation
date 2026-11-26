@@ -10,9 +10,10 @@
   supervisors: job-supervisors-centcom
   setPreference: false
   overrideConsoleVisibility: true
-  access: # Everything but accesses of other Heads
+  access: # Everything but sec access and head access. Does have Cap and HoP access as well though.
   - Command
   - Captain
+  - HeadOfPersonnel
   - Bar
   - Service
   - Maintenance
