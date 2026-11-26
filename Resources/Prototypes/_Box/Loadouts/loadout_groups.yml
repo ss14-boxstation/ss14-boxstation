@@ -72,8 +72,8 @@
   id: HeadsetsHoP
   name: loadout-group-headset-hop
   loadouts:
-  - ClothingHeadsetHop # Box Change - ClothingHeadsetCommand > ClothingHeadsetHop
-  - ClothingHeadsetAltHop # Box Change - ClothingHeadsetAltCommand > ClothingHeadsetAltHop
+  - ClothingHeadsetHop
+  - ClothingHeadsetAltHop
   - ClothingWristsetHoP
 
 - type: loadoutGroup
