@@ -13,6 +13,10 @@
     price: 25
   # Start Box Change: Forky clothing stains
   - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      stain:
+        maxVol: 5
   - type: Stainable
     clothingVisuals:
       mask:
