@@ -53,14 +53,16 @@
     - id: PinpointerNuclear
     - id: PlushieNuke
       prob: 0.1
-    - id: RubberStampCaptain
+    - id: BoxCaptainStamps # Box Change - RubberStampCaptain > BoxCaptainStamps
     - id: SpaceCash1000
     - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
-    - id: OrganSkeletonPersonHead # A skull to accompany your skeleton crew
-      conditions:
-      - !type:PlayerCountCondition
-        max: 15
+    # Box Change Start - Remove Horatio - People keep wanting to eat this fucking skull
+    # - id: OrganSkeletonPersonHead # A skull to accompany your skeleton crew
+    #   conditions:
+    #   - !type:PlayerCountCondition
+    #     max: 15
+    # Box Change End
     - id: HandheldComms # Box Change - Add CO's Handheld Comms
 
 # No laser table + Laser table
@@ -137,7 +139,7 @@
       # Yes they do fuck you.
     - id: ClothingBackpackIan
       prob: 0.5
-    - id: ClothingHeadsetCommand
+    - id: ClothingHeadsetHop # Box Change - ClothingHeadsetCommand > ClothingHeadsetHop
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService
     - id: HoPIDCard
