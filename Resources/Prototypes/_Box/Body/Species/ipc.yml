@@ -270,7 +270,8 @@
             MoltenIPCScrap:
               min: 1
               max: 1
-        - !type:BurnBodyBehavior { } # TODO: Wait for the upstream PR that makes it so a custom popup can be made
+        - !type:BurnBodyBehavior
+          popupMessage: bodyburn-ipc-text-others
         - !type:PlaySoundBehavior
           sound:
             collection: MeatLaserImpact # Either this sound doesn't appear, or it already works good enough

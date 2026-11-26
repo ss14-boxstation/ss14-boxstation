@@ -1,7 +1,7 @@
 - type: cargoBounty
   id: BountyArtifact
   reward: 2500
-  description: bounty-description-artifact
+  description: bounty-description-artifact-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-artifact
     amount: 1
@@ -22,16 +22,18 @@
       tags:
       - BaseballBat
 
-- type: cargoBounty
-  id: BountyBrain
-  reward: 12500
-  description: bounty-description-brain
-  entries:
-  - name: bounty-item-brain
-    amount: 1
-    whitelist:
-      components:
-      - Brain
+# Start Box Change: Salvagers shouldn't be encouraged to gib random corpses
+# - type: cargoBounty
+  # id: BountyBrain
+  # reward: 12500
+  # description: bounty-description-brain
+  # entries:
+  # - name: bounty-item-brain
+    # amount: 1
+    # whitelist:
+      # components:
+      # - Brain
+# End Box Change
 
 - type: cargoBounty
   id: BountyBread
@@ -73,7 +75,7 @@
 - type: cargoBounty
   id: BountyCarp
   reward: 12500
-  description: bounty-description-carp
+  description: bounty-description-carp-box # Box Change: Bounty flavor text rewrite
   idPrefix: CC
   entries:
   - name: bounty-item-carp
@@ -82,26 +84,28 @@
       tags:
       - Carp
 
-- type: cargoBounty
-  id: BountyClownCostume
-  reward: 1700
-  description: bounty-description-clown-costume
-  entries:
-  - name: bounty-item-clown-mask
-    amount: 1
-    whitelist:
-      tags:
-      - ClownMask
-  - name: bounty-item-clown-shoes
-    amount: 1
-    whitelist:
-      tags:
-      - ClownShoes
+# Start Box Change: Only available if a spare is mapped, already removed upstream.
+# - type: cargoBounty
+  # id: BountyClownCostume
+  # reward: 1700
+  # description: bounty-description-clown-costume
+  # entries:
+  # - name: bounty-item-clown-mask
+    # amount: 1
+    # whitelist:
+      # tags:
+      # - ClownMask
+  # - name: bounty-item-clown-shoes
+    # amount: 1
+    # whitelist:
+      # tags:
+      # - ClownShoes
+# End Box Change
 
 - type: cargoBounty
   id: BountyCorn
   reward: 10000
-  description: bounty-description-corn
+  description: bounty-description-corn-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-corn
     amount: 10
@@ -112,7 +116,7 @@
 - type: cargoBounty
   id: BountyCrayon
   reward: 1500
-  description: bounty-description-crayon
+  description: bounty-description-crayon-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-crayon
     amount: 24
@@ -158,7 +162,7 @@
 - type: cargoBounty
   id: BountyFlower
   reward: 2000
-  description: bounty-description-flower
+  description: bounty-description-flower-box # Box Change: Bounty flavor text rewriter
   idPrefix: CC
   entries:
   - name: bounty-item-flower
@@ -170,7 +174,7 @@
 - type: cargoBounty
   id: BountyGalaxyThistle
   reward: 12000
-  description: bounty-description-galaxythistle
+  description: bounty-description-galaxythistle-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-galaxythistle
     amount: 10
@@ -200,6 +204,11 @@
     whitelist:
       components:
       - Instrument
+    # Start Box Change: Blacklist mobstate to prevent selling harpies
+    blacklist:
+      components:
+      - MobState
+    # End Box Change
 
 - type: cargoBounty
   id: BountyKnife
@@ -228,7 +237,7 @@
 - type: cargoBounty
   id: BountyLime
   reward: 10000
-  description: bounty-description-lime
+  description: bounty-description-lime-box # Box Change: Bounty flavor text rewrite
   idPrefix: CC
   entries:
   - name: bounty-item-lime
@@ -237,21 +246,23 @@
       tags:
       - Lime
 
-- type: cargoBounty
-  id: BountyLung
-  reward: 2000
-  description: bounty-description-lung
-  entries:
-  - name: bounty-item-lung
-    amount: 3
-    whitelist:
-      components:
-      - Lung
+# Start Box Change: Organ bounties are weird tonally and simply not interesting post-Nubody.
+# - type: cargoBounty
+  # id: BountyLung
+  # reward: 2000
+  # description: bounty-description-lung
+  # entries:
+  # - name: bounty-item-lung
+    # amount: 3
+    # whitelist:
+      # components:
+      # - Lung
+# End Box Change
 
 - type: cargoBounty
   id: BountyMonkeyCube
   reward: 2000
-  description: bounty-description-monkey-cube
+  description: bounty-description-monkey-cube-box # Box Change: Bounty flavor text rewrite
   idPrefix: CC
   entries:
   - name: bounty-item-monkey-cube
@@ -263,7 +274,7 @@
 - type: cargoBounty
   id: BountyMouse
   reward: 2400
-  description: bounty-description-mouse
+  description: bounty-description-mouse-box # Box Change: Bounty flavor text rewrite
   idPrefix: SS13-
   entries:
   - name: bounty-item-mouse
@@ -371,7 +382,7 @@
 - type: cargoBounty
   id: BountySoup
   reward: 6000
-  description: bounty-description-soup
+  description: bounty-description-soup-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-soup
     amount: 3
@@ -393,7 +404,7 @@
 - type: cargoBounty
   id: BountySyringe
   reward: 5000
-  description: bounty-description-syringe
+  description: bounty-description-syringe-box # Box Change: Bounty flavor tex- Holy shit what the fuck do you mean there was a bounty description referencing CIA drug trafficking???????
   entries:
   - name: bounty-item-syringe
     amount: 10
@@ -404,7 +415,7 @@
 - type: cargoBounty
   id: BountyTechDisk
   reward: 25000
-  description: bounty-description-tech-disk
+  description: bounty-description-tech-disk-box # Box Change: Bounty flavor text rewrite
   idPrefix: SS13-
   entries:
   - name: bounty-item-tech-disk
@@ -428,7 +439,7 @@
 - type: cargoBounty
   id: BountyTrash
   reward: 500
-  description: bounty-description-trash
+  description: bounty-description-trash-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-trash
     amount: 10
@@ -471,12 +482,12 @@
 
 - type: cargoBounty
   id: BountyOrgans
-  reward: 2000
+  reward: 1000 # Box Change: 2000 -> 1000
   description: bounty-description-organs
   idPrefix: UNTH
   entries:
   - name: bounty-item-organs
-    amount: 8
+    amount: 16 # Box Change: 8 -> 16 | Organs are more plentiful post-Nubody, and raising the amount lets us make animals cheaper
     whitelist:
       components:
       - Organ
@@ -484,7 +495,7 @@
 - type: cargoBounty
   id: BountyLabeler
   reward: 6660
-  description: bounty-description-labeler
+  description: bounty-description-labeler-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-labeler
     amount: 5
@@ -495,7 +506,7 @@
 - type: cargoBounty
   id: BountyWarmCloth
   reward: 2000
-  description: bounty-description-warm-cloth
+  description: bounty-description-warm-cloth-box # Box Change: Bounty flavor text rewrite
   idPrefix: UNTH
   entries:
   - name: bounty-item-warm-cloth
@@ -512,7 +523,7 @@
 - type: cargoBounty
   id: BountyBattery
   reward: 15000
-  description: bounty-description-battery
+  description: bounty-description-battery-box # Box Change: Bounty flavor text rewrite
   idPrefix: UNTH
   entries:
   - name: bounty-item-battery
@@ -524,7 +535,7 @@
 - type: cargoBounty
   id: BountyLaserGun
   reward: 9600
-  description: bounty-description-lasergun
+  description: bounty-description-lasergun-box # Box Change: Bounty flavor text rewrite
   idPrefix: IV
   entries:
   - name: bounty-item-lasergun
@@ -539,7 +550,7 @@
 - type: cargoBounty
   id: BountyFood
   reward: 4000
-  description: bounty-description-food
+  description: bounty-description-food-box # Box Change: Bounty flavor text rewrite
   idPrefix: UNTH
   entries:
   - name: bounty-item-food
@@ -573,7 +584,7 @@
 - type: cargoBounty
   id: BountyVegetable
   reward: 6000
-  description: bounty-description-vegetable
+  description: bounty-description-vegetable-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-vegetable
     amount: 14
@@ -622,7 +633,7 @@
 - type: cargoBounty
   id: BountyBandana
   reward: 4000
-  description: bounty-description-bandana
+  description: bounty-description-bandana-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-bandana
     amount: 7
@@ -633,7 +644,7 @@
 - type: cargoBounty
   id: BountySteak
   reward: 3200
-  description: bounty-description-steak
+  description: bounty-description-steak-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-steak
     amount: 4
@@ -677,7 +688,7 @@
 - type: cargoBounty
   id: BountyTorch
   reward: 2220
-  description: bounty-description-torch
+  description: bounty-description-torch-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-torch
     amount: 6
@@ -710,7 +721,7 @@
 - type: cargoBounty
   id: BountyWine
   reward: 1500
-  description: bounty-description-wine
+  description: bounty-description-wine-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-wine
     amount: 2
@@ -754,7 +765,7 @@
 - type: cargoBounty
   id: BountyRing
   reward: 12500
-  description: bounty-description-ring
+  description: bounty-description-ring-box # Box Change: Bounty flavor text rewrite
   entries:
   - name: bounty-item-ring
     amount: 2

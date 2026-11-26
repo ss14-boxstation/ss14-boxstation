@@ -2524,8 +2524,8 @@
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/411
 - author: Dizzy-Eevee
   changes:
-  - message: Moths and harpies now have the ability to fly, at the cost of stamina
-      and the inability to use their hands.
+  - message: Harpies now have the ability to fly, at the cost of stamina and the inability
+      to use their hands.
     type: Add
   id: 272
   time: '2026-11-25T01:51:16.0000000+00:00'
@@ -2549,3 +2549,18 @@
   id: 274
   time: '2026-11-25T02:17:39.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/412
+- author: Dizzy-Eevee
+  changes:
+  - message: The cargo bounty for 5 instruments will no longer allow you to sell live
+      harpies at the ATS.
+    type: Tweak
+  id: 275
+  time: '2026-11-25T23:10:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/420
+- author: SomegnihT
+  changes:
+  - message: IPCs now say they melt into scrap when reaching 2000 heat damage.
+    type: Add
+  id: 276
+  time: '2026-11-25T23:10:16.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/416
