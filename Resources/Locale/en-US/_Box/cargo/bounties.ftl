@@ -8,7 +8,7 @@ bounty-item-goliathmeat = Goliath Meat
 
 # Upstream bounty flavor text rewrites. Some of these were fucking rancid.
 bounty-description-artifact-box = Central Command would like to study the material properties of an extradimensional artifact. Send one over once you're done investigating its less mundane properties.
-bounty-description-carp = A NanoTrasen-sponsored university has suffered a prolonged power outage, which has ruined the corpses they had prepared for their biology course. Send them a carp for the students to dissect.
+bounty-description-carp-box = A NanoTrasen-sponsored university has suffered a prolonged power outage, which has ruined the corpses they had prepared for their biology course. Send them a carp for the students to dissect.
 bounty-description-corn-box = After the release of a much-anticipated movie, NanoTrasen's entertainment division is struggling to keep up with the demand for popcorn. Ship them some corn so they can make more.
 bounty-description-crayon-box = The NanoTrasen Youth Enrichment Center is running low on art supplies. Ship them some crayons.
 bounty-description-flower-box = Staff at Central Command is complaining about a lack of nature on the station. Send us some flowers to brighten the place up.
