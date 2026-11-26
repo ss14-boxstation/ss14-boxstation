@@ -3,7 +3,7 @@
 - type: entity
   parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
   id: ClothingBeltSheath
-  name: sabre sheath
+  name: captain's sabre sheath # Box Change - Add 'captain' to name
   description: An ornate sheath designed to hold an officer's blade.
   components:
   - type: Sprite
