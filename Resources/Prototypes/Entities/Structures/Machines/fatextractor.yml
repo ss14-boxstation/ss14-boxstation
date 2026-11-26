@@ -1,7 +1,7 @@
 ﻿- type: entity
   abstract: true # Box Change: Kill lipid extractor
   id: FatExtractor
-  parent: BaseLatheLube
+  parent: BaseMachinePowered
   name: lipid extractor
   description: Safely and efficiently extracts excess fat from a subject.
   components:
