@@ -2564,3 +2564,17 @@
   id: 276
   time: '2026-11-25T23:10:16.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/416
+- author: Dizzy-Eevee
+  changes:
+  - message: Removed the cargo bounties for lungs, a brain, and a clown costume.
+    type: Remove
+  - message: The cargo bounty for organs has been rebalanced to account for organs
+      now dropping when animals are butchered, instead of just when they are gibbed.
+      The chef will probably be relieved to hand them over.
+    type: Tweak
+  - message: Many cargo bounty descriptions have been rewritten for tone, or because
+      they were simply terrible.
+    type: Tweak
+  id: 277
+  time: '2026-11-26T22:43:14.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/419
