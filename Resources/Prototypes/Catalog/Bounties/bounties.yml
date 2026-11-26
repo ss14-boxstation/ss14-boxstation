@@ -477,7 +477,7 @@
 
 - type: cargoBounty
   id: BountyOrgans
-  reward: 2000
+  reward: 1000 # Box Change: 2000 -> 1000
   description: bounty-description-organs
   idPrefix: UNTH
   entries:
