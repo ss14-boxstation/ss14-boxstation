@@ -45,7 +45,7 @@
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
   id: ClothingHeadsetAltCommand
-  name: command over-ear headset
+  name: commanding officer's over-ear headset # Box Change - Command > Commanding Officer's
   components:
   - type: ContainerFill
     containers:

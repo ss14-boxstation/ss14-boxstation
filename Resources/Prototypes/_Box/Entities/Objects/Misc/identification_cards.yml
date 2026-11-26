@@ -11,3 +11,11 @@
     - state: default
     - state: idintern-cargo
       sprite: _Box/Objects/Misc/id_cards.rsi
+
+- type: entity
+  parent: CaptainIDCard # This will also mean it counts for stealing the Captain ID
+  id: COIDCard
+  name: commanding officer ID card
+  components:
+  - type: PresetIdCard
+    job: CommandingOfficer

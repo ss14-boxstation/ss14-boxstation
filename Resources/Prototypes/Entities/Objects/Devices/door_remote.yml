@@ -79,7 +79,7 @@
 - type: entity
   parent: [DoorRemoteDefault, BaseCommandContraband]
   id: DoorRemoteCustom
-  name: custom door remote
+  name: commanding officer's door remote # Box Change - Custom > Commanding Officer's
   description: A gadget which can open and bolt doors remotely. This advanced variant does not have built-in access, instead inheriting the ID access of the user.
   components:
   - type: Sprite

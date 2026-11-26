@@ -1,0 +1,40 @@
+# This should never be *played*, but does need to exist for the ID Console from what I can see
+- type: job
+  id: CommandingOfficer
+  name: job-name-co
+  description: job-description-co
+  playTimeTracker: JobCommandingOfficer
+  canBeAntag: false
+  icon: JobIconCaptain
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  setPreference: false
+  overrideConsoleVisibility: true
+  access: # Everything but sec access and head access. Does have Cap and HoP access as well though.
+  - Command
+  - Captain
+  - HeadOfPersonnel
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - External
+  - Cryogenics
+  - Chemistry
+  - Engineering
+  - Research
+  - Salvage
+  - Brig
+  - Cargo
+  - Atmospherics
+  - Medical
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff

@@ -1,0 +1,19 @@
+- type: entity
+  parent: RubberStampHop
+  id: RubberStampCO
+  name: commanding officer's rubber stamp
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-co
+    stampedColor: "#6ec0ea"
+    stampState: "paper_stamp-hop"
+
+- type: entity
+  parent: RubberStampHos
+  id: RubberStampXO
+  name: executive officer's rubber stamp
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-xo
+    stampedColor: "#cc0000"
+    stampState: "paper_stamp-hos"

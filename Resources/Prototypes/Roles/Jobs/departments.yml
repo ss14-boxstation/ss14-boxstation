@@ -74,6 +74,7 @@
   - ERTSecurity
   - ERTEngineer
   - DeathSquad
+  - CommandingOfficer # Box Change
   primary: false
   weight: 100
 
