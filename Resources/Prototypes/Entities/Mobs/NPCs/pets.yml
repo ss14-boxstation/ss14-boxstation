@@ -879,7 +879,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeat
+    - id: FoodMeatMonkey # Box Change: FoodMeat -> FoodMeatMonkey
       amount: 3
     - id: DrinkTequilaBottleFull
       amount: 1

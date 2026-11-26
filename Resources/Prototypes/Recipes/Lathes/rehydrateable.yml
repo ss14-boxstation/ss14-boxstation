@@ -15,19 +15,11 @@
   parent: BaseCubeRecipe
   id: MonkeyCube
   result: MonkeyCube
-  # Start Box Change: Increase prices to discourage culinary use
-  materials:
-    Biomass: 72 # 1.5x as expensive per meat as other animals
-  # End Box Change
 
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: KoboldCube
   result: KoboldCube
-  # Start Box Change: Increase prices to discourage culinary use
-  materials:
-    Biomass: 48 # 1.5x as expensive per meat as other animals
-  # End Box Change
 
 - type: latheRecipe
   parent: BaseCubeRecipe

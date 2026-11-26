@@ -1425,7 +1425,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeat
+    - id: FoodMeatMonkey # Box Change: FoodMeat -> FoodMeatMonkey
       amount: 3
   - type: Puller
     needsHands: false
@@ -1638,7 +1638,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeat
+    - id: FoodMeatKobold # Box Change: FoodMeat -> FoodMeatKobold
       amount: 2
   - type: AlwaysRevolutionaryConvertible
   - type: GhostTakeoverAvailable

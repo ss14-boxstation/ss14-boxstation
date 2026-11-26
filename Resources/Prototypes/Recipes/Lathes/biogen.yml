@@ -5,7 +5,7 @@
   - Food
   completetime: 3
   materials:
-    Biomass: 100 # Box Change: 70 -> 100
+    Biomass: 70
 
 - type: latheRecipe
   id: BioGenKoboldCube
@@ -14,7 +14,7 @@
   - Food
   completetime: 3
   materials:
-    Biomass: 100 # Box Change: 70 -> 100
+    Biomass: 70
 
 - type: latheRecipe
   id: BioGenMaterialCloth1

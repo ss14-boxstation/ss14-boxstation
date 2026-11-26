@@ -124,7 +124,7 @@
     sprite: Objects/Misc/monkeycube.rsi
     state: box
   product: CrateNPCMonkeyCube
-  cost: 4000 # Box Change: 2000 -> 4000
+  cost: 2000
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -134,7 +134,7 @@
     sprite: Objects/Misc/monkeycube.rsi
     state: box_kobold
   product: CrateNPCKoboldCube
-  cost: 4000 # Box Change: 2000 -> 4000
+  cost: 2000
   category: cargoproduct-category-name-livestock
   group: market
 
