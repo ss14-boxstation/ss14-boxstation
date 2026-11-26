@@ -57,7 +57,7 @@
     - id: SpaceCash1000
     - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
-    # Box Change Start - Remove Horatio - People keep wanting to eat this fucking skull
+    # Box Change Start - Remove Poor Yorick - People keep wanting to eat this fucking skull
     # - id: OrganSkeletonPersonHead # A skull to accompany your skeleton crew
     #   conditions:
     #   - !type:PlayerCountCondition
