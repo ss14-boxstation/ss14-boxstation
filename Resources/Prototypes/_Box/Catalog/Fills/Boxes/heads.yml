@@ -1,0 +1,14 @@
+- type: entity
+  parent: BoxStamps
+  id: BoxCaptainStamps
+  categories: [ DoNotMap ]
+  name: captain's stamp box
+  description: A small box containing stamps. Contains stamps for the Captain, CO, and XO.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: RubberStampCaptain
+        - id: RubberStampCO
+        - id: RubberStampXO
