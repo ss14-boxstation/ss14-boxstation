@@ -2578,3 +2578,18 @@
   id: 277
   time: '2026-11-26T22:43:14.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/419
+- author: CollectionOfBones128
+  changes:
+  - message: Certain items now explicitly say if they are for the CO or if they are
+      exclusive for the Captain
+    type: Tweak
+  - message: The CO and the XO now have stamps, which can be found in the Captain's
+      Locker
+    type: Add
+  - message: The ID Console now has a preset for the CO
+    type: Add
+  - message: The Captain's Locker will no longer spawn a skull at 15 pop
+    type: Remove
+  id: 278
+  time: '2026-11-26T23:11:17.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/421
