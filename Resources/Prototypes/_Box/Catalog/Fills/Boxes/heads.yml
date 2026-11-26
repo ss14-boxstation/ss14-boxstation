@@ -2,7 +2,7 @@
   parent: BoxStamps
   id: BoxCaptainStamps
   categories: [ DoNotMap ]
-  name: captain's stamp box
+  name: officer's stamp box
   description: A small box containing stamps. Contains stamps for the Captain, CO, and XO.
   components:
   - type: EntityTableContainerFill
