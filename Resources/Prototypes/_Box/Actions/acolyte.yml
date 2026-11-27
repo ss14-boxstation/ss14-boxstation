@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseAction
+  id: ActionAcolyteSoulHarvest
+  name: Harvest Soul Part
+  description: Harvest a part of someone's soul.
+  components:
+  - type: Action
+    icon:
+      sprite: /Textures/Objects/Magic/magicactions.rsi
+      state: magicmissile
+    itemIconStyle: BigAction
+  - type: TargetAction
+  - type: EntityTargetAction
+    event: !type:AcolyteSoulHarvestActionEvent
+    whitelist:
+      components:
+      - HumanoidAppearance
+    canTargetSelf: false
