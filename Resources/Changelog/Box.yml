@@ -2593,3 +2593,57 @@
   id: 278
   time: '2026-11-26T23:11:17.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/421
+- author: CollectionOfBones128, fossa1212
+  changes:
+  - message: Added a new PKA, The Xeno Shard Accelerator. It has a unique ammo mechanic
+      and can be found on wrecks and the Red Rock Asteroid.
+    type: Add
+  id: 279
+  time: '2026-11-27T00:23:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/336
+- author: CollectionOfBones128
+  changes:
+  - message: Non-crew antagonists (Nukies, Ninja, Wizard, LoneOp, etc.) are now automatically
+      excluded from target pools
+    type: Tweak
+  - message: Paradox Clones cannot generate for Learner Roles, Non-crew antagonists,
+      or anyone with the Untouchable trait
+    type: Tweak
+  - message: Added the Untouchable trait, a Passenger-only trait that excludes someone
+      from target pools
+    type: Add
+  id: 280
+  time: '2026-11-27T00:24:17.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/408
+- author: Dizzy-Eevee
+  changes:
+  - message: The lipid extractor has been removed.
+    type: Remove
+  - message: The variety cube box has been removed from the ChefVend and chef's locker.
+    type: Remove
+  - message: A box has been added to the ChefVend and chef's locker containing a mix
+      of cow, goat, pig, duck, and chicken cubes.
+    type: Add
+  - message: The biogenerator can now print meat directly.
+    type: Add
+  - message: The biocube fabricator can now print pig, duck, and chicken cubes.
+    type: Add
+  - message: The costs of meat-yielding animal cubes from the biocube fabricator have
+      been rebalanced. Generally, the biocube fabricator costs 16 biomass per piece
+      of meat, offering more variety at a ~20% discount vs printing meat directly
+      from the biofabricator.
+    type: Tweak
+  - message: The price of ordering meat-yielding animals from cargo has been drastically
+      reduced across the board.
+    type: Tweak
+  - message: Monkeys, kobolds, and scurrets now give unique meat when butchered that
+      cannot be used in most recipes, just like humans do.
+    type: Tweak
+  - message: Scurret corpses are no longer edible
+    type: Tweak
+  - message: You can no longer "launder" human meat by slicing it into perfectly edible
+      meat cutlets.
+    type: Tweak
+  id: 281
+  time: '2026-11-27T00:24:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/417
