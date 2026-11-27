@@ -1,0 +1,202 @@
+# Roundstart asteroids, based off magnet configs
+
+- type: dungeonConfig
+  id: BlobAsteroidRoundstart
+  layers: 
+    - !type:NoiseDunGen
+      tileCap: 1000
+      capStd: 32
+      iterations: 3
+      layers:
+        - tile: FloorAsteroidSand
+          threshold: 0.30
+          noise:
+            frequency: 0.020
+            noiseType: OpenSimplex2
+            fractalType: FBm
+            octaves: 2
+            lacunarity: 2
+     # Generate biome
+    - !type:BiomeDunGen
+      biomeTemplate: Asteroid
+    - !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockGibtonite
+      count: 8
+      minGroupSize: 0
+      maxGroupSize: 1
+    # Ores
+    - &defaultIron # Evil YAML anchor magic
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockTin
+      count: 7
+      minGroupSize: 5
+      maxGroupSize: 7
+    - &defaultQuartz
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockQuartz
+      count: 7
+      minGroupSize: 5
+      maxGroupSize: 7
+    - &defaultCoal
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockCoal
+      count: 3
+      minGroupSize: 2
+      maxGroupSize: 7
+    - &defaultGold
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockGold
+      count: 5
+      minGroupSize: 2
+      maxGroupSize: 7
+    - &defaultSilver
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockSilver
+      count: 5
+      minGroupSize: 2
+      maxGroupSize: 7
+    - &defaultPlasma
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockPlasma
+      count: 4
+      minGroupSize: 2
+      maxGroupSize: 7
+    - &defaultUranium
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockUranium
+      count: 4
+      minGroupSize: 2
+      maxGroupSize: 7
+    - &defaultBananium
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockBananium
+      count: 2
+      minGroupSize: 0
+      maxGroupSize: 6
+    - &defaultArtifact
+      !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockArtifactFragment
+      count: 4
+      minGroupSize: 1
+      maxGroupSize: 2
+
+- type: dungeonConfig
+  id: ClusterAsteroidRoundstart
+  # Floor generation
+  layers:
+    - !type:NoiseDunGen
+      tileCap: 750
+      capStd: 32
+      layers:
+        - tile: FloorAsteroidSand
+          threshold: 0.10
+          noise:
+            frequency: 0.130
+            noiseType: OpenSimplex2
+            fractalType: FBm
+            octaves: 2
+            lacunarity: 2
+    # Generate biome
+    - !type:BiomeDunGen
+      biomeTemplate: Asteroid
+    - !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockGibtonite
+      count: 8
+      minGroupSize: 0
+      maxGroupSize: 1
+    # Ores
+    - *defaultIron
+    - *defaultQuartz
+    - *defaultCoal
+    - *defaultGold
+    - *defaultSilver
+    - *defaultPlasma
+    - *defaultUranium
+    - *defaultBananium
+    - *defaultArtifact
+      
+- type: dungeonConfig
+  id: SpindlyAsteroidRoundstart
+  # Floor generation
+  layers:
+    - !type:NoiseDunGen
+      tileCap: 1000
+      capStd: 32
+      layers:
+        - tile: FloorAsteroidSand
+          threshold: -0.50
+          noise:
+            frequency: 0.055
+            noiseType: Cellular
+            fractalType: FBm
+            octaves: 3
+            lacunarity: 2
+            cellularDistanceFunction: Euclidean
+
+    # Generate biome
+    - !type:BiomeDunGen
+      biomeTemplate: Asteroid
+    - !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockGibtonite
+      count: 8
+      minGroupSize: 0
+      maxGroupSize: 1
+    # Ores
+    - *defaultIron
+    - *defaultQuartz
+    - *defaultCoal
+    - *defaultGold
+    - *defaultSilver
+    - *defaultPlasma
+    - *defaultUranium
+    - *defaultBananium
+    - *defaultArtifact
+      
+- type: dungeonConfig
+  id: SwissCheeseAsteroidRoundstart
+  # Floor generation
+  layers:
+    - !type:NoiseDunGen
+      tileCap: 1000
+      capStd: 32
+      layers:
+        - tile: FloorAsteroidSand
+          threshold: -0.10
+          noise:
+            frequency: 0.155
+            noiseType: OpenSimplex2
+            fractalType: FBm
+            octaves: 2
+            lacunarity: 2
+
+    # Generate biome
+    - !type:BiomeDunGen
+      biomeTemplate: Asteroid
+    - !type:OreDunGen
+      replacement: AsteroidRock
+      entity: AsteroidRockGibtonite
+      count: 8
+      minGroupSize: 0
+      maxGroupSize: 1
+    # Ores
+    - *defaultIron
+    - *defaultQuartz
+    - *defaultCoal
+    - *defaultGold
+    - *defaultSilver
+    - *defaultPlasma
+    - *defaultUranium
+    - *defaultBananium
+    - *defaultArtifact
