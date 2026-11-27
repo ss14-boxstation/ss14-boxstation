@@ -103,6 +103,7 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  # Start Box Change: Forky clothing stains
   - type: Stainable
     clothingVisuals:
       jumpsuit:
@@ -118,6 +119,7 @@
     iconVisuals:
     - sprite: _Funkystation/Effects/blood.rsi
       state: uniformbloodicon
+  # End Box Change
 
 - type: entity
   abstract: true

@@ -166,6 +166,7 @@ public partial class InventorySystem
             RaiseLocalEvent(item, ev);
         }
     }
+
 }
 
 /// <summary>

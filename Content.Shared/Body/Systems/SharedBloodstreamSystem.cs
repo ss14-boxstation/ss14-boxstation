@@ -14,13 +14,13 @@ using Content.Shared.Forensics; // Box Change: DNA regeneration helper for use i
 using Content.Shared.Forensics.Components;
 using Content.Shared.Gibbing;
 using Content.Shared.HealthExaminable;
-using Content.Shared.Inventory;
+using Content.Shared.Inventory; // Box Change: Forky clothing stains
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Rejuvenate;
 using Content.Shared.StatusEffectNew;
-using Content.Shared._Funkystation.Fluids;
+using Content.Shared._Funkystation.Fluids; // Box Change: Forky clothing stains
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
