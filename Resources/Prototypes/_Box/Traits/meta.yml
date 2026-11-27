@@ -49,3 +49,16 @@
   - !type:AddCompsEffect
     components:
     - type: LethalRemovalObjectiveConsent
+
+- type: trait
+  id: Untouchable
+  name: trait-untouchable-name
+  description: trait-untouchable-description
+  category: Meta
+  conditions:
+  - !type:HasJobCondition
+    job: Passenger
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: NoAntagTarget
