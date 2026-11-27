@@ -2647,3 +2647,10 @@
   id: 281
   time: '2026-11-27T00:24:45.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/417
+- author: CollectionOfBones128
+  changes:
+  - message: All pills will now be capable of OD again.
+    type: Tweak
+  id: 282
+  time: '2026-11-27T18:52:33.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/425
