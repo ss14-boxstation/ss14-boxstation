@@ -15,6 +15,8 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Maps;
 using Content.Shared.Popups;
 using Content.Shared.Slippery;
+using Content.Shared.Inventory; // Box Change: Forky clothing stains
+using Content.Shared._Funkystation.Fluids; // Box Change: Forky clothing stains
 using Robust.Shared.Collections;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -37,6 +39,7 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!; // Box Change: Forky clothing stains
 
     private EntityQuery<PuddleComponent> _puddleQuery;
 
@@ -54,6 +57,42 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
         SubscribeLocalEvent<PuddleComponent, SpreadNeighborsEvent>(OnPuddleSpread);
         SubscribeLocalEvent<PuddleComponent, SlipEvent>(OnPuddleSlip);
+
+        // Start Box Change: Forky clothing stains
+        SubscribeLocalEvent<InventoryComponent, MoveEvent>(OnStepInPuddle);
+    }
+
+    private void OnStepInPuddle(Entity<InventoryComponent> ent, ref MoveEvent args)
+    {
+        var gridUid = args.NewPosition.GetGridUid(EntityManager);
+        if (!gridUid.HasValue || !TryComp<MapGridComponent>(gridUid, out var grid))
+            return;
+
+        if (args.OldPosition.GetGridUid(EntityManager) != gridUid ||
+            _map.CoordinatesToTile(gridUid.Value, grid, args.OldPosition) == _map.CoordinatesToTile(gridUid.Value, grid, args.NewPosition))
+            return;
+
+        var tile = _map.GetTileRef(gridUid.Value, grid, args.NewPosition);
+
+        if (!TryGetPuddle(tile, out var puddleUid) || !_puddleQuery.TryGetComponent(puddleUid, out var puddleComp))
+            return;
+
+        if (!_solutionContainerSystem.ResolveSolution(puddleUid, puddleComp.SolutionName, ref puddleComp.Solution, out var solution))
+            return;
+
+        if (solution.Volume <= FixedPoint2.Zero)
+            return;
+
+        var transferAmount = FixedPoint2.Min(FixedPoint2.New(1), solution.Volume);
+        var splitSol = _solutionContainerSystem.SplitSolution(puddleComp.Solution.Value, transferAmount);
+
+        if (_inventory.TryGetSlotEntity(ent.Owner, "shoes", out var shoes))
+        {
+            var spilledEvent = new SpilledOnEvent(puddleUid, splitSol);
+            var relayedEvent = new InventoryRelayedEvent<SpilledOnEvent>(spilledEvent);
+            RaiseLocalEvent(shoes.Value, relayedEvent);
+        }
+        // End Box Change
     }
 
     // TODO: This can be predicted once https://github.com/space-wizards/RobustToolbox/pull/5849 is merged
@@ -266,6 +305,14 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         // Take 15% of the puddle solution
         var splitSol = _solutionContainerSystem.SplitSolution(entity.Comp.Solution.Value, solution.Volume * 0.15f);
         Reactive.DoEntityReaction(args.Slipped, splitSol, ReactionMethod.Touch);
+
+        // Start Box Change: Forky clothing stains
+        if (splitSol.Volume > 0)
+        {
+            var stainEv = new SpilledOnEvent(entity.Owner, splitSol.Clone());
+            RaiseLocalEvent(args.Slipped, stainEv);
+        }
+        // End Box Change
     }
 
     /// <summary>
@@ -438,6 +485,12 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
             targets.Add(owner);
             Reactive.DoEntityReaction(owner, splitSolution, ReactionMethod.Touch);
+
+            // Start Box Change: Forky clothing stains
+            if (splitSolution.Volume > 0)
+                RaiseLocalEvent(owner, new SpilledOnEvent(entity, splitSolution.Clone()));
+            // End Box Change
+
             Popups.PopupEntity(Loc.GetString("spill-land-spilled-on-other",
                     ("spillable", entity),
                     ("target", Identity.Entity(owner, EntityManager))),

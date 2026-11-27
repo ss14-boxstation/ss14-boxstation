@@ -12,6 +12,7 @@ using Content.Shared.Movement.Systems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Popups;
+using Content.Shared._Funkystation.Fluids; // Box Change: Forky clothing stains
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
@@ -118,6 +119,11 @@ public sealed class VomitSystem : EntitySystem
             // Makes a vomit solution the size of 90% of the chemicals removed from the chemstream
             solution.AddReagent(new ReagentId(VomitPrototype, _bloodstream.GetEntityBloodData((uid, bloodStream))), vomitAmount);
         }
+
+        // Start Box Change: Forky clothing stains
+        var stainEv = new SpilledOnEvent(uid, solution.Clone());
+        RaiseLocalEvent(uid, stainEv);
+        // End Box Change
 
         if (_puddle.TrySpillAt(uid, solution, out var puddle, false))
         {

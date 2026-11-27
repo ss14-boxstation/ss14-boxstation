@@ -1,6 +1,7 @@
 - type: vendingMachineInventory
   id: MediDrobeInventory
   startingInventory:
+    FlatpackWashingMachine: 1 # Box Change: Washing mashine flatpack TODO: Map washing machines and remove this.
     ClothingBackpackDuffelMedical: 4
     ClothingBackpackMedical: 4
     ClothingBackpackSatchelMedical: 4
