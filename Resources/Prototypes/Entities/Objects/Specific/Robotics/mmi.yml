@@ -45,6 +45,9 @@
   - type: Vocal
     sounds:
       Unsexed: UnisexSilicon
+  - type: Tag
+    tags:
+    - SiliconEmotes
     # Box Change End
   - type: ItemSlots
   - type: ContainerContainer
@@ -137,6 +140,7 @@
     - type: Tag
       tags:
       - CannotSuicide
+      - SiliconEmotes # Box - Allows use of borg emotes
     - type: GenericVisualizer
       visuals:
         enum.ToggleableGhostRoleVisuals.Status:
