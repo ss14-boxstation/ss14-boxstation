@@ -17,12 +17,6 @@ uplink-pizza-bomb-desc = This tech, first pioneered by terrorists, now is used b
 uplink-pizza-bomb-surplus-name = Surplus Pizza Bomb
 uplink-pizza--surplus-desc = This shouldn't be visible, report me.
 
-uplink-X4-name = X-4
-uplink-X4-desc = The cousin of the infamous C-4, uses experimental explosives to better pierce through structures.
-
-uplink-X4-bundle-name = X-4 Bundle
-uplink-X4-bundle-desc = A bag containing 4 X-4s, perfect for going all in on sabotage.
-
 # Ammo
 
 uplink-blood-red-carbine-ammo-name = Jailbroken Energy Cartridge

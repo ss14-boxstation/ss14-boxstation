@@ -1,17 +1,5 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelSyndicateX4Bundle
-  name: syndicate X-4 bundle
-  suffix: Harmony
-  description: Contains a lot of X-4 charges.
-  components:
-  - type: StorageFill
-    contents:
-    - id: X4
-      amount: 4
-
-- type: entity
-  parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledBloodRedEnergyCarbineHarmony
   name: blood-red energy carbine bundle
   description: A bundle containing an improved Energy Carbine. It comes with two spare Jailbroken Energy Cartridges.
