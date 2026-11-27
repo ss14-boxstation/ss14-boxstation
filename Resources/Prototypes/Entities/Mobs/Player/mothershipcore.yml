@@ -133,8 +133,11 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Xenoborg
-    allowedEmotes:
-    - Laugh
+    # Box Change: Silicon emote refactor
+    #allowedEmotes:
+    #- Laugh
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr']
+    # End Box Change
   - type: Vocal
     sounds:
       Unsexed: UnisexSiliconXenoborg

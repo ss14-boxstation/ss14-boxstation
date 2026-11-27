@@ -27,10 +27,6 @@
 - type: Tag
   id: HardlightWindowAssembly
 
-# Emote whitelist tag for harpies
-- type: Tag
-  id: HarpyEmotes
-
 # IPC Mask Tag for smoking
 - type: Tag
   id: IPCMaskWearable

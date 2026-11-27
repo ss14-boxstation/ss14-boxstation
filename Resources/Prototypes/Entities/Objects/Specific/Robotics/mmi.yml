@@ -40,9 +40,7 @@
   - type: Speech
     speechSounds: Pai
     # Box Change Start - Allows use of borg emotes
-  - type: Tag
-    tags:
-    - SiliconEmotes
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr']
   - type: Emoting
   - type: Vocal
     sounds:
@@ -129,6 +127,7 @@
       proto: robot
     - type: Speech
       speechSounds: Pai
+      allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr'] # Box Change: Silicon emote refactor
     - type: Alerts
     - type: MobState
       allowedStates:
@@ -138,7 +137,6 @@
     - type: Tag
       tags:
       - CannotSuicide
-      - SiliconEmotes # Box - Allows use of borg emotes
     - type: GenericVisualizer
       visuals:
         enum.ToggleableGhostRoleVisuals.Status:

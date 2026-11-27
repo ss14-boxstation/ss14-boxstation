@@ -165,7 +165,15 @@
     #  collection: Pops # Imp
     MonkeyScreeches: # Frontier
       collection: MonkeyScreeches # Frontier
-    # Start Box Change: Yawn
+    # Start Box Change: Additional harpy emotes
     Yawn:
       collection: HarpyYawn
+    Ping:
+      collection: HarpyPing
+    Buzz:
+      collection: HarpyBuzz
+    Buzz-Two:
+      collection: HarpyBuzzTwo
+    Chime:
+      collection: HarpyChime
     # End Box Change

@@ -144,6 +144,7 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr'] # Box Change: Silicon emote refactor
   - type: Vocal
     sounds:
       Unsexed: UnisexIPC # Box Change - starcup: silicon emotes
@@ -480,8 +481,11 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Xenoborg
-    allowedEmotes:
-    - Laugh
+    # Start Box Change: Silicon emote refactor
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr'] 
+    #allowedEmotes:
+    #- Laugh
+    # End Box Change
   - type: Vocal
     sounds:
       Unsexed: UnisexSiliconXenoborg

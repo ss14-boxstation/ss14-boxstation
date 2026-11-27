@@ -76,6 +76,7 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr'] # Box Change: Silicon emote refactor
     # This has to be installed because otherwise they're not "alive",
     #  so they can ghost and come back.
     # Note that the personal AI never "dies".
