@@ -91,3 +91,8 @@
         node: machineFrame
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  # Start Box Change: Empty on deconstruct to prevent people from being trapped inside the machine frame
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - entity_storage
+  # End Box Change
