@@ -2665,3 +2665,20 @@
   id: 283
   time: '2026-11-27T21:17:15.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/426
+- author: Dizzy-Eevee
+  changes:
+  - message: Clothing can now be stained with reagents from a variety of sources including
+      slipping in puddles, vomiting, and bleeding. You can remove the stains from
+      your clothes by holding them in hand and clicking the "wring out" verb. Certain
+      clothing (such as jackets and hardsuits) will block stains from affecting layers
+      of clothing beneath them.
+    type: Add
+  - message: Added washing machines, which can clean up to 5 pieces of clothing at
+      once, faster than cleaning a single piece by hand.
+    type: Add
+  - message: Washing machine flatpacks have been temporarily added to the ClothesMate
+      and MediDrobe, until they are mapped.
+    type: Add
+  id: 284
+  time: '2026-11-27T21:52:24.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/423
