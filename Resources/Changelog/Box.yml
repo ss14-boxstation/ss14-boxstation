@@ -2682,3 +2682,12 @@
   id: 284
   time: '2026-11-27T21:52:24.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/423
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies can now chirp, chime, ping, buzz, and buzz twice.
+    type: Add
+  - message: Added xenoborg and syndicate borg sounds to harpy emotes.
+    type: Tweak
+  id: 285
+  time: '2026-11-27T22:48:49.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/427
