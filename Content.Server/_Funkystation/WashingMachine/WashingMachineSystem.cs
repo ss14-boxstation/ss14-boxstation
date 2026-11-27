@@ -76,7 +76,7 @@ public sealed class WashingMachineSystem : SharedWashingMachineSystem
 
         var hasHeavyItems = false;
 
-        foreach (var item in storage.Contents.ContainedEntities)
+        foreach (var item in storage.Contents.ContainedEntities.ToList()) // Box Change: Addded ToList() to stop washing machines from crashing the server if the contained entity is deleted (i.e. a mob is gibbed)
         {
             _damageable.TryChangeDamage(item, damage, true);
 
