@@ -295,6 +295,7 @@
     # This should be the cream of the crop, best of the best, coolest experimental PKAs
     - id: WeaponSalvageAcceleratorRifle
     - id: WeaponSalvageAcceleratorShotgun
+    - id: WeaponSalvageAcceleratorXenoShard
   # Box Change End
 
 
