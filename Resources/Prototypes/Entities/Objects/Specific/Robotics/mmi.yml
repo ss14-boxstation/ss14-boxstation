@@ -40,13 +40,14 @@
   - type: Speech
     speechSounds: Pai
     # Box Change Start - Allows use of borg emotes
-  - type: Tag
-    tags:
-    - SiliconEmotes
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr']
   - type: Emoting
   - type: Vocal
     sounds:
       Unsexed: UnisexSilicon
+  - type: Tag
+    tags:
+    - SiliconEmotes
     # Box Change End
   - type: ItemSlots
   - type: ContainerContainer
@@ -129,6 +130,7 @@
       proto: robot
     - type: Speech
       speechSounds: Pai
+      allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr'] # Box Change: Silicon emote refactor
     - type: Alerts
     - type: MobState
       allowedStates:
