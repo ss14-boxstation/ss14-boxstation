@@ -17,7 +17,7 @@
   - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeat
+    - id: FoodMeatKobold # Box Change: FoodMeat -> FoodMeatKobold
       amount: 3
   - type: Tag
     tags:

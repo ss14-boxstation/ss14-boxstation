@@ -2,7 +2,10 @@
   id: KitchenSpike
   parent: BaseStructure
   name: meat spike
-  description: A spike for collecting meat from animals.
+  # Start Box Change: Rewrite description to reflect that we do not use monkeys as a primary food source (I can't believe I have to write this)
+  #description: A spike for collecting meat from animals.
+  description: A grisly apparatus used in the butchering of large, generally humanoid, creatures. Like you!
+  # End Box Change
   components:
   - type: InteractionOutline
   - type: Sprite

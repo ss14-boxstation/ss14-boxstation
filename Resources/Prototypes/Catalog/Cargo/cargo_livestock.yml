@@ -34,7 +34,7 @@
     sprite: Mobs/Animals/chicken.rsi
     state: icon-1
   product: CrateNPCChicken
-  cost: 4000
+  cost: 1280 # Box Change: 4000 -> 1280
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -54,7 +54,7 @@
     sprite: Mobs/Animals/duck.rsi
     state: icon-0
   product: CrateNPCDuck
-  cost: 4000
+  cost: 1280 # Box Change: 4000 -> 1280
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -84,7 +84,7 @@
     sprite: Mobs/Animals/cow.rsi
     state: cow
   product: CrateNPCCow
-  cost: 3200
+  cost: 800 # Box Change: 3200 -> 800
   category: cargoproduct-category-name-livestock
   group: market
 
@@ -94,7 +94,7 @@
     sprite: Mobs/Animals/goat.rsi
     state: goat
   product: CrateNPCGoat
-  cost: 1200
+  cost: 640 # Box Change: 1200 ->  640
   category: cargoproduct-category-name-livestock
   group: market
 

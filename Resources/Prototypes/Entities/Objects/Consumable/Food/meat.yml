@@ -123,9 +123,11 @@
         reagents:
         - ReagentId: UncookedAnimalProteins
           Quantity: 9
-  - type: SliceableFood
-    count: 3
-    slice: FoodMeatCutlet
+  # Start Box Change: Prevent "laundering" human meat
+  #- type: SliceableFood
+  #  count: 3
+  #  slice: FoodMeatCutlet
+  # End Box Change
   - type: Item
     storedOffset: -2,1
     inhandVisuals:

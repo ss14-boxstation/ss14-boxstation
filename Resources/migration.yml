@@ -824,3 +824,7 @@ BarSignMcLiltens: BarSignMaltroach
 PosterHarmonyEnrico: RandomPosterLegit
 PosterHarmonyHarmony: RandomPosterLegit
 PosterHarmonyMoney: RandomPosterLegit
+
+# 2026-11-25 BoxStation: Kill lipid extractor forever
+FatExtractorMachineCircuitboard: null
+FatExtractor: null

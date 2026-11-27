@@ -46,7 +46,10 @@
   id: FillClosetChef
   table: !type:AllSelector
     children:
-    - id: VariantCubeBox
+    # Start Box Change: Replace monkey cubes with something more normal
+    #- id: VariantCubeBox
+    - id: ChefCubeBox
+    # End Box Change
     - id: SprayBottleWater
     - id: FoodBoxCloth
     - id: ReagentContainerSugar

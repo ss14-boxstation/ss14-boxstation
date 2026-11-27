@@ -10,3 +10,20 @@
     - Raw
     - Meat
     - GoliathMeat
+
+# Cannibalism 1984: Monkeys, kobolds, and scurrets get unusable meat like humans.
+- type: entity
+  parent: FoodMeatHuman
+  id: FoodMeatMonkey
+  name: raw monkey meat
+
+- type: entity
+  parent: FoodMeatHuman
+  id: FoodMeatKobold
+  name: raw kobold meat
+
+- type: entity
+  parent: FoodMeatHuman
+  id: FoodMeatScurret
+  name: raw scurret meat
+  description: Wawa...
