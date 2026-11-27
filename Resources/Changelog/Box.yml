@@ -2654,3 +2654,14 @@
   id: 282
   time: '2026-11-27T18:52:33.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/425
+- author: Dizzy-Eevee
+  changes:
+  - message: Harmony's C4 nerf has been reverted. C4 is now slightly more powerful
+      than a seismic charge, fully destroying two  layers of reinforced walls and
+      breaking the third down to girders (where seismic charges leave the third intact).
+    type: Tweak
+  - message: Removed the X4 bundle.
+    type: Remove
+  id: 283
+  time: '2026-11-27T21:17:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/426
