@@ -1,0 +1,4 @@
+- type: entity
+  parent: ClothingHeadsetCommand
+  id: ClothingHeadsetHop
+  name: hop headset

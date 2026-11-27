@@ -123,12 +123,17 @@
   name: Urist McHarpy
   components:
   - type: HarpySinger
-  # Start Box Change: 1984 true flight
-  #- type: Flight # EE - Flight
-  #  isLayerAnimated: true
-  #  layer: "/Textures/_EE/Mobs/Customization/Harpy/harpy_wings.rsi"
-  #  animationKey: "Flap"
-  # End Box Change
+  - type: Flight # EE - Flight 
+    # Start Box Change: Don't use buggy flap shader
+    #isLayerAnimated: true
+    #layer: "/Textures/_EE/Mobs/Customization/Harpy/harpy_wings.rsi"
+    #animationKey: "Flap"
+    # End Box Change
+    # Start Box Change: Adjust values to match our zero-G movement values
+    speedModifier: 1
+    accelerationModifer: 1 # Not a typo on my end, DV called it "modifer"
+    frictionModifier: 1
+    # End Box Change
   - type: Instrument
     allowPercussion: false
     program: 52
@@ -178,7 +183,7 @@
   - type: Speech
     speechSounds: Harpy
     speechVerb: Harpy
-    allowedEmotes: ['Meow', 'Hiss', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Squish'] # Frontier: add Belch, Squish, Bubble, Pop
+    allowedEmotes: ['Meow', 'Hiss', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Honk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'Beep', 'HarpyRev', 'HarpyCaw', 'Squish', 'Chitter', 'Squeak', 'Click', 'Squish', 'Buzz', 'Buzz-Two', 'Chirp', 'Chime', 'Ping'] # Frontier: add Belch, Squish, Bubble, Pop # Box Change: Add Buzz, Buzz-Two, Chirp, Chime, Ping
   - type: Vocal
     sounds:
       # Start Box Change: Reunify harpy speech sounds until we separate voice from body
@@ -208,7 +213,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-    - HarpyEmotes # Box Change: Harpy emote tag for silicon emotes
   - type: Carriable # Box Change - Carrying system from Nyanotrasen
   # Start Box Change: starcup footprints
   - type: FootprintOwner

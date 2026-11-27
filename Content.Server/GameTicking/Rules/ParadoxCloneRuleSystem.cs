@@ -61,6 +61,10 @@ public sealed class ParadoxCloneRuleSystem : GameRuleSystem<ParadoxCloneRuleComp
             // get possible targets
             var allAliveHumanoids = _mind.GetAliveHumans();
 
+            // Box Change Start - Filter out people who can't be targets, like Learners and Nukies
+            _mind.FilterMinds(allAliveHumanoids, ent.Comp.Filters);
+            // Box Change End
+
             // we already checked when starting the gamerule, but someone might have died since then.
             if (allAliveHumanoids.Count == 0)
             {

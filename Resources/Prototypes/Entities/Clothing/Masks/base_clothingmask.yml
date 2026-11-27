@@ -11,6 +11,21 @@
     slots: [mask]
   - type: StaticPrice
     price: 25
+  # Start Box Change: Forky clothing stains
+  - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      stain:
+        maxVol: 5
+  - type: Stainable
+    clothingVisuals:
+      mask:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: maskblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: maskbloodicon
+  # End Box Change
 
 - type: entity
   abstract: true
@@ -53,6 +68,10 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 10
+      # Start Box Change: Forky clothing stains
+      stain:
+        maxVol: 5
+      # End Box Change
   - type: Tag
     tags:
     - ClothMade

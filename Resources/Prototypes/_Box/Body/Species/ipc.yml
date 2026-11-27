@@ -152,7 +152,6 @@
       - FootstepSound
       - DoorBumpOpener
       - AnomalyHost # IPCs can be anomaly hosts
-      - SiliconEmotes # added
   - type: Damageable
     damageContainer: HumanoidSilicon
     damageModifierSet: IPC
@@ -197,6 +196,7 @@
         collection: MetalLaserImpact
   - type: Speech
     speechSounds: Pai
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr']
   - type: Vocal
     wilhelm: "/Audio/_EE/Voice/IPC/wilhelm.ogg"
     sounds:
@@ -270,7 +270,8 @@
             MoltenIPCScrap:
               min: 1
               max: 1
-        - !type:BurnBodyBehavior { } # TODO: Wait for the upstream PR that makes it so a custom popup can be made
+        - !type:BurnBodyBehavior
+          popupMessage: bodyburn-ipc-text-others
         - !type:PlaySoundBehavior
           sound:
             collection: MeatLaserImpact # Either this sound doesn't appear, or it already works good enough

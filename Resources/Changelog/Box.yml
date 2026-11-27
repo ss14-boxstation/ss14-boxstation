@@ -2506,3 +2506,179 @@
   id: 269
   time: '2026-11-21T04:41:24.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/406
+- author: Dizzy-Eevee
+  changes:
+  - message: Emergency flares will no longer flicker violently when fading out, because
+      eye strain is bad.
+    type: Tweak
+  id: 270
+  time: '2026-11-23T21:19:30.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/407
+- author: Dizzy-Eevee
+  changes:
+  - message: The giant yellow wreck with no enemies and minimal worthwhile loot will
+      no longer spawn.
+    type: Remove
+  id: 271
+  time: '2026-11-25T01:49:14.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/411
+- author: Dizzy-Eevee
+  changes:
+  - message: Harpies now have the ability to fly, at the cost of stamina and the inability
+      to use their hands.
+    type: Add
+  id: 272
+  time: '2026-11-25T01:51:16.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/356
+- author: Dizzy-Eevee
+  changes:
+  - message: Vulpkanin will no longer randomly spill their drinks.
+    type: Remove
+  - message: Added the "Messy Drinker" trait, available for all species.
+    type: Add
+  id: 273
+  time: '2026-11-25T01:50:08.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/413
+- author: Dizzy-Eevee
+  changes:
+  - message: The "steal LAMPs" thief objective will no longer roll.
+    type: Remove
+  - message: The "steal the prime cut corgi meat" syndicate agent/blood bound objective
+      will no longer roll.
+    type: Remove
+  id: 274
+  time: '2026-11-25T02:17:39.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/412
+- author: Dizzy-Eevee
+  changes:
+  - message: The cargo bounty for 5 instruments will no longer allow you to sell live
+      harpies at the ATS.
+    type: Tweak
+  id: 275
+  time: '2026-11-25T23:10:52.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/420
+- author: SomegnihT
+  changes:
+  - message: IPCs now say they melt into scrap when reaching 2000 heat damage.
+    type: Add
+  id: 276
+  time: '2026-11-25T23:10:16.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/416
+- author: Dizzy-Eevee
+  changes:
+  - message: Removed the cargo bounties for lungs, a brain, and a clown costume.
+    type: Remove
+  - message: The cargo bounty for organs has been rebalanced to account for organs
+      now dropping when animals are butchered, instead of just when they are gibbed.
+      The chef will probably be relieved to hand them over.
+    type: Tweak
+  - message: Many cargo bounty descriptions have been rewritten for tone, or because
+      they were simply terrible.
+    type: Tweak
+  id: 277
+  time: '2026-11-26T22:43:14.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/419
+- author: CollectionOfBones128
+  changes:
+  - message: Certain items now explicitly say if they are for the CO or if they are
+      exclusive for the Captain
+    type: Tweak
+  - message: The CO and the XO now have stamps, which can be found in the Captain's
+      Locker
+    type: Add
+  - message: The ID Console now has a preset for the CO
+    type: Add
+  - message: The Captain's Locker will no longer spawn a skull at 15 pop
+    type: Remove
+  id: 278
+  time: '2026-11-26T23:11:17.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/421
+- author: CollectionOfBones128, fossa1212
+  changes:
+  - message: Added a new PKA, The Xeno Shard Accelerator. It has a unique ammo mechanic
+      and can be found on wrecks and the Red Rock Asteroid.
+    type: Add
+  id: 279
+  time: '2026-11-27T00:23:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/336
+- author: CollectionOfBones128
+  changes:
+  - message: Non-crew antagonists (Nukies, Ninja, Wizard, LoneOp, etc.) are now automatically
+      excluded from target pools
+    type: Tweak
+  - message: Paradox Clones cannot generate for Learner Roles, Non-crew antagonists,
+      or anyone with the Untouchable trait
+    type: Tweak
+  - message: Added the Untouchable trait, a Passenger-only trait that excludes someone
+      from target pools
+    type: Add
+  id: 280
+  time: '2026-11-27T00:24:17.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/408
+- author: Dizzy-Eevee
+  changes:
+  - message: The lipid extractor has been removed.
+    type: Remove
+  - message: The variety cube box has been removed from the ChefVend and chef's locker.
+    type: Remove
+  - message: A box has been added to the ChefVend and chef's locker containing a mix
+      of cow, goat, pig, duck, and chicken cubes.
+    type: Add
+  - message: The biogenerator can now print meat directly.
+    type: Add
+  - message: The biocube fabricator can now print pig, duck, and chicken cubes.
+    type: Add
+  - message: The costs of meat-yielding animal cubes from the biocube fabricator have
+      been rebalanced. Generally, the biocube fabricator costs 16 biomass per piece
+      of meat, offering more variety at a ~20% discount vs printing meat directly
+      from the biofabricator.
+    type: Tweak
+  - message: The price of ordering meat-yielding animals from cargo has been drastically
+      reduced across the board.
+    type: Tweak
+  - message: Monkeys, kobolds, and scurrets now give unique meat when butchered that
+      cannot be used in most recipes, just like humans do.
+    type: Tweak
+  - message: Scurret corpses are no longer edible
+    type: Tweak
+  - message: You can no longer "launder" human meat by slicing it into perfectly edible
+      meat cutlets.
+    type: Tweak
+  id: 281
+  time: '2026-11-27T00:24:45.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/417
+- author: CollectionOfBones128
+  changes:
+  - message: All pills will now be capable of OD again.
+    type: Tweak
+  id: 282
+  time: '2026-11-27T18:52:33.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/425
+- author: Dizzy-Eevee
+  changes:
+  - message: Harmony's C4 nerf has been reverted. C4 is now slightly more powerful
+      than a seismic charge, fully destroying two  layers of reinforced walls and
+      breaking the third down to girders (where seismic charges leave the third intact).
+    type: Tweak
+  - message: Removed the X4 bundle.
+    type: Remove
+  id: 283
+  time: '2026-11-27T21:17:15.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/426
+- author: Dizzy-Eevee
+  changes:
+  - message: Clothing can now be stained with reagents from a variety of sources including
+      slipping in puddles, vomiting, and bleeding. You can remove the stains from
+      your clothes by holding them in hand and clicking the "wring out" verb. Certain
+      clothing (such as jackets and hardsuits) will block stains from affecting layers
+      of clothing beneath them.
+    type: Add
+  - message: Added washing machines, which can clean up to 5 pieces of clothing at
+      once, faster than cleaning a single piece by hand.
+    type: Add
+  - message: Washing machine flatpacks have been temporarily added to the ClothesMate
+      and MediDrobe, until they are mapped.
+    type: Add
+  id: 284
+  time: '2026-11-27T21:52:24.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/423

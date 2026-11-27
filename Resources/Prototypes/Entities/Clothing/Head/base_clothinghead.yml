@@ -20,10 +20,25 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 10
+      # Start Box Change: Forky clothing stains
+      stain:
+        maxVol: 5
+      # End Box Change
   - type: Tag
     tags:
     - ClothMade
     - WhitelistChameleon
+  # Start Box Change: Forky clothing stains
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      head:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: helmetblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: helmetbloodicon
+  # End Box Change
 
 - type: entity
   abstract: true
@@ -142,6 +157,10 @@
     - HeadTop
     - HeadSide
     - FacialHair
+  # Start Box Change: Forky clothing stains
+  - type: StainBlocker
+    slots: [MASK]
+  # End Box Change
 
 - type: entity
   abstract: true
@@ -191,6 +210,19 @@
     - HeadTop
     - HeadSide
     - FacialHair
+  # Start Box Change: Forky clothing stains
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      head:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: helmetblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: helmetbloodicon
+  - type: StainBlocker
+    slots: [MASK]
+  # End Box Change
 
 - type: entity
   abstract: true
@@ -278,3 +310,14 @@
     - Hair
     - HeadTop
     - HeadSide
+  # Start Box Change: Forky clothing stains
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      head:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: helmetblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: helmetbloodicon
+    # End Box Change

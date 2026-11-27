@@ -102,7 +102,7 @@
 - type: entity
   parent: [ClothingHeadset, BaseCommandContraband]
   id: ClothingHeadsetCommand
-  name: command headset
+  name: co headset # Box Change - Command > CO
   description: A headset with a commanding channel.
   components:
   - type: ContainerFill

@@ -73,13 +73,17 @@
   id: MeatManipulation
   name: research-technology-meat-manipulation
   icon:
-    sprite: Structures/Machines/fat_sucker.rsi
-    state: display
+    # Start Box Change: Kill lipid extractorr
+    #sprite: Structures/Machines/fat_sucker.rsi
+    #state: display
+    sprite: Structures/Machines/Medical/biomass_reclaimer.rsi
+    state: icon
+    # End Box Change
   discipline: CivilianServices
   tier: 1
   cost: 7500
   recipeUnlocks:
-  - FatExtractorMachineCircuitboard
+  #- FatExtractorMachineCircuitboard # Box Change: Kill lipid extractor
   - BiofabricatorMachineCircuitboard
   - BiomassReclaimerMachineCircuitboard
 
@@ -148,6 +152,7 @@
   - AdvMopItem
   - MegaSprayBottle
   - BorgModuleAdvancedCleaning
+  - WashingMachineCircuitboard # Box Change: Forky clothing stains
 
 - type: technology
   id: HONKMech

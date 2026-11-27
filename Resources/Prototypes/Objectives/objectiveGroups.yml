@@ -16,7 +16,7 @@
     RDHardsuitStealObjective: 1
     NukeDiskStealObjective: 1
     MagbootsStealObjective: 1
-    CorgiMeatStealObjective: 1
+    # CorgiMeatStealObjective: 1 # Box Change: Kill corgi meat objective for tone reasons
     ClipboardStealObjective: 1
     KnuckleDustersStealObjective: 1
     CaptainGunStealObjective: 0.5
@@ -73,7 +73,7 @@
     TechnologyDiskStealCollectionObjective: 1           #sci
     MailStealCollectionObjective: 1                     #cargo
     IDCardsStealCollectionObjective: 1
-    LAMPStealCollectionObjective: 0.1                   #only for moth, weight decreased cause boring and insanely easy
+    # LAMPStealCollectionObjective: 0.1                   #only for moth, weight decreased cause boring and insanely easy # Box Change: Kill lamp objective for being bad and awful
 
 - type: weightedRandom
   id: ThiefObjectiveGroupItem

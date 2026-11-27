@@ -40,6 +40,7 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
+    allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr'] # Box Change: Allow use of silicon emotes
   - type: TypingIndicator
     proto: robot
   - type: Vocal

@@ -155,8 +155,10 @@
   id: MobVulpkanin
   name: Urist McArfArf
   components:
-  - type: MessyDrinker
-    spillChance: 0.33
+  # Start Box Change: Remove messy drinker from vulp
+  #- type: MessyDrinker
+  #  spillChance: 0.33
+  # End Box Change
   - type: Speech
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin

@@ -61,6 +61,9 @@ trait-dagd-desc = Opt-in for the "Die a Glorious Death" objective.
 trait-lethal-intent-name = Lethal Intent
 trait-lethal-intent-description = You are comfortable taking jobs your targets won't come back from. [color=yellow]You can roll Round Removal objectives as an Antagonist.[/color]
 
+trait-untouchable-name = Untouchable
+trait-untouchable-description = Either due to a lack of importance, or by sheer luck, [color=yellow]you will not be targeted by Antagonist Objectives.[/color]
+
 trait-synth-name = Synthetic
 trait-synth-desc = You are a biomechanical construct made to resemble an organic. You bleed synth blood, are notified of Ion Storms, and can use Artificial reagents.
 
@@ -69,3 +72,6 @@ trait-ion-sensitive-desc = You are notified of Ion Storms. [color=yellow]NOTE: I
 
 trait-xenoborgvocals-name = Xenotech Voicebox
 trait-xenoborgvocals-desc = Through some means, your vocal synthesizer is of alien design. (Replaces your voice and emotes with xenoborg ones).
+
+trait-messydrinker-name = Messy Drinker
+trait-messydrinker-desc = You seem to have a bit of a drinking problem. You will occasionally spill a bit of whatever you're trying to drink.

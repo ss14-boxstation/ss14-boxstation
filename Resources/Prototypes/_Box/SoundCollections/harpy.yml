@@ -25,3 +25,27 @@
     - /Audio/Voice/Human/female_cough_1.ogg
     - /Audio/Voice/Vox/vox_cough.ogg
     - /Audio/_Moffstation/Voice/Avali/avali_cough.ogg
+
+- type: soundCollection
+  id: HarpyPing
+  files:
+    - /Audio/Effects/Cargo/ping.ogg
+    - /Audio/Voice/Xenoborg/xenoborg_ping.ogg
+
+- type: soundCollection
+  id: HarpyBuzz
+  files:
+    - /Audio/Machines/buzz-sigh.ogg
+    - /Audio/Voice/Xenoborg/xenoborg_buzz-sigh.ogg
+
+- type: soundCollection
+  id: HarpyBuzzTwo
+  files:
+    - /Audio/Machines/buzz-two.ogg
+    - /Audio/Voice/Xenoborg/xenoborg_buzz-two.ogg
+
+- type: soundCollection
+  id: HarpyChime
+  files:
+    - /Audio/Machines/chime.ogg
+    - /Audio/Voice/Xenoborg/xenoborg_chime.ogg
