@@ -323,6 +323,7 @@
     components:
     - type: Speech
       speechSounds: Xenoborg
+      allowedEmotes: ['Beep', 'Boop', 'Buzz-Two', 'Chime', 'Honk', 'Ping', 'Whirr']
     - type: Vocal
       sounds:
         Unsexed: UnisexSiliconXenoborg
