@@ -2699,3 +2699,10 @@
   id: 286
   time: '2026-11-28T00:01:50.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/409
+- author: CollectionOfBones128
+  changes:
+  - message: Foaming Agent now needs Fluorosurfactant as another ingredient
+    type: Tweak
+  id: 287
+  time: '2026-11-28T03:08:10.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/428
