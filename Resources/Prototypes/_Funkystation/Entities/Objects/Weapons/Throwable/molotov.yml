@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: DrinkBottleGlassBase
+  parent: DrinkBaseMaterialGlass # Box Change: DrinkBottleGlassBase -> DrinkBaseMaterialGlass | pre-solution refactor
   id: MolotovCocktail
   name: molotov cocktail
   description: A bottle stuffed with a very flammable rag. Viva!
@@ -68,7 +68,7 @@
     sprite: _Funkystation/Objects/Weapons/Throwable/molotov.rsi
     normalState: icon-fire
   - type: Damageable
-  - type: Injurable
+  #- type: Injurable # Box Change: Pre-damageable refactor
     damageContainer: Inorganic
   - type: Destructible
     thresholds:

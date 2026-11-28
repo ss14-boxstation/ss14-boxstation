@@ -9,10 +9,16 @@
     sprite: _Funkystation/Effects/wallstain.rsi
     state: splatter
   - type: WallStain
-  - type: Solution
-    id: stain
-    solution:
-      maxVol: 5
+  # Start Box Change: Pre-solution refactor
+  # - type: Solution
+  #   id: stain
+  #   solution:
+  #     maxVol: 5
+  - type: SolutionContainerManager
+    solutions:
+      stain:
+        maxVol: 5
+  # End Box Change
   - type: Forensics
   - type: FlammableWallStain
   - type: Appearance
