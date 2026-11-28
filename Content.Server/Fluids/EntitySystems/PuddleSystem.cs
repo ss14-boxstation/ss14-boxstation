@@ -1,3 +1,4 @@
+using Content.Server._Funkystation.ReagentFires.Systems; // Box Change: Forky reagent fires
 using Content.Server.Fluids.Components;
 using Content.Server.Spreader;
 using Content.Shared._starcup.Footprints; // Box Change: starcup footprints
@@ -40,6 +41,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly InventorySystem _inventory = default!; // Box Change: Forky clothing stains
+    [Dependency] private ReagentFireSystem _fireSystem = default!; // Box Change: Forky reagent fires
+
 
     private EntityQuery<PuddleComponent> _puddleQuery;
 
@@ -651,4 +654,13 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
         return false;
     }
+
+    // Start Box Change: Forky reagent stains - handle reagent fire
+    //protected override void OnSolutionUpdate(Entity<PuddleComponent> entity, ref SolutionChangedEvent args) // Post-solution refactor code
+    protected override void OnSolutionUpdate(Entity<PuddleComponent> entity, ref SolutionContainerChangedEvent args)
+    {
+        base.OnSolutionUpdate(entity, ref args);
+        _fireSystem.UpdateFire(entity);
+    }
+    // End Box Change
 }

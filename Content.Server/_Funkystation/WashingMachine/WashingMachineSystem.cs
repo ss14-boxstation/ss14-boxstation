@@ -1,4 +1,4 @@
-﻿using Content.Shared._Funkystation.WashingMachine;
+using Content.Shared._Funkystation.WashingMachine;
 using Content.Shared._Funkystation.Stains.Components;
 using Content.Shared._Funkystation.Stains.Systems;
 using Content.Shared.Chemistry.EntitySystems;
@@ -27,6 +27,7 @@ public sealed class WashingMachineSystem : SharedWashingMachineSystem
     [Dependency] private readonly IPrototypeManager _proto = null!;
     [Dependency] private readonly IRobustRandom _random = null!;
     [Dependency] private readonly ReactiveSystem _reactive = null!;
+    private const string BluntProtoId = "Blunt";
 
     private static readonly SoundSpecifier HitSound = new SoundCollectionSpecifier("MetalThud");
 
@@ -66,7 +67,7 @@ public sealed class WashingMachineSystem : SharedWashingMachineSystem
         if (!TryComp<EntityStorageComponent>(uid, out var storage) || storage.Contents.ContainedEntities.Count == 0)
             return;
 
-        var bluntProto = _proto.Index<DamageTypePrototype>("Blunt");
+        var bluntProto = _proto.Index<DamageTypePrototype>(BluntProtoId);
         var damage = new DamageSpecifier(bluntProto, comp.BluntDamagePerSecond * frameTime);
 
         var waterSpray = new Solution();
@@ -145,7 +146,7 @@ public sealed class WashingMachineSystem : SharedWashingMachineSystem
 
         if (comp.AccumulatedSelfDamage > 0)
         {
-            var bluntProto = _proto.Index<DamageTypePrototype>("Blunt");
+            var bluntProto = _proto.Index<DamageTypePrototype>(BluntProtoId);
             var selfDamage = new DamageSpecifier(bluntProto, comp.AccumulatedSelfDamage);
             _damageable.TryChangeDamage(uid, selfDamage, ignoreResistances: true);
             comp.AccumulatedSelfDamage = 0;
