@@ -1,3 +1,4 @@
+using Content.Server._Funkystation.ReagentFires.Systems; // Box Change: Forky reagent fires
 using Content.Server.Fluids.Components;
 using Content.Server.Spreader;
 using Content.Shared._starcup.Footprints; // Box Change: starcup footprints
@@ -17,6 +18,7 @@ using Content.Shared.Popups;
 using Content.Shared.Slippery;
 using Content.Shared.Inventory; // Box Change: Forky clothing stains
 using Content.Shared._Funkystation.Fluids; // Box Change: Forky clothing stains
+using Content.Shared._Funkystation.WallStains; // Box Change: Forky wall stains
 using Robust.Shared.Collections;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -40,6 +42,8 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly InventorySystem _inventory = default!; // Box Change: Forky clothing stains
+    [Dependency] private ReagentFireSystem _fireSystem = default!; // Box Change: Forky reagent fires
+
 
     private EntityQuery<PuddleComponent> _puddleQuery;
 
@@ -306,11 +310,15 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         var splitSol = _solutionContainerSystem.SplitSolution(entity.Comp.Solution.Value, solution.Volume * 0.15f);
         Reactive.DoEntityReaction(args.Slipped, splitSol, ReactionMethod.Touch);
 
-        // Start Box Change: Forky clothing stains
+        // Start Box Change: Forky clothing and wall stains
         if (splitSol.Volume > 0)
         {
             var stainEv = new SpilledOnEvent(entity.Owner, splitSol.Clone());
             RaiseLocalEvent(args.Slipped, stainEv);
+
+            // Funky Wall Stains
+            var splashEv = new SplashOnWallEvent(Transform(entity.Owner).Coordinates, splitSol.Clone());
+            RaiseLocalEvent(ref splashEv);
         }
         // End Box Change
     }
@@ -501,6 +509,10 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
         _color.RaiseEffect(spilled.GetColor(_prototypeManager), targets,
             Filter.Pvs(entity, entityManager: EntityManager));
 
+        // Funky Wall Stains
+        var splashEv = new SplashOnWallEvent(coordinates, spilled.Clone());
+        RaiseLocalEvent(ref splashEv);
+
         return TrySpillAt(coordinates, spilled, out puddleUid, sound);
     }
 
@@ -651,4 +663,13 @@ public sealed partial class PuddleSystem : SharedPuddleSystem
 
         return false;
     }
+
+    // Start Box Change: Forky reagent stains - handle reagent fire
+    //protected override void OnSolutionUpdate(Entity<PuddleComponent> entity, ref SolutionChangedEvent args) // Post-solution refactor code
+    protected override void OnSolutionUpdate(Entity<PuddleComponent> entity, ref SolutionContainerChangedEvent args)
+    {
+        base.OnSolutionUpdate(entity, ref args);
+        _fireSystem.UpdateFire(entity);
+    }
+    // End Box Change
 }

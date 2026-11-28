@@ -1,0 +1,95 @@
+# Technically, these are anti-pyrotechnic...
+
+- type: reagent
+  id: CarbonDioxideFoam # TODO: Name
+  name: reagent-name-t2-foam 
+  desc: reagent-desc-t2-foam
+  group: Pyrotechnic
+  physicalDesc: reagent-physical-desc-foamy
+  flavor: odorless
+  color: "#CACBCF"
+  flammability: -30
+  reactiveEffects:
+    Extinguish:
+      methods: [ Touch ]
+      effects:
+      - !type:Extinguish
+  tileReactions:
+  - !type:SpillIfPuddlePresentTileReaction { }
+  # Copied from CO2
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Plant ]
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Plant, Vox ]
+          inverted: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              0.4
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Plant, Harpy ]
+          inverted: true
+        factor: -4
+      - !type:Oxygenate 
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -24
+
+- type: reagent
+  id: ABCFoam # TODO: Name
+  name: reagent-name-t3-foam 
+  desc: reagent-desc-t3-foam
+  group: Pyrotechnic
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: odorless
+  color: "#CACBCF"
+  flammability: -40
+  reactiveEffects:
+    Extinguish:
+      methods: [ Touch ]
+      effects:
+      - !type:Extinguish
+  tileReactions:
+  - !type:ExtinguishTileReaction
+    coolingTemperature: 10
+  - !type:SpillIfPuddlePresentTileReaction { }
+  # Copied from CO2
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Plant ]
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Plant, Vox ]
+          inverted: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              0.4
+      - !type:Oxygenate
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Plant, Harpy ]
+          inverted: true
+        factor: -4
+      - !type:Oxygenate 
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Harpy ]
+        factor: -24

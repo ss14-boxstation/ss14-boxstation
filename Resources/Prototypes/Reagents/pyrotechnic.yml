@@ -25,6 +25,10 @@
   boilingPoint: 2977.0 # Aluminum oxide
   meltingPoint: 2030.0
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
+  # Start Box Change: Forky reagent fires
+  flammability: 5 # Funky change
+  selfOxidizing: true # Funky change
+  # End Box Change
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 2
@@ -47,6 +51,9 @@
   flavor: bitter
   color: "#FA00AF"
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
+  # Start Box Change: Forky reagent fires
+  flammability: 4 # Funky change
+  # End Box Change
   tileReactions:
   - !type:FlammableTileReaction
     temperatureMultiplier: 5
@@ -78,6 +85,10 @@
   flavor: bitter
   color: "#D4872A"
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
+  # Start Box Change: Forky reagent fires
+  flammability: 5 # Funky change
+  selfOxidizing: true # Funky change
+  # End Box Change
   metabolisms:
     Bloodstream:
       effects:
@@ -107,6 +118,10 @@
   physicalDesc: reagent-physical-desc-blazing
   contrabandSeverity: Major
   flavor: bitter
+  # Start Box Change: Forky reagent fires
+  flammability: 5 # Funky change
+  selfOxidizing: true # Funky change
+  # End Box Change
   color: "#FFC8C8"
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   tileReactions:
@@ -165,6 +180,7 @@
   recognizable: true
   boilingPoint: -84.7 # Acetylene. Close enough.
   meltingPoint: -80.7
+  flammability: 2 # Box Change: Forky reagent fires
   friction: 0.4
   metabolismCategories: [ Organic, Artificial ] # Box Change - SynthChem
   tileReactions:

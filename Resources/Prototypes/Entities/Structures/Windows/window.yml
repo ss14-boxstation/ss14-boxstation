@@ -139,6 +139,7 @@
   - type: Tag
     tags:
       - Window
+      - DirectionalWindow # Box Change: Forky wall stains
   - type: MeleeSound
     soundGroups:
       Brute:
