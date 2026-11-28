@@ -53,7 +53,6 @@
         transferForensics: true
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: MolotovMaterial # Box Change: funky, for molotovs
 
 - type: entity
   abstract: true
