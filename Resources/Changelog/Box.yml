@@ -2691,3 +2691,11 @@
   id: 285
   time: '2026-11-27T22:48:49.0000000+00:00'
   url: https://github.com/ss14-boxstation/ss14-boxstation/pull/427
+- author: BlueMoon059
+  changes:
+  - message: Xenotech Voicebox trait added - a trait which replaces an IPC's voice
+      and emotes with a xenoborgs.
+    type: Add
+  id: 286
+  time: '2026-11-28T00:01:50.0000000+00:00'
+  url: https://github.com/ss14-boxstation/ss14-boxstation/pull/409
