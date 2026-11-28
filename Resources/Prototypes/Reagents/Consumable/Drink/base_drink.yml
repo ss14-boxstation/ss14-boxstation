@@ -18,7 +18,7 @@
   - !type:PlantAdjustWater
     amount: 1
   tileReactions:
-  - !type:ExtinguishTileReaction { }
+  #- !type:ExtinguishTileReaction { } # Box Change: Water can't stop gas fires
   - !type:SpillIfPuddlePresentTileReaction { }
 
 - type: reagent

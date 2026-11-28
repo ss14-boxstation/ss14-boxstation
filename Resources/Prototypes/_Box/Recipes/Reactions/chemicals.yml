@@ -86,3 +86,33 @@
       amount: 1
   products:
     CarbonMonoxide: 2
+
+# Fire extinguisher foams
+- type: reaction
+  id: CarbonDioxideFoam
+  reactants:
+    CarbonDioxide:
+      amount: 1
+    FoamingAgent:
+      amount: 1
+    Water:
+      amount: 1
+  products:
+    CarbonDioxideFoam: 3
+
+- type: reaction
+  id: ABCFoam
+  minTemp: 500
+  reactants:
+    Cryoxadone:
+      amount: 1
+    Ammonia:
+      amount: 1
+    Phosphorus:
+      amount: 1
+    Silicon:
+      amount: 1
+    CarbonDioxideFoam:
+      amount: 1
+  products:
+    ABCFoam: 4
