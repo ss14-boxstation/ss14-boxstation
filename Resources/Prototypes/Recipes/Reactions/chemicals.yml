@@ -59,8 +59,12 @@
       amount: 1
     Hydrogen:
       amount: 1
+  # Box Change Start - Add Fluorosurfactant - The foaming chemical and the foaming chemical should be linked!
+    Fluorosurfactant:
+      amount: 1
+  # Box Change End
   products:
-    FoamingAgent: 2
+    FoamingAgent: 3 # Box Change - 2 > 3 - Recipe Tweak
 
 - type: reaction
   id: PolytrinicAcid
