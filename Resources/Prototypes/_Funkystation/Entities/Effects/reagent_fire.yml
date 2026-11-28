@@ -1,6 +1,10 @@
 ﻿- type: entity
   id: ReagentPuddleFireEffect
   categories: [ HideSpawnMenu ]
+  # Start Box Change: Add name and description
+  name: fire
+  description: You probably shouldn't be standing here looking at this.
+  # End Box Change
   components:
   - type: Transform
   - type: Sprite
